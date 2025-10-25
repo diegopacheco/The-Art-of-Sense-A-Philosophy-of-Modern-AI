@@ -9,3 +9,6 @@ src = "src"
 default-theme = "rust"
 preferred-dark-theme = "rust"
 git-repository-url = "https://github.com/diegopacheco/The-Art-of-Building-with-AI"
+theme = "theme"
+additional-js = ["theme/version.js"]
+additional-css = []
