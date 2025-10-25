@@ -1,0 +1,11 @@
+[book]
+title = "The Art of Building with AI"
+authors = ["Diego Pacheco"]
+language = "en"
+multilingual = false
+src = "src"
+
+[output.html]
+default-theme = "rust"
+preferred-dark-theme = "rust"
+git-repository-url = "https://github.com/diegopacheco/The-Art-of-Building-with-AI"
