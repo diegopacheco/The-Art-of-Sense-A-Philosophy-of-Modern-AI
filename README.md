@@ -1,7 +1,7 @@
 # The Art of Building with AI
 
 <p align="center">
-  <img src="the-art-of-building-with-ai-cover.png" alt="The Art of Building with AI Cover" width="400"/>
+  <img src="the-art-of-building-with-ai.png" alt="The Art of Building with AI Cover" width="400"/>
 </p>
 
 This is an mdbook project for "The Art of Building with AI".
