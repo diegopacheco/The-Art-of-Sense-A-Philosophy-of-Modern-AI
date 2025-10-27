@@ -132,6 +132,12 @@ Hire, develop, retain, and truly grow talent at scale
 
 ### Part III
 - [Chapter 7 - Migrations with AI](./chapter-7/README.md)
+  - [Why use AI for Migrations?](./chapter-7/WHY.md)
+  - [Inventory](./chapter-7/INVENTORY.md)
+  - [Migrations in Phases](./chapter-7/MIGRATIONS_PHASES.md)
+  - [Testing](./chapter-7/TESTING.md)
+  - [After Migrations](./chapter-7/AFTER_MIGRATIONS.md)
+
 - [Chapter 8 - Non-Obvious Use Cases](./chapter-8/README.md)
 - [Chapter 9 - Learning from AI](./chapter-9/README.md)
 
