@@ -92,6 +92,17 @@ Hire, develop, retain, and truly grow talent at scale
   - [Dimenencionality Reduction](./chapter-2/DIMENSIONALITY_REDUCTION.md)
 
 - [Chapter 3 - Generative AI](./chapter-3/README.md)
+  - [What is Generative AI?](./chapter-3/WHAT.MD)
+  - [Transformers](./chapter-3/TRANSFORMERS.md)
+  - [Large Language Models (LLMs)](./chapter-3/LLM.md)
+  - [Embeddings](./chapter-3/EMBEDDINGS.md)
+  - [Text Generation](./chapter-3/TEXT_GENERATION.md)
+  - [Vector Databases](./chapter-3/VECTOR_DBS.md)
+  - [RAG](./chapter-3/RAG.md)
+  - [Sound Generation](./chapter-3/SOUND_GENERATION.md)
+  - [Image Generation](./chapter-3/IMAGE_GENERATION.md)
+  - [Video Generation](./chapter-3/VIDEO_GENERATION.md)
+  - [Fine Tuning](./chapter-3/FINE_TUNING.md)
 
 ### Part II
 - [Chapter 4 - Agents](./chapter-4/README.md)
