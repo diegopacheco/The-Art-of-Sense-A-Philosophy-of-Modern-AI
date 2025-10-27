@@ -106,6 +106,16 @@ Hire, develop, retain, and truly grow talent at scale
 
 ### Part II
 - [Chapter 4 - Agents](./chapter-4/README.md)
+  - [What are Agents?](./chapter-4/WHAT.md)
+  - [Context Window](./chapter-4/CONTEXT_WINDOW.md)
+  - [Coding Agents](./chapter-4/CODING_AGENTS.md)
+  - [Agent Patterns](./chapter-4/AGENTS_PATTERNS.md)
+  - [MCP](./chapter-4/MCP.md)
+  - [Other Apporaches](./chapter-4/OTHER_APPROACHES.md)
+  - [Context 7](./chapter-4/CONTEXT7.md)
+  - [Security and Agents/MCP](./chapter-4/MCP_SEC.md)
+  - [Popular Agents](./chapter-4/POPULAR_AGENTS.md)
+
 - [Chapter 5 - Claude Code](./chapter-5/README.md)
 - [Chapter 6 - Testing with AI](./chapter-6/README.md)
 
