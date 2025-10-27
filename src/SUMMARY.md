@@ -14,6 +14,7 @@
   - [Fooled by AI](./chapter-1/FOOLED_BY_AI.md)
   - [Vibe Coding](./chapter-1/VIBE_CODING.md)
   - [AI Input](./chapter-1/AI_INPUT.md)
+  - [Mirror on Asteroids](./chapter-1/MIRROR_ASTEROIDS.md)
 - [Chapter 2 - Traditional AI](./chapter-2/README.md)
 - [Chapter 3 - Generative AI](./chapter-3/README.md)
 
