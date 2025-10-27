@@ -127,6 +127,8 @@ Hire, develop, retain, and truly grow talent at scale
   - [Decision Criteria](./chapter-5/DECISION_CRITERIA.md)
 
 - [Chapter 6 - Testing with AI](./chapter-6/README.md)
+  - [Why use AI for Testing?](./chapter-6/WHY.md)
+  - [AI to Help with Testing](./chapter-6/AI_TESTING.md)
 
 ### Part III
 - [Chapter 7 - Migrations with AI](./chapter-7/README.md)

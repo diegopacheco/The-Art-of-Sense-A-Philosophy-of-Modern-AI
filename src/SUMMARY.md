@@ -58,6 +58,8 @@
   - [Custon Agents](./chapter-5/CUSTON_AGENTS.md)
   - [Decision Criteria](./chapter-5/DECISION_CRITERIA.md)
 - [Chapter 6 - Testing with AI](./chapter-6/README.md)
+  - [Why use AI for Testing?](./chapter-6/WHY.md)
+  - [AI to Help with Testing](./chapter-6/AI_TESTING.md)
 
 # Part III
 
