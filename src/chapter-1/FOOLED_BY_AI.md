@@ -7,9 +7,13 @@ Think about that. If you don't know anything AI is "talking about", basically yo
 Do you know how to know when a human using AI is fooling you? Do you know if you are fooling yourself with AI?
 
 Take a look on the Clever Hans effect. <br/>
-<video width="320" height="240" controls>
-  <source src="https://www.youtube.com/embed/hAJlAuEo7Ac" type="video">
-</video>
+<div style="position: relative; width: 100%; padding-bottom: 56.25%">
+<iframe src="https://www.youtube.com/embed/hAJlAuEo7Ac" 
+        title="Anti-Trust - The War Machine" frameborder="0" allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        style="position: absolute; width: 100%; height: 100%;">
+</iframe>
+</div>
 
 ## The dark side of AI
 
