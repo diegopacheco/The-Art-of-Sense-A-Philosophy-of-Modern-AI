@@ -15,7 +15,14 @@
   - [Vibe Coding](./chapter-1/VIBE_CODING.md)
   - [AI Input](./chapter-1/AI_INPUT.md)
   - [Mirror on Asteroids](./chapter-1/MIRROR_ASTEROIDS.md)
+
 - [Chapter 2 - Traditional AI](./chapter-2/README.md)
+  - [What is Traditional AI?](./chapter-2/WHAT.MD)
+  - [Regression](./chapter-2/REGRESSION.md)
+  - [Classification](./chapter-2/CLASSIFICATION.md)
+  - [Clustering](./chapter-2/CLUSTERING.md)
+  - [Dimenencionality Reduction](./chapter-2/DIMENSIONALITY_REDUCTION.md)
+
 - [Chapter 3 - Generative AI](./chapter-3/README.md)
 
 # Part II
