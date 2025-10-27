@@ -76,7 +76,10 @@
   - [Documentation](./chapter-8/DOCUMENTATION.md)
 
 - [Chapter 9 - Learning from AI](./chapter-9/README.md)
-
+  - [Ideas](./chapter-9/IDEAS.md)
+  - [Proof of Concepts (Poc)](./chapter-9/POCS.md)
+  - [Sentiment Analysis](./chapter-9/SENTIMENT_ANALYSIS.md)
+  
 # Epilogue
 
 - [Epilogue](./epilogue/README.md)
