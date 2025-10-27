@@ -77,7 +77,7 @@
 - **MCP (Model Context Protocol)** - [MCP](../chapter-4/MCP.md), [MCP Security](../chapter-4/MCP_SEC.md)
 - **Migrations** - [Chapter 7](../chapter-7/README.md), [Why use AI for Migrations](../chapter-7/WHY.md), [Inventory](../chapter-7/INVENTORY.md)
 - **Migrations in Phases** - [Migrations Phases](../chapter-7/MIGRATIONS_PHASES.md)
-- **Mirror on Asteroids** - [Mirror Asteroids](../chapter-1/MIRROR_ASTEROIDS.md)
+- **Mirror on Steroids** - [Mirror Asteroids](../chapter-1/MIRROR_ASTEROIDS.md)
 
 ## N
 - **Non-Obvious Use Cases** - [Chapter 8](../chapter-8/README.md)

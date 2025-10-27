@@ -139,7 +139,7 @@ Process of moving systems, code, libraries, or data from one platform, language,
 **Migrations in Phases**
 Structured approach to performing migrations incrementally rather than all at once.
 
-**Mirror on Asteroids**
+**Mirror on Steroids**
 Concept that AI amplifies existing abilities: good engineers become better with AI; poor engineers become worse.
 
 ## P

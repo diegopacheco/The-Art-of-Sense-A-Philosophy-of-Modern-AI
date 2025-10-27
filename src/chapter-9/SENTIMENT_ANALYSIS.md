@@ -2,11 +2,11 @@
 
 TBD
 
-## Should I sent this email?
+## Should I send this email?
 
 TBD
 
-## An I too agrressive or negative in this message?
+## Am I too aggressive or negative in this message?
 
 TBD
 

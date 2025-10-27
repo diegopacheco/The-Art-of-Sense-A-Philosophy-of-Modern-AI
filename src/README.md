@@ -20,9 +20,9 @@ Welcome to The Art of Building with AI.
 ## About the Author
 
 👨‍💻 Diego Pacheco Bio
-Diego Pacheco is a seasoned, experienced 🇧🇷Brazilian software architect, author, speaker, technology mentor, and DevOps practitioner with more than 20+ years of solid experience. I've been building teams and mentoring people for more than a decade, teaching soft skills and technology daily. Selling projects, hiring, building solutions, running coding dojos, long retrospectives, weekly 1:1s, design sessions, code reviews, and my favorite debate club: architects community of practices and development groups for more than a decade. Live, breathe, and practice real Agile since 2005, coaching teams have helped many companies to discover better ways to work using Lean and Kanban, Agile principles, and methods like XP and DTA/TTA. I've led complex architecture teams and engineering teams at scale guided by SOA principles, using a variety of open-source languages like Java, Scala, Rust, Go, Python, Groovy, JavaScript and TypeScript, cloud providers like AWS Cloud and Google GCP, amazing solutions like Akka, ActiveMQ, Netty, Tomcat and Gatling, NoSQL databases like Cassandra, Redis, Elasticache Redis, Elasticsearch, Opensearch, RabbitMQ, libraries like Spring, Hibernate, and Spring Boot and also the NetflixOSS Stack: Simian Army, RxJava, Karyon, Dynomite, Eureka, and Ribbon. I’ve implemented complex security solutions at scale using AWS KMS, S3, Containers (ECS and EKs), Terraform, and Jenkins. Over a decade of experience as a consultant, coding, designing, and training people at big customers in Brazil, London, Barcelona, India, and the USA(Silicon Valley and Midwest). I have a passion for functional programming and distributed systems, NoSQL Databases, a mindset for Observability, and always learning new programming languages.
+Diego Pacheco is a seasoned, experienced 🇧🇷Brazilian software architect, author, speaker, technology mentor, and DevOps practitioner with more than 20 years of solid experience. He has been building teams and mentoring people for more than a decade, teaching soft skills and technology daily. Selling projects, hiring, building solutions, running coding dojos, long retrospectives, weekly 1:1s, design sessions, code reviews, and his favorite debate club: architects community of practices and development groups for more than a decade. Living, breathing, and practicing real Agile since 2005, coaching teams has helped many companies discover better ways to work using Lean and Kanban, Agile principles, and methods like XP and DTA/TTA. He has led complex architecture teams and engineering teams at scale guided by SOA principles, using a variety of open-source languages like Java, Scala, Rust, Go, Python, Groovy, JavaScript and TypeScript, cloud providers like AWS Cloud and Google GCP, amazing solutions like Akka, ActiveMQ, Netty, Tomcat and Gatling, NoSQL databases like Cassandra, Redis, Elasticache Redis, Elasticsearch, Opensearch, RabbitMQ, libraries like Spring, Hibernate, and Spring Boot and also the NetflixOSS Stack: Simian Army, RxJava, Karyon, Dynomite, Eureka, and Ribbon. He has implemented complex security solutions at scale using AWS KMS, S3, Containers (ECS and EKS), Terraform, and Jenkins. Over a decade of experience as a consultant, coding, designing, and training people at big customers in Brazil, London, Barcelona, India, and the USA (Silicon Valley and Midwest). He has a passion for functional programming and distributed systems, NoSQL Databases, a mindset for Observability, and always learning new programming languages.
 
-🌱Currently: Working as a principal Software Architect with AWS public cloud, Kubernetes/EKS, performing complex cloud migrations, library migrations, server and persistence migrations, and security at scale with multi-level envelope encryption solutions using KMS and S3. While still hiring, teaching, mentoring, and growing engineers and architects. During my free time, I love playing with my daughter, playing guitar, gaming, coding POCs, and blogging. Active blogger blog at http://diego-pacheco.blogspot.com.br/
+🌱Currently: Working as a Principal Software Architect with AWS public cloud, Kubernetes/EKS, performing complex cloud migrations, library migrations, server and persistence migrations, and security at scale with multi-level envelope encryption solutions using KMS and S3. While still hiring, teaching, mentoring, and growing engineers and architects. During his free time, he loves playing with his daughter, playing guitar, gaming, coding POCs, and blogging. Active blog at http://diego-pacheco.blogspot.com.br/
 
 💻 Core skills and expertise:
 Architecture Design and architecture coding for highly scalable systems
@@ -89,7 +89,7 @@ Hire, develop, retain, and truly grow talent at scale
   - [Regression](./chapter-2/REGRESSION.md)
   - [Classification](./chapter-2/CLASSIFICATION.md)
   - [Clustering](./chapter-2/CLUSTERING.md)
-  - [Dimenencionality Reduction](./chapter-2/DIMENSIONALITY_REDUCTION.md)
+  - [Dimensionality Reduction](./chapter-2/DIMENSIONALITY_REDUCTION.md)
 
 - [Chapter 3 - Generative AI](./chapter-3/README.md)
   - [What is Generative AI?](./chapter-3/WHAT.MD)
@@ -111,7 +111,7 @@ Hire, develop, retain, and truly grow talent at scale
   - [Coding Agents](./chapter-4/CODING_AGENTS.md)
   - [Agent Patterns](./chapter-4/AGENTS_PATTERNS.md)
   - [MCP](./chapter-4/MCP.md)
-  - [Other Apporaches](./chapter-4/OTHER_APPROACHES.md)
+  - [Other Approaches](./chapter-4/OTHER_APPROACHES.md)
   - [Context 7](./chapter-4/CONTEXT7.md)
   - [Security and Agents/MCP](./chapter-4/MCP_SEC.md)
   - [Popular Agents](./chapter-4/POPULAR_AGENTS.md)

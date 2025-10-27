@@ -12,7 +12,7 @@ TBD
 
 ## Difficult Reality at Scale
 
-Migration don't often as much as they should happen.
+Migrations don't happen as often as they should.
 
 A lot of technical debt.
 

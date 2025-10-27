@@ -21,7 +21,7 @@
   - [Regression](./chapter-2/REGRESSION.md)
   - [Classification](./chapter-2/CLASSIFICATION.md)
   - [Clustering](./chapter-2/CLUSTERING.md)
-  - [Dimenencionality Reduction](./chapter-2/DIMENSIONALITY_REDUCTION.md)
+  - [Dimensionality Reduction](./chapter-2/DIMENSIONALITY_REDUCTION.md)
 
 - [Chapter 3 - Generative AI](./chapter-3/README.md)
   - [What is Generative AI?](./chapter-3/WHAT.MD)
@@ -44,7 +44,7 @@
   - [Coding Agents](./chapter-4/CODING_AGENTS.md)
   - [Agent Patterns](./chapter-4/AGENTS_PATTERNS.md)
   - [MCP](./chapter-4/MCP.md)
-  - [Other Apporaches](./chapter-4/OTHER_APPROACHES.md)
+  - [Other Approaches](./chapter-4/OTHER_APPROACHES.md)
   - [Context 7](./chapter-4/CONTEXT7.md)
   - [Security and Agents/MCP](./chapter-4/MCP_SEC.md)
   - [Popular Agents](./chapter-4/POPULAR_AGENTS.md)

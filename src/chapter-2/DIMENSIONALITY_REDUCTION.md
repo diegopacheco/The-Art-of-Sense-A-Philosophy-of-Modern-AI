@@ -1,3 +1,3 @@
-# Dimenencionality Reduction
+# Dimensionality Reduction
 
 TBD

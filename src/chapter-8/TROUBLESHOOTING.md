@@ -8,7 +8,7 @@ TBD
 
 TBD
 
-## Git Archiology for Troubleshooting
+## Git Archaeology for Troubleshooting
 
 TBD
 

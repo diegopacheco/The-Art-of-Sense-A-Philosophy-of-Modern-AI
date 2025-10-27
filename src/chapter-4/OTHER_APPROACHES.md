@@ -1,3 +1,3 @@
-# Other Apporaches
+# Other Approaches
 
 TBD
