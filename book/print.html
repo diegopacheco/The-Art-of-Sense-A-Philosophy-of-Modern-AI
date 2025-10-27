@@ -502,6 +502,18 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <p>TBD</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="popular-agents"><a class="header" href="#popular-agents">Popular Agents</a></h1>
 <p>TBD</p>
+<h2 id="github-copilot"><a class="header" href="#github-copilot">Github Copilot</a></h2>
+<p>TBD</p>
+<h2 id="codex-cli"><a class="header" href="#codex-cli">Codex CLI</a></h2>
+<p>TBD</p>
+<h2 id="opencode"><a class="header" href="#opencode">OpenCode</a></h2>
+<p>TBD</p>
+<h2 id="jules"><a class="header" href="#jules">Jules</a></h2>
+<p>TBD</p>
+<h2 id="kiro"><a class="header" href="#kiro">Kiro</a></h2>
+<p>TBD</p>
+<h2 id="claude-code"><a class="header" href="#claude-code">Claude Code</a></h2>
+<p>TBD</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-5---claude-code"><a class="header" href="#chapter-5---claude-code">Chapter 5 - Claude Code</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-claude-code"><a class="header" href="#what-is-claude-code">What is Claude Code?</a></h1>
 <p>TBD</p>
@@ -995,6 +1007,22 @@ Generative AI capability for creating video content from text descriptions or ot
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
