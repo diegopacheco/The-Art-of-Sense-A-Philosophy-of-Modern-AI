@@ -139,6 +139,10 @@ Hire, develop, retain, and truly grow talent at scale
   - [After Migrations](./chapter-7/AFTER_MIGRATIONS.md)
 
 - [Chapter 8 - Non-Obvious Use Cases](./chapter-8/README.md)
+  - [Proof Reader](./chapter-8/PROOF_READER.md)
+  - [Troubleshooting](./chapter-8/TROUBLESHOOTING.md)
+  - [Documentation](./chapter-8/DOCUMENTATION.md)
+
 - [Chapter 9 - Learning from AI](./chapter-9/README.md)
 
 ### Epilogue
