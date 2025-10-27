@@ -117,6 +117,15 @@ Hire, develop, retain, and truly grow talent at scale
   - [Popular Agents](./chapter-4/POPULAR_AGENTS.md)
 
 - [Chapter 5 - Claude Code](./chapter-5/README.md)
+  - [What is Claude Code?](./chapter-5/WHAT.md)
+  - [Commands](./chapter-5/CMDS.md)
+  - [Bash Mode](./chapter-5/BASH_MODE.md)
+  - [Exclusions ](./chapter-5/EXCLUSIONS.md)
+  - [ultrathink](./chapter-5/ULTRATHINK.md)
+  - [Custon Commands](./chapter-5/CUSTON_COMMANDS.md)
+  - [Custon Agents](./chapter-5/CUSTON_AGENTS.md)
+  - [Decision Criteria](./chapter-5/DECISION_CRITERIA.md)
+
 - [Chapter 6 - Testing with AI](./chapter-6/README.md)
 
 ### Part III
