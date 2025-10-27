@@ -142,6 +142,7 @@ Hire, develop, retain, and truly grow talent at scale
   - [Proof Reader](./chapter-8/PROOF_READER.md)
   - [Troubleshooting](./chapter-8/TROUBLESHOOTING.md)
   - [Documentation](./chapter-8/DOCUMENTATION.md)
+  - [Onboarding](./chapter-8/ONBOARDING.md)
 
 - [Chapter 9 - Learning from AI](./chapter-9/README.md)
   - [Ideas](./chapter-9/IDEAS.md)
