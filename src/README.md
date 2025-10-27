@@ -153,4 +153,4 @@ Hire, develop, retain, and truly grow talent at scale
 - [Epilogue](./epilogue/README.md)
 - [References](./epilogue/REFERENCES.md)
 - [Glossary](./epilogue/GLOSSARY.md)
-- [Index](./epilogue/INDEX.md)
+- [Book Index](./epilogue/BOOK_INDEX.md)
