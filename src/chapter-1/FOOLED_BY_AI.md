@@ -2,11 +2,16 @@
 
 IF AI is lying to you, how do you know?
 
-Think about that. If you don't know anything AI is "talking about", basically you are in deep trouble. You must be able to validate, fact check and even disagreen with AI output.
-
-High dependency on AI is bad, we should be able to program if we dont have internet or are running out of tokens.
+Think about that. If you don't know anything AI is "talking about", basically you are in deep trouble. You must be able to validate, fact check and even disagreen with AI output. High dependency on AI is bad, we should be able to program if we dont have internet or are running out of tokens.
 
 Do you know how to know when a human using AI is fooling you? Do you know if you are fooling yourself with AI?
+
+Take a look on the Clever Hans effect. <br/>
+<video width="720" height="480" src="https://www.youtube.com/watch?v=hAJlAuEo7Ac" frameborder="0" allowfullscreen></video>
+
+## The dark side of AI
+
+AI can and is used for a lot of scans. AI and people using AI can fool you in many ways. [AI has a darkside](https://diego-pacheco.blogspot.com/2024/07/the-dark-side-of-llms.html). Perhaps [many dark sides](https://diego-pacheco.blogspot.com/2025/03/the-dark-side-of-llms-part-2.html).
 
 ## Outsorcing Gyn Workout
 
