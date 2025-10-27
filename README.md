@@ -6,6 +6,10 @@
 
 This is an mdbook project for "The Art of Building with AI".
 
+## Read the Book in Git
+
+[Read it Here](src/README.md)
+
 ## Prerequisites
 
 Install mdbook:
