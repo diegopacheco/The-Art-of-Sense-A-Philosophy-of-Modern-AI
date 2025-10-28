@@ -11,3 +11,7 @@ MCP has a HOST which is the AI Agent or tool. Inside that host there are one or 
 <img src="../images/04-MCP_basics.png" width="600"/>
 
 As you can see on the previous picture, we are using [Postgres MCP](https://github.com/crystaldba/postgres-mcp) to read data from tables from plain english. We are also using [Slack MCP](https://github.com/korotovsky/slack-mcp-server) in order to send a message to our team asking for [PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) review.
+
+## Awesome MCPs
+
+Here is a curated list of [lots of MCPs](https://mcpservers.org/) you can use(be careful). Awesome MCPs include list of local and remote MCPs, along side with claude skills.
