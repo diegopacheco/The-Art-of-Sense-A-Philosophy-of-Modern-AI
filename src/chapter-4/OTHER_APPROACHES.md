@@ -12,4 +12,4 @@ There is some critique that MCPs could be just a [JSON file](https://materialize
 
 ## Calude Skills
 
-Claude Skills is another approach to building coding agents. See [here](https://www.anthropic.com/index/claude-skills). Where you can bunble text and scripts together to create an agent.
+[Claude Skills](https://www.anthropic.com/news/skills) is another approach to building coding agents. Where you can bunble text and scripts together to create an agent.
