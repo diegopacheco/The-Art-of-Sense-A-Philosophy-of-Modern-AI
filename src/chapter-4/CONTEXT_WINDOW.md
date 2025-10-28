@@ -13,7 +13,7 @@ Create a markdown table comparsin context window and size from, open ai, geminio
 | GPT-3.5      | 4,096 tokens               |
 | GPT-4        | 8,192 tokens               |
 | GPT-4-turbo  | 128,000 tokens             |
-| Gemini 1.5   | 32,768 tokens              |
+| Gemini 2 PROD| 1,000,00 tokens            |
 | Grok         | 128,000 tokens             |
 | LLaMA 3      | 65,536 tokens              |
 | Claude Sonnet 4.5 | 1, 000,000 tokens     |
