@@ -179,8 +179,27 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="context-window"><a class="header" href="#context-window">Context Window</a></h1>
-<p>TBD</p>
-
+<p>Context window is the term that referes to the ammount of text a model can process as input. LLM do not have many options to inteact with. Simply put you basically do everything via context window. What goes on the context window:</p>
+<ul>
+<li>User prompt: The text with the task or action you want the model to do.</li>
+<li>System prompt: The text that tells to the model how to behave.</li>
+<li>Few shot examples: Examples of inputs and outputs that help the model to better perform.</li>
+</ul>
+<p>Pretty much everysingle thing goes on the context window. So the context window is critical and a bottlenck in many situations.</p>
+<p>Create a markdown table comparsin context window and size from, open ai, geminio, grok, gpt 5, llama 3 and more.</p>
+<div class="table-wrapper"><table><thead><tr><th>Model</th><th>Context Window Size.</th></tr></thead><tbody>
+<tr><td>GPT-3.5</td><td>4,096 tokens</td></tr>
+<tr><td>GPT-4</td><td>8,192 tokens</td></tr>
+<tr><td>GPT-4-turbo</td><td>128,000 tokens</td></tr>
+<tr><td>Gemini 2.0 Flash.</td><td>1,000,000 tokens</td></tr>
+<tr><td>Gemini 2.0 Pro</td><td>2,000,000 tokens</td></tr>
+<tr><td>Grok 3</td><td>1,000,000 tokens</td></tr>
+<tr><td>Grok 4 Fast</td><td>2,000,000 tokens</td></tr>
+<tr><td>LLaMA 3</td><td>8,192 tokens</td></tr>
+<tr><td>Claude Sonnet 4.5</td><td>200,000 tokens</td></tr>
+<tr><td>Clude Soneet Corp.</td><td>1,000,000 tokens</td></tr>
+</tbody></table>
+</div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -210,22 +229,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
