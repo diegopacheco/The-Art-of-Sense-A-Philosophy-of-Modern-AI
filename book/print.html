@@ -524,8 +524,21 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <p>TBD</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="model-context-protocol-mcp"><a class="header" href="#model-context-protocol-mcp">Model Context Protocol (MCP)</a></h1>
 <p><a href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</a> was created by <a href="https://www.whatismcp.com/">Anthropic in 2024</a>. The idea of MCP is that you have a standard way to provide context to LLMs. MCP is an open standard that allows developers to create and share context packages that can be used by different LLMs.</p>
+<p>MCP is the AI equivalence of <a href="https://en.wikipedia.org/wiki/Language_Server_Protocol">LSP</a>, so you can have one server and that same server can work with a varaity of different clients(AI tools). MCP is designed to be model-agnostic, so you can use the same context package with different LLMs.</p>
+<h2 id="mcp-architecture"><a class="header" href="#mcp-architecture">MCP Architecture</a></h2>
+<p>MCP has a HOST which is the AI Agent or tool. Inside that host there are one or many MCP clients which connect to one or many MCP Severs.</p>
+<img src="chapter-4/../images/04-MCP_basics.png" width="600"/>
+<p>As you can see on the previous picture, we are using <a href="https://github.com/crystaldba/postgres-mcp">Postgres MCP</a> to read data from tables from plain english. We are also using <a href="https://github.com/korotovsky/slack-mcp-server">Slack MCP</a> in order to send a message to our team asking for <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">PR</a> review.</p>
+<h2 id="awesome-mcps"><a class="header" href="#awesome-mcps">Awesome MCPs</a></h2>
+<p>Here is a curated list of <a href="https://mcpservers.org/">lots of MCPs</a> you can use(be careful). Awesome MCPs include list of local and remote MCPs, along side with claude skills.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="other-approaches"><a class="header" href="#other-approaches">Other Approaches</a></h1>
-<p>TBD</p>
+<p>There are other approaches to building and deploying coding agents beyond the MCP framework discussed in this book.</p>
+<h2 id="agent-2-agent"><a class="header" href="#agent-2-agent">Agent 2 Agent</a></h2>
+<p><a href="https://a2a-protocol.com/">A2A</a>.</p>
+<h2 id="we-had-apis-before-mcp"><a class="header" href="#we-had-apis-before-mcp">We had APIs before MCP</a></h2>
+<p>There is some critique that MCPs could be just a <a href="https://materializedview.io/p/mcp-server-could-have-been-json-file">JSON file</a> since we are re-using the underlying APIS that already existed.</p>
+<h2 id="calude-skills"><a class="header" href="#calude-skills">Calude Skills</a></h2>
+<p><a href="https://www.anthropic.com/news/skills">Claude Skills</a> is another approach to building coding agents. Where you can bunble text and scripts together to create an agent.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="context-7"><a class="header" href="#context-7">Context 7</a></h1>
 <p><a href="https://context7.com/">Context7</a> fixes a limitation LLMs have. LLMs have a hard time to know the latest versions, since they are always behind the latest data. Context7 provides a way to connect LLMs to the latest data.</p>
 <h2 id="telling-ai-what-todo"><a class="header" href="#telling-ai-what-todo">Telling AI what todo</a></h2>
@@ -534,7 +547,20 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <p>Context7 has a <a href="https://github.com/upstash/context7">MCP</a> that allow you to use it with most of the popular code agents. Context7 has up to date documentation on latest versions of libraries and frameworks.</p>
 <p>27.OCT.2025 when I checked context7 webside they had suppport for <code>49,317 Libraries</code> which is a lot. They are always updating the library list and information for methods, and apis.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="security-and-mcps"><a class="header" href="#security-and-mcps">Security and MCPs</a></h1>
-<p>TBD</p>
+<p>MCP is awesome. However we need to remeber that for coding agents running in your CLI with your machines running commands can be a <a href="https://blog.sshh.io/p/everything-wrong-with-mcp?utm_source=pocket_shared">nightmare for security</a>. Specially if your laptop is a corpotate macbook, that is on a corporate network. There any many <a href="https://forgecode.dev/blog/prevent-attacks-on-mcp/">attack vectors</a>. Sandboxes sucks for developers, it's not the best developer experience. So what we do them.</p>
+<p>Well we have a similar problem in security to MCPs which is called: Vulnerabilitites. MCPs are not that different from vulnerabilitites in libraries because there is a explosion of libraries.</p>
+<p>There are dozens to hundreds of MCPs being created every day. Some of them are good, some of them are bad. Some of them are malicious. So how do we know which MCPs are safe to use?</p>
+<h2 id="mcp-guardrails"><a class="header" href="#mcp-guardrails">MCP Guardrails</a></h2>
+<p>MCP Requires some guardrails. Here are some ideas:</p>
+<ul>
+<li>Only use MCPs from trusted sources. Like official marketplaces or repositories.</li>
+<li>Scan MCPs for vulnerabilities before using them.</li>
+<li>Use MCPs in isolated environments. Like sandboxes or containers.</li>
+</ul>
+<h2 id="threating-mcp-as-a-bomb"><a class="header" href="#threating-mcp-as-a-bomb">Threating MCP as a BOMB</a></h2>
+<p>Andrew Zigler has this amazing blog post: <a href="https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs">Treating MCP servers like bombs</a> which is spot on. This is one way of dealign with MCPs. Imagine someone or some automated process go checkout a MCP in a isolated environment, run some tests on it, and then decide if it's safe to use or not.</p>
+<h2 id="mcp-scanning"><a class="header" href="#mcp-scanning">MCP Scanning</a></h2>
+<p>There are proper MCP Scanning solutions out there. Like <a href="https://evo.ai.snyk.io/">Evo by Snyk</a> or if you want something open source consider <a href="https://github.com/cisco-ai-defense/mcp-scanner">Cisco MCP Scanner</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="popular-agents"><a class="header" href="#popular-agents">Popular Agents</a></h1>
 <p>TBD</p>
 <h2 id="github-copilot"><a class="header" href="#github-copilot">Github Copilot</a></h2>
@@ -1042,6 +1068,22 @@ Generative AI capability for creating video content from text descriptions or ot
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
