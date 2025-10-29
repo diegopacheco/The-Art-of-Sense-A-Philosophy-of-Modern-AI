@@ -1,6 +1,6 @@
 # Mirror on Steroids
 
-If you are great AI will make you even greater. I belive Gen-AI tools like AI Coding Agents like Claude Code are amazing. ChaptGPT great. Co-Pilot great. However if you use this tools 24/7 and you shutdown your brain, you will worse your skills.
+If you are great AI will make you even greater. I belive Gen-AI tools like AI Coding Agents like Claude Code are amazing. ChaptGPT great. Co-Pilot great. However if you use this tools 24/7 and you shutdown your brain, you will worse your skills(Don't belive me? read this [Brain Study Shows ChatGPT Actually Makes You Dumber](https://80.lv/articles/brain-study-shows-chatgpt-actually-makes-you-dumber)).
 
 You can't use AI for all, ALL THE THINGS, all the time. Becasue your over-dependency on AI, it's like a virus or a desease. Everything we do in like without balance is bad.
 
