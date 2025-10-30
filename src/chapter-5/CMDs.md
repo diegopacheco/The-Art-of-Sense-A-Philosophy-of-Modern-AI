@@ -1,6 +1,6 @@
 # Commands
 
-Let's explore claude code commands.
+Let's explore claude code [commands](https://docs.claude.com/en/docs/claude-code/slash-commands.md).
 
 ## /init
 
@@ -34,3 +34,11 @@ Why this is useful?
 * Debug: You can see what is being loaded to claude memory.
 
 You should run this program time to time to see how the context is being used.
+
+## /clear
+
+This command clear the conversation history with claude code. It will remove all the messages exchanged in the current session.
+
+## /compact
+
+This command will compact the context used by claude code. It will remove some of the less relevant files from the context to make space for new files.
