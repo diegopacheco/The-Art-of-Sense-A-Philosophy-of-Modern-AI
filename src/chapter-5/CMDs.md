@@ -20,4 +20,18 @@ The resulting `CLAUDE.md` will vary depending on the project, but likely to cont
 * Reduce the ammount of tokens used in each interaction
 * Prevents some guessing from claude
 
-`CLAUDE.md` is documentation for AI not for humans.
+`CLAUDE.md` is documentation for AI not for humans. You should run this program everytime you start a new project with claude code.
+
+## /context
+
+This command allow you to see where claude code is using context from. It shows the files claude code has read to answer your questions.
+
+<img src="../images/05-cc-context.png" width="600"/>
+
+Why this is useful?
+* Transparency: You can see exactly which files influenced the AI's response.
+* Diagnostics:  See if you're running out of space.
+* Debug: You can see what is being loaded to claude memory.
+
+You should run this program time to time to see how the context is being used.
+
