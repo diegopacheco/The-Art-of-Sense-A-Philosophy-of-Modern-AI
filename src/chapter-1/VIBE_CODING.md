@@ -67,3 +67,16 @@ Now the effect is that you do that with such efficiency. Now imagine if you were
 You will be such a terrible driver. I don't think anyone drives like this. Because we don't allow anyone to drive, there is a BAR. But for engineering there is no BAR. Anyone can do anything, even not being even close to being qualified. Now I'm not flirting with extreme regulation of engineering. But what I'm saying is imagine if I tell you that a huge number of programmers code like the driver I described. Wow, no way Diego, this sucks! Well instead of the manual they were using StackOverflow, and before using forums, and now, guess what they are using LLMs and AI Agents.
 
 We need to have proficiency!
+
+## Zero to Demo vs Demo to Production
+
+Vibe coding can be very useful for creating a DEMO. However putting software into production it's a whole different game. 
+
+In the video below Andrej Karpathy explains it well:
+<div style="position: relative; width: 100%; padding-bottom: 56.25%">
+<iframe src="https://www.youtube.com/embed?v=lXUZvyajciY&si=wC3IpD2NpXwFr06e" 
+        title="Andrej Karpathy — “We’re summoning ghosts, not building animals”" frameborder="0" allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        style="position: absolute; width: 100%; height: 100%;">
+</iframe>
+</div>
