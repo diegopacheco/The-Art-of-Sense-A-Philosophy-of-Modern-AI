@@ -72,11 +72,15 @@ We need to have proficiency!
 
 Vibe coding can be very useful for creating a DEMO. However putting software into production it's a whole different game. 
 
+Karpathy explain how he got a DEMO on waymo in 2014 and was working. He tought it would be quickly.More than 11 years later in 2025 Waymo is still not 100% done. Why? Because some tasks are hard and the gap between the demo and production is huge.
+
 In the video below Andrej Karpathy explains it well:
 <div style="position: relative; width: 100%; padding-bottom: 56.25%">
-<iframe src="https://www.youtube.com/embed?v=lXUZvyajciY" 
-        title="Andrej Karpathy — “We’re summoning ghosts, not building animals”" frameborder="0" allowfullscreen
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+<iframe src="https://www.youtube.com/embed/lXUZvyajciY?start=6228"
+        title="Andrej Karpathy — "We're summoning ghosts, not building animals"" frameborder="0" allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         style="position: absolute; width: 100%; height: 100%;">
 </iframe>
 </div>
+
+Vibecoding can be useful to figureout what we want. Maybe to help non-engineers to figureout what they want, them better write requitements. In a sense vibe coding "democratize" building and everyboddy can be a software engineer, however to really use what you build with "vibe coding" must be some simple task, some tasks cannot be vibecoded and like I said before is a big mistake. However if is small enought and you can "build your own tool" why not.
