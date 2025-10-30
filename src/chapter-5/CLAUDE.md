@@ -1,3 +1,3 @@
 # Claude.md
 
-TBD
+Claude Code is a swiss army knife for developers using AI.
