@@ -34,4 +34,3 @@ Why this is useful?
 * Debug: You can see what is being loaded to claude memory.
 
 You should run this program time to time to see how the context is being used.
-
