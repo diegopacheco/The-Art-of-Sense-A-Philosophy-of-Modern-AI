@@ -74,7 +74,7 @@ Vibe coding can be very useful for creating a DEMO. However putting software int
 
 In the video below Andrej Karpathy explains it well:
 <div style="position: relative; width: 100%; padding-bottom: 56.25%">
-<iframe src="https://www.youtube.com/embed?v=lXUZvyajciY&si=wC3IpD2NpXwFr06e" 
+<iframe src="https://www.youtube.com/embed?v=lXUZvyajciY" 
         title="Andrej Karpathy — “We’re summoning ghosts, not building animals”" frameborder="0" allowfullscreen
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         style="position: absolute; width: 100%; height: 100%;">
