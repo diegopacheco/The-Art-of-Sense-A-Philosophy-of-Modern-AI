@@ -2,6 +2,11 @@
 
 When to Use: Hooks vs Commands vs Agents vs CLAUDE.md?
 
+```
+I asked claude code for some criteria to decide when to use each of these features.
+```
+Here is the result
+
 ### 1. CLAUDE.md - Behavioral Guidelines
 
 Use when: You want to change HOW Claude behaves globally or per-project
