@@ -43,6 +43,30 @@ This command clear the conversation history with claude code. It will remove all
 
 This command will compact the context used by claude code. It will remove some of the less relevant files from the context to make space for new files.
 
+## /bashes
+
+List all background bashes that claude code has run in the current session.
+
+## /cost
+
+Show the cost of the current session. Only works if you are using a API key based subscription, either directly with Anthropic or via AWS Bedrock. If you are using a subscription based on messages, this command not display anything useful.
+
+## /doctor
+
+Will run diagnostics on the claude code instalation.You will see an output like this:
+```
+> /doctor
+
+ Diagnostics
+ └ Currently running: npm-global (2.0.30)
+ └ Path: /Users/diegopacheco/.nvm/versions/node/v24.7.0/bin/node
+ └ Invoked: /Users/diegopacheco/.nvm/versions/node/v24.7.0/bin/claude
+ └ Config install method: global
+ └ Auto-updates enabled: default (true)
+ └ Update permissions: Yes
+ └ Search: OK (vendor)
+```
+
 ## /config
 
 Allow you to configure several aspects of claude code. Like: If you want claude to auto-compact or not, if claude should show tips or not, what theme do you want in the terminal, the output style, what LLM model to use, to have code rewinding enabled or not, among other options.
