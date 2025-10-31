@@ -212,6 +212,56 @@
 <p>This command clear the conversation history with claude code. It will remove all the messages exchanged in the current session.</p>
 <h2 id="compact"><a class="header" href="#compact">/compact</a></h2>
 <p>This command will compact the context used by claude code. It will remove some of the less relevant files from the context to make space for new files.</p>
+<h2 id="bashes"><a class="header" href="#bashes">/bashes</a></h2>
+<p>List all background bashes that claude code has run in the current session.</p>
+<h2 id="cost"><a class="header" href="#cost">/cost</a></h2>
+<p>Show the cost of the current session. Only works if you are using a API key based subscription, either directly with Anthropic or via AWS Bedrock. If you are using a subscription based on messages, this command not display anything useful.</p>
+<h2 id="doctor"><a class="header" href="#doctor">/doctor</a></h2>
+<p>Will run diagnostics on the claude code instalation.You will see an output like this:</p>
+<pre><code>&gt; /doctor
+
+ Diagnostics
+ └ Currently running: npm-global (2.0.30)
+ └ Path: /Users/diegopacheco/.nvm/versions/node/v24.7.0/bin/node
+ └ Invoked: /Users/diegopacheco/.nvm/versions/node/v24.7.0/bin/claude
+ └ Config install method: global
+ └ Auto-updates enabled: default (true)
+ └ Update permissions: Yes
+ └ Search: OK (vendor)
+</code></pre>
+<h2 id="export"><a class="header" href="#export">/export</a></h2>
+<p>Will export the current session chat history to a file. This command is very useful. Here is an example of the output:</p>
+<pre><code>❯ cat  2025-10-30-caveat-the-messages-below-were-generated-by-the-u.txt
+
+ ▐▛███▜▌   Claude Code v2.0.30
+▝▜█████▛▘  Sonnet 4.5 · Claude Pro
+  ▘▘ ▝▝    /Users/diegopacheco/git/diegopacheco/The-Art-of-Building-with-AI
+
+&gt; /config
+  ⎿  Status dialog dismissed
+
+&gt; /config
+  ⎿  Status dialog dismissed
+
+&gt; /bashes
+  ⎿  Background tasks dialog dismissed
+
+&gt; /cost
+  ⎿  With your Claude Pro subscription, no need to monitor cost — your subscription includes Claude Code usage
+
+&gt; /doctor
+  ⎿  Claude Code diagnostics dismissed
+  
+</code></pre>
+<h2 id="config"><a class="header" href="#config">/config</a></h2>
+<p>Allow you to configure several aspects of claude code. Like: If you want claude to auto-compact or not, if claude should show tips or not, what theme do you want in the terminal, the output style, what LLM model to use, to have code rewinding enabled or not, among other options.</p>
+<p>IF you use subscription based, you can see when a progress bar of how much of your tokens quota you have used. Also when the reset will happen.</p>
+<img src="../images/05-cc-status-cmd.png" width="600"/>
+<h2 id="agents"><a class="header" href="#agents">/agents</a></h2>
+<p>List all the agents you have created. Also allow you to create new agents, edit existent agents or delete agents.</p>
+<img src="../images/05-cc-agents.png" width="600"/>
+<p>When you create a new agent, what claude code will do is to create a new folder under the path <code>~/.claude/agents/AGENT_NAME.md</code> with all the files needed to run the agent.</p>
+<p>Claude Code can generate the agent markdown file based on a prompt you will provide. You can edit the agent.md file later as well.</p>
 
                     </main>
 
