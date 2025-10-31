@@ -179,7 +179,39 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="commands"><a class="header" href="#commands">Commands</a></h1>
-<p>TBD</p>
+<p>Let's explore claude code <a href="https://docs.claude.com/en/docs/claude-code/slash-commands.md">commands</a>.</p>
+<h2 id="init"><a class="header" href="#init">/init</a></h2>
+<p>Once you start a project with claude code, you run <code>/init</code>. Claude will read the whole codebase and create a file in your project called <code>CLAUDE.md</code> in the porject path.</p>
+<img src="../images/05-cc-init-cmd.png" width="600"/>
+<p>The resulting <code>CLAUDE.md</code> will vary depending on the project, but likely to contain:</p>
+<ul>
+<li>Project overview</li>
+<li>Build and serve instructions</li>
+<li>Version management details</li>
+<li>Content structure explanation</li>
+<li>Configuration information</li>
+</ul>
+<p><code>CLAUDE.md</code> works as a form of cache so claude don't need read all the codebase all the time to figureout this information. Because:</p>
+<ul>
+<li>Claude code has no memory between sessions</li>
+<li>Reduce the ammount of tokens used in each interaction</li>
+<li>Prevents some guessing from claude</li>
+</ul>
+<p><code>CLAUDE.md</code> is documentation for AI not for humans. You should run this program everytime you start a new project with claude code.</p>
+<h2 id="context"><a class="header" href="#context">/context</a></h2>
+<p>This command allow you to see where claude code is using context from. It shows the files claude code has read to answer your questions.</p>
+<img src="../images/05-cc-context.png" width="600"/>
+<p>Why this is useful?</p>
+<ul>
+<li>Transparency: You can see exactly which files influenced the AI's response.</li>
+<li>Diagnostics:  See if you're running out of space.</li>
+<li>Debug: You can see what is being loaded to claude memory.</li>
+</ul>
+<p>You should run this program time to time to see how the context is being used.</p>
+<h2 id="clear"><a class="header" href="#clear">/clear</a></h2>
+<p>This command clear the conversation history with claude code. It will remove all the messages exchanged in the current session.</p>
+<h2 id="compact"><a class="header" href="#compact">/compact</a></h2>
+<p>This command will compact the context used by claude code. It will remove some of the less relevant files from the context to make space for new files.</p>
 
                     </main>
 
