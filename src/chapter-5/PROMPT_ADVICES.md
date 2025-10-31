@@ -1,3 +1,12 @@
 # Prompt Advice
 
-TBD
+`Be Explicit in Prompts`
+
+Also highly recommended for Claude Code prompts:
+* Claude Code follows instructions literally
+* "Fix the bug" vs "Fix the authentication timeout in login.ts:45"
+* Reference specific files, functions, line numbers when possible
+* Use @filename to reference files in slash commands
+* Break large tasks into steps
+* Claude tracks context across the session
+* Easier to review and iterate on smaller changes
