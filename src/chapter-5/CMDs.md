@@ -42,3 +42,11 @@ This command clear the conversation history with claude code. It will remove all
 ## /compact
 
 This command will compact the context used by claude code. It will remove some of the less relevant files from the context to make space for new files.
+
+## /config
+
+Allow you to configure several aspects of claude code. Like: If you want claude to auto-compact or not, if claude should show tips or not, what theme do you want in the terminal, the output style, what LLM model to use, to have code rewinding enabled or not, among other options.
+
+IF you use subscription based, you can see when a progress bar of how much of your tokens quota you have used. Also when the reset will happen.
+
+<img src="../images/05-cc-status-cmd.png" width="600"/>
