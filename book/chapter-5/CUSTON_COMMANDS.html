@@ -179,7 +179,16 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="custom-commands"><a class="header" href="#custom-commands">Custom Commands</a></h1>
-<p>TBD</p>
+<p>Another very good feature in claude code is custom commands. Custom commands allow you to create your own commands. The nice thing is that claude will never run them, it will only run if you explicitly tell it to. This is useful for creating commands that you want to use frequently without having to type them out each time.</p>
+<p>Custom commands are useful for expensive tasks and you dont often between sesions but dont run on every prompt. Here are some example of custom commands:</p>
+<ul>
+<li>/report.md: A command to generate a report based on data from a database.</li>
+<li>/english.md: A command that fix your english typos and grammar.</li>
+<li>/summarize.md: A command that summarizes long texts into concise points.</li>
+<li>/translate.md: A command that translates text from one language to another.</li>
+</ul>
+<p>To create a custom command, you simply create a markdown file in the <code>~/.claude/commands/</code> directory with the name of the command you want to create. For example, to create a custom command called <code>/report.md</code>, you would create a file called <code>report.md</code> in the <code>~/.claude/commands/</code> directory.</p>
+<p>Commands are just a markdown file with instructions on what to do. You can use any markdown formatting you like, including code blocks, lists, and images.</p>
 
                     </main>
 

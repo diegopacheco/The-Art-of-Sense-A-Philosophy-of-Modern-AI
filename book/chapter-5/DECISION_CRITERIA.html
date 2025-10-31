@@ -179,7 +179,193 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="decision-criteria"><a class="header" href="#decision-criteria">Decision Criteria</a></h1>
-<p>TBD</p>
+<p>When to Use: Hooks vs Commands vs Agents vs CLAUDE.md?</p>
+<pre><code>I asked claude code for some criteria to decide when to use each of these features.
+</code></pre>
+<p>Here is the result</p>
+<h3 id="1-claudemd---behavioral-guidelines"><a class="header" href="#1-claudemd---behavioral-guidelines">1. CLAUDE.md - Behavioral Guidelines</a></h3>
+<p>Use when: You want to change HOW Claude behaves globally or per-project</p>
+<p>Criteria:</p>
+<ul>
+<li>✅ Style preferences (no comments, no emojis, code formatting)</li>
+<li>✅ Language/framework conventions (always use TypeScript strict mode)</li>
+<li>✅ Project-specific patterns (our API always returns JSON with snake_case)</li>
+<li>✅ Quality standards (always write tests, never use any type)</li>
+<li>✅ Restrictions (never install packages without asking, avoid library X)</li>
+</ul>
+<p>Examples:</p>
+<p>~/.claude/CLAUDE.md (global)</p>
+<ul>
+<li>Never use comments</li>
+<li>Always use const over let</li>
+<li>Prefer functional programming</li>
+<li>Never use emojis</li>
+</ul>
+<p>.claude/CLAUDE.md (project-specific)</p>
+<ul>
+<li>This project uses Redux Toolkit</li>
+<li>API responses are snake_case</li>
+<li>All components must have PropTypes</li>
+<li>Test files go in <strong>tests</strong> directory</li>
+</ul>
+<p>Think of it as: Your .eslintrc or .editorconfig but for Claude's behavior</p>
+<hr />
+<h3 id="2-custom-commands---reusable-prompts"><a class="header" href="#2-custom-commands---reusable-prompts">2. Custom Commands - Reusable Prompts</a></h3>
+<p>Use when: You type the same instructions repeatedly</p>
+<p>Criteria:</p>
+<ul>
+<li>✅ You find yourself copy-pasting the same prompt</li>
+<li>✅ Task is well-defined and repeatable</li>
+<li>✅ You want quick access via /command-name</li>
+<li>✅ Task is single-purpose and focused</li>
+<li>✅ Works within a single conversation context</li>
+</ul>
+<p>Examples:</p>
+<p>.claude/commands/review.md
+Review $1 for:</p>
+<ul>
+<li>Security vulnerabilities</li>
+<li>Performance issues</li>
+<li>Edge cases</li>
+<li>Code duplication</li>
+</ul>
+<p>Usage: /review src/auth.ts</p>
+<p>.claude/commands/test.md
+Generate comprehensive tests for $ARGUMENTS including:</p>
+<ul>
+<li>Happy path</li>
+<li>Edge cases</li>
+<li>Error handling</li>
+<li>Mocks for external dependencies</li>
+</ul>
+<p>Usage: /test src/payment.js</p>
+<p>Think of it as: Git aliases or bash aliases for Claude</p>
+<hr />
+<h3 id="3-hooks---event-driven-automation"><a class="header" href="#3-hooks---event-driven-automation">3. Hooks - Event-Driven Automation</a></h3>
+<p>Use when: You want something to happen automatically on events</p>
+<p>Criteria:</p>
+<ul>
+<li>✅ Needs to run automatically (no manual trigger)</li>
+<li>✅ Responds to events (file write, tool call, session start)</li>
+<li>✅ Integrates with external tools (git, linters, formatters)</li>
+<li>✅ Validation or enforcement (block bad actions)</li>
+<li>✅ Logging and monitoring</li>
+</ul>
+<p>Examples:</p>
+<p>Auto-format on save:</p>
+<pre><code>{
+  "hooks": {
+    "tool-result": {
+      "command": "if [[ '${TOOL_NAME}' == 'Write' ]]; then prettier --write '${TOOL_ARGS}'; fi",
+      "enabled": true
+    }
+  }
+}
+</code></pre>
+<p>Prevent commits to main:</p>
+<pre><code>{
+  "hooks": {
+    "tool-call": {
+      "command": "if [[ '${TOOL_NAME}' == 'Bash' ]] &amp;&amp; echo '${TOOL_ARGS}' | grep -q 'git push.*main'; then
+echo 'Blocked: Cannot push to main'; exit 1; fi",
+      "enabled": true,
+      "blocking": true
+    }
+  }
+}
+</code></pre>
+<p>Think of it as: Git hooks or GitHub Actions for Claude</p>
+<hr />
+<h3 id="4-custom-agents---complex-multi-step-tasks"><a class="header" href="#4-custom-agents---complex-multi-step-tasks">4. Custom Agents - Complex Multi-Step Tasks</a></h3>
+<p>Use when: Task requires multiple rounds of searching, analysis, and decision-making</p>
+<p>Criteria:</p>
+<ul>
+<li>✅ Task is exploratory (need to search, then decide, then search again)</li>
+<li>✅ Multiple tool calls required (10+ operations)</li>
+<li>✅ Requires decision trees (if X found, then do Y, else do Z)</li>
+<li>✅ Needs to work autonomously without user input</li>
+<li>✅ Complex context management across many files</li>
+</ul>
+<p>Examples:</p>
+<p>Refactoring Agent:</p>
+<ul>
+<li>Search for all usages of a function</li>
+<li>Analyze each usage context</li>
+<li>Determine safe refactoring strategy</li>
+<li>Apply changes across multiple files</li>
+<li>Verify nothing broke</li>
+</ul>
+<p>Security Audit Agent:</p>
+<ul>
+<li>Scan codebase for patterns</li>
+<li>Analyze dependencies</li>
+<li>Check configuration files</li>
+<li>Cross-reference with CVE databases</li>
+<li>Generate report with severity levels</li>
+</ul>
+<p>Migration Agent:</p>
+<ul>
+<li>Find all files using old API</li>
+<li>Understand usage patterns</li>
+<li>Generate migration plan</li>
+<li>Apply transformations</li>
+<li>Update tests</li>
+</ul>
+<p>Think of it as: A specialized team member who can work independently on complex tasks</p>
+<hr />
+<p>Decision Matrix</p>
+<div class="table-wrapper"><table><thead><tr><th>Need</th><th>Solution</th></tr></thead><tbody>
+<tr><td>Claude always formats code a certain way</td><td>CLAUDE.md</td></tr>
+<tr><td>Run prettier after every file write</td><td>Hook</td></tr>
+<tr><td>Quick code review on demand</td><td>Custom Command</td></tr>
+<tr><td>Audit entire codebase for security issues</td><td>Custom Agent</td></tr>
+<tr><td>Never use comments</td><td>CLAUDE.md</td></tr>
+<tr><td>Auto-run tests after changes</td><td>Hook</td></tr>
+<tr><td>Generate API documentation</td><td>Custom Command</td></tr>
+<tr><td>Migrate 50 files from old to new API</td><td>Custom Agent</td></tr>
+<tr><td>Enforce git commit message format</td><td>Hook</td></tr>
+<tr><td>Refactor function with specific pattern</td><td>Custom Command</td></tr>
+<tr><td>Analyze and fix all TypeScript errors</td><td>Custom Agent</td></tr>
+<tr><td>Always use tabs not spaces</td><td>CLAUDE.md</td></tr>
+</tbody></table>
+</div>
+<hr />
+<p>Practical Combination Example</p>
+<p>Scenario: You're building a React app and want comprehensive tooling</p>
+<p>CLAUDE.md (Project-wide rules)</p>
+<ul>
+<li>Always use functional components</li>
+<li>Props use TypeScript interfaces</li>
+<li>State management uses Zustand</li>
+<li>Never use <code>any</code> type</li>
+</ul>
+<p>Custom Commands (Quick actions)
+/component - Generate new React component with tests
+/hook - Create custom React hook
+/test - Generate tests for component</p>
+<p>Hooks (Automation)</p>
+<pre><code>{
+  "tool-result": {
+    "command": "prettier --write &amp;&amp; eslint --fix",
+    "enabled": true
+  }
+}
+</code></pre>
+<p>Custom Agent (Complex tasks)</p>
+<ul>
+<li>Component refactoring agent</li>
+<li>Accessibility audit agent</li>
+<li>Performance optimization agent</li>
+</ul>
+<hr />
+<p>Quick Selection Guide</p>
+<p>Ask yourself:</p>
+<ol>
+<li>Is it about HOW Claude should work? → CLAUDE.md</li>
+<li>Do I type this same prompt often? → Custom Command</li>
+<li>Should this happen automatically? → Hook</li>
+<li>Is this a complex multi-step investigation? → Custom Agent</li>
+</ol>
 
                     </main>
 

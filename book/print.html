@@ -368,7 +368,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-zero"><a class="header" href="#chapter-zero">Chapter ZERO</a></h1>
 <p>Why I wrote this book?</p>
-<p>In the summer of 2024, I spent the whole summer learning about AI. I did 300+ coding POCs, I read several books, I did several courses. In 2025, I tested all AI coding agents I could, I wrote MCPs, I did several experiments.</p>
+<p>In the summer of 2024, I spent the whole summer learning about AI. I did <a href="https://github.com/diegopacheco/ai-playground">300~ coding POCs</a>, I read several books, I did several courses. In 2025, I tested all AI coding agents I could, I wrote MCPs, I did several experiments.</p>
 <p>There is so much out there, there are so many tools and people saying many things. This book should be a compass to guide you on your AI journey for engineering.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-1---making-sense-of-ai"><a class="header" href="#chapter-1---making-sense-of-ai">Chapter 1 - Making sense of AI</a></h1>
 <p>First of all we need to make sense of AI. What is it? How does it work? What are the different types of AI? In this chapter we will explore these questions and lay the foundation for understanding AI.</p>
@@ -674,7 +674,8 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <p><a href="https://www.claude.com/product/claude-code">Claude Code</a> by anthropic is another coding agent. IMHO it's the best agent coding tool out there. Claude code works with anthropic LLM models.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-5---claude-code"><a class="header" href="#chapter-5---claude-code">Chapter 5 - Claude Code</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-claude-code"><a class="header" href="#what-is-claude-code">What is Claude Code?</a></h1>
-<p>TBD</p>
+<p>Claude code is a AI coding agent. Claude code blends Gen-AI LLM models with engineering in a tool focused on the terminal. It allows developers to interact with AI models directly(via API) from their command line interface (CLI) to generate, modify, and manage code.</p>
+<p>Claude code it's very efficient for developers because developers are used to use the terminal for all the things. Claude code is fast and very easy to use. So the bottleneck is not using claude code, but knowing the things you can do with it.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="commands"><a class="header" href="#commands">Commands</a></h1>
 <p>Let's explore claude code <a href="https://docs.claude.com/en/docs/claude-code/slash-commands.md">commands</a>.</p>
 <h2 id="init"><a class="header" href="#init">/init</a></h2>
@@ -767,9 +768,18 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="exclusions"><a class="header" href="#exclusions">Exclusions</a></h1>
 <p>TBD</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ultrathink"><a class="header" href="#ultrathink">ultrathink</a></h1>
-<p>TBD</p>
+<p>ultrathink is a instruction you give to claude code that makes it think more deeply about the problem at hand. It encourages the model to take extra time to analyze the situation, consider multiple perspectives, and generate more thorough and well-reasoned responses.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="custom-commands"><a class="header" href="#custom-commands">Custom Commands</a></h1>
-<p>TBD</p>
+<p>Another very good feature in claude code is custom commands. Custom commands allow you to create your own commands. The nice thing is that claude will never run them, it will only run if you explicitly tell it to. This is useful for creating commands that you want to use frequently without having to type them out each time.</p>
+<p>Custom commands are useful for expensive tasks and you dont often between sesions but dont run on every prompt. Here are some example of custom commands:</p>
+<ul>
+<li>/report.md: A command to generate a report based on data from a database.</li>
+<li>/english.md: A command that fix your english typos and grammar.</li>
+<li>/summarize.md: A command that summarizes long texts into concise points.</li>
+<li>/translate.md: A command that translates text from one language to another.</li>
+</ul>
+<p>To create a custom command, you simply create a markdown file in the <code>~/.claude/commands/</code> directory with the name of the command you want to create. For example, to create a custom command called <code>/report.md</code>, you would create a file called <code>report.md</code> in the <code>~/.claude/commands/</code> directory.</p>
+<p>Commands are just a markdown file with instructions on what to do. You can use any markdown formatting you like, including code blocks, lists, and images.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="custom-agents"><a class="header" href="#custom-agents">Custom Agents</a></h1>
 <p>Claude Code allow you to create custom agents. Custom agents can be generated by a prompt. In the end of the day a custon agent it's just a markdown file that lives under the path <code>~/.claude/agents/AGENT_NAME.md</code>.</p>
 <p>A custom agent it's automatically loaded by claude code when you start it. You can create, edit or delete custom agents using the <code>/agents</code> command. Custom agents are different than commands. For instance, commands you need to invoke them using the <code>/command_name</code> syntax. Custom agents you can just call them by their name or just tell your prompt to claude and he will invoke the agent for you.</p>
@@ -791,7 +801,8 @@ Hire, develop, retain, and truly grow talent at scale</p>
 </ul>
 <p>Custon agents are a big and very important feature from Claude Code.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="hooks"><a class="header" href="#hooks">Hooks</a></h1>
-<p>TBD</p>
+<p>Hooks are a nice feature that claude code has that allow you to create custom workflows. Hooks allow you to trigger a script for instance that run all maven tests on the backend, everytime claude code finish refactoring some code in Java. Another example let's say you want run a litner or a formater everytime claude code finish generating some code for you in Javascript. You can create a hook for that.</p>
+<p>Here a example of how to <a href="https://docs.claude.com/en/docs/claude-code/hooks-guide">create a hook</a> in claude code.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="mcp-and-claude-code"><a class="header" href="#mcp-and-claude-code">MCP and Claude Code</a></h1>
 <p>TBD</p>
 <h2 id="status-line"><a class="header" href="#status-line">Status Line</a></h2>
@@ -799,7 +810,193 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <h2 id="useful-mcps"><a class="header" href="#useful-mcps">Useful MCPs</a></h2>
 <p>TBD</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="decision-criteria"><a class="header" href="#decision-criteria">Decision Criteria</a></h1>
-<p>TBD</p>
+<p>When to Use: Hooks vs Commands vs Agents vs CLAUDE.md?</p>
+<pre><code>I asked claude code for some criteria to decide when to use each of these features.
+</code></pre>
+<p>Here is the result</p>
+<h3 id="1-claudemd---behavioral-guidelines"><a class="header" href="#1-claudemd---behavioral-guidelines">1. CLAUDE.md - Behavioral Guidelines</a></h3>
+<p>Use when: You want to change HOW Claude behaves globally or per-project</p>
+<p>Criteria:</p>
+<ul>
+<li>✅ Style preferences (no comments, no emojis, code formatting)</li>
+<li>✅ Language/framework conventions (always use TypeScript strict mode)</li>
+<li>✅ Project-specific patterns (our API always returns JSON with snake_case)</li>
+<li>✅ Quality standards (always write tests, never use any type)</li>
+<li>✅ Restrictions (never install packages without asking, avoid library X)</li>
+</ul>
+<p>Examples:</p>
+<p>~/.claude/CLAUDE.md (global)</p>
+<ul>
+<li>Never use comments</li>
+<li>Always use const over let</li>
+<li>Prefer functional programming</li>
+<li>Never use emojis</li>
+</ul>
+<p>.claude/CLAUDE.md (project-specific)</p>
+<ul>
+<li>This project uses Redux Toolkit</li>
+<li>API responses are snake_case</li>
+<li>All components must have PropTypes</li>
+<li>Test files go in <strong>tests</strong> directory</li>
+</ul>
+<p>Think of it as: Your .eslintrc or .editorconfig but for Claude's behavior</p>
+<hr />
+<h3 id="2-custom-commands---reusable-prompts"><a class="header" href="#2-custom-commands---reusable-prompts">2. Custom Commands - Reusable Prompts</a></h3>
+<p>Use when: You type the same instructions repeatedly</p>
+<p>Criteria:</p>
+<ul>
+<li>✅ You find yourself copy-pasting the same prompt</li>
+<li>✅ Task is well-defined and repeatable</li>
+<li>✅ You want quick access via /command-name</li>
+<li>✅ Task is single-purpose and focused</li>
+<li>✅ Works within a single conversation context</li>
+</ul>
+<p>Examples:</p>
+<p>.claude/commands/review.md
+Review $1 for:</p>
+<ul>
+<li>Security vulnerabilities</li>
+<li>Performance issues</li>
+<li>Edge cases</li>
+<li>Code duplication</li>
+</ul>
+<p>Usage: /review src/auth.ts</p>
+<p>.claude/commands/test.md
+Generate comprehensive tests for $ARGUMENTS including:</p>
+<ul>
+<li>Happy path</li>
+<li>Edge cases</li>
+<li>Error handling</li>
+<li>Mocks for external dependencies</li>
+</ul>
+<p>Usage: /test src/payment.js</p>
+<p>Think of it as: Git aliases or bash aliases for Claude</p>
+<hr />
+<h3 id="3-hooks---event-driven-automation"><a class="header" href="#3-hooks---event-driven-automation">3. Hooks - Event-Driven Automation</a></h3>
+<p>Use when: You want something to happen automatically on events</p>
+<p>Criteria:</p>
+<ul>
+<li>✅ Needs to run automatically (no manual trigger)</li>
+<li>✅ Responds to events (file write, tool call, session start)</li>
+<li>✅ Integrates with external tools (git, linters, formatters)</li>
+<li>✅ Validation or enforcement (block bad actions)</li>
+<li>✅ Logging and monitoring</li>
+</ul>
+<p>Examples:</p>
+<p>Auto-format on save:</p>
+<pre><code>{
+  "hooks": {
+    "tool-result": {
+      "command": "if [[ '${TOOL_NAME}' == 'Write' ]]; then prettier --write '${TOOL_ARGS}'; fi",
+      "enabled": true
+    }
+  }
+}
+</code></pre>
+<p>Prevent commits to main:</p>
+<pre><code>{
+  "hooks": {
+    "tool-call": {
+      "command": "if [[ '${TOOL_NAME}' == 'Bash' ]] &amp;&amp; echo '${TOOL_ARGS}' | grep -q 'git push.*main'; then
+echo 'Blocked: Cannot push to main'; exit 1; fi",
+      "enabled": true,
+      "blocking": true
+    }
+  }
+}
+</code></pre>
+<p>Think of it as: Git hooks or GitHub Actions for Claude</p>
+<hr />
+<h3 id="4-custom-agents---complex-multi-step-tasks"><a class="header" href="#4-custom-agents---complex-multi-step-tasks">4. Custom Agents - Complex Multi-Step Tasks</a></h3>
+<p>Use when: Task requires multiple rounds of searching, analysis, and decision-making</p>
+<p>Criteria:</p>
+<ul>
+<li>✅ Task is exploratory (need to search, then decide, then search again)</li>
+<li>✅ Multiple tool calls required (10+ operations)</li>
+<li>✅ Requires decision trees (if X found, then do Y, else do Z)</li>
+<li>✅ Needs to work autonomously without user input</li>
+<li>✅ Complex context management across many files</li>
+</ul>
+<p>Examples:</p>
+<p>Refactoring Agent:</p>
+<ul>
+<li>Search for all usages of a function</li>
+<li>Analyze each usage context</li>
+<li>Determine safe refactoring strategy</li>
+<li>Apply changes across multiple files</li>
+<li>Verify nothing broke</li>
+</ul>
+<p>Security Audit Agent:</p>
+<ul>
+<li>Scan codebase for patterns</li>
+<li>Analyze dependencies</li>
+<li>Check configuration files</li>
+<li>Cross-reference with CVE databases</li>
+<li>Generate report with severity levels</li>
+</ul>
+<p>Migration Agent:</p>
+<ul>
+<li>Find all files using old API</li>
+<li>Understand usage patterns</li>
+<li>Generate migration plan</li>
+<li>Apply transformations</li>
+<li>Update tests</li>
+</ul>
+<p>Think of it as: A specialized team member who can work independently on complex tasks</p>
+<hr />
+<p>Decision Matrix</p>
+<div class="table-wrapper"><table><thead><tr><th>Need</th><th>Solution</th></tr></thead><tbody>
+<tr><td>Claude always formats code a certain way</td><td>CLAUDE.md</td></tr>
+<tr><td>Run prettier after every file write</td><td>Hook</td></tr>
+<tr><td>Quick code review on demand</td><td>Custom Command</td></tr>
+<tr><td>Audit entire codebase for security issues</td><td>Custom Agent</td></tr>
+<tr><td>Never use comments</td><td>CLAUDE.md</td></tr>
+<tr><td>Auto-run tests after changes</td><td>Hook</td></tr>
+<tr><td>Generate API documentation</td><td>Custom Command</td></tr>
+<tr><td>Migrate 50 files from old to new API</td><td>Custom Agent</td></tr>
+<tr><td>Enforce git commit message format</td><td>Hook</td></tr>
+<tr><td>Refactor function with specific pattern</td><td>Custom Command</td></tr>
+<tr><td>Analyze and fix all TypeScript errors</td><td>Custom Agent</td></tr>
+<tr><td>Always use tabs not spaces</td><td>CLAUDE.md</td></tr>
+</tbody></table>
+</div>
+<hr />
+<p>Practical Combination Example</p>
+<p>Scenario: You're building a React app and want comprehensive tooling</p>
+<p>CLAUDE.md (Project-wide rules)</p>
+<ul>
+<li>Always use functional components</li>
+<li>Props use TypeScript interfaces</li>
+<li>State management uses Zustand</li>
+<li>Never use <code>any</code> type</li>
+</ul>
+<p>Custom Commands (Quick actions)
+/component - Generate new React component with tests
+/hook - Create custom React hook
+/test - Generate tests for component</p>
+<p>Hooks (Automation)</p>
+<pre><code>{
+  "tool-result": {
+    "command": "prettier --write &amp;&amp; eslint --fix",
+    "enabled": true
+  }
+}
+</code></pre>
+<p>Custom Agent (Complex tasks)</p>
+<ul>
+<li>Component refactoring agent</li>
+<li>Accessibility audit agent</li>
+<li>Performance optimization agent</li>
+</ul>
+<hr />
+<p>Quick Selection Guide</p>
+<p>Ask yourself:</p>
+<ol>
+<li>Is it about HOW Claude should work? → CLAUDE.md</li>
+<li>Do I type this same prompt often? → Custom Command</li>
+<li>Should this happen automatically? → Hook</li>
+<li>Is this a complex multi-step investigation? → Custom Agent</li>
+</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-6---testing-with-ai"><a class="header" href="#chapter-6---testing-with-ai">Chapter 6 - Testing with AI</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="why-use-ai-for-testing"><a class="header" href="#why-use-ai-for-testing">Why use AI for Testing?</a></h1>
 <p>TBD</p>
