@@ -102,3 +102,13 @@ Allow you to configure several aspects of claude code. Like: If you want claude 
 IF you use subscription based, you can see when a progress bar of how much of your tokens quota you have used. Also when the reset will happen.
 
 <img src="../images/05-cc-status-cmd.png" width="600"/>
+
+## /agents
+
+List all the agents you have created. Also allow you to create new agents, edit existent agents or delete agents.
+
+<img src="../images/05-cc-agents.png" width="600"/>
+
+When you create a new agent, what claude code will do is to create a new folder under the path `~/.claude/agents/AGENT_NAME.md` with all the files needed to run the agent.
+
+Claude Code can generate the agent markdown file based on a prompt you will provide. You can edit the agent.md file later as well.
