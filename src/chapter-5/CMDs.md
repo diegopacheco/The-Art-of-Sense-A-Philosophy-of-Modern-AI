@@ -67,6 +67,34 @@ Will run diagnostics on the claude code instalation.You will see an output like 
  └ Search: OK (vendor)
 ```
 
+## /export
+
+Will export the current session chat history to a file. This command is very useful. Here is an example of the output:
+
+```
+❯ cat  2025-10-30-caveat-the-messages-below-were-generated-by-the-u.txt
+
+ ▐▛███▜▌   Claude Code v2.0.30
+▝▜█████▛▘  Sonnet 4.5 · Claude Pro
+  ▘▘ ▝▝    /Users/diegopacheco/git/diegopacheco/The-Art-of-Building-with-AI
+
+> /config
+  ⎿  Status dialog dismissed
+
+> /config
+  ⎿  Status dialog dismissed
+
+> /bashes
+  ⎿  Background tasks dialog dismissed
+
+> /cost
+  ⎿  With your Claude Pro subscription, no need to monitor cost — your subscription includes Claude Code usage
+
+> /doctor
+  ⎿  Claude Code diagnostics dismissed
+  
+```
+
 ## /config
 
 Allow you to configure several aspects of claude code. Like: If you want claude to auto-compact or not, if claude should show tips or not, what theme do you want in the terminal, the output style, what LLM model to use, to have code rewinding enabled or not, among other options.
