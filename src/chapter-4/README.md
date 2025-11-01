@@ -1,4 +1,4 @@
-# Chapter 4 -
+# Chapter 4 - Agents
 
 [Agents](https://aws.amazon.com/what-is/ai-agents/) are not new. I remember coding an agent in university back in the 2000s. However agents are even [older than that](https://medium.com/@tasospapalias/sibyls-and-servants-the-roots-of-artificial-intelligence-in-ancient-greek-lore-b28257e98a0a). Agents are software that respond to change or an event on your behalf, agents can be 100% autonomous or assisted.
 

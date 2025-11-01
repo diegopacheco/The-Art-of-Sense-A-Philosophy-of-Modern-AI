@@ -310,6 +310,8 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <p><a href="./chapter-5/README.html">Chapter 5 - Claude Code</a></p>
 <ul>
 <li><a href="./chapter-5/WHAT.html">What is Claude Code?</a></li>
+<li><a href="./chapter-5/PROMPT-LIBRARY.html">Prompt Library</a></li>
+<li><a href="./chapter-5/PROMPT_ADVICES.html">Prompt Advices</a></li>
 <li><a href="./chapter-5/CMDS.html">Commands</a></li>
 <li><a href="./chapter-5/BASH_MODE.html">Bash Mode</a></li>
 <li><a href="./chapter-5/EXCLUSIONS.html">Exclusions </a></li>
@@ -556,7 +558,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <p>TBD</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="fine-tuning"><a class="header" href="#fine-tuning">Fine Tuning</a></h1>
 <p>TBD</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-4--"><a class="header" href="#chapter-4--">Chapter 4 -</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-4---agents"><a class="header" href="#chapter-4---agents">Chapter 4 - Agents</a></h1>
 <p><a href="https://aws.amazon.com/what-is/ai-agents/">Agents</a> are not new. I remember coding an agent in university back in the 2000s. However agents are even <a href="https://medium.com/@tasospapalias/sibyls-and-servants-the-roots-of-artificial-intelligence-in-ancient-greek-lore-b28257e98a0a">older than that</a>. Agents are software that respond to change or an event on your behalf, agents can be 100% autonomous or assisted.</p>
 <h2 id="what-is-an-ai-agent"><a class="header" href="#what-is-an-ai-agent">What is an AI Agent?</a></h2>
 <p>An AI Agent is a type of software agent that uses AI to perform tasks or computations, autonomously or semi-autonomously. AI agents can perceive their environment, make decisions, and take actions to achieve specific goals. They can range from simple rule-based systems to complex machine learning models that adapt and learn from their interactions. LLMs are a very good foundation to create AI agents.</p>
@@ -673,9 +675,26 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <h2 id="claude-code"><a class="header" href="#claude-code">Claude Code</a></h2>
 <p><a href="https://www.claude.com/product/claude-code">Claude Code</a> by anthropic is another coding agent. IMHO it's the best agent coding tool out there. Claude code works with anthropic LLM models.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-5---claude-code"><a class="header" href="#chapter-5---claude-code">Chapter 5 - Claude Code</a></h1>
+<p>Claude does was extremely distupted when it launched Claude Code in mid 2024. Let's deep dive into claude, learn what it can do and how will change your day-by-day use of AI.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-claude-code"><a class="header" href="#what-is-claude-code">What is Claude Code?</a></h1>
 <p>Claude code is an AI coding agent. Claude code blends Gen-AI LLM models with engineering in a tool focused on the terminal. It allows developers to interact with AI models directly (via API) from their command line interface (CLI) to generate, modify, and manage code.</p>
 <p>Claude code is very efficient for developers because developers are used to using the terminal for all things. Claude code is fast and very easy to use. So the bottleneck is not using claude code, but knowing the things you can do with it.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="prompt-library"><a class="header" href="#prompt-library">Prompt Library</a></h1>
+<p>Claude Code has a prompt library. When you have a powerfull LLM sometimes the GAP it's not use the LLM but knowing how you can use the LLM, meaning what things the LLM can do, so you need to learn how to know which questions to ask, sometimes theese questions are called "prompts".</p>
+<p><a href="https://docs.claude.com/en/resources/prompt-library/library">Claude Prompt Library</a> it's a list of questions or prompts if you will, that allow you to see things claude can do.</p>
+<img src="chapter-5/../images/05-claude-prompt-library.png" width="600"/>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="prompt-advice"><a class="header" href="#prompt-advice">Prompt Advice</a></h1>
+<p><code>Be Explicit in Prompts</code></p>
+<p>Also highly recommended for Claude Code prompts:</p>
+<ul>
+<li>Claude Code follows instructions literally</li>
+<li>"Fix the bug" vs "Fix the authentication timeout in login.ts:45"</li>
+<li>Reference specific files, functions, line numbers when possible</li>
+<li>Use @filename to reference files in slash commands</li>
+<li>Break large tasks into steps</li>
+<li>Claude tracks context across the session</li>
+<li>Easier to review and iterate on smaller changes</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="commands"><a class="header" href="#commands">Commands</a></h1>
 <p>Let's explore claude code <a href="https://docs.claude.com/en/docs/claude-code/slash-commands.md">commands</a>.</p>
 <h2 id="init"><a class="header" href="#init">/init</a></h2>
@@ -912,6 +931,24 @@ fi
 <p>Where it will turn your .gitignore into claude exclusions. You can run it whenever you want to sync your .gitignore with claude exclusions.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ultrathink"><a class="header" href="#ultrathink">ultrathink</a></h1>
 <p>ultrathink is a instruction you give to claude code that makes it think more deeply about the problem at hand. It encourages the model to take extra time to analyze the situation, consider multiple perspectives, and generate more thorough and well-reasoned responses.</p>
+<img src="chapter-5/../images/05-cc-ultrathink.png" width="600"/>
+<p>The moment you type ultrathink you will see claude highlight the word "ultrathink" with one color per letter explaning that claude will behave differently now.</p>
+<p>I asked Claude code the different between normal "Thinking mode on" and "ultrathink" and this is what I got:</p>
+<pre><code>Normal "Thinking On" Mode
+
+- Claude shows brief internal reasoning between actions
+- Thinking appears in short blocks as Claude works
+- Uses a standard token budget for reasoning
+- Good for general tasks and problem-solving
+
+Ultrathink Mode
+
+- Extended thinking with a much larger token budget (up to 10,000+ tokens)
+- Claude spends significantly more time reasoning before responding
+- Better for highly complex problems like advanced math, coding, and deep analysis
+- Higher latency and cost due to extensive reasoning
+- Claude can reason through multiple approaches and self-correct
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="custom-commands"><a class="header" href="#custom-commands">Custom Commands</a></h1>
 <p>Another very good feature in claude code is custom commands. Custom commands allow you to create your own commands. The nice thing is that claude will never run them, it will only run if you explicitly tell it to. This is useful for creating commands that you want to use frequently without having to type them out each time.</p>
 <p>Custom commands are useful for expensive tasks that you don't run often between sessions but don't run on every prompt. Here are some examples of custom commands:</p>
