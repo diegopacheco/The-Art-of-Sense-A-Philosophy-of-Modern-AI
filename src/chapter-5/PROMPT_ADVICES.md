@@ -10,3 +10,5 @@ Also highly recommended for Claude Code prompts:
 * Break large tasks into steps
 * Claude tracks context across the session
 * Easier to review and iterate on smaller changes
+
+Here it's Anthropics' official advice on prompt writing for [Claude Code](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices)
