@@ -2,13 +2,13 @@
 
 Even with all the problems and the [scams](https://www.youtube.com/watch?v=d7DtiMzMBdU). AI is real and AI is here to stay. I don't know if [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence) will happen one day, maybe, maybe not but there is no indication we are close to [AGI](https://perry-douglas.medium.com/a-classic-con-e8c7f9f3d61d).
 
-Don't be fooled by marketing of people saying I have AGI, people lie, and LLM models do not think, even if they say "thinking".Now we don't need AGI in order to have value from AI. The reality is that AI is a force of disruption, same as we saw with the internet and mobile phones.
+Don't be fooled by marketing of people saying I have AGI, people lie, and LLM models do not think, even if they say "thinking". Now we don't need AGI in order to have value from AI. The reality is that AI is a force of disruption, same as we saw with the internet and mobile phones.
 
 Therefore change is happening, and you need to adapt to it. You can either be a victim of change or you can be the driver of change.
 
 ## Force of Disruption
 
-AI it's a force of disruption. For one reason, people belive it. AI is not perfect, but does not need to be perfect. Yuval Harari said that we are on the "Amoeba age" of LLMs. That they are very basic and will get much better. I agree, but we don't know if will be in 10 years or 500 years. What we do know it's that AI is already disrupting many industries.
+AI is a force of disruption. For one reason, people believe it. AI is not perfect, but does not need to be perfect. Yuval Harari said that we are in the "Amoeba age" of LLMs. That they are very basic and will get much better. I agree, but we don't know if it will be in 10 years or 500 years. What we do know is that AI is already disrupting many industries.
 
 AI has the potential to disrupt like the internet, the mobile phone, and electricity did to some degree. For this reason alone you should be paying attention.
 
@@ -25,10 +25,10 @@ We also need acknowledge that there are scams. So many scams, here a list of som
 
 ## From Recession to Rollback
 
-In the beginning people tought that everyboddy would loose they jobs. Like:
+In the beginning people thought that everybody would lose their jobs. Like:
 * [AI is already taking white-collar jobs. Economists warn there’s ‘much more in the tank’](https://www.cnbc.com/2025/10/22/ai-taking-white-collar-jobs-economists-warn-much-more-in-the-tank.html)
 
-Now we are seeing an rollback from "AI will take our jobs" to "We better rollback AI can get humans", Dont belive me? Here some examples:
+Now we are seeing a rollback from "AI will take our jobs" to "We better rollback AI can get humans". Don't believe me? Here are some examples:
 * [Here is a collection of AI failures](https://aicodinghorrors.com/)
 * [$1.5 Billion AI Unicorn Collapse, All Offshore Programmers Impersonating!](https://www.binance.com/en/square/post/24723372076545?utm_source=pocket_saves)
 * [Replacing Humans with AI is Going Horribly Wrong](https://www.youtube.com/watch?v=QX1Xwzm9yHY)

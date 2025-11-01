@@ -181,7 +181,7 @@
                         <h1 id="commands"><a class="header" href="#commands">Commands</a></h1>
 <p>Let's explore claude code <a href="https://docs.claude.com/en/docs/claude-code/slash-commands.md">commands</a>.</p>
 <h2 id="init"><a class="header" href="#init">/init</a></h2>
-<p>Once you start a project with claude code, you run <code>/init</code>. Claude will read the whole codebase and create a file in your project called <code>CLAUDE.md</code> in the porject path.</p>
+<p>Once you start a project with claude code, you run <code>/init</code>. Claude will read the whole codebase and create a file in your project called <code>CLAUDE.md</code> in the project path.</p>
 <img src="../images/05-cc-init-cmd.png" width="600"/>
 <p>The resulting <code>CLAUDE.md</code> will vary depending on the project, but likely to contain:</p>
 <ul>
@@ -191,13 +191,13 @@
 <li>Content structure explanation</li>
 <li>Configuration information</li>
 </ul>
-<p><code>CLAUDE.md</code> works as a form of cache so claude don't need read all the codebase all the time to figureout this information. Because:</p>
+<p><code>CLAUDE.md</code> works as a form of cache so claude doesn't need to read all the codebase all the time to figure out this information. Because:</p>
 <ul>
 <li>Claude code has no memory between sessions</li>
-<li>Reduce the ammount of tokens used in each interaction</li>
+<li>Reduce the amount of tokens used in each interaction</li>
 <li>Prevents some guessing from claude</li>
 </ul>
-<p><code>CLAUDE.md</code> is documentation for AI not for humans. You should run this program everytime you start a new project with claude code.</p>
+<p><code>CLAUDE.md</code> is documentation for AI not for humans. You should run this program every time you start a new project with claude code.</p>
 <h2 id="context"><a class="header" href="#context">/context</a></h2>
 <p>This command allow you to see where claude code is using context from. It shows the files claude code has read to answer your questions.</p>
 <img src="../images/05-cc-context.png" width="600"/>
@@ -217,7 +217,7 @@
 <h2 id="cost"><a class="header" href="#cost">/cost</a></h2>
 <p>Show the cost of the current session. Only works if you are using a API key based subscription, either directly with Anthropic or via AWS Bedrock. If you are using a subscription based on messages, this command not display anything useful.</p>
 <h2 id="doctor"><a class="header" href="#doctor">/doctor</a></h2>
-<p>Will run diagnostics on the claude code instalation.You will see an output like this:</p>
+<p>Will run diagnostics on the claude code installation. You will see an output like this:</p>
 <pre><code>&gt; /doctor
 
  Diagnostics
@@ -254,11 +254,11 @@
   
 </code></pre>
 <h2 id="config"><a class="header" href="#config">/config</a></h2>
-<p>Allow you to configure several aspects of claude code. Like: If you want claude to auto-compact or not, if claude should show tips or not, what theme do you want in the terminal, the output style, what LLM model to use, to have code rewinding enabled or not, among other options.</p>
-<p>IF you use subscription based, you can see when a progress bar of how much of your tokens quota you have used. Also when the reset will happen.</p>
+<p>Allows you to configure several aspects of claude code. Like: If you want claude to auto-compact or not, if claude should show tips or not, what theme you want in the terminal, the output style, what LLM model to use, to have code rewinding enabled or not, among other options.</p>
+<p>If you use a subscription-based plan, you can see a progress bar of how much of your tokens quota you have used. Also when the reset will happen.</p>
 <img src="../images/05-cc-status-cmd.png" width="600"/>
 <h2 id="agents"><a class="header" href="#agents">/agents</a></h2>
-<p>List all the agents you have created. Also allow you to create new agents, edit existent agents or delete agents.</p>
+<p>Lists all the agents you have created. Also allows you to create new agents, edit existing agents or delete agents.</p>
 <img src="../images/05-cc-agents.png" width="600"/>
 <p>When you create a new agent, what claude code will do is to create a new folder under the path <code>~/.claude/agents/AGENT_NAME.md</code> with all the files needed to run the agent.</p>
 <p>Claude Code can generate the agent markdown file based on a prompt you will provide. You can edit the agent.md file later as well.</p>

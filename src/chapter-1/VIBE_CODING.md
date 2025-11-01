@@ -9,7 +9,7 @@ Vibe coding is a practice where you generate prompts and you `do not look at the
 * AI Hallucinates: And makes up APIs that don't exist or code that gives you bugs at runtime.
 * AI Just ignores you: You ask for a specific library, AI just ignores it and uses something else.
 
-Vibe code is very much like trial-and-error, you can build games with it even but don't fool yourself you can't use vibe coding for all things. Not reading the code and not reading the DIFFs is an awful practice. Asking for random changes and hoping the bugs go away is not a strategy. Any serious software engineer with a brain will tell you that vibe coding is a bad idea. 
+Vibe coding is very much like trial-and-error, you can build games with it even but don't fool yourself you can't use vibe coding for all things. Not reading the code and not reading the DIFFs is an awful practice. Asking for random changes and hoping the bugs go away is not a strategy. Any serious software engineer with a brain will tell you that vibe coding is a bad idea. 
 
 ## Where you can use vibe coding
 
@@ -17,7 +17,7 @@ Vibe code is very much like trial-and-error, you can build games with it even bu
 * It's for throw away discovery: You are prototyping something very fast, and you will throw away the code later.
 * It's for learning: You are learning a new language or framework, and you want to get a feel for it quickly.
 
-Considering those use cases, vibe coding is fine. However I would need to say that for the last one you want to read the code. Therefore it is not vibe coding. Now if you want to know is it possible to do this? And you are just aiming for feasibility yes, you can vibe code it but throw away after and do it right.
+Considering those use cases, vibe coding is fine. However I would need to say that for the last one you want to read the code. Therefore it is not vibe coding. Now if you want to know is it possible to do this? And you are just aiming for feasibility, yes, you can vibe code it but throw it away after and do it right.
 
 ## Where you MUST NOT use vibe coding
 
@@ -72,7 +72,7 @@ We need to have proficiency!
 
 Vibe coding can be very useful for creating a DEMO. However putting software into production it's a whole different game. 
 
-Karpathy explain how he got a DEMO on waymo in 2014 and was working. He tought it would be quickly.More than 11 years later in 2025 Waymo is still not 100% done. Why? Because some tasks are hard and the gap between the demo and production is huge.
+Karpathy explains how he got a DEMO on waymo in 2014 and it was working. He thought it would be quick. More than 11 years later in 2025 Waymo is still not 100% done. Why? Because some tasks are hard and the gap between the demo and production is huge.
 
 In the video below Andrej Karpathy explains it well:
 <div style="position: relative; width: 100%; padding-bottom: 56.25%">
@@ -83,4 +83,4 @@ In the video below Andrej Karpathy explains it well:
 </iframe>
 </div>
 
-Vibecoding can be useful to figureout what we want. Maybe to help non-engineers to figureout what they want, them better write requitements. In a sense vibe coding "democratize" building and everyboddy can be a software engineer, however to really use what you build with "vibe coding" must be some simple task, some tasks cannot be vibecoded and like I said before is a big mistake. However if is small enought and you can "build your own tool" why not.
+Vibe coding can be useful to figure out what we want. Maybe to help non-engineers to figure out what they want, then better write requirements. In a sense vibe coding "democratizes" building and everybody can be a software engineer, however to really use what you build with "vibe coding" must be some simple task, some tasks cannot be vibe coded and like I said before is a big mistake. However if it is small enough and you can "build your own tool" why not.

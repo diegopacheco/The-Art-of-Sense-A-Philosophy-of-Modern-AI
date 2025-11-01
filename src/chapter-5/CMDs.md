@@ -4,7 +4,7 @@ Let's explore claude code [commands](https://docs.claude.com/en/docs/claude-code
 
 ## /init
 
-Once you start a project with claude code, you run `/init`. Claude will read the whole codebase and create a file in your project called `CLAUDE.md` in the porject path.
+Once you start a project with claude code, you run `/init`. Claude will read the whole codebase and create a file in your project called `CLAUDE.md` in the project path.
 
 <img src="../images/05-cc-init-cmd.png" width="600"/>
 
@@ -15,12 +15,12 @@ The resulting `CLAUDE.md` will vary depending on the project, but likely to cont
 - Content structure explanation
 - Configuration information
 
-`CLAUDE.md` works as a form of cache so claude don't need read all the codebase all the time to figureout this information. Because:
+`CLAUDE.md` works as a form of cache so claude doesn't need to read all the codebase all the time to figure out this information. Because:
 * Claude code has no memory between sessions
-* Reduce the ammount of tokens used in each interaction
+* Reduce the amount of tokens used in each interaction
 * Prevents some guessing from claude
 
-`CLAUDE.md` is documentation for AI not for humans. You should run this program everytime you start a new project with claude code.
+`CLAUDE.md` is documentation for AI not for humans. You should run this program every time you start a new project with claude code.
 
 ## /context
 
@@ -53,7 +53,7 @@ Show the cost of the current session. Only works if you are using a API key base
 
 ## /doctor
 
-Will run diagnostics on the claude code instalation.You will see an output like this:
+Will run diagnostics on the claude code installation. You will see an output like this:
 ```
 > /doctor
 
@@ -97,15 +97,15 @@ Will export the current session chat history to a file. This command is very use
 
 ## /config
 
-Allow you to configure several aspects of claude code. Like: If you want claude to auto-compact or not, if claude should show tips or not, what theme do you want in the terminal, the output style, what LLM model to use, to have code rewinding enabled or not, among other options.
+Allows you to configure several aspects of claude code. Like: If you want claude to auto-compact or not, if claude should show tips or not, what theme you want in the terminal, the output style, what LLM model to use, to have code rewinding enabled or not, among other options.
 
-IF you use subscription based, you can see when a progress bar of how much of your tokens quota you have used. Also when the reset will happen.
+If you use a subscription-based plan, you can see a progress bar of how much of your tokens quota you have used. Also when the reset will happen.
 
 <img src="../images/05-cc-status-cmd.png" width="600"/>
 
 ## /agents
 
-List all the agents you have created. Also allow you to create new agents, edit existent agents or delete agents.
+Lists all the agents you have created. Also allows you to create new agents, edit existing agents or delete agents.
 
 <img src="../images/05-cc-agents.png" width="600"/>
 

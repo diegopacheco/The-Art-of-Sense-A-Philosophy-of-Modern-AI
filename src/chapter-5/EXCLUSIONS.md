@@ -1,11 +1,11 @@
-# Exclusions 
+# Exclusions
 
-IF you dont' want claude read some files, thre is a way to tell claude code to ignore them. You might want do this for a couple of reasons:
-* 1. You want save tokens: Tokens are money, tokens are expensive, you dont want waste time and money on claude reading trash.
-* 2. You have sensitive information: Maybe you have some files that contains sensitive information that you dont want claude to read. Like PII, user data, credentials, etc.
+If you don't want claude to read some files, there is a way to tell claude code to ignore them. You might want to do this for a couple of reasons:
+* 1. You want to save tokens: Tokens are money, tokens are expensive, you don't want to waste time and money on claude reading trash.
+* 2. You have sensitive information: Maybe you have some files that contain sensitive information that you don't want claude to read. Like PII, user data, credentials, etc.
 * 3. You have large files that are not useful: Maybe you have some large files that are not useful for claude to read. Like logs, binaries, etc. 
 
-In order to make claude ignore this files you need add an entry on:
+In order to make claude ignore these files you need to add an entry in:
 * Global Exclusions: `~/.claude/settings.json`
 * Project Exclusions: `.claude/settings.json`
 
@@ -42,7 +42,7 @@ And add an entry like this:
 }
 ```
 
-Claude can still read this files, if you instruct him, otherwise he will ignore them.
+Claude can still read these files if you instruct it, otherwise it will ignore them.
 
 I wrote this script:
 
