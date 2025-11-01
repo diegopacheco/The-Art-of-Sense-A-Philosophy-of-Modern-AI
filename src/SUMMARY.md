@@ -41,6 +41,7 @@
 - [Chapter 4 - Agents](./chapter-4/README.md)
   - [What are Agents?](./chapter-4/WHAT.md)
   - [Context Window](./chapter-4/CONTEXT_WINDOW.md)
+  - [llms.txt & llms-full.txt](./chapter-4/LLMS.txt.md)
   - [Coding Agents](./chapter-4/CODING_AGENTS.md)
   - [Agent Patterns](./chapter-4/AGENTS_PATTERNS.md)
   - [MCP](./chapter-4/MCP.md)

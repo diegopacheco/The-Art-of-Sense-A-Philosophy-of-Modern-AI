@@ -297,6 +297,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <ul>
 <li><a href="./chapter-4/WHAT.html">What are Agents?</a></li>
 <li><a href="./chapter-4/CONTEXT_WINDOW.html">Context Window</a></li>
+<li><a href="./chapter-4/LLMS.txt.html">llms.txt &amp; llms-full.txt</a></li>
 <li><a href="./chapter-4/CODING_AGENTS.html">Coding Agents</a></li>
 <li><a href="./chapter-4/AGENTS_PATTERNS.html">Agent Patterns</a></li>
 <li><a href="./chapter-4/MCP.html">MCP</a></li>
@@ -576,7 +577,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li>Code Migrations</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="context-window"><a class="header" href="#context-window">Context Window</a></h1>
-<p>Context window is the term that referes to the ammount of text a model can process as input. LLM do not have many options to inteact with. Simply put you basically do everything via context window. What goes on the context window:</p>
+<p><a href="https://docs.claude.com/en/docs/build-with-claude/context-windows">Context window</a> is the term that referes to the ammount of text a model can process as input. LLM do not have many options to inteact with. Simply put you basically do everything via context window. What goes on the context window:</p>
 <ul>
 <li>User prompt: The text with the task or action you want the model to do.</li>
 <li>System prompt: The text that tells to the model how to behave.</li>
@@ -596,7 +597,42 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <tr><td>Claude Sonnet 4.5</td><td>200,000 tokens</td></tr>
 <tr><td>Clude Soneet Corp.</td><td>1,000,000 tokens</td></tr>
 </tbody></table>
-</div><div style="break-before: page; page-break-before: always;"></div><h1 id="coding-agents"><a class="header" href="#coding-agents">Coding Agents</a></h1>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="llmstxt-and-llms-fulltxt"><a class="header" href="#llmstxt-and-llms-fulltxt">llms.txt and llms-full.txt</a></h1>
+<p><a href="https://llmstxt.org/">llms.txt</a> and llms-full.txt this are text files(usually with markdown formatting) that contain information about various large language models (LLMs). Such idea is not new we had other indexing-related files like <code>robots.txt</code> or <code>sitemap.xml</code>.This is useful for LLM agents when reading websites more effectively.</p>
+<p>I asked Claude Code about about it:</p>
+<p>Prompt:</p>
+<pre><code>what is llms.txt and llms-full.txt?
+</code></pre>
+<p>I got:</p>
+<pre><code>llms.txt
+
+A concise navigation guide for AI models containing:
+- Project/site name (required H1 header)
+- Short summary in blockquote format
+- Structured hierarchy of important content
+- Links to markdown files with detailed information
+- Suggestions for essential vs optional content
+
+Uses Markdown format specifically because LLMs read it well.
+
+llms-full.txt
+
+A comprehensive single file containing all documentation content directly, eliminating the need for navigation across multiple files.
+
+Purpose
+
+These files live at the root (/llms.txt and /llms-full.txt) to help LLMs:
+- Quickly understand what a project/site is about
+- Navigate to relevant information efficiently
+- Access complete documentation in one place
+</code></pre>
+<p>Examples across the internet:</p>
+<ul>
+<li><a href="https://docs.claude.com/llms-full.txt">Claude</a></li>
+<li><a href="https://cdn.openai.com/API/docs/txt/llms.txt">OpenAI</a></li>
+<li><a href="https://langchain-ai.github.io/langgraph/llms-txt-overview/">LangGraph</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="coding-agents"><a class="header" href="#coding-agents">Coding Agents</a></h1>
 <p>Coding Agents are AI agents focused on writing code. There are many coding agents like: <a href="https://github.com/features/copilot">GitHub Copilot</a>, <a href="https://www.claude.com/product/claude-code">Claude Code</a>, <a href="https://aws.amazon.com/q/">Amazon Q</a>, <a href="https://kiro.dev/">AWS Kiro</a>, <a href="https://jules.google/">Google Jules</a>, <a href="https://chatgpt.com/features/codex">Open AI Codex</a>, <a href="https://github.com/google-gemini/gemini-cli">Google Gemini</a> and many others. There are basically 3 kinds of coding agents.</p>
 <h2 id="sandbox-based"><a class="header" href="#sandbox-based">Sandbox Based</a></h2>
 <p>Google Jules, Google Gemini, Open AI Code are examples of Sandbox Based coding agents. Such agents have their own environments, which is a <code>sandbox</code>, meaning if they break out, it's not your machine, so it's more secure. Some solutions often have a CLI option.</p>
@@ -695,6 +731,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li>Claude tracks context across the session</li>
 <li>Easier to review and iterate on smaller changes</li>
 </ul>
+<p>Here it's Anthropics' official advice on prompt writing for <a href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices">Claude Code</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="commands"><a class="header" href="#commands">Commands</a></h1>
 <p>Let's explore claude code <a href="https://docs.claude.com/en/docs/claude-code/slash-commands.md">commands</a>.</p>
 <h2 id="init"><a class="header" href="#init">/init</a></h2>
@@ -1064,7 +1101,7 @@ than chat-specific features.
 <li><strong>Script</strong>: Claude can create the script you need to get something done and executed.</li>
 </ul>
 <h2 id="status-line"><a class="header" href="#status-line">Status Line</a></h2>
-<p>Claude status Line, it's a feature where you can customize the status line that appears at the bottom of the Claude Code interface. You can do that to display useful information, there is a MCP for that called <code>ssstatusline</code>. You can use that MCP to create your <a href="https://github.com/sirmalloc/ccstatusline">own status line</a>.</p>
+<p>Claude <a href="https://docs.claude.com/en/docs/claude-code/statusline">status Line</a>, it's a feature where you can customize the status line that appears at the bottom of the Claude Code interface. You can do that to display useful information, there is a MCP for that called <code>ccstatusline</code>. You can use that MCP to create your <a href="https://github.com/sirmalloc/ccstatusline">own status line</a>.</p>
 <p>To install:</p>
 <pre><code class="language-bash">npx ccstatusline@latest
 </code></pre>
@@ -1094,6 +1131,7 @@ Main Menu
 <p>Here is a list of useful MCPs for Claude Code, again, use with caution.</p>
 <ul>
 <li><a href="https://mcp.so/">MCPs</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/mcp">MCPs from Claude Docs</a></li>
 <li><a href="https://github.com/hesreallyhim/awesome-claude-code">awesome-claude-code</a></li>
 <li><a href="https://mcpservers.org/">awesome-mcp-servers 1</a></li>
 <li><a href="https://github.com/punkpeye/awesome-mcp-servers">awesome-mcp-servers 2</a></li>
@@ -1755,22 +1793,6 @@ Generative AI capability for creating video content from text descriptions or ot
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

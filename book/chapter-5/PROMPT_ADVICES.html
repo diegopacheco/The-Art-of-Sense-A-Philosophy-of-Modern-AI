@@ -190,6 +190,7 @@
 <li>Claude tracks context across the session</li>
 <li>Easier to review and iterate on smaller changes</li>
 </ul>
+<p>Here it's Anthropics' official advice on prompt writing for <a href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices">Claude Code</a></p>
 
                     </main>
 
@@ -220,22 +221,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

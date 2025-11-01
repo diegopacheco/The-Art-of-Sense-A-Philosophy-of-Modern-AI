@@ -220,7 +220,7 @@ than chat-specific features.
 <li><strong>Script</strong>: Claude can create the script you need to get something done and executed.</li>
 </ul>
 <h2 id="status-line"><a class="header" href="#status-line">Status Line</a></h2>
-<p>Claude status Line, it's a feature where you can customize the status line that appears at the bottom of the Claude Code interface. You can do that to display useful information, there is a MCP for that called <code>ssstatusline</code>. You can use that MCP to create your <a href="https://github.com/sirmalloc/ccstatusline">own status line</a>.</p>
+<p>Claude <a href="https://docs.claude.com/en/docs/claude-code/statusline">status Line</a>, it's a feature where you can customize the status line that appears at the bottom of the Claude Code interface. You can do that to display useful information, there is a MCP for that called <code>ccstatusline</code>. You can use that MCP to create your <a href="https://github.com/sirmalloc/ccstatusline">own status line</a>.</p>
 <p>To install:</p>
 <pre><code class="language-bash">npx ccstatusline@latest
 </code></pre>
@@ -250,6 +250,7 @@ Main Menu
 <p>Here is a list of useful MCPs for Claude Code, again, use with caution.</p>
 <ul>
 <li><a href="https://mcp.so/">MCPs</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/mcp">MCPs from Claude Docs</a></li>
 <li><a href="https://github.com/hesreallyhim/awesome-claude-code">awesome-claude-code</a></li>
 <li><a href="https://mcpservers.org/">awesome-mcp-servers 1</a></li>
 <li><a href="https://github.com/punkpeye/awesome-mcp-servers">awesome-mcp-servers 2</a></li>
@@ -285,22 +286,6 @@ Main Menu
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
