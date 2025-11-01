@@ -48,7 +48,7 @@ Running bash, it's a swiss army knife. You can do almost anything with bash. For
 
 ## Status Line
 
-Claude status Line, it's a feature where you can customize the status line that appears at the bottom of the Claude Code interface. You can do that to display useful information, there is a MCP for that called `ssstatusline`. You can use that MCP to create your [own status line](https://github.com/sirmalloc/ccstatusline).
+Claude [status Line](https://docs.claude.com/en/docs/claude-code/statusline), it's a feature where you can customize the status line that appears at the bottom of the Claude Code interface. You can do that to display useful information, there is a MCP for that called `ccstatusline`. You can use that MCP to create your [own status line](https://github.com/sirmalloc/ccstatusline).
 
 To install:
 ```bash
