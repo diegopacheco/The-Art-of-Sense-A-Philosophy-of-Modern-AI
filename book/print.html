@@ -766,7 +766,150 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <img src="chapter-5/../images/05-cc-bashmode.png" width="600" caption="Claude Code Bash Mode"/>
 <p>You literaly can call any program, script that you have available in your terminal. For example you can do: <code>ps</code>, <code>kill</code>, run <code>npm</code> run maven <code>mvn</code> as long as is not needs iterative shell to run.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="exclusions"><a class="header" href="#exclusions">Exclusions</a></h1>
-<p>TBD</p>
+<p>IF you dont' want claude read some files, thre is a way to tell claude code to ignore them. You might want do this for a couple of reasons:</p>
+<ul>
+<li>
+<ol>
+<li>You want save tokens: Tokens are money, tokens are expensive, you dont want waste time and money on claude reading trash.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>You have sensitive information: Maybe you have some files that contains sensitive information that you dont want claude to read. Like PII, user data, credentials, etc.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>You have large files that are not useful: Maybe you have some large files that are not useful for claude to read. Like logs, binaries, etc.</li>
+</ol>
+</li>
+</ul>
+<p>In order to make claude ignore this files you need add an entry on:</p>
+<ul>
+<li>Global Exclusions: <code>~/.claude/settings.json</code></li>
+<li>Project Exclusions: <code>.claude/settings.json</code></li>
+</ul>
+<p>And add an entry like this:</p>
+<pre><code class="language-json">{
+  "permissions": {
+    "deny": [
+      "Read(./node_modules/**)",
+      "Read(./vendor/**)",
+      "Read(./venv/**)",
+      "Read(./dist/**)",
+      "Read(./build/**)",
+      "Read(./out/**)",
+      "Read(./**/*.min.js)",
+      "Read(./**/*.bundle.js)",
+      "Read(./**/*.map)",
+      "Read(./package-lock.json)",
+      "Read(./yarn.lock)",
+      "Read(./pnpm-lock.yaml)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./**/*.key)",
+      "Read(./**/*.pem)",
+      "Read(./credentials.json)",
+      "Read(./coverage/**)",
+      "Read(./.nyc_output/**)",
+      "Read(./.vscode/**)",
+      "Read(./.idea/**)",
+      "Read(./**/*.log)",
+      "Read(./data/**)"
+    ]
+  }
+}
+</code></pre>
+<p>Claude can still read this files, if you instruct him, otherwise he will ignore them.</p>
+<p>I wrote this script:</p>
+<p>claude-ignore.sh</p>
+<pre><code>
+#!/bin/bash
+
+CLAUDEIGNORE=".claudeignore"
+GITIGNORE=".gitignore"
+SETTINGS_FILE=".claude/settings.json"
+ADDED_IGNORE=()
+ADDED_DENY=()
+
+mkdir -p .claude
+
+if [ -f "$GITIGNORE" ]; then
+  while IFS= read -r line || [ -n "$line" ]; do
+    if [ -n "$line" ] &amp;&amp; [[ ! "$line" =~ ^#.*$ ]]; then
+      if ! grep -Fxq "$line" "$CLAUDEIGNORE" 2&gt;/dev/null; then
+        echo "$line" &gt;&gt; "$CLAUDEIGNORE"
+        ADDED_IGNORE+=("$line")
+      fi
+    fi
+  done &lt; "$GITIGNORE"
+fi
+
+SETTINGS_ENTRY=".claude/settings.json"
+if ! grep -Fxq "$SETTINGS_ENTRY" "$CLAUDEIGNORE" 2&gt;/dev/null; then
+  echo "$SETTINGS_ENTRY" &gt;&gt; "$CLAUDEIGNORE"
+  ADDED_IGNORE+=("$SETTINGS_ENTRY")
+fi
+
+if [ ! -f "$SETTINGS_FILE" ]; then
+  echo '{"writePermissions":{"deny":[]}}' &gt; "$SETTINGS_FILE"
+fi
+
+TEMP_FILE=$(mktemp)
+if [ -f "$GITIGNORE" ]; then
+  while IFS= read -r line || [ -n "$line" ]; do
+    if [ -n "$line" ] &amp;&amp; [[ ! "$line" =~ ^#.*$ ]]; then
+      if ! grep -q "\"$line\"" "$SETTINGS_FILE" 2&gt;/dev/null; then
+        ADDED_DENY+=("$line")
+      fi
+    fi
+  done &lt; "$GITIGNORE"
+fi
+
+if [ ${#ADDED_DENY[@]} -gt 0 ]; then
+  python3 -c "
+import json
+import sys
+
+with open('$SETTINGS_FILE', 'r') as f:
+    data = json.load(f)
+
+if 'writePermissions' not in data:
+    data['writePermissions'] = {}
+if 'deny' not in data['writePermissions']:
+    data['writePermissions']['deny'] = []
+
+deny_list = data['writePermissions']['deny']
+new_entries = [$(printf '"%s",' "${ADDED_DENY[@]}" | sed 's/,$//')]
+for entry in new_entries:
+    if entry not in deny_list:
+        deny_list.append(entry)
+
+with open('$SETTINGS_FILE', 'w') as f:
+    json.dump(data, f, indent=2)
+"
+fi
+
+echo "Added entries to .claudeignore:"
+for entry in "${ADDED_IGNORE[@]}"; do
+  echo "  - $entry"
+done
+
+if [ ${#ADDED_IGNORE[@]} -eq 0 ]; then
+  echo "  (no new entries added)"
+fi
+
+echo ""
+echo "Added write permission denies to .claude/settings.json:"
+for entry in "${ADDED_DENY[@]}"; do
+  echo "  - $entry"
+done
+
+if [ ${#ADDED_DENY[@]} -eq 0 ]; then
+  echo "  (no new denies added)"
+fi
+</code></pre>
+<p>Where it will turn your .gitignore into claude exclusions. You can run it whenever you want to sync your .gitignore with claude exclusions.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ultrathink"><a class="header" href="#ultrathink">ultrathink</a></h1>
 <p>ultrathink is a instruction you give to claude code that makes it think more deeply about the problem at hand. It encourages the model to take extra time to analyze the situation, consider multiple perspectives, and generate more thorough and well-reasoned responses.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="custom-commands"><a class="header" href="#custom-commands">Custom Commands</a></h1>
@@ -804,11 +947,82 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <p>Hooks are a nice feature that claude code has that allow you to create custom workflows. Hooks allow you to trigger a script for instance that run all maven tests on the backend, everytime claude code finish refactoring some code in Java. Another example let's say you want run a litner or a formater everytime claude code finish generating some code for you in Javascript. You can create a hook for that.</p>
 <p>Here a example of how to <a href="https://docs.claude.com/en/docs/claude-code/hooks-guide">create a hook</a> in claude code.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="mcp-and-claude-code"><a class="header" href="#mcp-and-claude-code">MCP and Claude Code</a></h1>
-<p>TBD</p>
+<p>Anthropic created MCP to standardize how context is provided to LLMs. Claude Code as a AI coding agentleverages MCP to enhance its capabilities.However people think that claude code can only do things using MCP, which is not true. Claude Code has inside-of-the-box tools, that can do several things. In other words Claude can do a lot without MCP.</p>
+<p>I asked claude what tools he has inside of the box and this is what I got:</p>
+<p>Prompt:</p>
+<pre><code>Tell me chat tools Claude Code has inside-of-the-box. I dont want know about MCP(external nor remote).
+</code></pre>
+<p>Result:</p>
+<pre><code>⏺ Claude Code has these built-in chat/interaction tools:
+
+Task Management:
+- TodoWrite - Create and manage task lists during coding sessions
+
+User Interaction:
+- AskUserQuestion - Ask questions during execution with multiple choice options (supports multi-select)
+
+Extensibility:
+- SlashCommand - Execute custom slash commands defined in .claude/commands/
+- Skill - Execute skills (currently none installed in your environment)
+
+Information Gathering:
+- WebSearch - Search the web for current information
+- WebFetch - Fetch and analyze content from URLs
+
+Specialized Agents:
+- Task - Launch specialized agents for complex tasks:
+- Explore - Fast codebase exploration
+- Plan - Planning agent
+- general-purpose - Multi-step task handling
+- changelog-generator - Generate changelogs from git commits
+- marketing-agent - Translate technical content to plain language
+
+All other tools (Bash, Read, Write, Edit, Glob, Grep, NotebookEdit) are file/system operation tools rather
+than chat-specific features.
+</code></pre>
+<p>As you can see Claude can do a lot without MCP. One important thing that I need to call it out is that becauise claude code can run bash commands in your terminal, that's perhaps is one of the most powerful things of the universe. MCP is great but there are lots of bad actors out there and you need be careful using MCP. Now using claude code tools and only leveraging whats in your machine, you are more secure.Because if you have a veted process to get tools in your machine or you do your due dilligence for what you install, them you can pigbank on that.</p>
+<p>Running bash, it's a swiss army knife. You can do almost anything with bash. For instance, here is a list of things, and not limited but what claude can do with bash:</p>
+<ul>
+<li><strong>Run any docker container</strong>: Same for podman. Yes there is a vector attack here, but if you get your containers from a internal trusted registry, you are gold.</li>
+<li><strong>Execute</strong>: Claude can also execute any command on a container, so it can run sql, it can deploy pods in k8s, it can create data, it can do anything you can do in bash.</li>
+<li><strong>Script</strong>: Claude can create the script you need to get something done and executed.</li>
+</ul>
 <h2 id="status-line"><a class="header" href="#status-line">Status Line</a></h2>
-<p>TBD</p>
+<p>Claude status Line, it's a feature where you can customize the status line that appears at the bottom of the Claude Code interface. You can do that to display useful information, there is a MCP for that called <code>ssstatusline</code>. You can use that MCP to create your <a href="https://github.com/sirmalloc/ccstatusline">own status line</a>.</p>
+<p>To install:</p>
+<pre><code class="language-bash">npx ccstatusline@latest
+</code></pre>
+<pre><code>CCStatusline Configuration | v2.0.21
+
+╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ &gt; Preview  (ctrl+s to save configuration at any time)                                                          │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+  Model: Claude | Ctx: 18.6k | ⎇ main | (+42,-10)
+
+Main Menu
+
+▶  📝 Edit Lines
+   🎨 Edit Colors
+   ⚡ Powerline Setup
+
+   💻 Terminal Options
+   🌐 Global Overrides
+
+   🔌 Uninstall from Claude Code
+   🚪 Exit
+
+  Configure any number of status lines with various widgets like model info, git status, and token usage
+</code></pre>
+<p>Them do all configs you want and just click on "Install on Claude Code".</p>
 <h2 id="useful-mcps"><a class="header" href="#useful-mcps">Useful MCPs</a></h2>
-<p>TBD</p>
+<p>Here is a list of useful MCPs for Claude Code, again, use with caution.</p>
+<ul>
+<li><a href="https://mcp.so/">MCPs</a></li>
+<li><a href="https://github.com/hesreallyhim/awesome-claude-code">awesome-claude-code</a></li>
+<li><a href="https://mcpservers.org/">awesome-mcp-servers 1</a></li>
+<li><a href="https://github.com/punkpeye/awesome-mcp-servers">awesome-mcp-servers 2</a></li>
+<li><a href="https://github.com/modelcontextprotocol/servers">model context protocol servers</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="decision-criteria"><a class="header" href="#decision-criteria">Decision Criteria</a></h1>
 <p>When to Use: Hooks vs Commands vs Agents vs CLAUDE.md?</p>
 <pre><code>I asked claude code for some criteria to decide when to use each of these features.
