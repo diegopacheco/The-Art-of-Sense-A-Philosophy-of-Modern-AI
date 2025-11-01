@@ -84,6 +84,7 @@ Then do all configs you want and just click on "Install on Claude Code".
 Here is a list of useful MCPs for Claude Code, again, use with caution.
 
 * [MCPs](https://mcp.so/)
+* [MCPs from Claude Docs](https://docs.claude.com/en/docs/claude-code/mcp)
 * [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
 * [awesome-mcp-servers 1](https://mcpservers.org/)
 * [awesome-mcp-servers 2](https://github.com/punkpeye/awesome-mcp-servers)
