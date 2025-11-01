@@ -118,6 +118,8 @@ Hire, develop, retain, and truly grow talent at scale
 
 - [Chapter 5 - Claude Code](./chapter-5/README.md)
   - [What is Claude Code?](./chapter-5/WHAT.md)
+  - [Prompt Library](./chapter-5/PROMPT-LIBRARY.md)
+  - [Prompt Advices](./chapter-5/PROMPT_ADVICES.md)
   - [Commands](./chapter-5/CMDS.md)
   - [Bash Mode](./chapter-5/BASH_MODE.md)
   - [Exclusions ](./chapter-5/EXCLUSIONS.md)
