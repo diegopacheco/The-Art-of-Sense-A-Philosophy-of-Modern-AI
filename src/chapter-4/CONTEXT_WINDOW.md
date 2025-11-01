@@ -1,6 +1,6 @@
 # Context Window
 
-Context window is the term that referes to the ammount of text a model can process as input. LLM do not have many options to inteact with. Simply put you basically do everything via context window. What goes on the context window:
+[Context window](https://docs.claude.com/en/docs/build-with-claude/context-windows) is the term that referes to the ammount of text a model can process as input. LLM do not have many options to inteact with. Simply put you basically do everything via context window. What goes on the context window:
 * User prompt: The text with the task or action you want the model to do.
 * System prompt: The text that tells to the model how to behave.
 * Few shot examples: Examples of inputs and outputs that help the model to better perform.
