@@ -382,7 +382,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <p>Don't be fooled by marketing of people saying I have AGI, people lie, and LLM models do not think, even if they say "thinking". Now we don't need AGI in order to have value from AI. The reality is that AI is a force of disruption, same as we saw with the internet and mobile phones.</p>
 <p>Therefore change is happening, and you need to adapt to it. You can either be a victim of change or you can be the driver of change.</p>
 <h2 id="force-of-disruption"><a class="header" href="#force-of-disruption">Force of Disruption</a></h2>
-<p>AI is a force of disruption. For one reason, people believe it. AI is not perfect, but does not need to be perfect. Yuval Harari said that we are in the "Amoeba age" of LLMs. That they are very basic and will get much better. I agree, but we don't know if it will be in 10 years or 500 years. What we do know is that AI is already disrupting many industries.</p>
+<p>AI is a force of disruption. For one reason, people believe it. <a href="https://diego-pacheco.blogspot.com/2025/11/ai-coding-agents-economics.html">AI is not perfect</a>, but does not need to be perfect. Yuval Harari said that we are in the "Amoeba age" of LLMs. That they are very basic and will get much better. I agree, but we don't know if it will be in 10 years or 500 years. What we do know is that AI is already disrupting many industries.</p>
 <p>AI has the potential to disrupt like the internet, the mobile phone, and electricity did to some degree. For this reason alone you should be paying attention.</p>
 <h2 id="scams"><a class="header" href="#scams">Scams</a></h2>
 <p>We also need acknowledge that there are scams. So many scams, here a list of some:</p>
@@ -1326,12 +1326,35 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <li>Is this a complex multi-step investigation? → Custom Agent</li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-6---testing-with-ai"><a class="header" href="#chapter-6---testing-with-ai">Chapter 6 - Testing with AI</a></h1>
+<p>Testing matters more than ever with AI. Because AI halucinates e eventually will mess up your existing code, and will stop working, so when you will catch that? hopefully before your users do. Because AI is not 100% predictable and has precision issues, you make have tests to compensate that.</p>
+<p>Otherwise AI will break your code, it's just a matter of time, will happen. As long as you have good testing diversity and decent coverage, you will be fine because tests are the ultimate guardrails for AI.</p>
+<p>So before AI 100% tests sounded crazy, but now is actually a must have. Ohterwise AI will introduce a lot of P0 bugs more often than you can imagine. Before we do any other more adevanced use case for coding agents using AI, we need to get more tests and get good and reliable tests in place.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="why-use-ai-for-testing"><a class="header" href="#why-use-ai-for-testing">Why use AI for Testing?</a></h1>
-<p>TBD</p>
+<p>The reality is that software engineers are under constant pressure for delivery. Such pressure plus imature management, leads to skipping tests. You might not write the best abstraction fo the universe, you might not right the best code of the universe in order to deliver, such trade-offs are fine as long as used with balance and you are not living tech-debt first. Now tests, should never ever be skipped, not matter how much in a hurry you are, not matter how much tight yout deadline is, no happer if sprint is close to the end. Skipping tests is the wrong decision always.</p>
+<p>We know skipping tests is wrong. But all companies they have legacy systems. There is always software before we arrive in a company(unless is a startup on day 1). The realioty is there is so much technical debt that, you can't pay it all at once. Companies pay technical debt but never as much as they should. Quality ends up being compromised. Which is not a wise decision and eventually will have catastrophic consequences.</p>
+<p>Thanks to AI coding agents, now we can add more tests, which before might not be possible due lack of priorization or investments. Now we can do more tests to systems we would not do it, not because we did not want it but because constraints were too high. AI coding agents can help us to write more tests, and better tests, faster. This is huge win, and we should take it.</p>
 <h2 id="testing-ai"><a class="header" href="#testing-ai">Testing AI</a></h2>
-<p>TBD</p>
+<p>We should not test OpenAI API, Anthorpic API. That will cost money and will be hard to get right, due the lack of predictability of such systems. However a Smoke test it would be reasonable. Smoke tests are high level tests that verify that the most important functionalities of a system are working. They are not meant to be exhaustive, but rather to provide a quick check that the system is functioning as expected.</p>
+<p>Integration tests that tests functionalities that have AI in the middle or purely AI is okay to test, but you need to be smart because you might not have the same result all the times, so maybe instead of checking an absolute value, maybe if something is presernt, or contains same range of possible values.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ai-to-help-with-testing"><a class="header" href="#ai-to-help-with-testing">AI to Help with Testing</a></h1>
-<p>TBD</p>
+<p>One of the best use cases for AI in engineering is around test geenration. AI is very good generating tests. <a href="https://arxiv.org/pdf/2402.09171">Facebook has this amazing paper</a> abut they findings using AI to generate tests, published in 2024.</p>
+<p>You can use AI to:</p>
+<ul>
+<li>Generate Unit Tests
+<ul>
+<li>Considering Happy Path</li>
+<li>Considering Edge Cases</li>
+<li>Considering Error Handling</li>
+<li>Consideting negative and boundary cases</li>
+<li>Considering a bit of chaos like random inputs or even nulls and unexpected types/values</li>
+</ul>
+</li>
+<li>Generate Integration Tests</li>
+<li>Generate End to End Tests</li>
+</ul>
+<p>Now for Integration tests we need keep in we will need setup infrastructure in order to do <a href="https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html">proper test induction</a>. But you can use AI to create testing interfaces and them have proper testing strucute and proper testing principles in place.</p>
+<p>You can also use AI in order to check if you have gaps in your tests coverage, just ask it for it. Even if AI goes wrong, this is relatively safe, worst it will happen AI will generate tests you dont need, them you can delete them. Facebook talks about this in their paper. Facebook solution is to blend with engineering, running the tests, checking coverage, and getting rid of uncessary tests.</p>
+<p>All tasts that claude code can do, either by custom agents, custom commands or a simple a good prompt. I recommend custom commands for this, as you can have a more structured approach.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-7---migrations-with-ai"><a class="header" href="#chapter-7---migrations-with-ai">Chapter 7 - Migrations with AI</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="why-use-ai-for-migrations"><a class="header" href="#why-use-ai-for-migrations">Why use AI for Migrations?</a></h1>
 <p>TBD</p>
