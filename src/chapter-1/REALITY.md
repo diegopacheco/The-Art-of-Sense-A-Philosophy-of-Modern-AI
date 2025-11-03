@@ -8,7 +8,7 @@ Therefore change is happening, and you need to adapt to it. You can either be a 
 
 ## Force of Disruption
 
-AI is a force of disruption. For one reason, people believe it. AI is not perfect, but does not need to be perfect. Yuval Harari said that we are in the "Amoeba age" of LLMs. That they are very basic and will get much better. I agree, but we don't know if it will be in 10 years or 500 years. What we do know is that AI is already disrupting many industries.
+AI is a force of disruption. For one reason, people believe it. [AI is not perfect](https://diego-pacheco.blogspot.com/2025/11/ai-coding-agents-economics.html), but does not need to be perfect. Yuval Harari said that we are in the "Amoeba age" of LLMs. That they are very basic and will get much better. I agree, but we don't know if it will be in 10 years or 500 years. What we do know is that AI is already disrupting many industries.
 
 AI has the potential to disrupt like the internet, the mobile phone, and electricity did to some degree. For this reason alone you should be paying attention.
 
