@@ -1356,25 +1356,64 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <p>You can also use AI in order to check if you have gaps in your tests coverage, just ask it for it. Even if AI goes wrong, this is relatively safe, worst it will happen AI will generate tests you dont need, them you can delete them. Facebook talks about this in their paper. Facebook solution is to blend with engineering, running the tests, checking coverage, and getting rid of uncessary tests.</p>
 <p>All tasts that claude code can do, either by custom agents, custom commands or a simple a good prompt. I recommend custom commands for this, as you can have a more structured approach.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-7---migrations-with-ai"><a class="header" href="#chapter-7---migrations-with-ai">Chapter 7 - Migrations with AI</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="why-use-ai-for-migrations"><a class="header" href="#why-use-ai-for-migrations">Why use AI for Migrations?</a></h1>
-<p>TBD</p>
-<h2 id="what-is-a-migration"><a class="header" href="#what-is-a-migration">What is a Migration?</a></h2>
-<p>TBD</p>
+<p>Migrations are one of the best use cases for AI and engineering alongside with testing. Migrations can be complex but they are also very repetitive, making them a perfect candidate for AI assistance.</p>
+<p>AI does a great job helping in migrations. It's not perfect and there will be setbacks and even bugs bur the time savings are enormous.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="what-is-a-migration"><a class="header" href="#what-is-a-migration">What is a Migration?</a></h2>
+<p>It's a different kind of task or software project here it's necessary to change from from:</p>
+<ul>
+<li>One version to another (from Spring boot 2x to 3x)</li>
+<li>From one technology to another (like from Python to Scala)</li>
+<li>From one version of the database to another like (Postgres 16 to Postgres 17)</li>
+<li>From one cloud provider to another (AWS to GCP)</li>
+<li>From one framework to another (like from Angular to React)</li>
+</ul>
+<p>Migrations are necessary for a variaty or reasons, like:</p>
+<ul>
+<li>Security: To handle security issues and vulnerabilities</li>
+<li>Performance: To improve performance and scalability</li>
+<li>Cost: To reduce costs</li>
+<li>Design and maintainability: To improve design and maintainability</li>
+<li>New features: To take advantage of new features and capabilities</li>
+</ul>
 <h2 id="challenges-in-migrations"><a class="header" href="#challenges-in-migrations">Challenges in Migrations</a></h2>
-<p>TBD</p>
+<p>Migrations are difficult for a variety of reasons:</p>
+<ul>
+<li>Complexity: Migrations can be complex, especially for large applications with many dependencies. Migrght require spesific order of operations.</li>
+<li>Downtime: Migrations can require downtime, which can be disruptive to users. Not all migrations require downtime, but it's easier with downtime.</li>
+<li>Data Loss: There is a risk of data loss during migrations, especially if not done carefully (in case of database or encryption migrations).</li>
+<li>Time Pressure: Teams are usually focus on features and migrations take this time away from them.</li>
+<li>Testing: Migrations require extensive testing to ensure that everything works correctly after the migration. Usually testing is not pergect, which force mgirations to discover problems was burried in the old system.</li>
+</ul>
 <h2 id="difficult-reality-at-scale"><a class="header" href="#difficult-reality-at-scale">Difficult Reality at Scale</a></h2>
 <p>Migrations don't happen as often as they should.</p>
 <p>A lot of technical debt.</p>
-<p>TBD</p>
+<p>The thing is that, the more often you do migrations, easier it gets, but only if you have good overall architecture and operating principles, otherwisde is a war that never ends.</p>
+<p>Migrations are easily one of the biggestions pains at scale. Not because migrations are impossible but because people tend to not take them serious enoguth and snowball effecrt happens. Once the snowball starts rolling, it gets harder and harder to do migrations.</p>
+<h1 id="why-use-ai-for-migrations"><a class="header" href="#why-use-ai-for-migrations">Why use AI for Migrations?</a></h1>
+<p>Migrations are hard. Companies do not do as much migrations as they should. However with AI some of the friction and heavy lifthing can be reduced.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="inventory"><a class="header" href="#inventory">Inventory</a></h1>
-<p>TBD</p>
+<p>Invetory is the first step, we need perform assessments in order to know what we are dealing with. Usually inventories are ignored and that is a big mistake.</p>
+<p>An inventory allow us to plan and stratregize our next steps. Considering the advent of AI agents, now it's much easier to generate inventories.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="migrations-in-phases"><a class="header" href="#migrations-in-phases">Migrations in Phases</a></h1>
-<p>TBD</p>
+<p>A decent migration has Phases. Depending of the migration you will have more phases. It's very important to have a diagram where you can visualize the phases of the migration.</p>
+<p>Here is an example of migration phases:</p>
+<ol>
+<li>Phase 0 - Invetovy</li>
+<li>Phase 1 - Planning</li>
+<li>Phase 2 - Preparation</li>
+<li>Phase 3 - Execution</li>
+<li>Phase 4 - Validation</li>
+<li>Phase 5 - Rollback (if necessary)</li>
+<li>Phase 6 - Monitoring</li>
+</ol>
+<p>Execution it self should be broken down in smaller phases depending on the size of the migration. Validation is something that should also happen during preparation and execution.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="testing"><a class="header" href="#testing">Testing</a></h1>
 <p>You can't move if you don't have tests. Add tests first.</p>
-<p>TBD</p>
+<p>Since Gen-AI has this issue with <code>determinism</code>, it's very likely AI will introduce bugs, or even just delete whole features and mess up with things unrelated to your prompts.</p>
+<p>Tests are a great way to compensate for that. Because good tests are deterministic, they will help you identify when something is broken.So before touching anything, make sure you have good testing in place, we can use AI to help us write those tests as well.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="after-migrations"><a class="header" href="#after-migrations">After Migrations</a></h1>
-<p>TBD</p>
+<p>When Migration ends, they don't end. Because you always need to do clean up. Before you do clean up, you need check for <code>left overs</code> and <code>orphaned resources</code>.</p>
+<p>Usually monitoring and logging are the way to verify is someone(piece of software) was left behind.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-8---non-obvious-use-cases"><a class="header" href="#chapter-8---non-obvious-use-cases">Chapter 8 - Non-Obvious Use Cases</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="proof-reader"><a class="header" href="#proof-reader">Proof Reader</a></h1>
 <p>Using AI to Write and Spell Check Documents, AI is a great Proof Reader.</p>
