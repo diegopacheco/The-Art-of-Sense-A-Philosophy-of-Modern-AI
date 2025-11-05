@@ -31,12 +31,14 @@
 
         <!-- Custom theme stylesheets -->
 
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
         <!-- Provide site root and default themes to javascript -->
         <script>
             const path_to_root = "";
             const default_light_theme = "rust";
-            const default_dark_theme = "rust";
+            const default_dark_theme = "navy";
             window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
@@ -365,6 +367,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <h3 id="epilogue"><a class="header" href="#epilogue">Epilogue</a></h3>
 <ul>
 <li><a href="./epilogue/README.html">Epilogue</a></li>
+<li><a href="./epilogue/HOW_I_WROTE_THE_BOOK.html">How I wrote the book</a></li>
 <li><a href="./epilogue/REFERENCES.html">References</a></li>
 <li><a href="./epilogue/GLOSSARY.html">Glossary</a></li>
 <li><a href="./epilogue/BOOK_INDEX.html">Book Index</a></li>
@@ -1415,47 +1418,230 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <p>When Migration ends, they don't end. Because you always need to do clean up. Before you do clean up, you need check for <code>left overs</code> and <code>orphaned resources</code>.</p>
 <p>Usually monitoring and logging are the way to verify is someone(piece of software) was left behind.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-8---non-obvious-use-cases"><a class="header" href="#chapter-8---non-obvious-use-cases">Chapter 8 - Non-Obvious Use Cases</a></h1>
+<p>For this chapter I want cover some non-obvious use cases where AI can help engineers be more productive.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="proof-reader"><a class="header" href="#proof-reader">Proof Reader</a></h1>
 <p>Using AI to Write and Spell Check Documents, AI is a great Proof Reader.</p>
-<p>TBD</p>
+<p>It's common for people make mistakes when writing documents, sometimes is just typos, other times is grammar mistakes or even factual mistakes. AI is really great, finding a fixing all this commong issues.</p>
+<p>Here is a example of Claude code command you could use to proof read a document or your project:</p>
+<pre><code>~/.claude/commands/english.md
+</code></pre>
+<p>english.md</p>
+<pre><code># Fix my english
+- Read all my files
+- Fix all my english issues
+- Fix my typos
+- Don't touch the HTML files only the markdown files
+- Make sure you dont break anything, make sure you dont loose content
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h1>
 <p>Using ai to help troubleshoot problems in code, systems, and architectures.</p>
-<p>TBD</p>
 <h2 id="debugging-with-ai-using-images"><a class="header" href="#debugging-with-ai-using-images">Debugging with AI using Images</a></h2>
-<p>TBD</p>
+<p>Many people dont know but most of AI coding agents support you darg and drop image and the model can "read" the image and make sense of the image. This is very very useful for troubleshooting. AI is impressive hnadling images with errors like:</p>
+<ul>
+<li>Frontend/Mobile apps Errors (Screenshots of the app with errors)</li>
+<li>Backend/Infrastructure Errors (Screenshots of metrics, dashboards and alerts)</li>
+<li>Kubernetes Errors (Screenshots of kubernetes dashboards, pod errors, etc)</li>
+</ul>
 <h2 id="git-archaeology-for-troubleshooting"><a class="header" href="#git-archaeology-for-troubleshooting">Git Archaeology for Troubleshooting</a></h2>
-<p>TBD</p>
+<p>Also like I explained because AI it's very very good using git. AI can nativate into git log and history and figureout a bunch of things there. Sometimes AI would not figure out how to read remnote repositories, but you can also git clone repos for ai and them point AI to your file system.</p>
 <h2 id="analyzing-logs-with-ai"><a class="header" href="#analyzing-logs-with-ai">Analyzing Logs with AI</a></h2>
-<p>TBD</p>
+<p>Like git, AI is great reading logs, specially if logs have errors and stack traces, AI is impressive reading logs and finding patterns and issues. AI can also search on the AI(all coding agents pretty much have this feaature now a days).</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="documentation"><a class="header" href="#documentation">Documentation</a></h1>
-<p>TBD</p>
+<p>Documentation is a non-ovbious AI use case. Ofcouse if you just ask AI to generate documentation without much explanation(or the tech term its called few-shot) you will get bad results. Because AI will generate a bunch of crap. Now if you carefully tell AI todo and get good questions, a good templat that AI can fulfil you can indead generate amazing results.</p>
+<p>Documentation matter,s but it's just testing, something that people should do more but in reality they do not do as much as they should. Usually there is a plenty of things that are not documented, just because they are other priorities and people are slamed with of work doing other things. Sure you could argue that is a culture problem and documentation should be part of the culture and lyfecycle of engineering. In reality things are messy at scale and AI can really help a lot here. As long as we do the right due dilligence.</p>
 <h2 id="generating-changelogs"><a class="header" href="#generating-changelogs">Generating Changelogs</a></h2>
-<p>TBD</p>
+<p>Another good case for AI documentation is changelos. Yes, people should do it, and 100% this ia discipline problema and could be fixed without AI. But AI is pretty good into reading git log messages and figuring out what changed and why. It's so good that this is one of the tricks why ai is good in SWE benchmarks like HumanEval. Because it can read the git log and figure out what changed.</p>
+<p>Here is some evidence that AI Agents cheat on SWE-bench:</p>
+<ul>
+<li><a href="https://github.com/SWE-bench/SWE-bench/issues/465">Repo State Loopholes During Agentic Evaluation</a></li>
+<li><a href="https://bayes.net/swebench-hack/">Claude 4 hacked SWE-bench by peeking at future commits</a></li>
+<li><a href="https://www.reddit.com/r/OpenAI/comments/1nce3ua/meta_called_out_swe_bench_verified_for_being/?utm_source=chatgpt.com">Meta called out SWE bench Verified for being gamed by top AI models. Benchmark might be broken</a></li>
+</ul>
+<p>But this "cheat" also proof they are very good using Git, witch we can use in our advantage.</p>
+<p>Here is a claude code command example on how you could generate a changelog:</p>
+<pre><code>~/.claude/commands/changelog.md
+</code></pre>
+<p>changelog.md</p>
+<pre><code># Create or update oproject CHANGELOG.md
+- Read commits from git history
+- Read the code
+- Makesure the changelog has meaning
+- Do not loose content, dont delete content from other files
+- I want the following sections in the changelog:
+  - Added
+  - Changed
+  - Deprecated
+  - Removed
+  - Fixed
+  - Security
+- Give me a commit count per user
+</code></pre>
 <h2 id="generating-knowledge-base"><a class="header" href="#generating-knowledge-base">Generating Knowledge Base</a></h2>
-<p>TBD</p>
+<p>Another good AI documentation case is that you can make ai generate good documentation about why some changes happened. Imagine that AI could create a timeline with features and explain what features existed in a codebase. AI also can explain maybe technical decisions and explain where things are in the code. Making easier to make sense of projject ad code.</p>
+<p>Engineers always need to learn. Companies are always doing aquisitions and code bases always grow. However with the advent of AI we can makle the process faster and easier. Because now you dont need relly in one person you can use a LLM as your owen private architecture to explain to you wants going one.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="onboarding"><a class="header" href="#onboarding">Onboarding</a></h1>
-<p>TBD</p>
+<p>I don't like onboardings in general. Usually they are a massive waste of time, the idea of onboarding makes a lot of sense but in pratice how people run onboardings is often not effective, IMHO is a complete waste of time.</p>
+<p>The common issues I see with bad onboardings are:</p>
+<ul>
+<li>Manager is hands-off and just throw a bunch of links and code and ask people to read</li>
+<li>No Homeworks for the engineer (No output is an anti-pattern)</li>
+<li>No clear goals or expectations</li>
+<li>When are expentations the manager is just training the engineer how he like to work like: "I want story points of 3-5, dont do PRs with more than 10 files, show up to my 101s, update your JIRA tasks, etc".</li>
+</ul>
+<p>This is a complete waste of time, because the engineer show be, actually doing is:</p>
+<ul>
+<li>Make sure you have your enviroment ready (make sure you can run and debug the app)</li>
+<li>Make sure you understand where things are and now they work (test, deployment, infra, monitoring)</li>
+<li>Make sure you understand the basics of the business and the code</li>
+</ul>
+<p>Because onboarding is so terrible, pretty much is a 2-4 weeks vacation for the manager. The worst is that is common the engineer gets out of the onboarding and it's not <code>ready</code>. So bad expectations game already happen and the engineer is behind.</p>
+<p>A good onboarding should have:</p>
+<ul>
+<li>Have the enviroment ready (be able to run and debug the code)</li>
+<li>Homeworks (the engineer must do something, make sure PR, get some task done)</li>
+<li>Short, 1-2 weeks maximum</li>
+<li>Should be closely managed, otherwise it has a chance of being a disaster</li>
+</ul>
+<p>Now AI enters the field. Using AI, we can make this much better because, now the engineer can use AI as a private tutor. If the engineer knows how to ask the right questions it can lean much faster.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-9---learning-from-ai"><a class="header" href="#chapter-9---learning-from-ai">Chapter 9 - Learning from AI</a></h1>
+<p>AI can be a good teacher. Just keep in mind you better cross check what the teacher is telling you. A very simple and effective way to cross check ai - i just to ask links for reference. Them you can go in the internet and read the links and check for your self if AI is wrong or right.</p>
+<p>LLMs still halucinate, usually they halucinate when they don't know the answer, which often means not enough data on the topic in their training set. Evidence:</p>
+<ul>
+<li><a href="https://arxiv.org/pdf/2504.15771">ORION Grounded in Context: Retrieval-Based
+Method for Hallucination Detection</a></li>
+<li><a href="https://arxiv.org/pdf/2401.11817">Hallucination is Inevitable:
+An Innate Limitation of Large Language Models</a></li>
+<li><a href="https://arxiv.org/pdf/2406.07457">Estimating the Hallucination Rate of Generative AI</a></li>
+</ul>
+<p>So fact check AI. Besides that AI it a bar raiser, because you must be able to know that AI is lying to you, so you must level up your game and just do better. Know more than AI, so you can spot when it is wrong.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ideas"><a class="header" href="#ideas">Ideas</a></h1>
-<p>TBD</p>
+<p>Sometimes, especially when you are senior, you did a lot, you saw a lot. It's hard to findout what to learn or waht to build next. You use LLM to give you ideas on what to learn or what to explore.</p>
+<p>Here some example prompts:</p>
+<p>POCs Ideas</p>
+<pre><code>Give me 10 ideas of POCs I could do with Java and Spring Boot.
+</code></pre>
+<p>Datastructures and Algorithms Ideas</p>
+<pre><code>Give me 10 ideas of POCs I could do with advanced Data Structures and Algorithms in TS.
+</code></pre>
+<p>Papers Ideas</p>
+<pre><code>Give me 10 ideas of papers I could read about distributed systems.
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="proof-of-concepts-poc"><a class="header" href="#proof-of-concepts-poc">Proof of Concepts (Poc)</a></h1>
 <p>TBD</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="sentiment-analysis"><a class="header" href="#sentiment-analysis">Sentiment Analysis</a></h1>
-<p>TBD</p>
+<p>As humans we are stuck into our heads. We have our biases and sometimes we cant' see what we are doing in sense of being maybe too negative or too aggressive in our communication. This is always suttle and requires a lot of self-awareness to catch it. Not anymore, AI it's pretty good at detecting sentiment in text and can help us with that.</p>
 <h2 id="should-i-send-this-email"><a class="header" href="#should-i-send-this-email">Should I send this email?</a></h2>
-<p>TBD</p>
+<p>Let's see you wrote an email. Ask LLM to analyze the sentiment of the email and give you a recommendation if you should send it or not. You can ask if is aggresive, or if is constructive enough. You will learn a lot about your communication style. Plus you can avoid some conflicts by adjusting the tone of your emails.</p>
+<p>Emails are always cold tools that can easily be misinterpreted. Having an AI assistant that can help you adjust the tone of your emails it's a great way to improve your communication skills. The good news is that you just copy the email text and paste it into the prompt. No need to share any private data with third party tools.</p>
 <h2 id="am-i-too-aggressive-or-negative-in-this-message"><a class="header" href="#am-i-too-aggressive-or-negative-in-this-message">Am I too aggressive or negative in this message?</a></h2>
-<p>TBD</p>
+<p>Same technique can be usef for regular text messages, whatsapp, social media, blog posts, even for code comments. You can always ask the LLM to analyze the sentiment of your message before sending it. This will help you to be more aware of your communication style and adjust it if necessary.</p>
 <h2 id="analyzing-customer-feedback"><a class="header" href="#analyzing-customer-feedback">Analyzing Customer Feedback</a></h2>
-<p>TBD</p>
+<p>Either via images or text you can use AI to analyze customer feedback and detect sentiment. This can help you to understand how your customers feel about your product or service and make improvements accordingly. It's easy to fool yourself that is positive feedback when in reality is negative. AI can help you to see the real picture.</p>
+<h2 id="ai-has-bias-too"><a class="header" href="#ai-has-bias-too">AI has bias too</a></h2>
+<p>Keep in mind AI was trained with human data from books and the internet. So it can have the same biases as humans. Always double check the analysis and use your own judgement. AI is a tool to help you, not to replace you. IMHO this is a killer usecase and will help you have better relationships with people by improving your communication skills.</p>
+<p>Just keep in mind AI is not perfect, don't blindly trust it. Use it as a second opinion, not as the ultimate truth.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="epilogue-1"><a class="header" href="#epilogue-1">Epilogue</a></h1>
-<p>TBD</p>
+<p>So this is far from being the end. AI will continue to envolve and engineering field, with pratices, tools and techniques will evolve with it. Keep learning, keep exploring and keep building.</p>
+<p>Keep some important things in mind:</p>
+<ul>
+<li>AI is a tool, not a magician. Use it wisely.</li>
+<li>Always fact check AI output.</li>
+<li>Keep improving your skills, so you can better use AI.</li>
+<li>Keep Ownership of your work, AI is just an assistant.</li>
+<li>Keep exploring and experimenting with new tools and techniques.</li>
+</ul>
 <h2 id="navigation"><a class="header" href="#navigation">Navigation</a></h2>
 <ul>
+<li><a href="epilogue/HOW_I_WROTE_THE_BOOK.html">How I wrote the book</a></li>
 <li><a href="epilogue/REFERENCES.html">References</a></li>
 <li><a href="epilogue/GLOSSARY.html">Glossary</a></li>
 <li><a href="epilogue/BOOK_INDEX.html">Book Index</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="how-i-wrote-this-book"><a class="header" href="#how-i-wrote-this-book">How I wrote this book?</a></h1>
+<p>I blog <a href="https://diego-pacheco.blogspot.com/2007/03/boas-vindas-primeiro-post.html">since</a> <code>2007</code>, that is: <b><span id="years-blogging"></span></b>.
+Every page on this book has one or multiple links to blog posts I did on the past.</p>
+<p>I wrote this book in a very different way compared with my 3 previous books. My 3 previous books were written in a formal way. This one was written in a very different way. Let's explain the "formal process" and how usually it worked for me:</p>
+<ul>
+<li>You need to write a proposal, proposal get debated and approved, you write.</li>
+<li>Formal books have length requirements usually 300 pages.</li>
+<li>Formal books once approved are waterfall and have several phases.</li>
+<li>Once you deliver a chapter, there is a a english reviewer.</li>
+<li>After the english reviewer there is the technical reviewer.</li>
+<li>After that there is copy-writing, index, layouting and finally printing.</li>
+<li>Traditional process take from 7 to 12 months.</li>
+<li>I wrote books alone and with other people, more people you have, more coordination you need and longer it takes, more things can go wrong, it's literally no different than a project.</li>
+</ul>
+<p>I want a different experience, I did several things differently here, I'm not saying I would never do traditional books again, but for sure is different, there are somethings here I like a lot, for instance:</p>
+<ul>
+<li>Because I used <code>mdbook</code> the book is written with a tool in Rust which is markdown based.</li>
+<li>Mdbook has 3 killer features for me:
+<ul>
+<li>It has a built in search engine, and a very good one.</li>
+<li>It provides a direct link to all pages of the book, every page has a unique URL.</li>
+<li>It has a built in way to generate code snippets with syntax highlighting, videos, themes.</li>
+</ul>
+</li>
+<li>The book is hosted on git. Meaning I have version control over all the changes of the book what see what I did differently? just use git.</li>
+<li>IF I want say something different, on the traditional book I need to write a new book and people need to buy it to read it, here I just do a <code>git push</code> and it's live, because I have a workflow with github actions to publish the book in a github pages site.</li>
+<li>It's also a way for me to give it back for free.</li>
+</ul>
+<h2 id="what-tools-did-i-use"><a class="header" href="#what-tools-did-i-use">What tools did I use?</a></h2>
+<p>I basically use <a href="https://code.visualstudio.com/">VSCode</a> to write the book. I used <a href="https://github.com/features/copilot">Github Copilot</a> and <a href="https://github.com/anthropics/claude-code">Claude Code</a>.</p>
+<p>I did not use AI to generate the entire book. The book is mine, all content I wrote but I use AI to generate the following content:</p>
+<ul>
+<li>Index</li>
+<li>Glossary</li>
+<li>References</li>
+<li>Spell check and proof reading my english (fix typos and fix grammar issues never to wrote whole paragraphs).</li>
+</ul>
+<p>I used claude code <a href="https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands">custom commands</a> to do all this tasks, I create a <code>book-all</code> custom command that automated all those workflows:</p>
+<p>book-all.md</p>
+<pre><code class="language-markdown">## Perform several Tasks to publish my book
+- Read all markdown files
+- Perform the following tasks
+
+## Task 1 - # Create or Update my Glossary
+- My glossary is on a GLOSSARY.md
+- Make sure my glossary is up to date
+
+## Task 2 - # Create or Update my References
+- My references are in REFERENCES.md
+- Make sure my external references/links are up to date
+
+## Task 3 - # Create or update my book index
+- Index is on a file INDEX.MD
+- Make sure my index is up to date
+
+## Task 4 - # Create or update book CHANGELOG.md
+- Read commits from git history
+- Make sure the changelog has meaning
+- Only look for markdown files, ignore *.html.
+
+## Task 5 - # Fix my english
+- Fix all my english issues
+- Fix my typos
+- Don't touch the HTML files only the markdown files
+- Only fix english or grammar mistake, dont change my words or writting style
+- Make sure you dont break anything, make sure you dont loose content
+
+## Task 6 - # Make sure you did not lost content
+- You cannot loose content
+- Make sure you did not broke links
+- Make sure all content is there
+- Make sure you did not delete anything wrongly
+</code></pre>
+<p>Running this custom commands uses in avg ~70k tokens. So I use AI for the boring and repetitive tasks, not to write the book itself. When I run out of tokens on Claude Code I would fallback to Github Copilot.</p>
+<h2 id="cicd"><a class="header" href="#cicd">CI/CD</a></h2>
+<p>This book was written with CI/CD in mind from day one. I have a script called <code>bump-version.sh</code> that bumps the version of the book on a file on the root called "VERSION". When I released the book it had ~100 pages on version <code>1.0.0</code> during the first week of the book, I released content everyday. For the first week I did 6 releases: 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5 and 1.0.6. Each release had new content. I also used AI to generate a CHANGELOG.md file so you can track my changes. After release 1.0.5 the book is with 132 pages.</p>
+<p>This is killer feature because I can keep releasing new content, in a very lean/agile way, directly to you the reader.</p>
+<h2 id="did-you-like-my-work-did-it-help-you"><a class="header" href="#did-you-like-my-work-did-it-help-you">Did you like my work? Did it help you?</a></h2>
+<p>IF you like my work, you can help me buying one of my other books here:</p>
+<ul>
+<li><a href="https://www.amazon.com/dp/9365893100/ref=mes-dp?_encoding=UTF8&amp;pd_rd_w=JpyYV&amp;content-id=amzn1.sym.7d2923e8-7496-46a5-862d-8ef28e908025&amp;pf_rd_p=7d2923e8-7496-46a5-862d-8ef28e908025&amp;pf_rd_r=K6XYEHZZ76RWDSAXAY5X&amp;pd_rd_wg=RH04x&amp;pd_rd_r=f230b2e4-c342-429e-a362-c856e4c2362a">Continuous Modernization</a></li>
+<li><a href="https://www.amazon.com/Principles-Software-Architecture-Modernization-microservices/dp/9355519532/ref=sr_1_1?crid=7U3H2IE5U7Y4&amp;dib=eyJ2IjoiMSJ9.ebHg7EIiJ3GThIg8Dwf4PelC70iUIbHPKv7_7zk8vrk8K2FB4zlrUQyNZwKAHPO46cAYR5z2-KyqnXqNz3Ee2lmU-aGR7NLhq7jko2UihHIl-taoJ6i_hkMjcc12ZF3pOmB9lFrvbsGgbDagq1Vzqg.oz7TxYpSBxBZjVjkuIPDZM7Wxx_XMRU0Uj7jo9Rq_BI&amp;dib_tag=se&amp;keywords=principles+of+software+architecture+modernization&amp;qid=1741069169&amp;sprefix=Principles+of+software+a%2Caps%2C190&amp;sr=8-1">Principles of Software Architecture Modernization</a></li>
+<li><a href="https://books.apple.com/us/book/building-applications-with-scala/id1113861297">Building Applications with Scala</a></li>
+</ul>
+<p>You can also help me by sharing this book in social media on X, LinkedIn, Facebook, Reddit, Hacker News, or any other place you like.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="references"><a class="header" href="#references">References</a></h1>
 <h2 id="external-links"><a class="header" href="#external-links">External Links</a></h2>
 <h3 id="chapter-1---making-sense-of-ai-1"><a class="header" href="#chapter-1---making-sense-of-ai-1">Chapter 1 - Making sense of AI</a></h3>
@@ -1889,10 +2075,13 @@ Generative AI capability for creating video content from text descriptions or ot
 
         <!-- Custom JS scripts -->
         <script src="theme/version.js"></script>
+        <script src="js/years.js"></script>
 
         <script>
         window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
         });
         </script>
 

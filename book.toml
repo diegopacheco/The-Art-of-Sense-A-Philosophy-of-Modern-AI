@@ -7,10 +7,8 @@ src = "src"
 
 [output.html]
 default-theme = "rust"
-preferred-dark-theme = "rust"
-git-repository-url = "https://github.com/diegopacheco/The-Art-of-Building-with-AI"
-default-theme = "rust"
 preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/diegopacheco/The-Art-of-Building-with-AI"
 additional-js = ["theme/version.js","js/years.js"]
 additional-css = []
 mathjax-support = true

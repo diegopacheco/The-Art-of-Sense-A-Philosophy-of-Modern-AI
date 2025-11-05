@@ -30,12 +30,14 @@
 
         <!-- Custom theme stylesheets -->
 
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
         <!-- Provide site root and default themes to javascript -->
         <script>
             const path_to_root = "../";
             const default_light_theme = "rust";
-            const default_dark_theme = "rust";
+            const default_dark_theme = "navy";
             window.path_to_searchindex_js = "../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
@@ -179,7 +181,29 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="onboarding"><a class="header" href="#onboarding">Onboarding</a></h1>
-<p>TBD</p>
+<p>I don't like onboardings in general. Usually they are a massive waste of time, the idea of onboarding makes a lot of sense but in pratice how people run onboardings is often not effective, IMHO is a complete waste of time.</p>
+<p>The common issues I see with bad onboardings are:</p>
+<ul>
+<li>Manager is hands-off and just throw a bunch of links and code and ask people to read</li>
+<li>No Homeworks for the engineer (No output is an anti-pattern)</li>
+<li>No clear goals or expectations</li>
+<li>When are expentations the manager is just training the engineer how he like to work like: "I want story points of 3-5, dont do PRs with more than 10 files, show up to my 101s, update your JIRA tasks, etc".</li>
+</ul>
+<p>This is a complete waste of time, because the engineer show be, actually doing is:</p>
+<ul>
+<li>Make sure you have your enviroment ready (make sure you can run and debug the app)</li>
+<li>Make sure you understand where things are and now they work (test, deployment, infra, monitoring)</li>
+<li>Make sure you understand the basics of the business and the code</li>
+</ul>
+<p>Because onboarding is so terrible, pretty much is a 2-4 weeks vacation for the manager. The worst is that is common the engineer gets out of the onboarding and it's not <code>ready</code>. So bad expectations game already happen and the engineer is behind.</p>
+<p>A good onboarding should have:</p>
+<ul>
+<li>Have the enviroment ready (be able to run and debug the code)</li>
+<li>Homeworks (the engineer must do something, make sure PR, get some task done)</li>
+<li>Short, 1-2 weeks maximum</li>
+<li>Should be closely managed, otherwise it has a chance of being a disaster</li>
+</ul>
+<p>Now AI enters the field. Using AI, we can make this much better because, now the engineer can use AI as a private tutor. If the engineer knows how to ask the right questions it can lean much faster.</p>
 
                     </main>
 
@@ -244,6 +268,7 @@
 
         <!-- Custom JS scripts -->
         <script src="../theme/version.js"></script>
+        <script src="../js/years.js"></script>
 
 
 
