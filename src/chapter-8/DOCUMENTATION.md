@@ -8,6 +8,13 @@ Documentation matter,s but it's just testing, something that people should do mo
 
 Another good case for AI documentation is changelos. Yes, people should do it, and 100% this ia discipline problema and could be fixed without AI. But AI is pretty good into reading git log messages and figuring out what changed and why. It's so good that this is one of the tricks why ai is good in SWE benchmarks like HumanEval. Because it can read the git log and figure out what changed.
 
+Here is some evidence that AI Agents cheat on SWE-bench:
+* [Repo State Loopholes During Agentic Evaluation](https://github.com/SWE-bench/SWE-bench/issues/465)
+* [Claude 4 hacked SWE-bench by peeking at future commits](https://bayes.net/swebench-hack/)
+* [Meta called out SWE bench Verified for being gamed by top AI models. Benchmark might be broken](https://www.reddit.com/r/OpenAI/comments/1nce3ua/meta_called_out_swe_bench_verified_for_being/?utm_source=chatgpt.com)
+
+But this "cheat" also proof they are very good using Git, witch we can use in our advantage.
+
 ## Generating Knowledge Base
 
 Another good AI documentation case is that you can make ai generate good documentation about why some changes happened. Imagine that AI could create a timeline with features and explain what features existed in a codebase. AI also can explain maybe technical decisions and explain where things are in the code. Making easier to make sense of projject ad code.
