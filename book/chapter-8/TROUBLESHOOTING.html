@@ -181,18 +181,18 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h1>
-<p>Using ai to help troubleshoot problems in code, systems, and architectures.</p>
+<p>Using AI to help troubleshoot problems in code, systems, and architectures.</p>
 <h2 id="debugging-with-ai-using-images"><a class="header" href="#debugging-with-ai-using-images">Debugging with AI using Images</a></h2>
-<p>Many people dont know but most of AI coding agents support you darg and drop image and the model can "read" the image and make sense of the image. This is very very useful for troubleshooting. AI is impressive hnadling images with errors like:</p>
+<p>Many people don't know, but most AI coding agents support you dragging and dropping an image and the model can "read" the image and make sense of the image. This is very useful for troubleshooting. AI is impressive at handling images with errors like:</p>
 <ul>
 <li>Frontend/Mobile apps Errors (Screenshots of the app with errors)</li>
 <li>Backend/Infrastructure Errors (Screenshots of metrics, dashboards and alerts)</li>
 <li>Kubernetes Errors (Screenshots of kubernetes dashboards, pod errors, etc)</li>
 </ul>
 <h2 id="git-archaeology-for-troubleshooting"><a class="header" href="#git-archaeology-for-troubleshooting">Git Archaeology for Troubleshooting</a></h2>
-<p>Also like I explained because AI it's very very good using git. AI can nativate into git log and history and figureout a bunch of things there. Sometimes AI would not figure out how to read remnote repositories, but you can also git clone repos for ai and them point AI to your file system.</p>
+<p>Also, like I explained, AI is very good at using git. AI can navigate into git log and history and figure out a bunch of things there. Sometimes AI would not figure out how to read remote repositories, but you can also git clone repos for AI and then point AI to your file system.</p>
 <h2 id="analyzing-logs-with-ai"><a class="header" href="#analyzing-logs-with-ai">Analyzing Logs with AI</a></h2>
-<p>Like git, AI is great reading logs, specially if logs have errors and stack traces, AI is impressive reading logs and finding patterns and issues. AI can also search on the AI(all coding agents pretty much have this feaature now a days).</p>
+<p>Like git, AI is great at reading logs, especially if logs have errors and stack traces. AI is impressive at reading logs and finding patterns and issues. AI can also search on the web (all coding agents pretty much have this feature nowadays).</p>
 
                     </main>
 
@@ -223,6 +223,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

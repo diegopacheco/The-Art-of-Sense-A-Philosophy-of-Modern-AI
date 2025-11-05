@@ -1,23 +1,23 @@
 # Sentiment Analysis
 
-As humans we are stuck into our heads. We have our biases and sometimes we cant' see what we are doing in sense of being maybe too negative or too aggressive in our communication. This is always suttle and requires a lot of self-awareness to catch it. Not anymore, AI it's pretty good at detecting sentiment in text and can help us with that.
+As humans we are stuck in our heads. We have our biases and sometimes we can't see what we are doing in the sense of being maybe too negative or too aggressive in our communication. This is always subtle and requires a lot of self-awareness to catch it. Not anymore; AI is pretty good at detecting sentiment in text and can help us with that.
 
 ## Should I send this email?
 
-Let's see you wrote an email. Ask LLM to analyze the sentiment of the email and give you a recommendation if you should send it or not. You can ask if is aggresive, or if is constructive enough. You will learn a lot about your communication style. Plus you can avoid some conflicts by adjusting the tone of your emails.
+Let's say you wrote an email. Ask an LLM to analyze the sentiment of the email and give you a recommendation on whether you should send it or not. You can ask if it is aggressive, or if it is constructive enough. You will learn a lot about your communication style. Plus you can avoid some conflicts by adjusting the tone of your emails.
 
-Emails are always cold tools that can easily be misinterpreted. Having an AI assistant that can help you adjust the tone of your emails it's a great way to improve your communication skills. The good news is that you just copy the email text and paste it into the prompt. No need to share any private data with third party tools.
+Emails are always cold tools that can easily be misinterpreted. Having an AI assistant that can help you adjust the tone of your emails is a great way to improve your communication skills. The good news is that you just copy the email text and paste it into the prompt. No need to share any private data with third-party tools.
 
 ## Am I too aggressive or negative in this message?
 
-Same technique can be usef for regular text messages, whatsapp, social media, blog posts, even for code comments. You can always ask the LLM to analyze the sentiment of your message before sending it. This will help you to be more aware of your communication style and adjust it if necessary.
+The same technique can be used for regular text messages, WhatsApp, social media, blog posts, even for code comments. You can always ask the LLM to analyze the sentiment of your message before sending it. This will help you to be more aware of your communication style and adjust it if necessary.
 
 ## Analyzing Customer Feedback
 
-Either via images or text you can use AI to analyze customer feedback and detect sentiment. This can help you to understand how your customers feel about your product or service and make improvements accordingly. It's easy to fool yourself that is positive feedback when in reality is negative. AI can help you to see the real picture.
+Either via images or text, you can use AI to analyze customer feedback and detect sentiment. This can help you understand how your customers feel about your product or service and make improvements accordingly. It's easy to fool yourself that it is positive feedback when in reality it is negative. AI can help you see the real picture.
 
 ## AI has bias too
 
-Keep in mind AI was trained with human data from books and the internet. So it can have the same biases as humans. Always double check the analysis and use your own judgement. AI is a tool to help you, not to replace you. IMHO this is a killer usecase and will help you have better relationships with people by improving your communication skills.
+Keep in mind AI was trained with human data from books and the internet. So it can have the same biases as humans. Always double-check the analysis and use your own judgment. AI is a tool to help you, not to replace you. IMHO this is a killer use case and will help you have better relationships with people by improving your communication skills.
 
-Just keep in mind AI is not perfect, don't blindly trust it. Use it as a second opinion, not as the ultimate truth.
+Just keep in mind AI is not perfect; don't blindly trust it. Use it as a second opinion, not as the ultimate truth.

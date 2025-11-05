@@ -318,8 +318,8 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li><a href="./chapter-5/BASH_MODE.html">Bash Mode</a></li>
 <li><a href="./chapter-5/EXCLUSIONS.html">Exclusions </a></li>
 <li><a href="./chapter-5/ULTRATHINK.html">ultrathink</a></li>
-<li><a href="./chapter-5/CUSTON_COMMANDS.html">Custon Commands</a></li>
-<li><a href="./chapter-5/CUSTON_AGENTS.html">Custon Agents</a></li>
+<li><a href="./chapter-5/CUSTON_COMMANDS.html">Custom Commands</a></li>
+<li><a href="./chapter-5/CUSTON_AGENTS.html">Custom Agents</a></li>
 <li><a href="./chapter-5/HOOKS.html">Hooks</a></li>
 <li><a href="./chapter-5/CLAUDE_MCP.html">MCP and Claude Code</a></li>
 <li><a href="./chapter-5/DECISION_CRITERIA.html">Decision Criteria</a></li>
@@ -395,6 +395,22 @@ Hire, develop, retain, and truly grow talent at scale</p>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

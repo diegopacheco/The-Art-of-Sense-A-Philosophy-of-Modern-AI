@@ -18,22 +18,133 @@
 
 #### Vibe Coding
 - [Vibe Coding Tweet - Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383?lang=en)
+- [Demo to Production Gap - Andrej Karpathy Video](https://www.youtube.com/embed/lXUZvyajciY?start=6228)
 
 #### AI Input
 - [Using AI for Input - Diego Pacheco](https://diego-pacheco.blogspot.com/2025/09/ai-output.html)
 
+#### Mirror on Steroids
+- [AI Coding Agents Economics - Diego Pacheco](https://diego-pacheco.blogspot.com/2025/11/ai-coding-agents-economics.html)
+
+### AI Scams and Failures
+- [The Rabbit Is A Scam - YouTube](https://www.youtube.com/watch?v=d7DtiMzMBdU)
+- [Sora Demo Controversy - Futurism](https://futurism.com/the-byte/openai-sora-demo)
+- [GM Dealership Chatbot Fail - Upworthy](https://www.upworthy.com/prankster-tricks-a-gm-dealership-chatbot-to-sell-him-a-76000-chevy-tahoe-for-ex1)
+- [Taco Bell AI Fail - YouTube Short](https://www.youtube.com/shorts/IXMRiU3ogrA)
+- [ChatGPT Lawyer Fine - CalMatters](https://calmatters.org/economy/technology/2025/09/chatgpt-lawyer-fine-ai-regulation/)
+- [Amazon AI Cashier-less Shops - The Guardian](https://www.theguardian.com/commentisfree/2024/apr/10/amazon-ai-cashier-less-shops-humans-technology)
+- [AI Hallucinations in Court - Damien Charlot](https://www.damiencharlotin.com/hallucinations/)
+- [AI Coding Horrors - Collection](https://aicodinghorrors.com/)
+- [$1.5B AI Unicorn Collapse - Binance](https://www.binance.com/en/square/post/24723372076545)
+- [Replacing Humans with AI Going Wrong - YouTube](https://www.youtube.com/watch?v=QX1Xwzm9yHY)
+- [Klarna AI Rollback - Bloomberg](https://www.bloomberg.com/news/articles/2025-05-08/klarna-turns-from-ai-to-real-person-customer-service)
+
+### AI and Jobs
+- [AI Taking White Collar Jobs - CNBC](https://www.cnbc.com/2025/10/22/ai-taking-white-collar-jobs-economists-warn-much-more-in-the-tank.html)
+- [No AI Jobs Apocalypse - Brookings Institute](https://www.brookings.edu/articles/new-data-show-no-ai-jobs-apocalypse-for-now/)
+
+### AI Theory
+- [LLMs are Slot Machines - Cory Doctorow](https://doctorow.medium.com/https-pluralistic-net-2025-08-16-jackpot-salience-bias-2a696501bba7)
+- [AI Pilots Failure Rate - Selector AI](https://www.selector.ai/blog/95-of-ai-pilots-fail-heres-how-to-be-the-5/)
+
+### Research Papers
+- [Facebook Paper on AI Test Generation - arXiv](https://arxiv.org/pdf/2402.09171)
+- [ORION: Retrieval-Based Method for Hallucination Detection - arXiv](https://arxiv.org/pdf/2504.15771)
+- [Hallucination is Inevitable - arXiv](https://arxiv.org/pdf/2401.11817)
+- [Estimating the Hallucination Rate of Generative AI - arXiv](https://arxiv.org/pdf/2406.07457)
+
+## Chapter 4 - Agents
+
+### Coding Agents and Tools
+- [GitHub Copilot](https://github.com/features/copilot)
+- [Claude Code](https://www.claude.com/product/claude-code)
+- [Amazon Q](https://aws.amazon.com/q/)
+- [AWS Kiro](https://kiro.dev/)
+- [Google Jules](https://jules.google/)
+- [OpenAI Codex](https://chatgpt.com/features/codex)
+- [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
+- [Codex CLI](https://github.com/openai/codex)
+- [OpenCode](https://github.com/sst/opencode)
+- [Claude Skills](https://www.anthropic.com/news/skills)
+
+### MCP and Agent Architecture
+- [MCP Documentation](https://modelcontextprotocol.io/docs/getting-started/intro)
+- [What is MCP](https://www.whatismcp.com/)
+- [MCP.so](https://mcp.so/)
+- [Language Server Protocol - Wikipedia](https://en.wikipedia.org/wiki/Language_Server_Protocol)
+- [Postgres MCP](https://github.com/crystaldba/postgres-mcp)
+- [Slack MCP Server](https://github.com/korotovsky/slack-mcp-server)
+- [Awesome MCPs](https://mcpservers.org/)
+- [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code)
+- [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers)
+- [MCP Servers Repository](https://github.com/modelcontextprotocol/servers)
+- [Context7 MCP](https://github.com/upstash/context7)
+- [Agent to Agent Protocol](https://a2a-protocol.com/)
+- [MCP Could Have Been JSON File](https://materializedview.io/p/mcp-server-could-have-been-json-file)
+- [What are AI Agents - AWS](https://aws.amazon.com/what-is/ai-agents/)
+- [Sibyls and Servants - Medium](https://medium.com/@tasospapalias/sibyls-and-servants-the-roots-of-artificial-intelligence-in-ancient-greek-lore-b28257e98a0a)
+
+### MCP Security
+- [Everything Wrong with MCP - sshh.io](https://blog.sshh.io/p/everything-wrong-with-mcp)
+- [Prevent Attacks on MCP - forgecode.dev](https://forgecode.dev/blog/prevent-attacks-on-mcp/)
+- [Treating MCP Servers Like Bombs - DevInterrupted](https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs)
+- [Evo by Snyk](https://evo.ai.snyk.io/)
+- [Cisco MCP Scanner](https://github.com/cisco-ai-defense/mcp-scanner)
+
+### Context and Documentation
+- [llms.txt Specification](https://llmstxt.org/)
+- [Claude llms-full.txt](https://docs.claude.com/llms-full.txt)
+- [OpenAI llms.txt](https://cdn.openai.com/API/docs/txt/llms.txt)
+- [LangGraph llms.txt](https://langchain-ai.github.io/langgraph/llms-txt-overview/)
+- [Context7 Service](https://context7.com/)
+- [Context Windows - Claude Docs](https://docs.claude.com/en/docs/build-with-claude/context-windows)
+
+### Agent Patterns
+- [AI Agent Patterns - Diego Pacheco](https://diego-pacheco.blogspot.com/2025/07/ai-agent-patterns.html)
+- [Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/)
+
+### Benchmarks
+- [SWE-bench Repo State Loopholes](https://github.com/SWE-bench/SWE-bench/issues/465)
+- [Claude 4 SWE-bench Gaming - Bayes.net](https://bayes.net/swebench-hack/)
+- [SWE-bench Verified Issues - Reddit](https://www.reddit.com/r/OpenAI/comments/1nce3ua/meta_called_out_swe_bench_verified_for_being/)
+
+## Chapter 5 - Claude Code
+
+### Claude Code Documentation
+- [Claude Prompt Library](https://docs.claude.com/en/resources/prompt-library/library)
+- [Claude 4 Best Practices](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices)
+- [Claude Code Slash Commands](https://docs.claude.com/en/docs/claude-code/slash-commands.md)
+- [Claude Code Interactive Mode](https://docs.claude.com/en/docs/claude-code/interactive-mode)
+- [Claude Code Hooks Guide](https://docs.claude.com/en/docs/claude-code/hooks-guide)
+- [Claude Code Statusline](https://docs.claude.com/en/docs/claude-code/statusline)
+- [CCStatusline by sirmalloc](https://github.com/sirmalloc/ccstatusline)
+- [Claude Code MCP](https://docs.claude.com/en/docs/claude-code/mcp)
+- [Claude Code Headless Mode](https://docs.claude.com/en/docs/claude-code/headless)
+- [Custom Commands Tutorial - GitHub](https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands)
+- [Claude Code GitHub](https://github.com/anthropics/claude-code)
+
+### Development Tools
+- [VSCode](https://code.visualstudio.com/)
+- [Coding Dojo](https://codingdojo.org/)
+- [Test-driven Development - Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
+- [Spec Driven Development - Martin Fowler](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html)
+- [Testing Queues and Batch Jobs - Diego Pacheco](https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html)
+
 ## Author's Published Works
 
-- [Principles of Software Architecture Modernization - Diego Pacheco](https://www.amazon.com/Principles-Software-Architecture-Modernization-microservices/dp/9355519532/ref=sr_1_1?crid=7U3H2IE5U7Y4&dib=eyJ2IjoiMSJ9.ebHg7EIiJ3GThIg8Dwf4PelC70iUIbHPKv7_7zk8vrk8K2FB4zlrUQyNZwKAHPO46cAYR5z2-KyqnXqNz3Ee2lmU-aGR7NLhq7jko2UihHIl-taoJ6i_hkMjcc12ZF3pOmB9lFrvbsGgbDagq1Vzqg.oz7TxYpSBxBZjVjkuIPDZM7Wxx_XMRU0Uj7jo9Rq_BI&dib_tag=se&keywords=principles+of+software+architecture+modernization&qid=1741069169&sprefix=Principles+of+software+a%2Caps%2C190&sr=8-1)
-- [Continuous Modernization - Diego Pacheco](https://www.amazon.com/dp/9365893100/ref=mes-dp?_encoding=UTF8&pd_rd_w=JpyYV&content-id=amzn1.sym.7d2923e8-7496-46a5-862d-8ef28e908025&pf_rd_p=7d2923e8-7496-46a5-862d-8ef28e908025&pf_rd_r=K6XYEHZZ76RWDSAXAY5X&pd_rd_wg=RH04x&pd_rd_r=f230b2e4-c342-429e-a362-c856e4c2362a)
+- [Principles of Software Architecture Modernization - Diego Pacheco](https://www.amazon.com/Principles-Software-Architecture-Modernization-microservices/dp/9355519532/)
+- [Continuous Modernization - Diego Pacheco](https://www.amazon.com/dp/9365893100/)
+- [Building Applications with Scala - Diego Pacheco](https://books.apple.com/us/book/building-applications-with-scala/id1113861297)
 
 ## Author's Technical Resources
 
 - [Diego Pacheco's Software Architecture Library](https://diegopacheco.github.io/diegopacheco-architecture-library/introduction.html)
+- [AI Playground - 300+ POCs](https://github.com/diegopacheco/ai-playground)
 
 ## Author's Online Presence
 
-- [Blogger - Personal Blog](https://diego-pacheco.blogspot.com/)
+- [Blogger - Personal Blog (since 2007)](https://diego-pacheco.blogspot.com/)
+- [First Blog Post - 2007](https://diego-pacheco.blogspot.com/2007/03/boas-vindas-primeiro-post.html)
 - [Substack Newsletter](https://diegopachecotech.substack.com/)
 - [Medium Profile](https://diego-pacheco.medium.com/)
 - [Amazon Author Profile](https://amazon.com/author/diegopacheco)

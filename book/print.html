@@ -319,8 +319,8 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li><a href="./chapter-5/BASH_MODE.html">Bash Mode</a></li>
 <li><a href="./chapter-5/EXCLUSIONS.html">Exclusions </a></li>
 <li><a href="./chapter-5/ULTRATHINK.html">ultrathink</a></li>
-<li><a href="./chapter-5/CUSTON_COMMANDS.html">Custon Commands</a></li>
-<li><a href="./chapter-5/CUSTON_AGENTS.html">Custon Agents</a></li>
+<li><a href="./chapter-5/CUSTON_COMMANDS.html">Custom Commands</a></li>
+<li><a href="./chapter-5/CUSTON_AGENTS.html">Custom Agents</a></li>
 <li><a href="./chapter-5/HOOKS.html">Hooks</a></li>
 <li><a href="./chapter-5/CLAUDE_MCP.html">MCP and Claude Code</a></li>
 <li><a href="./chapter-5/DECISION_CRITERIA.html">Decision Criteria</a></li>
@@ -580,14 +580,14 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li>Code Migrations</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="context-window"><a class="header" href="#context-window">Context Window</a></h1>
-<p><a href="https://docs.claude.com/en/docs/build-with-claude/context-windows">Context window</a> is the term that referes to the ammount of text a model can process as input. LLM do not have many options to inteact with. Simply put you basically do everything via context window. What goes on the context window:</p>
+<p><a href="https://docs.claude.com/en/docs/build-with-claude/context-windows">Context window</a> is the term that refers to the amount of text a model can process as input. LLMs do not have many options to interact with. Simply put, you basically do everything via the context window. What goes in the context window:</p>
 <ul>
 <li>User prompt: The text with the task or action you want the model to do.</li>
-<li>System prompt: The text that tells to the model how to behave.</li>
-<li>Few shot examples: Examples of inputs and outputs that help the model to better perform.</li>
+<li>System prompt: The text that tells the model how to behave.</li>
+<li>Few shot examples: Examples of inputs and outputs that help the model perform better.</li>
 </ul>
-<p>Pretty much everysingle thing goes on the context window. So the context window is critical and a bottlenck in many situations.</p>
-<p>Create a markdown table comparsin context window and size from, open ai, geminio, grok, gpt 5, llama 3 and more.</p>
+<p>Pretty much everything goes in the context window. So the context window is critical and a bottleneck in many situations.</p>
+<p>Create a markdown table comparing context window and size from OpenAI, Gemini, Grok, GPT 5, Llama 3 and more.</p>
 <div class="table-wrapper"><table><thead><tr><th>Model</th><th>Context Window Size.</th></tr></thead><tbody>
 <tr><td>GPT-3.5</td><td>4,096 tokens</td></tr>
 <tr><td>GPT-4</td><td>8,192 tokens</td></tr>
@@ -598,10 +598,10 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <tr><td>Grok 4 Fast</td><td>2,000,000 tokens</td></tr>
 <tr><td>LLaMA 3</td><td>8,192 tokens</td></tr>
 <tr><td>Claude Sonnet 4.5</td><td>200,000 tokens</td></tr>
-<tr><td>Clude Soneet Corp.</td><td>1,000,000 tokens</td></tr>
+<tr><td>Claude Sonnet Corp.</td><td>1,000,000 tokens</td></tr>
 </tbody></table>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="llmstxt-and-llms-fulltxt"><a class="header" href="#llmstxt-and-llms-fulltxt">llms.txt and llms-full.txt</a></h1>
-<p><a href="https://llmstxt.org/">llms.txt</a> and llms-full.txt this are text files(usually with markdown formatting) that contain information about various large language models (LLMs). Such idea is not new we had other indexing-related files like <code>robots.txt</code> or <code>sitemap.xml</code>.This is useful for LLM agents when reading websites more effectively.</p>
+<p><a href="https://llmstxt.org/">llms.txt</a> and llms-full.txt are text files (usually with markdown formatting) that contain information about various large language models (LLMs). Such an idea is not new; we had other indexing-related files like <code>robots.txt</code> or <code>sitemap.xml</code>. This is useful for LLM agents when reading websites more effectively.</p>
 <p>I asked Claude Code about about it:</p>
 <p>Prompt:</p>
 <pre><code>what is llms.txt and llms-full.txt?
@@ -648,42 +648,42 @@ These files live at the root (/llms.txt and /llms-full.txt) to help LLMs:
 <p>At the end of the day, if you want to use Agents as parts of your infrastructure solution, meaning you want agents in prod or use agents as part of a feature in your systems, you need an API KEY. There are many API KEYS, the best and most common are Anthropic, Open AI, and Google.</p>
 <p>With an API KEY and a programming language like Rust, Scala or Go for instance, you can write a program that is an agent that can run in production.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="agent-patterns"><a class="header" href="#agent-patterns">Agent Patterns</a></h1>
-<p>Coding agents has some <a href="https://diego-pacheco.blogspot.com/2025/07/ai-agent-patterns.html">patterns</a>. The most fammous ones are MCP and RAG. But there are other pattertns like:</p>
+<p>Coding agents have some <a href="https://diego-pacheco.blogspot.com/2025/07/ai-agent-patterns.html">patterns</a>. The most famous ones are MCP and RAG. But there are other patterns like:</p>
 <ul>
 <li>Caching</li>
 <li>Routing</li>
 <li>Filtering</li>
-<li>Spllitting</li>
+<li>Splitting</li>
 <li>Aggregating</li>
 <li>Orchestration</li>
 </ul>
 <p>Such patterns are not new. Many of them trace back to the good work of Enterprise Integration Patterns (<a href="https://www.enterpriseintegrationpatterns.com/">EIP</a>) by Gregor Hohpe and Bobby Woolf.</p>
-<p>Software allow us to have greater flexibility. LLMs are not super flexible for customization, you pretty much need to use the context window to customize them. So whatever patter you do (besides MCP) you will be doing BEFORE or AFTER the LLM call.</p>
+<p>Software allows us to have greater flexibility. LLMs are not super flexible for customization; you pretty much need to use the context window to customize them. So whatever pattern you do (besides MCP) you will be doing BEFORE or AFTER the LLM call.</p>
 <p>MCP is different because you are creating something like a "callback" so the LLM will invoke it during the processing.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="model-context-protocol-mcp"><a class="header" href="#model-context-protocol-mcp">Model Context Protocol (MCP)</a></h1>
 <p><a href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</a> was created by <a href="https://www.whatismcp.com/">Anthropic in 2024</a>. The idea of MCP is that you have a standard way to provide context to LLMs. MCP is an open standard that allows developers to create and share context packages that can be used by different LLMs.</p>
-<p>MCP is the AI equivalence of <a href="https://en.wikipedia.org/wiki/Language_Server_Protocol">LSP</a>, so you can have one server and that same server can work with a varaity of different clients(AI tools). MCP is designed to be model-agnostic, so you can use the same context package with different LLMs.</p>
+<p>MCP is the AI equivalent of <a href="https://en.wikipedia.org/wiki/Language_Server_Protocol">LSP</a>, so you can have one server and that same server can work with a variety of different clients (AI tools). MCP is designed to be model-agnostic, so you can use the same context package with different LLMs.</p>
 <h2 id="mcp-architecture"><a class="header" href="#mcp-architecture">MCP Architecture</a></h2>
-<p>MCP has a HOST which is the AI Agent or tool. Inside that host there are one or many MCP clients which connect to one or many MCP Severs.</p>
+<p>MCP has a HOST which is the AI Agent or tool. Inside that host there are one or many MCP clients which connect to one or many MCP Servers.</p>
 <img src="chapter-4/../images/04-MCP_basics.png" width="600"/>
-<p>As you can see on the previous picture, we are using <a href="https://github.com/crystaldba/postgres-mcp">Postgres MCP</a> to read data from tables from plain english. We are also using <a href="https://github.com/korotovsky/slack-mcp-server">Slack MCP</a> in order to send a message to our team asking for <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">PR</a> review.</p>
+<p>As you can see in the previous picture, we are using <a href="https://github.com/crystaldba/postgres-mcp">Postgres MCP</a> to read data from tables in plain English. We are also using <a href="https://github.com/korotovsky/slack-mcp-server">Slack MCP</a> to send a message to our team asking for a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">PR</a> review.</p>
 <h2 id="awesome-mcps"><a class="header" href="#awesome-mcps">Awesome MCPs</a></h2>
-<p>Here is a curated list of <a href="https://mcpservers.org/">lots of MCPs</a> you can use(be careful). Awesome MCPs include list of local and remote MCPs, along side with claude skills.</p>
+<p>Here is a curated list of <a href="https://mcpservers.org/">lots of MCPs</a> you can use (be careful). Awesome MCPs include a list of local and remote MCPs, alongside Claude skills.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="other-approaches"><a class="header" href="#other-approaches">Other Approaches</a></h1>
 <p>There are other approaches to building and deploying coding agents beyond the MCP framework discussed in this book.</p>
 <h2 id="agent-2-agent"><a class="header" href="#agent-2-agent">Agent 2 Agent</a></h2>
 <p><a href="https://a2a-protocol.com/">A2A</a>.</p>
 <h2 id="we-had-apis-before-mcp"><a class="header" href="#we-had-apis-before-mcp">We had APIs before MCP</a></h2>
 <p>There is some critique that MCPs could be just a <a href="https://materializedview.io/p/mcp-server-could-have-been-json-file">JSON file</a> since we are re-using the underlying APIS that already existed.</p>
-<h2 id="calude-skills"><a class="header" href="#calude-skills">Calude Skills</a></h2>
-<p><a href="https://www.anthropic.com/news/skills">Claude Skills</a> is another approach to building coding agents. Where you can bunble text and scripts together to create an agent.</p>
+<h2 id="claude-skills"><a class="header" href="#claude-skills">Claude Skills</a></h2>
+<p><a href="https://www.anthropic.com/news/skills">Claude Skills</a> is another approach to building coding agents, where you can bundle text and scripts together to create an agent.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="context-7"><a class="header" href="#context-7">Context 7</a></h1>
-<p><a href="https://context7.com/">Context7</a> fixes a limitation LLMs have. LLMs have a hard time to know the latest versions, since they are always behind the latest data. Context7 provides a way to connect LLMs to the latest data.</p>
-<h2 id="telling-ai-what-todo"><a class="header" href="#telling-ai-what-todo">Telling AI what todo</a></h2>
-<p>It's always important, that in your prompt you tell AI the versions you want. However is also important that you READ THE CODE because is not uncomon for LLM models to use downgrafed versions of libraries. i.e you asked for NodeJS 24, AI give to you code for NodeJS 20. This happens very often.</p>
-<h2 id="context7-make-it-better"><a class="header" href="#context7-make-it-better">Context7 Make it better</a></h2>
-<p>Context7 has a <a href="https://github.com/upstash/context7">MCP</a> that allow you to use it with most of the popular code agents. Context7 has up to date documentation on latest versions of libraries and frameworks.</p>
-<p>27.OCT.2025 when I checked context7 webside they had suppport for <code>49,317 Libraries</code> which is a lot. They are always updating the library list and information for methods, and apis.</p>
+<p><a href="https://context7.com/">Context7</a> fixes a limitation LLMs have. LLMs have a hard time knowing the latest versions, since they are always behind the latest data. Context7 provides a way to connect LLMs to the latest data.</p>
+<h2 id="telling-ai-what-to-do"><a class="header" href="#telling-ai-what-to-do">Telling AI what to do</a></h2>
+<p>It's always important that in your prompt you tell AI the versions you want. However, it is also important that you READ THE CODE because it is not uncommon for LLM models to use downgraded versions of libraries. For example, you asked for NodeJS 24, but AI gives you code for NodeJS 20. This happens very often.</p>
+<h2 id="context7-makes-it-better"><a class="header" href="#context7-makes-it-better">Context7 Makes it Better</a></h2>
+<p>Context7 has a <a href="https://github.com/upstash/context7">MCP</a> that allows you to use it with most of the popular code agents. Context7 has up-to-date documentation on the latest versions of libraries and frameworks.</p>
+<p>On October 27, 2025, when I checked the Context7 website, they had support for <code>49,317 Libraries</code>, which is a lot. They are always updating the library list and information for methods and APIs.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="security-and-mcps"><a class="header" href="#security-and-mcps">Security and MCPs</a></h1>
 <p>MCP is awesome. However we need to remember that for coding agents running in your CLI with your machines running commands can be a <a href="https://blog.sshh.io/p/everything-wrong-with-mcp?utm_source=pocket_shared">nightmare for security</a>. Especially if your laptop is a corporate macbook, that is on a corporate network. There are many <a href="https://forgecode.dev/blog/prevent-attacks-on-mcp/">attack vectors</a>. Sandboxes suck for developers, it's not the best developer experience. So what do we do then.</p>
 <p>Well we have a similar problem in security to MCPs which is called: Vulnerabilities. MCPs are not that different from vulnerabilities in libraries because there is an explosion of libraries.</p>
@@ -714,13 +714,13 @@ These files live at the root (/llms.txt and /llms-full.txt) to help LLMs:
 <h2 id="claude-code"><a class="header" href="#claude-code">Claude Code</a></h2>
 <p><a href="https://www.claude.com/product/claude-code">Claude Code</a> by anthropic is another coding agent. IMHO it's the best agent coding tool out there. Claude code works with anthropic LLM models.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-5---claude-code"><a class="header" href="#chapter-5---claude-code">Chapter 5 - Claude Code</a></h1>
-<p>Claude does was extremely distupted when it launched Claude Code in mid 2024. Let's deep dive into claude, learn what it can do and how will change your day-by-day use of AI.</p>
+<p>Claude was extremely disruptive when it launched Claude Code in mid 2024. Let's deep dive into Claude, learn what it can do and how it will change your day-to-day use of AI.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-claude-code"><a class="header" href="#what-is-claude-code">What is Claude Code?</a></h1>
 <p>Claude code is an AI coding agent. Claude code blends Gen-AI LLM models with engineering in a tool focused on the terminal. It allows developers to interact with AI models directly (via API) from their command line interface (CLI) to generate, modify, and manage code.</p>
 <p>Claude code is very efficient for developers because developers are used to using the terminal for all things. Claude code is fast and very easy to use. So the bottleneck is not using claude code, but knowing the things you can do with it.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="prompt-library"><a class="header" href="#prompt-library">Prompt Library</a></h1>
-<p>Claude Code has a prompt library. When you have a powerfull LLM sometimes the GAP it's not use the LLM but knowing how you can use the LLM, meaning what things the LLM can do, so you need to learn how to know which questions to ask, sometimes theese questions are called "prompts".</p>
-<p><a href="https://docs.claude.com/en/resources/prompt-library/library">Claude Prompt Library</a> it's a list of questions or prompts if you will, that allow you to see things claude can do.</p>
+<p>Claude Code has a prompt library. When you have a powerful LLM, sometimes the GAP is not using the LLM, but knowing how you can use the LLM, meaning what things the LLM can do. So you need to learn which questions to ask; sometimes these questions are called "prompts".</p>
+<p><a href="https://docs.claude.com/en/resources/prompt-library/library">Claude Prompt Library</a> is a list of questions or prompts, if you will, that allow you to see things Claude can do.</p>
 <img src="chapter-5/../images/05-claude-prompt-library.png" width="600"/>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="prompt-advice"><a class="header" href="#prompt-advice">Prompt Advice</a></h1>
 <p><code>Be Explicit in Prompts</code></p>
@@ -734,7 +734,7 @@ These files live at the root (/llms.txt and /llms-full.txt) to help LLMs:
 <li>Claude tracks context across the session</li>
 <li>Easier to review and iterate on smaller changes</li>
 </ul>
-<p>Here it's Anthropics' official advice on prompt writing for <a href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices">Claude Code</a></p>
+<p>Here is Anthropic's official advice on prompt writing for <a href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices">Claude Code</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="commands"><a class="header" href="#commands">Commands</a></h1>
 <p>Let's explore claude code <a href="https://docs.claude.com/en/docs/claude-code/slash-commands.md">commands</a>.</p>
 <h2 id="init"><a class="header" href="#init">/init</a></h2>
@@ -772,7 +772,7 @@ These files live at the root (/llms.txt and /llms-full.txt) to help LLMs:
 <h2 id="bashes"><a class="header" href="#bashes">/bashes</a></h2>
 <p>List all background bashes that claude code has run in the current session.</p>
 <h2 id="cost"><a class="header" href="#cost">/cost</a></h2>
-<p>Show the cost of the current session. Only works if you are using a API key based subscription, either directly with Anthropic or via AWS Bedrock. If you are using a subscription based on messages, this command not display anything useful.</p>
+<p>Show the cost of the current session. Only works if you are using an API key based subscription, either directly with Anthropic or via AWS Bedrock. If you are using a subscription based on messages, this command will not display anything useful.</p>
 <h2 id="doctor"><a class="header" href="#doctor">/doctor</a></h2>
 <p>Will run diagnostics on the claude code installation. You will see an output like this:</p>
 <pre><code>&gt; /doctor
@@ -820,10 +820,10 @@ These files live at the root (/llms.txt and /llms-full.txt) to help LLMs:
 <p>When you create a new agent, what claude code will do is to create a new folder under the path <code>~/.claude/agents/AGENT_NAME.md</code> with all the files needed to run the agent.</p>
 <p>Claude Code can generate the agent markdown file based on a prompt you will provide. You can edit the agent.md file later as well.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="bash-mode"><a class="header" href="#bash-mode">Bash Mode</a></h1>
-<p>Claude Code has a <code>Interative Mode</code> which I prefer to call it <code>Bash Mode</code>. In this mode, you can interactively issue <a href="https://docs.claude.com/en/docs/claude-code/interactive-mode">bash commands</a> on claude and claude will run in the terminal for you.</p>
-<p>In order to active such mode you just type <code>!</code> them after that you type whatever bash command you want and them press enter to run.</p>
+<p>Claude Code has an <code>Interactive Mode</code> which I prefer to call <code>Bash Mode</code>. In this mode, you can interactively issue <a href="https://docs.claude.com/en/docs/claude-code/interactive-mode">bash commands</a> to Claude and Claude will run them in the terminal for you.</p>
+<p>To activate this mode, you just type <code>!</code>, then after that you type whatever bash command you want and then press enter to run.</p>
 <img src="chapter-5/../images/05-cc-bashmode.png" width="600" caption="Claude Code Bash Mode"/>
-<p>You literaly can call any program, script that you have available in your terminal. For example you can do: <code>ps</code>, <code>kill</code>, run <code>npm</code> run maven <code>mvn</code> as long as is not needs iterative shell to run.</p>
+<p>You literally can call any program or script that you have available in your terminal. For example, you can do: <code>ps</code>, <code>kill</code>, run <code>npm</code>, run maven <code>mvn</code>, as long as it doesn't need an interactive shell to run.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="exclusions"><a class="header" href="#exclusions">Exclusions</a></h1>
 <p>If you don't want claude to read some files, there is a way to tell claude code to ignore them. You might want to do this for a couple of reasons:</p>
 <ul>
@@ -970,10 +970,10 @@ fi
 </code></pre>
 <p>Where it will turn your .gitignore into claude exclusions. You can run it whenever you want to sync your .gitignore with claude exclusions.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ultrathink"><a class="header" href="#ultrathink">ultrathink</a></h1>
-<p>ultrathink is a instruction you give to claude code that makes it think more deeply about the problem at hand. It encourages the model to take extra time to analyze the situation, consider multiple perspectives, and generate more thorough and well-reasoned responses.</p>
+<p>ultrathink is an instruction you give to Claude Code that makes it think more deeply about the problem at hand. It encourages the model to take extra time to analyze the situation, consider multiple perspectives, and generate more thorough and well-reasoned responses.</p>
 <img src="chapter-5/../images/05-cc-ultrathink.png" width="600"/>
-<p>The moment you type ultrathink you will see claude highlight the word "ultrathink" with one color per letter explaning that claude will behave differently now.</p>
-<p>I asked Claude code the different between normal "Thinking mode on" and "ultrathink" and this is what I got:</p>
+<p>The moment you type ultrathink, you will see Claude highlight the word "ultrathink" with one color per letter, explaining that Claude will behave differently now.</p>
+<p>I asked Claude Code the difference between normal "Thinking mode on" and "ultrathink" and this is what I got:</p>
 <pre><code>Normal "Thinking On" Mode
 
 - Claude shows brief internal reasoning between actions
@@ -1063,7 +1063,7 @@ Usage: /perf @api/users.ts
 <p>Hooks are a nice feature that claude code has that allows you to create custom workflows. Hooks allow you to trigger a script for instance that runs all maven tests on the backend, every time claude code finishes refactoring some code in Java. Another example, let's say you want to run a linter or a formatter every time claude code finishes generating some code for you in Javascript. You can create a hook for that.</p>
 <p>Here is an example of how to <a href="https://docs.claude.com/en/docs/claude-code/hooks-guide">create a hook</a> in claude code.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="mcp-and-claude-code"><a class="header" href="#mcp-and-claude-code">MCP and Claude Code</a></h1>
-<p>Anthropic created MCP to standardize how context is provided to LLMs. Claude Code as an AI coding agent leverages MCP to enhance its capabilities. However people think that claude code can only do things using MCP, which is not true. Claude Code has inside-of-the-box tools that can do several things. In other words Claude can do a lot without MCP.</p>
+<p>Anthropic created MCP to standardize how context is provided to LLMs. Claude Code as an AI coding agent leverages MCP to enhance its capabilities. However, people think that Claude Code can only do things using MCP, which is not true. Claude Code has out-of-the-box tools that can do several things. In other words, Claude can do a lot without MCP.</p>
 <p>I asked claude what tools it has inside of the box and this is what I got:</p>
 <p>Prompt:</p>
 <pre><code>Tell me what tools Claude Code has inside-of-the-box. I don't want to know about MCP (external nor remote).
@@ -1096,15 +1096,15 @@ Specialized Agents:
 All other tools (Bash, Read, Write, Edit, Glob, Grep, NotebookEdit) are file/system operation tools rather
 than chat-specific features.
 </code></pre>
-<p>As you can see Claude can do a lot without MCP. One important thing that I need to call out is that because claude code can run bash commands in your terminal, that's perhaps one of the most powerful things in the universe. MCP is great but there are lots of bad actors out there and you need to be careful using MCP. Now using claude code tools and only leveraging what's in your machine, you are more secure. Because if you have a vetted process to get tools in your machine or you do your due diligence for what you install, then you can piggyback on that.</p>
-<p>Running bash, it's a swiss army knife. You can do almost anything with bash. For instance, here is a list of things, and not limited but what claude can do with bash:</p>
+<p>As you can see, Claude can do a lot without MCP. One important thing that I need to call out is that because Claude Code can run bash commands in your terminal, that's perhaps one of the most powerful things in the universe. MCP is great, but there are lots of bad actors out there and you need to be careful using MCP. Now, using Claude Code tools and only leveraging what's in your machine, you are more secure. Because if you have a vetted process to get tools on your machine or you do your due diligence for what you install, then you can piggyback on that.</p>
+<p>Running bash is a Swiss Army knife. You can do almost anything with bash. For instance, here is a list of things, and not limited to what Claude can do with bash:</p>
 <ul>
-<li><strong>Run any docker container</strong>: Same for podman. Yes there is a vector attack here, but if you get your containers from a internal trusted registry, you are gold.</li>
-<li><strong>Execute</strong>: Claude can also execute any command on a container, so it can run sql, it can deploy pods in k8s, it can create data, it can do anything you can do in bash.</li>
+<li><strong>Run any docker container</strong>: Same for podman. Yes, there is an attack vector here, but if you get your containers from an internal trusted registry, you are good.</li>
+<li><strong>Execute</strong>: Claude can also execute any command on a container, so it can run SQL, it can deploy pods in K8s, it can create data, it can do anything you can do in bash.</li>
 <li><strong>Script</strong>: Claude can create the script you need to get something done and executed.</li>
 </ul>
 <h2 id="status-line"><a class="header" href="#status-line">Status Line</a></h2>
-<p>Claude <a href="https://docs.claude.com/en/docs/claude-code/statusline">status Line</a>, it's a feature where you can customize the status line that appears at the bottom of the Claude Code interface. You can do that to display useful information, there is a MCP for that called <code>ccstatusline</code>. You can use that MCP to create your <a href="https://github.com/sirmalloc/ccstatusline">own status line</a>.</p>
+<p>Claude <a href="https://docs.claude.com/en/docs/claude-code/statusline">status line</a> is a feature where you can customize the status line that appears at the bottom of the Claude Code interface. You can do that to display useful information; there is an MCP for that called <code>ccstatusline</code>. You can use that MCP to create your <a href="https://github.com/sirmalloc/ccstatusline">own status line</a>.</p>
 <p>To install:</p>
 <pre><code class="language-bash">npx ccstatusline@latest
 </code></pre>
@@ -1329,18 +1329,18 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <li>Is this a complex multi-step investigation? → Custom Agent</li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-6---testing-with-ai"><a class="header" href="#chapter-6---testing-with-ai">Chapter 6 - Testing with AI</a></h1>
-<p>Testing matters more than ever with AI. Because AI halucinates e eventually will mess up your existing code, and will stop working, so when you will catch that? hopefully before your users do. Because AI is not 100% predictable and has precision issues, you make have tests to compensate that.</p>
-<p>Otherwise AI will break your code, it's just a matter of time, will happen. As long as you have good testing diversity and decent coverage, you will be fine because tests are the ultimate guardrails for AI.</p>
-<p>So before AI 100% tests sounded crazy, but now is actually a must have. Ohterwise AI will introduce a lot of P0 bugs more often than you can imagine. Before we do any other more adevanced use case for coding agents using AI, we need to get more tests and get good and reliable tests in place.</p>
+<p>Testing matters more than ever with AI. Because AI hallucinates and eventually will mess up your existing code, and will stop working, so when will you catch that? Hopefully before your users do. Because AI is not 100% predictable and has precision issues, you must have tests to compensate for that.</p>
+<p>Otherwise, AI will break your code; it's just a matter of time, it will happen. As long as you have good testing diversity and decent coverage, you will be fine because tests are the ultimate guardrails for AI.</p>
+<p>So before AI, 100% tests sounded crazy, but now it is actually a must-have. Otherwise, AI will introduce a lot of P0 bugs more often than you can imagine. Before we do any other more advanced use case for coding agents using AI, we need to get more tests and get good and reliable tests in place.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="why-use-ai-for-testing"><a class="header" href="#why-use-ai-for-testing">Why use AI for Testing?</a></h1>
-<p>The reality is that software engineers are under constant pressure for delivery. Such pressure plus imature management, leads to skipping tests. You might not write the best abstraction fo the universe, you might not right the best code of the universe in order to deliver, such trade-offs are fine as long as used with balance and you are not living tech-debt first. Now tests, should never ever be skipped, not matter how much in a hurry you are, not matter how much tight yout deadline is, no happer if sprint is close to the end. Skipping tests is the wrong decision always.</p>
-<p>We know skipping tests is wrong. But all companies they have legacy systems. There is always software before we arrive in a company(unless is a startup on day 1). The realioty is there is so much technical debt that, you can't pay it all at once. Companies pay technical debt but never as much as they should. Quality ends up being compromised. Which is not a wise decision and eventually will have catastrophic consequences.</p>
-<p>Thanks to AI coding agents, now we can add more tests, which before might not be possible due lack of priorization or investments. Now we can do more tests to systems we would not do it, not because we did not want it but because constraints were too high. AI coding agents can help us to write more tests, and better tests, faster. This is huge win, and we should take it.</p>
+<p>The reality is that software engineers are under constant pressure for delivery. Such pressure plus immature management leads to skipping tests. You might not write the best abstraction for the universe, you might not write the best code of the universe in order to deliver, such trade-offs are fine as long as used with balance and you are not living tech-debt first. Now tests should never ever be skipped, no matter how much in a hurry you are, no matter how tight your deadline is, no matter if the sprint is close to the end. Skipping tests is the wrong decision always.</p>
+<p>We know skipping tests is wrong. But all companies have legacy systems. There is always software before we arrive at a company (unless it is a startup on day 1). The reality is there is so much technical debt that you can't pay it all at once. Companies pay technical debt but never as much as they should. Quality ends up being compromised, which is not a wise decision and eventually will have catastrophic consequences.</p>
+<p>Thanks to AI coding agents, now we can add more tests, which before might not be possible due to lack of prioritization or investments. Now we can do more tests to systems we would not do it, not because we did not want to but because constraints were too high. AI coding agents can help us write more tests, and better tests, faster. This is a huge win, and we should take it.</p>
 <h2 id="testing-ai"><a class="header" href="#testing-ai">Testing AI</a></h2>
-<p>We should not test OpenAI API, Anthorpic API. That will cost money and will be hard to get right, due the lack of predictability of such systems. However a Smoke test it would be reasonable. Smoke tests are high level tests that verify that the most important functionalities of a system are working. They are not meant to be exhaustive, but rather to provide a quick check that the system is functioning as expected.</p>
-<p>Integration tests that tests functionalities that have AI in the middle or purely AI is okay to test, but you need to be smart because you might not have the same result all the times, so maybe instead of checking an absolute value, maybe if something is presernt, or contains same range of possible values.</p>
+<p>We should not test OpenAI API or Anthropic API. That will cost money and will be hard to get right, due to the lack of predictability of such systems. However, a smoke test would be reasonable. Smoke tests are high-level tests that verify that the most important functionalities of a system are working. They are not meant to be exhaustive, but rather to provide a quick check that the system is functioning as expected.</p>
+<p>Integration tests that test functionalities that have AI in the middle or are purely AI are okay to test, but you need to be smart because you might not have the same result all the time, so maybe instead of checking an absolute value, check if something is present, or contains the same range of possible values.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ai-to-help-with-testing"><a class="header" href="#ai-to-help-with-testing">AI to Help with Testing</a></h1>
-<p>One of the best use cases for AI in engineering is around test geenration. AI is very good generating tests. <a href="https://arxiv.org/pdf/2402.09171">Facebook has this amazing paper</a> abut they findings using AI to generate tests, published in 2024.</p>
+<p>One of the best use cases for AI in engineering is around test generation. AI is very good at generating tests. <a href="https://arxiv.org/pdf/2402.09171">Facebook has this amazing paper</a> about their findings using AI to generate tests, published in 2024.</p>
 <p>You can use AI to:</p>
 <ul>
 <li>Generate Unit Tests
@@ -1348,21 +1348,21 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <li>Considering Happy Path</li>
 <li>Considering Edge Cases</li>
 <li>Considering Error Handling</li>
-<li>Consideting negative and boundary cases</li>
+<li>Considering negative and boundary cases</li>
 <li>Considering a bit of chaos like random inputs or even nulls and unexpected types/values</li>
 </ul>
 </li>
 <li>Generate Integration Tests</li>
 <li>Generate End to End Tests</li>
 </ul>
-<p>Now for Integration tests we need keep in we will need setup infrastructure in order to do <a href="https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html">proper test induction</a>. But you can use AI to create testing interfaces and them have proper testing strucute and proper testing principles in place.</p>
-<p>You can also use AI in order to check if you have gaps in your tests coverage, just ask it for it. Even if AI goes wrong, this is relatively safe, worst it will happen AI will generate tests you dont need, them you can delete them. Facebook talks about this in their paper. Facebook solution is to blend with engineering, running the tests, checking coverage, and getting rid of uncessary tests.</p>
-<p>All tasts that claude code can do, either by custom agents, custom commands or a simple a good prompt. I recommend custom commands for this, as you can have a more structured approach.</p>
+<p>Now for integration tests, we need to keep in mind we will need to set up infrastructure in order to do <a href="https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html">proper test induction</a>. But you can use AI to create testing interfaces and then have proper testing structure and proper testing principles in place.</p>
+<p>You can also use AI to check if you have gaps in your test coverage, just ask it for it. Even if AI goes wrong, this is relatively safe; worst case, AI will generate tests you don't need, then you can delete them. Facebook talks about this in their paper. Facebook's solution is to blend with engineering, running the tests, checking coverage, and getting rid of unnecessary tests.</p>
+<p>All tasks that Claude Code can do, either by custom agents, custom commands, or a simple good prompt. I recommend custom commands for this, as you can have a more structured approach.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-7---migrations-with-ai"><a class="header" href="#chapter-7---migrations-with-ai">Chapter 7 - Migrations with AI</a></h1>
 <p>Migrations are one of the best use cases for AI and engineering alongside with testing. Migrations can be complex but they are also very repetitive, making them a perfect candidate for AI assistance.</p>
 <p>AI does a great job helping in migrations. It's not perfect and there will be setbacks and even bugs bur the time savings are enormous.</p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="what-is-a-migration"><a class="header" href="#what-is-a-migration">What is a Migration?</a></h2>
-<p>It's a different kind of task or software project here it's necessary to change from from:</p>
+<p>It's a different kind of task or software project where it's necessary to change from:</p>
 <ul>
 <li>One version to another (from Spring boot 2x to 3x)</li>
 <li>From one technology to another (like from Python to Scala)</li>
@@ -1370,7 +1370,7 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <li>From one cloud provider to another (AWS to GCP)</li>
 <li>From one framework to another (like from Angular to React)</li>
 </ul>
-<p>Migrations are necessary for a variaty or reasons, like:</p>
+<p>Migrations are necessary for a variety of reasons, like:</p>
 <ul>
 <li>Security: To handle security issues and vulnerabilities</li>
 <li>Performance: To improve performance and scalability</li>
@@ -1381,27 +1381,27 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <h2 id="challenges-in-migrations"><a class="header" href="#challenges-in-migrations">Challenges in Migrations</a></h2>
 <p>Migrations are difficult for a variety of reasons:</p>
 <ul>
-<li>Complexity: Migrations can be complex, especially for large applications with many dependencies. Migrght require spesific order of operations.</li>
+<li>Complexity: Migrations can be complex, especially for large applications with many dependencies. Might require a specific order of operations.</li>
 <li>Downtime: Migrations can require downtime, which can be disruptive to users. Not all migrations require downtime, but it's easier with downtime.</li>
 <li>Data Loss: There is a risk of data loss during migrations, especially if not done carefully (in case of database or encryption migrations).</li>
-<li>Time Pressure: Teams are usually focus on features and migrations take this time away from them.</li>
-<li>Testing: Migrations require extensive testing to ensure that everything works correctly after the migration. Usually testing is not pergect, which force mgirations to discover problems was burried in the old system.</li>
+<li>Time Pressure: Teams are usually focused on features and migrations take this time away from them.</li>
+<li>Testing: Migrations require extensive testing to ensure that everything works correctly after the migration. Usually testing is not perfect, which forces migrations to discover problems that were buried in the old system.</li>
 </ul>
 <h2 id="difficult-reality-at-scale"><a class="header" href="#difficult-reality-at-scale">Difficult Reality at Scale</a></h2>
 <p>Migrations don't happen as often as they should.</p>
 <p>A lot of technical debt.</p>
-<p>The thing is that, the more often you do migrations, easier it gets, but only if you have good overall architecture and operating principles, otherwisde is a war that never ends.</p>
-<p>Migrations are easily one of the biggestions pains at scale. Not because migrations are impossible but because people tend to not take them serious enoguth and snowball effecrt happens. Once the snowball starts rolling, it gets harder and harder to do migrations.</p>
+<p>The thing is that the more often you do migrations, the easier it gets, but only if you have good overall architecture and operating principles; otherwise, it is a war that never ends.</p>
+<p>Migrations are easily one of the biggest pains at scale. Not because migrations are impossible, but because people tend to not take them seriously enough and a snowball effect happens. Once the snowball starts rolling, it gets harder and harder to do migrations.</p>
 <h1 id="why-use-ai-for-migrations"><a class="header" href="#why-use-ai-for-migrations">Why use AI for Migrations?</a></h1>
-<p>Migrations are hard. Companies do not do as much migrations as they should. However with AI some of the friction and heavy lifthing can be reduced.</p>
+<p>Migrations are hard. Companies do not do as many migrations as they should. However, with AI some of the friction and heavy lifting can be reduced.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="inventory"><a class="header" href="#inventory">Inventory</a></h1>
-<p>Invetory is the first step, we need perform assessments in order to know what we are dealing with. Usually inventories are ignored and that is a big mistake.</p>
-<p>An inventory allow us to plan and stratregize our next steps. Considering the advent of AI agents, now it's much easier to generate inventories.</p>
+<p>Inventory is the first step; we need to perform assessments in order to know what we are dealing with. Usually inventories are ignored and that is a big mistake.</p>
+<p>An inventory allows us to plan and strategize our next steps. Considering the advent of AI agents, now it's much easier to generate inventories.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="migrations-in-phases"><a class="header" href="#migrations-in-phases">Migrations in Phases</a></h1>
-<p>A decent migration has Phases. Depending of the migration you will have more phases. It's very important to have a diagram where you can visualize the phases of the migration.</p>
+<p>A decent migration has phases. Depending on the migration, you will have more phases. It's very important to have a diagram where you can visualize the phases of the migration.</p>
 <p>Here is an example of migration phases:</p>
 <ol>
-<li>Phase 0 - Invetovy</li>
+<li>Phase 0 - Inventory</li>
 <li>Phase 1 - Planning</li>
 <li>Phase 2 - Preparation</li>
 <li>Phase 3 - Execution</li>
@@ -1409,20 +1409,20 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <li>Phase 5 - Rollback (if necessary)</li>
 <li>Phase 6 - Monitoring</li>
 </ol>
-<p>Execution it self should be broken down in smaller phases depending on the size of the migration. Validation is something that should also happen during preparation and execution.</p>
+<p>Execution itself should be broken down into smaller phases depending on the size of the migration. Validation is something that should also happen during preparation and execution.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="testing"><a class="header" href="#testing">Testing</a></h1>
 <p>You can't move if you don't have tests. Add tests first.</p>
 <p>Since Gen-AI has this issue with <code>determinism</code>, it's very likely AI will introduce bugs, or even just delete whole features and mess up with things unrelated to your prompts.</p>
 <p>Tests are a great way to compensate for that. Because good tests are deterministic, they will help you identify when something is broken.So before touching anything, make sure you have good testing in place, we can use AI to help us write those tests as well.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="after-migrations"><a class="header" href="#after-migrations">After Migrations</a></h1>
-<p>When Migration ends, they don't end. Because you always need to do clean up. Before you do clean up, you need check for <code>left overs</code> and <code>orphaned resources</code>.</p>
-<p>Usually monitoring and logging are the way to verify is someone(piece of software) was left behind.</p>
+<p>When migrations end, they don't end. Because you always need to do cleanup. Before you do cleanup, you need to check for <code>leftovers</code> and <code>orphaned resources</code>.</p>
+<p>Usually monitoring and logging are the way to verify if someone (piece of software) was left behind.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-8---non-obvious-use-cases"><a class="header" href="#chapter-8---non-obvious-use-cases">Chapter 8 - Non-Obvious Use Cases</a></h1>
 <p>For this chapter I want cover some non-obvious use cases where AI can help engineers be more productive.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="proof-reader"><a class="header" href="#proof-reader">Proof Reader</a></h1>
 <p>Using AI to Write and Spell Check Documents, AI is a great Proof Reader.</p>
-<p>It's common for people make mistakes when writing documents, sometimes is just typos, other times is grammar mistakes or even factual mistakes. AI is really great, finding a fixing all this commong issues.</p>
-<p>Here is a example of Claude code command you could use to proof read a document or your project:</p>
+<p>It's common for people to make mistakes when writing documents; sometimes it's just typos, other times it's grammar mistakes or even factual mistakes. AI is really great at finding and fixing all these common issues.</p>
+<p>Here is an example of a Claude Code command you could use to proofread a document or your project:</p>
 <pre><code>~/.claude/commands/english.md
 </code></pre>
 <p>english.md</p>
@@ -1434,39 +1434,39 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 - Make sure you dont break anything, make sure you dont loose content
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h1>
-<p>Using ai to help troubleshoot problems in code, systems, and architectures.</p>
+<p>Using AI to help troubleshoot problems in code, systems, and architectures.</p>
 <h2 id="debugging-with-ai-using-images"><a class="header" href="#debugging-with-ai-using-images">Debugging with AI using Images</a></h2>
-<p>Many people dont know but most of AI coding agents support you darg and drop image and the model can "read" the image and make sense of the image. This is very very useful for troubleshooting. AI is impressive hnadling images with errors like:</p>
+<p>Many people don't know, but most AI coding agents support you dragging and dropping an image and the model can "read" the image and make sense of the image. This is very useful for troubleshooting. AI is impressive at handling images with errors like:</p>
 <ul>
 <li>Frontend/Mobile apps Errors (Screenshots of the app with errors)</li>
 <li>Backend/Infrastructure Errors (Screenshots of metrics, dashboards and alerts)</li>
 <li>Kubernetes Errors (Screenshots of kubernetes dashboards, pod errors, etc)</li>
 </ul>
 <h2 id="git-archaeology-for-troubleshooting"><a class="header" href="#git-archaeology-for-troubleshooting">Git Archaeology for Troubleshooting</a></h2>
-<p>Also like I explained because AI it's very very good using git. AI can nativate into git log and history and figureout a bunch of things there. Sometimes AI would not figure out how to read remnote repositories, but you can also git clone repos for ai and them point AI to your file system.</p>
+<p>Also, like I explained, AI is very good at using git. AI can navigate into git log and history and figure out a bunch of things there. Sometimes AI would not figure out how to read remote repositories, but you can also git clone repos for AI and then point AI to your file system.</p>
 <h2 id="analyzing-logs-with-ai"><a class="header" href="#analyzing-logs-with-ai">Analyzing Logs with AI</a></h2>
-<p>Like git, AI is great reading logs, specially if logs have errors and stack traces, AI is impressive reading logs and finding patterns and issues. AI can also search on the AI(all coding agents pretty much have this feaature now a days).</p>
+<p>Like git, AI is great at reading logs, especially if logs have errors and stack traces. AI is impressive at reading logs and finding patterns and issues. AI can also search on the web (all coding agents pretty much have this feature nowadays).</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="documentation"><a class="header" href="#documentation">Documentation</a></h1>
-<p>Documentation is a non-ovbious AI use case. Ofcouse if you just ask AI to generate documentation without much explanation(or the tech term its called few-shot) you will get bad results. Because AI will generate a bunch of crap. Now if you carefully tell AI todo and get good questions, a good templat that AI can fulfil you can indead generate amazing results.</p>
-<p>Documentation matter,s but it's just testing, something that people should do more but in reality they do not do as much as they should. Usually there is a plenty of things that are not documented, just because they are other priorities and people are slamed with of work doing other things. Sure you could argue that is a culture problem and documentation should be part of the culture and lyfecycle of engineering. In reality things are messy at scale and AI can really help a lot here. As long as we do the right due dilligence.</p>
+<p>Documentation is a non-obvious AI use case. Of course, if you just ask AI to generate documentation without much explanation (or the tech term is called few-shot), you will get bad results. Because AI will generate a bunch of crap. Now if you carefully tell AI what to do and ask good questions, provide a good template that AI can fulfill, you can indeed generate amazing results.</p>
+<p>Documentation matters, but it's just like testing, something that people should do more but in reality they do not do as much as they should. Usually there are plenty of things that are not documented, just because there are other priorities and people are slammed with work doing other things. Sure you could argue that it is a culture problem and documentation should be part of the culture and lifecycle of engineering. In reality, things are messy at scale and AI can really help a lot here, as long as we do the right due diligence.</p>
 <h2 id="generating-changelogs"><a class="header" href="#generating-changelogs">Generating Changelogs</a></h2>
-<p>Another good case for AI documentation is changelos. Yes, people should do it, and 100% this ia discipline problema and could be fixed without AI. But AI is pretty good into reading git log messages and figuring out what changed and why. It's so good that this is one of the tricks why ai is good in SWE benchmarks like HumanEval. Because it can read the git log and figure out what changed.</p>
+<p>Another good case for AI documentation is changelogs. Yes, people should do it, and 100% this is a discipline problem and could be fixed without AI. But AI is pretty good at reading git log messages and figuring out what changed and why. It's so good that this is one of the tricks why AI is good in SWE benchmarks like HumanEval. Because it can read the git log and figure out what changed.</p>
 <p>Here is some evidence that AI Agents cheat on SWE-bench:</p>
 <ul>
 <li><a href="https://github.com/SWE-bench/SWE-bench/issues/465">Repo State Loopholes During Agentic Evaluation</a></li>
 <li><a href="https://bayes.net/swebench-hack/">Claude 4 hacked SWE-bench by peeking at future commits</a></li>
 <li><a href="https://www.reddit.com/r/OpenAI/comments/1nce3ua/meta_called_out_swe_bench_verified_for_being/?utm_source=chatgpt.com">Meta called out SWE bench Verified for being gamed by top AI models. Benchmark might be broken</a></li>
 </ul>
-<p>But this "cheat" also proof they are very good using Git, witch we can use in our advantage.</p>
-<p>Here is a claude code command example on how you could generate a changelog:</p>
+<p>But this "cheat" also proves they are very good at using Git, which we can use to our advantage.</p>
+<p>Here is a Claude Code command example on how you could generate a changelog:</p>
 <pre><code>~/.claude/commands/changelog.md
 </code></pre>
 <p>changelog.md</p>
-<pre><code># Create or update oproject CHANGELOG.md
+<pre><code># Create or update project CHANGELOG.md
 - Read commits from git history
 - Read the code
-- Makesure the changelog has meaning
-- Do not loose content, dont delete content from other files
+- Make sure the changelog has meaning
+- Do not lose content, don't delete content from other files
 - I want the following sections in the changelog:
   - Added
   - Changed
@@ -1477,35 +1477,35 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 - Give me a commit count per user
 </code></pre>
 <h2 id="generating-knowledge-base"><a class="header" href="#generating-knowledge-base">Generating Knowledge Base</a></h2>
-<p>Another good AI documentation case is that you can make ai generate good documentation about why some changes happened. Imagine that AI could create a timeline with features and explain what features existed in a codebase. AI also can explain maybe technical decisions and explain where things are in the code. Making easier to make sense of projject ad code.</p>
-<p>Engineers always need to learn. Companies are always doing aquisitions and code bases always grow. However with the advent of AI we can makle the process faster and easier. Because now you dont need relly in one person you can use a LLM as your owen private architecture to explain to you wants going one.</p>
+<p>Another good AI documentation case is that you can make AI generate good documentation about why some changes happened. Imagine that AI could create a timeline with features and explain what features existed in a codebase. AI also can explain maybe technical decisions and explain where things are in the code, making it easier to make sense of the project and code.</p>
+<p>Engineers always need to learn. Companies are always doing acquisitions and codebases always grow. However, with the advent of AI, we can make the process faster and easier. Because now you don't need to rely on one person; you can use an LLM as your own private architect to explain to you what's going on.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="onboarding"><a class="header" href="#onboarding">Onboarding</a></h1>
-<p>I don't like onboardings in general. Usually they are a massive waste of time, the idea of onboarding makes a lot of sense but in pratice how people run onboardings is often not effective, IMHO is a complete waste of time.</p>
+<p>I don't like onboardings in general. Usually they are a massive waste of time; the idea of onboarding makes a lot of sense, but in practice how people run onboardings is often not effective. IMHO it is a complete waste of time.</p>
 <p>The common issues I see with bad onboardings are:</p>
 <ul>
-<li>Manager is hands-off and just throw a bunch of links and code and ask people to read</li>
-<li>No Homeworks for the engineer (No output is an anti-pattern)</li>
+<li>Manager is hands-off and just throws a bunch of links and code and asks people to read</li>
+<li>No homeworks for the engineer (no output is an anti-pattern)</li>
 <li>No clear goals or expectations</li>
-<li>When are expentations the manager is just training the engineer how he like to work like: "I want story points of 3-5, dont do PRs with more than 10 files, show up to my 101s, update your JIRA tasks, etc".</li>
+<li>When there are expectations, the manager is just training the engineer how he likes to work, like: "I want story points of 3-5, don't do PRs with more than 10 files, show up to my 1:1s, update your JIRA tasks, etc."</li>
 </ul>
-<p>This is a complete waste of time, because the engineer show be, actually doing is:</p>
+<p>This is a complete waste of time, because the engineer should be actually doing this:</p>
 <ul>
-<li>Make sure you have your enviroment ready (make sure you can run and debug the app)</li>
-<li>Make sure you understand where things are and now they work (test, deployment, infra, monitoring)</li>
+<li>Make sure you have your environment ready (make sure you can run and debug the app)</li>
+<li>Make sure you understand where things are and how they work (test, deployment, infra, monitoring)</li>
 <li>Make sure you understand the basics of the business and the code</li>
 </ul>
-<p>Because onboarding is so terrible, pretty much is a 2-4 weeks vacation for the manager. The worst is that is common the engineer gets out of the onboarding and it's not <code>ready</code>. So bad expectations game already happen and the engineer is behind.</p>
+<p>Because onboarding is so terrible, pretty much it is a 2-4 weeks vacation for the manager. The worst is that it is common for the engineer to get out of the onboarding and not be <code>ready</code>. So a bad expectations game has already happened and the engineer is behind.</p>
 <p>A good onboarding should have:</p>
 <ul>
-<li>Have the enviroment ready (be able to run and debug the code)</li>
-<li>Homeworks (the engineer must do something, make sure PR, get some task done)</li>
+<li>Have the environment ready (be able to run and debug the code)</li>
+<li>Homeworks (the engineer must do something, make a PR, get some task done)</li>
 <li>Short, 1-2 weeks maximum</li>
-<li>Should be closely managed, otherwise it has a chance of being a disaster</li>
+<li>Should be closely managed; otherwise, it has a chance of being a disaster</li>
 </ul>
-<p>Now AI enters the field. Using AI, we can make this much better because, now the engineer can use AI as a private tutor. If the engineer knows how to ask the right questions it can lean much faster.</p>
+<p>Now AI enters the field. Using AI, we can make this much better because now the engineer can use AI as a private tutor. If the engineer knows how to ask the right questions, they can learn much faster.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-9---learning-from-ai"><a class="header" href="#chapter-9---learning-from-ai">Chapter 9 - Learning from AI</a></h1>
-<p>AI can be a good teacher. Just keep in mind you better cross check what the teacher is telling you. A very simple and effective way to cross check ai - i just to ask links for reference. Them you can go in the internet and read the links and check for your self if AI is wrong or right.</p>
-<p>LLMs still halucinate, usually they halucinate when they don't know the answer, which often means not enough data on the topic in their training set. Evidence:</p>
+<p>AI can be a good teacher. Just keep in mind you better cross-check what the teacher is telling you. A very simple and effective way to cross-check AI is just to ask for links for reference. Then you can go on the internet and read the links and check for yourself if AI is wrong or right.</p>
+<p>LLMs still hallucinate; usually they hallucinate when they don't know the answer, which often means not enough data on the topic in their training set. Evidence:</p>
 <ul>
 <li><a href="https://arxiv.org/pdf/2504.15771">ORION Grounded in Context: Retrieval-Based
 Method for Hallucination Detection</a></li>
@@ -1513,9 +1513,9 @@ Method for Hallucination Detection</a></li>
 An Innate Limitation of Large Language Models</a></li>
 <li><a href="https://arxiv.org/pdf/2406.07457">Estimating the Hallucination Rate of Generative AI</a></li>
 </ul>
-<p>So fact check AI. Besides that AI it a bar raiser, because you must be able to know that AI is lying to you, so you must level up your game and just do better. Know more than AI, so you can spot when it is wrong.</p>
+<p>So fact-check AI. Besides that, AI is a bar raiser, because you must be able to know that AI is lying to you, so you must level up your game and just do better. Know more than AI, so you can spot when it is wrong.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ideas"><a class="header" href="#ideas">Ideas</a></h1>
-<p>Sometimes, especially when you are senior, you did a lot, you saw a lot. It's hard to findout what to learn or waht to build next. You use LLM to give you ideas on what to learn or what to explore.</p>
+<p>Sometimes, especially when you are senior, you did a lot, you saw a lot. It's hard to find out what to learn or what to build next. You can use an LLM to give you ideas on what to learn or what to explore.</p>
 <p>Here some example prompts:</p>
 <p>POCs Ideas</p>
 <pre><code>Give me 10 ideas of POCs I could do with Java and Spring Boot.
@@ -1527,11 +1527,11 @@ An Innate Limitation of Large Language Models</a></li>
 <pre><code>Give me 10 ideas of papers I could read about distributed systems.
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="proof-of-concepts-poc"><a class="header" href="#proof-of-concepts-poc">Proof of Concepts (Poc)</a></h1>
-<p>POCs can be used for a variaty of use cases and pruposes, including:</p>
+<p>POCs can be used for a variety of use cases and purposes, including:</p>
 <ol>
-<li>feasibility study: Proof litary something is possible.</li>
-<li>Learning: Learn how a API, library, framwork or technology works.</li>
-<li>Re-Informent: Repeat an alo 10x so it stick into your brain.</li>
+<li>Feasibility study: Proof literally something is possible.</li>
+<li>Learning: Learn how an API, library, framework, or technology works.</li>
+<li>Reinforcement: Repeat an algo 10x so it sticks in your brain.</li>
 <li>Experimentation: Try out new ideas or approaches without the pressure of a full project.</li>
 <li>Demonstration: Showcasing a concept or idea to stakeholders or team members.</li>
 <li>Validation: Validate assumptions or hypotheses before investing significant resources.</li>
@@ -1539,11 +1539,11 @@ An Innate Limitation of Large Language Models</a></li>
 <li>Innovation: Explore new technologies or methodologies to foster innovation within a team or organization.</li>
 <li>Communication: Facilitate communication and collaboration among team members by providing a tangible example.</li>
 </ol>
-<p>Some of this use cases, AI cannot help you, such as:</p>
+<p>Some of these use cases, AI cannot help you, such as:</p>
 <ul>
-<li>Re-Informent: AI cannot help you to repeat something 10x so it stick into your brain.</li>
-<li>Learning: AI can help you to learn faster, but the actual learning process requires your active engagement and practice. Meaning you need have output, you can just "copy" the result from AI, you need to understand it and apply it yourself.</li>
-<li>Innovation: All people have the same AI, same apis, this is not how you will inovate.</li>
+<li>Reinforcement: AI cannot help you to repeat something 10x so it sticks in your brain.</li>
+<li>Learning: AI can help you to learn faster, but the actual learning process requires your active engagement and practice. Meaning you need to have output; you can't just "copy" the result from AI, you need to understand it and apply it yourself.</li>
+<li>Innovation: All people have the same AI, same APIs; this is not how you will innovate.</li>
 </ul>
 <p>The other use cases, AI can help you to some extent, such as:</p>
 <ul>
@@ -1554,27 +1554,27 @@ An Innate Limitation of Large Language Models</a></li>
 <li>Risk Reduction: AI can help identify potential challenges or issues by analyzing data and providing insights.</li>
 <li>Communication: Facilitate communication and collaboration among team members by providing a tangible example.</li>
 </ul>
-<p>Another usage of AI can be that you can use AI just to get something working quickly, I remember in my life how many times, I took me days or weeks trying to figureout something on the internet, now you can ask AI to do a POC in seconds. You still need todo a second or third pocs, I like doing 10x, but the zero to demo time now is zero.</p>
+<p>Another usage of AI can be that you can use AI just to get something working quickly. I remember in my life how many times it took me days or weeks trying to figure out something on the internet; now you can ask AI to do a POC in seconds. You still need to do a second or third POC; I like doing 10x, but the zero-to-demo time now is zero.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="sentiment-analysis"><a class="header" href="#sentiment-analysis">Sentiment Analysis</a></h1>
-<p>As humans we are stuck into our heads. We have our biases and sometimes we cant' see what we are doing in sense of being maybe too negative or too aggressive in our communication. This is always suttle and requires a lot of self-awareness to catch it. Not anymore, AI it's pretty good at detecting sentiment in text and can help us with that.</p>
+<p>As humans we are stuck in our heads. We have our biases and sometimes we can't see what we are doing in the sense of being maybe too negative or too aggressive in our communication. This is always subtle and requires a lot of self-awareness to catch it. Not anymore; AI is pretty good at detecting sentiment in text and can help us with that.</p>
 <h2 id="should-i-send-this-email"><a class="header" href="#should-i-send-this-email">Should I send this email?</a></h2>
-<p>Let's see you wrote an email. Ask LLM to analyze the sentiment of the email and give you a recommendation if you should send it or not. You can ask if is aggresive, or if is constructive enough. You will learn a lot about your communication style. Plus you can avoid some conflicts by adjusting the tone of your emails.</p>
-<p>Emails are always cold tools that can easily be misinterpreted. Having an AI assistant that can help you adjust the tone of your emails it's a great way to improve your communication skills. The good news is that you just copy the email text and paste it into the prompt. No need to share any private data with third party tools.</p>
+<p>Let's say you wrote an email. Ask an LLM to analyze the sentiment of the email and give you a recommendation on whether you should send it or not. You can ask if it is aggressive, or if it is constructive enough. You will learn a lot about your communication style. Plus you can avoid some conflicts by adjusting the tone of your emails.</p>
+<p>Emails are always cold tools that can easily be misinterpreted. Having an AI assistant that can help you adjust the tone of your emails is a great way to improve your communication skills. The good news is that you just copy the email text and paste it into the prompt. No need to share any private data with third-party tools.</p>
 <h2 id="am-i-too-aggressive-or-negative-in-this-message"><a class="header" href="#am-i-too-aggressive-or-negative-in-this-message">Am I too aggressive or negative in this message?</a></h2>
-<p>Same technique can be usef for regular text messages, whatsapp, social media, blog posts, even for code comments. You can always ask the LLM to analyze the sentiment of your message before sending it. This will help you to be more aware of your communication style and adjust it if necessary.</p>
+<p>The same technique can be used for regular text messages, WhatsApp, social media, blog posts, even for code comments. You can always ask the LLM to analyze the sentiment of your message before sending it. This will help you to be more aware of your communication style and adjust it if necessary.</p>
 <h2 id="analyzing-customer-feedback"><a class="header" href="#analyzing-customer-feedback">Analyzing Customer Feedback</a></h2>
-<p>Either via images or text you can use AI to analyze customer feedback and detect sentiment. This can help you to understand how your customers feel about your product or service and make improvements accordingly. It's easy to fool yourself that is positive feedback when in reality is negative. AI can help you to see the real picture.</p>
+<p>Either via images or text, you can use AI to analyze customer feedback and detect sentiment. This can help you understand how your customers feel about your product or service and make improvements accordingly. It's easy to fool yourself that it is positive feedback when in reality it is negative. AI can help you see the real picture.</p>
 <h2 id="ai-has-bias-too"><a class="header" href="#ai-has-bias-too">AI has bias too</a></h2>
-<p>Keep in mind AI was trained with human data from books and the internet. So it can have the same biases as humans. Always double check the analysis and use your own judgement. AI is a tool to help you, not to replace you. IMHO this is a killer usecase and will help you have better relationships with people by improving your communication skills.</p>
-<p>Just keep in mind AI is not perfect, don't blindly trust it. Use it as a second opinion, not as the ultimate truth.</p>
+<p>Keep in mind AI was trained with human data from books and the internet. So it can have the same biases as humans. Always double-check the analysis and use your own judgment. AI is a tool to help you, not to replace you. IMHO this is a killer use case and will help you have better relationships with people by improving your communication skills.</p>
+<p>Just keep in mind AI is not perfect; don't blindly trust it. Use it as a second opinion, not as the ultimate truth.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="epilogue-1"><a class="header" href="#epilogue-1">Epilogue</a></h1>
-<p>So this is far from being the end. AI will continue to envolve and engineering field, with pratices, tools and techniques will evolve with it. Keep learning, keep exploring and keep building.</p>
+<p>So this is far from being the end. AI will continue to evolve and the engineering field, with practices, tools, and techniques will evolve with it. Keep learning, keep exploring, and keep building.</p>
 <p>Keep some important things in mind:</p>
 <ul>
 <li>AI is a tool, not a magician. Use it wisely.</li>
-<li>Always fact check AI output.</li>
+<li>Always fact-check AI output.</li>
 <li>Keep improving your skills, so you can better use AI.</li>
-<li>Keep Ownership of your work, AI is just an assistant.</li>
+<li>Keep ownership of your work; AI is just an assistant.</li>
 <li>Keep exploring and experimenting with new tools and techniques.</li>
 </ul>
 <h2 id="navigation"><a class="header" href="#navigation">Navigation</a></h2>
@@ -1598,19 +1598,19 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li>Traditional process take from 7 to 12 months.</li>
 <li>I wrote books alone and with other people, more people you have, more coordination you need and longer it takes, more things can go wrong, it's literally no different than a project.</li>
 </ul>
-<p>I want a different experience, I did several things differently here, I'm not saying I would never do traditional books again, but for sure is different, there are somethings here I like a lot, for instance:</p>
+<p>I want a different experience; I did several things differently here. I'm not saying I would never do traditional books again, but for sure it is different; there are some things here I like a lot, for instance:</p>
 <ul>
-<li>Because I used <code>mdbook</code> the book is written with a tool in Rust which is markdown based.</li>
+<li>Because I used <code>mdbook</code>, the book is written with a tool in Rust which is markdown based.</li>
 <li>Mdbook has 3 killer features for me:
 <ul>
-<li>It has a built in search engine, and a very good one.</li>
-<li>It provides a direct link to all pages of the book, every page has a unique URL.</li>
-<li>It has a built in way to generate code snippets with syntax highlighting, videos, themes.</li>
+<li>It has a built-in search engine, and a very good one.</li>
+<li>It provides a direct link to all pages of the book; every page has a unique URL.</li>
+<li>It has a built-in way to generate code snippets with syntax highlighting, videos, and themes.</li>
 </ul>
 </li>
-<li>The book is hosted on git. Meaning I have version control over all the changes of the book what see what I did differently? just use git.</li>
-<li>IF I want say something different, on the traditional book I need to write a new book and people need to buy it to read it, here I just do a <code>git push</code> and it's live, because I have a workflow with github actions to publish the book in a github pages site.</li>
-<li>It's also a way for me to give it back for free.</li>
+<li>The book is hosted on git. Meaning I have version control over all the changes of the book; want to see what I did differently? just use git.</li>
+<li>If I want to say something different, on the traditional book I need to write a new book and people need to buy it to read it; here I just do a <code>git push</code> and it's live, because I have a workflow with GitHub Actions to publish the book on a GitHub Pages site.</li>
+<li>It's also a way for me to give back for free.</li>
 </ul>
 <h2 id="what-tools-did-i-use"><a class="header" href="#what-tools-did-i-use">What tools did I use?</a></h2>
 <p>I basically use <a href="https://code.visualstudio.com/">VSCode</a> to write the book. I used <a href="https://github.com/features/copilot">Github Copilot</a> and <a href="https://github.com/anthropics/claude-code">Claude Code</a>.</p>
@@ -1657,12 +1657,12 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 - Make sure all content is there
 - Make sure you did not delete anything wrongly
 </code></pre>
-<p>Running this custom commands uses in avg ~70k tokens. So I use AI for the boring and repetitive tasks, not to write the book itself. When I run out of tokens on Claude Code I would fallback to Github Copilot.</p>
+<p>Running this custom command uses on avg ~70k tokens. So I use AI for the boring and repetitive tasks, not to write the book itself. When I run out of tokens on Claude Code, I would fall back to GitHub Copilot.</p>
 <h2 id="cicd"><a class="header" href="#cicd">CI/CD</a></h2>
-<p>This book was written with CI/CD in mind from day one. I have a script called <code>bump-version.sh</code> that bumps the version of the book on a file on the root called "VERSION". When I released the book it had ~100 pages on version <code>1.0.0</code> during the first week of the book, I released content everyday. For the first week I did 6 releases: 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5 and 1.0.6. Each release had new content. I also used AI to generate a CHANGELOG.md file so you can track my changes. After release 1.0.5 the book is with 132 pages.</p>
-<p>This is killer feature because I can keep releasing new content, in a very lean/agile way, directly to you the reader.</p>
+<p>This book was written with CI/CD in mind from day one. I have a script called <code>bump-version.sh</code> that bumps the version of the book in a file at the root called "VERSION". When I released the book, it had ~100 pages on version <code>1.0.0</code>. During the first week of the book, I released content every day. For the first week I did 6 releases: 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5, and 1.0.6. Each release had new content. I also used AI to generate a CHANGELOG.md file so you can track my changes. After release 1.0.5, the book has 132 pages.</p>
+<p>This is a killer feature because I can keep releasing new content in a very lean/agile way, directly to you the reader.</p>
 <h2 id="did-you-like-my-work-did-it-help-you"><a class="header" href="#did-you-like-my-work-did-it-help-you">Did you like my work? Did it help you?</a></h2>
-<p>IF you like my work, you can help me buying one of my other books here:</p>
+<p>If you like my work, you can help me by buying one of my other books here:</p>
 <ul>
 <li><a href="https://www.amazon.com/dp/9365893100/ref=mes-dp?_encoding=UTF8&amp;pd_rd_w=JpyYV&amp;content-id=amzn1.sym.7d2923e8-7496-46a5-862d-8ef28e908025&amp;pf_rd_p=7d2923e8-7496-46a5-862d-8ef28e908025&amp;pf_rd_r=K6XYEHZZ76RWDSAXAY5X&amp;pd_rd_wg=RH04x&amp;pd_rd_r=f230b2e4-c342-429e-a362-c856e4c2362a">Continuous Modernization</a></li>
 <li><a href="https://www.amazon.com/Principles-Software-Architecture-Modernization-microservices/dp/9355519532/ref=sr_1_1?crid=7U3H2IE5U7Y4&amp;dib=eyJ2IjoiMSJ9.ebHg7EIiJ3GThIg8Dwf4PelC70iUIbHPKv7_7zk8vrk8K2FB4zlrUQyNZwKAHPO46cAYR5z2-KyqnXqNz3Ee2lmU-aGR7NLhq7jko2UihHIl-taoJ6i_hkMjcc12ZF3pOmB9lFrvbsGgbDagq1Vzqg.oz7TxYpSBxBZjVjkuIPDZM7Wxx_XMRU0Uj7jo9Rq_BI&amp;dib_tag=se&amp;keywords=principles+of+software+architecture+modernization&amp;qid=1741069169&amp;sprefix=Principles+of+software+a%2Caps%2C190&amp;sr=8-1">Principles of Software Architecture Modernization</a></li>
@@ -1690,23 +1690,145 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <h4 id="vibe-coding-1"><a class="header" href="#vibe-coding-1">Vibe Coding</a></h4>
 <ul>
 <li><a href="https://x.com/karpathy/status/1886192184808149383?lang=en">Vibe Coding Tweet - Andrej Karpathy</a></li>
+<li><a href="https://www.youtube.com/embed/lXUZvyajciY?start=6228">Demo to Production Gap - Andrej Karpathy Video</a></li>
 </ul>
 <h4 id="ai-input-1"><a class="header" href="#ai-input-1">AI Input</a></h4>
 <ul>
 <li><a href="https://diego-pacheco.blogspot.com/2025/09/ai-output.html">Using AI for Input - Diego Pacheco</a></li>
 </ul>
+<h4 id="mirror-on-steroids-1"><a class="header" href="#mirror-on-steroids-1">Mirror on Steroids</a></h4>
+<ul>
+<li><a href="https://diego-pacheco.blogspot.com/2025/11/ai-coding-agents-economics.html">AI Coding Agents Economics - Diego Pacheco</a></li>
+</ul>
+<h3 id="ai-scams-and-failures"><a class="header" href="#ai-scams-and-failures">AI Scams and Failures</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=d7DtiMzMBdU">The Rabbit Is A Scam - YouTube</a></li>
+<li><a href="https://futurism.com/the-byte/openai-sora-demo">Sora Demo Controversy - Futurism</a></li>
+<li><a href="https://www.upworthy.com/prankster-tricks-a-gm-dealership-chatbot-to-sell-him-a-76000-chevy-tahoe-for-ex1">GM Dealership Chatbot Fail - Upworthy</a></li>
+<li><a href="https://www.youtube.com/shorts/IXMRiU3ogrA">Taco Bell AI Fail - YouTube Short</a></li>
+<li><a href="https://calmatters.org/economy/technology/2025/09/chatgpt-lawyer-fine-ai-regulation/">ChatGPT Lawyer Fine - CalMatters</a></li>
+<li><a href="https://www.theguardian.com/commentisfree/2024/apr/10/amazon-ai-cashier-less-shops-humans-technology">Amazon AI Cashier-less Shops - The Guardian</a></li>
+<li><a href="https://www.damiencharlotin.com/hallucinations/">AI Hallucinations in Court - Damien Charlot</a></li>
+<li><a href="https://aicodinghorrors.com/">AI Coding Horrors - Collection</a></li>
+<li><a href="https://www.binance.com/en/square/post/24723372076545">$1.5B AI Unicorn Collapse - Binance</a></li>
+<li><a href="https://www.youtube.com/watch?v=QX1Xwzm9yHY">Replacing Humans with AI Going Wrong - YouTube</a></li>
+<li><a href="https://www.bloomberg.com/news/articles/2025-05-08/klarna-turns-from-ai-to-real-person-customer-service">Klarna AI Rollback - Bloomberg</a></li>
+</ul>
+<h3 id="ai-and-jobs"><a class="header" href="#ai-and-jobs">AI and Jobs</a></h3>
+<ul>
+<li><a href="https://www.cnbc.com/2025/10/22/ai-taking-white-collar-jobs-economists-warn-much-more-in-the-tank.html">AI Taking White Collar Jobs - CNBC</a></li>
+<li><a href="https://www.brookings.edu/articles/new-data-show-no-ai-jobs-apocalypse-for-now/">No AI Jobs Apocalypse - Brookings Institute</a></li>
+</ul>
+<h3 id="ai-theory"><a class="header" href="#ai-theory">AI Theory</a></h3>
+<ul>
+<li><a href="https://doctorow.medium.com/https-pluralistic-net-2025-08-16-jackpot-salience-bias-2a696501bba7">LLMs are Slot Machines - Cory Doctorow</a></li>
+<li><a href="https://www.selector.ai/blog/95-of-ai-pilots-fail-heres-how-to-be-the-5/">AI Pilots Failure Rate - Selector AI</a></li>
+</ul>
+<h3 id="research-papers"><a class="header" href="#research-papers">Research Papers</a></h3>
+<ul>
+<li><a href="https://arxiv.org/pdf/2402.09171">Facebook Paper on AI Test Generation - arXiv</a></li>
+<li><a href="https://arxiv.org/pdf/2504.15771">ORION: Retrieval-Based Method for Hallucination Detection - arXiv</a></li>
+<li><a href="https://arxiv.org/pdf/2401.11817">Hallucination is Inevitable - arXiv</a></li>
+<li><a href="https://arxiv.org/pdf/2406.07457">Estimating the Hallucination Rate of Generative AI - arXiv</a></li>
+</ul>
+<h2 id="chapter-4---agents-1"><a class="header" href="#chapter-4---agents-1">Chapter 4 - Agents</a></h2>
+<h3 id="coding-agents-and-tools"><a class="header" href="#coding-agents-and-tools">Coding Agents and Tools</a></h3>
+<ul>
+<li><a href="https://github.com/features/copilot">GitHub Copilot</a></li>
+<li><a href="https://www.claude.com/product/claude-code">Claude Code</a></li>
+<li><a href="https://aws.amazon.com/q/">Amazon Q</a></li>
+<li><a href="https://kiro.dev/">AWS Kiro</a></li>
+<li><a href="https://jules.google/">Google Jules</a></li>
+<li><a href="https://chatgpt.com/features/codex">OpenAI Codex</a></li>
+<li><a href="https://github.com/google-gemini/gemini-cli">Google Gemini CLI</a></li>
+<li><a href="https://github.com/openai/codex">Codex CLI</a></li>
+<li><a href="https://github.com/sst/opencode">OpenCode</a></li>
+<li><a href="https://www.anthropic.com/news/skills">Claude Skills</a></li>
+</ul>
+<h3 id="mcp-and-agent-architecture"><a class="header" href="#mcp-and-agent-architecture">MCP and Agent Architecture</a></h3>
+<ul>
+<li><a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP Documentation</a></li>
+<li><a href="https://www.whatismcp.com/">What is MCP</a></li>
+<li><a href="https://mcp.so/">MCP.so</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Language_Server_Protocol">Language Server Protocol - Wikipedia</a></li>
+<li><a href="https://github.com/crystaldba/postgres-mcp">Postgres MCP</a></li>
+<li><a href="https://github.com/korotovsky/slack-mcp-server">Slack MCP Server</a></li>
+<li><a href="https://mcpservers.org/">Awesome MCPs</a></li>
+<li><a href="https://github.com/hesreallyhim/awesome-claude-code">Awesome Claude Code</a></li>
+<li><a href="https://github.com/punkpeye/awesome-mcp-servers">Awesome MCP Servers</a></li>
+<li><a href="https://github.com/modelcontextprotocol/servers">MCP Servers Repository</a></li>
+<li><a href="https://github.com/upstash/context7">Context7 MCP</a></li>
+<li><a href="https://a2a-protocol.com/">Agent to Agent Protocol</a></li>
+<li><a href="https://materializedview.io/p/mcp-server-could-have-been-json-file">MCP Could Have Been JSON File</a></li>
+<li><a href="https://aws.amazon.com/what-is/ai-agents/">What are AI Agents - AWS</a></li>
+<li><a href="https://medium.com/@tasospapalias/sibyls-and-servants-the-roots-of-artificial-intelligence-in-ancient-greek-lore-b28257e98a0a">Sibyls and Servants - Medium</a></li>
+</ul>
+<h3 id="mcp-security"><a class="header" href="#mcp-security">MCP Security</a></h3>
+<ul>
+<li><a href="https://blog.sshh.io/p/everything-wrong-with-mcp">Everything Wrong with MCP - sshh.io</a></li>
+<li><a href="https://forgecode.dev/blog/prevent-attacks-on-mcp/">Prevent Attacks on MCP - forgecode.dev</a></li>
+<li><a href="https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs">Treating MCP Servers Like Bombs - DevInterrupted</a></li>
+<li><a href="https://evo.ai.snyk.io/">Evo by Snyk</a></li>
+<li><a href="https://github.com/cisco-ai-defense/mcp-scanner">Cisco MCP Scanner</a></li>
+</ul>
+<h3 id="context-and-documentation"><a class="header" href="#context-and-documentation">Context and Documentation</a></h3>
+<ul>
+<li><a href="https://llmstxt.org/">llms.txt Specification</a></li>
+<li><a href="https://docs.claude.com/llms-full.txt">Claude llms-full.txt</a></li>
+<li><a href="https://cdn.openai.com/API/docs/txt/llms.txt">OpenAI llms.txt</a></li>
+<li><a href="https://langchain-ai.github.io/langgraph/llms-txt-overview/">LangGraph llms.txt</a></li>
+<li><a href="https://context7.com/">Context7 Service</a></li>
+<li><a href="https://docs.claude.com/en/docs/build-with-claude/context-windows">Context Windows - Claude Docs</a></li>
+</ul>
+<h3 id="agent-patterns-1"><a class="header" href="#agent-patterns-1">Agent Patterns</a></h3>
+<ul>
+<li><a href="https://diego-pacheco.blogspot.com/2025/07/ai-agent-patterns.html">AI Agent Patterns - Diego Pacheco</a></li>
+<li><a href="https://www.enterpriseintegrationpatterns.com/">Enterprise Integration Patterns</a></li>
+</ul>
+<h3 id="benchmarks"><a class="header" href="#benchmarks">Benchmarks</a></h3>
+<ul>
+<li><a href="https://github.com/SWE-bench/SWE-bench/issues/465">SWE-bench Repo State Loopholes</a></li>
+<li><a href="https://bayes.net/swebench-hack/">Claude 4 SWE-bench Gaming - Bayes.net</a></li>
+<li><a href="https://www.reddit.com/r/OpenAI/comments/1nce3ua/meta_called_out_swe_bench_verified_for_being/">SWE-bench Verified Issues - Reddit</a></li>
+</ul>
+<h2 id="chapter-5---claude-code-1"><a class="header" href="#chapter-5---claude-code-1">Chapter 5 - Claude Code</a></h2>
+<h3 id="claude-code-documentation"><a class="header" href="#claude-code-documentation">Claude Code Documentation</a></h3>
+<ul>
+<li><a href="https://docs.claude.com/en/resources/prompt-library/library">Claude Prompt Library</a></li>
+<li><a href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices">Claude 4 Best Practices</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/slash-commands.md">Claude Code Slash Commands</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/interactive-mode">Claude Code Interactive Mode</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/hooks-guide">Claude Code Hooks Guide</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/statusline">Claude Code Statusline</a></li>
+<li><a href="https://github.com/sirmalloc/ccstatusline">CCStatusline by sirmalloc</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/mcp">Claude Code MCP</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/headless">Claude Code Headless Mode</a></li>
+<li><a href="https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands">Custom Commands Tutorial - GitHub</a></li>
+<li><a href="https://github.com/anthropics/claude-code">Claude Code GitHub</a></li>
+</ul>
+<h3 id="development-tools"><a class="header" href="#development-tools">Development Tools</a></h3>
+<ul>
+<li><a href="https://code.visualstudio.com/">VSCode</a></li>
+<li><a href="https://codingdojo.org/">Coding Dojo</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Test-driven_development">Test-driven Development - Wikipedia</a></li>
+<li><a href="https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html">Spec Driven Development - Martin Fowler</a></li>
+<li><a href="https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html">Testing Queues and Batch Jobs - Diego Pacheco</a></li>
+</ul>
 <h2 id="authors-published-works"><a class="header" href="#authors-published-works">Author's Published Works</a></h2>
 <ul>
-<li><a href="https://www.amazon.com/Principles-Software-Architecture-Modernization-microservices/dp/9355519532/ref=sr_1_1?crid=7U3H2IE5U7Y4&amp;dib=eyJ2IjoiMSJ9.ebHg7EIiJ3GThIg8Dwf4PelC70iUIbHPKv7_7zk8vrk8K2FB4zlrUQyNZwKAHPO46cAYR5z2-KyqnXqNz3Ee2lmU-aGR7NLhq7jko2UihHIl-taoJ6i_hkMjcc12ZF3pOmB9lFrvbsGgbDagq1Vzqg.oz7TxYpSBxBZjVjkuIPDZM7Wxx_XMRU0Uj7jo9Rq_BI&amp;dib_tag=se&amp;keywords=principles+of+software+architecture+modernization&amp;qid=1741069169&amp;sprefix=Principles+of+software+a%2Caps%2C190&amp;sr=8-1">Principles of Software Architecture Modernization - Diego Pacheco</a></li>
-<li><a href="https://www.amazon.com/dp/9365893100/ref=mes-dp?_encoding=UTF8&amp;pd_rd_w=JpyYV&amp;content-id=amzn1.sym.7d2923e8-7496-46a5-862d-8ef28e908025&amp;pf_rd_p=7d2923e8-7496-46a5-862d-8ef28e908025&amp;pf_rd_r=K6XYEHZZ76RWDSAXAY5X&amp;pd_rd_wg=RH04x&amp;pd_rd_r=f230b2e4-c342-429e-a362-c856e4c2362a">Continuous Modernization - Diego Pacheco</a></li>
+<li><a href="https://www.amazon.com/Principles-Software-Architecture-Modernization-microservices/dp/9355519532/">Principles of Software Architecture Modernization - Diego Pacheco</a></li>
+<li><a href="https://www.amazon.com/dp/9365893100/">Continuous Modernization - Diego Pacheco</a></li>
+<li><a href="https://books.apple.com/us/book/building-applications-with-scala/id1113861297">Building Applications with Scala - Diego Pacheco</a></li>
 </ul>
 <h2 id="authors-technical-resources"><a class="header" href="#authors-technical-resources">Author's Technical Resources</a></h2>
 <ul>
 <li><a href="https://diegopacheco.github.io/diegopacheco-architecture-library/introduction.html">Diego Pacheco's Software Architecture Library</a></li>
+<li><a href="https://github.com/diegopacheco/ai-playground">AI Playground - 300+ POCs</a></li>
 </ul>
 <h2 id="authors-online-presence"><a class="header" href="#authors-online-presence">Author's Online Presence</a></h2>
 <ul>
-<li><a href="https://diego-pacheco.blogspot.com/">Blogger - Personal Blog</a></li>
+<li><a href="https://diego-pacheco.blogspot.com/">Blogger - Personal Blog (since 2007)</a></li>
+<li><a href="https://diego-pacheco.blogspot.com/2007/03/boas-vindas-primeiro-post.html">First Blog Post - 2007</a></li>
 <li><a href="https://diegopachecotech.substack.com/">Substack Newsletter</a></li>
 <li><a href="https://diego-pacheco.medium.com/">Medium Profile</a></li>
 <li><a href="https://amazon.com/author/diegopacheco">Amazon Author Profile</a></li>
@@ -1757,14 +1879,28 @@ Deceptive practices involving AI technology, including false AGI claims, wrapper
 Autonomous or semi-autonomous systems that can perform tasks, make decisions, and interact with environments using AI capabilities.</p>
 <p><strong>Agentic Behavior</strong>
 Behavior exhibited by agents that allows them to act autonomously in pursuit of defined goals, making decisions based on environment state.</p>
+<p><strong>API Key</strong>
+Authentication token required to access AI services programmatically for production deployment.</p>
 <h2 id="b"><a class="header" href="#b">B</a></h2>
+<p><strong>Bash Orchestration</strong>
+Running Claude Code as a Unix/Linux process enabling pipeline and automation workflows.</p>
+<p><strong>Benchmark Gaming</strong>
+Practice where AI models exploit benchmark loopholes to achieve higher scores without genuinely improving capabilities.</p>
+<p><strong>Build Process</strong>
+Automated compilation and deployment process that can be monitored and optimized with AI assistance.</p>
 <p><strong>Bash Mode</strong>
 A Claude Code feature enabling direct bash command execution for system operations.</p>
 <h2 id="c"><a class="header" href="#c">C</a></h2>
 <p><strong>Change and Adaptation</strong>
 The necessity for engineers and organizations to adapt to AI-driven disruption as AI becomes increasingly integrated into software development.</p>
+<p><strong>.claudeignore</strong>
+File specifying which files Claude Code should not read, similar to .gitignore for version control.</p>
+<p><strong>CLAUDE.md</strong>
+Global configuration file for Claude Code behavior, containing project-specific instructions and preferences.</p>
 <p><strong>Claude Code</strong>
 A specific AI tool/platform (Anthropic's Claude used for coding tasks) covered extensively in Chapter 5.</p>
+<p><strong>CLI Agents</strong>
+Command-line interface based coding agents that run directly on local machines.</p>
 <p><strong>Classification</strong>
 A Traditional AI/ML task involving categorizing data into predefined classes or categories based on learned patterns.</p>
 <p><strong>Clever Hans Effect</strong>
@@ -1775,8 +1911,12 @@ A Traditional AI/ML unsupervised learning task involving grouping similar data p
 Critical process of examining AI-generated or any code for correctness, security, and alignment with requirements before deployment. Essential when using AI.</p>
 <p><strong>Coding Agents</strong>
 AI agents specifically designed or trained to generate, modify, and work with software code.</p>
+<p><strong>Coding Dojo</strong>
+Practice environment where engineers work without AI using TDD, forcing manual skill development and maintaining proficiency.</p>
 <p><strong>Context Window</strong>
 The amount of text/tokens an LLM can process at once. Larger context windows allow for processing more information simultaneously.</p>
+<p><strong>Context7</strong>
+Service providing up-to-date library documentation to address LLMs' outdated training data.</p>
 <p><strong>Core Business Logic</strong>
 Critical business logic and intellectual property that should never be created through "vibe coding" due to quality and proprietary concerns.</p>
 <p><strong>Custom Agents</strong>
@@ -1788,6 +1928,8 @@ Specific commands or workflows configured within Claude Code or similar tools fo
 Technique for troubleshooting code issues by providing AI with visual representations (screenshots/images) of problems.</p>
 <p><strong>Decision Criteria</strong>
 Framework for determining when and how to use AI effectively in different scenarios.</p>
+<p><strong>Determinism</strong>
+Property of producing identical outputs for identical inputs, which AI lacks due to its probabilistic nature.</p>
 <p><strong>Dimensionality Reduction</strong>
 A Traditional AI/ML technique for reducing the number of variables/features in data while preserving meaningful information. Examples include PCA.</p>
 <p><strong>Disruption</strong>
@@ -1799,7 +1941,11 @@ Using AI to generate and maintain code documentation, changelogs, and knowledge 
 Numerical vector representations of text, images, or other data that capture semantic meaning. Essential for RAG and vector databases. Can represent words, sentences, or entire documents.</p>
 <p><strong>Engineering with AI</strong>
 The practice of applying AI tools and methodologies to improve software development processes.</p>
+<p><strong>Enterprise Integration Patterns (EIP)</strong>
+Design patterns by Gregor Hohpe and Bobby Woolf that AI agent patterns derive from.</p>
 <h2 id="f"><a class="header" href="#f">F</a></h2>
+<p><strong>Few-Shot Examples</strong>
+Training technique providing examples to help models perform tasks better without extensive retraining.</p>
 <p><strong>Fine Tuning</strong>
 Process of training a pre-trained model on specific domain data to adapt it to particular use cases without full retraining.</p>
 <h2 id="g"><a class="header" href="#g">G</a></h2>
@@ -1807,7 +1953,14 @@ Process of training a pre-trained model on specific domain data to adapt it to p
 AI systems that can generate new content, including text, code, images, and other media. The book focuses on using Generative AI for software engineering tasks. Works through predicting next tokens/sequences.</p>
 <p><strong>Git Archaeology for Troubleshooting</strong>
 Technique using git history to understand code evolution and diagnose issues.</p>
+<h2 id="h"><a class="header" href="#h">H</a></h2>
+<p><strong>Headless Mode</strong>
+Running Claude Code via command line without interactive interface for automation and scripting.</p>
+<p><strong>Hooks (Claude Code)</strong>
+Event-driven automation triggers that execute scripts on specific events in Claude Code.</p>
 <h2 id="i"><a class="header" href="#i">I</a></h2>
+<p><strong>IDE-based Agents</strong>
+AI coding assistants integrated into development environments like VSCode.</p>
 <p><strong>Image Generation</strong>
 Generative AI capability for creating visual content from text descriptions or other inputs.</p>
 <p><strong>Inventory (Migrations)</strong>
@@ -1820,6 +1973,10 @@ Using AI to create and maintain comprehensive documentation systems.</p>
 Process of using AI as an educational tool while maintaining critical thinking and verification.</p>
 <p><strong>LLM (Large Language Model)</strong>
 A type of AI model trained on massive amounts of text data that can understand and generate human-like text. Examples include GPT, Claude, and other similar models. LLMs work by predicting the next sequence of tokens. Cannot truly "think" despite marketing claims.</p>
+<p><strong>llms.txt / llms-full.txt</strong>
+Text files at website roots helping LLMs navigate and understand site content, providing structured documentation.</p>
+<p><strong>LSP (Language Server Protocol)</strong>
+Standard protocol that MCP is compared to for understanding its architecture and functionality.</p>
 <p><strong>LLMs as Slot Machines</strong>
 Concept by Cory Doctorow describing LLMs as fundamentally random/probabilistic systems predicting next tokens, not deterministic reasoning engines.</p>
 <h2 id="m"><a class="header" href="#m">M</a></h2>
@@ -1827,6 +1984,14 @@ Concept by Cory Doctorow describing LLMs as fundamentally random/probabilistic s
 The often misleading promotion of AI capabilities, including false AGI claims and overstated application benefits.</p>
 <p><strong>MCP (Model Context Protocol)</strong>
 A protocol for connecting AI models to external tools and data sources, enabling extended capabilities.</p>
+<p><strong>MCP Client</strong>
+Component within AI host that connects to MCP servers.</p>
+<p><strong>MCP Host</strong>
+The AI agent or tool that contains MCP clients.</p>
+<p><strong>MCP Scanner</strong>
+Security tool for analyzing MCP servers for vulnerabilities.</p>
+<p><strong>MCP Server</strong>
+External service providing tools and data to AI models via Model Context Protocol.</p>
 <p><strong>Migrations</strong>
 Process of moving systems, code, libraries, or data from one platform, language, or infrastructure to another.</p>
 <p><strong>Migrations in Phases</strong>
@@ -1836,6 +2001,10 @@ Concept that AI amplifies existing abilities: good engineers become better with 
 <h2 id="p"><a class="header" href="#p">P</a></h2>
 <p><strong>Precision and Reproducibility</strong>
 Challenge with AI systems: inability to guarantee identical outputs for identical inputs due to probabilistic nature.</p>
+<p><strong>Prompt Engineering</strong>
+Craft of writing effective instructions for AI models to achieve desired outcomes.</p>
+<p><strong>Prompt Library</strong>
+Collection of pre-written prompts demonstrating AI capabilities and best practices.</p>
 <p><strong>Prompts</strong>
 Instructions or queries given to AI systems to generate desired outputs.</p>
 <p><strong>Proof of Concepts (POCs)</strong>
@@ -1854,6 +2023,10 @@ Professional principle that code should be reviewed and understood by creators b
 <p><strong>Responsible AI Usage</strong>
 Using AI as input/research tool while maintaining human judgment, code review, and verification responsibilities.</p>
 <h2 id="s"><a class="header" href="#s">S</a></h2>
+<p><strong>Sandbox-Based Agents</strong>
+AI coding agents that operate in isolated environments separate from user's machine for security.</p>
+<p><strong>SDD (Spec Driven Development)</strong>
+Development approach implemented by AWS Kiro where specifications drive implementation.</p>
 <p><strong>Security and MCPs</strong>
 Considerations for safely integrating external tools and protocols with AI systems to prevent unauthorized access or malicious operations.</p>
 <p><strong>Sentiment Analysis</strong>
@@ -1862,13 +2035,25 @@ Analyzing emotional tone and intent in text, applicable to emails, customer feed
 Philosophy distinguishing genuine innovations from superficial API wrappers. Many AI startups are wrappers rather than true solutions.</p>
 <p><strong>Sound Generation</strong>
 Generative AI capability for creating audio content.</p>
+<p><strong>Status Line</strong>
+Customizable information display at bottom of Claude Code interface showing current state.</p>
+<p><strong>SWE-bench</strong>
+Software engineering benchmark for evaluating AI coding capabilities.</p>
+<p><strong>System Prompt</strong>
+Instructions defining how an AI model should behave and respond to user inputs.</p>
 <h2 id="t"><a class="header" href="#t">T</a></h2>
+<p><strong>TDD (Test-Driven Development)</strong>
+Development methodology writing tests before implementation to ensure code quality.</p>
 <p><strong>Technical Debt</strong>
 Accumulated shortcuts and suboptimal solutions in codebases that make migrations and maintenance more difficult.</p>
+<p><strong>Test Induction</strong>
+Proper testing infrastructure setup for comprehensive test coverage.</p>
 <p><strong>Testing</strong>
 Creating test coverage as prerequisite for migrations and code changes.</p>
 <p><strong>Text Generation</strong>
 Generative AI capability for creating written content from prompts or other inputs.</p>
+<p><strong>Token Budget</strong>
+Allocated amount of tokens for AI processing, with ultrathink using up to 10,000+ tokens.</p>
 <p><strong>Tokens</strong>
 The basic units that LLMs process. Text is broken down into tokens, and LLMs predict the next token in a sequence. Understanding tokens is key to understanding how Generative AI works and costs.</p>
 <p><strong>Traditional AI</strong>
@@ -1885,16 +2070,27 @@ A Claude Code feature providing extended reasoning capabilities.</p>
 <h2 id="v"><a class="header" href="#v">V</a></h2>
 <p><strong>Vector Databases</strong>
 Specialized databases storing and querying embeddings efficiently, essential infrastructure for RAG systems.</p>
+<p><strong>Vending (Vetting + Defending)</strong>
+Security practice of thoroughly checking MCP servers before use, combining vetting and defending.</p>
 <p><strong>Vibe Coding</strong>
 A practice coined by Andrej Karpathy where developers generate prompts and do not look at the generated code, assuming AI will handle everything correctly. The book argues this is a bad practice for serious software engineering, especially for core business logic.</p>
+<p><strong>Vintage Coding</strong>
+Practice of coding without AI assistance to maintain core skills and proficiency.</p>
 <p><strong>Vibe Payments</strong>
 A satirical concept introduced in the book suggesting that if developers use "vibe coding" without reviewing code, their payments should also be random and unpredictable, reflecting the lack of due diligence in their work.</p>
 <p><strong>Video Generation</strong>
 Generative AI capability for creating video content from text descriptions or other inputs.</p>
+<h2 id="z"><a class="header" href="#z">Z</a></h2>
+<p><strong>Zero to Demo</strong>
+Rapid prototyping phase made faster with AI assistance.</p>
+<p><strong>Demo to Production</strong>
+Complex productionization phase that remains difficult despite AI assistance, requiring careful engineering.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="index"><a class="header" href="#index">Index</a></h1>
 <h2 id="a-1"><a class="header" href="#a-1">A</a></h2>
 <ul>
+<li><strong>A2A Protocol</strong> - <a href="epilogue/../chapter-4/OTHER_APPROACHES.html">Other Approaches</a></li>
 <li><strong>Adaptation</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
+<li><strong>After Migrations</strong> - <a href="epilogue/../chapter-7/AFTER_MIGRATIONS.html">After Migrations</a></li>
 <li><strong>AGI (Artificial General Intelligence)</strong> - <a href="epilogue/../zero/README.html">Introduction</a>, <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>Agent Patterns</strong> - <a href="epilogue/../chapter-4/AGENTS_PATTERNS.html">Agents Patterns</a></li>
 <li><strong>Agentic Behavior</strong> - <a href="epilogue/../chapter-4/CODING_AGENTS.html">Coding Agents</a></li>
@@ -1907,22 +2103,32 @@ Generative AI capability for creating video content from text descriptions or ot
 <li><strong>Analyzing Logs with AI</strong> - <a href="epilogue/../chapter-8/TROUBLESHOOTING.html">Troubleshooting</a></li>
 <li><strong>Andrej Karpathy</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
 <li><strong>Anthropic API</strong> - <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
+<li><strong>API Keys</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a></li>
+<li><strong>AWS Kiro</strong> - <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a></li>
 </ul>
 <h2 id="b-1"><a class="header" href="#b-1">B</a></h2>
 <ul>
 <li><strong>Bash Mode</strong> - <a href="epilogue/../chapter-5/BASH_MODE.html">Bash Mode</a></li>
+<li><strong>Bash Orchestration</strong> - <a href="epilogue/../chapter-5/CLAUDE_BASH_ORCHESTRATION.html">Claude Bash Orchestration</a></li>
+<li><strong>Benchmark Gaming</strong> - <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a></li>
+<li><strong>Build Process</strong> - <a href="epilogue/../chapter-7/TESTING.html">Testing</a></li>
 </ul>
 <h2 id="c-1"><a class="header" href="#c-1">C</a></h2>
 <ul>
 <li><strong>Change and Adaptation</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>Changelogs</strong> - <a href="epilogue/../chapter-8/DOCUMENTATION.html">Documentation</a></li>
+<li><strong>.claudeignore</strong> - <a href="epilogue/../chapter-5/EXCLUSIONS.html">Exclusions</a></li>
+<li><strong>CLAUDE.md</strong> - <a href="epilogue/../chapter-5/CLAUDE.html">Claude.md</a></li>
 <li><strong>Classification</strong> - <a href="epilogue/../chapter-2/CLASSIFICATION.html">Classification</a></li>
 <li><strong>Claude Bash Orchestration</strong> - <a href="epilogue/../chapter-5/CLAUDE_BASH_ORCHESTRATION.html">Claude Bash Orchestration</a></li>
 <li><strong>Claude Code</strong> - <a href="epilogue/../chapter-5/README.html">Chapter 5</a>, <a href="epilogue/../chapter-5/WHAT.html">What is Claude Code</a>, <a href="epilogue/../chapter-5/CLAUDE.html">Claude.md</a></li>
+<li><strong>Claude Skills</strong> - <a href="epilogue/../chapter-4/OTHER_APPROACHES.html">Other Approaches</a></li>
+<li><strong>CLI Agents</strong> - <a href="epilogue/../chapter-4/CODING_AGENTS.html">Coding Agents</a></li>
 <li><strong>Clever Hans Effect</strong> - <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
 <li><strong>Clustering</strong> - <a href="epilogue/../chapter-2/CLUSTERING.html">Clustering</a></li>
 <li><strong>Code Review</strong> - <a href="epilogue/../chapter-1/AI_INPUT.html">AI Input</a>, <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
 <li><strong>Coding Agents</strong> - <a href="epilogue/../chapter-4/CODING_AGENTS.html">Coding Agents</a></li>
+<li><strong>Coding Dojo</strong> - <a href="epilogue/../chapter-5/WHAT.html">What is Claude Code</a></li>
 <li><strong>Context 7</strong> - <a href="epilogue/../chapter-4/CONTEXT7.html">Context 7</a></li>
 <li><strong>Context Window</strong> - <a href="epilogue/../chapter-4/CONTEXT_WINDOW.html">Context Window</a></li>
 <li><strong>Core Business Logic</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
@@ -1936,6 +2142,8 @@ Generative AI capability for creating video content from text descriptions or ot
 <li><strong>Dark Side of AI</strong> - <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
 <li><strong>Debugging with AI using Images</strong> - <a href="epilogue/../chapter-8/TROUBLESHOOTING.html">Troubleshooting</a></li>
 <li><strong>Decision Criteria</strong> - <a href="epilogue/../chapter-5/DECISION_CRITERIA.html">Decision Criteria</a></li>
+<li><strong>Demo to Production</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
+<li><strong>Determinism</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a></li>
 <li><strong>Dimensionality Reduction</strong> - <a href="epilogue/../chapter-2/DIMENSIONALITY_REDUCTION.html">Dimensionality Reduction</a></li>
 <li><strong>Disruption</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>Documentation</strong> - <a href="epilogue/../chapter-8/DOCUMENTATION.html">Documentation</a></li>
@@ -1945,10 +2153,12 @@ Generative AI capability for creating video content from text descriptions or ot
 <li><strong>Embeddings</strong> - <a href="epilogue/../chapter-3/EMBEDDINGS.html">Embeddings</a></li>
 <li><strong>Email Sentiment Analysis</strong> - <a href="epilogue/../chapter-9/SENTIMENT_ANALYSIS.html">Sentiment Analysis</a></li>
 <li><strong>Engineering with AI</strong> - <a href="epilogue/../chapter-1/README.html">Chapter 1 - Making sense of AI</a></li>
+<li><strong>Enterprise Integration Patterns</strong> - <a href="epilogue/../chapter-4/AGENTS_PATTERNS.html">Agent Patterns</a></li>
 <li><strong>Exclusions</strong> - <a href="epilogue/../chapter-5/EXCLUSIONS.html">Exclusions</a></li>
 </ul>
 <h2 id="f-1"><a class="header" href="#f-1">F</a></h2>
 <ul>
+<li><strong>Few-Shot Examples</strong> - <a href="epilogue/../chapter-3/FINE_TUNING.html">Fine Tuning</a></li>
 <li><strong>Fine Tuning</strong> - <a href="epilogue/../chapter-3/FINE_TUNING.html">Fine Tuning</a></li>
 <li><strong>Fooled by AI</strong> - <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
 </ul>
@@ -1956,10 +2166,18 @@ Generative AI capability for creating video content from text descriptions or ot
 <ul>
 <li><strong>Generative AI</strong> - <a href="epilogue/../chapter-3/README.html">Chapter 3</a>, <a href="epilogue/../chapter-3/WHAT.MD">What is Generative AI</a>, <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a></li>
 <li><strong>Git Archaeology for Troubleshooting</strong> - <a href="epilogue/../chapter-8/TROUBLESHOOTING.html">Troubleshooting</a></li>
+<li><strong>GitHub Copilot</strong> - <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a></li>
 <li><strong>Glossary</strong> - <a href="epilogue/GLOSSARY.html">Glossary</a></li>
+<li><strong>Google Jules</strong> - <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a></li>
+</ul>
+<h2 id="h-1"><a class="header" href="#h-1">H</a></h2>
+<ul>
+<li><strong>Headless Mode</strong> - <a href="epilogue/../chapter-5/CLAUDE_BASH_ORCHESTRATION.html">Claude Bash Orchestration</a></li>
+<li><strong>Hooks</strong> - <a href="epilogue/../chapter-5/HOOKS.html">Hooks</a></li>
 </ul>
 <h2 id="i-1"><a class="header" href="#i-1">I</a></h2>
 <ul>
+<li><strong>IDE-based Agents</strong> - <a href="epilogue/../chapter-4/CODING_AGENTS.html">Coding Agents</a></li>
 <li><strong>Ideas</strong> - <a href="epilogue/../chapter-9/IDEAS.html">Ideas</a></li>
 <li><strong>Image Generation</strong> - <a href="epilogue/../chapter-3/IMAGE_GENERATION.html">Image Generation</a></li>
 <li><strong>Inventory (Migrations)</strong> - <a href="epilogue/../chapter-7/INVENTORY.html">Inventory</a></li>
@@ -1972,12 +2190,19 @@ Generative AI capability for creating video content from text descriptions or ot
 <ul>
 <li><strong>Large Language Models (LLMs)</strong> - <a href="epilogue/../chapter-3/LLM.html">LLM</a>, <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a></li>
 <li><strong>Learning from AI</strong> - <a href="epilogue/../chapter-9/README.html">Chapter 9</a></li>
+<li><strong>llms.txt</strong> - <a href="epilogue/../chapter-4/LLMS.txt.html">LLMS.txt</a></li>
 <li><strong>LLMs as Slot Machines</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a></li>
+<li><strong>LSP</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a></li>
 </ul>
 <h2 id="m-1"><a class="header" href="#m-1">M</a></h2>
 <ul>
 <li><strong>Marketing and AI</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a>, <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
 <li><strong>MCP (Model Context Protocol)</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a>, <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
+<li><strong>MCP Client</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a></li>
+<li><strong>MCP Host</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a></li>
+<li><strong>MCP Scanner</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
+<li><strong>MCP Server</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a></li>
+<li><strong>mdbook</strong> - <a href="epilogue/../epilogue/HOW_I_WROTE_THE_BOOK.html">How I Wrote the Book</a></li>
 <li><strong>Migrations</strong> - <a href="epilogue/../chapter-7/README.html">Chapter 7</a>, <a href="epilogue/../chapter-7/WHY.html">Why use AI for Migrations</a>, <a href="epilogue/../chapter-7/INVENTORY.html">Inventory</a></li>
 <li><strong>Migrations in Phases</strong> - <a href="epilogue/../chapter-7/MIGRATIONS_PHASES.html">Migrations Phases</a></li>
 <li><strong>Mirror on Steroids</strong> - <a href="epilogue/../chapter-1/MIRROR_ASTEROIDS.html">Mirror Asteroids</a></li>
@@ -1988,14 +2213,19 @@ Generative AI capability for creating video content from text descriptions or ot
 </ul>
 <h2 id="o"><a class="header" href="#o">O</a></h2>
 <ul>
+<li><strong>Onboarding</strong> - <a href="epilogue/../chapter-8/ONBOARDING.html">Onboarding</a></li>
 <li><strong>OpenAI API</strong> - <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
+<li><strong>OpenCode</strong> - <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a></li>
 <li><strong>Other Approaches</strong> - <a href="epilogue/../chapter-4/OTHER_APPROACHES.html">Other Approaches</a></li>
+<li><strong>Ownership Principle</strong> - <a href="epilogue/../chapter-1/AI_INPUT.html">AI Input</a></li>
 </ul>
 <h2 id="p-1"><a class="header" href="#p-1">P</a></h2>
 <ul>
 <li><strong>Perry Douglas</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>Popular Agents</strong> - <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a></li>
 <li><strong>Precision and Reproducibility</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a></li>
+<li><strong>Prompt Engineering</strong> - <a href="epilogue/../chapter-5/PROMPT_ADVICES.html">Prompt Advices</a></li>
+<li><strong>Prompt Library</strong> - <a href="epilogue/../chapter-5/PROMPT-LIBRARY.html">Prompt Library</a></li>
 <li><strong>Proof of Concepts (POCs)</strong> - <a href="epilogue/../chapter-9/POCS.html">POCs</a></li>
 <li><strong>Proof Reader</strong> - <a href="epilogue/../chapter-8/PROOF_READER.html">Proof Reader</a></li>
 <li><strong>Prompt Advice</strong> - <a href="epilogue/../chapter-5/PROMPT_ADVICES.html">Prompt Advices</a></li>
@@ -2013,16 +2243,24 @@ Generative AI capability for creating video content from text descriptions or ot
 </ul>
 <h2 id="s-1"><a class="header" href="#s-1">S</a></h2>
 <ul>
+<li><strong>Sandbox-Based Agents</strong> - <a href="epilogue/../chapter-4/CODING_AGENTS.html">Coding Agents</a></li>
+<li><strong>SDD (Spec Driven Development)</strong> - <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a></li>
 <li><strong>Security and MCPs</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
 <li><strong>Sentiment Analysis</strong> - <a href="epilogue/../chapter-9/SENTIMENT_ANALYSIS.html">Sentiment Analysis</a></li>
 <li><strong>Solutions vs Wrappers</strong> - <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
 <li><strong>Sound Generation</strong> - <a href="epilogue/../chapter-3/SOUND_GENERATION.html">Sound Generation</a></li>
+<li><strong>Status Line</strong> - <a href="epilogue/../chapter-5/WHAT.html">What is Claude Code</a></li>
+<li><strong>SWE-bench</strong> - <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a></li>
+<li><strong>System Prompt</strong> - <a href="epilogue/../chapter-5/WHAT.html">What is Claude Code</a></li>
 </ul>
 <h2 id="t-1"><a class="header" href="#t-1">T</a></h2>
 <ul>
+<li><strong>TDD (Test-Driven Development)</strong> - <a href="epilogue/../chapter-7/TESTING.html">Testing</a></li>
 <li><strong>Technical Debt</strong> - <a href="epilogue/../chapter-7/WHY.html">Why use AI for Migrations</a></li>
+<li><strong>Test Induction</strong> - <a href="epilogue/../chapter-7/TESTING.html">Testing</a></li>
 <li><strong>Testing</strong> - <a href="epilogue/../chapter-6/README.html">Chapter 6</a>, <a href="epilogue/../chapter-6/AI_TESTING.html">AI Testing</a>, <a href="epilogue/../chapter-7/TESTING.html">Testing (Migrations)</a></li>
 <li><strong>Text Generation</strong> - <a href="epilogue/../chapter-3/TEXT_GENERATION.html">Text Generation</a></li>
+<li><strong>Token Budget</strong> - <a href="epilogue/../chapter-5/ULTRATHINK.html">Ultrathink</a></li>
 <li><strong>Tokens</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a>, <a href="epilogue/../chapter-3/LLM.html">LLM</a></li>
 <li><strong>Traditional AI</strong> - <a href="epilogue/../chapter-2/README.html">Chapter 2</a>, <a href="epilogue/../chapter-2/WHAT.MD">What is Traditional AI</a></li>
 <li><strong>Transformers</strong> - <a href="epilogue/../chapter-3/TRANSFORMERS.html">Transformers</a></li>
@@ -2036,19 +2274,22 @@ Generative AI capability for creating video content from text descriptions or ot
 <h2 id="v-1"><a class="header" href="#v-1">V</a></h2>
 <ul>
 <li><strong>Vector Databases</strong> - <a href="epilogue/../chapter-3/VECTOR_DBS.html">Vector DBs</a></li>
+<li><strong>Vending (Vetting + Defending)</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
 <li><strong>Vibe Coding</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
 <li><strong>Vibe Coding Best Practices</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
 <li><strong>Vibe Coding Use Cases</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
 <li><strong>Vibe Payments</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
 <li><strong>Video Generation</strong> - <a href="epilogue/../chapter-3/VIDEO_GENERATION.html">Video Generation</a></li>
+<li><strong>Vintage Coding</strong> - <a href="epilogue/../chapter-5/WHAT.html">What is Claude Code</a></li>
 </ul>
 <h2 id="w"><a class="header" href="#w">W</a></h2>
 <ul>
 <li><strong>Wrappers vs Solutions</strong> - <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
 </ul>
-<h2 id="z"><a class="header" href="#z">Z</a></h2>
+<h2 id="z-1"><a class="header" href="#z-1">Z</a></h2>
 <ul>
 <li><strong>Zero Chapter (Introduction)</strong> - <a href="epilogue/../zero/README.html">Introduction</a></li>
+<li><strong>Zero to Demo</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
 </ul>
 
                     </main>
@@ -2068,6 +2309,22 @@ Generative AI capability for creating video content from text descriptions or ot
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

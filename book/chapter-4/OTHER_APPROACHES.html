@@ -186,8 +186,8 @@
 <p><a href="https://a2a-protocol.com/">A2A</a>.</p>
 <h2 id="we-had-apis-before-mcp"><a class="header" href="#we-had-apis-before-mcp">We had APIs before MCP</a></h2>
 <p>There is some critique that MCPs could be just a <a href="https://materializedview.io/p/mcp-server-could-have-been-json-file">JSON file</a> since we are re-using the underlying APIS that already existed.</p>
-<h2 id="calude-skills"><a class="header" href="#calude-skills">Calude Skills</a></h2>
-<p><a href="https://www.anthropic.com/news/skills">Claude Skills</a> is another approach to building coding agents. Where you can bunble text and scripts together to create an agent.</p>
+<h2 id="claude-skills"><a class="header" href="#claude-skills">Claude Skills</a></h2>
+<p><a href="https://www.anthropic.com/news/skills">Claude Skills</a> is another approach to building coding agents, where you can bundle text and scripts together to create an agent.</p>
 
                     </main>
 
@@ -218,6 +218,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

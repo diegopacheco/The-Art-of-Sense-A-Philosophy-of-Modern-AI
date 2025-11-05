@@ -49,7 +49,7 @@ List all background bashes that claude code has run in the current session.
 
 ## /cost
 
-Show the cost of the current session. Only works if you are using a API key based subscription, either directly with Anthropic or via AWS Bedrock. If you are using a subscription based on messages, this command not display anything useful.
+Show the cost of the current session. Only works if you are using an API key based subscription, either directly with Anthropic or via AWS Bedrock. If you are using a subscription based on messages, this command will not display anything useful.
 
 ## /doctor
 

@@ -181,7 +181,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="ideas"><a class="header" href="#ideas">Ideas</a></h1>
-<p>Sometimes, especially when you are senior, you did a lot, you saw a lot. It's hard to findout what to learn or waht to build next. You use LLM to give you ideas on what to learn or what to explore.</p>
+<p>Sometimes, especially when you are senior, you did a lot, you saw a lot. It's hard to find out what to learn or what to build next. You can use an LLM to give you ideas on what to learn or what to explore.</p>
 <p>Here some example prompts:</p>
 <p>POCs Ideas</p>
 <pre><code>Give me 10 ideas of POCs I could do with Java and Spring Boot.
@@ -222,6 +222,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

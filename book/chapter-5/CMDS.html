@@ -217,7 +217,7 @@
 <h2 id="bashes"><a class="header" href="#bashes">/bashes</a></h2>
 <p>List all background bashes that claude code has run in the current session.</p>
 <h2 id="cost"><a class="header" href="#cost">/cost</a></h2>
-<p>Show the cost of the current session. Only works if you are using a API key based subscription, either directly with Anthropic or via AWS Bedrock. If you are using a subscription based on messages, this command not display anything useful.</p>
+<p>Show the cost of the current session. Only works if you are using an API key based subscription, either directly with Anthropic or via AWS Bedrock. If you are using a subscription based on messages, this command will not display anything useful.</p>
 <h2 id="doctor"><a class="header" href="#doctor">/doctor</a></h2>
 <p>Will run diagnostics on the claude code installation. You will see an output like this:</p>
 <pre><code>&gt; /doctor
@@ -294,6 +294,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

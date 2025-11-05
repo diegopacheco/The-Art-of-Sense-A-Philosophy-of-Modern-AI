@@ -181,7 +181,7 @@
                 <div id="content" class="content">
                     <main>
                         <h2 id="what-is-a-migration"><a class="header" href="#what-is-a-migration">What is a Migration?</a></h2>
-<p>It's a different kind of task or software project here it's necessary to change from from:</p>
+<p>It's a different kind of task or software project where it's necessary to change from:</p>
 <ul>
 <li>One version to another (from Spring boot 2x to 3x)</li>
 <li>From one technology to another (like from Python to Scala)</li>
@@ -189,7 +189,7 @@
 <li>From one cloud provider to another (AWS to GCP)</li>
 <li>From one framework to another (like from Angular to React)</li>
 </ul>
-<p>Migrations are necessary for a variaty or reasons, like:</p>
+<p>Migrations are necessary for a variety of reasons, like:</p>
 <ul>
 <li>Security: To handle security issues and vulnerabilities</li>
 <li>Performance: To improve performance and scalability</li>
@@ -200,19 +200,19 @@
 <h2 id="challenges-in-migrations"><a class="header" href="#challenges-in-migrations">Challenges in Migrations</a></h2>
 <p>Migrations are difficult for a variety of reasons:</p>
 <ul>
-<li>Complexity: Migrations can be complex, especially for large applications with many dependencies. Migrght require spesific order of operations.</li>
+<li>Complexity: Migrations can be complex, especially for large applications with many dependencies. Might require a specific order of operations.</li>
 <li>Downtime: Migrations can require downtime, which can be disruptive to users. Not all migrations require downtime, but it's easier with downtime.</li>
 <li>Data Loss: There is a risk of data loss during migrations, especially if not done carefully (in case of database or encryption migrations).</li>
-<li>Time Pressure: Teams are usually focus on features and migrations take this time away from them.</li>
-<li>Testing: Migrations require extensive testing to ensure that everything works correctly after the migration. Usually testing is not pergect, which force mgirations to discover problems was burried in the old system.</li>
+<li>Time Pressure: Teams are usually focused on features and migrations take this time away from them.</li>
+<li>Testing: Migrations require extensive testing to ensure that everything works correctly after the migration. Usually testing is not perfect, which forces migrations to discover problems that were buried in the old system.</li>
 </ul>
 <h2 id="difficult-reality-at-scale"><a class="header" href="#difficult-reality-at-scale">Difficult Reality at Scale</a></h2>
 <p>Migrations don't happen as often as they should.</p>
 <p>A lot of technical debt.</p>
-<p>The thing is that, the more often you do migrations, easier it gets, but only if you have good overall architecture and operating principles, otherwisde is a war that never ends.</p>
-<p>Migrations are easily one of the biggestions pains at scale. Not because migrations are impossible but because people tend to not take them serious enoguth and snowball effecrt happens. Once the snowball starts rolling, it gets harder and harder to do migrations.</p>
+<p>The thing is that the more often you do migrations, the easier it gets, but only if you have good overall architecture and operating principles; otherwise, it is a war that never ends.</p>
+<p>Migrations are easily one of the biggest pains at scale. Not because migrations are impossible, but because people tend to not take them seriously enough and a snowball effect happens. Once the snowball starts rolling, it gets harder and harder to do migrations.</p>
 <h1 id="why-use-ai-for-migrations"><a class="header" href="#why-use-ai-for-migrations">Why use AI for Migrations?</a></h1>
-<p>Migrations are hard. Companies do not do as much migrations as they should. However with AI some of the friction and heavy lifthing can be reduced.</p>
+<p>Migrations are hard. Companies do not do as many migrations as they should. However, with AI some of the friction and heavy lifting can be reduced.</p>
 
                     </main>
 
@@ -243,6 +243,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

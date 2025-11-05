@@ -181,10 +181,10 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="migrations-in-phases"><a class="header" href="#migrations-in-phases">Migrations in Phases</a></h1>
-<p>A decent migration has Phases. Depending of the migration you will have more phases. It's very important to have a diagram where you can visualize the phases of the migration.</p>
+<p>A decent migration has phases. Depending on the migration, you will have more phases. It's very important to have a diagram where you can visualize the phases of the migration.</p>
 <p>Here is an example of migration phases:</p>
 <ol>
-<li>Phase 0 - Invetovy</li>
+<li>Phase 0 - Inventory</li>
 <li>Phase 1 - Planning</li>
 <li>Phase 2 - Preparation</li>
 <li>Phase 3 - Execution</li>
@@ -192,7 +192,7 @@
 <li>Phase 5 - Rollback (if necessary)</li>
 <li>Phase 6 - Monitoring</li>
 </ol>
-<p>Execution it self should be broken down in smaller phases depending on the size of the migration. Validation is something that should also happen during preparation and execution.</p>
+<p>Execution itself should be broken down into smaller phases depending on the size of the migration. Validation is something that should also happen during preparation and execution.</p>
 
                     </main>
 
@@ -223,6 +223,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

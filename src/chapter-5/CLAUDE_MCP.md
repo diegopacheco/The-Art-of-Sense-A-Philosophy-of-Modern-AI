@@ -1,6 +1,6 @@
 # MCP and Claude Code
 
-Anthropic created MCP to standardize how context is provided to LLMs. Claude Code as an AI coding agent leverages MCP to enhance its capabilities. However people think that claude code can only do things using MCP, which is not true. Claude Code has inside-of-the-box tools that can do several things. In other words Claude can do a lot without MCP.
+Anthropic created MCP to standardize how context is provided to LLMs. Claude Code as an AI coding agent leverages MCP to enhance its capabilities. However, people think that Claude Code can only do things using MCP, which is not true. Claude Code has out-of-the-box tools that can do several things. In other words, Claude can do a lot without MCP.
 
 I asked claude what tools it has inside of the box and this is what I got:
 
@@ -38,17 +38,17 @@ All other tools (Bash, Read, Write, Edit, Glob, Grep, NotebookEdit) are file/sys
 than chat-specific features.
 ```
 
-As you can see Claude can do a lot without MCP. One important thing that I need to call out is that because claude code can run bash commands in your terminal, that's perhaps one of the most powerful things in the universe. MCP is great but there are lots of bad actors out there and you need to be careful using MCP. Now using claude code tools and only leveraging what's in your machine, you are more secure. Because if you have a vetted process to get tools in your machine or you do your due diligence for what you install, then you can piggyback on that.
+As you can see, Claude can do a lot without MCP. One important thing that I need to call out is that because Claude Code can run bash commands in your terminal, that's perhaps one of the most powerful things in the universe. MCP is great, but there are lots of bad actors out there and you need to be careful using MCP. Now, using Claude Code tools and only leveraging what's in your machine, you are more secure. Because if you have a vetted process to get tools on your machine or you do your due diligence for what you install, then you can piggyback on that.
 
-Running bash, it's a swiss army knife. You can do almost anything with bash. For instance, here is a list of things, and not limited but what claude can do with bash:
-* **Run any docker container**: Same for podman. Yes there is a vector attack here, but if you get your containers from a internal trusted registry, you are gold.
-* **Execute**: Claude can also execute any command on a container, so it can run sql, it can deploy pods in k8s, it can create data, it can do anything you can do in bash.
+Running bash is a Swiss Army knife. You can do almost anything with bash. For instance, here is a list of things, and not limited to what Claude can do with bash:
+* **Run any docker container**: Same for podman. Yes, there is an attack vector here, but if you get your containers from an internal trusted registry, you are good.
+* **Execute**: Claude can also execute any command on a container, so it can run SQL, it can deploy pods in K8s, it can create data, it can do anything you can do in bash.
 * **Script**: Claude can create the script you need to get something done and executed.
 
 
 ## Status Line
 
-Claude [status Line](https://docs.claude.com/en/docs/claude-code/statusline), it's a feature where you can customize the status line that appears at the bottom of the Claude Code interface. You can do that to display useful information, there is a MCP for that called `ccstatusline`. You can use that MCP to create your [own status line](https://github.com/sirmalloc/ccstatusline).
+Claude [status line](https://docs.claude.com/en/docs/claude-code/statusline) is a feature where you can customize the status line that appears at the bottom of the Claude Code interface. You can do that to display useful information; there is an MCP for that called `ccstatusline`. You can use that MCP to create your [own status line](https://github.com/sirmalloc/ccstatusline).
 
 To install:
 ```bash

@@ -181,7 +181,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="ai-to-help-with-testing"><a class="header" href="#ai-to-help-with-testing">AI to Help with Testing</a></h1>
-<p>One of the best use cases for AI in engineering is around test geenration. AI is very good generating tests. <a href="https://arxiv.org/pdf/2402.09171">Facebook has this amazing paper</a> abut they findings using AI to generate tests, published in 2024.</p>
+<p>One of the best use cases for AI in engineering is around test generation. AI is very good at generating tests. <a href="https://arxiv.org/pdf/2402.09171">Facebook has this amazing paper</a> about their findings using AI to generate tests, published in 2024.</p>
 <p>You can use AI to:</p>
 <ul>
 <li>Generate Unit Tests
@@ -189,16 +189,16 @@
 <li>Considering Happy Path</li>
 <li>Considering Edge Cases</li>
 <li>Considering Error Handling</li>
-<li>Consideting negative and boundary cases</li>
+<li>Considering negative and boundary cases</li>
 <li>Considering a bit of chaos like random inputs or even nulls and unexpected types/values</li>
 </ul>
 </li>
 <li>Generate Integration Tests</li>
 <li>Generate End to End Tests</li>
 </ul>
-<p>Now for Integration tests we need keep in we will need setup infrastructure in order to do <a href="https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html">proper test induction</a>. But you can use AI to create testing interfaces and them have proper testing strucute and proper testing principles in place.</p>
-<p>You can also use AI in order to check if you have gaps in your tests coverage, just ask it for it. Even if AI goes wrong, this is relatively safe, worst it will happen AI will generate tests you dont need, them you can delete them. Facebook talks about this in their paper. Facebook solution is to blend with engineering, running the tests, checking coverage, and getting rid of uncessary tests.</p>
-<p>All tasts that claude code can do, either by custom agents, custom commands or a simple a good prompt. I recommend custom commands for this, as you can have a more structured approach.</p>
+<p>Now for integration tests, we need to keep in mind we will need to set up infrastructure in order to do <a href="https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html">proper test induction</a>. But you can use AI to create testing interfaces and then have proper testing structure and proper testing principles in place.</p>
+<p>You can also use AI to check if you have gaps in your test coverage, just ask it for it. Even if AI goes wrong, this is relatively safe; worst case, AI will generate tests you don't need, then you can delete them. Facebook talks about this in their paper. Facebook's solution is to blend with engineering, running the tests, checking coverage, and getting rid of unnecessary tests.</p>
+<p>All tasks that Claude Code can do, either by custom agents, custom commands, or a simple good prompt. I recommend custom commands for this, as you can have a more structured approach.</p>
 
                     </main>
 
@@ -229,6 +229,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

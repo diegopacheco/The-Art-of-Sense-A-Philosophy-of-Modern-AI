@@ -181,13 +181,13 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="epilogue"><a class="header" href="#epilogue">Epilogue</a></h1>
-<p>So this is far from being the end. AI will continue to envolve and engineering field, with pratices, tools and techniques will evolve with it. Keep learning, keep exploring and keep building.</p>
+<p>So this is far from being the end. AI will continue to evolve and the engineering field, with practices, tools, and techniques will evolve with it. Keep learning, keep exploring, and keep building.</p>
 <p>Keep some important things in mind:</p>
 <ul>
 <li>AI is a tool, not a magician. Use it wisely.</li>
-<li>Always fact check AI output.</li>
+<li>Always fact-check AI output.</li>
 <li>Keep improving your skills, so you can better use AI.</li>
-<li>Keep Ownership of your work, AI is just an assistant.</li>
+<li>Keep ownership of your work; AI is just an assistant.</li>
 <li>Keep exploring and experimenting with new tools and techniques.</li>
 </ul>
 <h2 id="navigation"><a class="header" href="#navigation">Navigation</a></h2>
@@ -227,6 +227,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

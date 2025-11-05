@@ -1,6 +1,6 @@
 # Ideas
 
-Sometimes, especially when you are senior, you did a lot, you saw a lot. It's hard to findout what to learn or waht to build next. You use LLM to give you ideas on what to learn or what to explore.
+Sometimes, especially when you are senior, you did a lot, you saw a lot. It's hard to find out what to learn or what to build next. You can use an LLM to give you ideas on what to learn or what to explore.
 
 Here some example prompts:
 

@@ -1,12 +1,12 @@
 # ultrathink
 
-ultrathink is a instruction you give to claude code that makes it think more deeply about the problem at hand. It encourages the model to take extra time to analyze the situation, consider multiple perspectives, and generate more thorough and well-reasoned responses.
+ultrathink is an instruction you give to Claude Code that makes it think more deeply about the problem at hand. It encourages the model to take extra time to analyze the situation, consider multiple perspectives, and generate more thorough and well-reasoned responses.
 
 <img src="../images/05-cc-ultrathink.png" width="600"/>
 
-The moment you type ultrathink you will see claude highlight the word "ultrathink" with one color per letter explaning that claude will behave differently now.
+The moment you type ultrathink, you will see Claude highlight the word "ultrathink" with one color per letter, explaining that Claude will behave differently now.
 
-I asked Claude code the different between normal "Thinking mode on" and "ultrathink" and this is what I got:
+I asked Claude Code the difference between normal "Thinking mode on" and "ultrathink" and this is what I got:
 ```
 Normal "Thinking On" Mode
 

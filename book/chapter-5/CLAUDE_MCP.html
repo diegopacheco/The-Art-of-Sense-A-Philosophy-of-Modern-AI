@@ -181,7 +181,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="mcp-and-claude-code"><a class="header" href="#mcp-and-claude-code">MCP and Claude Code</a></h1>
-<p>Anthropic created MCP to standardize how context is provided to LLMs. Claude Code as an AI coding agent leverages MCP to enhance its capabilities. However people think that claude code can only do things using MCP, which is not true. Claude Code has inside-of-the-box tools that can do several things. In other words Claude can do a lot without MCP.</p>
+<p>Anthropic created MCP to standardize how context is provided to LLMs. Claude Code as an AI coding agent leverages MCP to enhance its capabilities. However, people think that Claude Code can only do things using MCP, which is not true. Claude Code has out-of-the-box tools that can do several things. In other words, Claude can do a lot without MCP.</p>
 <p>I asked claude what tools it has inside of the box and this is what I got:</p>
 <p>Prompt:</p>
 <pre><code>Tell me what tools Claude Code has inside-of-the-box. I don't want to know about MCP (external nor remote).
@@ -214,15 +214,15 @@ Specialized Agents:
 All other tools (Bash, Read, Write, Edit, Glob, Grep, NotebookEdit) are file/system operation tools rather
 than chat-specific features.
 </code></pre>
-<p>As you can see Claude can do a lot without MCP. One important thing that I need to call out is that because claude code can run bash commands in your terminal, that's perhaps one of the most powerful things in the universe. MCP is great but there are lots of bad actors out there and you need to be careful using MCP. Now using claude code tools and only leveraging what's in your machine, you are more secure. Because if you have a vetted process to get tools in your machine or you do your due diligence for what you install, then you can piggyback on that.</p>
-<p>Running bash, it's a swiss army knife. You can do almost anything with bash. For instance, here is a list of things, and not limited but what claude can do with bash:</p>
+<p>As you can see, Claude can do a lot without MCP. One important thing that I need to call out is that because Claude Code can run bash commands in your terminal, that's perhaps one of the most powerful things in the universe. MCP is great, but there are lots of bad actors out there and you need to be careful using MCP. Now, using Claude Code tools and only leveraging what's in your machine, you are more secure. Because if you have a vetted process to get tools on your machine or you do your due diligence for what you install, then you can piggyback on that.</p>
+<p>Running bash is a Swiss Army knife. You can do almost anything with bash. For instance, here is a list of things, and not limited to what Claude can do with bash:</p>
 <ul>
-<li><strong>Run any docker container</strong>: Same for podman. Yes there is a vector attack here, but if you get your containers from a internal trusted registry, you are gold.</li>
-<li><strong>Execute</strong>: Claude can also execute any command on a container, so it can run sql, it can deploy pods in k8s, it can create data, it can do anything you can do in bash.</li>
+<li><strong>Run any docker container</strong>: Same for podman. Yes, there is an attack vector here, but if you get your containers from an internal trusted registry, you are good.</li>
+<li><strong>Execute</strong>: Claude can also execute any command on a container, so it can run SQL, it can deploy pods in K8s, it can create data, it can do anything you can do in bash.</li>
 <li><strong>Script</strong>: Claude can create the script you need to get something done and executed.</li>
 </ul>
 <h2 id="status-line"><a class="header" href="#status-line">Status Line</a></h2>
-<p>Claude <a href="https://docs.claude.com/en/docs/claude-code/statusline">status Line</a>, it's a feature where you can customize the status line that appears at the bottom of the Claude Code interface. You can do that to display useful information, there is a MCP for that called <code>ccstatusline</code>. You can use that MCP to create your <a href="https://github.com/sirmalloc/ccstatusline">own status line</a>.</p>
+<p>Claude <a href="https://docs.claude.com/en/docs/claude-code/statusline">status line</a> is a feature where you can customize the status line that appears at the bottom of the Claude Code interface. You can do that to display useful information; there is an MCP for that called <code>ccstatusline</code>. You can use that MCP to create your <a href="https://github.com/sirmalloc/ccstatusline">own status line</a>.</p>
 <p>To install:</p>
 <pre><code class="language-bash">npx ccstatusline@latest
 </code></pre>
@@ -288,6 +288,22 @@ Main Menu
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

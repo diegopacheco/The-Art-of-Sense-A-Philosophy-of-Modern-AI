@@ -181,8 +181,8 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="chapter-9---learning-from-ai"><a class="header" href="#chapter-9---learning-from-ai">Chapter 9 - Learning from AI</a></h1>
-<p>AI can be a good teacher. Just keep in mind you better cross check what the teacher is telling you. A very simple and effective way to cross check ai - i just to ask links for reference. Them you can go in the internet and read the links and check for your self if AI is wrong or right.</p>
-<p>LLMs still halucinate, usually they halucinate when they don't know the answer, which often means not enough data on the topic in their training set. Evidence:</p>
+<p>AI can be a good teacher. Just keep in mind you better cross-check what the teacher is telling you. A very simple and effective way to cross-check AI is just to ask for links for reference. Then you can go on the internet and read the links and check for yourself if AI is wrong or right.</p>
+<p>LLMs still hallucinate; usually they hallucinate when they don't know the answer, which often means not enough data on the topic in their training set. Evidence:</p>
 <ul>
 <li><a href="https://arxiv.org/pdf/2504.15771">ORION Grounded in Context: Retrieval-Based
 Method for Hallucination Detection</a></li>
@@ -190,7 +190,7 @@ Method for Hallucination Detection</a></li>
 An Innate Limitation of Large Language Models</a></li>
 <li><a href="https://arxiv.org/pdf/2406.07457">Estimating the Hallucination Rate of Generative AI</a></li>
 </ul>
-<p>So fact check AI. Besides that AI it a bar raiser, because you must be able to know that AI is lying to you, so you must level up your game and just do better. Know more than AI, so you can spot when it is wrong.</p>
+<p>So fact-check AI. Besides that, AI is a bar raiser, because you must be able to know that AI is lying to you, so you must level up your game and just do better. Know more than AI, so you can spot when it is wrong.</p>
 
                     </main>
 
@@ -221,6 +221,22 @@ An Innate Limitation of Large Language Models</a></li>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

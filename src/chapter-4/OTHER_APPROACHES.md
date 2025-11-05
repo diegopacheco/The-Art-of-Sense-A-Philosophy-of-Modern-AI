@@ -10,6 +10,6 @@ There are other approaches to building and deploying coding agents beyond the MC
 
 There is some critique that MCPs could be just a [JSON file](https://materializedview.io/p/mcp-server-could-have-been-json-file) since we are re-using the underlying APIS that already existed.
 
-## Calude Skills
+## Claude Skills
 
-[Claude Skills](https://www.anthropic.com/news/skills) is another approach to building coding agents. Where you can bunble text and scripts together to create an agent.
+[Claude Skills](https://www.anthropic.com/news/skills) is another approach to building coding agents, where you can bundle text and scripts together to create an agent.

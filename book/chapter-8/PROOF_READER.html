@@ -182,8 +182,8 @@
                     <main>
                         <h1 id="proof-reader"><a class="header" href="#proof-reader">Proof Reader</a></h1>
 <p>Using AI to Write and Spell Check Documents, AI is a great Proof Reader.</p>
-<p>It's common for people make mistakes when writing documents, sometimes is just typos, other times is grammar mistakes or even factual mistakes. AI is really great, finding a fixing all this commong issues.</p>
-<p>Here is a example of Claude code command you could use to proof read a document or your project:</p>
+<p>It's common for people to make mistakes when writing documents; sometimes it's just typos, other times it's grammar mistakes or even factual mistakes. AI is really great at finding and fixing all these common issues.</p>
+<p>Here is an example of a Claude Code command you could use to proofread a document or your project:</p>
 <pre><code>~/.claude/commands/english.md
 </code></pre>
 <p>english.md</p>
@@ -224,6 +224,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

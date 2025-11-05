@@ -13,15 +13,15 @@ I wrote this book in a very different way compared with my 3 previous books. My 
 * Traditional process take from 7 to 12 months.
 * I wrote books alone and with other people, more people you have, more coordination you need and longer it takes, more things can go wrong, it's literally no different than a project.
 
-I want a different experience, I did several things differently here, I'm not saying I would never do traditional books again, but for sure is different, there are somethings here I like a lot, for instance:
- * Because I used `mdbook` the book is written with a tool in Rust which is markdown based.
+I want a different experience; I did several things differently here. I'm not saying I would never do traditional books again, but for sure it is different; there are some things here I like a lot, for instance:
+ * Because I used `mdbook`, the book is written with a tool in Rust which is markdown based.
  * Mdbook has 3 killer features for me:
-   * It has a built in search engine, and a very good one.
-   * It provides a direct link to all pages of the book, every page has a unique URL.
-   * It has a built in way to generate code snippets with syntax highlighting, videos, themes.
- * The book is hosted on git. Meaning I have version control over all the changes of the book what see what I did differently? just use git. 
- * IF I want say something different, on the traditional book I need to write a new book and people need to buy it to read it, here I just do a `git push` and it's live, because I have a workflow with github actions to publish the book in a github pages site.
- * It's also a way for me to give it back for free.
+   * It has a built-in search engine, and a very good one.
+   * It provides a direct link to all pages of the book; every page has a unique URL.
+   * It has a built-in way to generate code snippets with syntax highlighting, videos, and themes.
+ * The book is hosted on git. Meaning I have version control over all the changes of the book; want to see what I did differently? just use git.
+ * If I want to say something different, on the traditional book I need to write a new book and people need to buy it to read it; here I just do a `git push` and it's live, because I have a workflow with GitHub Actions to publish the book on a GitHub Pages site.
+ * It's also a way for me to give back for free.
 
 ## What tools did I use?
 
@@ -72,17 +72,17 @@ book-all.md
 - Make sure you did not delete anything wrongly
 ```
 
-Running this custom commands uses in avg ~70k tokens. So I use AI for the boring and repetitive tasks, not to write the book itself. When I run out of tokens on Claude Code I would fallback to Github Copilot.
+Running this custom command uses on avg ~70k tokens. So I use AI for the boring and repetitive tasks, not to write the book itself. When I run out of tokens on Claude Code, I would fall back to GitHub Copilot.
 
 ## CI/CD
 
-This book was written with CI/CD in mind from day one. I have a script called `bump-version.sh` that bumps the version of the book on a file on the root called "VERSION". When I released the book it had ~100 pages on version `1.0.0` during the first week of the book, I released content everyday. For the first week I did 6 releases: 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5 and 1.0.6. Each release had new content. I also used AI to generate a CHANGELOG.md file so you can track my changes. After release 1.0.5 the book is with 132 pages.
+This book was written with CI/CD in mind from day one. I have a script called `bump-version.sh` that bumps the version of the book in a file at the root called "VERSION". When I released the book, it had ~100 pages on version `1.0.0`. During the first week of the book, I released content every day. For the first week I did 6 releases: 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5, and 1.0.6. Each release had new content. I also used AI to generate a CHANGELOG.md file so you can track my changes. After release 1.0.5, the book has 132 pages.
 
-This is killer feature because I can keep releasing new content, in a very lean/agile way, directly to you the reader.
+This is a killer feature because I can keep releasing new content in a very lean/agile way, directly to you the reader.
 
 ## Did you like my work? Did it help you?
 
-IF you like my work, you can help me buying one of my other books here:
+If you like my work, you can help me by buying one of my other books here:
 * [Continuous Modernization](https://www.amazon.com/dp/9365893100/ref=mes-dp?_encoding=UTF8&pd_rd_w=JpyYV&content-id=amzn1.sym.7d2923e8-7496-46a5-862d-8ef28e908025&pf_rd_p=7d2923e8-7496-46a5-862d-8ef28e908025&pf_rd_r=K6XYEHZZ76RWDSAXAY5X&pd_rd_wg=RH04x&pd_rd_r=f230b2e4-c342-429e-a362-c856e4c2362a)
 * [Principles of Software Architecture Modernization](https://www.amazon.com/Principles-Software-Architecture-Modernization-microservices/dp/9355519532/ref=sr_1_1?crid=7U3H2IE5U7Y4&dib=eyJ2IjoiMSJ9.ebHg7EIiJ3GThIg8Dwf4PelC70iUIbHPKv7_7zk8vrk8K2FB4zlrUQyNZwKAHPO46cAYR5z2-KyqnXqNz3Ee2lmU-aGR7NLhq7jko2UihHIl-taoJ6i_hkMjcc12ZF3pOmB9lFrvbsGgbDagq1Vzqg.oz7TxYpSBxBZjVjkuIPDZM7Wxx_XMRU0Uj7jo9Rq_BI&dib_tag=se&keywords=principles+of+software+architecture+modernization&qid=1741069169&sprefix=Principles+of+software+a%2Caps%2C190&sr=8-1)
 * [Building Applications with Scala](https://books.apple.com/us/book/building-applications-with-scala/id1113861297)
