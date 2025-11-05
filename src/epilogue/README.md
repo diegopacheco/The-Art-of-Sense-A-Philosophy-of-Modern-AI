@@ -11,6 +11,7 @@ Keep some important things in mind:
 
 ## Navigation
 
+- [How I wrote the book](HOW_I_WROTE_THE_BOOK.md)
 - [References](REFERENCES.md)
 - [Glossary](GLOSSARY.md)
 - [Book Index](BOOK_INDEX.md)

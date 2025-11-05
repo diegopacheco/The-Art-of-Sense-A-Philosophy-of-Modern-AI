@@ -156,6 +156,7 @@ Hire, develop, retain, and truly grow talent at scale
 
 ### Epilogue
 - [Epilogue](./epilogue/README.md)
+- [How I wrote the book](./epilogue/HOW_I_WROTE_THE_BOOK.md)
 - [References](./epilogue/REFERENCES.md)
 - [Glossary](./epilogue/GLOSSARY.md)
 - [Book Index](./epilogue/BOOK_INDEX.md)
