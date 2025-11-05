@@ -15,6 +15,30 @@ Here is some evidence that AI Agents cheat on SWE-bench:
 
 But this "cheat" also proof they are very good using Git, witch we can use in our advantage.
 
+Here is a claude code command example on how you could generate a changelog:
+
+```
+~/.claude/commands/changelog.md
+```
+
+changelog.md
+```
+# Create or update oproject CHANGELOG.md
+- Read commits from git history
+- Read the code
+- Makesure the changelog has meaning
+- Do not loose content, dont delete content from other files
+- I want the following sections in the changelog:
+  - Added
+  - Changed
+  - Deprecated
+  - Removed
+  - Fixed
+  - Security
+- Give me a commit count per user
+```
+
+
 ## Generating Knowledge Base
 
 Another good AI documentation case is that you can make ai generate good documentation about why some changes happened. Imagine that AI could create a timeline with features and explain what features existed in a codebase. AI also can explain maybe technical decisions and explain where things are in the code. Making easier to make sense of projject ad code.
