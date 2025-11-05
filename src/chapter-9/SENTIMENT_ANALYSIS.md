@@ -15,3 +15,9 @@ Same technique can be usef for regular text messages, whatsapp, social media, bl
 ## Analyzing Customer Feedback
 
 Either via images or text you can use AI to analyze customer feedback and detect sentiment. This can help you to understand how your customers feel about your product or service and make improvements accordingly. It's easy to fool yourself that is positive feedback when in reality is negative. AI can help you to see the real picture.
+
+## AI has bias too
+
+Keep in mind AI was trained with human data from books and the internet. So it can have the same biases as humans. Always double check the analysis and use your own judgement. AI is a tool to help you, not to replace you. IMHO this is a killer usecase and will help you have better relationships with people by improving your communication skills.
+
+Just keep in mind AI is not perfect, don't blindly trust it. Use it as a second opinion, not as the ultimate truth.
