@@ -22,6 +22,7 @@
   - [Classification](./chapter-2/CLASSIFICATION.md)
   - [Clustering](./chapter-2/CLUSTERING.md)
   - [Dimensionality Reduction](./chapter-2/DIMENSIONALITY_REDUCTION.md)
+  - [Reinforcement Learning](./chapter-2/RL.md)
 
 - [Chapter 3 - Generative AI](./chapter-3/README.md)
   - [What is Generative AI?](./chapter-3/WHAT.MD)
