@@ -1,4 +1,3 @@
-<script>
 document.addEventListener('DOMContentLoaded', function() {
     const footer = document.createElement('div');
     footer.style.textAlign = 'center';
@@ -11,4 +10,3 @@ document.addEventListener('DOMContentLoaded', function() {
         contentElement.appendChild(footer);
     }
 });
-</script>
