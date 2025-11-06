@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="the-art-of-building-with-ai.png" alt="The Art of Sense: A Philosophy of Modern AI Cover" width="500"/>
+  <img src="TAS-cover.png" alt="The Art of Sense: A Philosophy of Modern AI Cover" width="500"/>
 </p>
 
 # The Art of Sense: A Philosophy of Modern AI

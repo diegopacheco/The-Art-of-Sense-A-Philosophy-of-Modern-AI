@@ -1,7 +1,7 @@
 # The Art of Sense: A Philosophy of Modern AI
 
 <p align="center">
-  <img src="the-art-of-building-with-ai.png" alt="The Art of Sense: A Philosophy of Modern AI Cover" width="400"/>
+  <img src="TAS-cover.png" alt="The Art of Sense: A Philosophy of Modern AI Cover" width="400"/>
 </p>
 
 This is an mdbook project for "The Art of Sense: A Philosophy of Modern AI" by Diego Pacheco.
