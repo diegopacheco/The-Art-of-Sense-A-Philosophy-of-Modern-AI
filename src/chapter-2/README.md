@@ -30,3 +30,39 @@ Overfitting:
 * Reduce the number of features
 * Increase Regularization
 * Early Stopping
+
+# Learning Options
+
+For traditional AI, you have basicaly a couple of different approaches like:
+* Supervised Learning
+* Unsupervised Learning
+* Reinforcement Learning
+* Semi-Supervised Learning
+
+## Supervised Learning
+
+Means that you have labeled data. For example, you have a dataset of images of cats and dogs, and each image is labeled as either "cat" or "dog". The model learns to classify new images based on the labeled examples.
+
+Use cases are:
+* Spam Detection: Spam vs Ham
+* Image Recognition: Hotdog vs Not Hotdog
+* Regression: Predict House Pricing, Predict Stock Prices.
+* Cusotomer Churn Prediction: Churn vs Not Churn
+* Credit Scoring Prediction: Good vs Bad
+
+Main Algorithms for regression and classification are.
+
+Regression:
+* Linear Regression
+* Decision Trees
+* Random Forest
+* Gradient Boosting
+* Support Vector Machines
+
+Classification:
+* Logistic Regression
+* Decision Trees
+* Random Forest
+* Gradient Boosting
+* Support Vector Machines
+* Naive Bayes
