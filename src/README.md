@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="the-art-of-building-with-ai.png" alt="The Art of Building with AI Cover" width="500"/>
+  <img src="the-art-of-building-with-ai.png" alt="The Art of Sense: A Philosophy of Modern AI Cover" width="500"/>
 </p>
 
-# The Art of Building with AI
+# The Art of Sense: A Philosophy of Modern AI
 
-Welcome to The Art of Building with AI.
+Welcome to The Art of Sense: A Philosophy of Modern AI by Diego Pacheco.
 
 ## What to Expect
 

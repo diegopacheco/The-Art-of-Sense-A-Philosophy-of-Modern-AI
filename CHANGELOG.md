@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to "The Art of Building with AI" book project are documented in this file.
+All notable changes to "The Art of Sense: A Philosophy of Modern AI" book project are documented in this file.
 
 ## Recent Updates (Last 30 Days)
 

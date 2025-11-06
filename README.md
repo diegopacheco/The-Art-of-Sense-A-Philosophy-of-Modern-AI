@@ -1,10 +1,10 @@
-# The Art of Building with AI
+# The Art of Sense: A Philosophy of Modern AI
 
 <p align="center">
-  <img src="the-art-of-building-with-ai.png" alt="The Art of Building with AI Cover" width="400"/>
+  <img src="the-art-of-building-with-ai.png" alt="The Art of Sense: A Philosophy of Modern AI Cover" width="400"/>
 </p>
 
-This is an mdbook project for "The Art of Building with AI".
+This is an mdbook project for "The Art of Sense: A Philosophy of Modern AI" by Diego Pacheco.
 
 ## Read the Book in Git
 
