@@ -1,10 +1,10 @@
 # What is Traditional AI? 
 
-Traditional AI, also know as classical AI refers to AI approaches that tasks a single problem or even using a single algorithm. LLMs in the other case can handle a variaty of tasks and problems using the same underlying model.
+Traditional AI, also known as classical AI refers to AI approaches that tasks a single problem or even using a single algorithm. LLMs in the other case can handle a variety of tasks and problems using the same underlying model.
 
 ## General Engineering vs Traditional AI
 
-In engineering or programing we usually have:
+In engineering or programming we usually have:
 ```
 --> Input   [ Computation  ] -> Results
 --> Program [              ]

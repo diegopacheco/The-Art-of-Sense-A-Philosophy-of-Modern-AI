@@ -2,9 +2,9 @@
 
 Claude.md is a global file. Consider this file to be like `~/.bashrc` or `~/.zshrc` for Claude Code. It's a global file that will be loaded into every single claude code session you start.
 
-So you will want to have, very generic and gloal instructuions here that you want claude to always follow.
+So you will want to have, very generic and global instructions here that you want claude to always follow.
 
-IF something is very project spesific, you should put that in the project level `claude.md` file. Which is generated when you run `/init` in claude code.
+IF something is very project specific, you should put that in the project level `claude.md` file. Which is generated when you run `/init` in claude code.
 
 ## Here is my CLAUDE.md file
 

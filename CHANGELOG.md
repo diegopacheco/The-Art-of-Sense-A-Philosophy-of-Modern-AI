@@ -2,158 +2,105 @@
 
 All notable changes to "The Art of Sense: A Philosophy of Modern AI" book project are documented in this file.
 
-## Recent Updates (Last 30 Days)
+## November 5, 2025
 
-### Chapter 9 - Learning from AI (Added)
-- Added comprehensive content on using AI for generating POCs
-- Expanded content on sentiment analysis for customer feedback and emails
-- Added guidance on using AI for brainstorming and idea generation
-- Created structured approach for learning from AI outputs
+### Project Renamed
+- Renamed project to "The Art of Sense: A Philosophy of Modern AI"
+- Updated README.md with new title and branding
+- Updated book.toml configuration
+- Added new cover art TAS-cover.png
 
-### Chapter 8 - Non-Obvious Use Cases (Added)
-- Added comprehensive troubleshooting guide using AI
-- Expanded documentation generation capabilities
-- Added proof reader functionality and best practices
-- Created onboarding guide for new developers using AI
-- Added examples of using AI for log analysis and debugging
+### Chapter 2 - Traditional AI (Machine Learning)
+- Added comprehensive content on Reinforcement Learning (RL.md)
+- Expanded Dimensionality Reduction techniques (DIMENSIONALITY_REDUCTION.md)
+- Enhanced Clustering algorithms and approaches (CLUSTERING.md)
+- Improved Classification methods documentation (CLASSIFICATION.md)
+- Updated Regression analysis content (REGRESSION.md)
+- Created chapter introduction (README.md and WHAT.MD)
+- Updated SUMMARY.md with chapter structure
 
-### Chapter 7 - Migrations with AI (Added)
-- Created comprehensive migration guide using AI
-- Added inventory phase documentation for migration planning
-- Expanded migration phases approach with detailed steps
-- Added testing strategies specific to migrations
-- Created after-migration checklist and cleanup procedures
+### Chapter 3 - Generative AI
+- Updated chapter introduction (README.md)
 
-### Chapter 6 - Testing with AI (Added)
-- Added comprehensive AI testing methodologies
-- Created guide on why and when to use AI for testing
-- Added strategies for test generation and coverage analysis
+## November 4, 2025
 
-### Chapter 5 - Claude Code (Expanded)
-- Enhanced EXCLUSIONS.md with additional file exclusion patterns
-- Expanded CLAUDE_MCP.md with MCP integration details
-- Added comprehensive content to DECISION_CRITERIA.md
-- Improved PROMPT_ADVICES.md with prompt engineering best practices
-- Expanded CLAUDE_BASH_ORCHESTRATION.md with orchestration patterns
-- Enhanced CLAUDE.md with configuration guidance
-- Updated WHAT.md with Claude Code overview
-- Improved HOOKS.md with hook configuration examples
-- Expanded CUSTON_COMMANDS.md with custom command patterns
-- Enhanced CUSTON_AGENTS.md with specialized agent examples
-- Significantly expanded CMDs.md with command documentation
-- Added detailed content to BASH_MODE.md
-- Added ULTRATHINK.md covering extended reasoning mode
-- Added PROMPT_LIBRARY.md with prompt examples
+### Chapter 9 - Learning from AI
+- Added comprehensive guide on generating POCs with AI (POCS.md)
+- Expanded sentiment analysis applications (SENTIMENT_ANALYSIS.md)
+- Enhanced brainstorming and idea generation strategies (IDEAS.md)
+- Created chapter introduction (README.md)
 
-### Chapter 4 - Agents (Expanded)
-- Added comprehensive content to POPULAR_AGENTS.md
-- Expanded WHAT.md with agent definitions and use cases
-- Enhanced AGENTS_PATTERNS.md with design patterns
-- Added OTHER_APPROACHES.md covering alternatives to MCP
-- Expanded MCP_SEC.md with security considerations
-- Enhanced MCP.md with protocol details
-- Added CONTEXT7.md covering documentation service
-- Expanded CONTEXT_WINDOW.md with management strategies
-- Enhanced CODING_AGENTS.md with implementation details
-- Added LLMS.txt.md explaining the llms.txt standard
+### Chapter 8 - Non-Obvious Use Cases
+- Added documentation generation workflows (DOCUMENTATION.md)
+- Created proof reading guide with AI assistance (PROOF_READER.md)
+- Developed onboarding guide for new developers (ONBOARDING.md)
+- Enhanced troubleshooting methodologies (TROUBLESHOOTING.md)
+- Created chapter introduction (README.md)
 
-### Chapter 1 - Making Sense of AI (Expanded)
-- Significantly expanded VIBE_CODING.md with concepts and warnings
-- Enhanced REALITY.md with industry examples and balanced perspective
-- Improved MIRROR_ASTEROIDS.md with mirror effect explanations
-- Added more content on AI limitations and responsible usage
-
-### Epilogue (Updated)
-- Updated GLOSSARY.md with 40+ new technical terms
-- Expanded REFERENCES.md with 100+ additional external links
-- Enhanced BOOK_INDEX.md with comprehensive topic indexing
-- Organized references by chapter and category
-
-### Project Structure (Improved)
-- Enhanced overall book structure and navigation
-- Added extensive cross-references between chapters
-- Improved markdown formatting and consistency
-- Added external resources and academic references
-
-## Recent Updates
-
-### Chapter 5 - Claude Code
-- Enhanced EXCLUSIONS.md with additional content
-- Expanded CLAUDE_MCP.md with MCP integration details
-- Added comprehensive content to DECISION_CRITERIA.md covering when and how to use AI tools
-- Improved PROMPT_ADVICES.md with best practices for AI prompting
-- Expanded CLAUDE_BASH_ORCHESTRATION.md with bash orchestration patterns
-- Enhanced CLAUDE.md with Claude-specific guidance
-- Updated WHAT.md with Claude Code overview
-- Improved HOOKS.md with hook configuration details
-- Expanded CUSTON_COMMANDS.md with custom command examples
-- Enhanced CUSTON_AGENTS.md with custom agent patterns
-- Significantly expanded CMDs.md with comprehensive command documentation
-- Added detailed content to BASH_MODE.md covering bash mode usage
-
-### Chapter 1 - Making Sense of AI
-- Expanded VIBE_CODING.md with vibe coding concepts and best practices
-- Enhanced REALITY.md with AI reality checks and industry examples
-- Improved MIRROR_ASTEROIDS.md with mirror effect explanations
-
-### Chapter 4 - Agents
-- Added content to POPULAR_AGENTS.md covering popular agent implementations
-- Expanded WHAT.md with agent definitions and patterns
-- Enhanced AGENTS_PATTERNS.md with comprehensive agent design patterns
-- Added OTHER_APPROACHES.md covering alternative approaches to agents
-- Expanded MCP_SEC.md with MCP security considerations
-- Enhanced MCP.md with Model Context Protocol details
-- Added CONTEXT7.md covering Context7 integration
-- Expanded CONTEXT_WINDOW.md with context window management strategies
-- Enhanced CODING_AGENTS.md with coding agent implementations
+### Chapter 7 - Migrations with AI
+- Developed post-migration procedures (AFTER_MIGRATIONS.md)
+- Created migration phase documentation (MIGRATIONS_PHASES.md)
+- Added migration testing strategies (TESTING.md)
+- Developed inventory approach for migrations (INVENTORY.md)
+- Enhanced migration rationale (WHY.md)
+- Created chapter introduction (README.md)
 
 ### Epilogue
-- Updated GLOSSARY.md with comprehensive AI and technical terms
-- Expanded REFERENCES.md with extensive external links and resources
-- Enhanced BOOK_INDEX.md with comprehensive topic indexing
+- Updated book structure and organization (README.md)
+- Enhanced how the book was written documentation (HOW_I_WROTE_THE_BOOK.md)
 
-### Project Structure
-- Improved overall book structure and organization
-- Enhanced cross-references between chapters
-- Added extensive external resources and references
+## November 2, 2025
 
-## Content Areas
+### Chapter 6 - Testing with AI
+- Enhanced testing rationale and methodologies (WHY.md)
+- Expanded AI testing approaches (AI_TESTING.md)
+- Updated chapter introduction (README.md)
 
-### Traditional AI (Chapter 2)
-- Classification
-- Regression
-- Clustering
-- Dimensionality Reduction
+### Chapter 1 - Making Sense of AI
+- Significantly expanded reality checks and industry perspective (REALITY.md)
 
-### Generative AI (Chapter 3)
-- Transformers
-- Large Language Models (LLMs)
-- Embeddings
-- Vector Databases
-- RAG (Retrieval-Augmented Generation)
-- Text, Image, Sound, and Video Generation
-- Fine Tuning
+## November 1, 2025
 
-### Testing with AI (Chapter 6)
-- AI Testing methodologies
-- Testing approaches with AI assistance
+### Chapter 5 - Claude Code
+- Added Claude MCP integration guide (CLAUDE_MCP.md)
+- Enhanced prompt engineering advice (PROMPT_ADVICES.md)
+- Expanded custom commands documentation (CUSTON_COMMANDS.md)
+- Added Ultrathink extended reasoning mode (ULTRATHINK.md)
+- Created prompt library with patterns (PROMPT-LIBRARY.md)
+- Updated bash orchestration guide (CLAUDE_BASH_ORCHESTRATION.md)
+- Enhanced exclusions and filtering (EXCLUSIONS.md)
+- Updated chapter introduction (README.md)
 
-### Migrations with AI (Chapter 7)
-- Migration inventory
-- Phased migration approaches
-- Migration testing strategies
-- Post-migration considerations
+### Chapter 4 - Agents
+- Added llms.txt standard documentation (LLMS.txt.md)
+- Enhanced context window management (CONTEXT_WINDOW.md)
+- Enhanced MCP security considerations (MCP_SEC.md)
+- Expanded popular agents overview (POPULAR_AGENTS.md)
+- Improved coding agents implementation (CODING_AGENTS.md)
+- Updated agent patterns and approaches (WHAT.md)
+- Updated chapter introduction (README.md)
 
-### Non-Obvious Use Cases (Chapter 8)
-- Proof reading with AI
-- Troubleshooting assistance
-- Documentation generation
-- Onboarding support
+### Chapter 1 - Making Sense of AI
+- Expanded vibe coding concepts and warnings (VIBE_CODING.md)
+- Enhanced reality perspectives (REALITY.md)
+- Improved mirror effect documentation (MIRROR_ASTEROIDS.md)
 
-### Learning from AI (Chapter 9)
-- Ideas generation
-- Proof of Concepts (POCs)
-- Sentiment Analysis
+## October 30, 2025
+
+### Chapter 5 - Claude Code
+- Significantly expanded decision criteria for AI usage (DECISION_CRITERIA.md)
+- Enhanced prompt advice and best practices (PROMPT_ADVICES.md)
+- Improved bash orchestration patterns (CLAUDE_BASH_ORCHESTRATION.md)
+- Updated Claude configuration guide (CLAUDE.md)
+- Expanded hooks and integration (HOOKS.md)
+- Enhanced custom commands (CUSTON_COMMANDS.md)
+- Improved custom agents guide (CUSTON_AGENTS.md)
+- Significantly expanded command documentation (CMDs.md)
+- Updated chapter overview (WHAT.md)
+- Enhanced Ultrathink documentation (ULTRATHINK.md)
+
+### Zero Chapter
+- Updated introductory content (README.md)
 
 ## Contributors
 

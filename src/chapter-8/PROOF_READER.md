@@ -17,5 +17,5 @@ english.md
 - Fix all my english issues
 - Fix my typos
 - Don't touch the HTML files only the markdown files
-- Make sure you dont break anything, make sure you dont loose content
+- Make sure you dont break anything, make sure you dont lose content
 ```

@@ -2,6 +2,9 @@
 
 ## A
 
+**A2A (Agent 2 Agent)**
+Protocol for enabling communication and interaction between different AI agents.
+
 **AGI (Artificial General Intelligence)**
 A theoretical form of AI that would have human-like general intelligence, capable of understanding, learning, and applying knowledge across a wide range of tasks. Marketing hype often surrounds AGI claims, though true AGI capabilities remain unproven.
 
@@ -23,8 +26,20 @@ Autonomous or semi-autonomous systems that can perform tasks, make decisions, an
 **Agentic Behavior**
 Behavior exhibited by agents that allows them to act autonomously in pursuit of defined goals, making decisions based on environment state.
 
+**Aggregating**
+Agent pattern involving combining multiple data sources or results into a unified response or output.
+
+**Amazon Q**
+AWS coding agent that provides AI-powered assistance for software development tasks.
+
+**Anomaly Detection**
+Identifying unusual data points that deviate from normal patterns, commonly used in fraud detection and system monitoring.
+
 **API Key**
 Authentication token required to access AI services programmatically for production deployment.
+
+**Attention Mechanisms**
+Core component of transformer architecture enabling models to focus on relevant parts of input when processing sequences.
 
 ## B
 
@@ -42,6 +57,12 @@ A Claude Code feature enabling direct bash command execution for system operatio
 
 ## C
 
+**Caching**
+Agent pattern for storing and reusing frequently accessed data or results to improve performance and reduce redundant processing.
+
+**Changelog**
+Document tracking changes, additions, and fixes across software versions, can be automated using AI by analyzing git history.
+
 **Change and Adaptation**
 The necessity for engineers and organizations to adapt to AI-driven disruption as AI becomes increasingly integrated into software development.
 
@@ -53,6 +74,9 @@ Global configuration file for Claude Code behavior, containing project-specific 
 
 **Claude Code**
 A specific AI tool/platform (Anthropic's Claude used for coding tasks) covered extensively in Chapter 5.
+
+**Claude Skills**
+Anthropic's approach to building coding agents by bundling text and scripts together to create specialized capabilities.
 
 **CLI Agents**
 Command-line interface based coding agents that run directly on local machines.
@@ -68,6 +92,9 @@ A Traditional AI/ML unsupervised learning task involving grouping similar data p
 
 **Code Review**
 Critical process of examining AI-generated or any code for correctness, security, and alignment with requirements before deployment. Essential when using AI.
+
+**Codex**
+OpenAI's coding agent available in both web sandbox and CLI versions, using specialized models for code generation.
 
 **Coding Agents**
 AI agents specifically designed or trained to generate, modify, and work with software code.
@@ -91,6 +118,12 @@ Agents specifically built or configured for particular use cases or organization
 Specific commands or workflows configured within Claude Code or similar tools for specialized tasks.
 
 ## D
+
+**DBSCAN**
+Density-Based Spatial Clustering of Applications with Noise, an algorithm for clustering that can identify outliers.
+
+**Decision Trees**
+Machine learning algorithm using tree-like model of decisions for both classification and regression tasks.
 
 **Debugging with AI using Images**
 Technique for troubleshooting code issues by providing AI with visual representations (screenshots/images) of problems.
@@ -126,10 +159,19 @@ Design patterns by Gregor Hohpe and Bobby Woolf that AI agent patterns derive fr
 **Few-Shot Examples**
 Training technique providing examples to help models perform tasks better without extensive retraining.
 
+**Filtering**
+Agent pattern for removing unwanted data or responses before or after LLM processing.
+
 **Fine Tuning**
 Process of training a pre-trained model on specific domain data to adapt it to particular use cases without full retraining.
 
 ## G
+
+**Gaussian Mixture Models**
+Clustering algorithm that assumes data points are generated from a mixture of Gaussian distributions.
+
+**Gemini**
+Google's LLM model used in various coding agents including Jules and Gemini CLI.
 
 **Generative AI**
 AI systems that can generate new content, including text, code, images, and other media. The book focuses on using Generative AI for software engineering tasks. Works through predicting next tokens/sequences.
@@ -137,13 +179,28 @@ AI systems that can generate new content, including text, code, images, and othe
 **Git Archaeology for Troubleshooting**
 Technique using git history to understand code evolution and diagnose issues.
 
+**GitHub Copilot**
+One of the first coding agents, integrated into VSCode and other IDEs, supporting multiple LLM models.
+
+**Google Jules**
+Web sandbox coding agent by Google backed by Gemini LLM models.
+
+**Gradient Boosting**
+Machine learning ensemble technique that builds models sequentially to correct errors of previous models.
+
 ## H
 
 **Headless Mode**
 Running Claude Code via command line without interactive interface for automation and scripting.
 
+**Hierarchical Clustering**
+Clustering algorithm that builds a hierarchy of clusters using a tree-like structure.
+
 **Hooks (Claude Code)**
 Event-driven automation triggers that execute scripts on specific events in Claude Code.
+
+**HumanEval**
+Software engineering benchmark for evaluating AI coding capabilities.
 
 ## I
 
@@ -153,24 +210,42 @@ AI coding assistants integrated into development environments like VSCode.
 **Image Generation**
 Generative AI capability for creating visual content from text descriptions or other inputs.
 
+**Interactive Mode**
+Claude Code feature enabling direct bash command execution, also known as Bash Mode.
+
 **Inventory (Migrations)**
 Process of cataloging and assessing existing systems, code, and infrastructure before planning migrations.
 
 ## K
+
+**K-Means Clustering**
+Popular clustering algorithm that partitions data into k clusters by minimizing variance within each cluster.
+
+**Kiro**
+AWS coding agent, a fork of VSCode implementing Spec Driven Development approach.
 
 **Knowledge Base Generation**
 Using AI to create and maintain comprehensive documentation systems.
 
 ## L
 
+**LDA (Linear Discriminant Analysis)**
+Dimensionality reduction technique that finds linear combinations of features for classification.
+
 **Learning from AI**
 Process of using AI as an educational tool while maintaining critical thinking and verification.
+
+**Linear Regression**
+Fundamental regression algorithm modeling relationship between variables using a linear equation.
 
 **LLM (Large Language Model)**
 A type of AI model trained on massive amounts of text data that can understand and generate human-like text. Examples include GPT, Claude, and other similar models. LLMs work by predicting the next sequence of tokens. Cannot truly "think" despite marketing claims.
 
 **llms.txt / llms-full.txt**
 Text files at website roots helping LLMs navigate and understand site content, providing structured documentation.
+
+**Logistic Regression**
+Classification algorithm using logistic function to model probability of categorical outcomes.
 
 **LSP (Language Server Protocol)**
 Standard protocol that MCP is compared to for understanding its architecture and functionality.
@@ -189,6 +264,9 @@ A protocol for connecting AI models to external tools and data sources, enabling
 **MCP Client**
 Component within AI host that connects to MCP servers.
 
+**MCP Guardrails**
+Security practices for safely using MCP servers including vetting, scanning, and isolation.
+
 **MCP Host**
 The AI agent or tool that contains MCP clients.
 
@@ -197,6 +275,9 @@ Security tool for analyzing MCP servers for vulnerabilities.
 
 **MCP Server**
 External service providing tools and data to AI models via Model Context Protocol.
+
+**Mean Shift Clustering**
+Clustering algorithm that finds dense regions by shifting data points toward mode of distribution.
 
 **Migrations**
 Process of moving systems, code, libraries, or data from one platform, language, or infrastructure to another.
@@ -207,7 +288,21 @@ Structured approach to performing migrations incrementally rather than all at on
 **Mirror on Steroids**
 Concept that AI amplifies existing abilities: good engineers become better with AI; poor engineers become worse.
 
+## O
+
+**Onboarding**
+Process of integrating new engineers into teams and codebases, enhanced by AI as a private tutor.
+
+**OpenCode**
+Open source coding agent that works with multiple LLM models.
+
+**Orchestration**
+Agent pattern for coordinating multiple AI operations or tools in sequence or parallel.
+
 ## P
+
+**PCA (Principal Component Analysis)**
+Dimensionality reduction technique that identifies principal components explaining maximum variance in data.
 
 **Precision and Reproducibility**
 Challenge with AI systems: inability to guarantee identical outputs for identical inputs due to probabilistic nature.
@@ -232,17 +327,26 @@ Using AI to check spelling, grammar, and document quality in written content.
 **RAG (Retrieval-Augmented Generation)**
 Technique combining document retrieval with LLM generation, allowing AI to cite and incorporate external information into responses.
 
+**Random Forest**
+Ensemble learning method using multiple decision trees for classification and regression.
+
 **Randomness in AI**
 Inherent probabilistic nature of LLMs making outputs non-deterministic even with identical inputs.
 
 **Regression**
 Traditional ML task of predicting continuous numerical values based on input features.
 
+**Reinforcement Learning (RL)**
+Machine learning paradigm where agents learn by interacting with environments and receiving rewards or penalties.
+
 **Respect in Software Engineering**
 Professional principle that code should be reviewed and understood by creators before sharing/deploying.
 
 **Responsible AI Usage**
 Using AI as input/research tool while maintaining human judgment, code review, and verification responsibilities.
+
+**Routing**
+Agent pattern for directing requests to appropriate services or models based on content or conditions.
 
 ## S
 
@@ -264,8 +368,20 @@ Philosophy distinguishing genuine innovations from superficial API wrappers. Man
 **Sound Generation**
 Generative AI capability for creating audio content.
 
+**Spectral Clustering**
+Clustering algorithm using eigenvalues of similarity matrix to reduce dimensionality before clustering.
+
+**Splitting**
+Agent pattern for dividing large tasks or data into smaller manageable pieces for processing.
+
 **Status Line**
 Customizable information display at bottom of Claude Code interface showing current state.
+
+**Supervised Learning**
+Machine learning paradigm where models learn from labeled training data to make predictions.
+
+**Support Vector Machines (SVM)**
+Machine learning algorithm for classification and regression using hyperplanes to separate data.
 
 **SWE-bench**
 Software engineering benchmark for evaluating AI coding capabilities.
@@ -274,6 +390,9 @@ Software engineering benchmark for evaluating AI coding capabilities.
 Instructions defining how an AI model should behave and respond to user inputs.
 
 ## T
+
+**t-SNE (t-Distributed Stochastic Neighbor Embedding)**
+Dimensionality reduction technique particularly effective for visualizing high-dimensional data in 2D or 3D.
 
 **TDD (Test-Driven Development)**
 Development methodology writing tests before implementation to ensure code quality.
@@ -311,9 +430,15 @@ Characterization of AI progress: advancement comes with limitations, hallucinati
 ## U
 
 **Ultrathink**
-A Claude Code feature providing extended reasoning capabilities.
+A Claude Code feature providing extended reasoning capabilities with larger token budget up to 10,000+ tokens for complex problems.
+
+**Unsupervised Learning**
+Machine learning paradigm where models find patterns in unlabeled data without predefined categories.
 
 ## V
+
+**Value Function**
+In reinforcement learning, function estimating how beneficial it is for an agent to be in a given state.
 
 **Vector Databases**
 Specialized databases storing and querying embeddings efficiently, essential infrastructure for RAG systems.

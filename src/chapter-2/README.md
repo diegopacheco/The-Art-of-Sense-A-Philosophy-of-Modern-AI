@@ -8,7 +8,7 @@ Traditional AI, can help you with:
 * Clustering: Customer segmentation, Anomaly detection
 * Optimization: Resource allocation, Scheduling
 
-Traditional AI, you need train a model. Usually by spliting your data into 3 buckets. 
+Traditional AI, you need train a model. Usually by splitting your data into 3 buckets. 
 * 60% Training Data
 * 20% Validation Data
 * 20% Test Data
@@ -19,7 +19,7 @@ Each one can be fixed by:
 Underfitting:
 * Add more features (more data)
 * Increase the model complexity (linear->polynomial)
-* Change model Algorithim / Architecture (more layers/neurons)
+* Change model Algorithm / Architecture (more layers/neurons)
 * Reduce Regularization (penalty on the loss_function)
 * More training epochs(batches)
 
@@ -33,7 +33,7 @@ Overfitting:
 
 # Learning Options
 
-For traditional AI, you have basicaly a couple of different approaches like:
+For traditional AI, you have basically a couple of different approaches like:
 * Supervised Learning
 * Unsupervised Learning
 * Reinforcement Learning
@@ -47,7 +47,7 @@ Use cases are:
 * Spam Detection: Spam vs Ham
 * Image Recognition: Hotdog vs Not Hotdog
 * Regression: Predict House Pricing, Predict Stock Prices.
-* Cusotomer Churn Prediction: Churn vs Not Churn
+* Customer Churn Prediction: Churn vs Not Churn
 * Credit Scoring Prediction: Good vs Bad
 
 Main Algorithms for regression and classification are.

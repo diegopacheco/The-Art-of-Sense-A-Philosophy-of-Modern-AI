@@ -25,6 +25,7 @@
 
 #### Mirror on Steroids
 - [AI Coding Agents Economics - Diego Pacheco](https://diego-pacheco.blogspot.com/2025/11/ai-coding-agents-economics.html)
+- [Brain Study Shows ChatGPT Actually Makes You Dumber - 80.lv](https://80.lv/articles/brain-study-shows-chatgpt-actually-makes-you-dumber)
 
 ### AI Scams and Failures
 - [The Rabbit Is A Scam - YouTube](https://www.youtube.com/watch?v=d7DtiMzMBdU)
@@ -49,9 +50,6 @@
 
 ### Research Papers
 - [Facebook Paper on AI Test Generation - arXiv](https://arxiv.org/pdf/2402.09171)
-- [ORION: Retrieval-Based Method for Hallucination Detection - arXiv](https://arxiv.org/pdf/2504.15771)
-- [Hallucination is Inevitable - arXiv](https://arxiv.org/pdf/2401.11817)
-- [Estimating the Hallucination Rate of Generative AI - arXiv](https://arxiv.org/pdf/2406.07457)
 
 ## Chapter 4 - Agents
 
@@ -108,6 +106,11 @@
 - [Claude 4 SWE-bench Gaming - Bayes.net](https://bayes.net/swebench-hack/)
 - [SWE-bench Verified Issues - Reddit](https://www.reddit.com/r/OpenAI/comments/1nce3ua/meta_called_out_swe_bench_verified_for_being/)
 
+## Chapter 2 - Machine Learning Basics
+
+### Reinforcement Learning
+- [AlphaGo - DeepMind](https://www.deepmind.com/research/highlighted-research/alphago)
+
 ## Chapter 5 - Claude Code
 
 ### Claude Code Documentation
@@ -129,6 +132,13 @@
 - [Test-driven Development - Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
 - [Spec Driven Development - Martin Fowler](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html)
 - [Testing Queues and Batch Jobs - Diego Pacheco](https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html)
+
+## Chapter 9 - Learning from AI
+
+### AI Hallucination Research
+- [ORION: Retrieval-Based Method for Hallucination Detection - arXiv](https://arxiv.org/pdf/2504.15771)
+- [Hallucination is Inevitable: An Innate Limitation of Large Language Models - arXiv](https://arxiv.org/pdf/2401.11817)
+- [Estimating the Hallucination Rate of Generative AI - arXiv](https://arxiv.org/pdf/2406.07457)
 
 ## Author's Published Works
 

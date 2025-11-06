@@ -7,7 +7,7 @@ I wrote this book in a very different way compared with my 3 previous books. My 
 * You need to write a proposal, proposal get debated and approved, you write.
 * Formal books have length requirements usually 300 pages.
 * Formal books once approved are waterfall and have several phases.
-* Once you deliver a chapter, there is a a english reviewer.
+* Once you deliver a chapter, there is an english reviewer.
 * After the english reviewer there is the technical reviewer.
 * After that there is copy-writing, index, layouting and finally printing.
 * Traditional process take from 7 to 12 months.
@@ -62,12 +62,12 @@ book-all.md
 - Fix all my english issues
 - Fix my typos
 - Don't touch the HTML files only the markdown files
-- Only fix english or grammar mistake, dont change my words or writting style
-- Make sure you dont break anything, make sure you dont loose content
+- Only fix english or grammar mistake, dont change my words or writing style
+- Make sure you dont break anything, make sure you dont lose content
 
-## Task 6 - # Make sure you did not lost content
-- You cannot loose content
-- Make sure you did not broke links
+## Task 6 - # Make sure you did not lose content
+- You cannot lose content
+- Make sure you did not break links
 - Make sure all content is there
 - Make sure you did not delete anything wrongly
 ```
