@@ -704,13 +704,35 @@ Model: A representation of the environment that the agent uses to predict the ne
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-3---generative-ai"><a class="header" href="#chapter-3---generative-ai">Chapter 3 - Generative AI</a></h1>
 <p>Generative AI focuses on creating large models that can generate new content, such as text, images, music, or even video. Large Language Models (LLMs) like GPT are pre-trained on vast amounts of data and can perform a variety of tasks, including text generation, translation, summarization, coding and much more.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-generative-ai"><a class="header" href="#what-is-generative-ai">What is Generative AI?</a></h1>
-<p>TBD</p>
+<p>The advent of LLMs allow use to use AI models diretly that was previous training. Meaining you can use it right away without needing to train it yourself. This is called "Generative AI" because the model can generate new content based on the input you provide.</p>
+<p>You will see many terms around generative AI, like "thinking", "reasoning", or "understanding". To be clear AI models do not actually think, reason, or understand in the way humans do. Instead, they analyze patterns in the data they were trained on and generate responses based on those patterns.</p>
+<p>LLM models are like very advanced autocomplete systems. When you type a few words, they predict what comes next based on the vast amount of text they have been trained on. This allows them to generate coherent and contextually relevant responses.</p>
+<p>Even given the limitations such systems are still incredibly powerful and useful for a wide range of applications, from drafting emails to writing code, creating art, creating logos, writting music, writting stories, creating code via AI Coding Agents and much more.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="transformers"><a class="header" href="#transformers">Transformers</a></h1>
-<p>TBD</p>
+<p>Transformers Architecture was introduced in the paper <a href="https://arxiv.org/abs/1706.03762">"Attention is All You Need"</a> by Vaswani et al. in 2017. It revolutionized the field of Natural Language Processing (NLP) and has since been adapted for various other tasks, including computer vision and audio processing.</p>
+<p>Large Language Models (LLMs) like GPT-3, BERT, and others are built upon the Transformer architecture. Transformers are pretty complex. The key innovation of Transformers is the self-attention mechanism, which allows the model to weigh the importance of different words in a sentence relative to each other, regardless of their position.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="large-language-models-llms"><a class="header" href="#large-language-models-llms">Large Language Models (LLMs)</a></h1>
-<p>TBD</p>
+<p><a href="https://en.wikipedia.org/wiki/Large_language_model">Large Language Models (LLMs)</a> are a type of generative AI specifically designed to understand and generate human-like text. They are trained on vast amounts of textual data, allowing them to learn the patterns, structures, and nuances of language. LLMs aere feed up with books, articles, websites, and other text sources to develop a deep understanding of language.</p>
+<p>LLMs are incredible good handling text-based tasks, such as:</p>
+<ul>
+<li>Text Generation: Creating coherent and contextually relevant text based on a given prompt.</li>
+<li>Translation: Converting text from one language to another.</li>
+<li>Summarization: Condensing long pieces of text into shorter summaries while retaining key information.</li>
+<li>Question Answering: Providing accurate answers to questions based on the information they have been trained on</li>
+<li>Sentiment Analysis: Determining the sentiment or emotional tone of a piece of text.</li>
+</ul>
+<p>Common popular LLM modes include:</p>
+<ul>
+<li>OpenAI's <a href="https://openai.com/index/gpt-5-system-card/">GPT-5</a> and GPT-4</li>
+<li>Anthropic's <a href="https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf">Sonnet 4.5</a> and Opus</li>
+<li>Google's <a href="https://modelcards.withgoogle.com/assets/documents/gemini-2-flash.pdf">Gemini 2.0 Flash</a></li>
+<li>Meta's <a href="https://www.llama.com/docs/model-cards-and-prompt-formats/llama4/">LLaMA 4</a></li>
+<li>XAI's <a href="https://data.x.ai/2025-08-20-grok-4-model-card.pdf">Grok 4</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="embeddings"><a class="header" href="#embeddings">Embeddings</a></h1>
-<p>TBD</p>
+<p>Embeddings are a way to represent data, such as words, sentences, or images, as numerical vectors in a high-dimensional space. This representation allows AI models to understand and process the data more effectively.</p>
+<img src="chapter-3/../images/03-embeddings.png" alt="Embeddings Illustration" width="600"/>
+<p>By transforming text into numbers LLM can compare similarities between different pieces of text, using a similarity score based on the distance between their corresponding vectors in the embedding space. Comon similarity measures include <a href="https://en.wikipedia.org/wiki/Cosine_similarity">cosine similarity</a> and <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean distance</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="text-generation"><a class="header" href="#text-generation">Text Generation</a></h1>
 <p>TBD</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="vector-databases"><a class="header" href="#vector-databases">Vector Databases</a></h1>
