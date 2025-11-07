@@ -8,3 +8,8 @@ LLMs are all about text generation. They generate a text based on a input text w
 
 When you provide a user prompt, the LLM processes it along with the system prompt (if provided) and generates a response based on its training data and the instructions given in the system prompt.
 
+In the beginning the term used to be "prompt engineering" which was the art of crafting the perfect prompt to get the desired response from an LLM. However, as LLMs have become more advanced, they are better at understanding and responding to a wide range of prompts without the need for intricate engineering.
+
+Currently the most common term is "context engineering" which focuses on providing the right context to the LLM to get the best possible response. This can involve providing additional information, clarifying instructions, or setting specific parameters for the response.
+
+Now a days AI coding agents often ask questions to the user to gather more context before generating a response. This iterative process helps ensure that the LLM has all the necessary information to provide a relevant and accurate answer.
