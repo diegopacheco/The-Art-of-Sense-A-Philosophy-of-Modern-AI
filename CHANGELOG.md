@@ -2,6 +2,11 @@
 
 All notable changes to "The Art of Sense: A Philosophy of Modern AI" book project are documented in this file.
 
+## November 8, 2025
+
+### Zero Chapter and Main Content
+- Added disclaimer section to project introduction (README.md, zero/README.md)
+
 ## November 7, 2025
 
 ### Chapter 3 - Generative AI
