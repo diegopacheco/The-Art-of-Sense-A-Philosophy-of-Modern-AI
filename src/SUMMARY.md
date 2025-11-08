@@ -66,6 +66,7 @@
 - [Chapter 6 - Testing with AI](./chapter-6/README.md)
   - [Why use AI for Testing?](./chapter-6/WHY.md)
   - [AI to Help with Testing](./chapter-6/AI_TESTING.md)
+  - [Manual Testing](./chapter-6/MANUAL_TESTING.md)
 
 # Part III
 

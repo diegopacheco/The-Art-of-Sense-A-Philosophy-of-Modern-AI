@@ -139,6 +139,7 @@ Hire, develop, retain, and truly grow talent at scale
 - [Chapter 6 - Testing with AI](./chapter-6/README.md)
   - [Why use AI for Testing?](./chapter-6/WHY.md)
   - [AI to Help with Testing](./chapter-6/AI_TESTING.md)
+  - [Manual Testing](./chapter-6/MANUAL_TESTING.md)
 
 ### Part III
 - [Chapter 7 - Migrations with AI](./chapter-7/README.md)
@@ -146,7 +147,7 @@ Hire, develop, retain, and truly grow talent at scale
   - [Inventory](./chapter-7/INVENTORY.md)
   - [Migrations in Phases](./chapter-7/MIGRATIONS_PHASES.md)
   - [Testing](./chapter-7/TESTING.md)
-    - [Sunseting](./chapter-7/SUNSETING.md)
+  - [Sunseting](./chapter-7/SUNSETING.md)
   - [After Migrations](./chapter-7/AFTER_MIGRATIONS.md)
 
 - [Chapter 8 - Non-Obvious Use Cases](./chapter-8/README.md)
