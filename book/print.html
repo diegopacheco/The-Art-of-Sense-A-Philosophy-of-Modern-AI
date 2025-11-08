@@ -345,7 +345,11 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li><a href="./chapter-7/WHY.html">Why use AI for Migrations?</a></li>
 <li><a href="./chapter-7/INVENTORY.html">Inventory</a></li>
 <li><a href="./chapter-7/MIGRATIONS_PHASES.html">Migrations in Phases</a></li>
-<li><a href="./chapter-7/TESTING.html">Testing</a></li>
+<li><a href="./chapter-7/TESTING.html">Testing</a>
+<ul>
+<li><a href="./chapter-7/SUNSETING.html">Sunseting</a></li>
+</ul>
+</li>
 <li><a href="./chapter-7/AFTER_MIGRATIONS.html">After Migrations</a></li>
 </ul>
 </li>
@@ -1702,6 +1706,10 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <p>You can't move if you don't have tests. Add tests first.</p>
 <p>Since Gen-AI has this issue with <code>determinism</code>, it's very likely AI will introduce bugs, or even just delete whole features and mess up with things unrelated to your prompts.</p>
 <p>Tests are a great way to compensate for that. Because good tests are deterministic, they will help you identify when something is broken.So before touching anything, make sure you have good testing in place, we can use AI to help us write those tests as well.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="sunseting"><a class="header" href="#sunseting">Sunseting</a></h1>
+<p>Without AI, some migrations tend to always be postponed. Sometimes because the cost is prohibitive, sometimes because the risk is too high, sometimes because the business case is not clear.</p>
+<p>However with AI Coding agents, now we live in a time whre it's possible bridge such gaps much faster and much cheaper. AI it's not perfect so, expect bugs and set backs, but the speed gains are unquestionable.</p>
+<p>Imagine if you have some code in old technology let's say Python 2.x, now using Coding agents it's possible to migrate the code base from python 2.x to Rust for instance. This is a unique time that provide us great opportunities, now we need to tweack our mindset and leverage the new tools.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="after-migrations"><a class="header" href="#after-migrations">After Migrations</a></h1>
 <p>When migrations end, they don't end. Because you always need to do cleanup. Before you do cleanup, you need to check for <code>leftovers</code> and <code>orphaned resources</code>.</p>
 <p>Usually monitoring and logging are the way to verify if someone (piece of software) was left behind.</p>
@@ -1947,7 +1955,7 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 </code></pre>
 <p>Running this custom command uses on avg ~70k tokens. So I use AI for the boring and repetitive tasks, not to write the book itself. When I run out of tokens on Claude Code, I would fall back to GitHub Copilot.</p>
 <h2 id="cicd"><a class="header" href="#cicd">CI/CD</a></h2>
-<p>This book was written with CI/CD in mind from day one. I have a script called <code>bump-version.sh</code> that bumps the version of the book in a file at the root called "VERSION". When I released the book, it had ~100 pages on version <code>1.0.0</code>. During the first week of the book, I released content every day. For the first week I did 6 releases: 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5, and 1.0.6. Each release had new content. I also used AI to generate a CHANGELOG.md file so you can track my changes. After release 1.0.5, the book has 132 pages.</p>
+<p>This book was written with CI/CD in mind from day one. I have a script called <code>bump-version.sh</code> that bumps the version of the book in a file at the root called "VERSION". When I released the book, it had ~145 pages on version <code>1.0.0</code>. More to come.</p>
 <p>This is a killer feature because I can keep releasing new content in a very lean/agile way, directly to you the reader.</p>
 <h2 id="did-you-like-my-work-did-it-help-you"><a class="header" href="#did-you-like-my-work-did-it-help-you">Did you like my work? Did it help you?</a></h2>
 <p>If you like my work, you can help me by buying one of my other books here:</p>
