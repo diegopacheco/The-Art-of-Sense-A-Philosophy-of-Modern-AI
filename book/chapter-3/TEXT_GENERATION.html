@@ -193,7 +193,7 @@
 <p>When you provide a user prompt, the LLM processes it along with the system prompt (if provided) and generates a response based on its training data and the instructions given in the system prompt.</p>
 <p>In the beginning the term used to be "prompt engineering" which was the art of crafting the perfect prompt to get the desired response from an LLM. However, as LLMs have become more advanced, they are better at understanding and responding to a wide range of prompts without the need for intricate engineering.</p>
 <p>Currently the most common term is "context engineering" which focuses on providing the right context to the LLM to get the best possible response. This can involve providing additional information, clarifying instructions, or setting specific parameters for the response.</p>
-<p>Now a days AI coding agents often ask questions to the user to gather more context before generating a response. This iterative process helps ensure that the LLM has all the necessary information to provide a relevant and accurate answer.</p>
+<p>Nowadays AI coding agents often ask questions to the user to gather more context before generating a response. This iterative process helps ensure that the LLM has all the necessary information to provide a relevant and accurate answer.</p>
 
                     </main>
 
@@ -224,22 +224,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

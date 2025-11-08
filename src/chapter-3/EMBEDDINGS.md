@@ -4,4 +4,4 @@ Embeddings are a way to represent data, such as words, sentences, or images, as 
 
 <img src="../images/03-embeddings.png" alt="Embeddings Illustration" width="600"/>
 
-By transforming text into numbers LLM can compare similarities between different pieces of text, using a similarity score based on the distance between their corresponding vectors in the embedding space. Comon similarity measures include [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) and [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance).
+By transforming text into numbers LLMs can compare similarities between different pieces of text, using a similarity score based on the distance between their corresponding vectors in the embedding space. Common similarity measures include [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) and [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance).

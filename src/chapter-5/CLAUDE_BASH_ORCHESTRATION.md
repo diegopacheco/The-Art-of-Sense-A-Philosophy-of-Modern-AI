@@ -1,6 +1,6 @@
 # Claude Bash Orchestration
 
-Claude can be run as a unix/linux process in bash. Meaning you can do pipelines, orchestration and all sorts of bash scripting with claude code. In order to run claude in bash you just do:
+Claude can be run as a Unix/Linux process in bash. Meaning you can do pipelines, orchestration and all sorts of bash scripting with Claude Code. In order to run Claude in bash you just do:
 
 ```bash
 claude -p "Your prompt here"

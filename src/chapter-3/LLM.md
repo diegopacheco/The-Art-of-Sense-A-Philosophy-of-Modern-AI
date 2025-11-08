@@ -1,6 +1,6 @@
 # Large Language Models (LLMs)
 
-[Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are a type of generative AI specifically designed to understand and generate human-like text. They are trained on vast amounts of textual data, allowing them to learn the patterns, structures, and nuances of language. LLMs aere feed up with books, articles, websites, and other text sources to develop a deep understanding of language.
+[Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are a type of generative AI specifically designed to understand and generate human-like text. They are trained on vast amounts of textual data, allowing them to learn the patterns, structures, and nuances of language. LLMs are fed with books, articles, websites, and other text sources to develop a deep understanding of language.
 
 LLMs are incredible good handling text-based tasks, such as:
 - Text Generation: Creating coherent and contextually relevant text based on a given prompt.

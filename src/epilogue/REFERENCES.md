@@ -108,8 +108,57 @@
 
 ## Chapter 2 - Machine Learning Basics
 
+### Machine Learning Fundamentals
+- [Cosine Similarity - Wikipedia](https://en.wikipedia.org/wiki/Cosine_similarity)
+- [Euclidean Distance - Wikipedia](https://en.wikipedia.org/wiki/Euclidean_distance)
+
 ### Reinforcement Learning
 - [AlphaGo - DeepMind](https://www.deepmind.com/research/highlighted-research/alphago)
+
+## Chapter 3 - Generative AI
+
+### LLM Models and Documentation
+- [Large Language Models - Wikipedia](https://en.wikipedia.org/wiki/Large_language_model)
+- [GPT-5 System Card - OpenAI](https://openai.com/index/gpt-5-system-card/)
+- [Claude Sonnet 4.5 System Card - Anthropic](https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf)
+- [Gemini 2.0 Flash Model Card - Google](https://modelcards.withgoogle.com/assets/documents/gemini-2-flash.pdf)
+- [LLaMA 4 Model Card - Meta](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4/)
+- [Grok 4 Model Card - XAI](https://data.x.ai/2025-08-20-grok-4-model-card.pdf)
+
+### Transformers and Architecture
+- [Attention is All You Need - arXiv](https://arxiv.org/abs/1706.03762)
+
+### Vector Databases
+- [What are Vector Databases - AWS](https://aws.amazon.com/what-is/vector-databases/)
+- [Pinecone](https://www.pinecone.io/)
+- [Weaviate](https://weaviate.io/)
+- [Milvus](https://milvus.io/)
+- [Chroma](https://www.trychroma.com/)
+- [Postgres pgvector](https://github.com/pgvector/pgvector)
+
+### Sound and Audio Generation
+- [ElevenLabs](https://elevenlabs.io/)
+
+### Image Generation
+- [DALL-E 2 - OpenAI](https://openai.com/index/dall-e-2/)
+- [Generative Adversarial Networks - AWS](https://aws.amazon.com/what-is/gan/)
+- [MidJourney](https://www.midjourney.com/home)
+- [Stable Diffusion Research Paper](https://stability.ai/news/stable-diffusion-3-research-paper)
+- [Stability AI](https://stability.ai/)
+
+### Fine-Tuning Research
+- [Early Stopping and Overfitting - MLR Press](https://proceedings.mlr.press/v162/ju22a.html?utm_source=chatgpt.com)
+- [Catastrophic Forgetting - ACL Anthology](https://aclanthology.org/2024.findings-emnlp.249/?utm_source=chatgpt.com)
+- [Hyperparameter Tuning - arXiv](https://arxiv.org/abs/2006.04884?utm_source=chatgpt.com)
+
+### Video Generation
+- [VQ-VAE-2 Paper](https://arxiv.org/pdf/1906.00446)
+- [MoCoGAN](https://github.com/sergeytulyakov/mocogan)
+- [TGAN](https://pfnet-research.github.io/tgan/)
+- [Diffusion Models for Video](https://arxiv.org/abs/2504.16081)
+- [Hybrid Approach Video Generation - MIT](https://news.mit.edu/2025/causevid-hybrid-ai-model-crafts-smooth-high-quality-videos-in-seconds-0506)
+- [VideoPoet - arXiv](https://arxiv.org/abs/2312.14125?utm_source=chatgpt.com)
+- [SORA - OpenAI](https://openai.com/index/video-generation-models-as-world-simulators/?utm_source=chatgpt.com)
 
 ## Chapter 5 - Claude Code
 

@@ -5,8 +5,14 @@
 **A2A (Agent 2 Agent)**
 Protocol for enabling communication and interaction between different AI agents.
 
+**Action**
+In reinforcement learning, a decision or move made by an agent.
+
 **AGI (Artificial General Intelligence)**
 A theoretical form of AI that would have human-like general intelligence, capable of understanding, learning, and applying knowledge across a wide range of tasks. Marketing hype often surrounds AGI claims, though true AGI capabilities remain unproven.
+
+**Agent**
+In reinforcement learning, the learner or decision-maker that interacts with the environment.
 
 **AI (Artificial Intelligence)**
 The simulation of human intelligence processes by machines, especially computer systems. The book focuses on practical applications of AI in software engineering.
@@ -29,6 +35,9 @@ Behavior exhibited by agents that allows them to act autonomously in pursuit of 
 **Aggregating**
 Agent pattern involving combining multiple data sources or results into a unified response or output.
 
+**AlphaGo**
+Game-playing AI system using reinforcement learning.
+
 **Amazon Q**
 AWS coding agent that provides AI-powered assistance for software development tasks.
 
@@ -41,6 +50,12 @@ Authentication token required to access AI services programmatically for product
 **Attention Mechanisms**
 Core component of transformer architecture enabling models to focus on relevant parts of input when processing sequences.
 
+**AudioLM**
+Model developed by Google that can generate high-quality audio samples from text prompts.
+
+**Autonomous Driving**
+Application area for reinforcement learning in self-driving vehicles.
+
 ## B
 
 **Bash Orchestration**
@@ -49,22 +64,34 @@ Running Claude Code as a Unix/Linux process enabling pipeline and automation wor
 **Benchmark Gaming**
 Practice where AI models exploit benchmark loopholes to achieve higher scores without genuinely improving capabilities.
 
+**BERT**
+Large Language Model built upon the Transformer architecture.
+
 **Build Process**
 Automated compilation and deployment process that can be monitored and optimized with AI assistance.
 
 **Bash Mode**
-A Claude Code feature enabling direct bash command execution for system operations.
+A Claude Code feature enabling direct bash command execution for system operations, also known as Interactive Mode.
 
 ## C
 
 **Caching**
 Agent pattern for storing and reusing frequently accessed data or results to improve performance and reduce redundant processing.
 
+**Catastrophic Forgetting**
+Challenge in fine-tuning where a model loses previously learned knowledge when adapting to new tasks.
+
 **Changelog**
 Document tracking changes, additions, and fixes across software versions, can be automated using AI by analyzing git history.
 
 **Change and Adaptation**
 The necessity for engineers and organizations to adapt to AI-driven disruption as AI becomes increasingly integrated into software development.
+
+**Chroma**
+Vector database for storing and querying embeddings.
+
+**Cisco MCP Scanner**
+Open source security tool for scanning and analyzing MCP servers for vulnerabilities.
 
 **.claudeignore**
 File specifying which files Claude Code should not read, similar to .gitignore for version control.
@@ -75,8 +102,17 @@ Global configuration file for Claude Code behavior, containing project-specific 
 **Claude Code**
 A specific AI tool/platform (Anthropic's Claude used for coding tasks) covered extensively in Chapter 5.
 
+**Claude Opus**
+Anthropic's LLM model.
+
 **Claude Skills**
 Anthropic's approach to building coding agents by bundling text and scripts together to create specialized capabilities.
+
+**Claude Sonnet 4.5**
+Anthropic's LLM model with 200,000 token context window.
+
+**Claude Sonnet Corp**
+Enterprise version of Claude with 1,000,000 token context window.
 
 **CLI Agents**
 Command-line interface based coding agents that run directly on local machines.
@@ -102,22 +138,31 @@ AI agents specifically designed or trained to generate, modify, and work with so
 **Coding Dojo**
 Practice environment where engineers work without AI using TDD, forcing manual skill development and maintaining proficiency.
 
+**Context Engineering**
+Modern term focusing on providing the right context to LLMs to get the best possible response, replacing the older term "prompt engineering".
+
 **Context Window**
 The amount of text/tokens an LLM can process at once. Larger context windows allow for processing more information simultaneously.
 
 **Context7**
-Service providing up-to-date library documentation to address LLMs' outdated training data.
+Service providing up-to-date library documentation to address LLMs' outdated training data, supporting over 49,317 libraries.
 
 **Core Business Logic**
 Critical business logic and intellectual property that should never be created through "vibe coding" due to quality and proprietary concerns.
 
+**Cosine Similarity**
+Similarity measure used to compare embeddings based on the cosine of the angle between vectors.
+
 **Custom Agents**
-Agents specifically built or configured for particular use cases or organizations.
+Agents specifically built or configured for particular use cases or organizations, stored in ~/.claude/agents/ directory.
 
 **Custom Commands**
 Specific commands or workflows configured within Claude Code or similar tools for specialized tasks.
 
 ## D
+
+**DALL-E**
+OpenAI's model that generates images from textual descriptions using transformer architecture and GANs.
 
 **DBSCAN**
 Density-Based Spatial Clustering of Applications with Noise, an algorithm for clustering that can identify outliers.
@@ -134,6 +179,9 @@ Framework for determining when and how to use AI effectively in different scenar
 **Determinism**
 Property of producing identical outputs for identical inputs, which AI lacks due to its probabilistic nature.
 
+**Diffusion Models**
+Advanced approach for video generation.
+
 **Dimensionality Reduction**
 A Traditional AI/ML technique for reducing the number of variables/features in data while preserving meaningful information. Examples include PCA.
 
@@ -145,6 +193,12 @@ Using AI to generate and maintain code documentation, changelogs, and knowledge 
 
 ## E
 
+**Early Stop**
+Technique used in fine-tuning to prevent overfitting by stopping training before the model over-learns.
+
+**ElevenLabs**
+Company providing APIs to generate high-quality speech from text using advanced neural network models.
+
 **Embeddings**
 Numerical vector representations of text, images, or other data that capture semantic meaning. Essential for RAG and vector databases. Can represent words, sentences, or entire documents.
 
@@ -153,6 +207,15 @@ The practice of applying AI tools and methodologies to improve software developm
 
 **Enterprise Integration Patterns (EIP)**
 Design patterns by Gregor Hohpe and Bobby Woolf that AI agent patterns derive from.
+
+**Environment**
+In reinforcement learning, the external system with which the agent interacts.
+
+**Euclidean Distance**
+Similarity measure used to compare embeddings based on the straight-line distance between vectors.
+
+**Evo by Snyk**
+Commercial MCP scanning security solution for analyzing MCP servers.
 
 ## F
 
@@ -167,11 +230,20 @@ Process of training a pre-trained model on specific domain data to adapt it to p
 
 ## G
 
+**GANs (Generative Adversarial Networks)**
+Neural network architecture used in image generation models like DALL-E.
+
 **Gaussian Mixture Models**
 Clustering algorithm that assumes data points are generated from a mixture of Gaussian distributions.
 
 **Gemini**
 Google's LLM model used in various coding agents including Jules and Gemini CLI.
+
+**Gemini 2.0 Flash**
+Google's LLM model with 1,000,000 token context window.
+
+**Gemini 2.0 Pro**
+Google's LLM model with 2,000,000 token context window.
 
 **Generative AI**
 AI systems that can generate new content, including text, code, images, and other media. The book focuses on using Generative AI for software engineering tasks. Works through predicting next tokens/sequences.
@@ -185,8 +257,32 @@ One of the first coding agents, integrated into VSCode and other IDEs, supportin
 **Google Jules**
 Web sandbox coding agent by Google backed by Gemini LLM models.
 
+**GPT-3**
+Large Language Model built upon the Transformer architecture.
+
+**GPT-3.5**
+OpenAI's LLM model with 4,096 token context window.
+
+**GPT-4**
+OpenAI's LLM model with 8,192 token context window.
+
+**GPT-4-turbo**
+OpenAI's LLM model with 128,000 token context window.
+
+**GPT-5**
+OpenAI's latest LLM model.
+
 **Gradient Boosting**
 Machine learning ensemble technique that builds models sequentially to correct errors of previous models.
+
+**Grok 3**
+XAI's LLM model with 1,000,000 token context window.
+
+**Grok 4**
+XAI's LLM model.
+
+**Grok 4 Fast**
+XAI's LLM model with 2,000,000 token context window.
 
 ## H
 
@@ -197,10 +293,16 @@ Running Claude Code via command line without interactive interface for automatio
 Clustering algorithm that builds a hierarchy of clusters using a tree-like structure.
 
 **Hooks (Claude Code)**
-Event-driven automation triggers that execute scripts on specific events in Claude Code.
+Event-driven automation triggers that execute scripts on specific events in Claude Code, allowing custom workflows.
 
 **HumanEval**
 Software engineering benchmark for evaluating AI coding capabilities.
+
+**Hybrid Approach**
+Video generation technique that can generate videos in seconds.
+
+**Hyperparameter Tuning**
+Process of adjusting parameters in fine-tuning to optimize model performance.
 
 ## I
 
@@ -238,6 +340,12 @@ Process of using AI as an educational tool while maintaining critical thinking a
 **Linear Regression**
 Fundamental regression algorithm modeling relationship between variables using a linear equation.
 
+**LLaMA 3**
+Meta's LLM model with 8,192 token context window.
+
+**LLaMA 4**
+Meta's LLM model.
+
 **LLM (Large Language Model)**
 A type of AI model trained on massive amounts of text data that can understand and generate human-like text. Examples include GPT, Claude, and other similar models. LLMs work by predicting the next sequence of tokens. Cannot truly "think" despite marketing claims.
 
@@ -255,11 +363,14 @@ Concept by Cory Doctorow describing LLMs as fundamentally random/probabilistic s
 
 ## M
 
+**Make-A-Track**
+Meta's model that generates music tracks from text descriptions.
+
 **Marketing and AI**
 The often misleading promotion of AI capabilities, including false AGI claims and overstated application benefits.
 
 **MCP (Model Context Protocol)**
-A protocol for connecting AI models to external tools and data sources, enabling extended capabilities.
+A protocol for connecting AI models to external tools and data sources, enabling extended capabilities. Created by Anthropic in 2024.
 
 **MCP Client**
 Component within AI host that connects to MCP servers.
@@ -279,19 +390,39 @@ External service providing tools and data to AI models via Model Context Protoco
 **Mean Shift Clustering**
 Clustering algorithm that finds dense regions by shifting data points toward mode of distribution.
 
+**MidJourney**
+Independent research lab's model for generating visually appealing and artistic images from text prompts.
+
 **Migrations**
 Process of moving systems, code, libraries, or data from one platform, language, or infrastructure to another.
 
 **Migrations in Phases**
 Structured approach to performing migrations incrementally rather than all at once.
 
+**Milvus**
+Vector database for storing and querying embeddings.
+
 **Mirror on Steroids**
 Concept that AI amplifies existing abilities: good engineers become better with AI; poor engineers become worse.
+
+**MoCoGAN**
+Model that separates motion and content to generate videos with coherent motion.
+
+**Model**
+In reinforcement learning, a representation of the environment that the agent uses to predict the next state and reward.
+
+## N
+
+**Natural Language Processing (NLP)**
+Field revolutionized by the Transformer architecture for processing and understanding human language.
 
 ## O
 
 **Onboarding**
 Process of integrating new engineers into teams and codebases, enhanced by AI as a private tutor.
+
+**OpenAI**
+Company that provides LLM models and coding agents.
 
 **OpenCode**
 Open source coding agent that works with multiple LLM models.
@@ -299,16 +430,34 @@ Open source coding agent that works with multiple LLM models.
 **Orchestration**
 Agent pattern for coordinating multiple AI operations or tools in sequence or parallel.
 
+**Overfitting**
+Challenge in fine-tuning where a model learns training data too specifically and loses generalization ability.
+
 ## P
 
 **PCA (Principal Component Analysis)**
 Dimensionality reduction technique that identifies principal components explaining maximum variance in data.
 
+**pgvector**
+PostgreSQL extension for vector database functionality.
+
+**Pinecone**
+Vector database for storing and querying embeddings.
+
+**Policy**
+In reinforcement learning, a strategy or rule that the agent uses to make decisions.
+
+**Postgres MCP**
+MCP server for reading data from PostgreSQL database tables in plain English.
+
 **Precision and Reproducibility**
 Challenge with AI systems: inability to guarantee identical outputs for identical inputs due to probabilistic nature.
 
+**Pre-trained Model**
+Model that has already acquired knowledge during initial training phase, used as starting point for fine-tuning.
+
 **Prompt Engineering**
-Craft of writing effective instructions for AI models to achieve desired outcomes.
+Craft of writing effective instructions for AI models to achieve desired outcomes, largely replaced by context engineering.
 
 **Prompt Library**
 Collection of pre-written prompts demonstrating AI capabilities and best practices.
@@ -325,7 +474,7 @@ Using AI to check spelling, grammar, and document quality in written content.
 ## R
 
 **RAG (Retrieval-Augmented Generation)**
-Technique combining document retrieval with LLM generation, allowing AI to cite and incorporate external information into responses.
+Technique combining document retrieval with LLM generation, allowing AI to cite and incorporate external information into responses. Reduces costs, mitigates hallucinations, and provides up-to-date information.
 
 **Random Forest**
 Ensemble learning method using multiple decision trees for classification and regression.
@@ -345,6 +494,15 @@ Professional principle that code should be reviewed and understood by creators b
 **Responsible AI Usage**
 Using AI as input/research tool while maintaining human judgment, code review, and verification responsibilities.
 
+**Retrieval Phase**
+Second phase in RAG pattern where queries are converted to embeddings to search vector database for relevant documents.
+
+**Reward**
+In reinforcement learning, a scalar feedback signal that indicates how well the agent is doing.
+
+**Robotics**
+Application area for reinforcement learning.
+
 **Routing**
 Agent pattern for directing requests to appropriate services or models based on content or conditions.
 
@@ -359,11 +517,23 @@ Development approach implemented by AWS Kiro where specifications drive implemen
 **Security and MCPs**
 Considerations for safely integrating external tools and protocols with AI systems to prevent unauthorized access or malicious operations.
 
+**Self-Attention Mechanism**
+Key innovation of Transformers that allows models to weigh the importance of different words in a sentence relative to each other.
+
+**Semantic Meaning**
+The meaning captured by embeddings that allows for effective text comparisons.
+
 **Sentiment Analysis**
 Analyzing emotional tone and intent in text, applicable to emails, customer feedback, and communication review.
 
+**Slack MCP**
+MCP server for sending messages to Slack teams.
+
 **Solutions vs Wrappers**
 Philosophy distinguishing genuine innovations from superficial API wrappers. Many AI startups are wrappers rather than true solutions.
+
+**SORA**
+OpenAI's most advanced video generation model.
 
 **Sound Generation**
 Generative AI capability for creating audio content.
@@ -374,8 +544,20 @@ Clustering algorithm using eigenvalues of similarity matrix to reduce dimensiona
 **Splitting**
 Agent pattern for dividing large tasks or data into smaller manageable pieces for processing.
 
+**Stable Diffusion**
+Open-source model by Stability AI for generating images from text descriptions using diffusion process.
+
+**Stability AI**
+Company that developed Stable Diffusion image generation model.
+
+**State**
+In reinforcement learning, a snapshot of the environment at a given time.
+
 **Status Line**
 Customizable information display at bottom of Claude Code interface showing current state.
+
+**Summarization**
+LLM task of condensing long text into shorter summaries while retaining key information.
 
 **Supervised Learning**
 Machine learning paradigm where models learn from labeled training data to make predictions.
@@ -387,7 +569,7 @@ Machine learning algorithm for classification and regression using hyperplanes t
 Software engineering benchmark for evaluating AI coding capabilities.
 
 **System Prompt**
-Instructions defining how an AI model should behave and respond to user inputs.
+Instructions defining how an AI model should behave and respond to user inputs. Sets the behavior and style of the LLM.
 
 ## T
 
@@ -407,7 +589,10 @@ Proper testing infrastructure setup for comprehensive test coverage.
 Creating test coverage as prerequisite for migrations and code changes.
 
 **Text Generation**
-Generative AI capability for creating written content from prompts or other inputs.
+Generative AI capability for creating written content from prompts or other inputs. LLMs process system and user prompts to generate responses.
+
+**TGAN (Temporal Generative Adversarial Networks)**
+Model that focuses on generating videos by modeling temporal dynamics.
 
 **Token Budget**
 Allocated amount of tokens for AI processing, with ultrathink using up to 10,000+ tokens.
@@ -418,8 +603,14 @@ The basic units that LLMs process. Text is broken down into tokens, and LLMs pre
 **Traditional AI**
 Earlier AI/ML approaches including regression, classification, clustering, and dimensionality reduction.
 
+**Transformer Architecture**
+Neural network architecture introduced in "Attention is All You Need" paper by Vaswani et al. in 2017, revolutionizing NLP.
+
 **Transformers**
 Neural network architecture underlying modern LLMs, enabling efficient processing of sequences through attention mechanisms.
+
+**Translation**
+LLM task of converting text from one language to another.
 
 **Troubleshooting**
 Using AI to help diagnose and resolve problems in code, systems, and architectures including log analysis and debugging.
@@ -430,10 +621,13 @@ Characterization of AI progress: advancement comes with limitations, hallucinati
 ## U
 
 **Ultrathink**
-A Claude Code feature providing extended reasoning capabilities with larger token budget up to 10,000+ tokens for complex problems.
+A Claude Code feature providing extended reasoning capabilities with larger token budget up to 10,000+ tokens for complex problems, allowing more thorough analysis than normal thinking mode.
 
 **Unsupervised Learning**
 Machine learning paradigm where models find patterns in unlabeled data without predefined categories.
+
+**User Prompt**
+The actual input from the user that the LLM responds to, processed along with system prompt.
 
 ## V
 
@@ -441,7 +635,7 @@ Machine learning paradigm where models find patterns in unlabeled data without p
 In reinforcement learning, function estimating how beneficial it is for an agent to be in a given state.
 
 **Vector Databases**
-Specialized databases storing and querying embeddings efficiently, essential infrastructure for RAG systems.
+Specialized databases storing and querying embeddings efficiently, essential infrastructure for RAG systems. Examples include Pinecone, Weaviate, Milvus, Chroma, and Postgres pgvector.
 
 **Vending (Vetting + Defending)**
 Security practice of thoroughly checking MCP servers before use, combining vetting and defending.
@@ -450,13 +644,35 @@ Security practice of thoroughly checking MCP servers before use, combining vetti
 A practice coined by Andrej Karpathy where developers generate prompts and do not look at the generated code, assuming AI will handle everything correctly. The book argues this is a bad practice for serious software engineering, especially for core business logic.
 
 **Vintage Coding**
-Practice of coding without AI assistance to maintain core skills and proficiency.
+Practice of coding without AI assistance to maintain core skills and proficiency, often practiced in coding dojos.
 
 **Vibe Payments**
 A satirical concept introduced in the book suggesting that if developers use "vibe coding" without reviewing code, their payments should also be random and unpredictable, reflecting the lack of due diligence in their work.
 
 **Video Generation**
-Generative AI capability for creating video content from text descriptions or other inputs.
+Generative AI capability for creating video content from text descriptions or other inputs. Still experimental and not ready for production.
+
+**VideoPoet**
+Large Language Model for zero-shot video generation.
+
+**VQ-VAE-2**
+Hierarchical model using vector quantization to generate high-quality videos.
+
+## W
+
+**Waymo**
+Self-driving car project that demonstrates the gap between demo and production, taking over 11 years from initial demo in 2014.
+
+**Weaviate**
+Vector database for storing and querying embeddings.
+
+**Whisper**
+OpenAI's automatic speech recognition system that transcribes spoken language into text.
+
+## X
+
+**XAI**
+Company that provides Grok LLM models.
 
 ## Z
 

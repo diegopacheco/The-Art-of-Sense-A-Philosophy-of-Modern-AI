@@ -10,10 +10,10 @@ Video generation is an exciting area of generative AI that focuses on creating v
 
 Video Generation still high experimental, I would say is not ready for production use cases yet. The quality of generated videos is often lower than that of images or text, and the models require significant computational resources to train and run.
 
-## Recent and Avanced Approaches
+## Recent and Advanced Approaches
 
-* [Diffusion Models](https://arxiv.org/abs/2504.16081) being applied for video generation. 
-* [Hybric Approach](https://news.mit.edu/2025/causevid-hybrid-ai-model-crafts-smooth-high-quality-videos-in-seconds-0506) can generate videos in seconds.
+* [Diffusion Models](https://arxiv.org/abs/2504.16081) being applied for video generation.
+* [Hybrid Approach](https://news.mit.edu/2025/causevid-hybrid-ai-model-crafts-smooth-high-quality-videos-in-seconds-0506) can generate videos in seconds.
 * [VideoPoet](https://arxiv.org/abs/2312.14125?utm_source=chatgpt.com): A Large Language Model for Zero-Shot Video Generation
 
 Open AI [SORA's](https://openai.com/index/video-generation-models-as-world-simulators/?utm_source=chatgpt.com) it's the most advanced video generation model available right now.

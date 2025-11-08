@@ -2,6 +2,25 @@
 
 All notable changes to "The Art of Sense: A Philosophy of Modern AI" book project are documented in this file.
 
+## November 7, 2025
+
+### Chapter 3 - Generative AI
+- Enhanced fine-tuning methodologies and approaches (FINE_TUNING.md)
+- Expanded video generation techniques and tools (VIDEO_GENERATION.md)
+- Developed comprehensive image generation guide (IMAGE_GENERATION.md)
+- Added sound generation workflows and technologies (SOUND_GENERATION.md)
+- Enhanced RAG implementation patterns and best practices (RAG.md)
+
+## November 6, 2025
+
+### Chapter 3 - Generative AI
+- Expanded vector database concepts and applications (VECTOR_DBS.md)
+- Enhanced text generation techniques and strategies (TEXT_GENERATION.md)
+- Improved transformer architecture documentation (TRANSFORMERS.md)
+- Developed embeddings guide and visualization (EMBEDDINGS.md)
+- Added LLM fundamentals and concepts (LLM.md)
+- Updated chapter overview and introduction (WHAT.MD)
+
 ## November 5, 2025
 
 ### Project Renamed

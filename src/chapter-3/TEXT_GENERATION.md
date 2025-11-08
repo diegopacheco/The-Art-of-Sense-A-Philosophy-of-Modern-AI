@@ -12,4 +12,4 @@ In the beginning the term used to be "prompt engineering" which was the art of c
 
 Currently the most common term is "context engineering" which focuses on providing the right context to the LLM to get the best possible response. This can involve providing additional information, clarifying instructions, or setting specific parameters for the response.
 
-Now a days AI coding agents often ask questions to the user to gather more context before generating a response. This iterative process helps ensure that the LLM has all the necessary information to provide a relevant and accurate answer.
+Nowadays AI coding agents often ask questions to the user to gather more context before generating a response. This iterative process helps ensure that the LLM has all the necessary information to provide a relevant and accurate answer.

@@ -181,7 +181,23 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="rag"><a class="header" href="#rag">RAG</a></h1>
-<p>TBD</p>
+<p>Retrieval Augmented Generation (RAG) is a technique that combines the power of large language models (LLMs) with external knowledge sources to improve the quality and relevance of generated content. There are a couple of reasons why RAG is interesting:</p>
+<ol>
+<li>
+<p>LLMs are not good knowing the latest versions: For instance for a LLM to keep up of a version of software libraries is very hard because they are updated frequently. Using the RAG pattern we can consult a external system our vector database to get the latest information.</p>
+</li>
+<li>
+<p>Reducing Cost: Every single input and output token from an LLM costs money. By using RAG we can reduce the amount of tokens we send to the LLM by only sending the relevant parts of a document instead of the entire document, or sending the right information right away so the LLM does not need to generate multiple responses to get to the right answer.</p>
+</li>
+<li>
+<p>Mitigating Hallucinations: LLMs are known to hallucinate information, meaning they can generate plausible-sounding but incorrect or fabricated content. There are many sources of hallucinations but one is that let's say there is not enough data about a specific topic in the training data. By using RAG we can provide the LLM with accurate and relevant information from trusted sources, reducing the likelihood of hallucinations.</p>
+</li>
+</ol>
+<h2 id="how-rag-pattern-works"><a class="header" href="#how-rag-pattern-works">How RAG Pattern Works?</a></h2>
+<p>There are two main phases, first is the feed phase or feed process where we will ingest data, like documents or web pages, into a vector database. During this phase, the data is processed to create embeddings, which are numerical representations of the content that capture its semantic meaning. These embeddings are then stored in the vector database, allowing for efficient retrieval based on similarity.</p>
+<p>Second phase is the retrieval part. Both phases are illustrated in the following diagram:</p>
+<img src="../images/03-RAG-Pattern.png" width="600"/>
+<p>For the retrieval phase, we need a given query or text, which we turn into embeddings using the same model we used for the feed phase. Then we use these embeddings to search the vector database for similar embeddings, which correspond to relevant documents or pieces of information. The retrieved documents are then combined with whatever data is necessary or instructions to form a prompt that is sent to the LLM. The LLM uses this context to generate a response that is more informed and relevant to the query.</p>
 
                     </main>
 
@@ -212,22 +228,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

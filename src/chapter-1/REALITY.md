@@ -14,7 +14,7 @@ AI has the potential to disrupt like the internet, the mobile phone, and electri
 
 ## Scams
 
-We also need acknowledge that there are scams. So many scams, here a list of some:
+We also need to acknowledge that there are scams. So many scams, here is a list of some:
 * [Turns Out That Extremely Impressive Sora Demo… Wasn’t Exactly Made With Sora](https://futurism.com/the-byte/openai-sora-demo)
 * [Prankster tricks a GM chatbot into agreeing to sell him a $76,000 Chevy Tahoe for $1](https://www.upworthy.com/prankster-tricks-a-gm-dealership-chatbot-to-sell-him-a-76000-chevy-tahoe-for-ex1)
 * [The Rabbit Is A Scam](https://www.youtube.com/watch?v=d7DtiMzMBdU)
