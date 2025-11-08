@@ -76,7 +76,7 @@ Running this custom command uses on avg ~70k tokens. So I use AI for the boring 
 
 ## CI/CD
 
-This book was written with CI/CD in mind from day one. I have a script called `bump-version.sh` that bumps the version of the book in a file at the root called "VERSION". When I released the book, it had ~100 pages on version `1.0.0`. During the first week of the book, I released content every day. For the first week I did 6 releases: 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5, and 1.0.6. Each release had new content. I also used AI to generate a CHANGELOG.md file so you can track my changes. After release 1.0.5, the book has 132 pages.
+This book was written with CI/CD in mind from day one. I have a script called `bump-version.sh` that bumps the version of the book in a file at the root called "VERSION". When I released the book, it had ~145 pages on version `1.0.0`. More to come.
 
 This is a killer feature because I can keep releasing new content in a very lean/agile way, directly to you the reader.
 

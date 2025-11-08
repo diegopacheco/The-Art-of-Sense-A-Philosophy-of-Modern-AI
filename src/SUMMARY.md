@@ -74,6 +74,7 @@
   - [Inventory](./chapter-7/INVENTORY.md)
   - [Migrations in Phases](./chapter-7/MIGRATIONS_PHASES.md)
   - [Testing](./chapter-7/TESTING.md)
+  - [Sunseting](./chapter-7/SUNSETING.md)
   - [After Migrations](./chapter-7/AFTER_MIGRATIONS.md)
 
 - [Chapter 8 - Non-Obvious Use Cases](./chapter-8/README.md)
