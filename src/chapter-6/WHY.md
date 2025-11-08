@@ -1,6 +1,6 @@
 # Why use AI for Testing?
 
-The reality is that software engineers are under constant pressure for delivery. Such pressure plus immature management leads to skipping tests. You might not write the best abstraction for the universe, you might not write the best code of the universe in order to deliver, such trade-offs are fine as long as used with balance and you are not living tech-debt first. Now tests should never ever be skipped, no matter how much in a hurry you are, no matter how tight your deadline is, no matter if the sprint is close to the end. Skipping tests is the wrong decision always.
+Software engineers are under constant pressure for delivery. Such pressure plus immature management leads to skipping tests. You might not write the best abstraction for the universe, you might not write the best code to deliver—such trade-offs are fine as long as used with balance and you are not living tech-debt first. Now tests should never be skipped, no matter how much in a hurry you are, no matter how tight your deadline is, no matter if the sprint is close to the end. Skipping tests is always the wrong decision.
 
 We know skipping tests is wrong. But all companies have legacy systems. There is always software before we arrive at a company (unless it is a startup on day 1). The reality is there is so much technical debt that you can't pay it all at once. Companies pay technical debt but never as much as they should. Quality ends up being compromised, which is not a wise decision and eventually will have catastrophic consequences.
 

@@ -17,7 +17,7 @@ Take a look at the Clever Hans effect. <br/>
 
 ## The dark side of AI
 
-AI can and is used for a lot of scams. AI and people using AI can fool you in many ways. [AI has a dark side](https://diego-pacheco.blogspot.com/2024/07/the-dark-side-of-llms.html). Perhaps [many dark sides](https://diego-pacheco.blogspot.com/2025/03/the-dark-side-of-llms-part-2.html).
+AI can be and is used for a lot of scams. AI and people using AI can fool you in many ways. [AI has a dark side](https://diego-pacheco.blogspot.com/2024/07/the-dark-side-of-llms.html). Perhaps [many dark sides](https://diego-pacheco.blogspot.com/2025/03/the-dark-side-of-llms-part-2.html).
 
 ## Outsourcing Gym Workout
 
@@ -27,6 +27,6 @@ With AI it is the same thing. Anyone can use AI to generate code, does that mean
 
 ## Solutions vs Wrappers
 
-Now, every single startup is building or vibing something with .ai or a new Agentic. Under the hood most of the time it is just a wrapper around OpenAI API or Anthropic API. So what is the real value add?
+Now, many startups are building or vibing something with .ai or a new Agentic. Under the hood most of the time it is just a wrapper around OpenAI API or Anthropic API. So what is the real value add?
 
-I love Rappers but I never like Wrappers. In my book Principles of software architecture modernization I wrote about the dangers of wrappers with internal shared libraries. Now we have the same danger but with external tools. There is an explosion of tools, new tools, all old tools being rebranded to AI, or AI features popping up in softwares we would not expect.
+I love Rappers but I never liked Wrappers. In my book Principles of software architecture modernization I wrote about the dangers of wrappers with internal shared libraries. Now we have the same danger but with external tools. There is an explosion of tools, new tools, all old tools being rebranded to AI, or AI features popping up in software we would not expect.

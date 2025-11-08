@@ -185,11 +185,11 @@
 <p>I work with AI since 2017. In the summer of 2024, I spent the whole summer going deep and learning about AI. I did <a href="https://github.com/diegopacheco/ai-playground">300+ coding POCs</a>, I read several books, I did several courses. On XMAS of 2024 I made my first migration using LLMs from Kotlin to Scala. In 2025, I tested all <a href="https://github.com/diegopacheco/ai-playground/tree/main/agents">AI coding agents</a> I could, I wrote MCPs, I did several experiments.</p>
 <p>Still in 2025, I wrote my 4th book: Diego Pacheco's Software Architecture Library (<a href="https://diegopacheco.github.io/diegopacheco-architecture-library/introduction.html">SAL</a>) where I used ai to help me with: proof reading, glossary, index and references generation(more details <a href="https://diegopacheco.github.io/diegopacheco-architecture-library/epilogue/HOW_I_WROTE_THE_BOOK.html">here</a>).</p>
 <p>There is so much out there, there are so many tools and people saying many things. This book should be a compass to guide you on your AI journey for engineering.</p>
-<p>AI exist sisnce the 50s, but only in 2017 that we start having major leaps in Gen AI and LLMs. Basicaly adter 2022 AI really took off. From 2024 and 2025 there was massive process in the field. New models, new architectures, new tools, new ways of working.</p>
-<p>This book is a mix of pratical and pragmatic philosophy about how to use AI as an engineer. There is a mix of pratical advice with theory, knowledge and concepts.</p>
+<p>AI has existed since the 50s, but only in 2017 did we start having major leaps in Gen AI and LLMs. Basically after 2022 AI really took off. From 2024 and 2025 there was massive progress in the field. New models, new architectures, new tools, new ways of working.</p>
+<p>This book is a mix of practical and pragmatic philosophy about how to use AI as an engineer. There is a mix of practical advice with theory, knowledge and concepts.</p>
 <p>I hope you enjoy it!</p>
 <h2 id="other-publications-by-diego-pacheco"><a class="header" href="#other-publications-by-diego-pacheco">Other Publications by Diego Pacheco</a></h2>
-<p>IF you like my work, you can help me buying one of my other books here:</p>
+<p>If you like my work, you can help me by buying one of my other books here:</p>
 <ul>
 <li><a href="https://www.amazon.com/dp/9365893100/ref=mes-dp?_encoding=UTF8&amp;pd_rd_w=JpyYV&amp;content-id=amzn1.sym.7d2923e8-7496-46a5-862d-8ef28e908025&amp;pf_rd_p=7d2923e8-7496-46a5-862d-8ef28e908025&amp;pf_rd_r=K6XYEHZZ76RWDSAXAY5X&amp;pd_rd_wg=RH04x&amp;pd_rd_r=f230b2e4-c342-429e-a362-c856e4c2362a">Continuous Modernization</a></li>
 <li><a href="https://www.amazon.com/Principles-Software-Architecture-Modernization-microservices/dp/9355519532/ref=sr_1_1?crid=7U3H2IE5U7Y4&amp;dib=eyJ2IjoiMSJ9.ebHg7EIiJ3GThIg8Dwf4PelC70iUIbHPKv7_7zk8vrk8K2FB4zlrUQyNZwKAHPO46cAYR5z2-KyqnXqNz3Ee2lmU-aGR7NLhq7jko2UihHIl-taoJ6i_hkMjcc12ZF3pOmB9lFrvbsGgbDagq1Vzqg.oz7TxYpSBxBZjVjkuIPDZM7Wxx_XMRU0Uj7jo9Rq_BI&amp;dib_tag=se&amp;keywords=principles+of+software+architecture+modernization&amp;qid=1741069169&amp;sprefix=Principles+of+software+a%2Caps%2C190&amp;sr=8-1">Principles of Software Architecture Modernization</a></li>
@@ -226,6 +226,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

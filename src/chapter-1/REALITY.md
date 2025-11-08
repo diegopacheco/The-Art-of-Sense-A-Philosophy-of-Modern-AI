@@ -2,15 +2,15 @@
 
 Even with all the problems and the [scams](https://www.youtube.com/watch?v=d7DtiMzMBdU). AI is real and AI is here to stay. I don't know if [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence) will happen one day, maybe, maybe not but there is no indication we are close to [AGI](https://perry-douglas.medium.com/a-classic-con-e8c7f9f3d61d).
 
-Don't be fooled by marketing of people saying I have AGI, people lie, and LLM models do not think, even if they say "thinking". Now we don't need AGI in order to have value from AI. The reality is that AI is a force of disruption, same as we saw with the internet and mobile phones.
+Don't be fooled by marketing from people saying they have AGI. People lie, and LLM models do not think, even if they say "thinking". Now we don't need AGI to derive value from AI. AI is a force of disruption, just as we saw with the internet and mobile phones.
 
-Therefore change is happening, and you need to adapt to it. You can either be a victim of change or you can be the driver of change.
+Therefore, change is happening, and you need to adapt to it. You can either be a victim of change or be the driver of change.
 
 ## Force of Disruption
 
 AI is a force of disruption. For one reason, people believe it. [AI is not perfect](https://diego-pacheco.blogspot.com/2025/11/ai-coding-agents-economics.html), but does not need to be perfect. Yuval Harari said that we are in the "Amoeba age" of LLMs. That they are very basic and will get much better. I agree, but we don't know if it will be in 10 years or 500 years. What we do know is that AI is already disrupting many industries.
 
-AI has the potential to disrupt like the internet, the mobile phone, and electricity did to some degree. For this reason alone you should be paying attention.
+AI has the potential to disrupt like the internet, the mobile phone, and electricity did to some degree. For this reason alone, you should be paying attention.
 
 ## Scams
 

@@ -199,7 +199,7 @@
 </ol>
 </li>
 </ul>
-<p>In order to make claude ignore these files you need to add an entry in:</p>
+<p>To make claude ignore these files you need to add an entry in:</p>
 <ul>
 <li>Global Exclusions: <code>~/.claude/settings.json</code></li>
 <li>Project Exclusions: <code>.claude/settings.json</code></li>
@@ -355,6 +355,22 @@ fi
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

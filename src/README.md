@@ -8,7 +8,7 @@ Welcome to The Art of Sense: A Philosophy of Modern AI by Diego Pacheco.
 
 ## Disclaimer
 
-This book does not represent the views of any of my employers or clients past or future. The opinions expressed here are my own and do not reflect the views of any organization I am affiliated with past or future. All this book os provided with my own personal time, effort and devices. Several pages have links to my personal blog and POCs made on my personal time.
+This book does not represent the views of any of my employers or clients past or future. The opinions expressed here are my own and do not reflect the views of any organization I am affiliated with past or future. This book is provided entirely with my own personal time, effort and devices. Several pages have links to my personal blog and POCs made on my personal time.
 
 ## What to Expect
 
