@@ -334,6 +334,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <ul>
 <li><a href="./chapter-6/WHY.html">Why use AI for Testing?</a></li>
 <li><a href="./chapter-6/AI_TESTING.html">AI to Help with Testing</a></li>
+<li><a href="./chapter-6/MANUAL_TESTING.html">Manual Testing</a></li>
 </ul>
 </li>
 </ul>
@@ -345,11 +346,8 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li><a href="./chapter-7/WHY.html">Why use AI for Migrations?</a></li>
 <li><a href="./chapter-7/INVENTORY.html">Inventory</a></li>
 <li><a href="./chapter-7/MIGRATIONS_PHASES.html">Migrations in Phases</a></li>
-<li><a href="./chapter-7/TESTING.html">Testing</a>
-<ul>
+<li><a href="./chapter-7/TESTING.html">Testing</a></li>
 <li><a href="./chapter-7/SUNSETING.html">Sunseting</a></li>
-</ul>
-</li>
 <li><a href="./chapter-7/AFTER_MIGRATIONS.html">After Migrations</a></li>
 </ul>
 </li>
@@ -1650,6 +1648,11 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <p>Now for integration tests, we need to keep in mind we will need to set up infrastructure in order to do <a href="https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html">proper test induction</a>. But you can use AI to create testing interfaces and then have proper testing structure and proper testing principles in place.</p>
 <p>You can also use AI to check if you have gaps in your test coverage, just ask it for it. Even if AI goes wrong, this is relatively safe; worst case, AI will generate tests you don't need, then you can delete them. Facebook talks about this in their paper. Facebook's solution is to blend with engineering, running the tests, checking coverage, and getting rid of unnecessary tests.</p>
 <p>All tasks that Claude Code can do, either by custom agents, custom commands, or a simple good prompt. I recommend custom commands for this, as you can have a more structured approach.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="manual-testing"><a class="header" href="#manual-testing">Manual Testing</a></h1>
+<p>Manual testing it's an anti-pattern. It's wrong, it's slow, it's expensive and does not scale. Human can make mistakes, get tired, bored and frustrated. Meaning that the mood of the QA might influence the quality of the tests.</p>
+<p>Tests should always be automated. However there is a sad reality in companies that it's not uncommon to find a lot of manual tests happening. Usually you can catch that if someone or a group of people need to sign a release. Why software is not realed automatically if all tests pass?</p>
+<p>Well, does not matter why this problem happen, but now with the advent of the AI Coding agents is possible to use AI to feed all documentation you might have, all tickets, all print screens and ask LLMs to geenrate End-2-End or even Regression tests for you. Such tests can be written in Cypress, Playwright, Selenium or any other framework you might be using.</p>
+<p>Now we will go from manual testing to AI-assisted automated tests.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-7---migrations-with-ai"><a class="header" href="#chapter-7---migrations-with-ai">Chapter 7 - Migrations with AI</a></h1>
 <p>Migrations are one of the best use cases for AI and engineering alongside with testing. Migrations can be complex but they are also very repetitive, making them a perfect candidate for AI assistance.</p>
 <p>AI does a great job helping in migrations. It's not perfect and there will be setbacks and even bugs but the time savings are enormous.</p>
@@ -3127,22 +3130,6 @@ Complex productionization phase that remains difficult despite AI assistance, re
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
