@@ -210,7 +210,7 @@
 <li>All components must have PropTypes</li>
 <li>Test files go in <strong>tests</strong> directory</li>
 </ul>
-<p>Think of it as: Your .eslintrc or .editorconfig but for Claude's behavior</p>
+<p>Think of it as: Your.eslintrc or.editorconfig but for Claude's behavior</p>
 <hr />
 <h3 id="2-custom-commands---reusable-prompts"><a class="header" href="#2-custom-commands---reusable-prompts">2. Custom Commands - Reusable Prompts</a></h3>
 <p>Use when: You type the same instructions repeatedly</p>
@@ -398,6 +398,22 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

@@ -193,7 +193,7 @@
 <p>Commands are just a markdown file with instructions on what to do. You can use any markdown formatting you like, including code blocks, lists, and images.</p>
 <h2 id="custom-commands-examples"><a class="header" href="#custom-commands-examples">Custom Commands Examples</a></h2>
 <p>Example 1: Code Review Command</p>
-<pre><code>File: .claude/commands/review.md
+<pre><code>File:.claude/commands/review.md
 Review the changes in this file for:
 - Bugs and edge cases
 - Performance issues
@@ -206,7 +206,7 @@ Provide specific line numbers for issues found.
 Usage: /review @src/auth.js
 </code></pre>
 <p>Example 2: Test Generation Command</p>
-<pre><code>File: .claude/commands/tests.md
+<pre><code>File:.claude/commands/tests.md
 Generate comprehensive tests for $1 covering:
 - Happy path scenarios
 - Edge cases
@@ -218,7 +218,7 @@ Use the existing test patterns in this project.
 Usage: /tests src/utils/validator.js
 </code></pre>
 <p>Example 3: Performance Audit</p>
-<pre><code>File: .claude/commands/perf.md
+<pre><code>File:.claude/commands/perf.md
 Analyze $1 for performance issues:
 - Unnecessary loops or iterations
 - Database query optimization
@@ -260,6 +260,22 @@ Usage: /perf @api/users.ts
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

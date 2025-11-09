@@ -186,9 +186,9 @@
 <p>Do you know how to know when a human using AI is fooling you? Do you know if you are fooling yourself with AI?</p>
 <p>Take a look at the Clever Hans effect. <br/></p>
 <div style="position: relative; width: 100%; padding-bottom: 56.25%">
-<iframe src="https://www.youtube.com/embed/hAJlAuEo7Ac" 
+<iframe src="https://www.youtube.com/embed/hAJlAuEo7Ac"
     title="Anti-Trust - The War Machine" frameborder="0" allowfullscreen
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     style="position: absolute; width: 100%; height: 100%;">
 </iframe>
 </div>
@@ -198,7 +198,7 @@
 <p>Think about this: we could easily pay someone to go to the gym for us. That person can do push ups, run, lift weights. Be at the gym everyday and at the same time we never be at the gym. Genius! Well, the issue is that your "contractor" will be strong and in shape but you will not. Although you can claim the glory of going to the gym, you do not have the benefits, you only have status.</p>
 <p>With AI it's the same thing. Anyone can use AI to generate code, does that mean we are done there? Think about it, everybody has the same AI, same models, same capabilities. So just using AI is not differentiating.</p>
 <h2 id="solutions-vs-wrappers"><a class="header" href="#solutions-vs-wrappers">Solutions vs Wrappers</a></h2>
-<p>Now, many startups are building or vibing something with .ai or a new Agentic. Under the hood most of the time it's just a wrapper around OpenAI API or Anthropic API. So what is the real value add?</p>
+<p>Now, many startups are building or vibing something with.ai or a new Agentic. Under the hood most of the time it's just a wrapper around OpenAI API or Anthropic API. So what is the real value add?</p>
 <p>I love Rappers but I never liked Wrappers. In my book Principles of software architecture modernization I wrote about the dangers of wrappers with internal shared libraries. Now we have the same danger but with external tools. There is an explosion of tools, new tools, all old tools being rebranded to AI, or AI features popping up in software we would not expect.</p>
 
                     </main>
@@ -230,6 +230,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

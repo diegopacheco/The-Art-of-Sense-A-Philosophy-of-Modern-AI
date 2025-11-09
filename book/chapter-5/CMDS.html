@@ -253,7 +253,7 @@
 
 &gt; /doctor
  ⎿  Claude Code diagnostics dismissed
- 
+
 </code></pre>
 <h2 id="config"><a class="header" href="#config">/config</a></h2>
 <p>Allows you to configure several aspects of claude code. Like: If you want claude to auto-compact or not, if claude should show tips or not, what theme you want in the terminal, the output style, what LLM model to use, to have code rewinding enabled or not, among other options.</p>
@@ -294,6 +294,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

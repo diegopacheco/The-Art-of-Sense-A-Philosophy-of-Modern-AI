@@ -251,7 +251,7 @@ Vector database for storing and querying embeddings.</p>
 <p><strong>Cisco MCP Scanner</strong>
 Open source security tool for scanning and analyzing MCP servers for vulnerabilities.</p>
 <p><strong>.claudeignore</strong>
-File specifying which files Claude Code should not read, similar to .gitignore for version control.</p>
+File specifying which files Claude Code should not read, similar to.gitignore for version control.</p>
 <p><strong>CLAUDE.md</strong>
 Global configuration file for Claude Code behavior, containing project-specific instructions and preferences.</p>
 <p><strong>Claude Code</strong>
@@ -583,7 +583,7 @@ Second phase in RAG pattern where queries are converted to embeddings to search 
 <p><strong>Role Playing</strong>
 AI capability to assume different personas (architect, security expert, marketing specialist, etc.) to provide varied perspectives.</p>
 <p><strong>Reward</strong>
-In reinforcement learning, a scalar feedback signal that indicates how well the agent is doing.</p>
+In reinforcement learning, a scalar feedback signal that indicates how we'll the agent is doing.</p>
 <p><strong>Robotics</strong>
 Application area for reinforcement learning.</p>
 <p><strong>Routing</strong>
@@ -765,6 +765,22 @@ Complex productionization phase that remains difficult despite AI assistance, re
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

@@ -182,7 +182,7 @@
                     <main>
                         <h1 id="ai-input"><a class="header" href="#ai-input">AI Input</a></h1>
 <p>People see AI as output. As a way to "Beef Up" engineers. It's not wrong but you can't just use AI and never look at the code, this is a recipe for disaster.</p>
-<p>AI can be a great teacher, however we need to always remember the teacher makes mistakes too. <a href="https://diego-pacheco.blogspot.com/2025/09/ai-output.html">Using AI for input</a> is still a great advantage, you preserve the output to be yours.</p>
+<p>AI can be a great teacher,, however, we need to always remember the teacher makes mistakes too. <a href="https://diego-pacheco.blogspot.com/2025/09/ai-output.html">Using AI for input</a> is still a great advantage, you preserve the output to be yours.</p>
 <h2 id="a-tale-of-high-school"><a class="header" href="#a-tale-of-high-school">A tale of High School</a></h2>
 <p>When I was in high school. I remember a teacher of mine saying that people would go to google.com and just search for past year class and find the same homework and download a power point presentation and simply change their name on it. Of course this would never work because the teacher was smarter and usually people doing that took ZERO.</p>
 <p>Using AI just for output, "vibe coding" is shutting down your brain, and we are not even close to having AGI. So this is a recipe for disaster. IMHO it's not different than copying someone's homework and just putting your name on it.</p>
@@ -221,6 +221,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

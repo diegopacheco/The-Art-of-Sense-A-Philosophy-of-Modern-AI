@@ -221,9 +221,9 @@
 <li>Improving our Data Structures and Algorithms game</li>
 <li>Improving attention to details</li>
 </ul>
-<p>It's important to use AI to increase some productivity (which I think is something ballpark between 10-30% MAX). But it's also important to do the vintage coding (coding dojos) often, to keep us healthy and in shape. Like you go to the GYM because you are not a hunter and stay sitting in a chair all day long in zoom calls :-).</p>
+<p>It's important to use AI to increase some productivity (which I think is something ballpark between 10-30% MAX). But it's also important to do the vintage coding (coding dojos) often, to keep us healthy and in shape. Like you go to the GYM because you are not a hunter and stay sitting in a chair all day long in zoom calls:-).</p>
 <h2 id="how-do-you-drive-a-car"><a class="header" href="#how-do-you-drive-a-car">How Do You Drive a Car?</a></h2>
-<p>I don't know about you but I just drive a car. I don't think. It's natural, it's organic. I don't need to make any effort—it's so easy. Now ask yourself, is this the same for you? You probably will say YES. Well, then we need to ask ourselves the next question: why? I'll tell you why.</p>
+<p>I don't know about you but I just drive a car. I don't think. It's natural, it's organic. I don't need to make any effort—it's so easy. Now ask yourself: is this the same for you? You probably will say YES. Well, then we need to ask ourselves the next question: why? I'll tell you why.</p>
 <ul>
 <li>Because you pass the driver license exam</li>
 <li>You study the rules of the road</li>
@@ -250,7 +250,7 @@
     style="position: absolute; width: 100%; height: 100%;">
 </iframe>
 </div>
-<p>Vibe coding can be useful to figure out what we want. Maybe to help non-engineers to figure out what they want, then better write requirements. In a sense vibe coding "democratizes" building and everybody can be a software engineer, however to really use what you build with "vibe coding" must be some simple task, some tasks cannot be vibe coded and like I said before is a big mistake. However if it's small enough and you can "build your own tool" why not.</p>
+<p>Vibe coding can be useful to figure out what we want. Maybe to help non-engineers to figure out what they want, then better write requirements. In a sense vibe coding "democratizes" building and everybody can be a software engineer,, however, to really use what you build with "vibe coding" must be some simple task, some tasks cannot be vibe coded and like I said before is a big mistake. However if it's small enough and you can "build your own tool" why not.</p>
 
                     </main>
 
@@ -281,6 +281,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

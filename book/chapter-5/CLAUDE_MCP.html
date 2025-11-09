@@ -196,7 +196,7 @@ User Interaction:
 - AskUserQuestion - Ask questions during execution with multiple choice options (supports multi-select)
 
 Extensibility:
-- SlashCommand - Execute custom slash commands defined in .claude/commands/
+- SlashCommand - Execute custom slash commands defined in.claude/commands/
 - Skill - Execute skills (currently none installed in your environment)
 
 Information Gathering:
@@ -288,6 +288,22 @@ Main Menu
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
