@@ -699,7 +699,7 @@ Machine learning paradigm where models find patterns in unlabeled data without p
 The actual input from the user that the LLM responds to, processed along with system prompt.</p>
 <h2 id="v"><a class="header" href="#v">V</a></h2>
 <p><strong>VALUE Function</strong>
-In reinforcement learning, function estimating how beneficial it is for an agent to be in a given state.</p>
+In reinforcement learning, function estimating how beneficial it's for an agent to be in a given state.</p>
 <p><strong>Vector Databases</strong>
 Specialized databases storing and querying embeddings efficiently, essential infrastructure for RAG systems. Examples include Pinecone, Weaviate, Milvus, Chroma, and Postgres pgvector.</p>
 <p><strong>Vending (Vetting + Defending)</strong>
@@ -765,22 +765,6 @@ Complex productionization phase that remains difficult despite AI assistance, re
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

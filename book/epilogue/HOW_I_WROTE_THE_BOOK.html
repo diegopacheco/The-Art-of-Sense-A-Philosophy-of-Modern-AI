@@ -194,7 +194,7 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li>Traditional process take from 7 to 12 months.</li>
 <li>I wrote books alone and with other people, more people you have, more coordination you need and longer it takes, more things can go wrong, it's literally no different than a project.</li>
 </ul>
-<p>I want a different experience; I did several things differently here. I'm not saying I would never do traditional books again, but for sure it is different; there are some things here I like a lot, for instance:</p>
+<p>I want a different experience; I did several things differently here. I'm not saying I would never do traditional books again, but for sure it's different; there are some things here I like a lot, for instance:</p>
 <ul>
 <li>Because I used <code>mdbook</code>, the book is written with a tool in Rust which is markdown based.</li>
 <li>Mdbook has 3 killer features for me:
@@ -215,7 +215,7 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li>Index</li>
 <li>Glossary</li>
 <li>References</li>
-<li>Spell check and proof reading my english (fix typos and fix grammar issues never to wrote whole paragraphs).</li>
+<li>Spell check and proofreading my english (fix typos and fix grammar issues never to wrote whole paragraphs).</li>
 </ul>
 <p>I used claude code <a href="https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands">custom commands</a> to do all this tasks, I create a <code>book-all</code> custom command that automated all those workflows:</p>
 <p>book-all.md</p>
@@ -244,8 +244,8 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 - Fix all my english issues
 - Fix my typos
 - Don't touch the HTML files only the markdown files
-- Only fix english or grammar mistake, dont change my words or writing style
-- Make sure you dont break anything, make sure you dont lose content
+- Only fix english or grammar mistake, don't change my words or writing style
+- Make sure you don't break anything, make sure you don't lose content
 
 ## Task 6 - # Make sure you did not lose content
 - You cannot lose content
@@ -295,22 +295,6 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

@@ -1,6 +1,6 @@
 # Video Generation
 
-Video generation is an exciting area of generative AI that focuses on creating video content using machine learning models. However when we analyze the current state of video generation, we find that it is still in its early stages compared to other forms of generative AI like text and image generation. Text, Sound and Image are in much better shape than video generation. Text being the most advanced.
+Video generation is an exciting area of generative AI that focuses on creating video content using machine learning models. However when we analyze the current state of video generation, we find that it's still in its early stages compared to other forms of generative AI like text and image generation. Text, Sound and Image are in much better shape than video generation. Text being the most advanced.
 
 ## Common approaches for video generation include
 

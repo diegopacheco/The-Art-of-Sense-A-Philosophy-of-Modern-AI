@@ -1,6 +1,6 @@
 # Onboarding
 
-I don't like onboardings in general. Usually they are a massive waste of time; the idea of onboarding makes a lot of sense, but in practice how people run onboardings is often not effective. IMHO it is a complete waste of time.
+I don't like onboardings in general. Usually they are a massive waste of time; the idea of onboarding makes a lot of sense, but in practice how people run onboardings is often not effective. IMHO it's a complete waste of time.
 
 The common issues I see with bad onboardings are:
 * Manager is hands-off and just throws a bunch of links and code and asks people to read
@@ -13,7 +13,7 @@ This is a complete waste of time, because the engineer should be actually doing 
 * Make sure you understand where things are and how they work (test, deployment, infra, monitoring)
 * Make sure you understand the basics of the business and the code
 
-Because onboarding is so terrible, pretty much it is a 2-4 weeks vacation for the manager. The worst is that it is common for the engineer to get out of the onboarding and not be `ready`. So a bad expectations game has already happened and the engineer is behind.
+Because onboarding is so terrible, pretty much it's a 2-4 weeks vacation for the manager. The worst is that it's common for the engineer to get out of the onboarding and not be `ready`. So a bad expectations game has already happened and the engineer is behind.
 
 A good onboarding should have:
 * Have the environment ready (be able to run and debug the code)

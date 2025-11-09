@@ -209,7 +209,7 @@
 <h2 id="difficult-reality-at-scale"><a class="header" href="#difficult-reality-at-scale">Difficult Reality at Scale</a></h2>
 <p>Migrations don't happen as often as they should.</p>
 <p>A lot of technical debt.</p>
-<p>The thing is that the more often you do migrations, the easier it gets, but only if you have good overall architecture and operating principles; otherwise, it is a war that never ends.</p>
+<p>The thing is that the more often you do migrations, the easier it gets, but only if you have good overall architecture and operating principles; otherwise, it's a war that never ends.</p>
 <p>Migrations are easily one of the biggest pains at scale. Not because migrations are impossible, but because people tend to not take them seriously enough and a snowball effect happens. Once the snowball starts rolling, it gets harder and harder to do migrations.</p>
 <h1 id="why-use-ai-for-migrations"><a class="header" href="#why-use-ai-for-migrations">Why use AI for Migrations?</a></h1>
 <p>Migrations are hard. Companies do not do as many migrations as they should. However, with AI some of the friction and heavy lifting can be reduced.</p>
@@ -243,22 +243,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

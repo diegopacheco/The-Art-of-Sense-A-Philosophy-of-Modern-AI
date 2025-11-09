@@ -348,7 +348,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li><a href="./chapter-7/INVENTORY.html">Inventory</a></li>
 <li><a href="./chapter-7/MIGRATIONS_PHASES.html">Migrations in Phases</a></li>
 <li><a href="./chapter-7/TESTING.html">Testing</a></li>
-<li><a href="./chapter-7/SUNSETING.html">Sunseting</a></li>
+<li><a href="./chapter-7/SUNSETING.html">Sunsetting</a></li>
 <li><a href="./chapter-7/AFTER_MIGRATIONS.html">After Migrations</a></li>
 </ul>
 </li>
@@ -406,22 +406,6 @@ Hire, develop, retain, and truly grow talent at scale</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

@@ -13,7 +13,7 @@ For instance, in JavaScript there is this nice library called [faker.js](https:/
 
 You can ask AI coding agents to generate data either with `code` or simply with a `script` that inserts the data before you run your tests. You can also use AI to create `Testing Interfaces` and add custom APIs in order to expose `state` for your tests in non-prod.
 
-AI can be unpredictable, hallucinate and even make mistakes. However, code is code. If written well, it is reliable, so one of the best things you can do is ask AI to generate code, review the code and make sure it is right. Now you can just run the code and have predictable results.
+AI can be unpredictable, hallucinate and even make mistakes. However, code is code. If written well, it's reliable, so one of the best things you can do is ask AI to generate code, review the code and make sure it's right. Now you can just run the code and have predictable results.
 
 ## Asking the right questions for Test Data Generation
 

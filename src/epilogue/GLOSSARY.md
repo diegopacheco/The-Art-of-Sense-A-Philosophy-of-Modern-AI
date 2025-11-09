@@ -787,7 +787,7 @@ The actual input from the user that the LLM responds to, processed along with sy
 ## V
 
 **VALUE Function**
-In reinforcement learning, function estimating how beneficial it is for an agent to be in a given state.
+In reinforcement learning, function estimating how beneficial it's for an agent to be in a given state.
 
 **Vector Databases**
 Specialized databases storing and querying embeddings efficiently, essential infrastructure for RAG systems. Examples include Pinecone, Weaviate, Milvus, Chroma, and Postgres pgvector.

@@ -76,7 +76,7 @@ All notable changes to "The Art of Sense: A Philosophy of Modern AI" book projec
 
 ### Chapter 8 - Non-Obvious Use Cases
 - Added documentation generation workflows (DOCUMENTATION.md)
-- Created proof reading guide with AI assistance (PROOF_READER.md)
+- Created proofreading guide with AI assistance (PROOF_READER.md)
 - Developed onboarding guide for new developers (ONBOARDING.md)
 - Enhanced troubleshooting methodologies (TROUBLESHOOTING.md)
 - Created chapter introduction (README.md)

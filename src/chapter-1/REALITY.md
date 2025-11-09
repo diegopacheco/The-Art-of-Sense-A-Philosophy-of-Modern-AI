@@ -28,7 +28,7 @@ We also need to acknowledge that there are scams. So many scams, here is a list 
 In the beginning people thought that everybody would lose their jobs. Like:
 * [AI is already taking white-collar jobs. Economists warn there’s ‘much more in the tank’](https://www.cnbc.com/2025/10/22/ai-taking-white-collar-jobs-economists-warn-much-more-in-the-tank.html)
 
-Now we are seeing a rollback from "AI will take our jobs" to "We better rollback AI can get humans". Don't believe me? Here are some examples:
+Now we are seeing a rollback from "AI will take our jobs" to "We better rollback AI and get humans". Don't believe me? Here are some examples:
 * [Here is a collection of AI failures](https://aicodinghorrors.com/)
 * [$1.5 Billion AI Unicorn Collapse, All Offshore Programmers Impersonating!](https://www.binance.com/en/square/post/24723372076545?utm_source=pocket_saves)
 * [Replacing Humans with AI is Going Horribly Wrong](https://www.youtube.com/watch?v=QX1Xwzm9yHY)

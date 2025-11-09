@@ -183,7 +183,7 @@
                         <h1 id="context-7"><a class="header" href="#context-7">Context 7</a></h1>
 <p><a href="https://context7.com/">Context7</a> fixes a limitation LLMs have. LLMs have a hard time knowing the latest versions, since they are always behind the latest data. Context7 provides a way to connect LLMs to the latest data.</p>
 <h2 id="telling-ai-what-to-do"><a class="header" href="#telling-ai-what-to-do">Telling AI what to do</a></h2>
-<p>It's always important that in your prompt you tell AI the versions you want. However, it is also important that you READ THE CODE because it is not uncommon for LLM models to use downgraded versions of libraries. For example, you asked for NodeJS 24, but AI gives you code for NodeJS 20. This happens very often.</p>
+<p>It's always important that in your prompt you tell AI the versions you want. However, it's also important that you READ THE CODE because it's not uncommon for LLM models to use downgraded versions of libraries. For example, you asked for NodeJS 24, but AI gives you code for NodeJS 20. This happens very often.</p>
 <h2 id="context7-makes-it-better"><a class="header" href="#context7-makes-it-better">Context7 Makes it Better</a></h2>
 <p>Context7 has a <a href="https://github.com/upstash/context7">MCP</a> that allows you to use it with most of the popular code agents. Context7 has up-to-date documentation on the latest versions of libraries and frameworks.</p>
 <p>On October 27, 2025, when I checked the Context7 website, they had support for <code>49,317 Libraries</code>, which is a lot. They are always updating the library list and information for methods and APIs.</p>
@@ -217,22 +217,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

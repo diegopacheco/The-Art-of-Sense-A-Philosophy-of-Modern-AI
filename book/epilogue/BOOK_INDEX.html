@@ -546,7 +546,7 @@
 <li><strong>Proof of Concepts (POCs)</strong> - <a href="../chapter-9/POCS.html">POCs</a></li>
 <li><strong>Proof Reader</strong> - <a href="../chapter-8/PROOF_READER.html">Proof Reader</a></li>
 <li><strong>Property-based Testing</strong> - <a href="../chapter-6/README.html">Chapter 6</a></li>
-<li><strong>Python 2.x</strong> - <a href="../chapter-7/SUNSETING.html">Sunseting</a></li>
+<li><strong>Python 2.x</strong> - <a href="../chapter-7/SUNSETING.html">Sunsetting</a></li>
 </ul>
 <h2 id="q"><a class="header" href="#q">Q</a></h2>
 <ul>
@@ -578,7 +578,7 @@
 <li><strong>Rollback</strong> - <a href="../chapter-7/MIGRATIONS_PHASES.html">Migrations Phases</a></li>
 <li><strong>Routing</strong> - <a href="../chapter-4/AGENTS_PATTERNS.html">Agent Patterns</a></li>
 <li><strong>Runbooks</strong> - <a href="../chapter-8/OWNERSHIP.html">Ownership</a></li>
-<li><strong>Rust Migration</strong> - <a href="../chapter-7/SUNSETING.html">Sunseting</a></li>
+<li><strong>Rust Migration</strong> - <a href="../chapter-7/SUNSETING.html">Sunsetting</a></li>
 </ul>
 <h2 id="s"><a class="header" href="#s">S</a></h2>
 <ul>
@@ -616,7 +616,7 @@
 <li><strong>Stress Testing</strong> - <a href="../chapter-6/STRESS_TESTING.html">Stress Testing</a></li>
 <li><strong>Stubs</strong> - <a href="../chapter-6/DATA_GEN.html">Data Generation</a></li>
 <li><strong>Summarization</strong> - <a href="../chapter-3/LLM.html">LLM</a></li>
-<li><strong>Sunseting</strong> - <a href="../chapter-7/SUNSETING.html">Sunseting</a></li>
+<li><strong>Sunsetting</strong> - <a href="../chapter-7/SUNSETING.html">Sunsetting</a></li>
 <li><strong>Supervised Learning</strong> - <a href="../chapter-2/CLASSIFICATION.html">Classification</a>, <a href="../chapter-2/REGRESSION.html">Regression</a></li>
 <li><strong>Support Vector Machines</strong> - <a href="../chapter-2/CLASSIFICATION.html">Classification</a>, <a href="../chapter-2/REGRESSION.html">Regression</a></li>
 <li><strong>SWE-bench</strong> - <a href="../chapter-4/POPULAR_AGENTS.html">Popular Agents</a>, <a href="../chapter-8/DOCUMENTATION.html">Documentation</a></li>
@@ -732,22 +732,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

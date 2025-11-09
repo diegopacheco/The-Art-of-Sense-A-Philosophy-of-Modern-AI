@@ -4,7 +4,7 @@ Why I wrote this book?
 
 I have been working with AI since 2017. In the summer of 2024, I spent the whole summer going deep and learning about AI. I did [300+ coding POCs](https://github.com/diegopacheco/ai-playground), I read several books, I did several courses. On XMAS of 2024 I made my first migration using LLMs from Kotlin to Scala. In 2025, I tested all [AI coding agents](https://github.com/diegopacheco/ai-playground/tree/main/agents) I could, I wrote MCPs, I did several experiments.
 
-Still in 2025, I wrote my 4th book: Diego Pacheco's Software Architecture Library ([SAL](https://diegopacheco.github.io/diegopacheco-architecture-library/introduction.html)) where I used ai to help me with: proof reading, glossary, index and references generation(more details [here](https://diegopacheco.github.io/diegopacheco-architecture-library/epilogue/HOW_I_WROTE_THE_BOOK.html)).
+Still in 2025, I wrote my 4th book: Diego Pacheco's Software Architecture Library ([SAL](https://diegopacheco.github.io/diegopacheco-architecture-library/introduction.html)) where I used AI to help me with: proofreading, glossary, index and references generation (more details [here](https://diegopacheco.github.io/diegopacheco-architecture-library/epilogue/HOW_I_WROTE_THE_BOOK.html)).
 
 There is so much out there, there are so many tools and people saying many things. This book should be a compass to guide you on your AI journey for engineering.
 

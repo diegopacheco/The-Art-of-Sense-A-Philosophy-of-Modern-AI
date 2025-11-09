@@ -349,7 +349,7 @@
 - **Proof of Concepts (POCs)** - [POCs](../chapter-9/POCS.md)
 - **Proof Reader** - [Proof Reader](../chapter-8/PROOF_READER.md)
 - **Property-based Testing** - [Chapter 6](../chapter-6/README.md)
-- **Python 2.x** - [Sunseting](../chapter-7/SUNSETING.md)
+- **Python 2.x** - [Sunsetting](../chapter-7/SUNSETING.md)
 
 ## Q
 - **QA (Quality Assurance)** - [Manual Testing](../chapter-6/MANUAL_TESTING.md)
@@ -379,7 +379,7 @@
 - **Rollback** - [Migrations Phases](../chapter-7/MIGRATIONS_PHASES.md)
 - **Routing** - [Agent Patterns](../chapter-4/AGENTS_PATTERNS.md)
 - **Runbooks** - [Ownership](../chapter-8/OWNERSHIP.md)
-- **Rust Migration** - [Sunseting](../chapter-7/SUNSETING.md)
+- **Rust Migration** - [Sunsetting](../chapter-7/SUNSETING.md)
 
 ## S
 - **Sales Forecasting** - [Regression](../chapter-2/REGRESSION.md)
@@ -416,7 +416,7 @@
 - **Stress Testing** - [Stress Testing](../chapter-6/STRESS_TESTING.md)
 - **Stubs** - [Data Generation](../chapter-6/DATA_GEN.md)
 - **Summarization** - [LLM](../chapter-3/LLM.md)
-- **Sunseting** - [Sunseting](../chapter-7/SUNSETING.md)
+- **Sunsetting** - [Sunsetting](../chapter-7/SUNSETING.md)
 - **Supervised Learning** - [Classification](../chapter-2/CLASSIFICATION.md), [Regression](../chapter-2/REGRESSION.md)
 - **Support Vector Machines** - [Classification](../chapter-2/CLASSIFICATION.md), [Regression](../chapter-2/REGRESSION.md)
 - **SWE-bench** - [Popular Agents](../chapter-4/POPULAR_AGENTS.md), [Documentation](../chapter-8/DOCUMENTATION.md)

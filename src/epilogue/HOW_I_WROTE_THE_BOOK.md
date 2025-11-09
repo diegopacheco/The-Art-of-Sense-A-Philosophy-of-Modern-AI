@@ -13,7 +13,7 @@ I wrote this book in a very different way compared with my 3 previous books. My 
 * Traditional process take from 7 to 12 months.
 * I wrote books alone and with other people, more people you have, more coordination you need and longer it takes, more things can go wrong, it's literally no different than a project.
 
-I want a different experience; I did several things differently here. I'm not saying I would never do traditional books again, but for sure it is different; there are some things here I like a lot, for instance:
+I want a different experience; I did several things differently here. I'm not saying I would never do traditional books again, but for sure it's different; there are some things here I like a lot, for instance:
  * Because I used `mdbook`, the book is written with a tool in Rust which is markdown based.
  * Mdbook has 3 killer features for me:
    * It has a built-in search engine, and a very good one.
@@ -31,7 +31,7 @@ I did not use AI to generate the entire book. The book is mine, all content I wr
 * Index
 * Glossary
 * References
-* Spell check and proof reading my english (fix typos and fix grammar issues never to wrote whole paragraphs).
+* Spell check and proofreading my english (fix typos and fix grammar issues never to wrote whole paragraphs).
 
 I used claude code [custom commands](https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands) to do all this tasks, I create a `book-all` custom command that automated all those workflows:
 
@@ -62,8 +62,8 @@ book-all.md
 - Fix all my english issues
 - Fix my typos
 - Don't touch the HTML files only the markdown files
-- Only fix english or grammar mistake, dont change my words or writing style
-- Make sure you dont break anything, make sure you dont lose content
+- Only fix english or grammar mistake, don't change my words or writing style
+- Make sure you don't break anything, make sure you don't lose content
 
 ## Task 6 - # Make sure you did not lose content
 - You cannot lose content

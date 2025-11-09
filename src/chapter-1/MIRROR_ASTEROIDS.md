@@ -14,7 +14,7 @@ Now you need to think about this: you need time without AI. Why? Because you als
 
 ## From Mirror to Ownership
 
-Someone smart knows what to use AI for, and what not to use AI for. For instance, you can use AI all day long, or not use it at all. You must remember that the `ownership` is yours. It does not matter if you use all or nothing from AI, it's your responsibility to own the results. Meaning you need to review the code, you need to change it, you need to critique it, you need to make it yours.
+Someone smart knows what to use AI for, and what not to use AI for. For instance, you can use AI all day long, or not use it at all. You must remember that the `ownership` is yours. It doesn't matter if you use all or nothing from AI, it's your responsibility to own the results. Meaning you need to review the code, you need to change it, you need to critique it, you need to make it yours.
 
 ## The bad mirror effect
 

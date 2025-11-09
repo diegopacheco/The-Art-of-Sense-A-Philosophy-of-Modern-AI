@@ -2,7 +2,7 @@
 
 Documentation is a non-obvious AI use case. Of course, if you just ask AI to generate documentation without much explanation (or the tech term is called few-shot), you will get bad results. Because AI will generate a bunch of crap. Now if you carefully tell AI what to do and ask good questions, provide a good template that AI can fulfill, you can indeed generate amazing results.
 
-Documentation matters, but it's just like testing, something that people should do more but in reality they do not do as much as they should. Usually there are plenty of things that are not documented, just because there are other priorities and people are slammed with work doing other things. Sure you could argue that it is a culture problem and documentation should be part of the culture and lifecycle of engineering. In reality, things are messy at scale and AI can really help a lot here, as long as we do the right due diligence.
+Documentation matters, but it's just like testing, something that people should do more but in reality they do not do as much as they should. Usually there are plenty of things that are not documented, just because there are other priorities and people are slammed with work doing other things. Sure you could argue that it's a culture problem and documentation should be part of the culture and lifecycle of engineering. In reality, things are messy at scale and AI can really help a lot here, as long as we do the right due diligence.
 
 ## Generating Changelogs
 

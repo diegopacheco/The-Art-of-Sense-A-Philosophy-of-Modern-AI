@@ -29,7 +29,7 @@ Migrations don't happen as often as they should.
 
 A lot of technical debt.
 
-The thing is that the more often you do migrations, the easier it gets, but only if you have good overall architecture and operating principles; otherwise, it is a war that never ends.
+The thing is that the more often you do migrations, the easier it gets, but only if you have good overall architecture and operating principles; otherwise, it's a war that never ends.
 
 Migrations are easily one of the biggest pains at scale. Not because migrations are impossible, but because people tend to not take them seriously enough and a snowball effect happens. Once the snowball starts rolling, it gets harder and harder to do migrations.
 

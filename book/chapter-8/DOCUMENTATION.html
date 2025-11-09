@@ -182,7 +182,7 @@
                     <main>
                         <h1 id="documentation"><a class="header" href="#documentation">Documentation</a></h1>
 <p>Documentation is a non-obvious AI use case. Of course, if you just ask AI to generate documentation without much explanation (or the tech term is called few-shot), you will get bad results. Because AI will generate a bunch of crap. Now if you carefully tell AI what to do and ask good questions, provide a good template that AI can fulfill, you can indeed generate amazing results.</p>
-<p>Documentation matters, but it's just like testing, something that people should do more but in reality they do not do as much as they should. Usually there are plenty of things that are not documented, just because there are other priorities and people are slammed with work doing other things. Sure you could argue that it is a culture problem and documentation should be part of the culture and lifecycle of engineering. In reality, things are messy at scale and AI can really help a lot here, as long as we do the right due diligence.</p>
+<p>Documentation matters, but it's just like testing, something that people should do more but in reality they do not do as much as they should. Usually there are plenty of things that are not documented, just because there are other priorities and people are slammed with work doing other things. Sure you could argue that it's a culture problem and documentation should be part of the culture and lifecycle of engineering. In reality, things are messy at scale and AI can really help a lot here, as long as we do the right due diligence.</p>
 <h2 id="generating-changelogs"><a class="header" href="#generating-changelogs">Generating Changelogs</a></h2>
 <p>Another good case for AI documentation is changelogs. Yes, people should do it, and 100% this is a discipline problem and could be fixed without AI. But AI is pretty good at reading git log messages and figuring out what changed and why. It's so good that this is one of the tricks why AI is good in SWE benchmarks like HumanEval. Because it can read the git log and figure out what changed.</p>
 <p>Here is some evidence that AI Agents cheat on SWE-bench:</p>
@@ -243,22 +243,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

@@ -181,7 +181,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="onboarding"><a class="header" href="#onboarding">Onboarding</a></h1>
-<p>I don't like onboardings in general. Usually they are a massive waste of time; the idea of onboarding makes a lot of sense, but in practice how people run onboardings is often not effective. IMHO it is a complete waste of time.</p>
+<p>I don't like onboardings in general. Usually they are a massive waste of time; the idea of onboarding makes a lot of sense, but in practice how people run onboardings is often not effective. IMHO it's a complete waste of time.</p>
 <p>The common issues I see with bad onboardings are:</p>
 <ul>
 <li>Manager is hands-off and just throws a bunch of links and code and asks people to read</li>
@@ -195,7 +195,7 @@
 <li>Make sure you understand where things are and how they work (test, deployment, infra, monitoring)</li>
 <li>Make sure you understand the basics of the business and the code</li>
 </ul>
-<p>Because onboarding is so terrible, pretty much it is a 2-4 weeks vacation for the manager. The worst is that it is common for the engineer to get out of the onboarding and not be <code>ready</code>. So a bad expectations game has already happened and the engineer is behind.</p>
+<p>Because onboarding is so terrible, pretty much it's a 2-4 weeks vacation for the manager. The worst is that it's common for the engineer to get out of the onboarding and not be <code>ready</code>. So a bad expectations game has already happened and the engineer is behind.</p>
 <p>A good onboarding should have:</p>
 <ul>
 <li>Have the environment ready (be able to run and debug the code)</li>
@@ -234,22 +234,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

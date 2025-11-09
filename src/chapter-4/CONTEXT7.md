@@ -4,7 +4,7 @@
 
 ## Telling AI what to do
 
-It's always important that in your prompt you tell AI the versions you want. However, it is also important that you READ THE CODE because it is not uncommon for LLM models to use downgraded versions of libraries. For example, you asked for NodeJS 24, but AI gives you code for NodeJS 20. This happens very often.
+It's always important that in your prompt you tell AI the versions you want. However, it's also important that you READ THE CODE because it's not uncommon for LLM models to use downgraded versions of libraries. For example, you asked for NodeJS 24, but AI gives you code for NodeJS 20. This happens very often.
 
 ## Context7 Makes it Better
 

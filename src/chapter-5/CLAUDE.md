@@ -43,7 +43,7 @@ Diego Pacheco Claude global guidelines.
 
 * Make sure you are using the latest versions
 * Do not write comments, never comment.
-* Make sure you dont do ENTER between commands make it compact
+* Make sure you don't do ENTER between commands make it compact
 
 ## Docker Compose
 

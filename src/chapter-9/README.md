@@ -9,4 +9,4 @@ Method for Hallucination Detection](https://arxiv.org/pdf/2504.15771)
 An Innate Limitation of Large Language Models](https://arxiv.org/pdf/2401.11817)
 * [Estimating the Hallucination Rate of Generative AI](https://arxiv.org/pdf/2406.07457)
 
-So fact-check AI. Besides that, AI is a bar raiser, because you must be able to know that AI is lying to you, so you must level up your game and just do better. Know more than AI, so you can spot when it is wrong.
+So fact-check AI. Besides that, AI is a bar raiser, because you must be able to know that AI is lying to you, so you must level up your game and just do better. Know more than AI, so you can spot when it's wrong.
