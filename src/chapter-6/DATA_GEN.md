@@ -1,13 +1,13 @@
 # Data Generation
 
-Unit Tests might require techniques like test doubles, stubs or even mocks. However you can easily supply the data needed. However when we are dealing with integration tests we need data in order to execute the tests.
+Unit Tests might require techniques like test doubles, stubs or even [mocks](https://diego-pacheco.blogspot.com/2025/10/testing-mocks.html). However you can easily supply the data needed. However when we are dealing with integration tests we need data in order to execute the tests.
 
 Integration Tests might need data for a variety of reasons:
 * Delete: You are testing something that is not present or missing, so you need delete data.
 * Update: You might need a very spesific state, so you update the data to match that state.
 * Create: You might need to create data in order to test something that requires data to be present.
 
-Guiven that you have a endpoint(rest api) where you have types and relationships between those types, you might need to create a lot of data in order to test something. Such task is tedius and time consuming. AI can helpo you generate test data easily and fast.
+Guiven that you have a endpoint(rest api) where you have types and relationships between those types, you might need to create a lot of data in order to test something. Such task is tedius and time consuming. AI can helpo you [generate test data](https://diego-pacheco.blogspot.com/2021/02/synthetic-data-generation-and-java-faker.html) easily and fast.
 
 For instance in javascript there is this nice library called [faker.js](https://fakerjs.dev/) that can help you generate data for your tests. You can use it to generate data for your integration tests. AI can do that on esteroids.
 

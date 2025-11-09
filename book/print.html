@@ -1621,9 +1621,10 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <li>Is this a complex multi-step investigation? → Custom Agent</li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-6---testing-with-ai"><a class="header" href="#chapter-6---testing-with-ai">Chapter 6 - Testing with AI</a></h1>
-<p>Testing matters more than ever with AI. Because AI hallucinates and eventually will mess up your existing code, and will stop working, so when will you catch that? Hopefully before your users do. Because AI is not 100% predictable and has precision issues, you must have tests to compensate for that.</p>
-<p>Otherwise, AI will break your code; it's just a matter of time, it will happen. As long as you have good testing diversity and decent coverage, you will be fine because tests are the ultimate guardrails for AI.</p>
+<p><a href="https://diego-pacheco.blogspot.com/2020/02/going-faster-with-testing.html">Testing</a> matters more than ever with AI. Because AI hallucinates and eventually will mess up your existing code, and will stop working, so when will you catch that? Hopefully before your users do. Because AI is not 100% predictable and has precision issues, you must have tests to compensate for that. Some tests are <a href="https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html">harder</a> than orders but we will need to have them, in different shapes and forms.</p>
+<p>Otherwise, AI will break your code; it's just a matter of time, it will happen.You <a href="https://diego-pacheco.blogspot.com/2023/08/embedded-mocks-and-hidden-contracts.html">mocks might fool you</a>, but you will discover in production, maybe not the best way possible. As long as you have good <a href="https://diego-pacheco.blogspot.com/2021/06/my-2-cents-on-on-diverse-and.html">testing diversity</a> and decent coverage, you will be fine because tests are the <a href="https://diego-pacheco.blogspot.com/2020/08/hardening-prodution.html">ultimate guardrails</a> for AI.</p>
 <p>So before AI, 100% tests sounded crazy, but now it is actually a must-have. Otherwise, AI will introduce a lot of P0 bugs more often than you can imagine. Before we do any other more advanced use case for coding agents using AI, we need to get more tests and get good and reliable tests in place.</p>
+<p>Testing it's a spectrum. You test left and you test right(yes you <a href="https://diego-pacheco.blogspot.com/2021/02/testing-in-production.html">test in production</a> too). We do <a href="https://diego-pacheco.blogspot.com/2020/07/assertj.html">assertions</a>, <a href="https://diego-pacheco.blogspot.com/2020/08/property-based-testing-with-jsverify.html">property-based testing</a>, we tests all languages including lowe level ones <a href="https://diego-pacheco.blogspot.com/2018/05/c-unit-testing-with-check.html">like C</a>, we should test DevOps <a href="https://diego-pacheco.blogspot.com/2020/03/infrastructure-testing-for-terraform.html">Terraform</a> too, tests on the <a href="https://diego-pacheco.blogspot.com/2020/08/snapshot-testing-with-jest.html">frontend</a>, test <a href="https://diego-pacheco.blogspot.com/2021/04/testing-aws-lambdas-with-java.html">lambdas</a>, we test things that talk to <a href="https://diego-pacheco.blogspot.com/2018/04/mocking-and-testing-aws-apis-with.html">AWS too</a>, even hard things like <a href="https://diego-pacheco.blogspot.com/2020/08/testing-impossible-with-powermock.html">static/final are tested</a>, we <a href="https://diego-pacheco.blogspot.com/2020/08/java-mutation-testing-with-pitest.html">test our own tests</a>, test rest <a href="https://diego-pacheco.blogspot.com/2021/01/tests-with-spring-boot-mockmvc.html">apis</a>, we <a href="https://diego-pacheco.blogspot.com/2021/04/mock-server.html">mock what we need</a>,now I think my point is clear, test all the things, there is no such things as too many tests anymore.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="why-use-ai-for-testing"><a class="header" href="#why-use-ai-for-testing">Why use AI for Testing?</a></h1>
 <p>Software engineers are under constant pressure for delivery. Such pressure plus immature management leads to skipping tests. You might not write the best abstraction for the universe, you might not write the best code to deliver—such trade-offs are fine as long as used with balance and you are not living tech-debt first. Now tests should never be skipped, no matter how much in a hurry you are, no matter how tight your deadline is, no matter if the sprint is close to the end. Skipping tests is always the wrong decision.</p>
 <p>We know skipping tests is wrong. But all companies have legacy systems. There is always software before we arrive at a company (unless it is a startup on day 1). The reality is there is so much technical debt that you can't pay it all at once. Companies pay technical debt but never as much as they should. Quality ends up being compromised, which is not a wise decision and eventually will have catastrophic consequences.</p>
@@ -1656,14 +1657,14 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <p>Well, does not matter why this problem happen, but now with the advent of the AI Coding agents is possible to use AI to feed all documentation you might have, all tickets, all print screens and ask LLMs to geenrate End-2-End or even Regression tests for you. Such tests can be written in Cypress, Playwright, Selenium or any other framework you might be using.</p>
 <p>Now we will go from manual testing to AI-assisted automated tests.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="data-generation"><a class="header" href="#data-generation">Data Generation</a></h1>
-<p>Unit Tests might require techniques like test doubles, stubs or even mocks. However you can easily supply the data needed. However when we are dealing with integration tests we need data in order to execute the tests.</p>
+<p>Unit Tests might require techniques like test doubles, stubs or even <a href="https://diego-pacheco.blogspot.com/2025/10/testing-mocks.html">mocks</a>. However you can easily supply the data needed. However when we are dealing with integration tests we need data in order to execute the tests.</p>
 <p>Integration Tests might need data for a variety of reasons:</p>
 <ul>
 <li>Delete: You are testing something that is not present or missing, so you need delete data.</li>
 <li>Update: You might need a very spesific state, so you update the data to match that state.</li>
 <li>Create: You might need to create data in order to test something that requires data to be present.</li>
 </ul>
-<p>Guiven that you have a endpoint(rest api) where you have types and relationships between those types, you might need to create a lot of data in order to test something. Such task is tedius and time consuming. AI can helpo you generate test data easily and fast.</p>
+<p>Guiven that you have a endpoint(rest api) where you have types and relationships between those types, you might need to create a lot of data in order to test something. Such task is tedius and time consuming. AI can helpo you <a href="https://diego-pacheco.blogspot.com/2021/02/synthetic-data-generation-and-java-faker.html">generate test data</a> easily and fast.</p>
 <p>For instance in javascript there is this nice library called <a href="https://fakerjs.dev/">faker.js</a> that can help you generate data for your tests. You can use it to generate data for your integration tests. AI can do that on esteroids.</p>
 <p>You can ASK AI Coding agents to generate data either with <code>code</code> or simple with a <code>script</code> that inseer the data before you run your tests. You can also use AI to create <code>Testing Interfaces</code> and add custom APIs in order to expose <code>state</code> for your tests in non-prod.</p>
 <p>AI can be umpredictable, halucinate and even make mistakes, however code is code, if written well is reliable, so one of the best things you can is ASK ai to generate code, review the code and make sure is right, now you can just run the code and have predictable results.</p>
@@ -3159,22 +3160,6 @@ Complex productionization phase that remains difficult despite AI assistance, re
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
