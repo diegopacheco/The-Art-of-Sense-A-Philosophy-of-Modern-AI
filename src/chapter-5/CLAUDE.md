@@ -37,7 +37,7 @@ Diego Pacheco Claude global guidelines.
 * Never use comments, never ever.
 * Never do sleep bigger than 1
 * When need to wait for a POD or a docker container in docker or k8s make sure you will use a loop and check the condition and do max sleep 1.
-* Dont use icons and enomjis on bash script.
+* Don't use icons and enomjis on bash script.
 
 ## Dockerfile
 
@@ -52,5 +52,5 @@ Diego Pacheco Claude global guidelines.
 * always have a start.sh where you start docker-compose.
 * always have a stop.sh to stop docker-compose.
 * always have a test.sh where you show the feature is working.
-* Dont use timeouts more than 1 min
+* Don't use timeouts more than 1 min
 ```

@@ -4,11 +4,11 @@ One of the best use cases for AI in engineering is around test generation. AI is
 
 You can use AI to:
 * Generate Unit Tests
-  * Considering Happy Path
-  * Considering Edge Cases
-  * Considering Error Handling
-  * Considering negative and boundary cases
-  * Considering a bit of chaos like random inputs or even nulls and unexpected types/values
+ * Considering Happy Path
+ * Considering Edge Cases
+ * Considering Error Handling
+ * Considering negative and boundary cases
+ * Considering a bit of chaos like random inputs or even nulls and unexpected types/values
 * Generate Integration Tests
 * Generate End to End Tests
 

@@ -29,12 +29,12 @@ changelog.md
 - Make sure the changelog has meaning
 - Do not lose content, don't delete content from other files
 - I want the following sections in the changelog:
-  - Added
-  - Changed
-  - Deprecated
-  - Removed
-  - Fixed
-  - Security
+ - Added
+ - Changed
+ - Deprecated
+ - Removed
+ - Fixed
+ - Security
 - Give me a commit count per user
 ```
 

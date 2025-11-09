@@ -30,7 +30,7 @@ This command allow you to see where claude code is using context from. It shows 
 
 Why this is useful?
 * Transparency: You can see exactly which files influenced the AI's response.
-* Diagnostics:  See if you're running out of space.
+* Diagnostics: See if you're running out of space.
 * Debug: You can see what is being loaded to claude memory.
 
 You should run this program time to time to see how the context is being used.
@@ -72,27 +72,27 @@ Will run diagnostics on the claude code installation. You will see an output lik
 Will export the current session chat history to a file. This command is very useful. Here is an example of the output:
 
 ```
-❯ cat  2025-10-30-caveat-the-messages-below-were-generated-by-the-u.txt
+❯ cat 2025-10-30-caveat-the-messages-below-were-generated-by-the-u.txt
 
- ▐▛███▜▌   Claude Code v2.0.30
-▝▜█████▛▘  Sonnet 4.5 · Claude Pro
-  ▘▘ ▝▝    /Users/diegopacheco/git/diegopacheco/The-Art-of-Building-with-AI
-
-> /config
-  ⎿  Status dialog dismissed
+ ▐▛███▜▌ Claude Code v2.0.30
+▝▜█████▛▘ Sonnet 4.5 · Claude Pro
+ ▘▘ ▝▝ /Users/diegopacheco/git/diegopacheco/The-Art-of-Building-with-AI
 
 > /config
-  ⎿  Status dialog dismissed
+ ⎿  Status dialog dismissed
+
+> /config
+ ⎿  Status dialog dismissed
 
 > /bashes
-  ⎿  Background tasks dialog dismissed
+ ⎿  Background tasks dialog dismissed
 
 > /cost
-  ⎿  With your Claude Pro subscription, no need to monitor cost — your subscription includes Claude Code usage
+ ⎿  With your Claude Pro subscription, no need to monitor cost — your subscription includes Claude Code usage
 
 > /doctor
-  ⎿  Claude Code diagnostics dismissed
-  
+ ⎿  Claude Code diagnostics dismissed
+ 
 ```
 
 ## /config

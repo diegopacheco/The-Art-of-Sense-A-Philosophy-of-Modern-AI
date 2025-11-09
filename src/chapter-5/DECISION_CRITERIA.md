@@ -88,26 +88,26 @@ Examples:
 Auto-format on save:
 ```
 {
-  "hooks": {
-    "tool-result": {
-      "command": "if [[ '${TOOL_NAME}' == 'Write' ]]; then prettier --write '${TOOL_ARGS}'; fi",
-      "enabled": true
-    }
-  }
+ "hooks": {
+ "tool-result": {
+ "command": "if [[ '${TOOL_NAME}' == 'Write' ]]; then prettier --write '${TOOL_ARGS}'; fi",
+ "enabled": true
+ }
+ }
 }
 ```
 
 Prevent commits to main:
 ```
 {
-  "hooks": {
-    "tool-call": {
-      "command": "if [[ '${TOOL_NAME}' == 'Bash' ]] && echo '${TOOL_ARGS}' | grep -q 'git push.*main'; then
+ "hooks": {
+ "tool-call": {
+ "command": "if [[ '${TOOL_NAME}' == 'Bash' ]] && echo '${TOOL_ARGS}' | grep -q 'git push.*main'; then
 echo 'Blocked: Cannot push to main'; exit 1; fi",
-      "enabled": true,
-      "blocking": true
-    }
-  }
+ "enabled": true,
+ "blocking": true
+ }
+ }
 }
 ```
 
@@ -154,20 +154,20 @@ Think of it as: A specialized team member who can work independently on complex 
 ---
 Decision Matrix
 
-| Need                                      | Solution       |
+| Need | Solution |
 |-------------------------------------------|----------------|
-| Claude always formats code a certain way  | CLAUDE.md      |
-| Run prettier after every file write       | Hook           |
-| Quick code review on demand               | Custom Command |
-| Audit entire codebase for security issues | Custom Agent   |
-| Never use comments                        | CLAUDE.md      |
-| Auto-run tests after changes              | Hook           |
-| Generate API documentation                | Custom Command |
-| Migrate 50 files from old to new API      | Custom Agent   |
-| Enforce git commit message format         | Hook           |
-| Refactor function with specific pattern   | Custom Command |
-| Analyze and fix all TypeScript errors     | Custom Agent   |
-| Always use tabs not spaces                | CLAUDE.md      |
+| Claude always formats code a certain way | CLAUDE.md |
+| Run prettier after every file write | Hook |
+| Quick code review on demand | Custom Command |
+| Audit entire codebase for security issues | Custom Agent |
+| Never use comments | CLAUDE.md |
+| Auto-run tests after changes | Hook |
+| Generate API documentation | Custom Command |
+| Migrate 50 files from old to new API | Custom Agent |
+| Enforce git commit message format | Hook |
+| Refactor function with specific pattern | Custom Command |
+| Analyze and fix all TypeScript errors | Custom Agent |
+| Always use tabs not spaces | CLAUDE.md |
 
 ---
 Practical Combination Example
@@ -188,10 +188,10 @@ Custom Commands (Quick actions)
 Hooks (Automation)
 ```
 {
-  "tool-result": {
-    "command": "prettier --write && eslint --fix",
-    "enabled": true
-  }
+ "tool-result": {
+ "command": "prettier --write && eslint --fix",
+ "enabled": true
+ }
 }
 ```
 

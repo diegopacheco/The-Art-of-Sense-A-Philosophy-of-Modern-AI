@@ -57,14 +57,14 @@ I don't know about you but I just drive a car. I don't think. It's natural, it's
 * You study the rules of the road
 * You practice driving a lot (for years probably)
 
-Now the effect is that you do that with such efficiency. Now, imagine if you were driving a car and looking at the manual—literally, you have a thick book with rules, and while driving you check the manual every time:
+Now the effect is that you do that with such efficiency. Now, imagine if you we're driving a car and looking at the manual—literally, you have a thick book with rules, and while driving you check the manual every time:
 * You need to turn left
 * You need to turn right
 * You need to stop at the red light
 * You need to check the speed limit
 * You need to backup
 
-You will be such a terrible driver. I don't think anyone drives like this. Because we don't allow anyone to drive—there is a bar. But for engineering there is no bar. Anyone can do anything, even without being close to being qualified. Now I'm not advocating for extreme regulation of engineering. But what I'm saying is: imagine if I tell you that a huge number of programmers code like the driver I described. "Wow, no way Diego, this sucks!" Well, instead of the manual they were using StackOverflow, and before that forums, and now, guess what? They are using LLMs and AI Agents.
+You will be such a terrible driver. I don't think anyone drives like this. Because we don't allow anyone to drive—there is a bar. But for engineering there is no bar. Anyone can do anything, even without being close to being qualified. Now I'm not advocating for extreme regulation of engineering. But what I'm saying is: imagine if I tell you that a huge number of programmers code like the driver I described. "Wow, no way Diego, this sucks!" Well, instead of the manual they we're using StackOverflow, and before that forums, and now, guess what? They are using LLMs and AI Agents.
 
 We need to have proficiency!
 
@@ -77,9 +77,9 @@ Karpathy explains how he got a DEMO on waymo in 2014 and it was working. He thou
 In the video below Andrej Karpathy explains it well:
 <div style="position: relative; width: 100%; padding-bottom: 56.25%">
 <iframe src="https://www.youtube.com/embed/lXUZvyajciY?start=6228"
-        title="Andrej Karpathy — "We're summoning ghosts, not building animals"" frameborder="0" allowfullscreen
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        style="position: absolute; width: 100%; height: 100%;">
+    title="Andrej Karpathy — "We're summoning ghosts, not building animals"" frameborder="0" allowfullscreen
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    style="position: absolute; width: 100%; height: 100%;">
 </iframe>
 </div>
 

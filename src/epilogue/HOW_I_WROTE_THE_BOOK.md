@@ -3,7 +3,7 @@
 I blog [since](https://diego-pacheco.blogspot.com/2007/03/boas-vindas-primeiro-post.html) `2007`, that is: <b><span id="years-blogging"></span></b>.
 Every page on this book has one or multiple links to blog posts I did on the past.
 
-I wrote this book in a very different way compared with my 3 previous books. My 3 previous books were written in a formal way. This one was written in a very different way. Let's explain the "formal process" and how usually it worked for me:
+I wrote this book in a very different way compared with my 3 previous books. My 3 previous books we're written in a formal way. This one was written in a very different way. Let's explain the "formal process" and how usually it worked for me:
 * You need to write a proposal, proposal get debated and approved, you write.
 * Formal books have length requirements usually 300 pages.
 * Formal books once approved are waterfall and have several phases.
@@ -16,9 +16,9 @@ I wrote this book in a very different way compared with my 3 previous books. My 
 I want a different experience; I did several things differently here. I'm not saying I would never do traditional books again, but for sure it's different; there are some things here I like a lot, for instance:
  * Because I used `mdbook`, the book is written with a tool in Rust which is markdown based.
  * Mdbook has 3 killer features for me:
-   * It has a built-in search engine, and a very good one.
-   * It provides a direct link to all pages of the book; every page has a unique URL.
-   * It has a built-in way to generate code snippets with syntax highlighting, videos, and themes.
+ * It has a built-in search engine, and a very good one.
+ * It provides a direct link to all pages of the book; every page has a unique URL.
+ * It has a built-in way to generate code snippets with syntax highlighting, videos, and themes.
  * The book is hosted on git. Meaning I have version control over all the changes of the book; want to see what I did differently? just use git.
  * If I want to say something different, on the traditional book I need to write a new book and people need to buy it to read it; here I just do a `git push` and it's live, because I have a workflow with GitHub Actions to publish the book on a GitHub Pages site.
  * It's also a way for me to give back for free.

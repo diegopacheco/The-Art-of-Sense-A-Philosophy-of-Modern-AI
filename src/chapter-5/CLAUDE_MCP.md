@@ -58,23 +58,23 @@ npx ccstatusline@latest
 CCStatusline Configuration | v2.0.21
 
 ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ > Preview  (ctrl+s to save configuration at any time)                                                          │
+│ > Preview (ctrl+s to save configuration at any time) │
 ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-  Model: Claude | Ctx: 18.6k | ⎇ main | (+42,-10)
+ Model: Claude | Ctx: 18.6k | ⎇ main | (+42,-10)
 
 Main Menu
 
-▶  📝 Edit Lines
-   🎨 Edit Colors
-   ⚡ Powerline Setup
+▶ 📝 Edit Lines
+ 🎨 Edit Colors
+ ⚡ Powerline Setup
 
-   💻 Terminal Options
-   🌐 Global Overrides
+ 💻 Terminal Options
+ 🌐 Global Overrides
 
-   🔌 Uninstall from Claude Code
-   🚪 Exit
+ 🔌 Uninstall from Claude Code
+ 🚪 Exit
 
-  Configure any number of status lines with various widgets like model info, git status, and token usage
+ Configure any number of status lines with various widgets like model info, git status, and token usage
 ```
 
 Then do all configs you want and just click on "Install on Claude Code".

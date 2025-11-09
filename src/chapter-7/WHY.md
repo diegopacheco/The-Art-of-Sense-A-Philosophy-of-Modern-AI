@@ -21,7 +21,7 @@ Migrations are difficult for a variety of reasons:
 * Downtime: Migrations can require downtime, which can be disruptive to users. Not all migrations require downtime, but it's easier with downtime.
 * Data Loss: There is a risk of data loss during migrations, especially if not done carefully (in case of database or encryption migrations).
 * Time Pressure: Teams are usually focused on features and migrations take this time away from them.
-* Testing: Migrations require extensive testing to ensure that everything works correctly after the migration. Usually testing is not perfect, which forces migrations to discover problems that were buried in the old system.
+* Testing: Migrations require extensive testing to ensure that everything works correctly after the migration. Usually testing is not perfect, which forces migrations to discover problems that we're buried in the old system.
 
 ## Difficult Reality at Scale
 

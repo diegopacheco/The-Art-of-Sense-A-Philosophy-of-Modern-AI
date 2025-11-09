@@ -9,9 +9,9 @@ Do you know how to know when a human using AI is fooling you? Do you know if you
 Take a look at the Clever Hans effect. <br/>
 <div style="position: relative; width: 100%; padding-bottom: 56.25%">
 <iframe src="https://www.youtube.com/embed/hAJlAuEo7Ac" 
-        title="Anti-Trust - The War Machine" frameborder="0" allowfullscreen
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        style="position: absolute; width: 100%; height: 100%;">
+    title="Anti-Trust - The War Machine" frameborder="0" allowfullscreen
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    style="position: absolute; width: 100%; height: 100%;">
 </iframe>
 </div>
 

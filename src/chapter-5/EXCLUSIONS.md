@@ -12,33 +12,33 @@ To make claude ignore these files you need to add an entry in:
 And add an entry like this:
 ```json
 {
-  "permissions": {
-    "deny": [
-      "Read(./node_modules/**)",
-      "Read(./vendor/**)",
-      "Read(./venv/**)",
-      "Read(./dist/**)",
-      "Read(./build/**)",
-      "Read(./out/**)",
-      "Read(./**/*.min.js)",
-      "Read(./**/*.bundle.js)",
-      "Read(./**/*.map)",
-      "Read(./package-lock.json)",
-      "Read(./yarn.lock)",
-      "Read(./pnpm-lock.yaml)",
-      "Read(./.env)",
-      "Read(./.env.*)",
-      "Read(./**/*.key)",
-      "Read(./**/*.pem)",
-      "Read(./credentials.json)",
-      "Read(./coverage/**)",
-      "Read(./.nyc_output/**)",
-      "Read(./.vscode/**)",
-      "Read(./.idea/**)",
-      "Read(./**/*.log)",
-      "Read(./data/**)"
-    ]
-  }
+ "permissions": {
+ "deny": [
+ "Read(./node_modules/**)",
+ "Read(./vendor/**)",
+ "Read(./venv/**)",
+ "Read(./dist/**)",
+ "Read(./build/**)",
+ "Read(./out/**)",
+ "Read(./**/*.min.js)",
+ "Read(./**/*.bundle.js)",
+ "Read(./**/*.map)",
+ "Read(./package-lock.json)",
+ "Read(./yarn.lock)",
+ "Read(./pnpm-lock.yaml)",
+ "Read(./.env)",
+ "Read(./.env.*)",
+ "Read(./**/*.key)",
+ "Read(./**/*.pem)",
+ "Read(./credentials.json)",
+ "Read(./coverage/**)",
+ "Read(./.nyc_output/**)",
+ "Read(./.vscode/**)",
+ "Read(./.idea/**)",
+ "Read(./**/*.log)",
+ "Read(./data/**)"
+ ]
+ }
 }
 ```
 
@@ -60,78 +60,78 @@ ADDED_DENY=()
 mkdir -p .claude
 
 if [ -f "$GITIGNORE" ]; then
-  while IFS= read -r line || [ -n "$line" ]; do
-    if [ -n "$line" ] && [[ ! "$line" =~ ^#.*$ ]]; then
-      if ! grep -Fxq "$line" "$CLAUDEIGNORE" 2>/dev/null; then
-        echo "$line" >> "$CLAUDEIGNORE"
-        ADDED_IGNORE+=("$line")
-      fi
-    fi
-  done < "$GITIGNORE"
+ while IFS= read -r line || [ -n "$line" ]; do
+ if [ -n "$line" ] && [[ ! "$line" =~ ^#.*$ ]]; then
+ if ! grep -Fxq "$line" "$CLAUDEIGNORE" 2>/dev/null; then
+    echo "$line" >> "$CLAUDEIGNORE"
+    ADDED_IGNORE+=("$line")
+ fi
+ fi
+ done < "$GITIGNORE"
 fi
 
 SETTINGS_ENTRY=".claude/settings.json"
 if ! grep -Fxq "$SETTINGS_ENTRY" "$CLAUDEIGNORE" 2>/dev/null; then
-  echo "$SETTINGS_ENTRY" >> "$CLAUDEIGNORE"
-  ADDED_IGNORE+=("$SETTINGS_ENTRY")
+ echo "$SETTINGS_ENTRY" >> "$CLAUDEIGNORE"
+ ADDED_IGNORE+=("$SETTINGS_ENTRY")
 fi
 
 if [ ! -f "$SETTINGS_FILE" ]; then
-  echo '{"writePermissions":{"deny":[]}}' > "$SETTINGS_FILE"
+ echo '{"writePermissions":{"deny":[]}}' > "$SETTINGS_FILE"
 fi
 
 TEMP_FILE=$(mktemp)
 if [ -f "$GITIGNORE" ]; then
-  while IFS= read -r line || [ -n "$line" ]; do
-    if [ -n "$line" ] && [[ ! "$line" =~ ^#.*$ ]]; then
-      if ! grep -q "\"$line\"" "$SETTINGS_FILE" 2>/dev/null; then
-        ADDED_DENY+=("$line")
-      fi
-    fi
-  done < "$GITIGNORE"
+ while IFS= read -r line || [ -n "$line" ]; do
+ if [ -n "$line" ] && [[ ! "$line" =~ ^#.*$ ]]; then
+ if ! grep -q "\"$line\"" "$SETTINGS_FILE" 2>/dev/null; then
+    ADDED_DENY+=("$line")
+ fi
+ fi
+ done < "$GITIGNORE"
 fi
 
 if [ ${#ADDED_DENY[@]} -gt 0 ]; then
-  python3 -c "
+ python3 -c "
 import json
 import sys
 
 with open('$SETTINGS_FILE', 'r') as f:
-    data = json.load(f)
+ data = json.load(f)
 
 if 'writePermissions' not in data:
-    data['writePermissions'] = {}
+ data['writePermissions'] = {}
 if 'deny' not in data['writePermissions']:
-    data['writePermissions']['deny'] = []
+ data['writePermissions']['deny'] = []
 
 deny_list = data['writePermissions']['deny']
 new_entries = [$(printf '"%s",' "${ADDED_DENY[@]}" | sed 's/,$//')]
 for entry in new_entries:
-    if entry not in deny_list:
-        deny_list.append(entry)
+ if entry not in deny_list:
+    deny_list.append(entry)
 
 with open('$SETTINGS_FILE', 'w') as f:
-    json.dump(data, f, indent=2)
+ json.dump(data, f, indent=2)
 "
 fi
 
 echo "Added entries to .claudeignore:"
 for entry in "${ADDED_IGNORE[@]}"; do
-  echo "  - $entry"
+ echo " - $entry"
 done
 
 if [ ${#ADDED_IGNORE[@]} -eq 0 ]; then
-  echo "  (no new entries added)"
+ echo " (no new entries added)"
 fi
 
 echo ""
 echo "Added write permission denies to .claude/settings.json:"
 for entry in "${ADDED_DENY[@]}"; do
-  echo "  - $entry"
+ echo " - $entry"
 done
 
 if [ ${#ADDED_DENY[@]} -eq 0 ]; then
-  echo "  (no new denies added)"
+ echo " (no new denies added)"
 fi
 ```
 
