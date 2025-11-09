@@ -1,4 +1,4 @@
-# Sunseting
+# Sunsetting
 
 Without AI, some migrations tend to always be postponed. Sometimes because the cost is prohibitive, sometimes because the risk is too high, sometimes because the business case is not clear.
 
