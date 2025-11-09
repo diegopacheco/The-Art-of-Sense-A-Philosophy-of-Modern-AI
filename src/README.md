@@ -162,6 +162,7 @@ Hire, develop, retain, and truly grow talent at scale
 - [Chapter 9 - Learning from AI](./chapter-9/README.md)
   - [Ideas](./chapter-9/IDEAS.md)
   - [Proof of Concepts (Poc)](./chapter-9/POCS.md)
+  - [Role Playing](./chapter-9/ROLE_PLAYING.md)  
   - [Sentiment Analysis](./chapter-9/SENTIMENT_ANALYSIS.md)
 
 ### Epilogue
