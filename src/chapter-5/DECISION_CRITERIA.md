@@ -33,7 +33,7 @@ Examples:
 - All components must have PropTypes
 - Test files go in __tests__ directory
 
-Think of it as: Your .eslintrc or .editorconfig but for Claude's behavior
+Think of it as: Your.eslintrc or.editorconfig but for Claude's behavior
 
 ---
 ### 2. Custom Commands - Reusable Prompts

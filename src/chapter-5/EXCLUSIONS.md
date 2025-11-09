@@ -3,7 +3,7 @@
 If you don't want claude to read some files, there is a way to tell claude code to ignore them. You might want to do this for a couple of reasons:
 * 1. You want to save tokens: Tokens are money, tokens are expensive, you don't want to waste time and money on claude reading trash.
 * 2. You have sensitive information: Maybe you have some files that contain sensitive information that you don't want claude to read. Like PII, user data, credentials, etc.
-* 3. You have large files that are not useful: Maybe you have some large files that are not useful for claude to read. Like logs, binaries, etc. 
+* 3. You have large files that are not useful: Maybe you have some large files that are not useful for claude to read. Like logs, binaries, etc.
 
 To make claude ignore these files you need to add an entry in:
 * Global Exclusions: `~/.claude/settings.json`
@@ -57,12 +57,12 @@ SETTINGS_FILE=".claude/settings.json"
 ADDED_IGNORE=()
 ADDED_DENY=()
 
-mkdir -p .claude
+mkdir -p.claude
 
 if [ -f "$GITIGNORE" ]; then
  while IFS= read -r line || [ -n "$line" ]; do
- if [ -n "$line" ] && [[ ! "$line" =~ ^#.*$ ]]; then
- if ! grep -Fxq "$line" "$CLAUDEIGNORE" 2>/dev/null; then
+ if [ -n "$line" ] && [[! "$line" =~ ^#.*$ ]]; then
+ if! grep -Fxq "$line" "$CLAUDEIGNORE" 2>/dev/null; then
     echo "$line" >> "$CLAUDEIGNORE"
     ADDED_IGNORE+=("$line")
  fi
@@ -71,20 +71,20 @@ if [ -f "$GITIGNORE" ]; then
 fi
 
 SETTINGS_ENTRY=".claude/settings.json"
-if ! grep -Fxq "$SETTINGS_ENTRY" "$CLAUDEIGNORE" 2>/dev/null; then
+if! grep -Fxq "$SETTINGS_ENTRY" "$CLAUDEIGNORE" 2>/dev/null; then
  echo "$SETTINGS_ENTRY" >> "$CLAUDEIGNORE"
  ADDED_IGNORE+=("$SETTINGS_ENTRY")
 fi
 
-if [ ! -f "$SETTINGS_FILE" ]; then
+if [! -f "$SETTINGS_FILE" ]; then
  echo '{"writePermissions":{"deny":[]}}' > "$SETTINGS_FILE"
 fi
 
 TEMP_FILE=$(mktemp)
 if [ -f "$GITIGNORE" ]; then
  while IFS= read -r line || [ -n "$line" ]; do
- if [ -n "$line" ] && [[ ! "$line" =~ ^#.*$ ]]; then
- if ! grep -q "\"$line\"" "$SETTINGS_FILE" 2>/dev/null; then
+ if [ -n "$line" ] && [[! "$line" =~ ^#.*$ ]]; then
+ if! grep -q "\"$line\"" "$SETTINGS_FILE" 2>/dev/null; then
     ADDED_DENY+=("$line")
  fi
  fi
@@ -115,7 +115,7 @@ with open('$SETTINGS_FILE', 'w') as f:
 "
 fi
 
-echo "Added entries to .claudeignore:"
+echo "Added entries to.claudeignore:"
 for entry in "${ADDED_IGNORE[@]}"; do
  echo " - $entry"
 done
@@ -125,7 +125,7 @@ if [ ${#ADDED_IGNORE[@]} -eq 0 ]; then
 fi
 
 echo ""
-echo "Added write permission denies to .claude/settings.json:"
+echo "Added write permission denies to.claude/settings.json:"
 for entry in "${ADDED_DENY[@]}"; do
  echo " - $entry"
 done
@@ -135,4 +135,4 @@ if [ ${#ADDED_DENY[@]} -eq 0 ]; then
 fi
 ```
 
-Where it will turn your .gitignore into claude exclusions. You can run it whenever you want to sync your .gitignore with claude exclusions.
+Where it will turn your.gitignore into claude exclusions. You can run it whenever you want to sync your.gitignore with claude exclusions.

@@ -2,7 +2,7 @@
 
 People see AI as output. As a way to "Beef Up" engineers. It's not wrong but you can't just use AI and never look at the code, this is a recipe for disaster.
 
-AI can be a great teacher, however we need to always remember the teacher makes mistakes too. [Using AI for input](https://diego-pacheco.blogspot.com/2025/09/ai-output.html) is still a great advantage, you preserve the output to be yours.
+AI can be a great teacher,, however, we need to always remember the teacher makes mistakes too. [Using AI for input](https://diego-pacheco.blogspot.com/2025/09/ai-output.html) is still a great advantage, you preserve the output to be yours.
 
 ## A tale of High School
 

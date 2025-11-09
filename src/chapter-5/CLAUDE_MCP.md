@@ -19,7 +19,7 @@ User Interaction:
 - AskUserQuestion - Ask questions during execution with multiple choice options (supports multi-select)
 
 Extensibility:
-- SlashCommand - Execute custom slash commands defined in .claude/commands/
+- SlashCommand - Execute custom slash commands defined in.claude/commands/
 - Skill - Execute skills (currently none installed in your environment)
 
 Information Gathering:

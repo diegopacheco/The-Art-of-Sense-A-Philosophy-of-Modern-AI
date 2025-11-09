@@ -2,7 +2,7 @@
 
 Using AI to Write and Spell Check Documents, AI is a great Proof Reader.
 
-It's common for people to make mistakes when writing documents; sometimes it's just typos, other times it's grammar mistakes or even factual mistakes. AI is really great at finding and fixing all these common issues. 
+It's common for people to make mistakes when writing documents; sometimes it's just typos, other times it's grammar mistakes or even factual mistakes. AI is really great at finding and fixing all these common issues.
 
 Here is an example of a Claude Code command you could use to proofread a document or your project:
 

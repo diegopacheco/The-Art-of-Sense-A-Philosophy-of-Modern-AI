@@ -6,7 +6,7 @@ The common issues I see with bad onboardings are:
 * Manager is hands-off and just throws a bunch of links and code and asks people to read
 * No homeworks for the engineer (no output is an anti-pattern)
 * No clear goals or expectations
-* When there are expectations, the manager is just training the engineer how he likes to work, like: "I want story points of 3-5, don't do PRs with more than 10 files, show up to my 1:1s, update your JIRA tasks, etc." 
+* When there are expectations, the manager is just training the engineer how he likes to work, like: "I want story points of 3-5, don't do PRs with more than 10 files, show up to my 1:1s, update your JIRA tasks, etc."
 
 This is a complete waste of time, because the engineer should be actually doing this:
 * Make sure you have your environment ready (make sure you can run and debug the app)

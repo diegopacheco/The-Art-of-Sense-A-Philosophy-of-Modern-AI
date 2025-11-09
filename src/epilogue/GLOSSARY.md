@@ -106,7 +106,7 @@ Vector database for storing and querying embeddings.
 Open source security tool for scanning and analyzing MCP servers for vulnerabilities.
 
 **.claudeignore**
-File specifying which files Claude Code should not read, similar to .gitignore for version control.
+File specifying which files Claude Code should not read, similar to.gitignore for version control.
 
 **CLAUDE.md**
 Global configuration file for Claude Code behavior, containing project-specific instructions and preferences.
@@ -611,7 +611,7 @@ Second phase in RAG pattern where queries are converted to embeddings to search 
 AI capability to assume different personas (architect, security expert, marketing specialist, etc.) to provide varied perspectives.
 
 **Reward**
-In reinforcement learning, a scalar feedback signal that indicates how well the agent is doing.
+In reinforcement learning, a scalar feedback signal that indicates how we'll the agent is doing.
 
 **Robotics**
 Application area for reinforcement learning.

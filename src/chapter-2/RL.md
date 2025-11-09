@@ -11,7 +11,7 @@ State: A snapshot of the environment at a given time.
 
 Action: A decision or move made by the agent.
 
-Reward: A scalar feedback signal that indicates how well the agent is doing.
+Reward: A scalar feedback signal that indicates how we'll the agent is doing.
 
 Policy: A strategy or rule that the agent uses to make decisions.
 

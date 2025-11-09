@@ -92,7 +92,7 @@ Will export the current session chat history to a file. This command is very use
 
 > /doctor
  ⎿  Claude Code diagnostics dismissed
- 
+
 ```
 
 ## /config

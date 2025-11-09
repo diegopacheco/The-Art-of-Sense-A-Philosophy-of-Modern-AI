@@ -6,4 +6,4 @@ Lack of ownership is a big problem at scale, due to the [Team Erosion](https://d
 
 [Tags](https://diego-pacheco.blogspot.com/2023/09/tagging-everything.html) can help. But AI can help even more. AI can scan git repositories and suggest the most likely probable owners based on commit history, code reviews, comments, etc. AI can also help identify orphan assets and suggest potential owners based on historical data. This way, teams can maintain better ownership and accountability over their tech assets, reducing the risk of team erosion and improving overall system reliability.
 
-[Internal Shared Libraries](https://diego-pacheco.blogspot.com/2020/08/shared-libraries-trap.html) are always a big problem, for ownership even more. Now with AI not only can we easily `find owners` but we can migrate away from problematic shared technology that has ownership issues. 
+[Internal Shared Libraries](https://diego-pacheco.blogspot.com/2020/08/shared-libraries-trap.html) are always a big problem, for ownership even more. Now with AI not only can we easily `find owners` but we can migrate away from problematic shared technology that has ownership issues.

@@ -11,6 +11,6 @@ Common vector databases include:
 - [Chroma](https://www.trychroma.com/)
 - [Postgres pgvector](https://github.com/pgvector/pgvector)
 
-LLMs can be run locally for instance in the case of LLAMA from meta, or via API calls to services like OpenAI, Anthropic, Cohere, or Hugging Face. 
+LLMs can be run locally for instance in the case of LLAMA from meta, or via API calls to services like OpenAI, Anthropic, Cohere, or Hugging Face.
 
 The way you interact with an LLM via API is passing text (prompts) via the context window. The context window is the amount of text the LLM can consider at one time. You don't have to pass the entire document to the LLM, just the relevant parts. This is where vector databases come in. By storing document embeddings in a vector database, you can quickly retrieve the most relevant sections of a document. That happens before passing the text to the LLM for processing. This approach is often referred to as "retrieval-augmented generation" (RAG).

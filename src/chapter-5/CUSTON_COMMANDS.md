@@ -16,7 +16,7 @@ Commands are just a markdown file with instructions on what to do. You can use a
 
 Example 1: Code Review Command
 ```
-File: .claude/commands/review.md
+File:.claude/commands/review.md
 Review the changes in this file for:
 - Bugs and edge cases
 - Performance issues
@@ -31,7 +31,7 @@ Usage: /review @src/auth.js
 
 Example 2: Test Generation Command
 ```
-File: .claude/commands/tests.md
+File:.claude/commands/tests.md
 Generate comprehensive tests for $1 covering:
 - Happy path scenarios
 - Edge cases
@@ -45,7 +45,7 @@ Usage: /tests src/utils/validator.js
 
 Example 3: Performance Audit
 ```
-File: .claude/commands/perf.md
+File:.claude/commands/perf.md
 Analyze $1 for performance issues:
 - Unnecessary loops or iterations
 - Database query optimization

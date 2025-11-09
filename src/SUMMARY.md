@@ -85,7 +85,7 @@
  - [Troubleshooting](./chapter-8/TROUBLESHOOTING.md)
  - [Documentation](./chapter-8/DOCUMENTATION.md)
  - [Onboarding](./chapter-8/ONBOARDING.md)
- - [Ownership](./chapter-8/OWNERSHIP.md) 
+ - [Ownership](./chapter-8/OWNERSHIP.md)
 
 - [Chapter 9 - Learning from AI](./chapter-9/README.md)
  - [Ideas](./chapter-9/IDEAS.md)
@@ -94,7 +94,7 @@
  - [Sentiment Analysis](./chapter-9/SENTIMENT_ANALYSIS.md)
  - [Critical Thinking](./chapter-9/CRITICAL_THINKING.md)
  - [Private Teacher](./chapter-9/PRIVATE_TEACHER.md)
- 
+
 # Epilogue
 
 - [Epilogue](./epilogue/README.md)

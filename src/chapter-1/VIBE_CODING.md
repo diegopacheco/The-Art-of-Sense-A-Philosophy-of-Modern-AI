@@ -9,7 +9,7 @@ Vibe coding is a practice where you generate prompts and `do not look at the cod
 * AI Hallucinates: And makes up APIs that don't exist or code that gives you bugs at runtime.
 * AI Just ignores you: You ask for a specific library, AI just ignores it and uses something else.
 
-Vibe coding is very much like trial-and-error, you can build games with it even but don't fool yourself you can't use vibe coding for all things. Not reading the code and not reading the DIFFs is an awful practice. Asking for random changes and hoping the bugs go away is not a strategy. Any serious software engineer with a brain will tell you that vibe coding is a bad idea. 
+Vibe coding is very much like trial-and-error, you can build games with it even but don't fool yourself you can't use vibe coding for all things. Not reading the code and not reading the DIFFs is an awful practice. Asking for random changes and hoping the bugs go away is not a strategy. Any serious software engineer with a brain will tell you that vibe coding is a bad idea.
 
 ## Where you can use vibe coding
 
@@ -48,11 +48,11 @@ More importantly, coding dojos existed before AI. In a proper coding dojo, you d
 * Improving our Data Structures and Algorithms game
 * Improving attention to details
 
-It's important to use AI to increase some productivity (which I think is something ballpark between 10-30% MAX). But it's also important to do the vintage coding (coding dojos) often, to keep us healthy and in shape. Like you go to the GYM because you are not a hunter and stay sitting in a chair all day long in zoom calls :-). 
+It's important to use AI to increase some productivity (which I think is something ballpark between 10-30% MAX). But it's also important to do the vintage coding (coding dojos) often, to keep us healthy and in shape. Like you go to the GYM because you are not a hunter and stay sitting in a chair all day long in zoom calls:-).
 
 ## How Do You Drive a Car?
 
-I don't know about you but I just drive a car. I don't think. It's natural, it's organic. I don't need to make any effort—it's so easy. Now ask yourself, is this the same for you? You probably will say YES. Well, then we need to ask ourselves the next question: why? I'll tell you why.
+I don't know about you but I just drive a car. I don't think. It's natural, it's organic. I don't need to make any effort—it's so easy. Now ask yourself: is this the same for you? You probably will say YES. Well, then we need to ask ourselves the next question: why? I'll tell you why.
 * Because you pass the driver license exam
 * You study the rules of the road
 * You practice driving a lot (for years probably)
@@ -70,7 +70,7 @@ We need to have proficiency!
 
 ## Zero to Demo vs Demo to Production
 
-Vibe coding can be very useful for creating a DEMO. However putting software into production it's a whole different game. 
+Vibe coding can be very useful for creating a DEMO. However putting software into production it's a whole different game.
 
 Karpathy explains how he got a DEMO on waymo in 2014 and it was working. He thought it would be quick. More than 11 years later in 2025 Waymo is still not 100% done. Why? Because some tasks are hard and the gap between the demo and production is huge.
 
@@ -83,4 +83,4 @@ In the video below Andrej Karpathy explains it well:
 </iframe>
 </div>
 
-Vibe coding can be useful to figure out what we want. Maybe to help non-engineers to figure out what they want, then better write requirements. In a sense vibe coding "democratizes" building and everybody can be a software engineer, however to really use what you build with "vibe coding" must be some simple task, some tasks cannot be vibe coded and like I said before is a big mistake. However if it's small enough and you can "build your own tool" why not.
+Vibe coding can be useful to figure out what we want. Maybe to help non-engineers to figure out what they want, then better write requirements. In a sense vibe coding "democratizes" building and everybody can be a software engineer,, however, to really use what you build with "vibe coding" must be some simple task, some tasks cannot be vibe coded and like I said before is a big mistake. However if it's small enough and you can "build your own tool" why not.

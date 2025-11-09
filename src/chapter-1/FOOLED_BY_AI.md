@@ -8,9 +8,9 @@ Do you know how to know when a human using AI is fooling you? Do you know if you
 
 Take a look at the Clever Hans effect. <br/>
 <div style="position: relative; width: 100%; padding-bottom: 56.25%">
-<iframe src="https://www.youtube.com/embed/hAJlAuEo7Ac" 
+<iframe src="https://www.youtube.com/embed/hAJlAuEo7Ac"
     title="Anti-Trust - The War Machine" frameborder="0" allowfullscreen
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     style="position: absolute; width: 100%; height: 100%;">
 </iframe>
 </div>
@@ -27,6 +27,6 @@ With AI it's the same thing. Anyone can use AI to generate code, does that mean 
 
 ## Solutions vs Wrappers
 
-Now, many startups are building or vibing something with .ai or a new Agentic. Under the hood most of the time it's just a wrapper around OpenAI API or Anthropic API. So what is the real value add?
+Now, many startups are building or vibing something with.ai or a new Agentic. Under the hood most of the time it's just a wrapper around OpenAI API or Anthropic API. So what is the real value add?
 
 I love Rappers but I never liked Wrappers. In my book Principles of software architecture modernization I wrote about the dangers of wrappers with internal shared libraries. Now we have the same danger but with external tools. There is an explosion of tools, new tools, all old tools being rebranded to AI, or AI features popping up in software we would not expect.

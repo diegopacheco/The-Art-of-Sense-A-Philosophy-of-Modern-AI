@@ -12,7 +12,7 @@ There are two flavors of Codex. There is the [web sandbox version](https://chatg
 
 ## OpenCode
 
-[Opencode](https://github.com/sst/opencode) is an open source coding agent that works with many LLM models. 
+[Opencode](https://github.com/sst/opencode) is an open source coding agent that works with many LLM models.
 
 ## Jules
 

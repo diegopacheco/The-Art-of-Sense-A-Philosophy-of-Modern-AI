@@ -6,6 +6,8 @@
 
 Welcome to The Art of Sense: A Philosophy of Modern AI by Diego Pacheco.
 
+Online Version: [The Art of Sense: A Philosophy of Modern AI](https://diegopacheco.github.io/The-Art-of-Sense-A-Philosophy-of-Modern-AI/)
+
 ## Disclaimer
 
 This book does not represent the views of any of my employers or clients past or future. The opinions expressed here are my own and do not reflect the views of any organization I am affiliated with past or future. This book is provided entirely with my own personal time, effort and devices. Several pages have links to my personal blog and POCs made on my personal time.
@@ -162,10 +164,10 @@ Hire, develop, retain, and truly grow talent at scale
 - [Chapter 9 - Learning from AI](./chapter-9/README.md)
  - [Ideas](./chapter-9/IDEAS.md)
  - [Proof of Concepts (Poc)](./chapter-9/POCS.md)
- - [Role Playing](./chapter-9/ROLE_PLAYING.md) 
+ - [Role Playing](./chapter-9/ROLE_PLAYING.md)
  - [Sentiment Analysis](./chapter-9/SENTIMENT_ANALYSIS.md)
  - [Critical Thinking](./chapter-9/CRITICAL_THINKING.md)
- - [Private Teacher](./chapter-9/PRIVATE_TEACHER.md) 
+ - [Private Teacher](./chapter-9/PRIVATE_TEACHER.md)
 
 ### Epilogue
 - [Epilogue](./epilogue/README.md)
