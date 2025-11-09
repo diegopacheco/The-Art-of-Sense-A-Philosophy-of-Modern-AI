@@ -6,7 +6,7 @@ Common use cases for dimensionality reduction include:
 * Data Visualization: Reducing high-dimensional data to 2D or 3D for easier visualization and interpretation.
 * Noise Reduction: Eliminating irrelevant or redundant features that may introduce noise into the model.
 * Feature Extraction: Creating new features that capture the essential information from the original high-dimensional data.
-* Preprocessing for Machine Learning: Improving model performance by reducing overfitting and enhancing generalization
+* Preprocessing for Machine Learning: Improving model performance by reducing overfitting and enhancing generalization.
 
 Main algorithms used for dimensionality reduction tasks include:
 * Principal Component Analysis (PCA)

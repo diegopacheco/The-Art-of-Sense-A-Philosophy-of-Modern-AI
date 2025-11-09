@@ -184,8 +184,8 @@
 <p>AI can behave as a private teacher, providing personalized instruction and feedback to help learners improve their skills in various subjects. By analyzing a student's strengths and weaknesses, the AI can tailor lessons to meet individual needs, making learning more effective and engaging.</p>
 <p>What would you use an AI private teacher for?</p>
 <ol>
-<li>Lear a new language like Zig or Rust.</li>
-<li>Learn a new skill like playing the cooking or writing.</li>
+<li>Learn a new language like Zig or Rust.</li>
+<li>Learn a new skill like cooking or writing.</li>
 <li>Give you feedback on your work, like essays or code.</li>
 <li>Help you prepare for exams or certifications.</li>
 <li>Provide explanations and answer questions on complex topics.</li>
@@ -235,6 +235,22 @@ AI deliberately gives you wrong answers mixed with correct ones to train you to 
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

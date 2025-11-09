@@ -181,7 +181,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="sound-generation"><a class="header" href="#sound-generation">Sound Generation</a></h1>
-<p>LLM can generate sounds and even music based on text prompts. LLMs are capable or turning audio into text and text into audio. There are several models that can do this, including:</p>
+<p>LLMs can generate sounds and even music based on text prompts. LLMs are capable of turning audio into text and text into audio. There are several models that can do this, including:</p>
 <ul>
 <li><strong>OpenAI's Whisper</strong>: Whisper is a powerful automatic speech recognition (ASR) system that can transcribe spoken language into text. It is trained on a large dataset of diverse audio and is capable of understanding multiple languages and accents. Whisper can be used for various applications, including transcription services, voice assistants, and accessibility tools.</li>
 <li><strong>Google's AudioLM</strong>: AudioLM is a model developed by Google that can generate high-quality audio samples from text prompts. It uses a combination of language modeling and audio synthesis techniques to create realistic sounds and music. AudioLM can be used for applications such as music generation, sound effects creation, and audio content generation.</li>
@@ -219,6 +219,22 @@ melodic and rhythmic patterns based on the input text. Make-A-Track can be used 
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

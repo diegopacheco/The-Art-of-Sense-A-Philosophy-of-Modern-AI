@@ -189,7 +189,7 @@
 <li>Clustering: Customer segmentation, Anomaly detection</li>
 <li>Optimization: Resource allocation, Scheduling</li>
 </ul>
-<p>Traditional AI, you need train a model. Usually by splitting your data into 3 buckets.</p>
+<p>Traditional AI, you need to train a model. Usually by splitting your data into 3 buckets.</p>
 <ul>
 <li>60% Training Data</li>
 <li>20% Validation Data</li>
@@ -207,7 +207,7 @@ Underfitting:</p>
 </ul>
 <p>Overfitting:</p>
 <ul>
-<li>The model is too complex and captures the noise in</li>
+<li>The model is too complex and captures the noise in the data</li>
 <li>More training data</li>
 <li>Reduce the model complexity</li>
 <li>Reduce the number of features</li>
@@ -280,6 +280,22 @@ Underfitting:</p>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

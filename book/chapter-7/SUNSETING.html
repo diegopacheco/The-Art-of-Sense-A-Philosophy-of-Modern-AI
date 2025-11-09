@@ -182,8 +182,8 @@
                     <main>
                         <h1 id="sunseting"><a class="header" href="#sunseting">Sunseting</a></h1>
 <p>Without AI, some migrations tend to always be postponed. Sometimes because the cost is prohibitive, sometimes because the risk is too high, sometimes because the business case is not clear.</p>
-<p>However with AI Coding agents, now we live in a time whre it's possible bridge such gaps much faster and much cheaper. AI it's not perfect so, expect bugs and set backs, but the speed gains are unquestionable.</p>
-<p>Imagine if you have some code in old technology let's say Python 2.x, now using Coding agents it's possible to migrate the code base from python 2.x to Rust for instance. This is a unique time that provide us great opportunities, now we need to tweack our mindset and leverage the new tools.</p>
+<p>However, with AI coding agents, now we live in a time where it's possible to bridge such gaps much faster and much cheaper. AI is not perfect so expect bugs and setbacks, but the speed gains are unquestionable.</p>
+<p>Imagine if you have some code in old technology, let's say Python 2.x. Now using coding agents it's possible to migrate the code base from Python 2.x to Rust for instance. This is a unique time that provides us great opportunities. Now we need to tweak our mindset and leverage the new tools.</p>
 
                     </main>
 
@@ -214,6 +214,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

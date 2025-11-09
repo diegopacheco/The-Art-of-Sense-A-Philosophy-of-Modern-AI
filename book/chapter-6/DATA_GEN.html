@@ -184,25 +184,25 @@
 <p>Unit Tests might require techniques like test doubles, stubs or even <a href="https://diego-pacheco.blogspot.com/2025/10/testing-mocks.html">mocks</a>. However you can easily supply the data needed. However when we are dealing with integration tests we need data in order to execute the tests.</p>
 <p>Integration Tests might need data for a variety of reasons:</p>
 <ul>
-<li>Delete: You are testing something that is not present or missing, so you need delete data.</li>
-<li>Update: You might need a very spesific state, so you update the data to match that state.</li>
+<li>Delete: You are testing something that is not present or missing, so you need to delete data.</li>
+<li>Update: You might need a very specific state, so you update the data to match that state.</li>
 <li>Create: You might need to create data in order to test something that requires data to be present.</li>
 </ul>
-<p>Guiven that you have a endpoint(rest api) where you have types and relationships between those types, you might need to create a lot of data in order to test something. Such task is tedius and time consuming. AI can helpo you <a href="https://diego-pacheco.blogspot.com/2021/02/synthetic-data-generation-and-java-faker.html">generate test data</a> easily and fast.</p>
-<p>For instance in javascript there is this nice library called <a href="https://fakerjs.dev/">faker.js</a> that can help you generate data for your tests. You can use it to generate data for your integration tests. AI can do that on esteroids.</p>
-<p>You can ASK AI Coding agents to generate data either with <code>code</code> or simple with a <code>script</code> that inseer the data before you run your tests. You can also use AI to create <code>Testing Interfaces</code> and add custom APIs in order to expose <code>state</code> for your tests in non-prod.</p>
-<p>AI can be umpredictable, halucinate and even make mistakes, however code is code, if written well is reliable, so one of the best things you can is ASK ai to generate code, review the code and make sure is right, now you can just run the code and have predictable results.</p>
+<p>Given that you have an endpoint (REST API) where you have types and relationships between those types, you might need to create a lot of data in order to test something. Such a task is tedious and time consuming. AI can help you <a href="https://diego-pacheco.blogspot.com/2021/02/synthetic-data-generation-and-java-faker.html">generate test data</a> easily and fast.</p>
+<p>For instance, in JavaScript there is this nice library called <a href="https://fakerjs.dev/">faker.js</a> that can help you generate data for your tests. You can use it to generate data for your integration tests. AI can do that on steroids.</p>
+<p>You can ask AI coding agents to generate data either with <code>code</code> or simply with a <code>script</code> that inserts the data before you run your tests. You can also use AI to create <code>Testing Interfaces</code> and add custom APIs in order to expose <code>state</code> for your tests in non-prod.</p>
+<p>AI can be unpredictable, hallucinate and even make mistakes. However, code is code. If written well, it is reliable, so one of the best things you can do is ask AI to generate code, review the code and make sure it is right. Now you can just run the code and have predictable results.</p>
 <h2 id="asking-the-right-questions-for-test-data-generation"><a class="header" href="#asking-the-right-questions-for-test-data-generation">Asking the right questions for Test Data Generation</a></h2>
 <p>Here are some examples of the <code>right</code> things you could ask AI Coding agents to do for you:</p>
 <ol>
 <li>Ask AI to use the same open source frameworks you use like: <a href="https://junit.org/">JUnit</a>, <a href="https://jestjs.io/">Jest</a>, <a href="https://playwright.dev/">Playwright</a>, <a href="https://k6.io/">K6</a>.</li>
-<li>Ask AI to generate a function/method that will run before the test that insert all data you need.</li>
+<li>Ask AI to generate a function/method that will run before the test that inserts all data you need.</li>
 <li>By inserting data you mean: using or creating testing interfaces in services.</li>
 <li>Ask AI to generate a clean up function/method that will run after the test that will delete all data you created.</li>
-<li>ASK AI to never hardcoded IDs, and always use the test data interfaces to create and delete data.</li>
+<li>Ask AI to never hardcode IDs, and always use the test data interfaces to create and delete data.</li>
 <li>Ask AI to generate data that is realistic and not just random data.</li>
 </ol>
-<p>Done, even if AI do it wrong, you can go there and fix it. Now once you have the code, you have the predictable code that will generate the data you need for your tests. Testing interfaces, are part of the service or component code base. We do not want run testing interfaces in production, however because they are code, we can also ask AI Coding agents to create integration tests for them, that live inside of the code, that way we are testing the testing interfaces as well.</p>
+<p>Done, even if AI does it wrong, you can go there and fix it. Now once you have the code, you have predictable code that will generate the data you need for your tests. Testing interfaces are part of the service or component code base. We do not want to run testing interfaces in production. However, because they are code, we can also ask AI coding agents to create integration tests for them that live inside the code. That way we are testing the testing interfaces as well.</p>
 
                     </main>
 
@@ -233,6 +233,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

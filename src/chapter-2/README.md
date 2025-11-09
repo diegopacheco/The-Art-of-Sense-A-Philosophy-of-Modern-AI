@@ -8,7 +8,7 @@ Traditional AI, can help you with:
 * Clustering: Customer segmentation, Anomaly detection
 * Optimization: Resource allocation, Scheduling
 
-Traditional AI, you need train a model. Usually by splitting your data into 3 buckets. 
+Traditional AI, you need to train a model. Usually by splitting your data into 3 buckets. 
 * 60% Training Data
 * 20% Validation Data
 * 20% Test Data
@@ -23,8 +23,8 @@ Underfitting:
 * Reduce Regularization (penalty on the loss_function)
 * More training epochs(batches)
 
-Overfitting: 
-* The model is too complex and captures the noise in 
+Overfitting:
+* The model is too complex and captures the noise in the data 
 * More training data
 * Reduce the model complexity
 * Reduce the number of features

@@ -181,9 +181,9 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="stress-testing"><a class="header" href="#stress-testing">Stress Testing</a></h1>
-<p><a href="https://diego-pacheco.blogspot.com/2018/06/experiences-building-running-stress.html">Stress Testing / Load Testing</a> is very import. Such form of testing allow us to detect non-ovious bugs like concurrency issues, memory leaks and performance bottlenecks. All systems / services should have some form of <a href="https://diego-pacheco.blogspot.com/2015/08/stress-test-with-gatling.html">stress testing</a> in place.</p>
-<p>We all know that in reality is common to see software out there that does not have stress tests, sometimes we barely see unit tests. Considering the advent of AI Coding Agents, it's possible to generate stress tests too. Idepotent endpoints will very easy to test. Non-idempotent endpoints will require some extra work to setup the tests like <code>Testing Interfaces</code> and <code>Test Data Generation</code>.</p>
-<p>AI Coding agents can read your API documentatiion in <a href="https://swagger.io/why-swagger/">Swagger / OpenAPI</a> format and generate stress tests for you or if you do not have it, they can do it by reading the whole codebase.</p>
+<p><a href="https://diego-pacheco.blogspot.com/2018/06/experiences-building-running-stress.html">Stress Testing / Load Testing</a> is very important. Such a form of testing allows us to detect non-obvious bugs like concurrency issues, memory leaks and performance bottlenecks. All systems and services should have some form of <a href="https://diego-pacheco.blogspot.com/2015/08/stress-test-with-gatling.html">stress testing</a> in place.</p>
+<p>We all know that in reality it is common to see software out there that does not have stress tests. Sometimes we barely see unit tests. Considering the advent of AI coding agents, it's possible to generate stress tests too. Idempotent endpoints will be very easy to test. Non-idempotent endpoints will require some extra work to set up the tests like <code>Testing Interfaces</code> and <code>Test Data Generation</code>.</p>
+<p>AI coding agents can read your API documentation in <a href="https://swagger.io/why-swagger/">Swagger / OpenAPI</a> format and generate stress tests for you, or if you do not have it, they can do it by reading the whole codebase.</p>
 
                     </main>
 
@@ -214,6 +214,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
