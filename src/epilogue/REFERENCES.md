@@ -182,6 +182,36 @@
 - [Spec Driven Development - Martin Fowler](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html)
 - [Testing Queues and Batch Jobs - Diego Pacheco](https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html)
 
+## Chapter 6 - Testing with AI
+
+### Testing Frameworks and Tools
+- https://fakerjs.dev/ - Faker.js library for test data generation
+- https://junit.org/ - JUnit testing framework for Java
+- https://jestjs.io/ - Jest JavaScript testing framework
+- https://playwright.dev/ - Playwright end-to-end testing framework
+- https://k6.io/ - K6 load testing framework
+- https://www.cypress.io/ - Cypress end-to-end testing framework
+- https://www.selenium.dev/ - Selenium browser automation framework
+- https://gatling.io/ - Gatling load testing framework
+
+### Testing Blog Posts
+- https://diego-pacheco.blogspot.com/2021/02/synthetic-data-generation-and-java-faker.html - Synthetic data generation
+- https://diego-pacheco.blogspot.com/2025/10/testing-mocks.html - Testing mocks
+- https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html - Testing queues and batch jobs
+
+## Chapter 7 - Migrations with AI
+
+No additional external references.
+
+## Chapter 8 - Non-Obvious Use Cases
+
+### Ownership and Team Management
+- https://diego-pacheco.blogspot.com/2021/01/team-erosion.html - Team erosion
+- https://diego-pacheco.blogspot.com/2022/06/configuration-ownership.html - Configuration ownership
+- https://diego-pacheco.blogspot.com/2020/03/borrowing-and-ownership-in-rust.html - Rust ownership concepts
+- https://diego-pacheco.blogspot.com/2023/09/tagging-everything.html - Tagging resources
+- https://diego-pacheco.blogspot.com/2020/08/shared-libraries-trap.html - Shared libraries trap
+
 ## Chapter 9 - Learning from AI
 
 ### AI Hallucination Research

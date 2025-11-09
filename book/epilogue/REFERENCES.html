@@ -384,6 +384,35 @@
 <li><a href="https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html">Spec Driven Development - Martin Fowler</a></li>
 <li><a href="https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html">Testing Queues and Batch Jobs - Diego Pacheco</a></li>
 </ul>
+<h2 id="chapter-6---testing-with-ai"><a class="header" href="#chapter-6---testing-with-ai">Chapter 6 - Testing with AI</a></h2>
+<h3 id="testing-frameworks-and-tools"><a class="header" href="#testing-frameworks-and-tools">Testing Frameworks and Tools</a></h3>
+<ul>
+<li>https://fakerjs.dev/ - Faker.js library for test data generation</li>
+<li>https://junit.org/ - JUnit testing framework for Java</li>
+<li>https://jestjs.io/ - Jest JavaScript testing framework</li>
+<li>https://playwright.dev/ - Playwright end-to-end testing framework</li>
+<li>https://k6.io/ - K6 load testing framework</li>
+<li>https://www.cypress.io/ - Cypress end-to-end testing framework</li>
+<li>https://www.selenium.dev/ - Selenium browser automation framework</li>
+<li>https://gatling.io/ - Gatling load testing framework</li>
+</ul>
+<h3 id="testing-blog-posts"><a class="header" href="#testing-blog-posts">Testing Blog Posts</a></h3>
+<ul>
+<li>https://diego-pacheco.blogspot.com/2021/02/synthetic-data-generation-and-java-faker.html - Synthetic data generation</li>
+<li>https://diego-pacheco.blogspot.com/2025/10/testing-mocks.html - Testing mocks</li>
+<li>https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html - Testing queues and batch jobs</li>
+</ul>
+<h2 id="chapter-7---migrations-with-ai"><a class="header" href="#chapter-7---migrations-with-ai">Chapter 7 - Migrations with AI</a></h2>
+<p>No additional external references.</p>
+<h2 id="chapter-8---non-obvious-use-cases"><a class="header" href="#chapter-8---non-obvious-use-cases">Chapter 8 - Non-Obvious Use Cases</a></h2>
+<h3 id="ownership-and-team-management"><a class="header" href="#ownership-and-team-management">Ownership and Team Management</a></h3>
+<ul>
+<li>https://diego-pacheco.blogspot.com/2021/01/team-erosion.html - Team erosion</li>
+<li>https://diego-pacheco.blogspot.com/2022/06/configuration-ownership.html - Configuration ownership</li>
+<li>https://diego-pacheco.blogspot.com/2020/03/borrowing-and-ownership-in-rust.html - Rust ownership concepts</li>
+<li>https://diego-pacheco.blogspot.com/2023/09/tagging-everything.html - Tagging resources</li>
+<li>https://diego-pacheco.blogspot.com/2020/08/shared-libraries-trap.html - Shared libraries trap</li>
+</ul>
 <h2 id="chapter-9---learning-from-ai"><a class="header" href="#chapter-9---learning-from-ai">Chapter 9 - Learning from AI</a></h2>
 <h3 id="ai-hallucination-research"><a class="header" href="#ai-hallucination-research">AI Hallucination Research</a></h3>
 <ul>
@@ -470,22 +499,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

@@ -56,6 +56,12 @@ Model developed by Google that can generate high-quality audio samples from text
 **Autonomous Driving**
 Application area for reinforcement learning in self-driving vehicles.
 
+**Automated Testing**
+Practice of using software to test software automatically, replacing manual testing.
+
+**Attack Vector**
+Potential security vulnerability pathway that could be exploited by malicious actors, especially relevant for MCP security.
+
 ## B
 
 **Bash Orchestration**
@@ -73,10 +79,16 @@ Automated compilation and deployment process that can be monitored and optimized
 **Bash Mode**
 A Claude Code feature enabling direct bash command execution for system operations, also known as Interactive Mode.
 
+**bump-version.sh**
+Script used to increment version numbers in the book publication process.
+
 ## C
 
 **Caching**
 Agent pattern for storing and reusing frequently accessed data or results to improve performance and reduce redundant processing.
+
+**cargo**
+Rust's package manager and build tool, used to install mdbook.
 
 **Catastrophic Forgetting**
 Challenge in fine-tuning where a model loses previously learned knowledge when adapting to new tasks.
@@ -126,6 +138,9 @@ A phenomenon where an observer unconsciously gives cues to a subject, leading to
 **Clustering**
 A Traditional AI/ML unsupervised learning task involving grouping similar data points together without predefined labels.
 
+**CI/CD (Continuous Integration/Continuous Deployment)**
+Automated software development practices for building, testing, and deploying code.
+
 **Code Review**
 Critical process of examining AI-generated or any code for correctness, security, and alignment with requirements before deployment. Essential when using AI.
 
@@ -137,6 +152,15 @@ AI agents specifically designed or trained to generate, modify, and work with so
 
 **Coding Dojo**
 Practice environment where engineers work without AI using TDD, forcing manual skill development and maintaining proficiency.
+
+**Configuration Ownership**
+Responsibility for maintaining and managing configuration files and settings.
+
+**Container Registry**
+Repository for storing and distributing container images, important for secure MCP usage.
+
+**Contrarian Feedback**
+Learning technique where AI challenges your thinking to identify weaknesses.
 
 **Context Engineering**
 Modern term focusing on providing the right context to LLMs to get the best possible response, replacing the older term "prompt engineering".
@@ -152,6 +176,12 @@ Critical business logic and intellectual property that should never be created t
 
 **Cosine Similarity**
 Similarity measure used to compare embeddings based on the cosine of the angle between vectors.
+
+**Critical Thinking**
+Ability to analyze information objectively and make reasoned judgments, essential when using AI.
+
+**Cypress**
+End-to-end testing framework for web applications, can be used with AI to generate automated tests.
 
 **Custom Agents**
 Agents specifically built or configured for particular use cases or organizations, stored in ~/.claude/agents/ directory.
@@ -176,6 +206,9 @@ Technique for troubleshooting code issues by providing AI with visual representa
 **Decision Criteria**
 Framework for determining when and how to use AI effectively in different scenarios.
 
+**Devil's Advocate**
+Critical thinking approach where AI challenges assumptions and arguments to identify weaknesses.
+
 **Determinism**
 Property of producing identical outputs for identical inputs, which AI lacks due to its probabilistic nature.
 
@@ -199,6 +232,9 @@ Technique used in fine-tuning to prevent overfitting by stopping training before
 **ElevenLabs**
 Company providing APIs to generate high-quality speech from text using advanced neural network models.
 
+**End-to-End Tests**
+Tests that validate entire application workflows from user perspective.
+
 **Embeddings**
 Numerical vector representations of text, images, or other data that capture semantic meaning. Essential for RAG and vector databases. Can represent words, sentences, or entire documents.
 
@@ -219,6 +255,9 @@ Commercial MCP scanning security solution for analyzing MCP servers.
 
 ## F
 
+**faker.js**
+JavaScript library for generating realistic test data, used in integration testing to create mock data for various scenarios.
+
 **Few-Shot Examples**
 Training technique providing examples to help models perform tasks better without extensive retraining.
 
@@ -232,6 +271,9 @@ Process of training a pre-trained model on specific domain data to adapt it to p
 
 **GANs (Generative Adversarial Networks)**
 Neural network architecture used in image generation models like DALL-E.
+
+**Gatling**
+Stress testing and load testing framework for performance evaluation.
 
 **Gaussian Mixture Models**
 Clustering algorithm that assumes data points are generated from a mixture of Gaussian distributions.
@@ -251,8 +293,14 @@ AI systems that can generate new content, including text, code, images, and othe
 **Git Archaeology for Troubleshooting**
 Technique using git history to understand code evolution and diagnose issues.
 
+**GitHub Actions**
+CI/CD automation platform used for workflow automation, including book publishing.
+
 **GitHub Copilot**
 One of the first coding agents, integrated into VSCode and other IDEs, supporting multiple LLM models.
+
+**GitHub Pages**
+Static site hosting service used to publish websites and books online.
 
 **Google Jules**
 Web sandbox coding agent by Google backed by Gemini LLM models.
@@ -309,6 +357,15 @@ Process of adjusting parameters in fine-tuning to optimize model performance.
 **IDE-based Agents**
 AI coding assistants integrated into development environments like VSCode.
 
+**Idempotent**
+Operations that produce the same result regardless of how many times they are executed, easier to test.
+
+**Integration Tests**
+Tests that verify how different components work together, requiring test data and infrastructure setup.
+
+**Internal Shared Libraries**
+Reusable code libraries shared across projects within an organization, often problematic for ownership.
+
 **Image Generation**
 Generative AI capability for creating visual content from text descriptions or other inputs.
 
@@ -318,10 +375,30 @@ Claude Code feature enabling direct bash command execution, also known as Bash M
 **Inventory (Migrations)**
 Process of cataloging and assessing existing systems, code, and infrastructure before planning migrations.
 
+## J
+
+**Jenkins**
+Automation server for CI/CD pipelines, mentioned as tech asset requiring ownership.
+
+**Jest**
+JavaScript testing framework.
+
+**JetBrains**
+Company producing IDEs like IntelliJ IDEA that integrate with AI coding assistants.
+
+**JUnit**
+Java testing framework.
+
 ## K
 
 **K-Means Clustering**
 Popular clustering algorithm that partitions data into k clusters by minimizing variance within each cluster.
+
+**K6**
+Load testing framework for performance evaluation.
+
+**Kubernetes**
+Container orchestration platform, mentioned in troubleshooting and ownership contexts.
 
 **Kiro**
 AWS coding agent, a fork of VSCode implementing Spec Driven Development approach.
@@ -362,6 +439,12 @@ Standard protocol that MCP is compared to for understanding its architecture and
 Concept by Cory Doctorow describing LLMs as fundamentally random/probabilistic systems predicting next tokens, not deterministic reasoning engines.
 
 ## M
+
+**Markdown**
+Lightweight markup language used to write documentation and book content.
+
+**mdbook**
+A Rust-based tool for creating books from markdown files, featuring built-in search, unique URLs per page, and syntax highlighting for code snippets.
 
 **Make-A-Track**
 Meta's model that generates music tracks from text descriptions.
@@ -408,10 +491,19 @@ Concept that AI amplifies existing abilities: good engineers become better with 
 **MoCoGAN**
 Model that separates motion and content to generate videos with coherent motion.
 
+**Mocks**
+Test objects that verify interactions and method calls during testing.
+
 **Model**
 In reinforcement learning, a representation of the environment that the agent uses to predict the next state and reward.
 
 ## N
+
+**Non-idempotent**
+Operations that produce different results when executed multiple times, requiring special testing setup.
+
+**npm**
+Node.js package manager, mentioned in bash mode execution.
 
 **Natural Language Processing (NLP)**
 Field revolutionized by the Transformer architecture for processing and understanding human language.
@@ -427,6 +519,9 @@ Company that provides LLM models and coding agents.
 **OpenCode**
 Open source coding agent that works with multiple LLM models.
 
+**OpenAPI**
+API documentation specification format that AI coding agents can read to generate tests and understand API structure.
+
 **Orchestration**
 Agent pattern for coordinating multiple AI operations or tools in sequence or parallel.
 
@@ -441,8 +536,17 @@ Dimensionality reduction technique that identifies principal components explaini
 **pgvector**
 PostgreSQL extension for vector database functionality.
 
+**PII (Personally Identifiable Information)**
+Sensitive personal data that should be excluded from AI processing for privacy and security.
+
 **Pinecone**
 Vector database for storing and querying embeddings.
+
+**Playwright**
+End-to-end testing framework for web applications.
+
+**podman**
+Container management tool, mentioned as docker-compose alternative.
 
 **Policy**
 In reinforcement learning, a strategy or rule that the agent uses to make decisions.
@@ -452,6 +556,9 @@ MCP server for reading data from PostgreSQL database tables in plain English.
 
 **Precision and Reproducibility**
 Challenge with AI systems: inability to guarantee identical outputs for identical inputs due to probabilistic nature.
+
+**Private Teacher**
+AI acting as personalized instructor providing tailored learning experiences.
 
 **Pre-trained Model**
 Model that has already acquired knowledge during initial training phase, used as starting point for fine-tuning.
@@ -479,6 +586,9 @@ Technique combining document retrieval with LLM generation, allowing AI to cite 
 **Random Forest**
 Ensemble learning method using multiple decision trees for classification and regression.
 
+**Regression Tests**
+Tests ensuring existing functionality still works after changes.
+
 **Randomness in AI**
 Inherent probabilistic nature of LLMs making outputs non-deterministic even with identical inputs.
 
@@ -497,6 +607,9 @@ Using AI as input/research tool while maintaining human judgment, code review, a
 **Retrieval Phase**
 Second phase in RAG pattern where queries are converted to embeddings to search vector database for relevant documents.
 
+**Role Playing**
+AI capability to assume different personas (architect, security expert, marketing specialist, etc.) to provide varied perspectives.
+
 **Reward**
 In reinforcement learning, a scalar feedback signal that indicates how well the agent is doing.
 
@@ -506,16 +619,25 @@ Application area for reinforcement learning.
 **Routing**
 Agent pattern for directing requests to appropriate services or models based on content or conditions.
 
+**Rust**
+Systems programming language used for mdbook and mentioned in migration contexts.
+
 ## S
 
 **Sandbox-Based Agents**
 AI coding agents that operate in isolated environments separate from user's machine for security.
+
+**Sandboxing**
+Running code in isolated environments for security, though noted as poor developer experience.
 
 **SDD (Spec Driven Development)**
 Development approach implemented by AWS Kiro where specifications drive implementation.
 
 **Security and MCPs**
 Considerations for safely integrating external tools and protocols with AI systems to prevent unauthorized access or malicious operations.
+
+**Selenium**
+Browser automation framework used for testing web applications.
 
 **Self-Attention Mechanism**
 Key innovation of Transformers that allows models to weigh the importance of different words in a sentence relative to each other.
@@ -528,6 +650,9 @@ Analyzing emotional tone and intent in text, applicable to emails, customer feed
 
 **Slack MCP**
 MCP server for sending messages to Slack teams.
+
+**Socratic Interrogation**
+AI teaching technique where AI asks increasingly deeper questions instead of providing answers, forcing self-discovery.
 
 **Solutions vs Wrappers**
 Philosophy distinguishing genuine innovations from superficial API wrappers. Many AI startups are wrappers rather than true solutions.
@@ -544,8 +669,14 @@ Clustering algorithm using eigenvalues of similarity matrix to reduce dimensiona
 **Splitting**
 Agent pattern for dividing large tasks or data into smaller manageable pieces for processing.
 
+**SQS (Simple Queue Service)**
+AWS message queue service, mentioned as infrastructure requiring ownership.
+
 **Stable Diffusion**
 Open-source model by Stability AI for generating images from text descriptions using diffusion process.
+
+**Stubs**
+Test doubles that provide predefined responses to method calls during testing.
 
 **Stability AI**
 Company that developed Stable Diffusion image generation model.
@@ -565,8 +696,14 @@ Machine learning paradigm where models learn from labeled training data to make 
 **Support Vector Machines (SVM)**
 Machine learning algorithm for classification and regression using hyperplanes to separate data.
 
+**Swagger**
+API documentation specification format, also known as OpenAPI.
+
 **SWE-bench**
 Software engineering benchmark for evaluating AI coding capabilities.
+
+**Synthetic Data Generation**
+Creating artificial but realistic test data for testing purposes.
 
 **System Prompt**
 Instructions defining how an AI model should behave and respond to user inputs. Sets the behavior and style of the LLM.
@@ -576,8 +713,23 @@ Instructions defining how an AI model should behave and respond to user inputs. 
 **t-SNE (t-Distributed Stochastic Neighbor Embedding)**
 Dimensionality reduction technique particularly effective for visualizing high-dimensional data in 2D or 3D.
 
+**Tagging**
+Practice of labeling resources and assets for organization and ownership tracking.
+
 **TDD (Test-Driven Development)**
 Development methodology writing tests before implementation to ensure code quality.
+
+**Team Erosion**
+Phenomenon where team knowledge degrades over time as people leave, leading to orphaned tech assets.
+
+**Technical Debt**
+Accumulated shortcuts and suboptimal solutions in codebases that make migrations and maintenance more difficult.
+
+**Terraform**
+Infrastructure as code tool, mentioned as tech asset requiring ownership tracking.
+
+**Test Doubles**
+Generic term for objects used in testing to replace real dependencies (includes stubs, mocks, fakes).
 
 **Technical Debt**
 Accumulated shortcuts and suboptimal solutions in codebases that make migrations and maintenance more difficult.
@@ -587,6 +739,9 @@ Proper testing infrastructure setup for comprehensive test coverage.
 
 **Testing**
 Creating test coverage as prerequisite for migrations and code changes.
+
+**Testing Interfaces**
+Custom APIs created specifically to expose and manipulate application state for testing purposes.
 
 **Text Generation**
 Generative AI capability for creating written content from prompts or other inputs. LLMs process system and user prompts to generate responses.
@@ -631,7 +786,7 @@ The actual input from the user that the LLM responds to, processed along with sy
 
 ## V
 
-**Value Function**
+**VALUE Function**
 In reinforcement learning, function estimating how beneficial it is for an agent to be in a given state.
 
 **Vector Databases**
@@ -639,6 +794,9 @@ Specialized databases storing and querying embeddings efficiently, essential inf
 
 **Vending (Vetting + Defending)**
 Security practice of thoroughly checking MCP servers before use, combining vetting and defending.
+
+**VERSION File**
+File tracking the current version number of the book.
 
 **Vibe Coding**
 A practice coined by Andrej Karpathy where developers generate prompts and do not look at the generated code, assuming AI will handle everything correctly. The book argues this is a bad practice for serious software engineering, especially for core business logic.
@@ -657,6 +815,9 @@ Large Language Model for zero-shot video generation.
 
 **VQ-VAE-2**
 Hierarchical model using vector quantization to generate high-quality videos.
+
+**VSCode (Visual Studio Code)**
+Microsoft's development environment and IDE, frequently forked and extended for coding agents like GitHub Copilot and AWS Kiro.
 
 ## W
 
