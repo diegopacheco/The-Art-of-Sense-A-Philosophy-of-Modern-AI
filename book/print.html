@@ -360,6 +360,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li><a href="./chapter-8/TROUBLESHOOTING.html">Troubleshooting</a></li>
 <li><a href="./chapter-8/DOCUMENTATION.html">Documentation</a></li>
 <li><a href="./chapter-8/ONBOARDING.html">Onboarding</a></li>
+<li><a href="./chapter-8/OWNERSHIP.html">Ownership</a></li>
 </ul>
 </li>
 <li>
@@ -1832,6 +1833,10 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <li>Should be closely managed; otherwise, it has a chance of being a disaster</li>
 </ul>
 <p>Now AI enters the field. Using AI, we can make this much better because now the engineer can use AI as a private tutor. If the engineer knows how to ask the right questions, they can learn much faster.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ownership"><a class="header" href="#ownership">Ownership</a></h1>
+<p>People see ownerhip in a very narrow way. For the backend team, ownership is the backend code, for the frontend team owneship is the froentend code. Such views are limiting and lead to suboptimal outcomes and big trouble.</p>
+<p>Lack of ownership is a big problem at scale, due the <a href="https://diego-pacheco.blogspot.com/2021/01/team-erosion.html">Team Erosion</a> fenomena. Ownership is not just about direct code, but also database schemns, infrastructe like SQS queues, Lambda functions, Terraform scripts,<a href="https://diego-pacheco.blogspot.com/2022/06/configuration-ownership.html">Configuration</a>, Jenkins jobs, dashboards, alerts, runbooks, wikipages and many other tech assets. Owenership matters so much that are languages build around such concepts like <a href="https://diego-pacheco.blogspot.com/2020/03/borrowing-and-ownership-in-rust.html">Rust</a>. Usually teams lost track on what they have, people come and go, them you have a lot of "alien orphan" assets that no boddy mantains. <a href="https://diego-pacheco.blogspot.com/2023/09/tagging-everything.html">Tags</a> can help. But AI can help even more. AI can scan git repositories and suggest most likely probable owners based on commit history, code reviews, comments, etc. AI can also help identify orphan assets and suggest potential owners based on historical data. This way, teams can maintain better ownership and accountability over their tech assets, reducing the risk of team erosion and improving overall system reliability.</p>
+<p><a href="https://diego-pacheco.blogspot.com/2020/08/shared-libraries-trap.html">Internal Shared Libraries</a> are always a big problem, for ownership even more. Now with AI not only we can easily <code>find owners</code> but we can migreate away from problematic shared technology that has ownersgip issues.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-9---learning-from-ai"><a class="header" href="#chapter-9---learning-from-ai">Chapter 9 - Learning from AI</a></h1>
 <p>AI can be a good teacher. Just keep in mind you better cross-check what the teacher is telling you. A very simple and effective way to cross-check AI is just to ask for links for reference. Then you can go on the internet and read the links and check for yourself if AI is wrong or right.</p>
 <p>LLMs still hallucinate; usually they hallucinate when they don't know the answer, which often means not enough data on the topic in their training set. Evidence:</p>
@@ -3160,22 +3165,6 @@ Complex productionization phase that remains difficult despite AI assistance, re
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
