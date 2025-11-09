@@ -92,6 +92,7 @@
   - [Proof of Concepts (Poc)](./chapter-9/POCS.md)
   - [Role Playing](./chapter-9/ROLE_PLAYING.md)
   - [Sentiment Analysis](./chapter-9/SENTIMENT_ANALYSIS.md)
+  - [Critical Thinking](./chapter-9/CRITICAL_THINKING.md)
   
 # Epilogue
 
