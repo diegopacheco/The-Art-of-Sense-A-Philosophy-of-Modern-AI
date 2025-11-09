@@ -140,6 +140,8 @@ Hire, develop, retain, and truly grow talent at scale
   - [Why use AI for Testing?](./chapter-6/WHY.md)
   - [AI to Help with Testing](./chapter-6/AI_TESTING.md)
   - [Manual Testing](./chapter-6/MANUAL_TESTING.md)
+  - [Data Generation](./chapter-6/DATA_GEN.md)
+  - [Stress Testing](./chapter-6/STRESS_TESTING.md)
 
 ### Part III
 - [Chapter 7 - Migrations with AI](./chapter-7/README.md)
