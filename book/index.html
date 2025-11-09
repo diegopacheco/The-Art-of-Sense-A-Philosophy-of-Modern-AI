@@ -367,6 +367,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <ul>
 <li><a href="./chapter-9/IDEAS.html">Ideas</a></li>
 <li><a href="./chapter-9/POCS.html">Proof of Concepts (Poc)</a></li>
+<li><a href="./chapter-9/ROLE_PLAYING.html">Role Playing</a></li>
 <li><a href="./chapter-9/SENTIMENT_ANALYSIS.html">Sentiment Analysis</a></li>
 </ul>
 </li>
@@ -403,22 +404,6 @@ Hire, develop, retain, and truly grow talent at scale</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
