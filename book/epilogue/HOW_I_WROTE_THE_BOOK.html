@@ -250,9 +250,9 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 - Make sure all content is there
 - Make sure you did not delete anything wrongly
 </code></pre>
-<p>Running this custom command uses on avg ~70k tokens. So I use AI for the boring and repetitive tasks, not to write the book itself. When I run out of tokens on Claude Code, I would fall back to GitHub Copilot.</p>
+<p>Running this custom command uses on avg ~70k tokens. So I use AI for the boring and repetitive tasks, not to write the book itself. When I run out of tokens on Claude Code, I would fall back to GitHub Copilot. For this book I tried <a href="https://github.com/features/copilot/cli">copilot cli</a> as a fallback to claude code when I run out of tokens. It mostely worked but created some bugs like made the pages flat, losing the folder structure. So I had to fix that manually.</p>
 <h2 id="cicd"><a class="header" href="#cicd">CI/CD</a></h2>
-<p>This book was written with CI/CD in mind from day one. I have a script called <code>bump-version.sh</code> that bumps the version of the book in a file at the root called "VERSION". When I released the book, it had ~145 pages on version <code>1.0.0</code>. More to come.</p>
+<p>This book was written with CI/CD in mind from day one. I have a script called <code>bump-version.sh</code> that bumps the version of the book in a file at the root called "VERSION". When I released the book, it had <code>~160 pages</code> on version <code>1.0.0</code>, took me <code>13 days</code> to them written. More to come.</p>
 <p>This is a killer feature because I can keep releasing new content in a very lean/agile way, directly to you the reader.</p>
 <h2 id="did-you-like-my-work-did-it-help-you"><a class="header" href="#did-you-like-my-work-did-it-help-you">Did you like my work? Did it help you?</a></h2>
 <p>If you like my work, you can help me by buying one of my other books here:</p>
@@ -292,22 +292,6 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

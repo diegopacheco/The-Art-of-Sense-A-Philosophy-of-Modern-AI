@@ -72,11 +72,11 @@ book-all.md
 - Make sure you did not delete anything wrongly
 ```
 
-Running this custom command uses on avg ~70k tokens. So I use AI for the boring and repetitive tasks, not to write the book itself. When I run out of tokens on Claude Code, I would fall back to GitHub Copilot.
+Running this custom command uses on avg ~70k tokens. So I use AI for the boring and repetitive tasks, not to write the book itself. When I run out of tokens on Claude Code, I would fall back to GitHub Copilot. For this book I tried [copilot cli](https://github.com/features/copilot/cli) as a fallback to claude code when I run out of tokens. It mostely worked but created some bugs like made the pages flat, losing the folder structure. So I had to fix that manually.
 
 ## CI/CD
 
-This book was written with CI/CD in mind from day one. I have a script called `bump-version.sh` that bumps the version of the book in a file at the root called "VERSION". When I released the book, it had ~145 pages on version `1.0.0`. More to come.
+This book was written with CI/CD in mind from day one. I have a script called `bump-version.sh` that bumps the version of the book in a file at the root called "VERSION". When I released the book, it had `~160 pages` on version `1.0.0`, took me `13 days` to them written. More to come.
 
 This is a killer feature because I can keep releasing new content in a very lean/agile way, directly to you the reader.
 
