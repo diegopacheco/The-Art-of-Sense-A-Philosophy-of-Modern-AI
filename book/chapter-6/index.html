@@ -184,7 +184,7 @@
 <p><a href="https://diego-pacheco.blogspot.com/2020/02/going-faster-with-testing.html">Testing</a> matters more than ever with AI. Because AI hallucinates and eventually will mess up your existing code, and will stop working, so when will you catch that? Hopefully before your users do. Because AI is not 100% predictable and has precision issues, you must have tests to compensate for that. Some tests are <a href="https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html">harder</a> than orders but we will need to have them, in different shapes and forms.</p>
 <p>Otherwise, AI will break your code; it's just a matter of time, it will happen.You <a href="https://diego-pacheco.blogspot.com/2023/08/embedded-mocks-and-hidden-contracts.html">mocks might fool you</a>, but you will discover in production, maybe not the best way possible. As long as you have good <a href="https://diego-pacheco.blogspot.com/2021/06/my-2-cents-on-on-diverse-and.html">testing diversity</a> and decent coverage, you will be fine because tests are the <a href="https://diego-pacheco.blogspot.com/2020/08/hardening-prodution.html">ultimate guardrails</a> for AI.</p>
 <p>So before AI, 100% tests sounded crazy, but now it is actually a must-have. Otherwise, AI will introduce a lot of P0 bugs more often than you can imagine. Before we do any other more advanced use case for coding agents using AI, we need to get more tests and get good and reliable tests in place.</p>
-<p>Testing it's a spectrum. You test left and you test right(yes you <a href="https://diego-pacheco.blogspot.com/2021/02/testing-in-production.html">test in production</a> too). We do <a href="https://diego-pacheco.blogspot.com/2020/07/assertj.html">assertions</a>, <a href="https://diego-pacheco.blogspot.com/2020/08/property-based-testing-with-jsverify.html">property-based testing</a>, we tests all languages including lowe level ones <a href="https://diego-pacheco.blogspot.com/2018/05/c-unit-testing-with-check.html">like C</a>, we should test DevOps <a href="https://diego-pacheco.blogspot.com/2020/03/infrastructure-testing-for-terraform.html">Terraform</a> too, tests on the <a href="https://diego-pacheco.blogspot.com/2020/08/snapshot-testing-with-jest.html">frontend</a>, test <a href="https://diego-pacheco.blogspot.com/2021/04/testing-aws-lambdas-with-java.html">lambdas</a>, we test things that talk to <a href="https://diego-pacheco.blogspot.com/2018/04/mocking-and-testing-aws-apis-with.html">AWS too</a>, even hard things like <a href="https://diego-pacheco.blogspot.com/2020/08/testing-impossible-with-powermock.html">static/final are tested</a>, we <a href="https://diego-pacheco.blogspot.com/2020/08/java-mutation-testing-with-pitest.html">test our own tests</a>, test rest <a href="https://diego-pacheco.blogspot.com/2021/01/tests-with-spring-boot-mockmvc.html">apis</a>, we <a href="https://diego-pacheco.blogspot.com/2021/04/mock-server.html">mock what we need</a>,now I think my point is clear, test all the things, there is no such things as too many tests anymore.</p>
+<p>Testing it's a spectrum. You test left and you test right(yes you <a href="https://diego-pacheco.blogspot.com/2021/02/testing-in-production.html">test in production</a> too). We do <a href="https://diego-pacheco.blogspot.com/2020/07/assertj.html">assertions</a>, <a href="https://diego-pacheco.blogspot.com/2020/08/property-based-testing-with-jsverify.html">property-based testing</a>, we tests all languages including lowe level ones <a href="https://diego-pacheco.blogspot.com/2018/05/c-unit-testing-with-check.html">like C</a>, we should test DevOps <a href="https://diego-pacheco.blogspot.com/2020/03/infrastructure-testing-for-terraform.html">Terraform</a> too, tests on the <a href="https://diego-pacheco.blogspot.com/2020/08/snapshot-testing-with-jest.html">frontend</a>, <a href="https://diego-pacheco.blogspot.com/2014/10/soa-contract-testing.html">contract-based testing</a>, test <a href="https://diego-pacheco.blogspot.com/2021/04/testing-aws-lambdas-with-java.html">lambdas</a>, we test things that talk to <a href="https://diego-pacheco.blogspot.com/2018/04/mocking-and-testing-aws-apis-with.html">AWS too</a>, even hard things like <a href="https://diego-pacheco.blogspot.com/2020/08/testing-impossible-with-powermock.html">static/final are tested</a>, we <a href="https://diego-pacheco.blogspot.com/2020/08/java-mutation-testing-with-pitest.html">test our own tests</a>, test rest <a href="https://diego-pacheco.blogspot.com/2021/01/tests-with-spring-boot-mockmvc.html">apis</a>, we <a href="https://diego-pacheco.blogspot.com/2021/04/mock-server.html">mock what we need</a>,now I think my point is clear, test all the things, there is no such things as too many tests anymore.</p>
 
                     </main>
 
@@ -215,22 +215,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
