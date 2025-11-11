@@ -185,7 +185,7 @@
 <p>You can't use AI for all things, all the time. Because your over-dependency on AI is like a virus or a disease. Everything we do in life without balance is bad.</p>
 <p>We should not be afraid of AI, we should not ignore AI. But if we don't have <code>non-AI time</code> we are making ourselves dumber. In that sense we need to make the right cycle. The right cycle will be use AI but also make time without AI.</p>
 <h2 id="from-hunters-to-gatherers"><a class="header" href="#from-hunters-to-gatherers">From Hunters to Gatherers</a></h2>
-<p>In the past, we we're hunters; we had to work hard to get food. Such bad times taught us and made us stronger. Now it's so easy to get food, it's so easy to get everything delivered to your home without any effort. AI is like that, it's effortless, it's frictionless—you want it? You got it.</p>
+<p>In the past, we were hunters; we had to work hard to get food. Such bad times taught us and made us stronger. Now it's so easy to get food, it's so easy to get everything delivered to your home without any effort. AI is like that, it's effortless, it's frictionless—you want it? You got it.</p>
 <p>Now you need to think about this: you need time without AI. Why? Because you also need to be yourself. If you do all the things that someone says and you don't have a voice anymore, you are in trouble.</p>
 <h2 id="from-mirror-to-ownership"><a class="header" href="#from-mirror-to-ownership">From Mirror to Ownership</a></h2>
 <p>Someone smart knows what to use AI for, and what not to use AI for. For instance, you can use AI all day long, or not use it at all. You must remember that the <code>ownership</code> is yours. It doesn't matter if you use all or nothing from AI, it's your responsibility to own the results. Meaning you need to review the code, you need to change it, you need to critique it, you need to make it yours.</p>
@@ -221,6 +221,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

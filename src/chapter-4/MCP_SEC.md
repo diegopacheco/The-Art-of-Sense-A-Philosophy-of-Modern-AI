@@ -13,7 +13,7 @@ MCP Requires some guardrails. Here are some ideas:
 * Scan MCPs for vulnerabilities before using them.
 * Use MCPs in isolated environments. Like sandboxes or containers.
 
-## Threating MCP as a BOMB
+## Treating MCP as a BOMB
 
 Andrew Zigler has this amazing blog post: [Treating MCP servers like bombs](https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs) which is spot on. This is one way of dealing with MCPs. Imagine someone or some automated process goes and checks out an MCP in an isolated environment, runs some tests on it, and then decides if it's safe to use or not.
 

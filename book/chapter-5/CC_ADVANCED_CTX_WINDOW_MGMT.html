@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Inventory - The Art of Sense: A Philosophy of Modern AI</title>
+        <title>Advanced Context Window Management - The Art of Sense: A Philosophy of Modern AI</title>
 
 
         <!-- Custom HTML head -->
@@ -180,19 +180,24 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="inventory"><a class="header" href="#inventory">Inventory</a></h1>
-<p>Inventory is the first step; we need to perform assessments to know what we are dealing with. Usually inventories are ignored and that is a big mistake.</p>
-<p>An inventory allows us to plan and strategize our next steps. Considering the advent of AI agents, now it's much easier to generate inventories.</p>
+                        <h1 id="advanced-context-window-management"><a class="header" href="#advanced-context-window-management">Advanced Context Window Management</a></h1>
+<p>Claude code does a great job managing the context window. Claude code is not just a wrapper on the top of a LLM API but is also a blend between Generative AI and Engineering. Here is how Claude code manages the context window in an advanced way.</p>
+<img src="../images/05-cc-advanced-context-window-sub-agents.png" width="600"/>
+<p>Right now Claude code has the limit of 200k tokens. Before this gets more confusing we need to make the difference between 2 kinds of tokens: payable tokens and context window tokens. If you are in a subscription based plan you have a limit of tokens before you have some "cool down" period. If you use a paid API plan, you do not have such limit because you pay per token so these are payable tokens.</p>
+<p>Now there is a different kind of token, which is the context window tokens. Context window tokens, no matter if you are in a flat fee subscription or API plan, you will have a limit of 200k context window tokens. If you look at the image on the top I can explain some advanced magic Claude code is doing.</p>
+<p>First we need to understand how the context window works, for all inputs and output tokens that is the conversation, it's always consuming context window tokens. So the more questions you ask and the more answers you get, the more you are using of your context window. Eventually you will run out of context window tokens, then Claude will run a <code>compact</code> or <code>clean</code>.</p>
+<p><code>/compact</code> will summarize the context window and reduce the space used on the context window. You can see how the context window is looking with the <code>/context</code> command. If that is not enough, Claude will issue a <code>clean</code> which will clean the conversation history freeing up more context window tokens. You can run these commands anytime you want. You can also run the command <code>/export</code> anytime you want which will export the conversation to a file. This is useful because you can use the file for future prompts, as history, or as a base for new conversations.</p>
+<p>So Claude code does a great job managing context window tokens for you. There is one more trick, which is the advent of <a href="https://code.claude.com/docs/en/sub-agents">Claude code sub-agents</a>. The beauty of the sub-agents is twofold. First, each sub-agent has its own context window of 200k tokens. So if you have multiple sub-agents working for you, each one has its own context window. This is very useful because you can have different sub-agents working on different tasks without interfering with each other. Sub-agents do not use the parent context window tokens. Second, sub-agents can be spawned and killed at will. Claude can figure out you need a sub-agent for a specific task, will spawn it, use it, and then kill it when you are done. This way you can manage your context window tokens even more efficiently.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../chapter-7/WHY.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../chapter-5/EXCLUSIONS.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../chapter-7/MIGRATIONS_PHASES.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../chapter-5/ULTRATHINK.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -202,11 +207,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../chapter-7/WHY.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../chapter-5/EXCLUSIONS.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../chapter-7/MIGRATIONS_PHASES.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../chapter-5/ULTRATHINK.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

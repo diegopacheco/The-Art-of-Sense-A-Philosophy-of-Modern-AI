@@ -322,6 +322,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li><a href="./chapter-5/CMDS.html">Commands</a></li>
 <li><a href="./chapter-5/BASH_MODE.html">Bash Mode</a></li>
 <li><a href="./chapter-5/EXCLUSIONS.html">Exclusions </a></li>
+<li><a href="./chapter-5/CC_ADVANCED_CTX_WINDOW_MGMT.html">Advanced Context Window Management</a></li>
 <li><a href="./chapter-5/ULTRATHINK.html">ultrathink</a></li>
 <li><a href="./chapter-5/CUSTON_COMMANDS.html">Custom Commands</a></li>
 <li><a href="./chapter-5/CUSTON_AGENTS.html">Custom Agents</a></li>
@@ -385,7 +386,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li><a href="./epilogue/BOOK_INDEX.html">Book Index</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-zero"><a class="header" href="#chapter-zero">Chapter ZERO</a></h1>
-<p>Why I wrote this book?</p>
+<p>Why did I write this book?</p>
 <p>I have been working with AI since 2017. In the summer of 2024, I spent the whole summer going deep and learning about AI. I did <a href="https://github.com/diegopacheco/ai-playground">300+ coding POCs</a>, I read several books, I did several courses. On XMAS of 2024 I made my first migration using LLMs from Kotlin to Scala. In 2025, I tested all <a href="https://github.com/diegopacheco/ai-playground/tree/main/agents">AI coding agents</a> I could, I wrote MCPs, I did several experiments.</p>
 <p>Still in 2025, I wrote my 4th book: Diego Pacheco's Software Architecture Library (<a href="https://diegopacheco.github.io/diegopacheco-architecture-library/introduction.html">SAL</a>) where I used AI to help me with: proofreading, glossary, index and references generation (more details <a href="https://diegopacheco.github.io/diegopacheco-architecture-library/epilogue/HOW_I_WROTE_THE_BOOK.html">here</a>).</p>
 <p>There is so much out there, there are so many tools and people saying many things. This book should be a compass to guide you on your AI journey for engineering.</p>
@@ -507,7 +508,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li>You study the rules of the road</li>
 <li>You practice driving a lot (for years probably)</li>
 </ul>
-<p>Now the effect is that you do that with such efficiency. Now, imagine if you we're driving a car and looking at the manual—literally, you have a thick book with rules, and while driving you check the manual every time:</p>
+<p>Now the effect is that you do that with such efficiency. Now, imagine if you were driving a car and looking at the manual—literally, you have a thick book with rules, and while driving you check the manual every time:</p>
 <ul>
 <li>You need to turn left</li>
 <li>You need to turn right</li>
@@ -515,10 +516,10 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li>You need to check the speed limit</li>
 <li>You need to backup</li>
 </ul>
-<p>You will be such a terrible driver. I don't think anyone drives like this. Because we don't allow anyone to drive—there is a bar. But for engineering there is no bar. Anyone can do anything, even without being close to being qualified. Now I'm not advocating for extreme regulation of engineering. But what I'm saying is: imagine if I tell you that a huge number of programmers code like the driver I described. "Wow, no way Diego, this sucks!" Well, instead of the manual they we're using StackOverflow, and before that forums, and now, guess what? They are using LLMs and AI Agents.</p>
+<p>You will be such a terrible driver. I don't think anyone drives like this. Because we don't allow anyone to drive—there is a bar. But for engineering there is no bar. Anyone can do anything, even without being close to being qualified. Now I'm not advocating for extreme regulation of engineering. But what I'm saying is: imagine if I tell you that a huge number of programmers code like the driver I described. "Wow, no way Diego, this sucks!" Well, instead of the manual they were using StackOverflow, and before that forums, and now, guess what? They are using LLMs and AI Agents.</p>
 <p>We need to have proficiency!</p>
 <h2 id="zero-to-demo-vs-demo-to-production"><a class="header" href="#zero-to-demo-vs-demo-to-production">Zero to Demo vs Demo to Production</a></h2>
-<p>Vibe coding can be very useful for creating a DEMO. However putting software into production it's a whole different game.</p>
+<p>Vibe coding can be very useful for creating a DEMO. However, putting software into production is a whole different game.</p>
 <p>Karpathy explains how he got a DEMO on waymo in 2014 and it was working. He thought it would be quick. More than 11 years later in 2025 Waymo is still not 100% done. Why? Because some tasks are hard and the gap between the demo and production is huge.</p>
 <p>In the video below Andrej Karpathy explains it well:</p>
 <div style="position: relative; width: 100%; padding-bottom: 56.25%">
@@ -528,10 +529,10 @@ Hire, develop, retain, and truly grow talent at scale</p>
     style="position: absolute; width: 100%; height: 100%;">
 </iframe>
 </div>
-<p>Vibe coding can be useful to figure out what we want. Maybe to help non-engineers to figure out what they want, then better write requirements. In a sense vibe coding "democratizes" building and everybody can be a software engineer,, however, to really use what you build with "vibe coding" must be some simple task, some tasks cannot be vibe coded and like I said before is a big mistake. However if it's small enough and you can "build your own tool" why not.</p>
+<p>Vibe coding can be useful to figure out what we want. Maybe to help non-engineers to figure out what they want, then better write requirements. In a sense vibe coding "democratizes" building and everybody can be a software engineer, however, to really use what you build with "vibe coding" must be some simple task, some tasks cannot be vibe coded and like I said before is a big mistake. However if it's small enough and you can "build your own tool" why not.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ai-input"><a class="header" href="#ai-input">AI Input</a></h1>
 <p>People see AI as output. As a way to "Beef Up" engineers. It's not wrong but you can't just use AI and never look at the code, this is a recipe for disaster.</p>
-<p>AI can be a great teacher,, however, we need to always remember the teacher makes mistakes too. <a href="https://diego-pacheco.blogspot.com/2025/09/ai-output.html">Using AI for input</a> is still a great advantage, you preserve the output to be yours.</p>
+<p>AI can be a great teacher, however, we need to always remember the teacher makes mistakes too. <a href="https://diego-pacheco.blogspot.com/2025/09/ai-output.html">Using AI for input</a> is still a great advantage, you preserve the output to be yours.</p>
 <h2 id="a-tale-of-high-school"><a class="header" href="#a-tale-of-high-school">A tale of High School</a></h2>
 <p>When I was in high school. I remember a teacher of mine saying that people would go to google.com and just search for past year class and find the same homework and download a power point presentation and simply change their name on it. Of course this would never work because the teacher was smarter and usually people doing that took ZERO.</p>
 <p>Using AI just for output, "vibe coding" is shutting down your brain, and we are not even close to having AGI. So this is a recipe for disaster. IMHO it's not different than copying someone's homework and just putting your name on it.</p>
@@ -545,7 +546,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <p>You can't use AI for all things, all the time. Because your over-dependency on AI is like a virus or a disease. Everything we do in life without balance is bad.</p>
 <p>We should not be afraid of AI, we should not ignore AI. But if we don't have <code>non-AI time</code> we are making ourselves dumber. In that sense we need to make the right cycle. The right cycle will be use AI but also make time without AI.</p>
 <h2 id="from-hunters-to-gatherers"><a class="header" href="#from-hunters-to-gatherers">From Hunters to Gatherers</a></h2>
-<p>In the past, we we're hunters; we had to work hard to get food. Such bad times taught us and made us stronger. Now it's so easy to get food, it's so easy to get everything delivered to your home without any effort. AI is like that, it's effortless, it's frictionless—you want it? You got it.</p>
+<p>In the past, we were hunters; we had to work hard to get food. Such bad times taught us and made us stronger. Now it's so easy to get food, it's so easy to get everything delivered to your home without any effort. AI is like that, it's effortless, it's frictionless—you want it? You got it.</p>
 <p>Now you need to think about this: you need time without AI. Why? Because you also need to be yourself. If you do all the things that someone says and you don't have a voice anymore, you are in trouble.</p>
 <h2 id="from-mirror-to-ownership"><a class="header" href="#from-mirror-to-ownership">From Mirror to Ownership</a></h2>
 <p>Someone smart knows what to use AI for, and what not to use AI for. For instance, you can use AI all day long, or not use it at all. You must remember that the <code>ownership</code> is yours. It doesn't matter if you use all or nothing from AI, it's your responsibility to own the results. Meaning you need to review the code, you need to change it, you need to critique it, you need to make it yours.</p>
@@ -710,11 +711,11 @@ State: A snapshot of the environment at a given time.
 
 Action: A decision or move made by the agent.
 
-Reward: A scalar feedback signal that indicates how we'll the agent is doing.
+Reward: A scalar feedback signal that indicates how well the agent is doing.
 
 Policy: A strategy or rule that the agent uses to make decisions.
 
-Value Function: A function that estimates how good it's for the agent to be in a given state.
+Value Function: A function that estimates how good it is for the agent to be in a given state.
 
 Model: A representation of the environment that the agent uses to predict the next state and reward.
 </code></pre>
@@ -757,7 +758,7 @@ Model: A representation of the environment that the agent uses to predict the ne
 <img src="chapter-3/../images/03-embeddings.png" alt="Embeddings Illustration" width="600"/>
 <p>By transforming text into numbers LLMs can compare similarities between different pieces of text, using a similarity score based on the distance between their corresponding vectors in the embedding space. Common similarity measures include <a href="https://en.wikipedia.org/wiki/Cosine_similarity">cosine similarity</a> and <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean distance</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="text-generation"><a class="header" href="#text-generation">Text Generation</a></h1>
-<p>LLMs are all about text generation. They generate a text based on a input text which is called "prompt". There is basically 2 prompts an LLM uses:</p>
+<p>LLMs are all about text generation. They generate text based on an input text which is called a "prompt". There are basically 2 prompts an LLM uses:</p>
 <ol>
 <li>
 <p>System Prompt: This is a special prompt that sets the behavior of the LLM. It tells the model how to respond, what style to use, and any specific instructions. For example, a system prompt might instruct the model to respond in a formal tone or to provide concise answers.</p>
@@ -787,7 +788,7 @@ Model: A representation of the environment that the agent uses to predict the ne
 <p>Retrieval Augmented Generation (RAG) is a technique that combines the power of large language models (LLMs) with external knowledge sources to improve the quality and relevance of generated content. There are a couple of reasons why RAG is interesting:</p>
 <ol>
 <li>
-<p>LLMs are not good knowing the latest versions: For instance for a LLM to keep up of a version of software libraries is very hard because they are updated frequently. Using the RAG pattern we can consult a external system our vector database to get the latest information.</p>
+<p>LLMs are not good at knowing the latest versions: For instance, for an LLM to keep up with the version of software libraries is very hard because they are updated frequently. Using the RAG pattern we can consult a external system our vector database to get the latest information.</p>
 </li>
 <li>
 <p>Reducing Cost: Every single input and output token from an LLM costs money. By using RAG we can reduce the amount of tokens we send to the LLM by only sending the relevant parts of a document instead of the entire document, or sending the right information right away so the LLM does not need to generate multiple responses to get to the right answer.</p>
@@ -838,26 +839,26 @@ melodic and rhythmic patterns based on the input text. Make-A-Track can be used 
 <p><strong>Personal Projects</strong>: Individuals can use image generation models for personal projects, such as creating custom artwork, greeting cards, or social media content.</p>
 </li>
 </ol>
-<p>I personally like AI generating images because for open source frameworks and libraries now, they can easily have a nice logo without much effort. Image generation is evolving fast,, however, it's still very common to see many mistakes and weird artifacts in the generated images, so it's not perfect yet. Make sure you pay a lot of attention to the details when using AI generated images.</p>
+<p>I personally like AI generating images because for open source frameworks and libraries now, they can easily have a nice logo without much effort. Image generation is evolving fast, however, it's still very common to see many mistakes and weird artifacts in the generated images, so it's not perfect yet. Make sure you pay a lot of attention to the details when using AI generated images.</p>
 <p>This very <a href="chapter-3/../TAS-cover.png">Book Cover</a> was generated by an AI image generation model!</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="video-generation"><a class="header" href="#video-generation">Video Generation</a></h1>
-<p>Video generation is an exciting area of generative AI that focuses on creating video content using machine learning models. However when we analyze the current state of video generation, we find that it's still in its early stages compared to other forms of generative AI like text and image generation. Text, Sound and Image are in much better shape than video generation. Text being the most advanced.</p>
+<p>Video generation is an exciting area of generative AI that focuses on creating video content using machine learning models. However, when we analyze the current state of video generation, we find that it's still in its early stages compared to other forms of generative AI like text and image generation. Text, Sound and Image are in much better shape than video generation. Text being the most advanced.</p>
 <h2 id="common-approaches-for-video-generation-include"><a class="header" href="#common-approaches-for-video-generation-include">Common approaches for video generation include</a></h2>
 <ul>
 <li><strong>VQ-VAE-2</strong>: <a href="https://arxiv.org/pdf/1906.00446">VQ-VAE-2</a> is a hierarchical model that uses vector quantization to generate high-quality videos.</li>
 <li><strong>MoCoGAN</strong>: <a href="https://github.com/sergeytulyakov/mocogan">MoCoGAN</a> is A model that separates motion and content to generate videos with coherent motion.</li>
 <li><strong>TGANs</strong>: <a href="https://pfnet-research.github.io/tgan/">TGAN</a> Temporal Generative Adversarial Networks that focus on generating videos by modeling temporal dynamics.</li>
 </ul>
-<p>Video Generation still high experimental, I would say is not ready for production use cases yet. The quality of generated videos is often lower than that of images or text, and the models require significant computational resources to train and run.</p>
+<p>Video Generation is still highly experimental, I would say it is not ready for production use cases yet. The quality of generated videos is often lower than that of images or text, and the models require significant computational resources to train and run.</p>
 <h2 id="recent-and-advanced-approaches"><a class="header" href="#recent-and-advanced-approaches">Recent and Advanced Approaches</a></h2>
 <ul>
 <li><a href="https://arxiv.org/abs/2504.16081">Diffusion Models</a> being applied for video generation.</li>
 <li><a href="https://news.mit.edu/2025/causevid-hybrid-ai-model-crafts-smooth-high-quality-videos-in-seconds-0506">Hybrid Approach</a> can generate videos in seconds.</li>
 <li><a href="https://arxiv.org/abs/2312.14125?utm_source=chatgpt.com">VideoPoet</a>: A Large Language Model for Zero-Shot Video Generation</li>
 </ul>
-<p>Open AI <a href="https://openai.com/index/video-generation-models-as-world-simulators/?utm_source=chatgpt.com">SORA's</a> it's the most advanced video generation model available right now.</p>
+<p>OpenAI's <a href="https://openai.com/index/video-generation-models-as-world-simulators/?utm_source=chatgpt.com">SORA</a> is the most advanced video generation model available right now.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="fine-tuning"><a class="header" href="#fine-tuning">Fine Tuning</a></h1>
-<p>Fine-tuning is the process of taking a pre-trained model and adapting it to a specific task or dataset. This approach leverages the knowledge the model has already acquired during its initial training phase, allowing it to perform we'll on new tasks with less data and computational resources.</p>
+<p>Fine-tuning is the process of taking a pre-trained model and adapting it to a specific task or dataset. This approach leverages the knowledge the model has already acquired during its initial training phase, allowing it to perform well on new tasks with less data and computational resources.</p>
 <p>Fine-tuning can improve model performance but it also comes with challenges such as overfitting - which could be reduced with <a href="https://proceedings.mlr.press/v162/ju22a.html?utm_source=chatgpt.com">early stop and other techniques</a>, <a href="https://aclanthology.org/2024.findings-emnlp.249/?utm_source=chatgpt.com">catastrophic forgetting</a>, and the need for careful <a href="https://arxiv.org/abs/2006.04884?utm_source=chatgpt.com">hyperparameter tuning</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-4---agents"><a class="header" href="#chapter-4---agents">Chapter 4 - Agents</a></h1>
 <p><a href="https://aws.amazon.com/what-is/ai-agents/">Agents</a> are not new. I remember coding an agent in university back in the 2000s. However agents are even <a href="https://medium.com/@tasospapalias/sibyls-and-servants-the-roots-of-artificial-intelligence-in-ancient-greek-lore-b28257e98a0a">older than that</a>. Agents are software that respond to change or an event on your behalf, agents can be 100% autonomous or assisted.</p>
@@ -899,7 +900,7 @@ melodic and rhythmic patterns based on the input text. Make-A-Track can be used 
 </tbody></table>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="llmstxt-and-llms-fulltxt"><a class="header" href="#llmstxt-and-llms-fulltxt">llms.txt and llms-full.txt</a></h1>
 <p><a href="https://llmstxt.org/">llms.txt</a> and llms-full.txt are text files (usually with markdown formatting) that contain information about various large language models (LLMs). Such an idea is not new; we had other indexing-related files like <code>robots.txt</code> or <code>sitemap.xml</code>. This is useful for LLM agents when reading websites more effectively.</p>
-<p>I asked Claude Code about about it:</p>
+<p>I asked Claude Code about it:</p>
 <p>Prompt:</p>
 <pre><code>what is llms.txt and llms-full.txt?
 </code></pre>
@@ -992,7 +993,7 @@ These files live at the root (/llms.txt and /llms-full.txt) to help LLMs:
 <li>Scan MCPs for vulnerabilities before using them.</li>
 <li>Use MCPs in isolated environments. Like sandboxes or containers.</li>
 </ul>
-<h2 id="threating-mcp-as-a-bomb"><a class="header" href="#threating-mcp-as-a-bomb">Threating MCP as a BOMB</a></h2>
+<h2 id="treating-mcp-as-a-bomb"><a class="header" href="#treating-mcp-as-a-bomb">Treating MCP as a BOMB</a></h2>
 <p>Andrew Zigler has this amazing blog post: <a href="https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs">Treating MCP servers like bombs</a> which is spot on. This is one way of dealing with MCPs. Imagine someone or some automated process goes and checks out an MCP in an isolated environment, runs some tests on it, and then decides if it's safe to use or not.</p>
 <h2 id="mcp-scanning"><a class="header" href="#mcp-scanning">MCP Scanning</a></h2>
 <p>There are proper MCP Scanning solutions out there. Like <a href="https://evo.ai.snyk.io/">Evo by Snyk</a> or if you want something open source consider <a href="https://github.com/cisco-ai-defense/mcp-scanner">Cisco MCP Scanner</a>.</p>
@@ -1120,7 +1121,7 @@ These files live at the root (/llms.txt and /llms-full.txt) to help LLMs:
 <p>Claude Code has an <code>Interactive Mode</code> which I prefer to call <code>Bash Mode</code>. In this mode, you can interactively issue <a href="https://docs.claude.com/en/docs/claude-code/interactive-mode">bash commands</a> to Claude and Claude will run them in the terminal for you.</p>
 <p>To activate this mode, you just type <code>!</code>, then after that you type whatever bash command you want and then press enter to run.</p>
 <img src="chapter-5/../images/05-cc-bashmode.png" width="600" caption="Claude Code Bash Mode"/>
-<p>You literally can call any program or script that you have available in your terminal. For example, you can do: <code>ps</code>, <code>kill</code>, run <code>npm</code>, run maven <code>mvn</code>, as long as it doesn't need an interactive she'll to run.</p>
+<p>You literally can call any program or script that you have available in your terminal. For example, you can do: <code>ps</code>, <code>kill</code>, run <code>npm</code>, run maven <code>mvn</code>, as long as it doesn't need an interactive shell to run.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="exclusions"><a class="header" href="#exclusions">Exclusions</a></h1>
 <p>If you don't want claude to read some files, there is a way to tell claude code to ignore them. You might want to do this for a couple of reasons:</p>
 <ul>
@@ -1188,12 +1189,12 @@ SETTINGS_FILE=".claude/settings.json"
 ADDED_IGNORE=()
 ADDED_DENY=()
 
-mkdir -p.claude
+mkdir -p .claude
 
 if [ -f "$GITIGNORE" ]; then
  while IFS= read -r line || [ -n "$line" ]; do
- if [ -n "$line" ] &amp;&amp; [[! "$line" =~ ^#.*$ ]]; then
- if! grep -Fxq "$line" "$CLAUDEIGNORE" 2&gt;/dev/null; then
+ if [ -n "$line" ] &amp;&amp; [[ ! "$line" =~ ^#.*$ ]]; then
+ if ! grep -Fxq "$line" "$CLAUDEIGNORE" 2&gt;/dev/null; then
     echo "$line" &gt;&gt; "$CLAUDEIGNORE"
     ADDED_IGNORE+=("$line")
  fi
@@ -1202,20 +1203,20 @@ if [ -f "$GITIGNORE" ]; then
 fi
 
 SETTINGS_ENTRY=".claude/settings.json"
-if! grep -Fxq "$SETTINGS_ENTRY" "$CLAUDEIGNORE" 2&gt;/dev/null; then
+if ! grep -Fxq "$SETTINGS_ENTRY" "$CLAUDEIGNORE" 2&gt;/dev/null; then
  echo "$SETTINGS_ENTRY" &gt;&gt; "$CLAUDEIGNORE"
  ADDED_IGNORE+=("$SETTINGS_ENTRY")
 fi
 
-if [! -f "$SETTINGS_FILE" ]; then
+if [ ! -f "$SETTINGS_FILE" ]; then
  echo '{"writePermissions":{"deny":[]}}' &gt; "$SETTINGS_FILE"
 fi
 
 TEMP_FILE=$(mktemp)
 if [ -f "$GITIGNORE" ]; then
  while IFS= read -r line || [ -n "$line" ]; do
- if [ -n "$line" ] &amp;&amp; [[! "$line" =~ ^#.*$ ]]; then
- if! grep -q "\"$line\"" "$SETTINGS_FILE" 2&gt;/dev/null; then
+ if [ -n "$line" ] &amp;&amp; [[ ! "$line" =~ ^#.*$ ]]; then
+ if ! grep -q "\"$line\"" "$SETTINGS_FILE" 2&gt;/dev/null; then
     ADDED_DENY+=("$line")
  fi
  fi
@@ -1246,7 +1247,7 @@ with open('$SETTINGS_FILE', 'w') as f:
 "
 fi
 
-echo "Added entries to.claudeignore:"
+echo "Added entries to .claudeignore:"
 for entry in "${ADDED_IGNORE[@]}"; do
  echo " - $entry"
 done
@@ -1256,7 +1257,7 @@ if [ ${#ADDED_IGNORE[@]} -eq 0 ]; then
 fi
 
 echo ""
-echo "Added write permission denies to.claude/settings.json:"
+echo "Added write permission denies to .claude/settings.json:"
 for entry in "${ADDED_DENY[@]}"; do
  echo " - $entry"
 done
@@ -1265,7 +1266,15 @@ if [ ${#ADDED_DENY[@]} -eq 0 ]; then
  echo " (no new denies added)"
 fi
 </code></pre>
-<p>Where it will turn your.gitignore into claude exclusions. You can run it whenever you want to sync your.gitignore with claude exclusions.</p>
+<p>Where it will turn your .gitignore into claude exclusions. You can run it whenever you want to sync your .gitignore with claude exclusions.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="advanced-context-window-management"><a class="header" href="#advanced-context-window-management">Advanced Context Window Management</a></h1>
+<p>Claude code does a great job managing the context window. Claude code is not just a wrapper on the top of a LLM API but is also a blend between Generative AI and Engineering. Here is how Claude code manages the context window in an advanced way.</p>
+<img src="chapter-5/../images/05-cc-advanced-context-window-sub-agents.png" width="600"/>
+<p>Right now Claude code has the limit of 200k tokens. Before this gets more confusing we need to make the difference between 2 kinds of tokens: payable tokens and context window tokens. If you are in a subscription based plan you have a limit of tokens before you have some "cool down" period. If you use a paid API plan, you do not have such limit because you pay per token so these are payable tokens.</p>
+<p>Now there is a different kind of token, which is the context window tokens. Context window tokens, no matter if you are in a flat fee subscription or API plan, you will have a limit of 200k context window tokens. If you look at the image on the top I can explain some advanced magic Claude code is doing.</p>
+<p>First we need to understand how the context window works, for all inputs and output tokens that is the conversation, it's always consuming context window tokens. So the more questions you ask and the more answers you get, the more you are using of your context window. Eventually you will run out of context window tokens, then Claude will run a <code>compact</code> or <code>clean</code>.</p>
+<p><code>/compact</code> will summarize the context window and reduce the space used on the context window. You can see how the context window is looking with the <code>/context</code> command. If that is not enough, Claude will issue a <code>clean</code> which will clean the conversation history freeing up more context window tokens. You can run these commands anytime you want. You can also run the command <code>/export</code> anytime you want which will export the conversation to a file. This is useful because you can use the file for future prompts, as history, or as a base for new conversations.</p>
+<p>So Claude code does a great job managing context window tokens for you. There is one more trick, which is the advent of <a href="https://code.claude.com/docs/en/sub-agents">Claude code sub-agents</a>. The beauty of the sub-agents is twofold. First, each sub-agent has its own context window of 200k tokens. So if you have multiple sub-agents working for you, each one has its own context window. This is very useful because you can have different sub-agents working on different tasks without interfering with each other. Sub-agents do not use the parent context window tokens. Second, sub-agents can be spawned and killed at will. Claude can figure out you need a sub-agent for a specific task, will spawn it, use it, and then kill it when you are done. This way you can manage your context window tokens even more efficiently.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ultrathink"><a class="header" href="#ultrathink">ultrathink</a></h1>
 <p>ultrathink is an instruction you give to Claude Code that makes it think more deeply about the problem at hand. It encourages the model to take extra time to analyze the situation, consider multiple perspectives, and generate more thorough and well-reasoned responses.</p>
 <img src="chapter-5/../images/05-cc-ultrathink.png" width="600"/>
@@ -1627,13 +1636,13 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-6---testing-with-ai"><a class="header" href="#chapter-6---testing-with-ai">Chapter 6 - Testing with AI</a></h1>
 <p><a href="https://diego-pacheco.blogspot.com/2020/02/going-faster-with-testing.html">Testing</a> matters more than ever with AI. Because AI hallucinates and eventually will mess up your existing code, and will stop working, so when will you catch that? Hopefully before your users do. Because AI is not 100% predictable and has precision issues, you must have tests to compensate for that. Some tests are <a href="https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html">harder</a> than orders but we will need to have them, in different shapes and forms.</p>
-<p>Otherwise, AI will break your code; it's just a matter of time, it will happen.You <a href="https://diego-pacheco.blogspot.com/2023/08/embedded-mocks-and-hidden-contracts.html">mocks might fool you</a>, but you will discover in production, maybe not the best way possible. As long as you have good <a href="https://diego-pacheco.blogspot.com/2021/06/my-2-cents-on-on-diverse-and.html">testing diversity</a> and decent coverage, you will be fine because tests are the <a href="https://diego-pacheco.blogspot.com/2020/08/hardening-prodution.html">ultimate guardrails</a> for AI.</p>
+<p>Otherwise, AI will break your code; it's just a matter of time, it will happen. Your <a href="https://diego-pacheco.blogspot.com/2023/08/embedded-mocks-and-hidden-contracts.html">mocks might fool you</a>, but you will discover in production, maybe not the best way possible. As long as you have good <a href="https://diego-pacheco.blogspot.com/2021/06/my-2-cents-on-on-diverse-and.html">testing diversity</a> and decent coverage, you will be fine because tests are the <a href="https://diego-pacheco.blogspot.com/2020/08/hardening-prodution.html">ultimate guardrails</a> for AI.</p>
 <p>So before AI, 100% tests sounded crazy, but now it's actually a must-have. Otherwise, AI will introduce a lot of P0 bugs more often than you can imagine. Before we do any other more advanced use case for coding agents using AI, we need to get more tests and get good and reliable tests in place.</p>
-<p>Testing it's a spectrum. You test left and you test right(yes you <a href="https://diego-pacheco.blogspot.com/2021/02/testing-in-production.html">test in production</a> too). We do <a href="https://diego-pacheco.blogspot.com/2020/07/assertj.html">assertions</a>, <a href="https://diego-pacheco.blogspot.com/2020/08/property-based-testing-with-jsverify.html">property-based testing</a>, we tests all languages including lowe level ones <a href="https://diego-pacheco.blogspot.com/2018/05/c-unit-testing-with-check.html">like C</a>, we should test DevOps <a href="https://diego-pacheco.blogspot.com/2020/03/infrastructure-testing-for-terraform.html">Terraform</a> too, tests on the <a href="https://diego-pacheco.blogspot.com/2020/08/snapshot-testing-with-jest.html">frontend</a>, <a href="https://diego-pacheco.blogspot.com/2014/10/soa-contract-testing.html">contract-based testing</a>, test <a href="https://diego-pacheco.blogspot.com/2021/04/testing-aws-lambdas-with-java.html">lambdas</a>, we test things that talk to <a href="https://diego-pacheco.blogspot.com/2018/04/mocking-and-testing-aws-apis-with.html">AWS too</a>, even hard things like <a href="https://diego-pacheco.blogspot.com/2020/08/testing-impossible-with-powermock.html">static/final are tested</a>, we <a href="https://diego-pacheco.blogspot.com/2020/08/java-mutation-testing-with-pitest.html">test our own tests</a>, test rest <a href="https://diego-pacheco.blogspot.com/2021/01/tests-with-spring-boot-mockmvc.html">apis</a>, we <a href="https://diego-pacheco.blogspot.com/2021/04/mock-server.html">mock what we need</a>,now I think my point is clear, test all the things, there is no such things as too many tests anymore.</p>
+<p>Testing is a spectrum. You test left and you test right (yes you <a href="https://diego-pacheco.blogspot.com/2021/02/testing-in-production.html">test in production</a> too). We do <a href="https://diego-pacheco.blogspot.com/2020/07/assertj.html">assertions</a>, <a href="https://diego-pacheco.blogspot.com/2020/08/property-based-testing-with-jsverify.html">property-based testing</a>, we test all languages including lower level ones <a href="https://diego-pacheco.blogspot.com/2018/05/c-unit-testing-with-check.html">like C</a>, we should test DevOps <a href="https://diego-pacheco.blogspot.com/2020/03/infrastructure-testing-for-terraform.html">Terraform</a> too, tests on the <a href="https://diego-pacheco.blogspot.com/2020/08/snapshot-testing-with-jest.html">frontend</a>, <a href="https://diego-pacheco.blogspot.com/2014/10/soa-contract-testing.html">contract-based testing</a>, test <a href="https://diego-pacheco.blogspot.com/2021/04/testing-aws-lambdas-with-java.html">lambdas</a>, we test things that talk to <a href="https://diego-pacheco.blogspot.com/2018/04/mocking-and-testing-aws-apis-with.html">AWS too</a>, even hard things like <a href="https://diego-pacheco.blogspot.com/2020/08/testing-impossible-with-powermock.html">static/final are tested</a>, we <a href="https://diego-pacheco.blogspot.com/2020/08/java-mutation-testing-with-pitest.html">test our own tests</a>, test rest <a href="https://diego-pacheco.blogspot.com/2021/01/tests-with-spring-boot-mockmvc.html">apis</a>, we <a href="https://diego-pacheco.blogspot.com/2021/04/mock-server.html">mock what we need</a>, now I think my point is clear, test all the things, there is no such thing as too many tests anymore.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="why-use-ai-for-testing"><a class="header" href="#why-use-ai-for-testing">Why use AI for Testing?</a></h1>
 <p>Software engineers are under constant pressure for delivery. Such pressure plus immature management leads to skipping tests. You might not write the best abstraction for the universe, you might not write the best code to deliver—such trade-offs are fine as long as used with balance and you are not living tech-debt first. Now tests should never be skipped, no matter how much in a hurry you are, no matter how tight your deadline is, no matter if the sprint is close to the end. Skipping tests is always the wrong decision.</p>
 <p>We know skipping tests is wrong. But all companies have legacy systems. There is always software before we arrive at a company (unless it's a startup on day 1). The reality is there is so much technical debt that you can't pay it all at once. Companies pay technical debt but never as much as they should. Quality ends up being compromised, which is not a wise decision and eventually will have catastrophic consequences.</p>
-<p>Thanks to AI coding agents, now we can add more tests, which before might not be possible due to lack of prioritization or investments. Now we can do more tests to systems we would not do it, not because we did not want to but because constraints we're too high. AI coding agents can help us write more tests, and better tests, faster. This is a huge win, and we should take it.</p>
+<p>Thanks to AI coding agents, now we can add more tests, which before might not be possible due to lack of prioritization or investments. Now we can do more tests to systems we would not do it, not because we did not want to but because constraints were too high. AI coding agents can help us write more tests, and better tests, faster. This is a huge win, and we should take it.</p>
 <h2 id="testing-ai"><a class="header" href="#testing-ai">Testing AI</a></h2>
 <p>We should not test OpenAI API or Anthropic API. That will cost money and will be hard to get right, due to the lack of predictability of such systems. However, a smoke test would be reasonable. Smoke tests are high-level tests that verify that the most important functionalities of a system are working. They are not meant to be exhaustive, but rather to provide a quick check that the system is functioning as expected.</p>
 <p>Integration tests that test functionalities that have AI in the middle or are purely AI are okay to test, but you need to be smart because you might not have the same result all the time, so maybe instead of checking an absolute value, check if something is present, or contains the same range of possible values.</p>
@@ -1712,7 +1721,7 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <li>Downtime: Migrations can require downtime, which can be disruptive to users. Not all migrations require downtime, but it's easier with downtime.</li>
 <li>Data Loss: There is a risk of data loss during migrations, especially if not done carefully (in case of database or encryption migrations).</li>
 <li>Time Pressure: Teams are usually focused on features and migrations take this time away from them.</li>
-<li>Testing: Migrations require extensive testing to ensure that everything works correctly after the migration. Usually testing is not perfect, which forces migrations to discover problems that we're buried in the old system.</li>
+<li>Testing: Migrations require extensive testing to ensure that everything works correctly after the migration. Usually testing is not perfect, which forces migrations to discover problems that were buried in the old system.</li>
 </ul>
 <h2 id="difficult-reality-at-scale"><a class="header" href="#difficult-reality-at-scale">Difficult Reality at Scale</a></h2>
 <p>Migrations don't happen as often as they should.</p>
@@ -2263,6 +2272,12 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li>https://diego-pacheco.blogspot.com/2025/10/testing-mocks.html - Testing mocks</li>
 <li>https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html - Testing queues and batch jobs</li>
 </ul>
+<h3 id="api-documentation-and-stress-testing"><a class="header" href="#api-documentation-and-stress-testing">API Documentation and Stress Testing</a></h3>
+<ul>
+<li>https://swagger.io/why-swagger/ - Swagger/OpenAI API documentation</li>
+<li>https://diego-pacheco.blogspot.com/2018/06/experiences-building-running-stress.html - Experiences building and running stress tests</li>
+<li>https://diego-pacheco.blogspot.com/2015/08/stress-test-with-gatling.html - Stress testing with Gatling</li>
+</ul>
 <h2 id="chapter-7---migrations-with-ai-1"><a class="header" href="#chapter-7---migrations-with-ai-1">Chapter 7 - Migrations with AI</a></h2>
 <p>No additional external references.</p>
 <h2 id="chapter-8---non-obvious-use-cases-1"><a class="header" href="#chapter-8---non-obvious-use-cases-1">Chapter 8 - Non-Obvious Use Cases</a></h2>
@@ -2358,6 +2373,8 @@ Agent pattern involving combining multiple data sources or results into a unifie
 Game-playing AI system using reinforcement learning.</p>
 <p><strong>Amazon Q</strong>
 AWS coding agent that provides AI-powered assistance for software development tasks.</p>
+<p><strong>Amoeba Age</strong>
+Early developmental stage of LLMs described by Yuval Harari, characterized by basic capabilities that will improve over time.</p>
 <p><strong>Anomaly Detection</strong>
 Identifying unusual data points that deviate from normal patterns, commonly used in fraud detection and system monitoring.</p>
 <p><strong>API Key</strong>
@@ -2366,6 +2383,8 @@ Authentication token required to access AI services programmatically for product
 Core component of transformer architecture enabling models to focus on relevant parts of input when processing sequences.</p>
 <p><strong>AudioLM</strong>
 Model developed by Google that can generate high-quality audio samples from text prompts.</p>
+<p><strong>Auto-complete on Steroids</strong>
+Description of Generative AI systems as advanced prediction engines based on pattern matching.</p>
 <p><strong>Autonomous Driving</strong>
 Application area for reinforcement learning in self-driving vehicles.</p>
 <p><strong>Automated Testing</strong>
@@ -2392,6 +2411,8 @@ Agent pattern for storing and reusing frequently accessed data or results to imp
 Rust's package manager and build tool, used to install mdbook.</p>
 <p><strong>Catastrophic Forgetting</strong>
 Challenge in fine-tuning where a model loses previously learned knowledge when adapting to new tasks.</p>
+<p><strong>ccstatusline</strong>
+MCP tool for customizing the Claude Code status line display.</p>
 <p><strong>Changelog</strong>
 Document tracking changes, additions, and fixes across software versions, can be automated using AI by analyzing git history.</p>
 <p><strong>Change and Adaptation</strong>
@@ -2432,6 +2453,8 @@ OpenAI's coding agent available in both web sandbox and CLI versions, using spec
 AI agents specifically designed or trained to generate, modify, and work with software code.</p>
 <p><strong>Coding Dojo</strong>
 Practice environment where engineers work without AI using TDD, forcing manual skill development and maintaining proficiency.</p>
+<p><strong>Compact (Claude Code)</strong>
+Command that summarizes and reduces context window usage by condensing conversation history.</p>
 <p><strong>Configuration Ownership</strong>
 Responsibility for maintaining and managing configuration files and settings.</p>
 <p><strong>Container Registry</strong>
@@ -2444,6 +2467,8 @@ Modern term focusing on providing the right context to LLMs to get the best poss
 The amount of text/tokens an LLM can process at once. Larger context windows allow for processing more information simultaneously.</p>
 <p><strong>Context7</strong>
 Service providing up-to-date library documentation to address LLMs' outdated training data, supporting over 49,317 libraries.</p>
+<p><strong>Cool Down Period</strong>
+Limitation period in subscription-based plans when token budget is exhausted.</p>
 <p><strong>Core Business Logic</strong>
 Critical business logic and intellectual property that should never be created through "vibe coding" due to quality and proprietary concerns.</p>
 <p><strong>Cosine Similarity</strong>
@@ -2459,6 +2484,8 @@ Specific commands or workflows configured within Claude Code or similar tools fo
 <h2 id="d"><a class="header" href="#d">D</a></h2>
 <p><strong>DALL-E</strong>
 OpenAI's model that generates images from textual descriptions using transformer architecture and GANs.</p>
+<p><strong>Data Structures and Algorithms</strong>
+Fundamental computer science concepts for organizing and processing data efficiently.</p>
 <p><strong>DBSCAN</strong>
 Density-Based Spatial Clustering of Applications with Noise, an algorithm for clustering that can identify outliers.</p>
 <p><strong>Decision Trees</strong>
@@ -2498,9 +2525,15 @@ In reinforcement learning, the external system with which the agent interacts.</
 Similarity measure used to compare embeddings based on the straight-line distance between vectors.</p>
 <p><strong>Evo by Snyk</strong>
 Commercial MCP scanning security solution for analyzing MCP servers.</p>
+<p><strong>Explore Agent</strong>
+Claude Code specialized sub-agent for fast codebase exploration.</p>
 <h2 id="f"><a class="header" href="#f">F</a></h2>
 <p><strong>faker.js</strong>
 JavaScript library for generating realistic test data, used in integration testing to create mock data for various scenarios.</p>
+<p><strong>Feed Phase</strong>
+First phase in RAG pattern where documents are ingested and converted to embeddings for vector database storage.</p>
+<p><strong>Few-Shot</strong>
+Training technique providing a small number of examples to help models learn tasks.</p>
 <p><strong>Few-Shot Examples</strong>
 Training technique providing examples to help models perform tasks better without extensive retraining.</p>
 <p><strong>Filtering</strong>
@@ -2520,6 +2553,8 @@ Google's LLM model used in various coding agents including Jules and Gemini CLI.
 Google's LLM model with 1,000,000 token context window.</p>
 <p><strong>Gemini 2.0 Pro</strong>
 Google's LLM model with 2,000,000 token context window.</p>
+<p><strong>General-Purpose Agent</strong>
+Claude Code sub-agent for multi-step task handling.</p>
 <p><strong>Generative AI</strong>
 AI systems that can generate new content, including text, code, images, and other media. The book focuses on using Generative AI for software engineering tasks. Works through predicting next tokens/sequences.</p>
 <p><strong>Git Archaeology for Troubleshooting</strong>
@@ -2568,8 +2603,12 @@ Process of adjusting parameters in fine-tuning to optimize model performance.</p
 AI coding assistants integrated into development environments like VSCode.</p>
 <p><strong>Idempotent</strong>
 Operations that produce the same result regardless of how many times they are executed, easier to test.</p>
+<p><strong>Incompetence Illumination</strong>
+Teaching technique where AI deliberately mixes wrong and correct answers to train critical thinking.</p>
 <p><strong>Integration Tests</strong>
 Tests that verify how different components work together, requiring test data and infrastructure setup.</p>
+<p><strong>Intellectual Honesty Detector</strong>
+AI teaching method that catches shallow understanding by asking learners to explain concepts back.</p>
 <p><strong>Internal Shared Libraries</strong>
 Reusable code libraries shared across projects within an organization, often problematic for ownership.</p>
 <p><strong>Image Generation</strong>
@@ -2603,6 +2642,8 @@ Using AI to create and maintain comprehensive documentation systems.</p>
 Dimensionality reduction technique that finds linear combinations of features for classification.</p>
 <p><strong>Learning from AI</strong>
 Process of using AI as an educational tool while maintaining critical thinking and verification.</p>
+<p><strong>Leftovers</strong>
+Resources or code remaining after migrations that need cleanup.</p>
 <p><strong>Linear Regression</strong>
 Fundamental regression algorithm modeling relationship between variables using a linear equation.</p>
 <p><strong>LLaMA 3</strong>
@@ -2615,6 +2656,8 @@ A type of AI model trained on massive amounts of text data that can understand a
 Text files at website roots helping LLMs navigate and understand site content, providing structured documentation.</p>
 <p><strong>Logistic Regression</strong>
 Classification algorithm using logistic function to model probability of categorical outcomes.</p>
+<p><strong>Loss Function</strong>
+Mathematical function optimized during model training to minimize prediction errors.</p>
 <p><strong>LSP (Language Server Protocol)</strong>
 Standard protocol that MCP is compared to for understanding its architecture and functionality.</p>
 <p><strong>LLMs as Slot Machines</strong>
@@ -2628,6 +2671,8 @@ A Rust-based tool for creating books from markdown files, featuring built-in sea
 Meta's model that generates music tracks from text descriptions.</p>
 <p><strong>Marketing and AI</strong>
 The often misleading promotion of AI capabilities, including false AGI claims and overstated application benefits.</p>
+<p><strong>Marketing Agent (Claude Code)</strong>
+Specialized agent for translating technical content to plain language.</p>
 <p><strong>MCP (Model Context Protocol)</strong>
 A protocol for connecting AI models to external tools and data sources, enabling extended capabilities. Created by Anthropic in 2024.</p>
 <p><strong>MCP Client</strong>
@@ -2659,6 +2704,8 @@ Test objects that verify interactions and method calls during testing.</p>
 <p><strong>Model</strong>
 In reinforcement learning, a representation of the environment that the agent uses to predict the next state and reward.</p>
 <h2 id="n"><a class="header" href="#n">N</a></h2>
+<p><strong>Naive Bayes</strong>
+Classification algorithm based on Bayes' theorem with strong independence assumptions between features.</p>
 <p><strong>Non-idempotent</strong>
 Operations that produce different results when executed multiple times, requiring special testing setup.</p>
 <p><strong>npm</strong>
@@ -2676,9 +2723,13 @@ Open source coding agent that works with multiple LLM models.</p>
 API documentation specification format that AI coding agents can read to generate tests and understand API structure.</p>
 <p><strong>Orchestration</strong>
 Agent pattern for coordinating multiple AI operations or tools in sequence or parallel.</p>
+<p><strong>Orphaned Resources</strong>
+Infrastructure or code assets without clear ownership or maintenance.</p>
 <p><strong>Overfitting</strong>
 Challenge in fine-tuning where a model learns training data too specifically and loses generalization ability.</p>
 <h2 id="p"><a class="header" href="#p">P</a></h2>
+<p><strong>Payable Tokens</strong>
+Tokens that incur cost in API-based pricing plans.</p>
 <p><strong>PCA (Principal Component Analysis)</strong>
 Dimensionality reduction technique that identifies principal components explaining maximum variance in data.</p>
 <p><strong>pgvector</strong>
@@ -2687,6 +2738,8 @@ PostgreSQL extension for vector database functionality.</p>
 Sensitive personal data that should be excluded from AI processing for privacy and security.</p>
 <p><strong>Pinecone</strong>
 Vector database for storing and querying embeddings.</p>
+<p><strong>Plan Agent</strong>
+Claude Code specialized agent for planning tasks.</p>
 <p><strong>Playwright</strong>
 End-to-end testing framework for web applications.</p>
 <p><strong>podman</strong>
@@ -2695,12 +2748,16 @@ Container management tool, mentioned as docker-compose alternative.</p>
 In reinforcement learning, a strategy or rule that the agent uses to make decisions.</p>
 <p><strong>Postgres MCP</strong>
 MCP server for reading data from PostgreSQL database tables in plain English.</p>
+<p><strong>PR (Pull Request)</strong>
+Proposed code changes submitted for review before merging into main codebase.</p>
 <p><strong>Precision and Reproducibility</strong>
 Challenge with AI systems: inability to guarantee identical outputs for identical inputs due to probabilistic nature.</p>
 <p><strong>Private Teacher</strong>
 AI acting as personalized instructor providing tailored learning experiences.</p>
 <p><strong>Pre-trained Model</strong>
 Model that has already acquired knowledge during initial training phase, used as starting point for fine-tuning.</p>
+<p><strong>Proficiency</strong>
+Level of skill and expertise required to perform tasks effectively without constant reference.</p>
 <p><strong>Prompt Engineering</strong>
 Craft of writing effective instructions for AI models to achieve desired outcomes, largely replaced by context engineering.</p>
 <p><strong>Prompt Library</strong>
@@ -2755,12 +2812,16 @@ Browser automation framework used for testing web applications.</p>
 Key innovation of Transformers that allows models to weigh the importance of different words in a sentence relative to each other.</p>
 <p><strong>Semantic Meaning</strong>
 The meaning captured by embeddings that allows for effective text comparisons.</p>
+<p><strong>Semi-Supervised Learning</strong>
+Machine learning paradigm combining labeled and unlabeled data for training.</p>
 <p><strong>Sentiment Analysis</strong>
 Analyzing emotional tone and intent in text, applicable to emails, customer feedback, and communication review.</p>
 <p><strong>Slack MCP</strong>
 MCP server for sending messages to Slack teams.</p>
+<p><strong>Smoke Test</strong>
+High-level test verifying critical system functionality without exhaustive coverage.</p>
 <p><strong>Socratic Interrogation</strong>
-AI teaching technique where AI asks increasingly deeper questions instead of providing answers, forcing self-discovery.</p>
+Teaching method where AI asks progressively deeper questions instead of providing answers.</p>
 <p><strong>Solutions vs Wrappers</strong>
 Philosophy distinguishing genuine innovations from superficial API wrappers. Many AI startups are wrappers rather than true solutions.</p>
 <p><strong>SORA</strong>
@@ -2783,6 +2844,8 @@ Company that developed Stable Diffusion image generation model.</p>
 In reinforcement learning, a snapshot of the environment at a given time.</p>
 <p><strong>Status Line</strong>
 Customizable information display at bottom of Claude Code interface showing current state.</p>
+<p><strong>Sub-Agents (Claude Code)</strong>
+Independent agents spawned by Claude Code, each with their own 200k token context window.</p>
 <p><strong>Summarization</strong>
 LLM task of condensing long text into shorter summaries while retaining key information.</p>
 <p><strong>Supervised Learning</strong>
@@ -2812,8 +2875,6 @@ Accumulated shortcuts and suboptimal solutions in codebases that make migrations
 Infrastructure as code tool, mentioned as tech asset requiring ownership tracking.</p>
 <p><strong>Test Doubles</strong>
 Generic term for objects used in testing to replace real dependencies (includes stubs, mocks, fakes).</p>
-<p><strong>Technical Debt</strong>
-Accumulated shortcuts and suboptimal solutions in codebases that make migrations and maintenance more difficult.</p>
 <p><strong>Test Induction</strong>
 Proper testing infrastructure setup for comprehensive test coverage.</p>
 <p><strong>Testing</strong>
@@ -2843,6 +2904,8 @@ Characterization of AI progress: advancement comes with limitations, hallucinati
 <h2 id="u"><a class="header" href="#u">U</a></h2>
 <p><strong>Ultrathink</strong>
 A Claude Code feature providing extended reasoning capabilities with larger token budget up to 10,000+ tokens for complex problems, allowing more thorough analysis than normal thinking mode.</p>
+<p><strong>Underfitting</strong>
+Model training problem where model is too simple to capture data patterns, requiring more complexity or features.</p>
 <p><strong>Unsupervised Learning</strong>
 Machine learning paradigm where models find patterns in unlabeled data without predefined categories.</p>
 <p><strong>User Prompt</strong>
@@ -2885,11 +2948,14 @@ Company that provides Grok LLM models.</p>
 Rapid prototyping phase made faster with AI assistance.</p>
 <p><strong>Demo to Production</strong>
 Complex productionization phase that remains difficult despite AI assistance, requiring careful engineering.</p>
+<p><strong>Zig</strong>
+Systems programming language mentioned as a learning target.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="index"><a class="header" href="#index">Index</a></h1>
 <h2 id="a-1"><a class="header" href="#a-1">A</a></h2>
 <ul>
 <li><strong>A2A Protocol</strong> - <a href="epilogue/../chapter-4/OTHER_APPROACHES.html">Other Approaches</a></li>
 <li><strong>Adaptation</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
+<li><strong>Advanced Context Window Management</strong> - <a href="epilogue/../chapter-5/CC_ADVANCED_CTX_WINDOW_MGMT.html">CC Advanced Context Window Management</a></li>
 <li><strong>After Migrations</strong> - <a href="epilogue/../chapter-7/AFTER_MIGRATIONS.html">After Migrations</a></li>
 <li><strong>AGI (Artificial General Intelligence)</strong> - <a href="epilogue/../zero/README.html">Introduction</a>, <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>Agent Patterns</strong> - <a href="epilogue/../chapter-4/AGENTS_PATTERNS.html">Agents Patterns</a></li>
@@ -2912,15 +2978,17 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>Analyzing Customer Feedback</strong> - <a href="epilogue/../chapter-9/SENTIMENT_ANALYSIS.html">Sentiment Analysis</a></li>
 <li><strong>Analyzing Logs with AI</strong> - <a href="epilogue/../chapter-8/TROUBLESHOOTING.html">Troubleshooting</a></li>
 <li><strong>Andrej Karpathy</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
+<li><strong>Andrew Zigler</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
 <li><strong>Anomaly Detection</strong> - <a href="epilogue/../chapter-2/CLUSTERING.html">Clustering</a></li>
 <li><strong>Anthropic API</strong> - <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
 <li><strong>API Keys</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a>, <a href="epilogue/../chapter-4/CODING_AGENTS.html">Coding Agents</a></li>
+<li><strong>Attack Vector</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
 <li><strong>Architect Persona</strong> - <a href="epilogue/../chapter-9/ROLE_PLAYING.html">Role Playing</a></li>
 <li><strong>AssertJ</strong> - <a href="epilogue/../chapter-6/README.html">Chapter 6</a></li>
 <li><strong>Attention is All You Need</strong> - <a href="epilogue/../chapter-3/TRANSFORMERS.html">Transformers</a></li>
 <li><strong>Attention Mechanisms</strong> - <a href="epilogue/GLOSSARY.html">Glossary</a>, <a href="epilogue/../chapter-3/TRANSFORMERS.html">Transformers</a></li>
 <li><strong>AudioLM</strong> - <a href="epilogue/../chapter-3/SOUND_GENERATION.html">Sound Generation</a></li>
-<li><strong>Auto-complete</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a></li>
+<li><strong>Auto-complete</strong> - <a href="epilogue/../chapter-1/RANDOMNESS.html">Randomness</a></li>
 <li><strong>Automated Tests</strong> - <a href="epilogue/../chapter-6/MANUAL_TESTING.html">Manual Testing</a></li>
 <li><strong>Autonomous Driving</strong> - <a href="epilogue/../chapter-2/RL.html">Reinforcement Learning</a></li>
 <li><strong>Awesome MCPs</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a></li>
@@ -2933,7 +3001,9 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>Bash Mode</strong> - <a href="epilogue/../chapter-5/BASH_MODE.html">Bash Mode</a></li>
 <li><strong>Bash Orchestration</strong> - <a href="epilogue/../chapter-5/CLAUDE_BASH_ORCHESTRATION.html">Claude Bash Orchestration</a></li>
 <li><strong>Benchmark Gaming</strong> - <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a>, <a href="epilogue/../chapter-8/DOCUMENTATION.html">Documentation</a></li>
+<li><strong>BERT</strong> - <a href="epilogue/../chapter-3/TRANSFORMERS.html">Transformers</a></li>
 <li><strong>Bias in AI</strong> - <a href="epilogue/../chapter-9/SENTIMENT_ANALYSIS.html">Sentiment Analysis</a></li>
+<li><strong>Bobby Woolf</strong> - <a href="epilogue/../chapter-4/AGENTS_PATTERNS.html">Agent Patterns</a></li>
 <li><strong>Binance Unicorn Collapse</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>Bloomberg</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>Boundary Cases</strong> - <a href="epilogue/../chapter-6/AI_TESTING.html">AI Testing</a></li>
@@ -2956,6 +3026,7 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>Chevy Tahoe Chatbot</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>Chroma</strong> - <a href="epilogue/../chapter-3/VECTOR_DBS.html">Vector Databases</a></li>
 <li><strong>CI/CD</strong> - <a href="epilogue/HOW_I_WROTE_THE_BOOK.html">How I Wrote the Book</a></li>
+<li><strong>Cisco MCP Scanner</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
 <li><strong>.claudeignore</strong> - <a href="epilogue/../chapter-5/EXCLUSIONS.html">Exclusions</a></li>
 <li><strong>CLAUDE.md</strong> - <a href="epilogue/../chapter-5/CLAUDE.html">Claude.md</a>, <a href="epilogue/../chapter-5/DECISION_CRITERIA.html">Decision Criteria</a></li>
 <li><strong>Classification</strong> - <a href="epilogue/../chapter-2/CLASSIFICATION.html">Classification</a></li>
@@ -2986,13 +3057,16 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>Context 7</strong> - <a href="epilogue/../chapter-4/CONTEXT7.html">Context 7</a></li>
 <li><strong>Context Engineering</strong> - <a href="epilogue/../chapter-3/TEXT_GENERATION.html">Text Generation</a></li>
 <li><strong>Context Window</strong> - <a href="epilogue/../chapter-4/CONTEXT_WINDOW.html">Context Window</a>, <a href="epilogue/../chapter-3/VECTOR_DBS.html">Vector Databases</a></li>
+<li><strong>Context Window Tokens</strong> - <a href="epilogue/../chapter-5/CC_ADVANCED_CTX_WINDOW_MGMT.html">CC Advanced Context Window Management</a></li>
+<li><strong>Contrarian Feedback</strong> - <a href="epilogue/../chapter-9/CRITICAL_THINKING.html">Critical Thinking</a></li>
 <li><strong>Continuous Values</strong> - <a href="epilogue/../chapter-2/REGRESSION.html">Regression</a></li>
 <li><strong>Contract Testing</strong> - <a href="epilogue/../chapter-6/README.html">Chapter 6</a></li>
 <li><strong>Cooking Skills</strong> - <a href="epilogue/../chapter-9/PRIVATE_TEACHER.html">Private Teacher</a></li>
 <li><strong>Core Business Logic</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
-<li><strong>Cory Doctorow</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a></li>
+<li><strong>Cory Doctorow</strong> - <a href="epilogue/../chapter-1/RANDOMNESS.html">Randomness</a></li>
 <li><strong>Cosine Similarity</strong> - <a href="epilogue/../chapter-3/EMBEDDINGS.html">Embeddings</a></li>
 <li><strong>Cost Command</strong> - <a href="epilogue/../chapter-5/CMDs.html">Commands</a></li>
+<li><strong>Critical Thinking</strong> - <a href="epilogue/../chapter-9/CRITICAL_THINKING.html">Critical Thinking</a></li>
 <li><strong>Cost Reduction</strong> - <a href="epilogue/../chapter-3/RAG.html">RAG</a></li>
 <li><strong>Credit Scoring</strong> - <a href="epilogue/../chapter-2/CLASSIFICATION.html">Classification</a></li>
 <li><strong>Custom Agents</strong> - <a href="epilogue/../chapter-5/CUSTON_AGENTS.html">Custom Agents</a>, <a href="epilogue/../chapter-5/DECISION_CRITERIA.html">Decision Criteria</a></li>
@@ -3015,10 +3089,11 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>DBSCAN</strong> - <a href="epilogue/../chapter-2/CLUSTERING.html">Clustering</a></li>
 <li><strong>Debugging with AI using Images</strong> - <a href="epilogue/../chapter-8/TROUBLESHOOTING.html">Troubleshooting</a></li>
 <li><strong>Decision Criteria</strong> - <a href="epilogue/../chapter-5/DECISION_CRITERIA.html">Decision Criteria</a></li>
+<li><strong>Devil's Advocate</strong> - <a href="epilogue/../chapter-9/CRITICAL_THINKING.html">Critical Thinking</a></li>
 <li><strong>Decision Trees</strong> - <a href="epilogue/../chapter-2/CLASSIFICATION.html">Classification</a>, <a href="epilogue/../chapter-2/REGRESSION.html">Regression</a></li>
 <li><strong>Demo to Production</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
 <li><strong>Deployment Agent</strong> - <a href="epilogue/../chapter-5/CUSTON_AGENTS.html">Custom Agents</a></li>
-<li><strong>Determinism</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a>, <a href="epilogue/../chapter-7/TESTING.html">Testing</a></li>
+<li><strong>Determinism</strong> - <a href="epilogue/../chapter-1/RANDOMNESS.html">Randomness</a>, <a href="epilogue/../chapter-7/TESTING.html">Testing</a></li>
 <li><strong>Diffusion Models</strong> - <a href="epilogue/../chapter-3/VIDEO_GENERATION.html">Video Generation</a></li>
 <li><strong>Dimensionality Reduction</strong> - <a href="epilogue/../chapter-2/DIMENSIONALITY_REDUCTION.html">Dimensionality Reduction</a></li>
 <li><strong>Disruption</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
@@ -3069,7 +3144,7 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>Gaussian Mixture Models</strong> - <a href="epilogue/../chapter-2/CLUSTERING.html">Clustering</a></li>
 <li><strong>Gemini</strong> - <a href="epilogue/../chapter-4/CONTEXT_WINDOW.html">Context Window</a>, <a href="epilogue/../chapter-3/LLM.html">LLM</a></li>
 <li><strong>Gemini CLI</strong> - <a href="epilogue/../chapter-4/CODING_AGENTS.html">Coding Agents</a></li>
-<li><strong>Generative AI</strong> - <a href="epilogue/../chapter-3/README.html">Chapter 3</a>, <a href="epilogue/../chapter-3/WHAT.MD">What is Generative AI</a>, <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a></li>
+<li><strong>Generative AI</strong> - <a href="epilogue/../chapter-3/README.html">Chapter 3</a>, <a href="epilogue/../chapter-3/WHAT.MD">What is Generative AI</a>, <a href="epilogue/../chapter-1/RANDOMNESS.html">Randomness</a></li>
 <li><strong>Git Archaeology for Troubleshooting</strong> - <a href="epilogue/../chapter-8/TROUBLESHOOTING.html">Troubleshooting</a></li>
 <li><strong>GitHub Actions</strong> - <a href="epilogue/HOW_I_WROTE_THE_BOOK.html">How I Wrote the Book</a></li>
 <li><strong>GitHub Copilot</strong> - <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a>, <a href="epilogue/HOW_I_WROTE_THE_BOOK.html">How I Wrote the Book</a></li>
@@ -3136,7 +3211,7 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>Lack of Respect</strong> - <a href="epilogue/../chapter-1/AI_INPUT.html">AI Input</a></li>
 <li><strong>Lambda Functions</strong> - <a href="epilogue/../chapter-8/OWNERSHIP.html">Ownership</a></li>
 <li><strong>Lambda Testing</strong> - <a href="epilogue/../chapter-6/README.html">Chapter 6</a></li>
-<li><strong>Large Language Models (LLMs)</strong> - <a href="epilogue/../chapter-3/LLM.html">LLM</a>, <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a>, <a href="epilogue/../chapter-3/TEXT_GENERATION.html">Text Generation</a>, <a href="epilogue/../chapter-3/TRANSFORMERS.html">Transformers</a></li>
+<li><strong>Large Language Models (LLMs)</strong> - <a href="epilogue/../chapter-3/LLM.html">LLM</a>, <a href="epilogue/../chapter-1/RANDOMNESS.html">Randomness</a>, <a href="epilogue/../chapter-3/TEXT_GENERATION.html">Text Generation</a>, <a href="epilogue/../chapter-3/TRANSFORMERS.html">Transformers</a></li>
 <li><strong>LDA (Linear Discriminant Analysis)</strong> - <a href="epilogue/../chapter-2/DIMENSIONALITY_REDUCTION.html">Dimensionality Reduction</a></li>
 <li><strong>Learning</strong> - <a href="epilogue/../chapter-9/POCS.html">POCs</a></li>
 <li><strong>Learning Agent</strong> - <a href="epilogue/../chapter-5/CUSTON_AGENTS.html">Custom Agents</a></li>
@@ -3146,7 +3221,7 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>LLaMA</strong> - <a href="epilogue/../chapter-4/CONTEXT_WINDOW.html">Context Window</a>, <a href="epilogue/../chapter-3/LLM.html">LLM</a>, <a href="epilogue/../chapter-3/VECTOR_DBS.html">Vector Databases</a></li>
 <li><strong>llms.txt</strong> - <a href="epilogue/../chapter-4/LLMS.txt.html">LLMS.txt</a></li>
 <li><strong>llms-full.txt</strong> - <a href="epilogue/../chapter-4/LLMS.txt.html">LLMS.txt</a></li>
-<li><strong>LLMs as Slot Machines</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a></li>
+<li><strong>LLMs as Slot Machines</strong> - <a href="epilogue/../chapter-1/RANDOMNESS.html">Randomness</a></li>
 <li><strong>Load Testing</strong> - <a href="epilogue/../chapter-6/STRESS_TESTING.html">Stress Testing</a></li>
 <li><strong>Logistic Regression</strong> - <a href="epilogue/../chapter-2/CLASSIFICATION.html">Classification</a></li>
 <li><strong>LSP</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a></li>
@@ -3196,7 +3271,8 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>Noise Reduction</strong> - <a href="epilogue/../chapter-2/DIMENSIONALITY_REDUCTION.html">Dimensionality Reduction</a></li>
 <li><strong>Non-AI Time</strong> - <a href="epilogue/../chapter-1/MIRROR_ASTEROIDS.html">Mirror Asteroids</a></li>
 <li><strong>Non-Obvious Use Cases</strong> - <a href="epilogue/../chapter-8/README.html">Chapter 8</a></li>
-<li><strong>Non-Reproducibility</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a></li>
+<li><strong>Non-Reproducibility</strong> - <a href="epilogue/../chapter-1/RANDOMNESS.html">Randomness</a></li>
+<li><strong>NodeJS</strong> - <a href="epilogue/../chapter-4/CONTEXT7.html">Context7</a></li>
 <li><strong>Numerical Vectors</strong> - <a href="epilogue/../chapter-3/EMBEDDINGS.html">Embeddings</a></li>
 </ul>
 <h2 id="o-1"><a class="header" href="#o-1">O</a></h2>
@@ -3207,6 +3283,7 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>OpenAI API</strong> - <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
 <li><strong>OpenCode</strong> - <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a></li>
 <li><strong>Opus</strong> - <a href="epilogue/../chapter-3/LLM.html">LLM</a></li>
+<li><strong>Payable Tokens</strong> - <a href="epilogue/../chapter-5/CC_ADVANCED_CTX_WINDOW_MGMT.html">CC Advanced Context Window Management</a></li>
 <li><strong>Orchestration</strong> - <a href="epilogue/../chapter-4/AGENTS_PATTERNS.html">Agent Patterns</a></li>
 <li><strong>Orphaned Resources</strong> - <a href="epilogue/../chapter-7/AFTER_MIGRATIONS.html">After Migrations</a></li>
 <li><strong>Other Approaches</strong> - <a href="epilogue/../chapter-4/OTHER_APPROACHES.html">Other Approaches</a></li>
@@ -3235,12 +3312,12 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>Postgres MCP</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a></li>
 <li><strong>PowerMock</strong> - <a href="epilogue/../chapter-6/README.html">Chapter 6</a></li>
 <li><strong>Pre-trained Models</strong> - <a href="epilogue/../chapter-3/FINE_TUNING.html">Fine Tuning</a></li>
-<li><strong>Precision and Reproducibility</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a></li>
+<li><strong>Precision and Reproducibility</strong> - <a href="epilogue/../chapter-1/RANDOMNESS.html">Randomness</a></li>
 <li><strong>Predictability Problems</strong> - <a href="epilogue/../chapter-4/WHAT.html">What are Agents</a></li>
-<li><strong>Predicting Next Token</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a>, <a href="epilogue/../chapter-3/LLM.html">LLM</a></li>
+<li><strong>Predicting Next Token</strong> - <a href="epilogue/../chapter-1/RANDOMNESS.html">Randomness</a>, <a href="epilogue/../chapter-3/LLM.html">LLM</a></li>
 <li><strong>Preprocessing</strong> - <a href="epilogue/../chapter-2/DIMENSIONALITY_REDUCTION.html">Dimensionality Reduction</a></li>
 <li><strong>Private Teacher</strong> - <a href="epilogue/../chapter-9/PRIVATE_TEACHER.html">Private Teacher</a></li>
-<li><strong>Probabilistic Nature</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a></li>
+<li><strong>Probabilistic Nature</strong> - <a href="epilogue/../chapter-1/RANDOMNESS.html">Randomness</a></li>
 <li><strong>Product Manager Agent</strong> - <a href="epilogue/../chapter-5/CUSTON_AGENTS.html">Custom Agents</a></li>
 <li><strong>Proficiency</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
 <li><strong>Project Manager Persona</strong> - <a href="epilogue/../chapter-9/ROLE_PLAYING.html">Role Playing</a></li>
@@ -3264,7 +3341,7 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>RAG Retrieval Phase</strong> - <a href="epilogue/../chapter-3/RAG.html">RAG</a></li>
 <li><strong>Rabbit Scam</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>Random Forest</strong> - <a href="epilogue/../chapter-2/CLASSIFICATION.html">Classification</a>, <a href="epilogue/../chapter-2/REGRESSION.html">Regression</a></li>
-<li><strong>Randomness in AI</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a></li>
+<li><strong>Randomness in AI</strong> - <a href="epilogue/../chapter-1/RANDOMNESS.html">Randomness</a></li>
 <li><strong>Reality of AI</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>Recession to Rollback</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>References</strong> - <a href="epilogue/REFERENCES.html">References</a></li>
@@ -3320,6 +3397,7 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>Stock Price Forecasting</strong> - <a href="epilogue/../chapter-2/REGRESSION.html">Regression</a></li>
 <li><strong>Stress Testing</strong> - <a href="epilogue/../chapter-6/STRESS_TESTING.html">Stress Testing</a></li>
 <li><strong>Stubs</strong> - <a href="epilogue/../chapter-6/DATA_GEN.html">Data Generation</a></li>
+<li><strong>Sub-agents</strong> - <a href="epilogue/../chapter-5/CC_ADVANCED_CTX_WINDOW_MGMT.html">CC Advanced Context Window Management</a></li>
 <li><strong>Summarization</strong> - <a href="epilogue/../chapter-3/LLM.html">LLM</a></li>
 <li><strong>Sunsetting</strong> - <a href="epilogue/../chapter-7/SUNSETING.html">Sunsetting</a></li>
 <li><strong>Supervised Learning</strong> - <a href="epilogue/../chapter-2/CLASSIFICATION.html">Classification</a>, <a href="epilogue/../chapter-2/REGRESSION.html">Regression</a></li>
@@ -3353,7 +3431,7 @@ Complex productionization phase that remains difficult despite AI assistance, re
 <li><strong>Time Pressure</strong> - <a href="epilogue/../chapter-7/WHY.html">Migrations</a></li>
 <li><strong>Tiny Essays</strong> - <a href="epilogue/REFERENCES.html">References</a></li>
 <li><strong>Token Budget</strong> - <a href="epilogue/../chapter-5/ULTRATHINK.html">Ultrathink</a></li>
-<li><strong>Tokens</strong> - <a href="epilogue/../chapter-1/RAMDONNESS.html">Randomness</a>, <a href="epilogue/../chapter-3/LLM.html">LLM</a>, <a href="epilogue/HOW_I_WROTE_THE_BOOK.html">How I Wrote the Book</a>, <a href="epilogue/../chapter-4/CONTEXT_WINDOW.html">Context Window</a></li>
+<li><strong>Tokens</strong> - <a href="epilogue/../chapter-1/RANDOMNESS.html">Randomness</a>, <a href="epilogue/../chapter-3/LLM.html">LLM</a>, <a href="epilogue/HOW_I_WROTE_THE_BOOK.html">How I Wrote the Book</a>, <a href="epilogue/../chapter-4/CONTEXT_WINDOW.html">Context Window</a></li>
 <li><strong>Traditional AI</strong> - <a href="epilogue/../chapter-2/README.html">Chapter 2</a>, <a href="epilogue/../chapter-2/WHAT.MD">What is Traditional AI</a></li>
 <li><strong>Transformer Architecture</strong> - <a href="epilogue/../chapter-3/TRANSFORMERS.html">Transformers</a>, <a href="epilogue/../chapter-3/IMAGE_GENERATION.html">Image Generation</a></li>
 <li><strong>Transformers</strong> - <a href="epilogue/../chapter-3/TRANSFORMERS.html">Transformers</a>, <a href="epilogue/../chapter-3/LLM.html">LLM</a></li>
@@ -3431,6 +3509,22 @@ Complex productionization phase that remains difficult despite AI assistance, re
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

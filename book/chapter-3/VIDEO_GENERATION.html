@@ -181,21 +181,21 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="video-generation"><a class="header" href="#video-generation">Video Generation</a></h1>
-<p>Video generation is an exciting area of generative AI that focuses on creating video content using machine learning models. However when we analyze the current state of video generation, we find that it's still in its early stages compared to other forms of generative AI like text and image generation. Text, Sound and Image are in much better shape than video generation. Text being the most advanced.</p>
+<p>Video generation is an exciting area of generative AI that focuses on creating video content using machine learning models. However, when we analyze the current state of video generation, we find that it's still in its early stages compared to other forms of generative AI like text and image generation. Text, Sound and Image are in much better shape than video generation. Text being the most advanced.</p>
 <h2 id="common-approaches-for-video-generation-include"><a class="header" href="#common-approaches-for-video-generation-include">Common approaches for video generation include</a></h2>
 <ul>
 <li><strong>VQ-VAE-2</strong>: <a href="https://arxiv.org/pdf/1906.00446">VQ-VAE-2</a> is a hierarchical model that uses vector quantization to generate high-quality videos.</li>
 <li><strong>MoCoGAN</strong>: <a href="https://github.com/sergeytulyakov/mocogan">MoCoGAN</a> is A model that separates motion and content to generate videos with coherent motion.</li>
 <li><strong>TGANs</strong>: <a href="https://pfnet-research.github.io/tgan/">TGAN</a> Temporal Generative Adversarial Networks that focus on generating videos by modeling temporal dynamics.</li>
 </ul>
-<p>Video Generation still high experimental, I would say is not ready for production use cases yet. The quality of generated videos is often lower than that of images or text, and the models require significant computational resources to train and run.</p>
+<p>Video Generation is still highly experimental, I would say it is not ready for production use cases yet. The quality of generated videos is often lower than that of images or text, and the models require significant computational resources to train and run.</p>
 <h2 id="recent-and-advanced-approaches"><a class="header" href="#recent-and-advanced-approaches">Recent and Advanced Approaches</a></h2>
 <ul>
 <li><a href="https://arxiv.org/abs/2504.16081">Diffusion Models</a> being applied for video generation.</li>
 <li><a href="https://news.mit.edu/2025/causevid-hybrid-ai-model-crafts-smooth-high-quality-videos-in-seconds-0506">Hybrid Approach</a> can generate videos in seconds.</li>
 <li><a href="https://arxiv.org/abs/2312.14125?utm_source=chatgpt.com">VideoPoet</a>: A Large Language Model for Zero-Shot Video Generation</li>
 </ul>
-<p>Open AI <a href="https://openai.com/index/video-generation-models-as-world-simulators/?utm_source=chatgpt.com">SORA's</a> it's the most advanced video generation model available right now.</p>
+<p>OpenAI's <a href="https://openai.com/index/video-generation-models-as-world-simulators/?utm_source=chatgpt.com">SORA</a> is the most advanced video generation model available right now.</p>
 
                     </main>
 
@@ -226,6 +226,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

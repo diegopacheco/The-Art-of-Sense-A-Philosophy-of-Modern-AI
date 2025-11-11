@@ -1,6 +1,6 @@
 # Text Generation
 
-LLMs are all about text generation. They generate a text based on a input text which is called "prompt". There is basically 2 prompts an LLM uses:
+LLMs are all about text generation. They generate text based on an input text which is called a "prompt". There are basically 2 prompts an LLM uses:
 
 1. System Prompt: This is a special prompt that sets the behavior of the LLM. It tells the model how to respond, what style to use, and any specific instructions. For example, a system prompt might instruct the model to respond in a formal tone or to provide concise answers.
 

@@ -184,7 +184,7 @@
 <p>Claude Code has an <code>Interactive Mode</code> which I prefer to call <code>Bash Mode</code>. In this mode, you can interactively issue <a href="https://docs.claude.com/en/docs/claude-code/interactive-mode">bash commands</a> to Claude and Claude will run them in the terminal for you.</p>
 <p>To activate this mode, you just type <code>!</code>, then after that you type whatever bash command you want and then press enter to run.</p>
 <img src="../images/05-cc-bashmode.png" width="600" caption="Claude Code Bash Mode"/>
-<p>You literally can call any program or script that you have available in your terminal. For example, you can do: <code>ps</code>, <code>kill</code>, run <code>npm</code>, run maven <code>mvn</code>, as long as it doesn't need an interactive she'll to run.</p>
+<p>You literally can call any program or script that you have available in your terminal. For example, you can do: <code>ps</code>, <code>kill</code>, run <code>npm</code>, run maven <code>mvn</code>, as long as it doesn't need an interactive shell to run.</p>
 
                     </main>
 
@@ -215,6 +215,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

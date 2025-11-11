@@ -41,6 +41,9 @@ Game-playing AI system using reinforcement learning.
 **Amazon Q**
 AWS coding agent that provides AI-powered assistance for software development tasks.
 
+**Amoeba Age**
+Early developmental stage of LLMs described by Yuval Harari, characterized by basic capabilities that will improve over time.
+
 **Anomaly Detection**
 Identifying unusual data points that deviate from normal patterns, commonly used in fraud detection and system monitoring.
 
@@ -52,6 +55,9 @@ Core component of transformer architecture enabling models to focus on relevant 
 
 **AudioLM**
 Model developed by Google that can generate high-quality audio samples from text prompts.
+
+**Auto-complete on Steroids**
+Description of Generative AI systems as advanced prediction engines based on pattern matching.
 
 **Autonomous Driving**
 Application area for reinforcement learning in self-driving vehicles.
@@ -92,6 +98,9 @@ Rust's package manager and build tool, used to install mdbook.
 
 **Catastrophic Forgetting**
 Challenge in fine-tuning where a model loses previously learned knowledge when adapting to new tasks.
+
+**ccstatusline**
+MCP tool for customizing the Claude Code status line display.
 
 **Changelog**
 Document tracking changes, additions, and fixes across software versions, can be automated using AI by analyzing git history.
@@ -153,6 +162,9 @@ AI agents specifically designed or trained to generate, modify, and work with so
 **Coding Dojo**
 Practice environment where engineers work without AI using TDD, forcing manual skill development and maintaining proficiency.
 
+**Compact (Claude Code)**
+Command that summarizes and reduces context window usage by condensing conversation history.
+
 **Configuration Ownership**
 Responsibility for maintaining and managing configuration files and settings.
 
@@ -170,6 +182,9 @@ The amount of text/tokens an LLM can process at once. Larger context windows all
 
 **Context7**
 Service providing up-to-date library documentation to address LLMs' outdated training data, supporting over 49,317 libraries.
+
+**Cool Down Period**
+Limitation period in subscription-based plans when token budget is exhausted.
 
 **Core Business Logic**
 Critical business logic and intellectual property that should never be created through "vibe coding" due to quality and proprietary concerns.
@@ -193,6 +208,9 @@ Specific commands or workflows configured within Claude Code or similar tools fo
 
 **DALL-E**
 OpenAI's model that generates images from textual descriptions using transformer architecture and GANs.
+
+**Data Structures and Algorithms**
+Fundamental computer science concepts for organizing and processing data efficiently.
 
 **DBSCAN**
 Density-Based Spatial Clustering of Applications with Noise, an algorithm for clustering that can identify outliers.
@@ -253,10 +271,19 @@ Similarity measure used to compare embeddings based on the straight-line distanc
 **Evo by Snyk**
 Commercial MCP scanning security solution for analyzing MCP servers.
 
+**Explore Agent**
+Claude Code specialized sub-agent for fast codebase exploration.
+
 ## F
 
 **faker.js**
 JavaScript library for generating realistic test data, used in integration testing to create mock data for various scenarios.
+
+**Feed Phase**
+First phase in RAG pattern where documents are ingested and converted to embeddings for vector database storage.
+
+**Few-Shot**
+Training technique providing a small number of examples to help models learn tasks.
 
 **Few-Shot Examples**
 Training technique providing examples to help models perform tasks better without extensive retraining.
@@ -286,6 +313,9 @@ Google's LLM model with 1,000,000 token context window.
 
 **Gemini 2.0 Pro**
 Google's LLM model with 2,000,000 token context window.
+
+**General-Purpose Agent**
+Claude Code sub-agent for multi-step task handling.
 
 **Generative AI**
 AI systems that can generate new content, including text, code, images, and other media. The book focuses on using Generative AI for software engineering tasks. Works through predicting next tokens/sequences.
@@ -360,8 +390,14 @@ AI coding assistants integrated into development environments like VSCode.
 **Idempotent**
 Operations that produce the same result regardless of how many times they are executed, easier to test.
 
+**Incompetence Illumination**
+Teaching technique where AI deliberately mixes wrong and correct answers to train critical thinking.
+
 **Integration Tests**
 Tests that verify how different components work together, requiring test data and infrastructure setup.
+
+**Intellectual Honesty Detector**
+AI teaching method that catches shallow understanding by asking learners to explain concepts back.
 
 **Internal Shared Libraries**
 Reusable code libraries shared across projects within an organization, often problematic for ownership.
@@ -414,6 +450,9 @@ Dimensionality reduction technique that finds linear combinations of features fo
 **Learning from AI**
 Process of using AI as an educational tool while maintaining critical thinking and verification.
 
+**Leftovers**
+Resources or code remaining after migrations that need cleanup.
+
 **Linear Regression**
 Fundamental regression algorithm modeling relationship between variables using a linear equation.
 
@@ -431,6 +470,9 @@ Text files at website roots helping LLMs navigate and understand site content, p
 
 **Logistic Regression**
 Classification algorithm using logistic function to model probability of categorical outcomes.
+
+**Loss Function**
+Mathematical function optimized during model training to minimize prediction errors.
 
 **LSP (Language Server Protocol)**
 Standard protocol that MCP is compared to for understanding its architecture and functionality.
@@ -451,6 +493,9 @@ Meta's model that generates music tracks from text descriptions.
 
 **Marketing and AI**
 The often misleading promotion of AI capabilities, including false AGI claims and overstated application benefits.
+
+**Marketing Agent (Claude Code)**
+Specialized agent for translating technical content to plain language.
 
 **MCP (Model Context Protocol)**
 A protocol for connecting AI models to external tools and data sources, enabling extended capabilities. Created by Anthropic in 2024.
@@ -499,6 +544,9 @@ In reinforcement learning, a representation of the environment that the agent us
 
 ## N
 
+**Naive Bayes**
+Classification algorithm based on Bayes' theorem with strong independence assumptions between features.
+
 **Non-idempotent**
 Operations that produce different results when executed multiple times, requiring special testing setup.
 
@@ -525,10 +573,16 @@ API documentation specification format that AI coding agents can read to generat
 **Orchestration**
 Agent pattern for coordinating multiple AI operations or tools in sequence or parallel.
 
+**Orphaned Resources**
+Infrastructure or code assets without clear ownership or maintenance.
+
 **Overfitting**
 Challenge in fine-tuning where a model learns training data too specifically and loses generalization ability.
 
 ## P
+
+**Payable Tokens**
+Tokens that incur cost in API-based pricing plans.
 
 **PCA (Principal Component Analysis)**
 Dimensionality reduction technique that identifies principal components explaining maximum variance in data.
@@ -542,6 +596,9 @@ Sensitive personal data that should be excluded from AI processing for privacy a
 **Pinecone**
 Vector database for storing and querying embeddings.
 
+**Plan Agent**
+Claude Code specialized agent for planning tasks.
+
 **Playwright**
 End-to-end testing framework for web applications.
 
@@ -554,6 +611,9 @@ In reinforcement learning, a strategy or rule that the agent uses to make decisi
 **Postgres MCP**
 MCP server for reading data from PostgreSQL database tables in plain English.
 
+**PR (Pull Request)**
+Proposed code changes submitted for review before merging into main codebase.
+
 **Precision and Reproducibility**
 Challenge with AI systems: inability to guarantee identical outputs for identical inputs due to probabilistic nature.
 
@@ -562,6 +622,9 @@ AI acting as personalized instructor providing tailored learning experiences.
 
 **Pre-trained Model**
 Model that has already acquired knowledge during initial training phase, used as starting point for fine-tuning.
+
+**Proficiency**
+Level of skill and expertise required to perform tasks effectively without constant reference.
 
 **Prompt Engineering**
 Craft of writing effective instructions for AI models to achieve desired outcomes, largely replaced by context engineering.
@@ -645,14 +708,20 @@ Key innovation of Transformers that allows models to weigh the importance of dif
 **Semantic Meaning**
 The meaning captured by embeddings that allows for effective text comparisons.
 
+**Semi-Supervised Learning**
+Machine learning paradigm combining labeled and unlabeled data for training.
+
 **Sentiment Analysis**
 Analyzing emotional tone and intent in text, applicable to emails, customer feedback, and communication review.
 
 **Slack MCP**
 MCP server for sending messages to Slack teams.
 
+**Smoke Test**
+High-level test verifying critical system functionality without exhaustive coverage.
+
 **Socratic Interrogation**
-AI teaching technique where AI asks increasingly deeper questions instead of providing answers, forcing self-discovery.
+Teaching method where AI asks progressively deeper questions instead of providing answers.
 
 **Solutions vs Wrappers**
 Philosophy distinguishing genuine innovations from superficial API wrappers. Many AI startups are wrappers rather than true solutions.
@@ -686,6 +755,9 @@ In reinforcement learning, a snapshot of the environment at a given time.
 
 **Status Line**
 Customizable information display at bottom of Claude Code interface showing current state.
+
+**Sub-Agents (Claude Code)**
+Independent agents spawned by Claude Code, each with their own 200k token context window.
 
 **Summarization**
 LLM task of condensing long text into shorter summaries while retaining key information.
@@ -731,9 +803,6 @@ Infrastructure as code tool, mentioned as tech asset requiring ownership trackin
 **Test Doubles**
 Generic term for objects used in testing to replace real dependencies (includes stubs, mocks, fakes).
 
-**Technical Debt**
-Accumulated shortcuts and suboptimal solutions in codebases that make migrations and maintenance more difficult.
-
 **Test Induction**
 Proper testing infrastructure setup for comprehensive test coverage.
 
@@ -777,6 +846,9 @@ Characterization of AI progress: advancement comes with limitations, hallucinati
 
 **Ultrathink**
 A Claude Code feature providing extended reasoning capabilities with larger token budget up to 10,000+ tokens for complex problems, allowing more thorough analysis than normal thinking mode.
+
+**Underfitting**
+Model training problem where model is too simple to capture data patterns, requiring more complexity or features.
 
 **Unsupervised Learning**
 Machine learning paradigm where models find patterns in unlabeled data without predefined categories.
@@ -842,3 +914,6 @@ Rapid prototyping phase made faster with AI assistance.
 
 **Demo to Production**
 Complex productionization phase that remains difficult despite AI assistance, requiring careful engineering.
+
+**Zig**
+Systems programming language mentioned as a learning target.

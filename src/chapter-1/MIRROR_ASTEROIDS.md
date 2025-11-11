@@ -8,7 +8,7 @@ We should not be afraid of AI, we should not ignore AI. But if we don't have `no
 
 ## From Hunters to Gatherers
 
-In the past, we we're hunters; we had to work hard to get food. Such bad times taught us and made us stronger. Now it's so easy to get food, it's so easy to get everything delivered to your home without any effort. AI is like that, it's effortless, it's frictionless—you want it? You got it.
+In the past, we were hunters; we had to work hard to get food. Such bad times taught us and made us stronger. Now it's so easy to get food, it's so easy to get everything delivered to your home without any effort. AI is like that, it's effortless, it's frictionless—you want it? You got it.
 
 Now you need to think about this: you need time without AI. Why? Because you also need to be yourself. If you do all the things that someone says and you don't have a voice anymore, you are in trouble.
 

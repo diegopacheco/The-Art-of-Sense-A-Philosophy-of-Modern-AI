@@ -22,7 +22,7 @@ Diego Pacheco Claude global guidelines.
 * Never use comments, never comment anything.
 * Never use the words: "demo", "demonstration" or "example", never ever.
 * Make sure the code is as simple as possible.
-* Make sure the code is we'll written and make sense.
+* Make sure the code is well written and makes sense.
 * Do not do things I did not ask for in explicit prompts.
 * Use the least number of libraries as possible, if possible no libraries.
 

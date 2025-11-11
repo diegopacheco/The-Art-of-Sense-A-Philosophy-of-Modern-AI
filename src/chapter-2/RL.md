@@ -11,11 +11,11 @@ State: A snapshot of the environment at a given time.
 
 Action: A decision or move made by the agent.
 
-Reward: A scalar feedback signal that indicates how we'll the agent is doing.
+Reward: A scalar feedback signal that indicates how well the agent is doing.
 
 Policy: A strategy or rule that the agent uses to make decisions.
 
-Value Function: A function that estimates how good it's for the agent to be in a given state.
+Value Function: A function that estimates how good it is for the agent to be in a given state.
 
 Model: A representation of the environment that the agent uses to predict the next state and reward.
 ```

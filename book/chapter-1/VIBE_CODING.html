@@ -229,7 +229,7 @@
 <li>You study the rules of the road</li>
 <li>You practice driving a lot (for years probably)</li>
 </ul>
-<p>Now the effect is that you do that with such efficiency. Now, imagine if you we're driving a car and looking at the manual—literally, you have a thick book with rules, and while driving you check the manual every time:</p>
+<p>Now the effect is that you do that with such efficiency. Now, imagine if you were driving a car and looking at the manual—literally, you have a thick book with rules, and while driving you check the manual every time:</p>
 <ul>
 <li>You need to turn left</li>
 <li>You need to turn right</li>
@@ -237,10 +237,10 @@
 <li>You need to check the speed limit</li>
 <li>You need to backup</li>
 </ul>
-<p>You will be such a terrible driver. I don't think anyone drives like this. Because we don't allow anyone to drive—there is a bar. But for engineering there is no bar. Anyone can do anything, even without being close to being qualified. Now I'm not advocating for extreme regulation of engineering. But what I'm saying is: imagine if I tell you that a huge number of programmers code like the driver I described. "Wow, no way Diego, this sucks!" Well, instead of the manual they we're using StackOverflow, and before that forums, and now, guess what? They are using LLMs and AI Agents.</p>
+<p>You will be such a terrible driver. I don't think anyone drives like this. Because we don't allow anyone to drive—there is a bar. But for engineering there is no bar. Anyone can do anything, even without being close to being qualified. Now I'm not advocating for extreme regulation of engineering. But what I'm saying is: imagine if I tell you that a huge number of programmers code like the driver I described. "Wow, no way Diego, this sucks!" Well, instead of the manual they were using StackOverflow, and before that forums, and now, guess what? They are using LLMs and AI Agents.</p>
 <p>We need to have proficiency!</p>
 <h2 id="zero-to-demo-vs-demo-to-production"><a class="header" href="#zero-to-demo-vs-demo-to-production">Zero to Demo vs Demo to Production</a></h2>
-<p>Vibe coding can be very useful for creating a DEMO. However putting software into production it's a whole different game.</p>
+<p>Vibe coding can be very useful for creating a DEMO. However, putting software into production is a whole different game.</p>
 <p>Karpathy explains how he got a DEMO on waymo in 2014 and it was working. He thought it would be quick. More than 11 years later in 2025 Waymo is still not 100% done. Why? Because some tasks are hard and the gap between the demo and production is huge.</p>
 <p>In the video below Andrej Karpathy explains it well:</p>
 <div style="position: relative; width: 100%; padding-bottom: 56.25%">
@@ -250,7 +250,7 @@
     style="position: absolute; width: 100%; height: 100%;">
 </iframe>
 </div>
-<p>Vibe coding can be useful to figure out what we want. Maybe to help non-engineers to figure out what they want, then better write requirements. In a sense vibe coding "democratizes" building and everybody can be a software engineer,, however, to really use what you build with "vibe coding" must be some simple task, some tasks cannot be vibe coded and like I said before is a big mistake. However if it's small enough and you can "build your own tool" why not.</p>
+<p>Vibe coding can be useful to figure out what we want. Maybe to help non-engineers to figure out what they want, then better write requirements. In a sense vibe coding "democratizes" building and everybody can be a software engineer, however, to really use what you build with "vibe coding" must be some simple task, some tasks cannot be vibe coded and like I said before is a big mistake. However if it's small enough and you can "build your own tool" why not.</p>
 
                     </main>
 
@@ -281,6 +281,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

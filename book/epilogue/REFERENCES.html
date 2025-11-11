@@ -402,6 +402,12 @@
 <li>https://diego-pacheco.blogspot.com/2025/10/testing-mocks.html - Testing mocks</li>
 <li>https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html - Testing queues and batch jobs</li>
 </ul>
+<h3 id="api-documentation-and-stress-testing"><a class="header" href="#api-documentation-and-stress-testing">API Documentation and Stress Testing</a></h3>
+<ul>
+<li>https://swagger.io/why-swagger/ - Swagger/OpenAI API documentation</li>
+<li>https://diego-pacheco.blogspot.com/2018/06/experiences-building-running-stress.html - Experiences building and running stress tests</li>
+<li>https://diego-pacheco.blogspot.com/2015/08/stress-test-with-gatling.html - Stress testing with Gatling</li>
+</ul>
 <h2 id="chapter-7---migrations-with-ai"><a class="header" href="#chapter-7---migrations-with-ai">Chapter 7 - Migrations with AI</a></h2>
 <p>No additional external references.</p>
 <h2 id="chapter-8---non-obvious-use-cases"><a class="header" href="#chapter-8---non-obvious-use-cases">Chapter 8 - Non-Obvious Use Cases</a></h2>
@@ -499,6 +505,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

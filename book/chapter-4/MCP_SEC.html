@@ -191,7 +191,7 @@
 <li>Scan MCPs for vulnerabilities before using them.</li>
 <li>Use MCPs in isolated environments. Like sandboxes or containers.</li>
 </ul>
-<h2 id="threating-mcp-as-a-bomb"><a class="header" href="#threating-mcp-as-a-bomb">Threating MCP as a BOMB</a></h2>
+<h2 id="treating-mcp-as-a-bomb"><a class="header" href="#treating-mcp-as-a-bomb">Treating MCP as a BOMB</a></h2>
 <p>Andrew Zigler has this amazing blog post: <a href="https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs">Treating MCP servers like bombs</a> which is spot on. This is one way of dealing with MCPs. Imagine someone or some automated process goes and checks out an MCP in an isolated environment, runs some tests on it, and then decides if it's safe to use or not.</p>
 <h2 id="mcp-scanning"><a class="header" href="#mcp-scanning">MCP Scanning</a></h2>
 <p>There are proper MCP Scanning solutions out there. Like <a href="https://evo.ai.snyk.io/">Evo by Snyk</a> or if you want something open source consider <a href="https://github.com/cisco-ai-defense/mcp-scanner">Cisco MCP Scanner</a>.</p>
@@ -225,6 +225,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

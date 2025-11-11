@@ -181,7 +181,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="fine-tuning"><a class="header" href="#fine-tuning">Fine Tuning</a></h1>
-<p>Fine-tuning is the process of taking a pre-trained model and adapting it to a specific task or dataset. This approach leverages the knowledge the model has already acquired during its initial training phase, allowing it to perform we'll on new tasks with less data and computational resources.</p>
+<p>Fine-tuning is the process of taking a pre-trained model and adapting it to a specific task or dataset. This approach leverages the knowledge the model has already acquired during its initial training phase, allowing it to perform well on new tasks with less data and computational resources.</p>
 <p>Fine-tuning can improve model performance but it also comes with challenges such as overfitting - which could be reduced with <a href="https://proceedings.mlr.press/v162/ju22a.html?utm_source=chatgpt.com">early stop and other techniques</a>, <a href="https://aclanthology.org/2024.findings-emnlp.249/?utm_source=chatgpt.com">catastrophic forgetting</a>, and the need for careful <a href="https://arxiv.org/abs/2006.04884?utm_source=chatgpt.com">hyperparameter tuning</a>.</p>
 
                     </main>
@@ -213,6 +213,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

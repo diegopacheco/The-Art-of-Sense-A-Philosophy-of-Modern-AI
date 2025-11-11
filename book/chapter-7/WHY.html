@@ -204,7 +204,7 @@
 <li>Downtime: Migrations can require downtime, which can be disruptive to users. Not all migrations require downtime, but it's easier with downtime.</li>
 <li>Data Loss: There is a risk of data loss during migrations, especially if not done carefully (in case of database or encryption migrations).</li>
 <li>Time Pressure: Teams are usually focused on features and migrations take this time away from them.</li>
-<li>Testing: Migrations require extensive testing to ensure that everything works correctly after the migration. Usually testing is not perfect, which forces migrations to discover problems that we're buried in the old system.</li>
+<li>Testing: Migrations require extensive testing to ensure that everything works correctly after the migration. Usually testing is not perfect, which forces migrations to discover problems that were buried in the old system.</li>
 </ul>
 <h2 id="difficult-reality-at-scale"><a class="header" href="#difficult-reality-at-scale">Difficult Reality at Scale</a></h2>
 <p>Migrations don't happen as often as they should.</p>
@@ -243,6 +243,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

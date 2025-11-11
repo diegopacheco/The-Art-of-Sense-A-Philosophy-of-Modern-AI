@@ -2,7 +2,7 @@
 
 [llms.txt](https://llmstxt.org/) and llms-full.txt are text files (usually with markdown formatting) that contain information about various large language models (LLMs). Such an idea is not new; we had other indexing-related files like `robots.txt` or `sitemap.xml`. This is useful for LLM agents when reading websites more effectively.
 
-I asked Claude Code about about it:
+I asked Claude Code about it:
 
 Prompt:
 ```

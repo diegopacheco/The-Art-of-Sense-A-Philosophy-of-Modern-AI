@@ -2,6 +2,19 @@
 
 All notable changes to "The Art of Sense: A Philosophy of Modern AI" book project are documented in this file.
 
+## November 10, 2025
+
+### Book Version 1.0.1 Release
+- Published version 1.0.1 of the book
+
+### Chapter 5 - Claude Code
+- Added Advanced Context Window Management guide (CC_ADVANCED_CTX_WINDOW_MGMT.md)
+
+### Epilogue
+- Updated Glossary with 28 new technical terms
+- Updated References with additional stress testing links
+- Updated Book Index with 15 new entries
+
 ## November 8, 2025
 
 ### Book Version 1.0.0 Release

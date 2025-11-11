@@ -4,7 +4,7 @@ Software engineers are under constant pressure for delivery. Such pressure plus 
 
 We know skipping tests is wrong. But all companies have legacy systems. There is always software before we arrive at a company (unless it's a startup on day 1). The reality is there is so much technical debt that you can't pay it all at once. Companies pay technical debt but never as much as they should. Quality ends up being compromised, which is not a wise decision and eventually will have catastrophic consequences.
 
-Thanks to AI coding agents, now we can add more tests, which before might not be possible due to lack of prioritization or investments. Now we can do more tests to systems we would not do it, not because we did not want to but because constraints we're too high. AI coding agents can help us write more tests, and better tests, faster. This is a huge win, and we should take it.
+Thanks to AI coding agents, now we can add more tests, which before might not be possible due to lack of prioritization or investments. Now we can do more tests to systems we would not do it, not because we did not want to but because constraints were too high. AI coding agents can help us write more tests, and better tests, faster. This is a huge win, and we should take it.
 
 ## Testing AI
 

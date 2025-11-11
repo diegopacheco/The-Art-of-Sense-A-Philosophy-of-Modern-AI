@@ -182,7 +182,7 @@
                     <main>
                         <h1 id="llmstxt-and-llms-fulltxt"><a class="header" href="#llmstxt-and-llms-fulltxt">llms.txt and llms-full.txt</a></h1>
 <p><a href="https://llmstxt.org/">llms.txt</a> and llms-full.txt are text files (usually with markdown formatting) that contain information about various large language models (LLMs). Such an idea is not new; we had other indexing-related files like <code>robots.txt</code> or <code>sitemap.xml</code>. This is useful for LLM agents when reading websites more effectively.</p>
-<p>I asked Claude Code about about it:</p>
+<p>I asked Claude Code about it:</p>
 <p>Prompt:</p>
 <pre><code>what is llms.txt and llms-full.txt?
 </code></pre>
@@ -245,6 +245,22 @@ These files live at the root (/llms.txt and /llms-full.txt) to help LLMs:
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

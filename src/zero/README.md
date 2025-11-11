@@ -1,6 +1,6 @@
 # Chapter ZERO
 
-Why I wrote this book?
+Why did I write this book?
 
 I have been working with AI since 2017. In the summer of 2024, I spent the whole summer going deep and learning about AI. I did [300+ coding POCs](https://github.com/diegopacheco/ai-playground), I read several books, I did several courses. On XMAS of 2024 I made my first migration using LLMs from Kotlin to Scala. In 2025, I tested all [AI coding agents](https://github.com/diegopacheco/ai-playground/tree/main/agents) I could, I wrote MCPs, I did several experiments.
 
