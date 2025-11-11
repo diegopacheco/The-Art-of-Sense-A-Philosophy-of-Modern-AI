@@ -212,11 +212,11 @@ No additional external references.
 ## Chapter 8 - Non-Obvious Use Cases
 
 ### Ownership and Team Management
-- https://diego-pacheco.blogspot.com/2021/01/team-erosion.html - Team erosion
-- https://diego-pacheco.blogspot.com/2022/06/configuration-ownership.html - Configuration ownership
-- https://diego-pacheco.blogspot.com/2020/03/borrowing-and-ownership-in-rust.html - Rust ownership concepts
-- https://diego-pacheco.blogspot.com/2023/09/tagging-everything.html - Tagging resources
-- https://diego-pacheco.blogspot.com/2020/08/shared-libraries-trap.html - Shared libraries trap
+- [Team erosion](https://diego-pacheco.blogspot.com/2021/01/team-erosion.html)
+- [Configuration ownership](https://diego-pacheco.blogspot.com/2022/06/configuration-ownership.html)
+- [Rust ownership concepts](https://diego-pacheco.blogspot.com/2020/03/borrowing-and-ownership-in-rust.html)
+- [Tagging resources](https://diego-pacheco.blogspot.com/2023/09/tagging-everything.html)
+- [Shared libraries trap](https://diego-pacheco.blogspot.com/2020/08/shared-libraries-trap.html)
 
 ## Chapter 9 - Learning from AI
 
