@@ -185,24 +185,24 @@
 ## Chapter 6 - Testing with AI
 
 ### Testing Frameworks and Tools
-- https://fakerjs.dev/ - Faker.js library for test data generation
-- https://junit.org/ - JUnit testing framework for Java
-- https://jestjs.io/ - Jest JavaScript testing framework
-- https://playwright.dev/ - Playwright end-to-end testing framework
-- https://k6.io/ - K6 load testing framework
-- https://www.cypress.io/ - Cypress end-to-end testing framework
-- https://www.selenium.dev/ - Selenium browser automation framework
-- https://gatling.io/ - Gatling load testing framework
+- [Faker.js library for test data generation](https://fakerjs.dev/)
+- [JUnit testing framework for Java](https://junit.org/)
+- [Jest JavaScript testing framework](https://jestjs.io/)
+- [Playwright end-to-end testing framework](https://playwright.dev/)
+- [K6 load testing framework](https://k6.io/)
+- [Cypress end-to-end testing framework](https://www.cypress.io/)
+- [Selenium browser automation framework](https://www.selenium.dev/)
+- [Gatling load testing framework](https://gatling.io/)
 
 ### Testing Blog Posts
-- https://diego-pacheco.blogspot.com/2021/02/synthetic-data-generation-and-java-faker.html - Synthetic data generation
-- https://diego-pacheco.blogspot.com/2025/10/testing-mocks.html - Testing mocks
-- https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html - Testing queues and batch jobs
+- [Synthetic data generation](https://diego-pacheco.blogspot.com/2021/02/synthetic-data-generation-and-java-faker.html)
+- [Testing mocks](https://diego-pacheco.blogspot.com/2025/10/testing-mocks.html)
+- [Testing queues and batch jobs](https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html)
 
 ### API Documentation and Stress Testing
-- https://swagger.io/why-swagger/ - Swagger/OpenAI API documentation
-- https://diego-pacheco.blogspot.com/2018/06/experiences-building-running-stress.html - Experiences building and running stress tests
-- https://diego-pacheco.blogspot.com/2015/08/stress-test-with-gatling.html - Stress testing with Gatling
+- [Swagger/OpenAI API documentation](https://swagger.io/why-swagger/)
+- [Experiences building and running stress tests](https://diego-pacheco.blogspot.com/2018/06/experiences-building-running-stress.html)
+- [Stress testing with Gatling](https://diego-pacheco.blogspot.com/2015/08/stress-test-with-gatling.html)
 
 
 ## Chapter 7 - Migrations with AI
