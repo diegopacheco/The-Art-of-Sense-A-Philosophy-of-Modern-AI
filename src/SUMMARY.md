@@ -57,6 +57,7 @@
   - [Commands](./chapter-5/CMDS.md)
   - [Bash Mode](./chapter-5/BASH_MODE.md)
   - [Exclusions ](./chapter-5/EXCLUSIONS.md)
+  - [Advanced Context Window Management](./chapter-5/CC_ADVANCED_CTX_WINDOW_MGMT.md)
   - [ultrathink](./chapter-5/ULTRATHINK.md)
   - [Custom Commands](./chapter-5/CUSTON_COMMANDS.md)
   - [Custom Agents](./chapter-5/CUSTON_AGENTS.md)
