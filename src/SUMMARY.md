@@ -100,6 +100,7 @@
 
 - [Epilogue](./epilogue/README.md)
   - [How I wrote the book](./epilogue/HOW_I_WROTE_THE_BOOK.md)
+  - [Resources](./epilogue/RESOURCES.md)
   - [References](./epilogue/REFERENCES.md)
   - [Changelog](./epilogue/CHANGELOG.md)
   - [Glossary](./epilogue/GLOSSARY.md)
