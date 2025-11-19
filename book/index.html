@@ -310,6 +310,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li><a href="./chapter-4/CONTEXT7.html">Context 7</a></li>
 <li><a href="./chapter-4/MCP_SEC.html">Security and Agents/MCP</a></li>
 <li><a href="./chapter-4/POPULAR_AGENTS.html">Popular Agents</a></li>
+<li><a href="./chapter-4/SDD.html">Spect Driven Development - SDD</a></li>
 </ul>
 </li>
 <li>
@@ -409,22 +410,6 @@ Hire, develop, retain, and truly grow talent at scale</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

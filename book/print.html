@@ -311,6 +311,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li><a href="./chapter-4/CONTEXT7.html">Context 7</a></li>
 <li><a href="./chapter-4/MCP_SEC.html">Security and Agents/MCP</a></li>
 <li><a href="./chapter-4/POPULAR_AGENTS.html">Popular Agents</a></li>
+<li><a href="./chapter-4/SDD.html">Spect Driven Development - SDD</a></li>
 </ul>
 </li>
 <li>
@@ -1012,6 +1013,14 @@ These files live at the root (/llms.txt and /llms-full.txt) to help LLMs:
 <p><a href="https://kiro.dev/">Kiro</a> is a coding agent by AWS. Kiro is a fork of VSCode and has a great developer experience. Kiro is different because it implements <a href="https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html">Spec Driven Development (SDD)</a>.</p>
 <h2 id="claude-code"><a class="header" href="#claude-code">Claude Code</a></h2>
 <p><a href="https://www.claude.com/product/claude-code">Claude Code</a> by anthropic is another coding agent. IMHO it's the best agent coding tool out there. Claude code works with anthropic LLM models.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="spec-driven-development-sdd"><a class="header" href="#spec-driven-development-sdd">Spec Driven Development (SDD)</a></h1>
+<p>Spec Driven Development (SDD) is an approach to software development where the specifications of the software are written before the actual implementation begins. This specification serves as a guide for developers throughout the development process. Such ideas are not new and in the past you might hear them as Model Driven Development (MDD).</p>
+<p>Here is a summary with SDD problems:</p>
+<img src="chapter-4/../images/04-SDD-sucks.png" width="600"/>
+<p>source: <a href="https://x.com/diego_pacheco/status/1988897341584093220">https://x.com/diego_pacheco/status/1988897341584093220</a></p>
+<p>Basically the problem is that more text != more clarity. There are serious context windown overheads and even evidence showing more text not necessary drive better results. I also belive we are going back to a dangerous place where we would give code up and and just management documents. We need remember this old catastrophic approach called <code>Waterfall</code>. SDD has the potential to bring waterfall back which is anti-agile.</p>
+<p>I'm not alone, here is a great <a href="https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html">critique on SDD on Martin Flowers website</a>.François Zaninotto made an even stronger critique here: <a href="https://marmelab.com/blog/2025/11/12/spec-driven-development-waterfall-strikes-back.html">Spec-Driven Development: The Waterfall Strikes Back</a>.</p>
+<p>My advice is that you avoid SDD.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-5---claude-code"><a class="header" href="#chapter-5---claude-code">Chapter 5 - Claude Code</a></h1>
 <p>Claude was extremely disruptive when it launched Claude Code in mid 2024. Let's deep dive into Claude, learn what it can do and how it will change your day-to-day use of AI.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-claude-code"><a class="header" href="#what-is-claude-code">What is Claude Code?</a></h1>
@@ -3711,22 +3720,6 @@ Systems programming language mentioned as a learning target.</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
