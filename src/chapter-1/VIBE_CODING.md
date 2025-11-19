@@ -68,6 +68,12 @@ You will be such a terrible driver. I don't think anyone drives like this. Becau
 
 We need to have proficiency!
 
+## Bus Factor
+
+Every company has this conversations about continuity and sucession planning. Some companies say like "what if you hot by a bus" or "If a plane crash" or "if there is a earthquake". The idea is that if a key person is not there, the company can continue to operate. This is called "Bus Factor".
+
+Before Vibecoding people was obsessed with this. Some companies would never send all the managers in the the same flight, because if the plane crashes the company would be in trouble. People assum that with AI you dont need people, but that is not true at all. There is this awesome post: [“AI First” and the Bus Factor of 0](https://www.mindflash.org/coding/ai/ai-and-the-bus-factor-of-0-1608) explain more of the fallacies of vibecoding.
+
 ## Zero to Demo vs Demo to Production
 
 Vibe coding can be very useful for creating a DEMO. However, putting software into production is a whole different game.
