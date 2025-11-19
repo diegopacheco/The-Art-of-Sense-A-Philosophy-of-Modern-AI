@@ -2,6 +2,25 @@
 
 All notable changes to "The Art of Sense: A Philosophy of Modern AI" book project are documented in this file.
 
+## November 19, 2025
+
+### Book Version 1.0.2 Release
+- Published version 1.0.2 of the book
+
+### Chapter 4 - Agents
+- Added comprehensive Spec Driven Development guide (SDD.md)
+- Enhanced agent patterns and methodologies
+
+### Epilogue
+- Updated References with additional book links
+- Refined content organization and structure
+
+## November 15, 2025
+
+### Epilogue
+- Added additional book references to References section
+- Enhanced author bibliography
+
 ## November 10, 2025
 
 ### Book Version 1.0.1 Release

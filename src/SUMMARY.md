@@ -12,6 +12,7 @@
   - [Reality](./chapter-1/REALITY.md)
   - [Randomness](./chapter-1/RANDOMNESS.md)
   - [Fooled by AI](./chapter-1/FOOLED_BY_AI.md)
+  - [Software Context](./chapter-1/SOFTWARE_CONTEXT.md)
   - [Vibe Coding](./chapter-1/VIBE_CODING.md)
   - [AI Input](./chapter-1/AI_INPUT.md)
   - [Mirror on Asteroids](./chapter-1/MIRROR_ASTEROIDS.md)
