@@ -50,6 +50,7 @@
   - [Context 7](./chapter-4/CONTEXT7.md)
   - [Security and Agents/MCP](./chapter-4/MCP_SEC.md)
   - [Popular Agents](./chapter-4/POPULAR_AGENTS.md)
+  - [Spect Driven Development - SDD](./chapter-4/SDD.md)  
 - [Chapter 5 - Claude Code](./chapter-5/README.md)
   - [What is Claude Code?](./chapter-5/WHAT.md)
   - [Prompt Library](./chapter-5/PROMPT-LIBRARY.md)
