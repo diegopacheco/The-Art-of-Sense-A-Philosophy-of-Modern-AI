@@ -263,6 +263,7 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <li><a href="./chapter-1/REALITY.html">Reality</a></li>
 <li><a href="./chapter-1/RANDOMNESS.html">Randomness</a></li>
 <li><a href="./chapter-1/FOOLED_BY_AI.html">Fooled by AI</a></li>
+<li><a href="./chapter-1/SOFTWARE_CONTEXT.html">Software Context</a></li>
 <li><a href="./chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
 <li><a href="./chapter-1/AI_INPUT.html">AI Input</a></li>
 <li><a href="./chapter-1/MIRROR_ASTEROIDS.html">Mirror on Asteroids</a></li>
@@ -461,6 +462,11 @@ Hire, develop, retain, and truly grow talent at scale</p>
 <h2 id="solutions-vs-wrappers"><a class="header" href="#solutions-vs-wrappers">Solutions vs Wrappers</a></h2>
 <p>Now, many startups are building or vibing something with.ai or a new Agentic. Under the hood most of the time it's just a wrapper around OpenAI API or Anthropic API. So what is the real value add?</p>
 <p>I love Rappers but I never liked Wrappers. In my book Principles of software architecture modernization I wrote about the dangers of wrappers with internal shared libraries. Now we have the same danger but with external tools. There is an explosion of tools, new tools, all old tools being rebranded to AI, or AI features popping up in software we would not expect.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="software-context"><a class="header" href="#software-context">Software Context</a></h1>
+<p>Software is not in a good shape. Current state of software is not great. Technical debt is bigger than ever. Companies complely ignore technical debt and focus only on new features.</p>
+<p>Denis Stetskov has this amazing article about our current software quality crisis: <a href="https://techtrenches.substack.com/p/the-great-software-quality-collapse">The Great Software Quality Collapse: How We Normalized Catastrophe</a>. I like Denis post quite a lot and agree 100%. The only thing is that he talks about memory leaks took much that someone could say, but we have more memory today so thats fine. I'm this is being memory and optimization, is the fact that Lead time is not getting better, bugs are not getting fixed faster, and overall quality is declining. That is being memory leaks.</p>
+<p>Such acknowledgment of the problem is the first step to solving it. It's very important to understand that state of afairs are not good. AGI is not here yet and only God knows when will arrive(IF arrive), AI can create a lof ot thrash code, introduce nasty bugs, and generally make things worse if we don't have good software practices in place. I will cover this extensively in the later chapters.</p>
+<p>Now is not the time to pay less atention in software, the opposite we must be more vigilant, pay more attention.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="vibe-coding"><a class="header" href="#vibe-coding">Vibe Coding</a></h1>
 <p>Andrej Karpathy coined the term "vibe coding" in one of his <a href="https://x.com/karpathy/status/1886192184808149383?lang=en">tweets</a> in February 2025.</p>
 <img src="chapter-1/../images/01-Vibe-Coding-2025-term.png" alt="Vibe Coding Tweet" style="max-width: 600px;"/>
@@ -520,6 +526,9 @@ Hire, develop, retain, and truly grow talent at scale</p>
 </ul>
 <p>You will be such a terrible driver. I don't think anyone drives like this. Because we don't allow anyone to drive—there is a bar. But for engineering there is no bar. Anyone can do anything, even without being close to being qualified. Now I'm not advocating for extreme regulation of engineering. But what I'm saying is: imagine if I tell you that a huge number of programmers code like the driver I described. "Wow, no way Diego, this sucks!" Well, instead of the manual they were using StackOverflow, and before that forums, and now, guess what? They are using LLMs and AI Agents.</p>
 <p>We need to have proficiency!</p>
+<h2 id="bus-factor"><a class="header" href="#bus-factor">Bus Factor</a></h2>
+<p>Every company has these conversations about continuity and succession planning. Some companies say like "what if you get hit by a bus" or "if a plane crashes" or "if there is an earthquake". The idea is that if a key person is not there, the company can continue to operate. This is called "Bus Factor".</p>
+<p>Before Vibe coding, people were obsessed with this. Some companies would never send all the managers on the same flight, because if the plane crashes the company would be in trouble. People assume that with AI you don't need people, but that is not true at all. There is this awesome post: <a href="https://www.mindflash.org/coding/ai/ai-and-the-bus-factor-of-0-1608">"AI First" and the Bus Factor of 0</a> that explains more of the fallacies of vibe coding.</p>
 <h2 id="zero-to-demo-vs-demo-to-production"><a class="header" href="#zero-to-demo-vs-demo-to-production">Zero to Demo vs Demo to Production</a></h2>
 <p>Vibe coding can be very useful for creating a DEMO. However, putting software into production is a whole different game.</p>
 <p>Karpathy explains how he got a DEMO on waymo in 2014 and it was working. He thought it would be quick. More than 11 years later in 2025 Waymo is still not 100% done. Why? Because some tasks are hard and the gap between the demo and production is huge.</p>
@@ -1018,8 +1027,8 @@ These files live at the root (/llms.txt and /llms-full.txt) to help LLMs:
 <p>Here is a summary with SDD problems:</p>
 <img src="chapter-4/../images/04-SDD-sucks.png" width="600"/>
 <p>source: <a href="https://x.com/diego_pacheco/status/1988897341584093220">https://x.com/diego_pacheco/status/1988897341584093220</a></p>
-<p>Basically the problem is that more text != more clarity. There are serious context windown overheads and even evidence showing more text not necessary drive better results. I also belive we are going back to a dangerous place where we would give code up and and just management documents. We need remember this old catastrophic approach called <code>Waterfall</code>. SDD has the potential to bring waterfall back which is anti-agile.</p>
-<p>I'm not alone, here is a great <a href="https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html">critique on SDD on Martin Flowers website</a>.François Zaninotto made an even stronger critique here: <a href="https://marmelab.com/blog/2025/11/12/spec-driven-development-waterfall-strikes-back.html">Spec-Driven Development: The Waterfall Strikes Back</a>.</p>
+<p>Basically the problem is that more text != more clarity. There are serious context window overheads and even evidence showing more text does not necessarily drive better results. I also believe we are going back to a dangerous place where we would give code up and just manage documents. We need to remember this old catastrophic approach called <code>Waterfall</code>. SDD has the potential to bring waterfall back which is anti-agile.</p>
+<p>I'm not alone, here is a great <a href="https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html">critique on SDD on Martin Fowler's website</a>. François Zaninotto made an even stronger critique here: <a href="https://marmelab.com/blog/2025/11/12/spec-driven-development-waterfall-strikes-back.html">Spec-Driven Development: The Waterfall Strikes Back</a>.</p>
 <p>My advice is that you avoid SDD.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-5---claude-code"><a class="header" href="#chapter-5---claude-code">Chapter 5 - Claude Code</a></h1>
 <p>Claude was extremely disruptive when it launched Claude Code in mid 2024. Let's deep dive into Claude, learn what it can do and how it will change your day-to-day use of AI.</p>
@@ -1306,11 +1315,11 @@ Ultrathink Mode
 - Claude can reason through multiple approaches and self-correct
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="custom-commands"><a class="header" href="#custom-commands">Custom Commands</a></h1>
-<p>Another very good feature in claude code is custom commands. Custom commands allow you to create your own commands. The nice thing is that claude will never run them, it will only run if you explicitly tell it to. This is useful for creating commands that you want to use frequently without having to type them out each time.</p>
+<p>Another very good feature in Claude Code is custom commands. Custom commands allow you to create your own commands. The nice thing is that Claude will never run them, it will only run if you explicitly tell it to. This is useful for creating commands that you want to use frequently without having to type them out each time.</p>
 <p>Custom commands are useful for expensive tasks that you don't run often between sessions but don't run on every prompt. Here are some examples of custom commands:</p>
 <ul>
 <li>/report.md: A command to generate a report based on data from a database.</li>
-<li>/english.md: A command that fix your english typos and grammar.</li>
+<li>/english.md: A command that fixes your English typos and grammar.</li>
 <li>/summarize.md: A command that summarizes long texts into concise points.</li>
 <li>/translate.md: A command that translates text from one language to another.</li>
 </ul>
@@ -1356,8 +1365,8 @@ Suggest specific optimizations with code snippets.
 Usage: /perf @api/users.ts
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="custom-agents"><a class="header" href="#custom-agents">Custom Agents</a></h1>
-<p>Claude Code allows you to create custom agents. Custom agents can be generated by a prompt. At the end of the day a custom agent is just a markdown file that lives under the path <code>~/.claude/agents/AGENT_NAME.md</code>.</p>
-<p>A custom agent is automatically loaded by claude code when you start it. You can create, edit or delete custom agents using the <code>/agents</code> command. Custom agents are different than commands. For instance, commands you need to invoke them using the <code>/command_name</code> syntax. Custom agents you can just call them by their name or just tell your prompt to claude and it will invoke the agent for you.</p>
+<p>Claude Code allows you to create custom agents. Custom agents can be generated by a prompt. At the end of the day, a custom agent is just a markdown file that lives under the path <code>~/.claude/agents/AGENT_NAME.md</code>.</p>
+<p>A custom agent is automatically loaded by Claude Code when you start it. You can create, edit, or delete custom agents using the <code>/agents</code> command. Custom agents are different from commands. For instance, with commands you need to invoke them using the <code>/command_name</code> syntax. Custom agents you can just call them by their name or just tell your prompt to Claude and it will invoke the agent for you.</p>
 <p>Here are some ideas for custom agents you can create:</p>
 <ul>
 <li><strong>Code Reviewer Agent</strong>: An agent that reviews code for best practices, security vulnerabilities, and performance optimizations.</li>
@@ -2381,6 +2390,27 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="changelog"><a class="header" href="#changelog">Changelog</a></h1>
 <p>All notable changes to "The Art of Sense: A Philosophy of Modern AI" book project are documented in this file.</p>
+<h2 id="november-19-2025"><a class="header" href="#november-19-2025">November 19, 2025</a></h2>
+<h3 id="book-version-102-release"><a class="header" href="#book-version-102-release">Book Version 1.0.2 Release</a></h3>
+<ul>
+<li>Published version 1.0.2 of the book</li>
+</ul>
+<h3 id="chapter-4---agents-2"><a class="header" href="#chapter-4---agents-2">Chapter 4 - Agents</a></h3>
+<ul>
+<li>Added comprehensive Spec Driven Development guide (SDD.md)</li>
+<li>Enhanced agent patterns and methodologies</li>
+</ul>
+<h3 id="epilogue-2"><a class="header" href="#epilogue-2">Epilogue</a></h3>
+<ul>
+<li>Updated References with additional book links</li>
+<li>Refined content organization and structure</li>
+</ul>
+<h2 id="november-15-2025"><a class="header" href="#november-15-2025">November 15, 2025</a></h2>
+<h3 id="epilogue-3"><a class="header" href="#epilogue-3">Epilogue</a></h3>
+<ul>
+<li>Added additional book references to References section</li>
+<li>Enhanced author bibliography</li>
+</ul>
 <h2 id="november-10-2025"><a class="header" href="#november-10-2025">November 10, 2025</a></h2>
 <h3 id="book-version-101-release"><a class="header" href="#book-version-101-release">Book Version 1.0.1 Release</a></h3>
 <ul>
@@ -2390,7 +2420,7 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <ul>
 <li>Added Advanced Context Window Management guide (CC_ADVANCED_CTX_WINDOW_MGMT.md)</li>
 </ul>
-<h3 id="epilogue-2"><a class="header" href="#epilogue-2">Epilogue</a></h3>
+<h3 id="epilogue-4"><a class="header" href="#epilogue-4">Epilogue</a></h3>
 <ul>
 <li>Updated Glossary with 28 new technical terms</li>
 <li>Updated References with additional stress testing links</li>
@@ -2492,7 +2522,7 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li>Enhanced migration rationale (WHY.md)</li>
 <li>Created chapter introduction (README.md)</li>
 </ul>
-<h3 id="epilogue-3"><a class="header" href="#epilogue-3">Epilogue</a></h3>
+<h3 id="epilogue-5"><a class="header" href="#epilogue-5">Epilogue</a></h3>
 <ul>
 <li>Updated book structure and organization (README.md)</li>
 <li>Enhanced how the book was written documentation (HOW_I_WROTE_THE_BOOK.md)</li>
@@ -2520,7 +2550,7 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li>Enhanced exclusions and filtering (EXCLUSIONS.md)</li>
 <li>Updated chapter introduction (README.md)</li>
 </ul>
-<h3 id="chapter-4---agents-2"><a class="header" href="#chapter-4---agents-2">Chapter 4 - Agents</a></h3>
+<h3 id="chapter-4---agents-3"><a class="header" href="#chapter-4---agents-3">Chapter 4 - Agents</a></h3>
 <ul>
 <li>Added llms.txt standard documentation (LLMS.txt.md)</li>
 <li>Enhanced context window management (CONTEXT_WINDOW.md)</li>
