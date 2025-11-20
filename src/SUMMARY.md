@@ -14,6 +14,7 @@
   - [Fooled by AI](./chapter-1/FOOLED_BY_AI.md)
   - [Markething](./chapter-1/MKT.md)
   - [Software Context](./chapter-1/SOFTWARE_CONTEXT.md)
+  - [AGI](./chapter-1/AGI.md)
   - [Vibe Coding](./chapter-1/VIBE_CODING.md)
   - [AI Input](./chapter-1/AI_INPUT.md)
   - [Mirror on Asteroids](./chapter-1/MIRROR_ASTEROIDS.md)
