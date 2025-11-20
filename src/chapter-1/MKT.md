@@ -17,6 +17,9 @@ Now #1 and #2 are happening, we are not in #3 yet as(2025) but eventually will h
 Also there are terms use that are 100% misleading, to not say lies, for instance, AI or LLM models cannot think, they cannot reason. But all tools and agents today use terms like "thinking", "reasoning", "understanding", etc. which are completely misleading. Some models are also called "Reasoning Models" which is misleading as well.
 
 Here is some evidence:
+* [Sam Altman now says AGI, or human-level AI, is ‘not a super useful term’ — and he’s not alone](https://www.cnbc.com/2025/08/11/sam-altman-says-agi-is-a-pointless-term-experts-agree.html)
 * [The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity by Apple](https://machinelearning.apple.com/research/illusion-of-thinking)
 * [I Think Therefore I am: No, LLMs Cannot Reason](https://matthewdwhite.medium.com/i-think-therefore-i-am-no-llms-cannot-reason-a89e9b00754f)
 * [Yann LeCun Just DESTROYED the LLM Hype — AGI Will Need More](https://www.youtube.com/watch?v=hOiL80G9Mnk)
+* [Richard Sutton – Father of RL thinks LLMs are a dead end
+](https://www.youtube.com/watch?v=21EYKqUsPfg)
