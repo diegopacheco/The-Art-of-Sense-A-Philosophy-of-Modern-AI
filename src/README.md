@@ -86,7 +86,7 @@ Hire, develop, retain, and truly grow talent at scale
   - [Reality](./chapter-1/REALITY.md)
   - [Randomness](./chapter-1/RANDOMNESS.md)
   - [Fooled by AI](./chapter-1/FOOLED_BY_AI.md)
-  - [Markething](./chapter-1/MKT.md)  
+  - [Marketing](./chapter-1/MKT.md)  
   - [Software Context](./chapter-1/SOFTWARE_CONTEXT.md)
   - [AGI](./chapter-1/AGI.md)
   - [Vibe Coding](./chapter-1/VIBE_CODING.md)
@@ -126,7 +126,7 @@ Hire, develop, retain, and truly grow talent at scale
   - [Context 7](./chapter-4/CONTEXT7.md)
   - [Security and Agents/MCP](./chapter-4/MCP_SEC.md)
   - [Popular Agents](./chapter-4/POPULAR_AGENTS.md)
-  - [Spect Driven Development - SDD](./chapter-4/SDD.md)
+  - [Spec Driven Development - SDD](./chapter-4/SDD.md)
 
 - [Chapter 5 - Claude Code](./chapter-5/README.md)
   - [What is Claude Code?](./chapter-5/WHAT.md)

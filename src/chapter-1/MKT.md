@@ -1,6 +1,6 @@
-# Markething
+# Marketing
 
-Before I explain the issue with marketing, let's look the following picture.
+Before I explain the issue with marketing, let's look at the following picture.
 
 <img src="../images/01-hype-cycle.png" width="600"/>
 
@@ -12,9 +12,9 @@ AI has a lot of hype, the problem with hype is that you have:
 * 3. Loss of interest
 * 4. Abandonment of the technology
 
-Now #1 and #2 are happening, we are not in #3 yet as(2025) but eventually will happen. Why I'm talking about this? Because marketing is fueling the hype, and marketing is not interested in the long-term success of a technology, only in short-term gains.
+Now #1 and #2 are happening; we are not in #3 yet as of 2025, but it will eventually happen. Why am I talking about this? Because marketing is fueling the hype, and marketing is not interested in the long-term success of a technology, only in short-term gains.
 
-Also there are terms use that are 100% misleading, to not say lies, for instance, AI or LLM models cannot think, they cannot reason. But all tools and agents today use terms like "thinking", "reasoning", "understanding", etc. which are completely misleading. Some models are also called "Reasoning Models" which is misleading as well.
+Also, there are terms used that are 100% misleading, not to say lies. For instance, AI or LLM models cannot think; they cannot reason. But all tools and agents today use terms like "thinking", "reasoning", "understanding", etc., which are completely misleading. Some models are also called "Reasoning Models," which is misleading as well.
 
 Here is some evidence:
 * [Sam Altman now says AGI, or human-level AI, is ‘not a super useful term’ — and he’s not alone](https://www.cnbc.com/2025/08/11/sam-altman-says-agi-is-a-pointless-term-experts-agree.html)

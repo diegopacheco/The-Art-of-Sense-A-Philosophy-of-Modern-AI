@@ -2,18 +2,18 @@
 
 Machine Learning is not new. The field of Artificial Intelligence (AI) has been around since the 1950s, and many of the techniques we use today have their roots in traditional AI methods.
 
-Traditional AI, can help you with:
+Traditional AI can help you with:
 * Predictive Analytics
 * Classification: Spam detection, sentiment analysis, Fraud detection
 * Clustering: Customer segmentation, Anomaly detection
 * Optimization: Resource allocation, Scheduling
 
-Traditional AI, you need to train a model. Usually by splitting your data into 3 buckets.
+With traditional AI, you need to train a model, usually by splitting your data into 3 buckets:
 * 60% Training Data
 * 20% Validation Data
 * 20% Test Data
 
-The result of the training will be a machine learning model. If the training is done right, the model will perform well. However if the problem is too simple, you will have a `Underfitting` problem. If the problem is too complex, you will have a `Overfitting` problem.
+The result of the training will be a machine learning model. If the training is done right, the model will perform well. However, if the problem is too simple, you will have an Underfitting problem. If the problem is too complex, you will have an Overfitting problem.
 
 Each one can be fixed by:
 Underfitting:
@@ -50,7 +50,7 @@ Use cases are:
 * Customer Churn Prediction: Churn vs Not Churn
 * Credit Scoring Prediction: Good vs Bad
 
-Main Algorithms for regression and classification are.
+Main algorithms for regression and classification are:
 
 Regression:
 * Linear Regression

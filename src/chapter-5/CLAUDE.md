@@ -47,8 +47,8 @@ Diego Pacheco Claude global guidelines.
 
 ## Docker Compose
 
-* This section only apply if you have docker-compose requirements otherwise ignore it.
-* docker-compose it's alias to podman, keep that in mind.
+* This section only applies if you have docker-compose requirements; otherwise, ignore it.
+* docker-compose is an alias to podman; keep that in mind.
 * always have a start.sh where you start docker-compose.
 * always have a stop.sh to stop docker-compose.
 * always have a test.sh where you show the feature is working.

@@ -44,9 +44,18 @@
 - [AI Taking White Collar Jobs - CNBC](https://www.cnbc.com/2025/10/22/ai-taking-white-collar-jobs-economists-warn-much-more-in-the-tank.html)
 - [No AI Jobs Apocalypse - Brookings Institute](https://www.brookings.edu/articles/new-data-show-no-ai-jobs-apocalypse-for-now/)
 
-### AI Theory
+### AI Theory and Criticism
 - [LLMs are Slot Machines - Cory Doctorow](https://doctorow.medium.com/https-pluralistic-net-2025-08-16-jackpot-salience-bias-2a696501bba7)
 - [AI Pilots Failure Rate - Selector AI](https://www.selector.ai/blog/95-of-ai-pilots-fail-heres-how-to-be-the-5/)
+- [AGI Is Already Here - Noema Magazine](https://www.noemamag.com/artificial-general-intelligence-is-already-here/)
+- [Sparks of AGI: Early experiments with GPT-4 - ResearchGate](https://www.researchgate.net/publication/369449949_Sparks_of_Artificial_General_Intelligence_Early_experiments_with_GPT-4/fulltext/641bc23066f8522c38c784e8/Sparks-of-Artificial-General-Intelligence-Early-experiments-with-GPT-4.pdf)
+- [The Memo on AGI - Life Architect](https://lifearchitect.substack.com/p/the-memo-22may2024?utm_source=chatgpt.com)
+- [Sam Altman: AGI is a Pointless Term - CNBC](https://www.cnbc.com/2025/08/11/sam-altman-says-agi-is-a-pointless-term-experts-agree.html)
+- [The Illusion of Thinking - Apple Machine Learning Research](https://machinelearning.apple.com/research/illusion-of-thinking)
+- [LLMs Cannot Reason - Matthew D White](https://matthewdwhite.medium.com/i-think-therefore-i-am-no-llms-cannot-reason-a89e9b00754f)
+- [Yann LeCun on LLM Hype - YouTube](https://www.youtube.com/watch?v=hOiL80G9Mnk)
+- [Richard Sutton: LLMs are a Dead End - YouTube](https://www.youtube.com/watch?v=21EYKqUsPfg)
+- [AI First and Bus Factor of 0 - Mindflash](https://www.mindflash.org/coding/ai/ai-and-the-bus-factor-of-0-1608)
 
 ### Research Papers
 - [Facebook Paper on AI Test Generation - arXiv](https://arxiv.org/pdf/2402.09171)
@@ -55,6 +64,7 @@
 
 ### Coding Agents and Tools
 - [GitHub Copilot](https://github.com/features/copilot)
+- [GitHub Copilot CLI](https://github.com/features/copilot/cli)
 - [Claude Code](https://www.claude.com/product/claude-code)
 - [Amazon Q](https://aws.amazon.com/q/)
 - [AWS Kiro](https://kiro.dev/)
@@ -180,7 +190,10 @@
 - [Coding Dojo](https://codingdojo.org/)
 - [Test-driven Development - Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
 - [Spec Driven Development - Martin Fowler](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html)
+- [Spec-Driven Development: The Waterfall Strikes Back - Marmelab](https://marmelab.com/blog/2025/11/12/spec-driven-development-waterfall-strikes-back.html)
 - [Testing Queues and Batch Jobs - Diego Pacheco](https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html)
+- [SDD Tweet - Diego Pacheco](https://x.com/diego_pacheco/status/1988897341584093220)
+- [GitHub Pull Requests Documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
 ## Chapter 6 - Testing with AI
 
@@ -235,6 +248,8 @@ No additional external references.
 
 - [Diego Pacheco's Software Architecture Library](https://diegopacheco.github.io/diegopacheco-architecture-library/introduction.html)
 - [AI Playground - 300+ POCs](https://github.com/diegopacheco/ai-playground)
+- [The Art of Sense - Online Version](https://diegopacheco.github.io/The-Art-of-Sense-A-Philosophy-of-Modern-AI/)
+- [Tech Resources](https://diegopacheco.github.io/tech-resources/)
 
 ## Author's Online Presence
 
@@ -273,3 +288,10 @@ No additional external references.
 - [Smith - Security Agent written with Scala 3.x](https://github.com/diegopacheco/Smith)
 - [ZOS - A very tiny OS written in Zig](https://github.com/diegopacheco/zos)
 - [Tiny Games - Collection of JavaScript games](https://gist.github.com/diegopacheco/d48104e8f584e3209ce7d5f5c0186e0e)
+
+## Social Media & Community Resources
+
+- [Slackmojis - Slack Emoji Resources](https://slackmojis.com/)
+- [V Language Logo](https://vlang.io/img/v-logo.png)
+- [Gleam Language Logo](https://gleam.run/images/lucy/lucy.svg)
+- [Misc Icon](https://icon-icons.com/icons2/79/PNG/256/misc_box_15274.png)

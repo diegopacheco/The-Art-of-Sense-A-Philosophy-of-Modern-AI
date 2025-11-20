@@ -4,12 +4,12 @@ Andrej Karpathy coined the term "vibe coding" in one of his [tweets](https://x.c
 
 <img src="../images/01-Vibe-Coding-2025-term.png" alt="Vibe Coding Tweet" style="max-width: 600px;"/>
 
-Vibe coding is a practice where you generate prompts and `do not look at the code`. You assume AI will take care of everything. However that premise is wrong. AI does not get everything right. AI:
+Vibe coding is a practice where you generate prompts and do not look at the code. You assume AI will take care of everything. However, that premise is wrong. AI does not get everything right. AI:
 * Ignores your requests: You ask for Java 25, AI delivers Java 21.
 * AI Hallucinates: And makes up APIs that don't exist or code that gives you bugs at runtime.
 * AI Just ignores you: You ask for a specific library, AI just ignores it and uses something else.
 
-Vibe coding is very much like trial-and-error, you can build games with it even but don't fool yourself you can't use vibe coding for all things. Not reading the code and not reading the DIFFs is an awful practice. Asking for random changes and hoping the bugs go away is not a strategy. Any serious software engineer with a brain will tell you that vibe coding is a bad idea.
+Vibe coding is very much like trial-and-error; you can even build games with it, but don't fool yourself—you can't use vibe coding for all things. Not reading the code and not reading the DIFFs is an awful practice. Asking for random changes and hoping the bugs go away is not a strategy. Any serious software engineer with a brain will tell you that vibe coding is a bad idea.
 
 ## Where you can use vibe coding
 
@@ -17,13 +17,13 @@ Vibe coding is very much like trial-and-error, you can build games with it even 
 * It's for throw away discovery: You are prototyping something very fast, and you will throw away the code later.
 * It's for learning: You are learning a new language or framework, and you want to get a feel for it quickly.
 
-Considering those use cases, vibe coding is fine. However, I would need to say that for the last one you want to read the code. Therefore it's not vibe coding. Now, if you want to know whether something is possible and you are just aiming for feasibility, yes, you can vibe code it but throw it away after and do it right.
+Considering those use cases, vibe coding is fine. However, I would need to say that for the last one, you want to read the code. Therefore, it's not vibe coding. Now, if you want to know whether something is possible and you are just aiming for feasibility, yes, you can vibe code it, but throw it away after and do it right.
 
 ## Where you MUST NOT use vibe coding
 
-To the point where you should `ban vibe coding`. Your CORE business should not be vibe coded. Vibe coding your core business is a recipe for disaster. If one day we get AGI then we can revisit this. One important note, people lie, and they will market anything as "AGI", so we might have AGI but it might not be what you think it will be. Meaning we still have jobs, this idea that AI will kill engineers jobs is absurd. Thank God at this point people are coming to their senses as the hype cycle with AI is going down.
+To the point where you should ban vibe coding. Your CORE business should not be vibe coded. Vibe coding your core business is a recipe for disaster. If one day we get AGI, then we can revisit this. One important note: people lie, and they will market anything as "AGI", so we might have AGI, but it might not be what you think it will be. Meaning we still have jobs; this idea that AI will kill engineers' jobs is absurd. Thank God, at this point, people are coming to their senses as the hype cycle with AI is going down.
 
-Your CORE business is how you make money, it's your bread and butter. Who wants to kill your milk cow? No one. Therefore don't vibe code your core business. Because that's a recipe for disaster.
+Your CORE business is how you make money; it's your bread and butter. Who wants to kill your milk cow? No one. Therefore, don't vibe code your core business, because that's a recipe for disaster.
 
 ## Vibe Payments
 

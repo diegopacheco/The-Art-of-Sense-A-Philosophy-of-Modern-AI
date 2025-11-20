@@ -1,6 +1,6 @@
 # Security and MCPs
 
-MCP is awesome. However we need to remember that for coding agents running in your CLI with your machines running commands can be a [nightmare for security](https://blog.sshh.io/p/everything-wrong-with-mcp?utm_source=pocket_shared). Especially if your laptop is a corporate macbook, that is on a corporate network. There are many [attack vectors](https://forgecode.dev/blog/prevent-attacks-on-mcp/). Sandboxes suck for developers, it's not the best developer experience. So what do we do then.
+MCP is awesome. However, we need to remember that for coding agents running in your CLI with your machines, running commands can be a [nightmare for security](https://blog.sshh.io/p/everything-wrong-with-mcp?utm_source=pocket_shared). Especially if your laptop is a corporate MacBook that is on a corporate network. There are many [attack vectors](https://forgecode.dev/blog/prevent-attacks-on-mcp/). Sandboxes suck for developers; it's not the best developer experience. So what do we do then?
 
 Well we have a similar problem in security to MCPs which is called: Vulnerabilities. MCPs are not that different from vulnerabilities in libraries because there is an explosion of libraries.
 

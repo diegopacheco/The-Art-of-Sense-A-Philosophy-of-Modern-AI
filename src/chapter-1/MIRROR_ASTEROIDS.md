@@ -1,10 +1,10 @@
 # Mirror on Steroids
 
-If you are great AI will make you even greater. I believe Gen-AI tools like AI Coding Agents like Claude Code are amazing. ChatGPT great. Co-Pilot great. However if you use these tools 24/7 and you shutdown your brain, you will worsen your skills (Don't believe me? read this [Brain Study Shows ChatGPT Actually Makes You Dumber](https://80.lv/articles/brain-study-shows-chatgpt-actually-makes-you-dumber)).
+If you are great, AI will make you even greater. I believe Gen-AI tools like AI Coding Agents such as Claude Code are amazing. ChatGPT is great. Co-Pilot is great. However, if you use these tools 24/7 and you shut down your brain, you will worsen your skills (Don't believe me? Read this: [Brain Study Shows ChatGPT Actually Makes You Dumber](https://80.lv/articles/brain-study-shows-chatgpt-actually-makes-you-dumber)).
 
 You can't use AI for all things, all the time. Because your over-dependency on AI is like a virus or a disease. Everything we do in life without balance is bad.
 
-We should not be afraid of AI, we should not ignore AI. But if we don't have `non-AI time` we are making ourselves dumber. In that sense we need to make the right cycle. The right cycle will be use AI but also make time without AI.
+We should not be afraid of AI; we should not ignore AI. But if we don't have non-AI time, we are making ourselves dumber. In that sense, we need to create the right cycle. The right cycle will be to use AI but also make time without AI.
 
 ## From Hunters to Gatherers
 
@@ -18,4 +18,4 @@ Someone smart knows what to use AI for, and what not to use AI for. For instance
 
 ## The bad mirror effect
 
-If you suck, AI will make you suck even more. Because AI allows you to create trash or add poison into the systems much faster. If you are not paying attention to details. If you are not doing the hard work to get better, fact check AI, do your homework, you will be in trouble. AI can lie to you and you would not notice. But get this, good people will know you suck! Now, people can know you suck much faster!
+If you suck, AI will make you suck even more, because AI allows you to create trash or add poison into the systems much faster. If you are not paying attention to details, if you are not doing the hard work to get better, fact-check AI, and do your homework, you will be in trouble. AI can lie to you and you would not notice. But get this: good people will know you suck! Now, people can know you suck much faster!

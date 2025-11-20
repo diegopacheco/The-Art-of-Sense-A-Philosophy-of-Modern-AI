@@ -1,6 +1,6 @@
 # Reality
 
-Even with all the problems and the [scams](https://www.youtube.com/watch?v=d7DtiMzMBdU). AI is real and AI is here to stay. I don't know if [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence) will happen one day, maybe, maybe not but there is no indication we are close to [AGI](https://perry-douglas.medium.com/a-classic-con-e8c7f9f3d61d).
+Even with all the problems and the [scams](https://www.youtube.com/watch?v=d7DtiMzMBdU), AI is real and AI is here to stay. I don't know if [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence) will happen one day, maybe, maybe not, but there is no indication we are close to [AGI](https://perry-douglas.medium.com/a-classic-con-e8c7f9f3d61d).
 
 Don't be fooled by marketing from people saying they have AGI. People lie, and LLM models do not think, even if they say "thinking". Now we don't need AGI to derive value from AI. AI is a force of disruption, just as we saw with the internet and mobile phones.
 
@@ -25,7 +25,7 @@ We also need to acknowledge that there are scams. So many scams, here is a list 
 
 ## From Recession to Rollback
 
-In the beginning people thought that everybody would lose their jobs. Like:
+In the beginning, people thought that everybody would lose their jobs, like:
 * [AI is already taking white-collar jobs. Economists warn there’s ‘much more in the tank’](https://www.cnbc.com/2025/10/22/ai-taking-white-collar-jobs-economists-warn-much-more-in-the-tank.html)
 
 Now we are seeing a rollback from "AI will take our jobs" to "We better rollback AI and get humans". Don't believe me? Here are some examples:

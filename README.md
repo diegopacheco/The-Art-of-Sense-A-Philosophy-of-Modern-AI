@@ -8,7 +8,7 @@ This is an mdbook project for "The Art of Sense: A Philosophy of Modern AI" by D
 
 Online Version: [The Art of Sense: A Philosophy of Modern AI](https://diegopacheco.github.io/The-Art-of-Sense-A-Philosophy-of-Modern-AI/)
 
-## Read the Book in Git
+## Read the Book on Git
 
 [Read it Here](src/README.md)
 

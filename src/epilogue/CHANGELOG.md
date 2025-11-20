@@ -2,6 +2,21 @@
 
 All notable changes to "The Art of Sense: A Philosophy of Modern AI" book project are documented in this file.
 
+## November 20, 2025
+
+### Book Version 1.0.3 Release
+- Published version 1.0.3 of the book
+
+### Chapter 1 - Making Sense of AI
+- Added comprehensive Marketing and AI critique guide (MKT.md)
+- Enhanced AGI discussion with additional perspectives
+- Updated AGI content with latest industry insights
+
+### Epilogue
+- Updated Glossary with additional missing terms
+- Updated References with comprehensive external links
+- Enhanced Book Index for better navigation
+
 ## November 19, 2025
 
 ### Book Version 1.0.2 Release
