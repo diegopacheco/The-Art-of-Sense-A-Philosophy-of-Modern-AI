@@ -29,6 +29,9 @@ Deceptive practices involving AI technology, including false AGI claims, wrapper
 **Agents**
 Autonomous or semi-autonomous systems that can perform tasks, make decisions, and interact with environments using AI capabilities.
 
+**Agentic**
+Having some characteristics of an agent, but not a true autonomous agent. Used to describe behavior that resembles agents but lacks full autonomy.
+
 **Agentic Behavior**
 Behavior exhibited by agents that allows them to act autonomously in pursuit of defined goals, making decisions based on environment state.
 
@@ -46,6 +49,9 @@ Early developmental stage of LLMs described by Yuval Harari, characterized by ba
 
 **Anomaly Detection**
 Identifying unusual data points that deviate from normal patterns, commonly used in fraud detection and system monitoring.
+
+**ASR (Automatic Speech Recognition)**
+Technology for converting speech to text.
 
 **API Key**
 Authentication token required to access AI services programmatically for production deployment.
@@ -65,6 +71,9 @@ Application area for reinforcement learning in self-driving vehicles.
 **Automated Testing**
 Practice of using software to test software automatically, replacing manual testing.
 
+**AWS Bedrock**
+AWS service for accessing foundation models.
+
 **Attack Vector**
 Potential security vulnerability pathway that could be exploited by malicious actors, especially relevant for MCP security.
 
@@ -82,11 +91,14 @@ Large Language Model built upon the Transformer architecture.
 **Build Process**
 Automated compilation and deployment process that can be monitored and optimized with AI assistance.
 
-**Bash Mode**
-A Claude Code feature enabling direct bash command execution for system operations, also known as Interactive Mode.
+**Bash Mode / Interactive Mode**
+A Claude Code feature enabling direct bash command execution for system operations by typing "!" prefix.
 
 **bump-version.sh**
 Script used to increment version numbers in the book publication process.
+
+**Bus Factor**
+Measure of risk if key personnel are unavailable. "Bus Factor of 0" refers to complete dependency on AI without human knowledge.
 
 ## C
 
@@ -168,8 +180,14 @@ Command that summarizes and reduces context window usage by condensing conversat
 **Configuration Ownership**
 Responsibility for maintaining and managing configuration files and settings.
 
+**Cohere**
+Company providing LLM APIs.
+
 **Container Registry**
 Repository for storing and distributing container images, important for secure MCP usage.
+
+**Contract-Based Testing**
+Testing based on contracts or agreements between services.
 
 **Contrarian Feedback**
 Learning technique where AI challenges your thinking to identify weaknesses.
@@ -202,7 +220,10 @@ End-to-end testing framework for web applications, can be used with AI to genera
 Agents specifically built or configured for particular use cases or organizations, stored in ~/.claude/agents/ directory.
 
 **Custom Commands**
-Specific commands or workflows configured within Claude Code or similar tools for specialized tasks.
+User-defined commands in Claude Code stored as markdown files in ~/.claude/commands/ directory.
+
+**CVE (Common Vulnerabilities and Exposures)**
+Publicly disclosed security vulnerabilities.
 
 ## D
 
@@ -220,6 +241,9 @@ Machine learning algorithm using tree-like model of decisions for both classific
 
 **Debugging with AI using Images**
 Technique for troubleshooting code issues by providing AI with visual representations (screenshots/images) of problems.
+
+**Docker**
+Containerization platform.
 
 **Decision Criteria**
 Framework for determining when and how to use AI effectively in different scenarios.
@@ -242,10 +266,13 @@ The transformative impact of AI on industries and engineering practices, similar
 **Documentation**
 Using AI to generate and maintain code documentation, changelogs, and knowledge bases.
 
+**Down Ceiling Effect / Hobbit House Effect**
+Industry trend of lowering definitions and standards over time.
+
 ## E
 
-**Early Stop**
-Technique used in fine-tuning to prevent overfitting by stopping training before the model over-learns.
+**Early Stopping**
+Technique to prevent overfitting by stopping training at optimal point before the model over-learns.
 
 **ElevenLabs**
 Company providing APIs to generate high-quality speech from text using advanced neural network models.
@@ -298,6 +325,9 @@ Process of training a pre-trained model on specific domain data to adapt it to p
 
 **GANs (Generative Adversarial Networks)**
 Neural network architecture used in image generation models like DALL-E.
+
+**Gartner's Hype Cycle**
+Graphical representation of technology maturity and adoption phases.
 
 **Gatling**
 Stress testing and load testing framework for performance evaluation.
@@ -362,6 +392,9 @@ XAI's LLM model.
 **Grok 4 Fast**
 XAI's LLM model with 2,000,000 token context window.
 
+**Guardrails**
+Safety mechanisms to prevent undesired AI behavior.
+
 ## H
 
 **Headless Mode**
@@ -381,6 +414,9 @@ Video generation technique that can generate videos in seconds.
 
 **Hyperparameter Tuning**
 Process of adjusting parameters in fine-tuning to optimize model performance.
+
+**Hugging Face**
+Platform for sharing and accessing machine learning models.
 
 ## I
 
@@ -411,6 +447,9 @@ Claude Code feature enabling direct bash command execution, also known as Bash M
 **Inventory (Migrations)**
 Process of cataloging and assessing existing systems, code, and infrastructure before planning migrations.
 
+**IntelliJ IDEA**
+JetBrains IDE that integrates with AI coding assistants.
+
 ## J
 
 **Jenkins**
@@ -433,16 +472,19 @@ Popular clustering algorithm that partitions data into k clusters by minimizing 
 **K6**
 Load testing framework for performance evaluation.
 
-**Kubernetes**
-Container orchestration platform, mentioned in troubleshooting and ownership contexts.
-
 **Kiro**
 AWS coding agent, a fork of VSCode implementing Spec Driven Development approach.
 
 **Knowledge Base Generation**
 Using AI to create and maintain comprehensive documentation systems.
 
+**Kubernetes (K8s)**
+Container orchestration platform.
+
 ## L
+
+**Lambda**
+AWS serverless compute service.
 
 **LDA (Linear Discriminant Analysis)**
 Dimensionality reduction technique that finds linear combinations of features for classification.
@@ -474,6 +516,9 @@ Classification algorithm using logistic function to model probability of categor
 **Loss Function**
 Mathematical function optimized during model training to minimize prediction errors.
 
+**LSH (Locality-Sensitive Hashing)**
+Technique for approximate nearest neighbor search in high-dimensional spaces.
+
 **LSP (Language Server Protocol)**
 Standard protocol that MCP is compared to for understanding its architecture and functionality.
 
@@ -493,6 +538,9 @@ Meta's model that generates music tracks from text descriptions.
 
 **Marketing and AI**
 The often misleading promotion of AI capabilities, including false AGI claims and overstated application benefits.
+
+**Markething**
+Portmanteau of "marketing" and criticism of misleading AI marketing claims.
 
 **Marketing Agent (Claude Code)**
 Specialized agent for translating technical content to plain language.
@@ -530,7 +578,7 @@ Structured approach to performing migrations incrementally rather than all at on
 **Milvus**
 Vector database for storing and querying embeddings.
 
-**Mirror on Steroids**
+**Mirror Effect / Mirror on Steroids**
 Concept that AI amplifies existing abilities: good engineers become better with AI; poor engineers become worse.
 
 **MoCoGAN**
@@ -542,7 +590,13 @@ Test objects that verify interactions and method calls during testing.
 **Model**
 In reinforcement learning, a representation of the environment that the agent uses to predict the next state and reward.
 
+**Mutation Testing**
+Testing technique that modifies code to verify test effectiveness.
+
 ## N
+
+**Narrow AI**
+AI designed for specific tasks, as opposed to general intelligence.
 
 **Naive Bayes**
 Classification algorithm based on Bayes' theorem with strong independence assumptions between features.
@@ -550,11 +604,11 @@ Classification algorithm based on Bayes' theorem with strong independence assump
 **Non-idempotent**
 Operations that produce different results when executed multiple times, requiring special testing setup.
 
-**npm**
-Node.js package manager, mentioned in bash mode execution.
-
 **Natural Language Processing (NLP)**
 Field revolutionized by the Transformer architecture for processing and understanding human language.
+
+**npm**
+Node.js package manager.
 
 ## O
 
@@ -578,6 +632,9 @@ Infrastructure or code assets without clear ownership or maintenance.
 
 **Overfitting**
 Challenge in fine-tuning where a model learns training data too specifically and loses generalization ability.
+
+**Ownership**
+Responsibility for maintaining and managing code, infrastructure, and resources.
 
 ## P
 
@@ -641,6 +698,9 @@ Small-scale implementations to test feasibility and validate ideas before full-s
 **Proof Reader**
 Using AI to check spelling, grammar, and document quality in written content.
 
+**Property-Based Testing**
+Testing based on properties that should always hold true rather than specific outputs.
+
 ## R
 
 **RAG (Retrieval-Augmented Generation)**
@@ -648,6 +708,9 @@ Technique combining document retrieval with LLM generation, allowing AI to cite 
 
 **Random Forest**
 Ensemble learning method using multiple decision trees for classification and regression.
+
+**Regularization**
+Technique to prevent overfitting by adding penalty terms to the loss function.
 
 **Regression Tests**
 Tests ensuring existing functionality still works after changes.
@@ -682,6 +745,9 @@ Application area for reinforcement learning.
 **Routing**
 Agent pattern for directing requests to appropriate services or models based on content or conditions.
 
+**Runbook**
+Documentation of procedures and processes for system operations.
+
 **Rust**
 Systems programming language used for mdbook and mentioned in migration contexts.
 
@@ -692,6 +758,9 @@ AI coding agents that operate in isolated environments separate from user's mach
 
 **Sandboxing**
 Running code in isolated environments for security, though noted as poor developer experience.
+
+**Security Audit**
+Systematic evaluation of system security.
 
 **SDD (Spec Driven Development)**
 Development approach implemented by AWS Kiro where specifications drive implementation.
@@ -716,6 +785,9 @@ Analyzing emotional tone and intent in text, applicable to emails, customer feed
 
 **Slack MCP**
 MCP server for sending messages to Slack teams.
+
+**Snapshot Testing**
+Testing by comparing current output to saved snapshots.
 
 **Smoke Test**
 High-level test verifying critical system functionality without exhaustive coverage.
@@ -762,14 +834,17 @@ Independent agents spawned by Claude Code, each with their own 200k token contex
 **Summarization**
 LLM task of condensing long text into shorter summaries while retaining key information.
 
+**Sunsetting**
+Process of retiring old technology or systems.
+
 **Supervised Learning**
 Machine learning paradigm where models learn from labeled training data to make predictions.
 
 **Support Vector Machines (SVM)**
 Machine learning algorithm for classification and regression using hyperplanes to separate data.
 
-**Swagger**
-API documentation specification format, also known as OpenAPI.
+**Swagger / OpenAPI**
+API documentation specification format that AI coding agents can read to generate tests and understand API structure.
 
 **SWE-bench**
 Software engineering benchmark for evaluating AI coding capabilities.
@@ -780,13 +855,13 @@ Creating artificial but realistic test data for testing purposes.
 **System Prompt**
 Instructions defining how an AI model should behave and respond to user inputs. Sets the behavior and style of the LLM.
 
+**Tagging**
+Practice of labeling resources and assets for organization and ownership tracking.
+
 ## T
 
 **t-SNE (t-Distributed Stochastic Neighbor Embedding)**
 Dimensionality reduction technique particularly effective for visualizing high-dimensional data in 2D or 3D.
-
-**Tagging**
-Practice of labeling resources and assets for organization and ownership tracking.
 
 **TDD (Test-Driven Development)**
 Development methodology writing tests before implementation to ensure code quality.
@@ -798,7 +873,10 @@ Phenomenon where team knowledge degrades over time as people leave, leading to o
 Accumulated shortcuts and suboptimal solutions in codebases that make migrations and maintenance more difficult.
 
 **Terraform**
-Infrastructure as code tool, mentioned as tech asset requiring ownership tracking.
+Infrastructure as code tool for managing cloud infrastructure.
+
+**Test Data**
+Data used to evaluate final model performance.
 
 **Test Doubles**
 Generic term for objects used in testing to replace real dependencies (includes stubs, mocks, fakes).
@@ -812,6 +890,9 @@ Creating test coverage as prerequisite for migrations and code changes.
 **Testing Interfaces**
 Custom APIs created specifically to expose and manipulate application state for testing purposes.
 
+**Thinking Mode**
+Feature in some LLMs showing internal reasoning process.
+
 **Text Generation**
 Generative AI capability for creating written content from prompts or other inputs. LLMs process system and user prompts to generate responses.
 
@@ -824,8 +905,11 @@ Allocated amount of tokens for AI processing, with ultrathink using up to 10,000
 **Tokens**
 The basic units that LLMs process. Text is broken down into tokens, and LLMs predict the next token in a sequence. Understanding tokens is key to understanding how Generative AI works and costs.
 
-**Traditional AI**
+**Traditional AI / Traditional ML**
 Earlier AI/ML approaches including regression, classification, clustering, and dimensionality reduction.
+
+**Training Data**
+Data used to train machine learning models.
 
 **Transformer Architecture**
 Neural network architecture introduced in "Attention is All You Need" paper by Vaswani et al. in 2017, revolutionizing NLP.
@@ -855,6 +939,9 @@ Machine learning paradigm where models find patterns in unlabeled data without p
 
 **User Prompt**
 The actual input from the user that the LLM responds to, processed along with system prompt.
+
+**Validation Data**
+Data used to tune model parameters during training.
 
 ## V
 
@@ -890,6 +977,9 @@ Hierarchical model using vector quantization to generate high-quality videos.
 
 **VSCode (Visual Studio Code)**
 Microsoft's development environment and IDE, frequently forked and extended for coding agents like GitHub Copilot and AWS Kiro.
+
+**Waterfall**
+Sequential software development methodology considered anti-agile.
 
 ## W
 
