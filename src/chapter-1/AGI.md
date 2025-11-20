@@ -14,6 +14,12 @@ Take a look into this image. Perhapes it's another markething trick.
 
 This is a funny effect that is happening, the industry is adapting it's terms, and it's like the houses pictures, sounds like the cealing is going down. First AGI was something that will happen in 100 years, then 50 years, then 20 years, then 10 years, now is something that is already here.
 
+People use terms like "Spark of AGI", "AGI-ish", "AGI Vibes" and many other terms to describe current LLMs capabilities as they were becoming AGI or even close to be AGI.
+
+Same trick happened to `agents`, True agents by defnition should be `reacting to events` and be `autonomous`, but now we have agents that are just LLMs with some tools, and they are called agents. So the cealing is going down. Theregore they use the term `Agentic`. Now everything is `Agentic`, so Agents and Agentic are not the same thing at all. 
+
+Agentic means that something has some characteristics of an agent, but it's not a true agent. Same for AGI, now everything is AGI-ish or has AGI vibes.
+
 Don't belvie me? Evidence: 
 
 1. [Artificial General Intelligence Is Already Here](https://www.noemamag.com/artificial-general-intelligence-is-already-here/)
