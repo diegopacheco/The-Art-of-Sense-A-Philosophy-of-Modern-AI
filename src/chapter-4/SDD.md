@@ -8,8 +8,8 @@ Here is a summary with SDD problems:
 
 source: [https://x.com/diego_pacheco/status/1988897341584093220](https://x.com/diego_pacheco/status/1988897341584093220)
 
-Basically the problem is that more text != more clarity. There are serious context windown overheads and even evidence showing more text not necessary drive better results. I also belive we are going back to a dangerous place where we would give code up and and just management documents. We need remember this old catastrophic approach called `Waterfall`. SDD has the potential to bring waterfall back which is anti-agile.
+Basically the problem is that more text != more clarity. There are serious context window overheads and even evidence showing more text does not necessarily drive better results. I also believe we are going back to a dangerous place where we would give code up and just manage documents. We need to remember this old catastrophic approach called `Waterfall`. SDD has the potential to bring waterfall back which is anti-agile.
 
-I'm not alone, here is a great [critique on SDD on Martin Flowers website](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html).François Zaninotto made an even stronger critique here: [Spec-Driven Development: The Waterfall Strikes Back](https://marmelab.com/blog/2025/11/12/spec-driven-development-waterfall-strikes-back.html).
+I'm not alone, here is a great [critique on SDD on Martin Fowler's website](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html). François Zaninotto made an even stronger critique here: [Spec-Driven Development: The Waterfall Strikes Back](https://marmelab.com/blog/2025/11/12/spec-driven-development-waterfall-strikes-back.html).
 
 My advice is that you avoid SDD.

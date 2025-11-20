@@ -1,10 +1,10 @@
 # Custom Commands
 
-Another very good feature in claude code is custom commands. Custom commands allow you to create your own commands. The nice thing is that claude will never run them, it will only run if you explicitly tell it to. This is useful for creating commands that you want to use frequently without having to type them out each time.
+Another very good feature in Claude Code is custom commands. Custom commands allow you to create your own commands. The nice thing is that Claude will never run them, it will only run if you explicitly tell it to. This is useful for creating commands that you want to use frequently without having to type them out each time.
 
 Custom commands are useful for expensive tasks that you don't run often between sessions but don't run on every prompt. Here are some examples of custom commands:
 * /report.md: A command to generate a report based on data from a database.
-* /english.md: A command that fix your english typos and grammar.
+* /english.md: A command that fixes your English typos and grammar.
 * /summarize.md: A command that summarizes long texts into concise points.
 * /translate.md: A command that translates text from one language to another.
 
