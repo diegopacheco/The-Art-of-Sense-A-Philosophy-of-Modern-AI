@@ -8,6 +8,10 @@ AI can be a great teacher; however, we need to always remember the teacher makes
 
 When I was in high school, I remember a teacher of mine saying that people would go to google.com and just search for the past year's class and find the same homework and download a PowerPoint presentation and simply change their name on it. Of course, this would never work because the teacher was smarter, and usually people doing that got ZERO.
 
+<img src="../images/01-homework-ai-cheat.png" width="400"/>
+
+PS: Can you see the mistakes in the image created by GPT 5.1?
+
 Using AI just for output, "vibe coding," is shutting down your brain, and we are not even close to having AGI. So this is a recipe for disaster. IMHO, it's not different than copying someone's homework and just putting your name on it.
 
 Now, of course, people will use the internet and it's okay to be "inspired" by somebody else's work. No one starts from scratch, but you need to spend the time to review and change it.
