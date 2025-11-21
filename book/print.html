@@ -560,10 +560,10 @@ Hire, develop, retain, and truly grow talent at scale</p>
 </ul>
 <p>You would not like it. But that did not stop you from throwing bad code at others. My friends, believe me, AI generates a lot of trash code. We need to do better.</p>
 <h2 id="the-effect-of-vibe-coding"><a class="header" href="#the-effect-of-vibe-coding">The Effect of Vibe Coding</a></h2>
-<p>I posted this tweet in March 2025. To some degree I think Vibe-Code does somethign interesting which is "democratizing" software development. IMHO it's was like back into 2010 with Guitar Here and Rockband and other games where you have the "ilusion" of playing a guitar(plastic guitar). But the good effect of that is that vibecoding might be a gateway drug to coding and engineering and if that happens is great.</p>
+<p>I posted this tweet in March 2025. To some degree, I think vibe-code does something interesting, which is "democratizing" software development. IMHO, it's like back in 2010 with Guitar Hero and Rock Band and other games where you have the "illusion" of playing a guitar (plastic guitar). But the good effect of that is that vibe coding might be a gateway drug to coding and engineering, and if that happens, it's great.</p>
 <img src="chapter-1/../images/01-vibecoding-effects.png" width="300"/>
 <p>Source: <a href="https://x.com/diego_pacheco/status/1903625842456191254">https://x.com/diego_pacheco/status/1903625842456191254</a></p>
-<p>Other times I think vibecoding it's a gateway drud to product development, because now someone who is a non-enginer cna see software, webisites, applications up and running in from of them and they can "see" if they like ir or not and that might help them to figure out requirements better. So vibecoding could have some good effects, but we need to be careful how we use it.</p>
+<p>Other times, I think vibe coding is a gateway drug to product development, because now someone who is a non-engineer can see software, websites, and applications up and running in front of them, and they can "see" if they like it or not, and that might help them figure out requirements better. So vibe coding could have some good effects, but we need to be careful how we use it.</p>
 <h2 id="vintage-coding"><a class="header" href="#vintage-coding">Vintage Coding</a></h2>
 <p>I run <a href="https://codingdojo.org/">coding dojos</a> without AI for decades. A coding dojo is a space where senior engineers work with junior engineers, and they all learn from each other. Coding dojos follow <a href="https://en.wikipedia.org/wiki/Test-driven_development">TDD</a> practices.</p>
 <p>More importantly, coding dojos existed before AI. In a proper coding dojo, you don't use the "auto complete" features from your IDE; you type everything. Coding dojos should be done without AI, forcing you to think and be able to do things without AI. This I was calling "Vintage Coding" because now everybody does coding using AI. So having this practice where we can do coding without AI (by design) forces us to know our tools, and helps us with:</p>
@@ -1533,18 +1533,18 @@ Main Menu
 <li><a href="https://github.com/modelcontextprotocol/servers">model context protocol servers</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="claude-skills-1"><a class="header" href="#claude-skills-1">Claude Skills</a></h1>
-<p>MCP has several issues, like context overhead, <a href="https://astrix.security/learn/blog/state-of-mcp-server-security-2025/">lack of proper security</a> and guardrails. MCPs can be local or can be remote. MCPs was create by Anthropic, others follow and become a huge thing. Well huge in the sense of many many MCPs out there but adoption at enterprise or at scale companies, not so really.</p>
-<p><a href="https://www.claude.com/blog/skills-explained">Claude-skills</a> have the potenrial to reduce a great deal of the MCP issues and even market share, <a href="https://simonwillison.net/2025/Oct/16/claude-skills/">Claude-Skills are a big deal</a>. Anothropic already have a <a href="https://github.com/anthropics/skills">repository for claude-skills</a> and <a href="https://github.com/ComposioHQ/awesome-claude-skills/">awesome-skills</a> too.</p>
+<p>MCP has several issues, like context overhead, <a href="https://astrix.security/learn/blog/state-of-mcp-server-security-2025/">lack of proper security</a> and guardrails. MCPs can be local or can be remote. MCPs were created by Anthropic, others followed and it became a huge thing. Well huge in the sense of many many MCPs out there but adoption at enterprise or at scale companies, not so much really.</p>
+<p><a href="https://www.claude.com/blog/skills-explained">Claude-skills</a> have the potential to reduce a great deal of the MCP issues and even market share, <a href="https://simonwillison.net/2025/Oct/16/claude-skills/">Claude-Skills are a big deal</a>. Anthropic already has a <a href="https://github.com/anthropics/skills">repository for claude-skills</a> and <a href="https://github.com/ComposioHQ/awesome-claude-skills/">awesome-skills</a> too.</p>
 <h2 id="the-issue-with-mcps"><a class="header" href="#the-issue-with-mcps">The Issue with MCPs</a></h2>
-<p>It's that we are throwing all the data up to front on the context window, which is limited. Remeber when we do <code>/context</code> we can see the context window used. This is not scalable. Because what IF claude never use the MCP you add there? You just such space on the context window for nothing. Also every MCP is throw lot of text into the context window, which is not efficient.</p>
-<p>So MCP in a nutshell it's throw a lot of data into the LLM and hope it will use it.</p>
+<p>It's that we are throwing all the data up front on the context window, which is limited. Remember when we do <code>/context</code> we can see the context window used. This is not scalable. Because what IF Claude never uses the MCP you add there? You just waste space on the context window for nothing. Also every MCP throws a lot of text into the context window, which is not efficient.</p>
+<p>So MCP in a nutshell is throwing a lot of data into the LLM and hoping it will use it.</p>
 <h2 id="how-claude-skills-work"><a class="header" href="#how-claude-skills-work">How Claude Skills Work</a></h2>
 <p>Claude skill works fundamentally different. Instead of throwing all the data into the context window, Claude skills are more like API calls. You define a skill, which is a specific function or capability that Claude can use. When Claude needs to perform a task that requires that skill, it makes a call to the skill, passing only the necessary information.</p>
-<p><a href="https://claude.com/blog/skills">Claude skills (or Agent skills)</a> are CODE. thats funny isin't it? We use to write all the code, now AI write the code for us, and now we write code for AI so AI know how to better write code. But the idea of Claude-Skills is brilliant, basicaly there is a simple file like <code>skill.md</code> where there just a couple of example for claude on how to use the code. Them you ship a script which has the recipe on how to do the task. When Claude need to do the task, it call the skill, passing only the relevant data. The shift here is huge, we are not throwing a lot of data into claude anymore(MCP) we are actually teaching how how to do something(as the name says hence a "skill") which is all about coding and programing languages.</p>
-<p>Code is great, code is predictable and reliable(all that generattive AI and LLMs are not), so Code is a great solution to the MCP issues. Also there is a non-obvious thing going on here which is, with claude-skills you are not downloading the skills from some random dude on github, you are crteating the skills by yourself with or without help from claude, by nature is more secure and FTEs writting code is more realible and "secure" than random MCP from some dude on the internet.</p>
+<p><a href="https://claude.com/blog/skills">Claude skills (or Agent skills)</a> are CODE. That's funny isn't it? We used to write all the code, now AI writes the code for us, and now we write code for AI so AI knows how to better write code. But the idea of Claude-Skills is brilliant, basically there is a simple file like <code>skill.md</code> where there are just a couple of examples for Claude on how to use the code. Then you ship a script which has the recipe on how to do the task. When Claude needs to do the task, it calls the skill, passing only the relevant data. The shift here is huge, we are not throwing a lot of data into Claude anymore (MCP) we are actually teaching it how to do something (as the name says hence a "skill") which is all about coding and programming languages.</p>
+<p>Code is great, code is predictable and reliable (all that generative AI and LLMs are not), so Code is a great solution to the MCP issues. Also there is a non-obvious thing going on here which is, with claude-skills you are not downloading the skills from some random dude on github, you are creating the skills by yourself with or without help from Claude, by nature is more secure and FTEs writing code is more reliable and "secure" than random MCP from some dude on the internet.</p>
 <p>Here is a simple example of claude-skill a built to <a href="https://github.com/diegopacheco/ai-playground/tree/main/agents/claude-code/claude-skill-fun">format JSON</a>.</p>
 <h2 id="when-we-would-still-use-mcp"><a class="header" href="#when-we-would-still-use-mcp">When we would still use MCP?</a></h2>
-<p>Well, with claude skills a great share of MCP can be gone and now we can have MCP for remote use cases, you wont be able to run AWS claude in your machine, or you will have external services like Figma, Jira, Salesforce, etc. So MCP will be more for <a href="https://blog.christianposta.com/mcp-authorization-patterns-upstream-api-calls/">remote use cases</a> and claude-skills for local use cases.</p>
+<p>Well, with Claude skills a great share of MCP can be gone and now we can have MCP for remote use cases, you won't be able to run AWS Claude in your machine, or you will have external services like Figma, Jira, Salesforce, etc. So MCP will be more for <a href="https://blog.christianposta.com/mcp-authorization-patterns-upstream-api-calls/">remote use cases</a> and claude-skills for local use cases.</p>
 <h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
 <img src="chapter-5/../images/05.MCP_claude-skills.png" width="600"/>
 <p>source: <a href="https://x.com/diego_pacheco/status/1989959020032266435">https://x.com/diego_pacheco/status/1989959020032266435</a></p>
@@ -1951,21 +1951,21 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
 <p><a href="https://diego-pacheco.blogspot.com/2023/09/tagging-everything.html">Tags</a> can help. But AI can help even more. AI can scan git repositories and suggest the most likely probable owners based on commit history, code reviews, comments, etc. AI can also help identify orphan assets and suggest potential owners based on historical data. This way, teams can maintain better ownership and accountability over their tech assets, reducing the risk of team erosion and improving overall system reliability.</p>
 <p><a href="https://diego-pacheco.blogspot.com/2020/08/shared-libraries-trap.html">Internal Shared Libraries</a> are always a big problem, for ownership even more. Now with AI not only can we easily <code>find owners</code> but we can migrate away from problematic shared technology that has ownership issues.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ai-beyond-engineering"><a class="header" href="#ai-beyond-engineering">AI Beyond Engineering</a></h1>
-<p>AI is a slot machine, you cannot have predictable results every time. For engineering is safer to start with AI because you have engineers who <code>can and should</code> pay attention to detals being the <code>adults in the room</code>. Offcourse if same engineers do not pay attention we are in trouble. Because:</p>
+<p>AI is a slot machine, you cannot have predictable results every time. For engineering it is safer to start with AI because you have engineers who <code>can and should</code> pay attention to details being the <code>adults in the room</code>. Of course if the same engineers do not pay attention we are in trouble. Because:</p>
 <ul>
-<li>Either we are <a href="https://diego-pacheco.blogspot.com/2025/11/ai-coding-agents-economics.html">moving the bottleck to the next queue</a> on the software development pipeline.</li>
-<li>Foolling ourselfs with <code>Fabricated Savings</code> or <code>Fabricated Productivity</code>.</li>
-<li>Making your life good(you got 10x productivity and dont look the code because your are a vibe coder) but your workmate life miserable(because he/she need review 10x more thrash that people produce and don't even botter read).</li>
+<li>Either we are <a href="https://diego-pacheco.blogspot.com/2025/11/ai-coding-agents-economics.html">moving the bottleneck to the next queue</a> on the software development pipeline.</li>
+<li>Fooling ourselves with <code>Fabricated Savings</code> or <code>Fabricated Productivity</code>.</li>
+<li>Making your life good (you got 10x productivity and don't look at the code because you are a vibe coder) but your workmate's life miserable (because he/she needs to review 10x more trash that people produce and don't even bother to read).</li>
 </ul>
 <h2 id="debunking-ftl"><a class="header" href="#debunking-ftl">Debunking FTL</a></h2>
-<p>You probably heard about FTL(Faster Than Light). You remeber Star Wars when the ship used to <code>Hyper Drive</code> to go faster than light speed. That was amazing and cool right? (BTW I love StarWars). You only need a SHIP that can travel faster than light right? IF the ship traveling 90mph and now (using AI) we hyperdrive to 9000mph we are FTL right? NO. Because the universe has other rules. You need to have a SHIP that can handle the speed, you need to have a navigation system that can handle the speed, you need to have a destination that can handle the speed. You need to have a crew that can handle the speed. You need to have a fuel that can handle the speed. You need to have a space-time that can handle the speed. So even if you have a ship that can travel faster than light, you are still limited by other factors. More simply saying "You need EYEs" and a "BRAIN" that can handle events and reasoning at this speed.</p>
+<p>You probably heard about FTL (Faster Than Light). You remember Star Wars when the ship used to <code>Hyper Drive</code> to go faster than light speed. That was amazing and cool right? (BTW I love Star Wars). You only need a SHIP that can travel faster than light right? IF the ship is traveling 90mph and now (using AI) we hyperdrive to 9000mph we are FTL right? NO. Because the universe has other rules. You need to have a SHIP that can handle the speed, you need to have a navigation system that can handle the speed, you need to have a destination that can handle the speed. You need to have a crew that can handle the speed. You need to have a fuel that can handle the speed. You need to have a space-time that can handle the speed. So even if you have a ship that can travel faster than light, you are still limited by other factors. More simply saying "You need EYES" and a "BRAIN" that can handle events and reasoning at this speed.</p>
 <img src="chapter-8/../images/08-FTL.png" width="600"/>
-<p>De-nerding a little bit. Now imagine something mroe simple, like you have a CAR and you was driving fine at 75mph, now using the advent of Generative AI, LLMs and Coding Agents you achive 300mph, unless you are a seasoned F1 driver you will crash the car, you will hit a wall. Why? Because you improve one thing (the car) but did you improve your driving skills? Did you improve the road conditions? Did you improve the traffic rules? Did you improve the weather conditions? No. So you are going to crash. Same with software development, you can improve the coding speed, but if you don't improve the other aspects of software development, you are going to crash.</p>
+<p>De-nerding a little bit. Now imagine something more simple, like you have a CAR and you were driving fine at 75mph, now using the advent of Generative AI, LLMs and Coding Agents you achieve 300mph, unless you are a seasoned F1 driver you will crash the car, you will hit a wall. Why? Because you improve one thing (the car) but did you improve your driving skills? Did you improve the road conditions? Did you improve the traffic rules? Did you improve the weather conditions? No. So you are going to crash. Same with software development, you can improve the coding speed, but if you don't improve the other aspects of software development, you are going to crash.</p>
 <h2 id="artificial-savings"><a class="header" href="#artificial-savings">Artificial Savings</a></h2>
-<p>In the past, people used to use the word "Discounts", today that word is deprecated, people prefer to use the workd "Savings", which I get it, it's a much more positive and sexy word. Now let's imagine this:</p>
+<p>In the past, people used to use the word "Discounts", today that word is deprecated, people prefer to use the word "Savings", which I get, it's a much more positive and sexy word. Now let's imagine this:</p>
 <img src="chapter-8/../images/08-artificial-savings.png" width="300"/>
-<p>You don't need buy a tablet. You have 500 USD in the wallet. Now you see an AD saying buy a tablet from 500 USD to 300 USD. The ad has the title "Savings". You think, well the phone will go back to 500 USD to I'm doing savings, right? NO. But you think, I'm loosing, so the AD create this sense of urgency... You are just spending 300 USD instead of 500 USD. You are not saving anything. Savings would be that somehow you turn your 500 USD into 800 USD.</p>
-<p>Why I'm saying this, well AI can be 100% the same thing but on esteroids.You got 2x productivity, 10x improvements, 50% gains. But in reality is this real or just fabricated numbers. It's possible to fabricate numbers, but can you do that sustainably? NO you cannot. Maybe it's better to the HARD thing that takes longer but you have SUSTAINABLE results. We need to lern how to use AI in a way that we can have SUSTAINABLE productivity gains, not just FABRICATED savings.</p>
+<p>You don't need to buy a tablet. You have 500 USD in the wallet. Now you see an AD saying buy a tablet from 500 USD to 300 USD. The ad has the title "Savings". You think, well the phone will go back to 500 USD so I'm doing savings, right? NO. But you think, I'm losing, so the AD creates this sense of urgency... You are just spending 300 USD instead of 500 USD. You are not saving anything. Savings would be that somehow you turn your 500 USD into 800 USD.</p>
+<p>Why I'm saying this, well AI can be 100% the same thing but on steroids. You got 2x productivity, 10x improvements, 50% gains. But in reality is this real or just fabricated numbers. It's possible to fabricate numbers, but can you do that sustainably? NO you cannot. Maybe it's better to do the HARD thing that takes longer but you have SUSTAINABLE results. We need to learn how to use AI in a way that we can have SUSTAINABLE productivity gains, not just FABRICATED savings.</p>
 <h2 id="system-1-vs-system-2-thinking-and-ai"><a class="header" href="#system-1-vs-system-2-thinking-and-ai">System 1 vs System 2 Thinking and AI</a></h2>
 <img src="chapter-8/../images/08-system-1-2.png" width="600"/>
 <p>⚾ The Bat-and-Ball Problem</p>
@@ -1987,32 +1987,32 @@ x + (x + 1.00) = 1.10
 x = 0.05
 </code></pre>
 <p>That come from the classical book <a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">Thinking, Fast and Slow</a> which is from 2013 by Daniel Kahneman.</p>
-<p>Why that matters in AI context? Because when we are using AI for sher speed and productivity, we are relying on System 1 thinking, which is fast, intuitive, and automatic. Vibe-Coding(Which is an anti-patterns) get us <code>adicted</code> and just want move fast, fast, fast, don't think. Well we need to think, we need to make sense of things and <code>reflect</code> and do <code>Retrocpetives</code> and drive leasons learned. Otherwise remeber FTL and Artificial Savings. What you need to think about is, how fast can you think, are you just operating with System #1 all time. If that is true, maybe AI downgraded your job and you do more tatical wotk instead of strategic work. You need to find the balance between System 1 and System 2 thinking when using AI in software development.</p>
-<h2 id="byond-engineering"><a class="header" href="#byond-engineering">Byond Engineering</a></h2>
-<p>It's very risk to do AI beyond engineering because of several factors like:</p>
+<p>Why that matters in AI context? Because when we are using AI for sheer speed and productivity, we are relying on System 1 thinking, which is fast, intuitive, and automatic. Vibe-Coding (Which is an anti-pattern) gets us <code>addicted</code> and just wanting to move fast, fast, fast, don't think. Well we need to think, we need to make sense of things and <code>reflect</code> and do <code>Retrospectives</code> and drive lessons learned. Otherwise remember FTL and Artificial Savings. What you need to think about is, how fast can you think, are you just operating with System #1 all the time. If that is true, maybe AI downgraded your job and you do more tactical work instead of strategic work. You need to find the balance between System 1 and System 2 thinking when using AI in software development.</p>
+<h2 id="beyond-engineering"><a class="header" href="#beyond-engineering">Beyond Engineering</a></h2>
+<p>It's very risky to do AI beyond engineering because of several factors like:</p>
 <ul>
 <li>Security: AI can introduce security vulnerabilities that are not easily detectable. Engineers need to be vigilant and ensure that AI-generated code adheres to security best practices.</li>
-<li>Trustworthiness: AI systems can produce unpredictable results. User experience might be damanged or even worth brand reputation if AI-generated code fails in production.</li>
-<li>Ethical Considerations: AI can inadvertently introduce biases or unethical practices in code. Maybe even worst could AI feature leads to law suits or regulatory fines.</li>
+<li>Trustworthiness: AI systems can produce unpredictable results. User experience might be damaged or even worse brand reputation if AI-generated code fails in production.</li>
+<li>Ethical Considerations: AI can inadvertently introduce biases or unethical practices in code. Maybe even worse could an AI feature lead to lawsuits or regulatory fines.</li>
 </ul>
-<p>For such reasons and many more AI it's more safe into engineering teams where you have professionals that can mitigate the risks. But if you are thinking to use AI beyond engineering teams, you need to have a very strong governance model, with clear policies and procedures to ensure that AI is used responsibly and ethically. Another way to see this is it's amost like you need new principles or new pratices that could allow you to use AI in a safe way in production enviroments for digital products.</p>
+<p>For such reasons and many more AI it's safer into engineering teams where you have professionals that can mitigate the risks. But if you are thinking to use AI beyond engineering teams, you need to have a very strong governance model, with clear policies and procedures to ensure that AI is used responsibly and ethically. Another way to see this is it's almost like you need new principles or new practices that could allow you to use AI in a safe way in production environments for digital products.</p>
 <h2 id="when-gen-ai-or-agents-are-dangerous"><a class="header" href="#when-gen-ai-or-agents-are-dangerous">When Gen-AI or Agents are Dangerous</a></h2>
-<p>When some input or prompt from the user gets executed directly in production without any guardrails or validation. It's alos like the user prompt need to be sanitized or protected against SQL injection or JS injection attacks. IF you blindly get the promopt from the user and run in production (like a good remote code execution security antipattern) you are in big trouble. You need to have a layer of validation, verification, testing, monitoring and alerting to ensure that the AI-generated code is safe and secure before it gets deployed to production.</p>
+<p>When some input or prompt from the user gets executed directly in production without any guardrails or validation. It's also like the user prompt needs to be sanitized or protected against SQL injection or JS injection attacks. IF you blindly get the prompt from the user and run in production (like a good remote code execution security antipattern) you are in big trouble. You need to have a layer of validation, verification, testing, monitoring and alerting to ensure that the AI-generated code is safe and secure before it gets deployed to production.</p>
 <img src="chapter-8/../images/08-no-guardrails.png" width="600"/>
 <h2 id="how-to-use-gen-ai-safely-beyond-engineering-in-production"><a class="header" href="#how-to-use-gen-ai-safely-beyond-engineering-in-production">How to USE Gen AI Safely Beyond Engineering in Production</a></h2>
-<p>IF you want to buid AI Features, you need a lot of things like:</p>
+<p>IF you want to build AI Features, you need a lot of things like:</p>
 <ul>
-<li>Porper Guardrails: Limit how long a agent process a request, limit in cost, or you can limit in type or interations.</li>
+<li>Proper Guardrails: Limit how long an agent processes a request, limit in cost, or you can limit in type or iterations.</li>
 <li>Sanitization: Ensure that any input from users is sanitized to prevent injection attacks or other security vulnerabilities.</li>
 <li>Validation: Implement validation checks to ensure that AI-generated code meets quality and security standards before deployment.</li>
 <li>Observability: You monitor AI cost, AI usage and AI performance to detect any anomalies or issues that may arise.</li>
 </ul>
 <h2 id="human-in-the-loop-the-call-center-strategy"><a class="header" href="#human-in-the-loop-the-call-center-strategy">Human in the Loop (The Call Center strategy)</a></h2>
-<p>So the users can typo prompts in applications in production, however nothing gets executed, the only thing is that the LLM output is a JSON document which structure and "intentions". Them a human in the loop, basically using a admin or backoffise web application goes there and review what the user typed or what AI actually generated and them approve or reject. This way a lot of problems and risks are mitigated because you have a human reviewing the output before going to production.</p>
+<p>So the users can type prompts in applications in production, however nothing gets executed, the only thing is that the LLM output is a JSON document with structure and "intentions". Then a human in the loop, basically using an admin or backoffice web application goes there and reviews what the user typed or what AI actually generated and then approves or rejects. This way a lot of problems and risks are mitigated because you have a human reviewing the output before going to production.</p>
 <h2 id="audible-response-unit-aru-strategy"><a class="header" href="#audible-response-unit-aru-strategy">Audible Response Unit (ARU) Strategy</a></h2>
-<p>What IF? You use a prompt for the final user, that way, the user can get a better experience by "reducing the complexity of the user experience" but you craft a system prompt that translate whatever the user typed into finate options let's say 0 to 5. Where 0 is invalid action and 1, 2, 3, 4 and 5 are valid ations. So you literaly ask the LLM to return a number and you just parse that number from string to integer. That way, even if the user managed to "tricky the LLM" your system is not blindly execution what the user type on the prompt because you are just doing numbers parsing. This is a very simple but effective way to mitigate risks when using AI beyond engineering in production enviroments.</p>
+<p>What IF? You use a prompt for the final user, that way, the user can get a better experience by "reducing the complexity of the user experience" but you craft a system prompt that translates whatever the user typed into finite options let's say 0 to 5. Where 0 is invalid action and 1, 2, 3, 4 and 5 are valid actions. So you literally ask the LLM to return a number and you just parse that number from string to integer. That way, even if the user managed to "trick the LLM" your system is not blindly executing what the user types on the prompt because you are just doing numbers parsing. This is a very simple but effective way to mitigate risks when using AI beyond engineering in production environments.</p>
 <img src="chapter-8/../images/08-ARU_Strategy.png" width="600"/>
-<p>If you think about it, ARU systems used that for ages, chatbots did the similar strategy where you can type whatever but there is a finite set of options that the bot can understand and process. So you are not blindly executing whatever the user type, you are just mapping the user input to a finite set of valid actions.</p>
+<p>If you think about it, ARU systems used that for ages, chatbots did a similar strategy where you can type whatever but there is a finite set of options that the bot can understand and process. So you are not blindly executing whatever the user types, you are just mapping the user input to a finite set of valid actions.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-9---learning-from-ai"><a class="header" href="#chapter-9---learning-from-ai">Chapter 9 - Learning from AI</a></h1>
 <p>AI can be a good teacher. Just keep in mind you better cross-check what the teacher is telling you. A very simple and effective way to cross-check AI is just to ask for links for reference. Then you can go on the internet and read the links and check for yourself if AI is wrong or right.</p>
 <p>LLMs still hallucinate; usually they hallucinate when they don't know the answer, which often means not enough data on the topic in their training set. Evidence:</p>
@@ -2270,6 +2270,7 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <ul>
 <li><a href="https://diego-pacheco.blogspot.com/2025/11/ai-coding-agents-economics.html">AI Coding Agents Economics - Diego Pacheco</a></li>
 <li><a href="https://80.lv/articles/brain-study-shows-chatgpt-actually-makes-you-dumber">Brain Study Shows ChatGPT Actually Makes You Dumber - 80.lv</a></li>
+<li><a href="https://techtrenches.substack.com/p/the-great-software-quality-collapse">The Great Software Quality Collapse - Tech Trenches</a></li>
 </ul>
 <h3 id="ai-scams-and-failures"><a class="header" href="#ai-scams-and-failures">AI Scams and Failures</a></h3>
 <ul>
@@ -2303,7 +2304,6 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li><a href="https://www.youtube.com/watch?v=hOiL80G9Mnk">Yann LeCun on LLM Hype - YouTube</a></li>
 <li><a href="https://www.youtube.com/watch?v=21EYKqUsPfg">Richard Sutton: LLMs are a Dead End - YouTube</a></li>
 <li><a href="https://www.mindflash.org/coding/ai/ai-and-the-bus-factor-of-0-1608">AI First and Bus Factor of 0 - Mindflash</a></li>
-<li><a href="https://techtrenches.substack.com/p/the-great-software-quality-collapse">The Great Software Quality Collapse - Tech Trenches</a></li>
 <li><a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">Thinking, Fast and Slow - Daniel Kahneman</a></li>
 </ul>
 <h3 id="research-papers"><a class="header" href="#research-papers">Research Papers</a></h3>
@@ -2327,40 +2327,40 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 </ul>
 <h3 id="mcp-and-agent-architecture"><a class="header" href="#mcp-and-agent-architecture">MCP and Agent Architecture</a></h3>
 <ul>
-<li><a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP Documentation</a></li>
-<li><a href="https://www.whatismcp.com/">What is MCP</a></li>
-<li><a href="https://mcp.so/">MCP.so</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Language_Server_Protocol">Language Server Protocol - Wikipedia</a></li>
-<li><a href="https://github.com/crystaldba/postgres-mcp">Postgres MCP</a></li>
-<li><a href="https://github.com/korotovsky/slack-mcp-server">Slack MCP Server</a></li>
-<li><a href="https://mcpservers.org/">Awesome MCPs</a></li>
+<li><a href="https://a2a-protocol.com/">Agent to Agent Protocol</a></li>
 <li><a href="https://github.com/hesreallyhim/awesome-claude-code">Awesome Claude Code</a></li>
 <li><a href="https://github.com/punkpeye/awesome-mcp-servers">Awesome MCP Servers</a></li>
-<li><a href="https://github.com/modelcontextprotocol/servers">MCP Servers Repository</a></li>
+<li><a href="https://mcpservers.org/">Awesome MCPs</a></li>
 <li><a href="https://github.com/upstash/context7">Context7 MCP</a></li>
-<li><a href="https://a2a-protocol.com/">Agent to Agent Protocol</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Language_Server_Protocol">Language Server Protocol - Wikipedia</a></li>
 <li><a href="https://materializedview.io/p/mcp-server-could-have-been-json-file">MCP Could Have Been JSON File</a></li>
-<li><a href="https://aws.amazon.com/what-is/ai-agents/">What are AI Agents - AWS</a></li>
+<li><a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP Documentation</a></li>
+<li><a href="https://github.com/modelcontextprotocol/servers">MCP Servers Repository</a></li>
+<li><a href="https://mcp.so/">MCP.so</a></li>
+<li><a href="https://github.com/crystaldba/postgres-mcp">Postgres MCP</a></li>
 <li><a href="https://medium.com/@tasospapalias/sibyls-and-servants-the-roots-of-artificial-intelligence-in-ancient-greek-lore-b28257e98a0a">Sibyls and Servants - Medium</a></li>
+<li><a href="https://github.com/korotovsky/slack-mcp-server">Slack MCP Server</a></li>
+<li><a href="https://aws.amazon.com/what-is/ai-agents/">What are AI Agents - AWS</a></li>
+<li><a href="https://www.whatismcp.com/">What is MCP</a></li>
 </ul>
 <h3 id="mcp-security"><a class="header" href="#mcp-security">MCP Security</a></h3>
 <ul>
-<li><a href="https://blog.sshh.io/p/everything-wrong-with-mcp">Everything Wrong with MCP - sshh.io</a></li>
-<li><a href="https://forgecode.dev/blog/prevent-attacks-on-mcp/">Prevent Attacks on MCP - forgecode.dev</a></li>
-<li><a href="https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs">Treating MCP Servers Like Bombs - DevInterrupted</a></li>
-<li><a href="https://evo.ai.snyk.io/">Evo by Snyk</a></li>
 <li><a href="https://github.com/cisco-ai-defense/mcp-scanner">Cisco MCP Scanner</a></li>
-<li><a href="https://astrix.security/learn/blog/state-of-mcp-server-security-2025/">State of MCP Server Security 2025 - Astrix Security</a></li>
+<li><a href="https://evo.ai.snyk.io/">Evo by Snyk</a></li>
+<li><a href="https://blog.sshh.io/p/everything-wrong-with-mcp">Everything Wrong with MCP - sshh.io</a></li>
 <li><a href="https://blog.christianposta.com/mcp-authorization-patterns-upstream-api-calls/">MCP Authorization Patterns - Christian Posta</a></li>
+<li><a href="https://forgecode.dev/blog/prevent-attacks-on-mcp/">Prevent Attacks on MCP - forgecode.dev</a></li>
+<li><a href="https://astrix.security/learn/blog/state-of-mcp-server-security-2025/">State of MCP Server Security 2025 - Astrix Security</a></li>
+<li><a href="https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs">Treating MCP Servers Like Bombs - DevInterrupted</a></li>
 </ul>
 <h3 id="context-and-documentation"><a class="header" href="#context-and-documentation">Context and Documentation</a></h3>
 <ul>
-<li><a href="https://llmstxt.org/">llms.txt Specification</a></li>
 <li><a href="https://docs.claude.com/llms-full.txt">Claude llms-full.txt</a></li>
-<li><a href="https://cdn.openai.com/API/docs/txt/llms.txt">OpenAI llms.txt</a></li>
-<li><a href="https://langchain-ai.github.io/langgraph/llms-txt-overview/">LangGraph llms.txt</a></li>
-<li><a href="https://context7.com/">Context7 Service</a></li>
 <li><a href="https://docs.claude.com/en/docs/build-with-claude/context-windows">Context Windows - Claude Docs</a></li>
+<li><a href="https://context7.com/">Context7 Service</a></li>
+<li><a href="https://langchain-ai.github.io/langgraph/llms-txt-overview/">LangGraph llms.txt</a></li>
+<li><a href="https://llmstxt.org/">llms.txt Specification</a></li>
+<li><a href="https://cdn.openai.com/API/docs/txt/llms.txt">OpenAI llms.txt</a></li>
 </ul>
 <h3 id="agent-patterns-1"><a class="header" href="#agent-patterns-1">Agent Patterns</a></h3>
 <ul>
@@ -2369,8 +2369,8 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 </ul>
 <h3 id="benchmarks"><a class="header" href="#benchmarks">Benchmarks</a></h3>
 <ul>
-<li><a href="https://github.com/SWE-bench/SWE-bench/issues/465">SWE-bench Repo State Loopholes</a></li>
 <li><a href="https://bayes.net/swebench-hack/">Claude 4 SWE-bench Gaming - Bayes.net</a></li>
+<li><a href="https://github.com/SWE-bench/SWE-bench/issues/465">SWE-bench Repo State Loopholes</a></li>
 <li><a href="https://www.reddit.com/r/OpenAI/comments/1nce3ua/meta_called_out_swe_bench_verified_for_being/">SWE-bench Verified Issues - Reddit</a></li>
 </ul>
 <h2 id="chapter-2---machine-learning-basics"><a class="header" href="#chapter-2---machine-learning-basics">Chapter 2 - Machine Learning Basics</a></h2>
@@ -2386,12 +2386,12 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <h2 id="chapter-3---generative-ai-1"><a class="header" href="#chapter-3---generative-ai-1">Chapter 3 - Generative AI</a></h2>
 <h3 id="llm-models-and-documentation"><a class="header" href="#llm-models-and-documentation">LLM Models and Documentation</a></h3>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Large_language_model">Large Language Models - Wikipedia</a></li>
-<li><a href="https://openai.com/index/gpt-5-system-card/">GPT-5 System Card - OpenAI</a></li>
 <li><a href="https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf">Claude Sonnet 4.5 System Card - Anthropic</a></li>
 <li><a href="https://modelcards.withgoogle.com/assets/documents/gemini-2-flash.pdf">Gemini 2.0 Flash Model Card - Google</a></li>
-<li><a href="https://www.llama.com/docs/model-cards-and-prompt-formats/llama4/">LLaMA 4 Model Card - Meta</a></li>
+<li><a href="https://openai.com/index/gpt-5-system-card/">GPT-5 System Card - OpenAI</a></li>
 <li><a href="https://data.x.ai/2025-08-20-grok-4-model-card.pdf">Grok 4 Model Card - XAI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Large_language_model">Large Language Models - Wikipedia</a></li>
+<li><a href="https://www.llama.com/docs/model-cards-and-prompt-formats/llama4/">LLaMA 4 Model Card - Meta</a></li>
 </ul>
 <h3 id="transformers-and-architecture"><a class="header" href="#transformers-and-architecture">Transformers and Architecture</a></h3>
 <ul>
@@ -2437,34 +2437,35 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <h2 id="chapter-5---claude-code-1"><a class="header" href="#chapter-5---claude-code-1">Chapter 5 - Claude Code</a></h2>
 <h3 id="claude-code-documentation"><a class="header" href="#claude-code-documentation">Claude Code Documentation</a></h3>
 <ul>
-<li><a href="https://docs.claude.com/en/resources/prompt-library/library">Claude Prompt Library</a></li>
-<li><a href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices">Claude 4 Best Practices</a></li>
-<li><a href="https://docs.claude.com/en/docs/claude-code/slash-commands.md">Claude Code Slash Commands</a></li>
-<li><a href="https://docs.claude.com/en/docs/claude-code/interactive-mode">Claude Code Interactive Mode</a></li>
-<li><a href="https://docs.claude.com/en/docs/claude-code/hooks-guide">Claude Code Hooks Guide</a></li>
-<li><a href="https://docs.claude.com/en/docs/claude-code/statusline">Claude Code Statusline</a></li>
+<li><a href="https://github.com/hesreallyhim/awesome-claude-code">Awesome Claude Code</a></li>
 <li><a href="https://github.com/sirmalloc/ccstatusline">CCStatusline by sirmalloc</a></li>
-<li><a href="https://docs.claude.com/en/docs/claude-code/mcp">Claude Code MCP</a></li>
-<li><a href="https://docs.claude.com/en/docs/claude-code/headless">Claude Code Headless Mode</a></li>
-<li><a href="https://code.claude.com/docs/en/sub-agents">Claude Code Sub-Agents</a></li>
-<li><a href="https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands">Custom Commands Tutorial - GitHub</a></li>
+<li><a href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices">Claude 4 Best Practices</a></li>
 <li><a href="https://github.com/anthropics/claude-code">Claude Code GitHub</a></li>
-<li><a href="https://www.claude.com/blog/skills-explained">Claude Skills Blog - What are skills?</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/headless">Claude Code Headless Mode</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/hooks-guide">Claude Code Hooks Guide</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/interactive-mode">Claude Code Interactive Mode</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/mcp">Claude Code MCP</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/slash-commands.md">Claude Code Slash Commands</a></li>
+<li><a href="https://docs.claude.com/en/docs/claude-code/statusline">Claude Code Statusline</a></li>
+<li><a href="https://code.claude.com/docs/en/sub-agents">Claude Code Sub-Agents</a></li>
+<li><a href="https://docs.claude.com/en/resources/prompt-library/library">Claude Prompt Library</a></li>
 <li><a href="https://claude.com/blog/skills">Claude Skills - Official Blog Post</a></li>
-<li><a href="https://github.com/anthropics/skills">Claude Skills Repository</a></li>
 <li><a href="https://simonwillison.net/2025/Oct/16/claude-skills/">Claude Skills Analysis - Simon Willison</a></li>
+<li><a href="https://www.claude.com/blog/skills-explained">Claude Skills Blog - What are skills?</a></li>
+<li><a href="https://github.com/anthropics/skills">Claude Skills Repository</a></li>
+<li><a href="https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands">Custom Commands Tutorial - GitHub</a></li>
 <li><a href="https://github.com/diegopacheco/ai-playground/tree/main/agents/claude-code/claude-skill-fun">JSON Formatter Claude Skill - Diego Pacheco</a></li>
 </ul>
 <h3 id="development-tools"><a class="header" href="#development-tools">Development Tools</a></h3>
 <ul>
-<li><a href="https://code.visualstudio.com/">VSCode</a></li>
 <li><a href="https://codingdojo.org/">Coding Dojo</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Test-driven_development">Test-driven Development - Wikipedia</a></li>
+<li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">GitHub Pull Requests Documentation</a></li>
+<li><a href="https://x.com/diego_pacheco/status/1988897341584093220">SDD Tweet - Diego Pacheco</a></li>
 <li><a href="https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html">Spec Driven Development - Martin Fowler</a></li>
 <li><a href="https://marmelab.com/blog/2025/11/12/spec-driven-development-waterfall-strikes-back.html">Spec-Driven Development: The Waterfall Strikes Back - Marmelab</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Test-driven_development">Test-driven Development - Wikipedia</a></li>
 <li><a href="https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html">Testing Queues and Batch Jobs - Diego Pacheco</a></li>
-<li><a href="https://x.com/diego_pacheco/status/1988897341584093220">SDD Tweet - Diego Pacheco</a></li>
-<li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">GitHub Pull Requests Documentation</a></li>
+<li><a href="https://code.visualstudio.com/">VSCode</a></li>
 </ul>
 <h2 id="chapter-6---testing-with-ai-1"><a class="header" href="#chapter-6---testing-with-ai-1">Chapter 6 - Testing with AI</a></h2>
 <h3 id="testing-frameworks-and-tools"><a class="header" href="#testing-frameworks-and-tools">Testing Frameworks and Tools</a></h3>
@@ -2520,9 +2521,9 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <h2 id="chapter-9---learning-from-ai-1"><a class="header" href="#chapter-9---learning-from-ai-1">Chapter 9 - Learning from AI</a></h2>
 <h3 id="ai-hallucination-research"><a class="header" href="#ai-hallucination-research">AI Hallucination Research</a></h3>
 <ul>
-<li><a href="https://arxiv.org/pdf/2504.15771">ORION: Retrieval-Based Method for Hallucination Detection - arXiv</a></li>
-<li><a href="https://arxiv.org/pdf/2401.11817">Hallucination is Inevitable: An Innate Limitation of Large Language Models - arXiv</a></li>
 <li><a href="https://arxiv.org/pdf/2406.07457">Estimating the Hallucination Rate of Generative AI - arXiv</a></li>
+<li><a href="https://arxiv.org/pdf/2401.11817">Hallucination is Inevitable: An Innate Limitation of Large Language Models - arXiv</a></li>
+<li><a href="https://arxiv.org/pdf/2504.15771">ORION: Retrieval-Based Method for Hallucination Detection - arXiv</a></li>
 </ul>
 <h2 id="authors-published-works"><a class="header" href="#authors-published-works">Author's Published Works</a></h2>
 <ul>
@@ -2584,18 +2585,46 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="changelog"><a class="header" href="#changelog">Changelog</a></h1>
 <p>All notable changes to "The Art of Sense: A Philosophy of Modern AI" book project are documented in this file.</p>
+<h2 id="november-21-2025"><a class="header" href="#november-21-2025">November 21, 2025</a></h2>
+<h3 id="book-version-104-release"><a class="header" href="#book-version-104-release">Book Version 1.0.4 Release</a></h3>
+<ul>
+<li>Published version 1.0.4 of the book</li>
+</ul>
+<h3 id="chapter-1---making-sense-of-ai-2"><a class="header" href="#chapter-1---making-sense-of-ai-2">Chapter 1 - Making Sense of AI</a></h3>
+<ul>
+<li>Enhanced Marketing and AI section with additional critique</li>
+<li>Updated AGI perspectives and industry analysis</li>
+</ul>
+<h3 id="chapter-5---claude-code-2"><a class="header" href="#chapter-5---claude-code-2">Chapter 5 - Claude Code</a></h3>
+<ul>
+<li>Added comprehensive Claude Skills guide (CLAUDE_SKILLS.md)</li>
+<li>Enhanced skills vs MCP comparison and use cases</li>
+</ul>
+<h3 id="chapter-8---non-obvious-use-cases-2"><a class="header" href="#chapter-8---non-obvious-use-cases-2">Chapter 8 - Non-Obvious Use Cases</a></h3>
+<ul>
+<li>Added comprehensive AI Beyond Engineering guide (AI_BEYOND_ENGINEERING.md)</li>
+<li>Explored AI applications outside software development</li>
+<li>Discussed ARU Strategy and production safety patterns</li>
+</ul>
+<h3 id="epilogue-2"><a class="header" href="#epilogue-2">Epilogue</a></h3>
+<ul>
+<li>Updated Glossary with 30+ new technical terms</li>
+<li>Added new external references across all chapters</li>
+<li>Enhanced Book Index with additional entries</li>
+<li>Updated References with model cards and security resources</li>
+</ul>
 <h2 id="november-20-2025"><a class="header" href="#november-20-2025">November 20, 2025</a></h2>
 <h3 id="book-version-103-release"><a class="header" href="#book-version-103-release">Book Version 1.0.3 Release</a></h3>
 <ul>
 <li>Published version 1.0.3 of the book</li>
 </ul>
-<h3 id="chapter-1---making-sense-of-ai-2"><a class="header" href="#chapter-1---making-sense-of-ai-2">Chapter 1 - Making Sense of AI</a></h3>
+<h3 id="chapter-1---making-sense-of-ai-3"><a class="header" href="#chapter-1---making-sense-of-ai-3">Chapter 1 - Making Sense of AI</a></h3>
 <ul>
 <li>Added comprehensive Marketing and AI critique guide (MKT.md)</li>
 <li>Enhanced AGI discussion with additional perspectives</li>
 <li>Updated AGI content with latest industry insights</li>
 </ul>
-<h3 id="epilogue-2"><a class="header" href="#epilogue-2">Epilogue</a></h3>
+<h3 id="epilogue-3"><a class="header" href="#epilogue-3">Epilogue</a></h3>
 <ul>
 <li>Updated Glossary with additional missing terms</li>
 <li>Updated References with comprehensive external links</li>
@@ -2611,13 +2640,13 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li>Added comprehensive Spec Driven Development guide (SDD.md)</li>
 <li>Enhanced agent patterns and methodologies</li>
 </ul>
-<h3 id="epilogue-3"><a class="header" href="#epilogue-3">Epilogue</a></h3>
+<h3 id="epilogue-4"><a class="header" href="#epilogue-4">Epilogue</a></h3>
 <ul>
 <li>Updated References with additional book links</li>
 <li>Refined content organization and structure</li>
 </ul>
 <h2 id="november-15-2025"><a class="header" href="#november-15-2025">November 15, 2025</a></h2>
-<h3 id="epilogue-4"><a class="header" href="#epilogue-4">Epilogue</a></h3>
+<h3 id="epilogue-5"><a class="header" href="#epilogue-5">Epilogue</a></h3>
 <ul>
 <li>Added additional book references to References section</li>
 <li>Enhanced author bibliography</li>
@@ -2627,11 +2656,11 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <ul>
 <li>Published version 1.0.1 of the book</li>
 </ul>
-<h3 id="chapter-5---claude-code-2"><a class="header" href="#chapter-5---claude-code-2">Chapter 5 - Claude Code</a></h3>
+<h3 id="chapter-5---claude-code-3"><a class="header" href="#chapter-5---claude-code-3">Chapter 5 - Claude Code</a></h3>
 <ul>
 <li>Added Advanced Context Window Management guide (CC_ADVANCED_CTX_WINDOW_MGMT.md)</li>
 </ul>
-<h3 id="epilogue-5"><a class="header" href="#epilogue-5">Epilogue</a></h3>
+<h3 id="epilogue-6"><a class="header" href="#epilogue-6">Epilogue</a></h3>
 <ul>
 <li>Updated Glossary with 28 new technical terms</li>
 <li>Updated References with additional stress testing links</li>
@@ -2647,7 +2676,7 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li>Enhanced critical thinking guide with AI assistance (CRITICAL_THINKING.md)</li>
 <li>Expanded role playing capabilities and personas (ROLE_PLAYING.md)</li>
 </ul>
-<h3 id="chapter-8---non-obvious-use-cases-2"><a class="header" href="#chapter-8---non-obvious-use-cases-2">Chapter 8 - Non-Obvious Use Cases</a></h3>
+<h3 id="chapter-8---non-obvious-use-cases-3"><a class="header" href="#chapter-8---non-obvious-use-cases-3">Chapter 8 - Non-Obvious Use Cases</a></h3>
 <ul>
 <li>Added comprehensive ownership tracking guide (OWNERSHIP.md)</li>
 <li>Updated chapter overview (README.md)</li>
@@ -2716,7 +2745,7 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li>Enhanced brainstorming and idea generation strategies (IDEAS.md)</li>
 <li>Created chapter introduction (README.md)</li>
 </ul>
-<h3 id="chapter-8---non-obvious-use-cases-3"><a class="header" href="#chapter-8---non-obvious-use-cases-3">Chapter 8 - Non-Obvious Use Cases</a></h3>
+<h3 id="chapter-8---non-obvious-use-cases-4"><a class="header" href="#chapter-8---non-obvious-use-cases-4">Chapter 8 - Non-Obvious Use Cases</a></h3>
 <ul>
 <li>Added documentation generation workflows (DOCUMENTATION.md)</li>
 <li>Created proofreading guide with AI assistance (PROOF_READER.md)</li>
@@ -2733,7 +2762,7 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li>Enhanced migration rationale (WHY.md)</li>
 <li>Created chapter introduction (README.md)</li>
 </ul>
-<h3 id="epilogue-6"><a class="header" href="#epilogue-6">Epilogue</a></h3>
+<h3 id="epilogue-7"><a class="header" href="#epilogue-7">Epilogue</a></h3>
 <ul>
 <li>Updated book structure and organization (README.md)</li>
 <li>Enhanced how the book was written documentation (HOW_I_WROTE_THE_BOOK.md)</li>
@@ -2745,12 +2774,12 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li>Expanded AI testing approaches (AI_TESTING.md)</li>
 <li>Updated chapter introduction (README.md)</li>
 </ul>
-<h3 id="chapter-1---making-sense-of-ai-3"><a class="header" href="#chapter-1---making-sense-of-ai-3">Chapter 1 - Making Sense of AI</a></h3>
+<h3 id="chapter-1---making-sense-of-ai-4"><a class="header" href="#chapter-1---making-sense-of-ai-4">Chapter 1 - Making Sense of AI</a></h3>
 <ul>
 <li>Significantly expanded reality checks and industry perspective (REALITY.md)</li>
 </ul>
 <h2 id="november-1-2025"><a class="header" href="#november-1-2025">November 1, 2025</a></h2>
-<h3 id="chapter-5---claude-code-3"><a class="header" href="#chapter-5---claude-code-3">Chapter 5 - Claude Code</a></h3>
+<h3 id="chapter-5---claude-code-4"><a class="header" href="#chapter-5---claude-code-4">Chapter 5 - Claude Code</a></h3>
 <ul>
 <li>Added Claude MCP integration guide (CLAUDE_MCP.md)</li>
 <li>Enhanced prompt engineering advice (PROMPT_ADVICES.md)</li>
@@ -2771,14 +2800,14 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li>Updated agent patterns and approaches (WHAT.md)</li>
 <li>Updated chapter introduction (README.md)</li>
 </ul>
-<h3 id="chapter-1---making-sense-of-ai-4"><a class="header" href="#chapter-1---making-sense-of-ai-4">Chapter 1 - Making Sense of AI</a></h3>
+<h3 id="chapter-1---making-sense-of-ai-5"><a class="header" href="#chapter-1---making-sense-of-ai-5">Chapter 1 - Making Sense of AI</a></h3>
 <ul>
 <li>Expanded vibe coding concepts and warnings (VIBE_CODING.md)</li>
 <li>Enhanced reality perspectives (REALITY.md)</li>
 <li>Improved mirror effect documentation (MIRROR_ASTEROIDS.md)</li>
 </ul>
 <h2 id="october-30-2025"><a class="header" href="#october-30-2025">October 30, 2025</a></h2>
-<h3 id="chapter-5---claude-code-4"><a class="header" href="#chapter-5---claude-code-4">Chapter 5 - Claude Code</a></h3>
+<h3 id="chapter-5---claude-code-5"><a class="header" href="#chapter-5---claude-code-5">Chapter 5 - Claude Code</a></h3>
 <ul>
 <li>Significantly expanded decision criteria for AI usage (DECISION_CRITERIA.md)</li>
 <li>Enhanced prompt advice and best practices (PROMPT_ADVICES.md)</li>
@@ -2870,6 +2899,8 @@ Test scenarios at the limits of valid input ranges or system capacity.</p>
 Automated compilation and deployment process that can be monitored and optimized with AI assistance.</p>
 <p><strong>Bash Mode / Interactive Mode</strong>
 A Claude Code feature enabling direct bash command execution for system operations by typing "!" prefix.</p>
+<p><strong>Bat-and-Ball Problem</strong>
+Cognitive bias problem from Daniel Kahneman's research requiring System 2 thinking to solve correctly, often used to demonstrate human cognitive limitations.</p>
 <p><strong>bump-version.sh</strong>
 Script used to increment version numbers in the book publication process.</p>
 <p><strong>Bus Factor</strong>
@@ -2932,7 +2963,7 @@ Responsibility for maintaining and managing configuration files and settings.</p
 <p><strong>Cohere</strong>
 Company providing LLM APIs.</p>
 <p><strong>Container Registry</strong>
-Repository for storing and distributing container images, important for secure MCP usage.</p>
+Repository for storing and distributing container images, important for secure MCP usage and deployment workflows.</p>
 <p><strong>Contract-Based Testing</strong>
 Testing based on contracts or agreements between services.</p>
 <p><strong>Contrarian Feedback</strong>
@@ -2944,7 +2975,7 @@ The amount of text/tokens an LLM can process at once. Larger context windows all
 <p><strong>Context7</strong>
 Service providing up-to-date library documentation to address LLMs' outdated training data, supporting over 49,317 libraries.</p>
 <p><strong>Cool Down Period</strong>
-Limitation period in subscription-based plans when token budget is exhausted.</p>
+Limitation period in subscription-based plans when token budget is exhausted, temporarily restricting API usage.</p>
 <p><strong>Core Business Logic</strong>
 Critical business logic and intellectual property that should never be created through "vibe coding" due to quality and proprietary concerns.</p>
 <p><strong>Cosine Similarity</strong>
@@ -2964,6 +2995,8 @@ Publicly disclosed security vulnerabilities.</p>
 OpenAI's model that generates images from textual descriptions using transformer architecture and GANs.</p>
 <p><strong>Daniel Kahneman</strong>
 Psychologist and author of "Thinking, Fast and Slow", referenced in discussions about System 1 and System 2 thinking applied to AI usage.</p>
+<p><strong>Data Loss</strong>
+Risk in migrations where data might be lost during transition phases without proper backup and validation procedures.</p>
 <p><strong>Data Structures and Algorithms</strong>
 Fundamental computer science concepts for organizing and processing data efficiently.</p>
 <p><strong>DBSCAN</strong>
@@ -2972,6 +3005,8 @@ Density-Based Spatial Clustering of Applications with Noise, an algorithm for cl
 Machine learning algorithm using tree-like model of decisions for both classification and regression tasks.</p>
 <p><strong>Debugging with AI using Images</strong>
 Technique for troubleshooting code issues by providing AI with visual representations (screenshots/images) of problems.</p>
+<p><strong>Demo to Production</strong>
+Complex productionization phase remaining difficult despite AI assistance. References Waymo case showing 11+ years from 2014 demo to incomplete 2025 production deployment.</p>
 <p><strong>Docker</strong>
 Containerization platform.</p>
 <p><strong>Decision Criteria</strong>
@@ -3014,7 +3049,7 @@ Similarity measure used to compare embeddings based on the straight-line distanc
 <p><strong>Evo by Snyk</strong>
 Commercial MCP scanning security solution for analyzing MCP servers.</p>
 <p><strong>Explore Agent</strong>
-Claude Code specialized sub-agent for fast codebase exploration.</p>
+Claude Code specialized sub-agent for fast codebase exploration, supporting quick, medium, and thorough search modes.</p>
 <h2 id="f"><a class="header" href="#f">F</a></h2>
 <p><strong>Fabricated Productivity</strong>
 False or exaggerated productivity gains attributed to AI usage without accounting for increased review time, bug fixes, or quality issues.</p>
@@ -3034,6 +3069,8 @@ Training technique providing examples to help models perform tasks better withou
 Agent pattern for removing unwanted data or responses before or after LLM processing.</p>
 <p><strong>Fine Tuning</strong>
 Process of training a pre-trained model on specific domain data to adapt it to particular use cases without full retraining.</p>
+<p><strong>FTL (Faster Than Light)</strong>
+Metaphor describing the illusion that increasing code generation speed alone leads to problems, similar to trying to travel faster than light without upgrading other systems.</p>
 <h2 id="g"><a class="header" href="#g">G</a></h2>
 <p><strong>GANs (Generative Adversarial Networks)</strong>
 Neural network architecture used in image generation models like DALL-E.</p>
@@ -3050,9 +3087,11 @@ Google's LLM model with 1,000,000 token context window.</p>
 <p><strong>Gemini 2.0 Pro</strong>
 Google's LLM model with 2,000,000 token context window.</p>
 <p><strong>General-Purpose Agent</strong>
-Claude Code sub-agent for multi-step task handling.</p>
+Claude Code sub-agent for multi-step task handling requiring autonomous complex operations.</p>
 <p><strong>Generative AI</strong>
 AI systems that can generate new content, including text, code, images, and other media. The book focuses on using Generative AI for software engineering tasks. Works through predicting next tokens/sequences.</p>
+<p><strong>Great Software Quality Collapse</strong>
+Current state of declining software quality despite more computational resources, attributed to various factors including over-reliance on AI without proper review.</p>
 <p><strong>Git Archaeology for Troubleshooting</strong>
 Technique using git history to understand code evolution and diagnose issues.</p>
 <p><strong>GitHub Actions</strong>
@@ -3112,9 +3151,9 @@ Operations that produce the same result regardless of how many times they are ex
 <p><strong>Incompetence Illumination</strong>
 Teaching technique where AI deliberately mixes wrong and correct answers to train critical thinking.</p>
 <p><strong>Injection Attacks</strong>
-Class of security vulnerabilities where untrusted data is executed as code.</p>
+Class of security vulnerabilities where untrusted data is executed as code, analogous to unsanitized AI prompt execution.</p>
 <p><strong>Input Sanitization</strong>
-Security practice of cleaning and validating user inputs to prevent injection attacks.</p>
+Security practice of cleaning and validating user inputs to prevent injection attacks and ensure safe execution.</p>
 <p><strong>Integration Tests</strong>
 Tests that verify how different components work together, requiring test data and infrastructure setup.</p>
 <p><strong>Intellectual Honesty Detector</strong>
@@ -3155,7 +3194,7 @@ AWS serverless compute service.</p>
 <p><strong>LDA (Linear Discriminant Analysis)</strong>
 Dimensionality reduction technique that finds linear combinations of features for classification.</p>
 <p><strong>Lead Time</strong>
-Software development metric measuring the time from starting work on a feature to deployment, mentioned as not improving despite AI tools.</p>
+Software development metric measuring time from starting work on feature to deployment, noted as not improving despite AI tools.</p>
 <p><strong>Learning from AI</strong>
 Process of using AI as an educational tool while maintaining critical thinking and verification.</p>
 <p><strong>Leftovers</strong>
@@ -3179,7 +3218,7 @@ Classification algorithm using logistic function to model probability of categor
 <p><strong>Loss Function</strong>
 Mathematical function optimized during model training to minimize prediction errors.</p>
 <p><strong>LSH (Locality-Sensitive Hashing)</strong>
-Technique for approximate nearest neighbor search in high-dimensional spaces.</p>
+Technique for approximate nearest neighbor search in high-dimensional spaces, used in vector database implementations.</p>
 <p><strong>LSP (Language Server Protocol)</strong>
 Standard protocol that MCP is compared to for understanding its architecture and functionality.</p>
 <p><strong>LLMs as Slot Machines</strong>
@@ -3199,6 +3238,8 @@ Portmanteau of "marketing" and criticism of misleading AI marketing claims.</p>
 Specialized agent for translating technical content to plain language.</p>
 <p><strong>MCP (Model Context Protocol)</strong>
 A protocol for connecting AI models to external tools and data sources, enabling extended capabilities. Created by Anthropic in 2024.</p>
+<p><strong>MCP Authorization Patterns</strong>
+Security patterns for proper authorization in MCP implementations, ensuring safe upstream API calls.</p>
 <p><strong>MCP Client</strong>
 Component within AI host that connects to MCP servers.</p>
 <p><strong>MCP Guardrails</strong>
@@ -3211,6 +3252,8 @@ Security tool for analyzing MCP servers for vulnerabilities.</p>
 External service providing tools and data to AI models via Model Context Protocol.</p>
 <p><strong>Mean Shift Clustering</strong>
 Clustering algorithm that finds dense regions by shifting data points toward mode of distribution.</p>
+<p><strong>Memory Leaks</strong>
+Runtime issue when applications fail to release memory properly, often detected during stress testing.</p>
 <p><strong>MidJourney</strong>
 Independent research lab's model for generating visually appealing and artistic images from text prompts.</p>
 <p><strong>Migrations</strong>
@@ -3223,6 +3266,8 @@ Vector database for storing and querying embeddings.</p>
 Concept that AI amplifies existing abilities: good engineers become better with AI; poor engineers become worse.</p>
 <p><strong>MDD (Model Driven Development)</strong>
 Earlier development approach similar to Spec Driven Development where models define implementation, mentioned as predecessor to SDD.</p>
+<p><strong>Model Card</strong>
+Documentation describing LLM capabilities, limitations, training data, and intended use cases for transparency.</p>
 <p><strong>MoCoGAN</strong>
 Model that separates motion and content to generate videos with coherent motion.</p>
 <p><strong>Mocks</strong>
@@ -3238,6 +3283,10 @@ Test scenarios covering invalid inputs, error conditions, or failure modes.</p>
 AI designed for specific tasks, as opposed to general intelligence.</p>
 <p><strong>Naive Bayes</strong>
 Classification algorithm based on Bayes' theorem with strong independence assumptions between features.</p>
+<p><strong>Nearest Neighbor Queries</strong>
+Search operation in vector databases finding closest matching vectors based on similarity metrics.</p>
+<p><strong>Noise Reduction</strong>
+Technique in dimensionality reduction removing irrelevant features while preserving meaningful information.</p>
 <p><strong>Non-idempotent</strong>
 Operations that produce different results when executed multiple times, requiring special testing setup.</p>
 <p><strong>Natural Language Processing (NLP)</strong>
@@ -3272,8 +3321,10 @@ PostgreSQL extension for vector database functionality.</p>
 Sensitive personal data that should be excluded from AI processing for privacy and security.</p>
 <p><strong>Pinecone</strong>
 Vector database for storing and querying embeddings.</p>
+<p><strong>Placeholder Personas</strong>
+Using AI in different roles for feedback and analysis such as Architect, Security Expert, Marketing Specialist.</p>
 <p><strong>Plan Agent</strong>
-Claude Code specialized agent for planning tasks.</p>
+Claude Code specialized agent for planning tasks and breaking down complex problems into manageable steps.</p>
 <p><strong>Playwright</strong>
 End-to-end testing framework for web applications.</p>
 <p><strong>podman</strong>
@@ -3317,6 +3368,8 @@ Ensemble learning method using multiple decision trees for classification and re
 Technique to prevent overfitting by adding penalty terms to the loss function.</p>
 <p><strong>Regression Tests</strong>
 Tests ensuring existing functionality still works after changes.</p>
+<p><strong>Remote Code Execution</strong>
+Security vulnerability pattern where attackers can execute arbitrary code, analogous to unsanitized AI prompt execution.</p>
 <p><strong>Randomness in AI</strong>
 Inherent probabilistic nature of LLMs making outputs non-deterministic even with identical inputs.</p>
 <p><strong>Regression</strong>
@@ -3346,6 +3399,8 @@ Systems programming language used for mdbook and mentioned in migration contexts
 AI coding agents that operate in isolated environments separate from user's machine for security.</p>
 <p><strong>Sandboxing</strong>
 Running code in isolated environments for security, though noted as poor developer experience.</p>
+<p><strong>Scaling Issues</strong>
+Challenges when systems grow in size, complexity, or load during stress testing and production usage.</p>
 <p><strong>Security Audit</strong>
 Systematic evaluation of system security.</p>
 <p><strong>SDD (Spec Driven Development)</strong>
@@ -3369,15 +3424,17 @@ Testing by comparing current output to saved snapshots.</p>
 <p><strong>Smoke Test</strong>
 High-level test verifying critical system functionality without exhaustive coverage.</p>
 <p><strong>Socratic Interrogation</strong>
-Teaching method where AI asks progressively deeper questions instead of providing answers.</p>
+Teaching method where AI asks progressively deeper questions instead of providing answers, forcing critical thinking.</p>
 <p><strong>SQL Injection</strong>
-Security attack where malicious SQL code is inserted through user inputs.</p>
+Security attack where malicious SQL code is inserted through user inputs, prevented by input sanitization.</p>
 <p><strong>State Management</strong>
-Practices for handling and coordinating application state across components.</p>
+Practices for handling and coordinating application state across components in software systems.</p>
 <p><strong>Strategic Work</strong>
 High-level planning, architecture, and decision-making work requiring deeper thinking.</p>
 <p><strong>Stubs</strong>
 Test doubles that provide predefined responses to method calls during testing.</p>
+<p><strong>Sub-Agents (Claude Code)</strong>
+Independent agents spawned by Claude Code, each with their own 200k token context window.</p>
 <p><strong>Sub-Agents Spawning</strong>
 Claude Code feature where independent agents are created, each with their own 200k token context window.</p>
 <p><strong>Solutions vs Wrappers</strong>
@@ -3402,8 +3459,6 @@ Company that developed Stable Diffusion image generation model.</p>
 In reinforcement learning, a snapshot of the environment at a given time.</p>
 <p><strong>Status Line</strong>
 Customizable information display at bottom of Claude Code interface showing current state.</p>
-<p><strong>Sub-Agents (Claude Code)</strong>
-Independent agents spawned by Claude Code, each with their own 200k token context window.</p>
 <p><strong>Summarization</strong>
 LLM task of condensing long text into shorter summaries while retaining key information.</p>
 <p><strong>Sunsetting</strong>
@@ -3450,7 +3505,7 @@ Custom APIs created specifically to expose and manipulate application state for 
 <p><strong>Thinking, Fast and Slow</strong>
 Book by Daniel Kahneman referenced in discussions about System 1 and System 2 thinking applied to AI usage.</p>
 <p><strong>Thinking Mode</strong>
-Feature in some LLMs showing internal reasoning process.</p>
+Feature in some LLMs showing internal reasoning process before generating final response.</p>
 <p><strong>Text Generation</strong>
 Generative AI capability for creating written content from prompts or other inputs. LLMs process system and user prompts to generate responses.</p>
 <p><strong>TGAN (Temporal Generative Adversarial Networks)</strong>
@@ -3469,6 +3524,8 @@ Neural network architecture introduced in "Attention is All You Need" paper by V
 Neural network architecture underlying modern LLMs, enabling efficient processing of sequences through attention mechanisms.</p>
 <p><strong>Translation</strong>
 LLM task of converting text from one language to another.</p>
+<p><strong>Trial and Error</strong>
+Vibe coding practice of generating code without review, relying on iterative execution attempts rather than careful planning.</p>
 <p><strong>Troubleshooting</strong>
 Using AI to help diagnose and resolve problems in code, systems, and architectures including log analysis and debugging.</p>
 <p><strong>Two Steps Forward, One Step Back</strong>
@@ -3496,11 +3553,11 @@ Security practice of thoroughly checking MCP servers before use, combining vetti
 <p><strong>VERSION File</strong>
 File tracking the current version number of the book.</p>
 <p><strong>Vibe Coding</strong>
-A practice coined by Andrej Karpathy in February 2025 tweet where developers generate prompts and do not look at the generated code, assuming AI will handle everything correctly. The book argues this is a bad practice for serious software engineering, especially for core business logic.</p>
+Practice coined by Andrej Karpathy in February 2025 where developers generate prompts and do not look at generated code, assuming AI handles everything correctly. The book argues this is bad practice for serious software engineering, especially for core business logic.</p>
+<p><strong>Vibe Payments</strong>
+Satirical concept introduced in the book suggesting that if developers use vibe coding without reviewing code, payments should also be random, reflecting lack of due diligence.</p>
 <p><strong>Vintage Coding</strong>
 Practice of coding without AI assistance to maintain core skills and proficiency, often practiced in coding dojos.</p>
-<p><strong>Vibe Payments</strong>
-A satirical concept introduced in the book suggesting that if developers use "vibe coding" without reviewing code, their payments should also be random and unpredictable, reflecting the lack of due diligence in their work.</p>
 <p><strong>Video Generation</strong>
 Generative AI capability for creating video content from text descriptions or other inputs. Still experimental and not ready for production.</p>
 <p><strong>VideoPoet</strong>
@@ -3523,9 +3580,7 @@ OpenAI's automatic speech recognition system that transcribes spoken language in
 Company that provides Grok LLM models.</p>
 <h2 id="z"><a class="header" href="#z">Z</a></h2>
 <p><strong>Zero to Demo</strong>
-Rapid prototyping phase made faster with AI assistance. References the Waymo case study where demos are possible quickly but production takes significantly longer.</p>
-<p><strong>Demo to Production</strong>
-Complex productionization phase that remains difficult despite AI assistance, requiring careful engineering. References the Waymo case study showing 11 years from 2014 demo to 2025 incomplete production deployment.</p>
+Rapid prototyping phase made faster with AI assistance. References Waymo case study where demos are possible quickly but production takes significantly longer.</p>
 <p><strong>Zig</strong>
 Systems programming language mentioned as a learning target.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="index"><a class="header" href="#index">Index</a></h1>
@@ -3685,6 +3740,7 @@ Systems programming language mentioned as a learning target.</p>
 <li><strong>Decision Trees</strong> - <a href="epilogue/../chapter-2/CLASSIFICATION.html">Classification</a>, <a href="epilogue/../chapter-2/REGRESSION.html">Regression</a></li>
 <li><strong>Demo to Production</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
 <li><strong>Deployment Agent</strong> - <a href="epilogue/../chapter-5/CUSTON_AGENTS.html">Custom Agents</a></li>
+<li><strong>Down Ceiling Effect</strong> - <a href="epilogue/../chapter-1/AGI.html">AGI</a>, <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>Determinism</strong> - <a href="epilogue/../chapter-1/RANDOMNESS.html">Randomness</a>, <a href="epilogue/../chapter-7/TESTING.html">Testing</a></li>
 <li><strong>Diffusion Models</strong> - <a href="epilogue/../chapter-3/VIDEO_GENERATION.html">Video Generation</a></li>
 <li><strong>Dimensionality Reduction</strong> - <a href="epilogue/../chapter-2/DIMENSIONALITY_REDUCTION.html">Dimensionality Reduction</a></li>
@@ -3713,6 +3769,7 @@ Systems programming language mentioned as a learning target.</p>
 <li><strong>Evo by Snyk</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
 <li><strong>Exam Preparation</strong> - <a href="epilogue/../chapter-9/PRIVATE_TEACHER.html">Private Teacher</a></li>
 <li><strong>Exclusions</strong> - <a href="epilogue/../chapter-5/EXCLUSIONS.html">Exclusions</a></li>
+<li><strong>Explore Agent</strong> - <a href="epilogue/../chapter-5/CUSTON_AGENTS.html">Custom Agents</a></li>
 <li><strong>Export Command</strong> - <a href="epilogue/../chapter-5/CMDs.html">Commands</a></li>
 <li><strong>Extended Reasoning</strong> - <a href="epilogue/../chapter-5/ULTRATHINK.html">Ultrathink</a></li>
 </ul>
@@ -3727,12 +3784,14 @@ Systems programming language mentioned as a learning target.</p>
 <li><strong>Fooled by AI</strong> - <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
 <li><strong>Fraud Detection</strong> - <a href="epilogue/../chapter-2/CLUSTERING.html">Clustering</a></li>
 <li><strong>From Hunters to Gatherers</strong> - <a href="epilogue/../chapter-1/MIRROR_ASTEROIDS.html">Mirror Asteroids</a></li>
+<li><strong>FTL Metaphor</strong> - <a href="epilogue/../chapter-1/SOFTWARE_CONTEXT.html">Software Context</a></li>
 </ul>
 <h2 id="g-1"><a class="header" href="#g-1">G</a></h2>
 <ul>
 <li><strong>Game Playing</strong> - <a href="epilogue/../chapter-2/RL.html">Reinforcement Learning</a></li>
 <li><strong>GANs (Generative Adversarial Networks)</strong> - <a href="epilogue/../chapter-3/IMAGE_GENERATION.html">Image Generation</a></li>
 <li><strong>Gatling</strong> - <a href="epilogue/../chapter-6/STRESS_TESTING.html">Stress Testing</a></li>
+<li><strong>Gateway Drug (Vibe Coding)</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
 <li><strong>Gaussian Mixture Models</strong> - <a href="epilogue/../chapter-2/CLUSTERING.html">Clustering</a></li>
 <li><strong>Gemini</strong> - <a href="epilogue/../chapter-4/CONTEXT_WINDOW.html">Context Window</a>, <a href="epilogue/../chapter-3/LLM.html">LLM</a></li>
 <li><strong>Gemini CLI</strong> - <a href="epilogue/../chapter-4/CODING_AGENTS.html">Coding Agents</a></li>
@@ -3749,6 +3808,7 @@ Systems programming language mentioned as a learning target.</p>
 <li><strong>GPT-4</strong> - <a href="epilogue/../chapter-4/CONTEXT_WINDOW.html">Context Window</a>, <a href="epilogue/../chapter-3/LLM.html">LLM</a></li>
 <li><strong>GPT-5</strong> - <a href="epilogue/../chapter-3/LLM.html">LLM</a></li>
 <li><strong>Gradient Boosting</strong> - <a href="epilogue/../chapter-2/CLASSIFICATION.html">Classification</a>, <a href="epilogue/../chapter-2/REGRESSION.html">Regression</a></li>
+<li><strong>Great Software Quality Collapse</strong> - <a href="epilogue/../chapter-1/SOFTWARE_CONTEXT.html">Software Context</a></li>
 <li><strong>Gregor Hohpe</strong> - <a href="epilogue/../chapter-4/AGENTS_PATTERNS.html">Agent Patterns</a></li>
 <li><strong>Grok</strong> - <a href="epilogue/../chapter-4/CONTEXT_WINDOW.html">Context Window</a>, <a href="epilogue/../chapter-3/LLM.html">LLM</a></li>
 <li><strong>Gym Workout Analogy</strong> - <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
@@ -3760,6 +3820,7 @@ Systems programming language mentioned as a learning target.</p>
 <li><strong>Hierarchical Clustering</strong> - <a href="epilogue/../chapter-2/CLUSTERING.html">Clustering</a></li>
 <li><strong>High-Dimensional Vectors</strong> - <a href="epilogue/../chapter-3/VECTOR_DBS.html">Vector Databases</a></li>
 <li><strong>High School Story</strong> - <a href="epilogue/../chapter-1/AI_INPUT.html">AI Input</a></li>
+<li><strong>Hobbit House Effect</strong> - <a href="epilogue/../chapter-1/AGI.html">AGI</a></li>
 <li><strong>Homework</strong> - <a href="epilogue/../chapter-1/AI_INPUT.html">AI Input</a>, <a href="epilogue/../chapter-8/ONBOARDING.html">Onboarding</a></li>
 <li><strong>Hooks</strong> - <a href="epilogue/../chapter-5/HOOKS.html">Hooks</a>, <a href="epilogue/../chapter-5/DECISION_CRITERIA.html">Decision Criteria</a></li>
 <li><strong>House Price Prediction</strong> - <a href="epilogue/../chapter-2/REGRESSION.html">Regression</a></li>
@@ -3776,8 +3837,10 @@ Systems programming language mentioned as a learning target.</p>
 <li><strong>Image Generation</strong> - <a href="epilogue/../chapter-3/IMAGE_GENERATION.html">Image Generation</a></li>
 <li><strong>Image Recognition</strong> - <a href="epilogue/../chapter-2/CLASSIFICATION.html">Classification</a></li>
 <li><strong>Incompetence Illumination</strong> - <a href="epilogue/../chapter-9/PRIVATE_TEACHER.html">Private Teacher</a></li>
+<li><strong>Injection Attacks</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
 <li><strong>Init Command</strong> - <a href="epilogue/../chapter-5/CMDs.html">Commands</a></li>
 <li><strong>Innovation</strong> - <a href="epilogue/../chapter-9/POCS.html">POCs</a></li>
+<li><strong>Input Sanitization</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
 <li><strong>Intellectual Honesty Detector</strong> - <a href="epilogue/../chapter-9/PRIVATE_TEACHER.html">Private Teacher</a></li>
 <li><strong>Integration Tests</strong> - <a href="epilogue/../chapter-6/AI_TESTING.html">AI Testing</a></li>
 <li><strong>Interactive Mode</strong> - <a href="epilogue/../chapter-5/BASH_MODE.html">Bash Mode</a></li>
@@ -3828,6 +3891,7 @@ Systems programming language mentioned as a learning target.</p>
 <li><strong>Marketing Specialist Persona</strong> - <a href="epilogue/../chapter-9/ROLE_PLAYING.html">Role Playing</a></li>
 <li><strong>MCP (Model Context Protocol)</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a>, <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a>, <a href="epilogue/../chapter-5/CLAUDE_MCP.html">Claude MCP</a></li>
 <li><strong>MCP Architecture</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a></li>
+<li><strong>MCP Authorization</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
 <li><strong>MCP Client</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a></li>
 <li><strong>MCP Guardrails</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
 <li><strong>MCP Host</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a></li>
@@ -3852,6 +3916,7 @@ Systems programming language mentioned as a learning target.</p>
 <li><strong>MoCoGAN</strong> - <a href="epilogue/../chapter-3/VIDEO_GENERATION.html">Video Generation</a></li>
 <li><strong>Model</strong> - <a href="epilogue/../chapter-2/RL.html">Reinforcement Learning</a></li>
 <li><strong>Model-Agnostic</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a></li>
+<li><strong>Model Cards</strong> - <a href="epilogue/../chapter-3/LLM.html">LLM</a></li>
 <li><strong>Monitoring</strong> - <a href="epilogue/../chapter-7/AFTER_MIGRATIONS.html">After Migrations</a></li>
 <li><strong>Mutation Testing</strong> - <a href="epilogue/../chapter-6/README.html">Chapter 6</a></li>
 </ul>
@@ -3896,6 +3961,7 @@ Systems programming language mentioned as a learning target.</p>
 <li><strong>pgvector</strong> - <a href="epilogue/../chapter-3/VECTOR_DBS.html">Vector Databases</a></li>
 <li><strong>Pinecone</strong> - <a href="epilogue/../chapter-3/VECTOR_DBS.html">Vector Databases</a></li>
 <li><strong>PITest</strong> - <a href="epilogue/../chapter-6/README.html">Chapter 6</a></li>
+<li><strong>Placeholder Personas</strong> - <a href="epilogue/../chapter-9/ROLE_PLAYING.html">Role Playing</a></li>
 <li><strong>Planning</strong> - <a href="epilogue/../chapter-7/MIGRATIONS_PHASES.html">Migrations Phases</a></li>
 <li><strong>Playwright</strong> - <a href="epilogue/../chapter-6/DATA_GEN.html">Data Generation</a></li>
 <li><strong>POCs (Proof of Concepts)</strong> - <a href="epilogue/../chapter-9/POCS.html">POCs</a>, <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a>, <a href="epilogue/../zero/README.html">Introduction</a></li>
@@ -3942,6 +4008,7 @@ Systems programming language mentioned as a learning target.</p>
 <li><strong>Regression Tests</strong> - <a href="epilogue/../chapter-6/MANUAL_TESTING.html">Manual Testing</a></li>
 <li><strong>Reinforcement</strong> - <a href="epilogue/../chapter-9/POCS.html">POCs</a></li>
 <li><strong>Reinforcement Learning</strong> - <a href="epilogue/../chapter-2/RL.html">Reinforcement Learning</a></li>
+<li><strong>Remote Code Execution</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
 <li><strong>Respect</strong> - <a href="epilogue/../chapter-1/AI_INPUT.html">AI Input</a></li>
 <li><strong>Respect in Software Engineering</strong> - <a href="epilogue/../chapter-1/AI_INPUT.html">AI Input</a></li>
 <li><strong>Resources</strong> - <a href="epilogue/RESOURCES.html">Resources</a></li>
@@ -3959,6 +4026,7 @@ Systems programming language mentioned as a learning target.</p>
 <li><strong>Sales Forecasting</strong> - <a href="epilogue/../chapter-2/REGRESSION.html">Regression</a></li>
 <li><strong>Sandbox-Based Agents</strong> - <a href="epilogue/../chapter-4/CODING_AGENTS.html">Coding Agents</a></li>
 <li><strong>Scams</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a>, <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
+<li><strong>Scaling Issues</strong> - <a href="epilogue/../chapter-6/STRESS_TESTING.html">Stress Testing</a></li>
 <li><strong>SDD (Spec Driven Development)</strong> - <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a></li>
 <li><strong>Security Auditor Agent</strong> - <a href="epilogue/../chapter-5/CUSTON_AGENTS.html">Custom Agents</a></li>
 <li><strong>Security and MCPs</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
