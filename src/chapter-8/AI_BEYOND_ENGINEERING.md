@@ -23,6 +23,35 @@ You don't need buy a tablet. You have 500 USD in the wallet. Now you see an AD s
 
 Why I'm saying this, well AI can be 100% the same thing but on esteroids.You got 2x productivity, 10x improvements, 50% gains. But in reality is this real or just fabricated numbers. It's possible to fabricate numbers, but can you do that sustainably? NO you cannot. Maybe it's better to the HARD thing that takes longer but you have SUSTAINABLE results. We need to lern how to use AI in a way that we can have SUSTAINABLE productivity gains, not just FABRICATED savings.
 
+## System 1 vs System 2 Thinking and AI
+
+<img src="../images/08-system-1-2.png" width="600"/>
+
+⚾ The Bat-and-Ball Problem
+* A bat and a ball together cost $1.10.
+* The bat costs $1.00 more than the ball.
+* How much does the ball cost?
+
+System 1: Immediate answer: 10 cents (intuitive but incorrect)
+
+System 2: Analytical answer: 5 cents (correct)
+
+Because:
+```
+Ball = x
+Bat = x + $1.00
+
+Total cost:
+x + (x + 1.00) = 1.10
+2x + 1.00 = 1.10
+2x = 0.10
+x = 0.05
+```
+
+That come from the classical book [Thinking, Fast and Slow](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555) which is from 2013 by Daniel Kahneman.
+
+Why that matters in AI context? Because when we are using AI for sher speed and productivity, we are relying on System 1 thinking, which is fast, intuitive, and automatic. Vibe-Coding(Which is an anti-patterns) get us `adicted` and just want move fast, fast, fast, don't think. Well we need to think, we need to make sense of things and `reflect` and do `Retrocpetives` and drive leasons learned. Otherwise remeber FTL and Artificial Savings. What you need to think about is, how fast can you think, are you just operating with System #1 all time. If that is true, maybe AI downgraded your job and you do more tatical wotk instead of strategic work. You need to find the balance between System 1 and System 2 thinking when using AI in software development.
+
 ## Byond Engineering
 
 It's very risk to do AI beyond engineering because of several factors like:
@@ -45,6 +74,10 @@ IF you want to buid AI Features, you need a lot of things like:
 * Sanitization: Ensure that any input from users is sanitized to prevent injection attacks or other security vulnerabilities.
 * Validation: Implement validation checks to ensure that AI-generated code meets quality and security standards before deployment.
 
+## Human in the Loop
+
+So the users can typo prompts in applications in production, however nothing gets executed, the only thing is that the LLM output is a JSON document which structure and "intentions". Them a human in the loop, basically using a admin or backoffise web application goes there and review what the user typed or what AI actually generated and them approve or reject. This way a lot of problems and risks are mitigated because you have a human reviewing the output before going to production.
+
 ## Audible Response Unit (ARU) Strategy
 
 What IF? You use a prompt for the final user, that way, the user can get a better experience by "reducing the complexity of the user experience" but you craft a system prompt that translate whatever the user typed into finate options let's say 0 to 5. Where 0 is invalid action and 1, 2, 3, 4 and 5 are valid ations. So you literaly ask the LLM to return a number and you just parse that number from string to integer. That way, even if the user managed to "tricky the LLM" your system is not blindly execution what the user type on the prompt because you are just doing numbers parsing. This is a very simple but effective way to mitigate risks when using AI beyond engineering in production enviroments.
@@ -52,3 +85,4 @@ What IF? You use a prompt for the final user, that way, the user can get a bette
 <img src="../images/08-ARU_Strategy.png" width="600"/>
 
 If you think about it, ARU systems used that for ages, chatbots did the similar strategy where you can type whatever but there is a finite set of options that the bot can understand and process. So you are not blindly executing whatever the user type, you are just mapping the user input to a finite set of valid actions.
+
