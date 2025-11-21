@@ -2,7 +2,7 @@
 
 If AI is lying to you, how do you know?
 
-Think about that. If you don't know anything AI is "talking about", you are basically in deep trouble. You must be able to validate, fact check, and even disagree with AI output. High dependency on AI is bad; we should be able to program if we don't have internet or are running out of tokens.
+Think about that. If you don't know anything AI is "talking about," you are basically in deep trouble. You must be able to validate, fact-check, and even disagree with AI output. High dependency on AI is bad; we should be able to program if we don't have internet or are running out of tokens.
 
 Do you know how to know when a human using AI is fooling you? Do you know if you are fooling yourself with AI?
 
@@ -21,7 +21,7 @@ AI can be and is used for a lot of scams. AI and people using AI can fool you in
 
 ## Outsourcing Gym Workout
 
-Think about this: we could easily pay someone to go to the gym for us. That person can do push-ups, run, and lift weights. Be at the gym every day, and at the same time we never be at the gym. Genius! Well, the issue is that your "contractor" will be strong and in shape, but you will not. Although you can claim the glory of going to the gym, you do not have the benefits; you only have status.
+Think about this: we could easily pay someone to go to the gym for us. That person can do push-ups, run, and lift weights. Be at the gym every day, and at the same time, we never be at the gym. Genius! Well, the issue is that your "contractor" will be strong and in shape, but you will not. Although you can claim the glory of going to the gym, you do not have the benefits; you only have the status.
 
 With AI, it's the same thing. Anyone can use AI to generate code; does that mean we are done there? Think about it: everybody has the same AI, same models, same capabilities. So just using AI is not differentiating.
 

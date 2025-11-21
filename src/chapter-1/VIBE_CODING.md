@@ -36,6 +36,16 @@ Vibe Coding to some degree is a lack of respect. It's a lack of respect for peop
 
 You would not like it. But that did not stop you from throwing bad code at others. My friends, believe me, AI generates a lot of trash code. We need to do better.
 
+## The Effect of Vibe Coding
+
+I posted this tweet in March 2025. To some degree I think Vibe-Code does somethign interesting which is "democratizing" software development. IMHO it's was like back into 2010 with Guitar Here and Rockband and other games where you have the "ilusion" of playing a guitar(plastic guitar). But the good effect of that is that vibecoding might be a gateway drug to coding and engineering and if that happens is great.
+
+<img src="../images/01-vibecoding-effects.png" width="300"/>
+
+Source: [https://x.com/diego_pacheco/status/1903625842456191254](https://x.com/diego_pacheco/status/1903625842456191254)
+
+Other times I think vibecoding it's a gateway drud to product development, because now someone who is a non-enginer cna see software, webisites, applications up and running in from of them and they can "see" if they like ir or not and that might help them to figure out requirements better. So vibecoding could have some good effects, but we need to be careful how we use it.
+
 ## Vintage Coding
 
 I run [coding dojos](https://codingdojo.org/) without AI for decades. A coding dojo is a space where senior engineers work with junior engineers, and they all learn from each other. Coding dojos follow [TDD](https://en.wikipedia.org/wiki/Test-driven_development) practices.

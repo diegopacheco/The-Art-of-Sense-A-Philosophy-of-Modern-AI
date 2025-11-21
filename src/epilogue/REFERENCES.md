@@ -56,6 +56,8 @@
 - [Yann LeCun on LLM Hype - YouTube](https://www.youtube.com/watch?v=hOiL80G9Mnk)
 - [Richard Sutton: LLMs are a Dead End - YouTube](https://www.youtube.com/watch?v=21EYKqUsPfg)
 - [AI First and Bus Factor of 0 - Mindflash](https://www.mindflash.org/coding/ai/ai-and-the-bus-factor-of-0-1608)
+- [The Great Software Quality Collapse - Tech Trenches](https://techtrenches.substack.com/p/the-great-software-quality-collapse)
+- [Thinking, Fast and Slow - Daniel Kahneman](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555)
 
 ### Research Papers
 - [Facebook Paper on AI Test Generation - arXiv](https://arxiv.org/pdf/2402.09171)
@@ -98,6 +100,8 @@
 - [Treating MCP Servers Like Bombs - DevInterrupted](https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs)
 - [Evo by Snyk](https://evo.ai.snyk.io/)
 - [Cisco MCP Scanner](https://github.com/cisco-ai-defense/mcp-scanner)
+- [State of MCP Server Security 2025 - Astrix Security](https://astrix.security/learn/blog/state-of-mcp-server-security-2025/)
+- [MCP Authorization Patterns - Christian Posta](https://blog.christianposta.com/mcp-authorization-patterns-upstream-api-calls/)
 
 ### Context and Documentation
 - [llms.txt Specification](https://llmstxt.org/)
@@ -182,6 +186,7 @@
 - [CCStatusline by sirmalloc](https://github.com/sirmalloc/ccstatusline)
 - [Claude Code MCP](https://docs.claude.com/en/docs/claude-code/mcp)
 - [Claude Code Headless Mode](https://docs.claude.com/en/docs/claude-code/headless)
+- [Claude Code Sub-Agents](https://code.claude.com/docs/en/sub-agents)
 - [Custom Commands Tutorial - GitHub](https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands)
 - [Claude Code GitHub](https://github.com/anthropics/claude-code)
 - [Claude Skills Blog - What are skills?](https://www.claude.com/blog/skills-explained)
@@ -216,6 +221,22 @@
 - [Synthetic data generation](https://diego-pacheco.blogspot.com/2021/02/synthetic-data-generation-and-java-faker.html)
 - [Testing mocks](https://diego-pacheco.blogspot.com/2025/10/testing-mocks.html)
 - [Testing queues and batch jobs](https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html)
+- [Going Faster with Testing](https://diego-pacheco.blogspot.com/2020/02/going-faster-with-testing.html)
+- [SOA Contract Testing](https://diego-pacheco.blogspot.com/2014/10/soa-contract-testing.html)
+- [Mocking and Testing AWS APIs](https://diego-pacheco.blogspot.com/2018/04/mocking-and-testing-aws-apis-with.html)
+- [C Unit Testing with Check](https://diego-pacheco.blogspot.com/2018/05/c-unit-testing-with-check.html)
+- [Infrastructure Testing for Terraform](https://diego-pacheco.blogspot.com/2020/03/infrastructure-testing-for-terraform.html)
+- [AssertJ](https://diego-pacheco.blogspot.com/2020/07/assertj.html)
+- [Hardening Production](https://diego-pacheco.blogspot.com/2020/08/hardening-prodution.html)
+- [Java Mutation Testing with PIT](https://diego-pacheco.blogspot.com/2020/08/java-mutation-testing-with-pitest.html)
+- [Property-Based Testing with JSVerify](https://diego-pacheco.blogspot.com/2020/08/property-based-testing-with-jsverify.html)
+- [Snapshot Testing with Jest](https://diego-pacheco.blogspot.com/2020/08/snapshot-testing-with-jest.html)
+- [Testing Impossible with PowerMock](https://diego-pacheco.blogspot.com/2020/08/testing-impossible-with-powermock.html)
+- [Tests with Spring Boot MockMvc](https://diego-pacheco.blogspot.com/2021/01/tests-with-spring-boot-mockmvc.html)
+- [Mock Server](https://diego-pacheco.blogspot.com/2021/04/mock-server.html)
+- [Testing AWS Lambdas with Java](https://diego-pacheco.blogspot.com/2021/04/testing-aws-lambdas-with-java.html)
+- [Diverse and Heterogeneous Testing](https://diego-pacheco.blogspot.com/2021/06/my-2-cents-on-on-diverse-and.html)
+- [Embedded Mocks and Hidden Contracts](https://diego-pacheco.blogspot.com/2023/08/embedded-mocks-and-hidden-contracts.html)
 
 ### API Documentation and Stress Testing
 - [Swagger/OpenAI API documentation](https://swagger.io/why-swagger/)

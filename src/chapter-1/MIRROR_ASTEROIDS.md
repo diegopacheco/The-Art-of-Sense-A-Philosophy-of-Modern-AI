@@ -1,6 +1,6 @@
 # Mirror on Steroids
 
-If you are great, AI will make you even greater. I believe Gen-AI tools like AI Coding Agents such as Claude Code are amazing. ChatGPT is great. Co-Pilot is great. However, if you use these tools 24/7 and you shut down your brain, you will worsen your skills (Don't believe me? Read this: [Brain Study Shows ChatGPT Actually Makes You Dumber](https://80.lv/articles/brain-study-shows-chatgpt-actually-makes-you-dumber)).
+If you are great, AI will make you even greater. I believe Gen-AI tools like AI Coding Agents such as Claude Code are amazing. ChatGPT is great. Copilot is great. However, if you use these tools 24/7 and you shut down your brain, you will worsen your skills (Don't believe me? Read this: [Brain Study Shows ChatGPT Actually Makes You Dumber](https://80.lv/articles/brain-study-shows-chatgpt-actually-makes-you-dumber)).
 
 You can't use AI for all things, all the time. Because your over-dependency on AI is like a virus or a disease. Everything we do in life without balance is bad.
 
@@ -8,13 +8,13 @@ We should not be afraid of AI; we should not ignore AI. But if we don't have non
 
 ## From Hunters to Gatherers
 
-In the past, we were hunters; we had to work hard to get food. Such bad times taught us and made us stronger. Now it's so easy to get food, it's so easy to get everything delivered to your home without any effort. AI is like that, it's effortless, it's frictionless—you want it? You got it.
+In the past, we were hunters; we had to work hard to get food. Such bad times taught us and made us stronger. Now it's so easy to get food; it's so easy to get everything delivered to your home without any effort. AI is like that—it's effortless, it's frictionless—you want it? You got it.
 
 Now you need to think about this: you need time without AI. Why? Because you also need to be yourself. If you do all the things that someone says and you don't have a voice anymore, you are in trouble.
 
 ## From Mirror to Ownership
 
-Someone smart knows what to use AI for, and what not to use AI for. For instance, you can use AI all day long, or not use it at all. You must remember that the `ownership` is yours. It doesn't matter if you use all or nothing from AI, it's your responsibility to own the results. Meaning you need to review the code, you need to change it, you need to critique it, you need to make it yours.
+Someone smart knows what to use AI for and what not to use AI for. For instance, you can use AI all day long, or not use it at all. You must remember that the `ownership` is yours. It doesn't matter if you use all or nothing from AI; it's your responsibility to own the results. Meaning you need to review the code, you need to change it, you need to critique it, you need to make it yours.
 
 ## The bad mirror effect
 

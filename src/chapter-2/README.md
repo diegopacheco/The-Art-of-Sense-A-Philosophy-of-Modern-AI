@@ -15,13 +15,14 @@ With traditional AI, you need to train a model, usually by splitting your data i
 
 The result of the training will be a machine learning model. If the training is done right, the model will perform well. However, if the problem is too simple, you will have an Underfitting problem. If the problem is too complex, you will have an Overfitting problem.
 
-Each one can be fixed by:
+Each one can be fixed by the following:
+
 Underfitting:
 * Add more features (more data)
 * Increase the model complexity (linear->polynomial)
 * Change model Algorithm / Architecture (more layers/neurons)
 * Reduce Regularization (penalty on the loss_function)
-* More training epochs(batches)
+* More training epochs (batches)
 
 Overfitting:
 * The model is too complex and captures the noise in the data
@@ -41,7 +42,7 @@ For traditional AI, you have basically a couple of different approaches like:
 
 ## Supervised Learning
 
-Means that you have labeled data. For example, you have a dataset of images of cats and dogs, and each image is labeled as either "cat" or "dog". The model learns to classify new images based on the labeled examples.
+This means that you have labeled data. For example, you have a dataset of images of cats and dogs, and each image is labeled as either "cat" or "dog." The model learns to classify new images based on the labeled examples.
 
 Use cases are:
 * Spam Detection: Spam vs Ham

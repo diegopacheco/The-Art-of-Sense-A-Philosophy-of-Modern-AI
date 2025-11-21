@@ -40,7 +40,8 @@
 - **Apple Research** - [Marketing](../chapter-1/MKT.md)
 - **ARU Strategy** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
 - **Artificial Savings** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
-- **Astrix Security** - [Claude Skills](../chapter-5/CLAUDE_SKILLS.md)
+- **Astrix Security** - [Claude Skills](../chapter-5/CLAUDE_SKILLS.md), [MCP Security](../chapter-4/MCP_SEC.md)
+- **Audible Response Unit** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
 - **Attack Vector** - [MCP Security](../chapter-4/MCP_SEC.md)
 - **Architect Persona** - [Role Playing](../chapter-9/ROLE_PLAYING.md)
 - **AssertJ** - [Chapter 6](../chapter-6/README.md)
@@ -54,8 +55,10 @@
 - **AWS Kiro** - [Popular Agents](../chapter-4/POPULAR_AGENTS.md), [Coding Agents](../chapter-4/CODING_AGENTS.md)
 
 ## B
+- **Backoffice Applications** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
 - **Balance** - [Mirror Asteroids](../chapter-1/MIRROR_ASTEROIDS.md)
 - **Bash Bashes Command** - [Commands](../chapter-5/CMDs.md)
+- **Bat-and-Ball Problem** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
 - **Bash Mode** - [Bash Mode](../chapter-5/BASH_MODE.md)
 - **Bash Orchestration** - [Claude Bash Orchestration](../chapter-5/CLAUDE_BASH_ORCHESTRATION.md)
 - **Benchmark Gaming** - [Popular Agents](../chapter-4/POPULAR_AGENTS.md), [Documentation](../chapter-8/DOCUMENTATION.md)

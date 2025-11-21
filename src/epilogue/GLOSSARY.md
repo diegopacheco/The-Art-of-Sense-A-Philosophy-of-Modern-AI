@@ -100,6 +100,9 @@ Practice where AI models exploit benchmark loopholes to achieve higher scores wi
 **BERT**
 Large Language Model built upon the Transformer architecture.
 
+**Boundary Cases**
+Test scenarios at the limits of valid input ranges or system capacity.
+
 **Build Process**
 Automated compilation and deployment process that can be monitored and optimized with AI assistance.
 
@@ -110,7 +113,7 @@ A Claude Code feature enabling direct bash command execution for system operatio
 Script used to increment version numbers in the book publication process.
 
 **Bus Factor**
-Measure of risk if key personnel are unavailable. "Bus Factor of 0" refers to complete dependency on AI without human knowledge.
+Measure of risk if key personnel are unavailable. "Bus Factor of 0" refers to complete dependency on AI without human knowledge. Traditional bus factor refers to risk if key personnel become unavailable, while the AI context emphasizes complete loss of human understanding.
 
 ## C
 
@@ -174,6 +177,9 @@ A Traditional AI/ML unsupervised learning task involving grouping similar data p
 **CI/CD (Continuous Integration/Continuous Deployment)**
 Automated software development practices for building, testing, and deploying code.
 
+**Code Coverage**
+Metric measuring what percentage of code is executed by automated tests.
+
 **Code Review**
 Critical process of examining AI-generated or any code for correctness, security, and alignment with requirements before deployment. Essential when using AI.
 
@@ -205,7 +211,7 @@ Testing based on contracts or agreements between services.
 Learning technique where AI challenges your thinking to identify weaknesses.
 
 **Context Engineering**
-Modern term focusing on providing the right context to LLMs to get the best possible response, replacing the older term "prompt engineering".
+Modern term focusing on providing the right context to LLMs to get the best possible response, explicitly replacing the older term "prompt engineering".
 
 **Context Window**
 The amount of text/tokens an LLM can process at once. Larger context windows allow for processing more information simultaneously.
@@ -241,6 +247,9 @@ Publicly disclosed security vulnerabilities.
 
 **DALL-E**
 OpenAI's model that generates images from textual descriptions using transformer architecture and GANs.
+
+**Daniel Kahneman**
+Psychologist and author of "Thinking, Fast and Slow", referenced in discussions about System 1 and System 2 thinking applied to AI usage.
 
 **Data Structures and Algorithms**
 Fundamental computer science concepts for organizing and processing data efficiently.
@@ -283,6 +292,9 @@ Industry trend of lowering definitions and standards over time.
 
 ## E
 
+**Edge Cases**
+Unusual or extreme scenarios that occur at the boundaries of normal operation, important for comprehensive testing.
+
 **Early Stopping**
 Technique to prevent overfitting by stopping training at optimal point before the model over-learns.
 
@@ -291,6 +303,9 @@ Company providing APIs to generate high-quality speech from text using advanced 
 
 **End-to-End Tests**
 Tests that validate entire application workflows from user perspective.
+
+**Error Handling**
+Code patterns and practices for dealing with exceptions, failures, and unexpected conditions.
 
 **Embeddings**
 Numerical vector representations of text, images, or other data that capture semantic meaning. Essential for RAG and vector databases. Can represent words, sentences, or entire documents.
@@ -315,8 +330,17 @@ Claude Code specialized sub-agent for fast codebase exploration.
 
 ## F
 
+**Fabricated Productivity**
+False or exaggerated productivity gains attributed to AI usage without accounting for increased review time, bug fixes, or quality issues.
+
+**Fabricated Savings**
+Unsustainable or illusory productivity improvements claimed from AI usage.
+
 **faker.js**
 JavaScript library for generating realistic test data, used in integration testing to create mock data for various scenarios.
+
+**FTL (Faster Than Light)**
+Metaphor describing the illusion that increasing code generation speed alone without improving other aspects of software development leads to problems, similar to trying to travel faster than light without upgrading other systems.
 
 **Feed Phase**
 First phase in RAG pattern where documents are ingested and converted to embeddings for vector database storage.
@@ -405,9 +429,18 @@ XAI's LLM model.
 XAI's LLM model with 2,000,000 token context window.
 
 **Guardrails**
-Safety mechanisms to prevent undesired AI behavior.
+Safety mechanisms to prevent undesired AI behavior and ensure safe production usage.
 
 ## H
+
+**Happy Path**
+Testing scenario covering the expected, successful flow through code without errors or edge cases.
+
+**Happy Path Testing**
+Testing approach focusing on expected, successful execution flows.
+
+**Human in the Loop**
+Pattern where AI generates outputs but a human reviews and approves them before execution or deployment to production, critical for safe AI usage beyond engineering teams.
 
 **Headless Mode**
 Running Claude Code via command line without interactive interface for automation and scripting.
@@ -440,6 +473,12 @@ Operations that produce the same result regardless of how many times they are ex
 
 **Incompetence Illumination**
 Teaching technique where AI deliberately mixes wrong and correct answers to train critical thinking.
+
+**Injection Attacks**
+Class of security vulnerabilities where untrusted data is executed as code.
+
+**Input Sanitization**
+Security practice of cleaning and validating user inputs to prevent injection attacks.
 
 **Integration Tests**
 Tests that verify how different components work together, requiring test data and infrastructure setup.
@@ -501,11 +540,20 @@ AWS serverless compute service.
 **LDA (Linear Discriminant Analysis)**
 Dimensionality reduction technique that finds linear combinations of features for classification.
 
+**Lead Time**
+Software development metric measuring the time from starting work on a feature to deployment, mentioned as not improving despite AI tools.
+
 **Learning from AI**
 Process of using AI as an educational tool while maintaining critical thinking and verification.
 
 **Leftovers**
 Resources or code remaining after migrations that need cleanup.
+
+**Lessons Learned**
+Process of capturing and applying knowledge from past experiences and mistakes.
+
+**Linter**
+Tool that analyzes code for potential errors, style violations, and code quality issues.
 
 **Linear Regression**
 Fundamental regression algorithm modeling relationship between variables using a linear equation.
@@ -564,7 +612,7 @@ A protocol for connecting AI models to external tools and data sources, enabling
 Component within AI host that connects to MCP servers.
 
 **MCP Guardrails**
-Security practices for safely using MCP servers including vetting, scanning, and isolation.
+Security practices for safely using MCP servers including vending, scanning, and isolation.
 
 **MCP Host**
 The AI agent or tool that contains MCP clients.
@@ -593,6 +641,9 @@ Vector database for storing and querying embeddings.
 **Mirror Effect / Mirror on Steroids**
 Concept that AI amplifies existing abilities: good engineers become better with AI; poor engineers become worse.
 
+**MDD (Model Driven Development)**
+Earlier development approach similar to Spec Driven Development where models define implementation, mentioned as predecessor to SDD.
+
 **MoCoGAN**
 Model that separates motion and content to generate videos with coherent motion.
 
@@ -606,6 +657,9 @@ In reinforcement learning, a representation of the environment that the agent us
 Testing technique that modifies code to verify test effectiveness.
 
 ## N
+
+**Negative Cases**
+Test scenarios covering invalid inputs, error conditions, or failure modes.
 
 **Narrow AI**
 AI designed for specific tasks, as opposed to general intelligence.
@@ -715,6 +769,12 @@ Testing based on properties that should always hold true rather than specific ou
 
 ## R
 
+**Remote Code Execution**
+Security vulnerability pattern where attackers can execute arbitrary code, analogous to unsanitized AI prompt execution.
+
+**Retrospectives**
+Agile practice of reflecting on past work to drive lessons learned and improvements, mentioned as necessary when using AI.
+
 **RAG (Retrieval-Augmented Generation)**
 Technique combining document retrieval with LLM generation, allowing AI to cite and incorporate external information into responses. Reduces costs, mitigates hallucinations, and provides up-to-date information.
 
@@ -807,8 +867,26 @@ High-level test verifying critical system functionality without exhaustive cover
 **Socratic Interrogation**
 Teaching method where AI asks progressively deeper questions instead of providing answers.
 
+**SQL Injection**
+Security attack where malicious SQL code is inserted through user inputs.
+
+**State Management**
+Practices for handling and coordinating application state across components.
+
+**Strategic Work**
+High-level planning, architecture, and decision-making work requiring deeper thinking.
+
+**Stubs**
+Test doubles that provide predefined responses to method calls during testing.
+
+**Sub-Agents Spawning**
+Claude Code feature where independent agents are created, each with their own 200k token context window.
+
 **Solutions vs Wrappers**
 Philosophy distinguishing genuine innovations from superficial API wrappers. Many AI startups are wrappers rather than true solutions.
+
+**System 1 and System 2 Thinking**
+Concepts from Daniel Kahneman's "Thinking, Fast and Slow" applied to AI usage. System 1 is fast, intuitive thinking; System 2 is slower, analytical thinking. The book argues against relying solely on System 1 when using AI for productivity.
 
 **SORA**
 OpenAI's most advanced video generation model.
@@ -827,9 +905,6 @@ AWS message queue service, mentioned as infrastructure requiring ownership.
 
 **Stable Diffusion**
 Open-source model by Stability AI for generating images from text descriptions using diffusion process.
-
-**Stubs**
-Test doubles that provide predefined responses to method calls during testing.
 
 **Stability AI**
 Company that developed Stable Diffusion image generation model.
@@ -867,10 +942,13 @@ Creating artificial but realistic test data for testing purposes.
 **System Prompt**
 Instructions defining how an AI model should behave and respond to user inputs. Sets the behavior and style of the LLM.
 
+## T
+
+**Tactical Work**
+Operational, day-to-day tasks as opposed to strategic, high-level planning work.
+
 **Tagging**
 Practice of labeling resources and assets for organization and ownership tracking.
-
-## T
 
 **t-SNE (t-Distributed Stochastic Neighbor Embedding)**
 Dimensionality reduction technique particularly effective for visualizing high-dimensional data in 2D or 3D.
@@ -887,6 +965,9 @@ Accumulated shortcuts and suboptimal solutions in codebases that make migrations
 **Terraform**
 Infrastructure as code tool for managing cloud infrastructure.
 
+**Test Coverage**
+Breadth and depth of testing across application functionality and code paths.
+
 **Test Data**
 Data used to evaluate final model performance.
 
@@ -894,13 +975,16 @@ Data used to evaluate final model performance.
 Generic term for objects used in testing to replace real dependencies (includes stubs, mocks, fakes).
 
 **Test Induction**
-Proper testing infrastructure setup for comprehensive test coverage.
+Process of setting up proper testing infrastructure, including test data, environment configuration, and testing interfaces.
 
 **Testing**
 Creating test coverage as prerequisite for migrations and code changes.
 
 **Testing Interfaces**
-Custom APIs created specifically to expose and manipulate application state for testing purposes.
+Custom APIs created specifically to expose and manipulate application state for testing purposes in non-production environments.
+
+**Thinking, Fast and Slow**
+Book by Daniel Kahneman referenced in discussions about System 1 and System 2 thinking applied to AI usage.
 
 **Thinking Mode**
 Feature in some LLMs showing internal reasoning process.
@@ -941,10 +1025,13 @@ Characterization of AI progress: advancement comes with limitations, hallucinati
 ## U
 
 **Ultrathink**
-A Claude Code feature providing extended reasoning capabilities with larger token budget up to 10,000+ tokens for complex problems, allowing more thorough analysis than normal thinking mode.
+A Claude Code feature providing extended reasoning capabilities with larger token budget up to 10,000 tokens for complex problems, allowing more thorough analysis than normal thinking mode.
 
 **Underfitting**
 Model training problem where model is too simple to capture data patterns, requiring more complexity or features.
+
+**Unit Tests**
+Automated tests focusing on individual components or functions in isolation.
 
 **Unsupervised Learning**
 Machine learning paradigm where models find patterns in unlabeled data without predefined categories.
@@ -970,7 +1057,7 @@ Security practice of thoroughly checking MCP servers before use, combining vetti
 File tracking the current version number of the book.
 
 **Vibe Coding**
-A practice coined by Andrej Karpathy where developers generate prompts and do not look at the generated code, assuming AI will handle everything correctly. The book argues this is a bad practice for serious software engineering, especially for core business logic.
+A practice coined by Andrej Karpathy in February 2025 tweet where developers generate prompts and do not look at the generated code, assuming AI will handle everything correctly. The book argues this is a bad practice for serious software engineering, especially for core business logic.
 
 **Vintage Coding**
 Practice of coding without AI assistance to maintain core skills and proficiency, often practiced in coding dojos.
@@ -990,10 +1077,10 @@ Hierarchical model using vector quantization to generate high-quality videos.
 **VSCode (Visual Studio Code)**
 Microsoft's development environment and IDE, frequently forked and extended for coding agents like GitHub Copilot and AWS Kiro.
 
+## W
+
 **Waterfall**
 Sequential software development methodology considered anti-agile.
-
-## W
 
 **Waymo**
 Self-driving car project that demonstrates the gap between demo and production, taking over 11 years from initial demo in 2014.
@@ -1012,10 +1099,10 @@ Company that provides Grok LLM models.
 ## Z
 
 **Zero to Demo**
-Rapid prototyping phase made faster with AI assistance.
+Rapid prototyping phase made faster with AI assistance. References the Waymo case study where demos are possible quickly but production takes significantly longer.
 
 **Demo to Production**
-Complex productionization phase that remains difficult despite AI assistance, requiring careful engineering.
+Complex productionization phase that remains difficult despite AI assistance, requiring careful engineering. References the Waymo case study showing 11 years from 2014 demo to 2025 incomplete production deployment.
 
 **Zig**
 Systems programming language mentioned as a learning target.

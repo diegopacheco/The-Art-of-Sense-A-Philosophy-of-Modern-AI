@@ -1,8 +1,8 @@
 # Reality
 
-Even with all the problems and the [scams](https://www.youtube.com/watch?v=d7DtiMzMBdU), AI is real and AI is here to stay. I don't know if [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence) will happen one day, maybe, maybe not, but there is no indication we are close to [AGI](https://perry-douglas.medium.com/a-classic-con-e8c7f9f3d61d).
+Even with all the problems and the [scams](https://www.youtube.com/watch?v=d7DtiMzMBdU), AI is real and AI is here to stay. I don't know if [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence) will happen one day—maybe, maybe not—but there is no indication we are close to [AGI](https://perry-douglas.medium.com/a-classic-con-e8c7f9f3d61d).
 
-Don't be fooled by marketing from people saying they have AGI. People lie, and LLM models do not think, even if they say "thinking". Now we don't need AGI to derive value from AI. AI is a force of disruption, just as we saw with the internet and mobile phones.
+Don't be fooled by marketing from people saying they have AGI. People lie, and LLM models do not think, even if they say "thinking." Now, we don't need AGI to derive value from AI. AI is a force of disruption, just as we saw with the internet and mobile phones.
 
 Therefore, change is happening, and you need to adapt to it. You can either be a victim of change or be the driver of change.
 

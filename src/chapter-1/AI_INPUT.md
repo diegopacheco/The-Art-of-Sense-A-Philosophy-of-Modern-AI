@@ -1,14 +1,14 @@
 # AI Input
 
-People see AI as output. As a way to "Beef Up" engineers. It's not wrong but you can't just use AI and never look at the code, this is a recipe for disaster.
+People see AI as output. As a way to "Beef Up" engineers. It's not wrong, but you can't just use AI and never look at the code; this is a recipe for disaster.
 
-AI can be a great teacher, however, we need to always remember the teacher makes mistakes too. [Using AI for input](https://diego-pacheco.blogspot.com/2025/09/ai-output.html) is still a great advantage, you preserve the output to be yours.
+AI can be a great teacher; however, we need to always remember the teacher makes mistakes too. [Using AI for input](https://diego-pacheco.blogspot.com/2025/09/ai-output.html) is still a great advantage; you preserve the output to be yours.
 
 ## A tale of High School
 
-When I was in high school. I remember a teacher of mine saying that people would go to google.com and just search for past year class and find the same homework and download a power point presentation and simply change their name on it. Of course this would never work because the teacher was smarter and usually people doing that took ZERO.
+When I was in high school, I remember a teacher of mine saying that people would go to google.com and just search for the past year's class and find the same homework and download a PowerPoint presentation and simply change their name on it. Of course, this would never work because the teacher was smarter, and usually people doing that got ZERO.
 
-Using AI just for output, "vibe coding" is shutting down your brain, and we are not even close to having AGI. So this is a recipe for disaster. IMHO it's not different than copying someone's homework and just putting your name on it.
+Using AI just for output, "vibe coding," is shutting down your brain, and we are not even close to having AGI. So this is a recipe for disaster. IMHO, it's not different than copying someone's homework and just putting your name on it.
 
 Now, of course, people will use the internet and it's okay to be "inspired" by somebody else's work. No one starts from scratch, but you need to spend the time to review and change it.
 

@@ -1,6 +1,6 @@
 # AGI
 
-AGI means Artificial General Intelligence, which refers to a type of AI that has the ability to understand, learn, and apply knowledge across a wide range of tasks at a level comparable to human intelligence. Unlike narrow AI, which is designed for specific tasks, AGI can perform any intellectual task that a human can do. A lot of critique of LLMs is that LLMs are text machines and therefore that's not enough to understand the world and actually reason. We attempt to fix that with some massive amount of computational power and data, and also by adding some external tools to the LLMs (like vision, code execution, web browsing, etc.). Such external tools are basically engineering, and it's a trick to blend AI with traditional software to cover the weaknesses of LLMs.
+AGI means Artificial General Intelligence, which refers to a type of AI that has the ability to understand, learn, and apply knowledge across a wide range of tasks at a level comparable to human intelligence. Unlike narrow AI, which is designed for specific tasks, AGI can perform any intellectual task that a human can do. A lot of critique of LLMs is that LLMs are text machines and therefore that's not enough to understand the world and actually reason. We attempt to fix that with a massive amount of computational power and data, and also by adding external tools to the LLMs (like vision, code execution, web browsing, etc.). Such external tools are basically engineering, and it's a trick to blend AI with traditional software to cover the weaknesses of LLMs.
 
 ## Is AGI possible? Could it happen?
 
@@ -20,7 +20,7 @@ The same trick happened to agents. True agents by definition should be reacting 
 
 Agentic means that something has some characteristics of an agent, but it's not a true agent. Same for AGI; now everything is AGI-ish or has AGI vibes.
 
-Don't believe me? Evidence: 
+Don't believe me? Evidence:
 
 1. [Artificial General Intelligence Is Already Here](https://www.noemamag.com/artificial-general-intelligence-is-already-here/)
 2. [Sparks of Artificial General Intelligence: Early experiments with GPT-4](https://www.researchgate.net/publication/369449949_Sparks_of_Artificial_General_Intelligence_Early_experiments_with_GPT-4/fulltext/641bc23066f8522c38c784e8/Sparks-of-Artificial-General-Intelligence-Early-experiments-with-GPT-4.pdf)
@@ -28,6 +28,6 @@ Don't believe me? Evidence:
 
 ## True True True Real AGI
 
-IF that happens, then yes, engineers can be afraid of what will happen to their jobs, and yes, Vibe-code would take over. But for that to happen, we would need to have predictability and reliability in the AGI systems, and we are not there yet, even with generative AI.
+IF that happens, then yes, engineers can be afraid of what will happen to their jobs, and yes, vibe-code would take over. But for that to happen, we would need to have predictability and reliability in the AGI systems, and we are not there yet, even with generative AI.
 
-IF AGI happens, yes, it could be possible that we don't look at the code anymore, but we are not there yet. No evidence suggests it will be here in a year, 5 years, or 10 years. We need to remember that self-driving cars have been around for more than a decade and they are still not reliable enough for mass adoption.
+IF AGI happens, yes, it could be possible that we don't look at the code anymore, but we are not there yet. No evidence suggests it will be here in a year, 5 years, or 10 years. We need to remember that self-driving cars have been around for more than a decade, and they are still not reliable enough for mass adoption.
