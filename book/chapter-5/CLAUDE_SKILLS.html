@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Decision Criteria - The Art of Sense: A Philosophy of Modern AI</title>
+        <title>Claude Skills - The Art of Sense: A Philosophy of Modern AI</title>
 
 
         <!-- Custom HTML head -->
@@ -180,204 +180,29 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="decision-criteria"><a class="header" href="#decision-criteria">Decision Criteria</a></h1>
-<p>When to Use: Hooks vs Commands vs Agents vs CLAUDE.md?</p>
-<pre><code>I asked claude code for some criteria to decide when to use each of these features.
-</code></pre>
-<p>Here is the result</p>
-<h3 id="1-claudemd---behavioral-guidelines"><a class="header" href="#1-claudemd---behavioral-guidelines">1. CLAUDE.md - Behavioral Guidelines</a></h3>
-<p>Use when: You want to change HOW Claude behaves globally or per-project</p>
-<p>Criteria:</p>
-<ul>
-<li>✅ Style preferences (no comments, no emojis, code formatting)</li>
-<li>✅ Language/framework conventions (always use TypeScript strict mode)</li>
-<li>✅ Project-specific patterns (our API always returns JSON with snake_case)</li>
-<li>✅ Quality standards (always write tests, never use any type)</li>
-<li>✅ Restrictions (never install packages without asking, avoid library X)</li>
-</ul>
-<p>Examples:</p>
-<p>~/.claude/CLAUDE.md (global)</p>
-<ul>
-<li>Never use comments</li>
-<li>Always use const over let</li>
-<li>Prefer functional programming</li>
-<li>Never use emojis</li>
-</ul>
-<p>.claude/CLAUDE.md (project-specific)</p>
-<ul>
-<li>This project uses Redux Toolkit</li>
-<li>API responses are snake_case</li>
-<li>All components must have PropTypes</li>
-<li>Test files go in <strong>tests</strong> directory</li>
-</ul>
-<p>Think of it as: Your.eslintrc or.editorconfig but for Claude's behavior</p>
-<hr />
-<h3 id="2-custom-commands---reusable-prompts"><a class="header" href="#2-custom-commands---reusable-prompts">2. Custom Commands - Reusable Prompts</a></h3>
-<p>Use when: You type the same instructions repeatedly</p>
-<p>Criteria:</p>
-<ul>
-<li>✅ You find yourself copy-pasting the same prompt</li>
-<li>✅ Task is well-defined and repeatable</li>
-<li>✅ You want quick access via /command-name</li>
-<li>✅ Task is single-purpose and focused</li>
-<li>✅ Works within a single conversation context</li>
-</ul>
-<p>Examples:</p>
-<p>.claude/commands/review.md
-Review $1 for:</p>
-<ul>
-<li>Security vulnerabilities</li>
-<li>Performance issues</li>
-<li>Edge cases</li>
-<li>Code duplication</li>
-</ul>
-<p>Usage: /review src/auth.ts</p>
-<p>.claude/commands/test.md
-Generate comprehensive tests for $ARGUMENTS including:</p>
-<ul>
-<li>Happy path</li>
-<li>Edge cases</li>
-<li>Error handling</li>
-<li>Mocks for external dependencies</li>
-</ul>
-<p>Usage: /test src/payment.js</p>
-<p>Think of it as: Git aliases or bash aliases for Claude</p>
-<hr />
-<h3 id="3-hooks---event-driven-automation"><a class="header" href="#3-hooks---event-driven-automation">3. Hooks - Event-Driven Automation</a></h3>
-<p>Use when: You want something to happen automatically on events</p>
-<p>Criteria:</p>
-<ul>
-<li>✅ Needs to run automatically (no manual trigger)</li>
-<li>✅ Responds to events (file write, tool call, session start)</li>
-<li>✅ Integrates with external tools (git, linters, formatters)</li>
-<li>✅ Validation or enforcement (block bad actions)</li>
-<li>✅ Logging and monitoring</li>
-</ul>
-<p>Examples:</p>
-<p>Auto-format on save:</p>
-<pre><code>{
- "hooks": {
- "tool-result": {
- "command": "if [[ '${TOOL_NAME}' == 'Write' ]]; then prettier --write '${TOOL_ARGS}'; fi",
- "enabled": true
- }
- }
-}
-</code></pre>
-<p>Prevent commits to main:</p>
-<pre><code>{
- "hooks": {
- "tool-call": {
- "command": "if [[ '${TOOL_NAME}' == 'Bash' ]] &amp;&amp; echo '${TOOL_ARGS}' | grep -q 'git push.*main'; then
-echo 'Blocked: Cannot push to main'; exit 1; fi",
- "enabled": true,
- "blocking": true
- }
- }
-}
-</code></pre>
-<p>Think of it as: Git hooks or GitHub Actions for Claude</p>
-<hr />
-<h3 id="4-custom-agents---complex-multi-step-tasks"><a class="header" href="#4-custom-agents---complex-multi-step-tasks">4. Custom Agents - Complex Multi-Step Tasks</a></h3>
-<p>Use when: Task requires multiple rounds of searching, analysis, and decision-making</p>
-<p>Criteria:</p>
-<ul>
-<li>✅ Task is exploratory (need to search, then decide, then search again)</li>
-<li>✅ Multiple tool calls required (10+ operations)</li>
-<li>✅ Requires decision trees (if X found, then do Y, else do Z)</li>
-<li>✅ Needs to work autonomously without user input</li>
-<li>✅ Complex context management across many files</li>
-</ul>
-<p>Examples:</p>
-<p>Refactoring Agent:</p>
-<ul>
-<li>Search for all usages of a function</li>
-<li>Analyze each usage context</li>
-<li>Determine safe refactoring strategy</li>
-<li>Apply changes across multiple files</li>
-<li>Verify nothing broke</li>
-</ul>
-<p>Security Audit Agent:</p>
-<ul>
-<li>Scan codebase for patterns</li>
-<li>Analyze dependencies</li>
-<li>Check configuration files</li>
-<li>Cross-reference with CVE databases</li>
-<li>Generate report with severity levels</li>
-</ul>
-<p>Migration Agent:</p>
-<ul>
-<li>Find all files using old API</li>
-<li>Understand usage patterns</li>
-<li>Generate migration plan</li>
-<li>Apply transformations</li>
-<li>Update tests</li>
-</ul>
-<p>Think of it as: A specialized team member who can work independently on complex tasks</p>
-<hr />
-<p>Decision Matrix</p>
-<div class="table-wrapper"><table><thead><tr><th>Need</th><th>Solution</th></tr></thead><tbody>
-<tr><td>Claude always formats code a certain way</td><td>CLAUDE.md</td></tr>
-<tr><td>Run prettier after every file write</td><td>Hook</td></tr>
-<tr><td>Quick code review on demand</td><td>Custom Command</td></tr>
-<tr><td>Audit entire codebase for security issues</td><td>Custom Agent</td></tr>
-<tr><td>Never use comments</td><td>CLAUDE.md</td></tr>
-<tr><td>Auto-run tests after changes</td><td>Hook</td></tr>
-<tr><td>Generate API documentation</td><td>Custom Command</td></tr>
-<tr><td>Migrate 50 files from old to new API</td><td>Custom Agent</td></tr>
-<tr><td>Enforce git commit message format</td><td>Hook</td></tr>
-<tr><td>Refactor function with specific pattern</td><td>Custom Command</td></tr>
-<tr><td>Analyze and fix all TypeScript errors</td><td>Custom Agent</td></tr>
-<tr><td>Always use tabs not spaces</td><td>CLAUDE.md</td></tr>
-</tbody></table>
-</div>
-<hr />
-<p>Practical Combination Example</p>
-<p>Scenario: You're building a React app and want comprehensive tooling</p>
-<p>CLAUDE.md (Project-wide rules)</p>
-<ul>
-<li>Always use functional components</li>
-<li>Props use TypeScript interfaces</li>
-<li>State management uses Zustand</li>
-<li>Never use <code>any</code> type</li>
-</ul>
-<p>Custom Commands (Quick actions)
-/component - Generate new React component with tests
-/hook - Create custom React hook
-/test - Generate tests for component</p>
-<p>Hooks (Automation)</p>
-<pre><code>{
- "tool-result": {
- "command": "prettier --write &amp;&amp; eslint --fix",
- "enabled": true
- }
-}
-</code></pre>
-<p>Custom Agent (Complex tasks)</p>
-<ul>
-<li>Component refactoring agent</li>
-<li>Accessibility audit agent</li>
-<li>Performance optimization agent</li>
-</ul>
-<hr />
-<p>Quick Selection Guide</p>
-<p>Ask yourself:</p>
-<ol>
-<li>Is it about HOW Claude should work? → CLAUDE.md</li>
-<li>Do I type this same prompt often? → Custom Command</li>
-<li>Should this happen automatically? → Hook</li>
-<li>Is this a complex multi-step investigation? → Custom Agent</li>
-</ol>
+                        <h1 id="claude-skills"><a class="header" href="#claude-skills">Claude Skills</a></h1>
+<p>MCP has several issues, like context overhead, <a href="https://astrix.security/learn/blog/state-of-mcp-server-security-2025/">lack of proper security</a> and guardrails. MCPs can be local or can be remote. MCPs was create by Anthropic, others follow and become a huge thing. Well huge in the sense of many many MCPs out there but adoption at enterprise or at scale companies, not so really.</p>
+<p><a href="https://www.claude.com/blog/skills-explained">Claude-skills</a> have the potenrial to reduce a great deal of the MCP issues and even market share, <a href="https://simonwillison.net/2025/Oct/16/claude-skills/">Claude-Skills are a big deal</a>. Anothropic already have a <a href="https://github.com/anthropics/skills">repository for claude-skills</a>.</p>
+<h2 id="the-issue-with-mcps"><a class="header" href="#the-issue-with-mcps">The Issue with MCPs</a></h2>
+<p>It's that we are throwing all the data up to front on the context window, which is limited. Remeber when we do <code>/context</code> we can see the context window used. This is not scalable. Because what IF claude never use the MCP you add there? You just such space on the context window for nothing. Also every MCP is throw lot of text into the context window, which is not efficient.</p>
+<p>So MCP in a nutshell it's throw a lot of data into the LLM and hope it will use it.</p>
+<h2 id="how-claude-skills-work"><a class="header" href="#how-claude-skills-work">How Claude Skills Work</a></h2>
+<p>Claude skill works fundamentally different. Instead of throwing all the data into the context window, Claude skills are more like API calls. You define a skill, which is a specific function or capability that Claude can use. When Claude needs to perform a task that requires that skill, it makes a call to the skill, passing only the necessary information.</p>
+<p><a href="https://claude.com/blog/skills">Claude skills (or Agent skills)</a> are CODE. thats funny isin't it? We use to write all the code, now AI write the code for us, and now we write code for AI so AI know how to better write code. But the idea of Claude-Skills is brilliant, basicaly there is a simple file like <code>skill.md</code> where there just a couple of example for claude on how to use the code. Them you ship a script which has the recipe on how to do the task. When Claude need to do the task, it call the skill, passing only the relevant data. The shift here is huge, we are not throwing a lot of data into claude anymore(MCP) we are actually teaching how how to do something(as the name says hence a "skill") which is all about coding and programing languages.</p>
+<p>Code is great, code is predictable and reliable(all that generattive AI and LLMs are not), so Code is a great solution to the MCP issues. Also there is a non-obvious thing going on here which is, with claude-skills you are not downloading the skills from some random dude on github, you are crteating the skills by yourself with or without help from claude, by nature is more secure and FTEs writting code is more realible and "secure" than random MCP from some dude on the internet.</p>
+<p>Here is a simple example of claude-skill a built to <a href="https://github.com/diegopacheco/ai-playground/tree/main/agents/claude-code/claude-skill-fun">format JSON</a>.</p>
+<h2 id="when-we-would-still-use-mcp"><a class="header" href="#when-we-would-still-use-mcp">When we would still use MCP?</a></h2>
+<p>Well, with claude skills a great share of MCP can be gone and now we can have MCP for remote use cases, you wont be able to run AWS claude in your machine, or you will have external services like Figma, Jira, Salesforce, etc. So MCP will be more for <a href="https://blog.christianposta.com/mcp-authorization-patterns-upstream-api-calls/">remote use cases</a> and claude-skills for local use cases.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../chapter-5/CLAUDE_SKILLS.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../chapter-5/CLAUDE_MCP.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../chapter-6/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../chapter-5/DECISION_CRITERIA.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -387,11 +212,11 @@ echo 'Blocked: Cannot push to main'; exit 1; fi",
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../chapter-5/CLAUDE_SKILLS.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../chapter-5/CLAUDE_MCP.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../chapter-6/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../chapter-5/DECISION_CRITERIA.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
