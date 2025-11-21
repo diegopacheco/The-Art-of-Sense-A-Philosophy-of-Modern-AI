@@ -235,8 +235,9 @@ x = 0.05
 <li>Porper Guardrails: Limit how long a agent process a request, limit in cost, or you can limit in type or interations.</li>
 <li>Sanitization: Ensure that any input from users is sanitized to prevent injection attacks or other security vulnerabilities.</li>
 <li>Validation: Implement validation checks to ensure that AI-generated code meets quality and security standards before deployment.</li>
+<li>Observability: You monitor AI cost, AI usage and AI performance to detect any anomalies or issues that may arise.</li>
 </ul>
-<h2 id="human-in-the-loop"><a class="header" href="#human-in-the-loop">Human in the Loop</a></h2>
+<h2 id="human-in-the-loop-the-call-center-strategy"><a class="header" href="#human-in-the-loop-the-call-center-strategy">Human in the Loop (The Call Center strategy)</a></h2>
 <p>So the users can typo prompts in applications in production, however nothing gets executed, the only thing is that the LLM output is a JSON document which structure and "intentions". Them a human in the loop, basically using a admin or backoffise web application goes there and review what the user typed or what AI actually generated and them approve or reject. This way a lot of problems and risks are mitigated because you have a human reviewing the output before going to production.</p>
 <h2 id="audible-response-unit-aru-strategy"><a class="header" href="#audible-response-unit-aru-strategy">Audible Response Unit (ARU) Strategy</a></h2>
 <p>What IF? You use a prompt for the final user, that way, the user can get a better experience by "reducing the complexity of the user experience" but you craft a system prompt that translate whatever the user typed into finate options let's say 0 to 5. Where 0 is invalid action and 1, 2, 3, 4 and 5 are valid ations. So you literaly ask the LLM to return a number and you just parse that number from string to integer. That way, even if the user managed to "tricky the LLM" your system is not blindly execution what the user type on the prompt because you are just doing numbers parsing. This is a very simple but effective way to mitigate risks when using AI beyond engineering in production enviroments.</p>

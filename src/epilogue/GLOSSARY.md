@@ -62,6 +62,12 @@ Technology for converting speech to text.
 **API Key**
 Authentication token required to access AI services programmatically for production deployment.
 
+**ARU (Audible Response Unit) Strategy**
+Strategy for safely using AI in production where user prompts are translated into finite numeric options rather than executing arbitrary commands, similar to traditional IVR systems.
+
+**Artificial Savings**
+Fabricated productivity gains or cost savings that are not sustainable or real, often claimed when using AI tools without proper measurement.
+
 **Attention Mechanisms**
 Core component of transformer architecture enabling models to focus on relevant parts of input when processing sequences.
 

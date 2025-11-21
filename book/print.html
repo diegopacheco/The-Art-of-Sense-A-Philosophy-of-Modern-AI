@@ -1529,7 +1529,7 @@ Main Menu
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="claude-skills-1"><a class="header" href="#claude-skills-1">Claude Skills</a></h1>
 <p>MCP has several issues, like context overhead, <a href="https://astrix.security/learn/blog/state-of-mcp-server-security-2025/">lack of proper security</a> and guardrails. MCPs can be local or can be remote. MCPs was create by Anthropic, others follow and become a huge thing. Well huge in the sense of many many MCPs out there but adoption at enterprise or at scale companies, not so really.</p>
-<p><a href="https://www.claude.com/blog/skills-explained">Claude-skills</a> have the potenrial to reduce a great deal of the MCP issues and even market share, <a href="https://simonwillison.net/2025/Oct/16/claude-skills/">Claude-Skills are a big deal</a>. Anothropic already have a <a href="https://github.com/anthropics/skills">repository for claude-skills</a>.</p>
+<p><a href="https://www.claude.com/blog/skills-explained">Claude-skills</a> have the potenrial to reduce a great deal of the MCP issues and even market share, <a href="https://simonwillison.net/2025/Oct/16/claude-skills/">Claude-Skills are a big deal</a>. Anothropic already have a <a href="https://github.com/anthropics/skills">repository for claude-skills</a> and <a href="https://github.com/ComposioHQ/awesome-claude-skills/">awesome-skills</a> too.</p>
 <h2 id="the-issue-with-mcps"><a class="header" href="#the-issue-with-mcps">The Issue with MCPs</a></h2>
 <p>It's that we are throwing all the data up to front on the context window, which is limited. Remeber when we do <code>/context</code> we can see the context window used. This is not scalable. Because what IF claude never use the MCP you add there? You just such space on the context window for nothing. Also every MCP is throw lot of text into the context window, which is not efficient.</p>
 <p>So MCP in a nutshell it's throw a lot of data into the LLM and hope it will use it.</p>
@@ -2000,8 +2000,9 @@ x = 0.05
 <li>Porper Guardrails: Limit how long a agent process a request, limit in cost, or you can limit in type or interations.</li>
 <li>Sanitization: Ensure that any input from users is sanitized to prevent injection attacks or other security vulnerabilities.</li>
 <li>Validation: Implement validation checks to ensure that AI-generated code meets quality and security standards before deployment.</li>
+<li>Observability: You monitor AI cost, AI usage and AI performance to detect any anomalies or issues that may arise.</li>
 </ul>
-<h2 id="human-in-the-loop"><a class="header" href="#human-in-the-loop">Human in the Loop</a></h2>
+<h2 id="human-in-the-loop-the-call-center-strategy"><a class="header" href="#human-in-the-loop-the-call-center-strategy">Human in the Loop (The Call Center strategy)</a></h2>
 <p>So the users can typo prompts in applications in production, however nothing gets executed, the only thing is that the LLM output is a JSON document which structure and "intentions". Them a human in the loop, basically using a admin or backoffise web application goes there and review what the user typed or what AI actually generated and them approve or reject. This way a lot of problems and risks are mitigated because you have a human reviewing the output before going to production.</p>
 <h2 id="audible-response-unit-aru-strategy"><a class="header" href="#audible-response-unit-aru-strategy">Audible Response Unit (ARU) Strategy</a></h2>
 <p>What IF? You use a prompt for the final user, that way, the user can get a better experience by "reducing the complexity of the user experience" but you craft a system prompt that translate whatever the user typed into finate options let's say 0 to 5. Where 0 is invalid action and 1, 2, 3, 4 and 5 are valid ations. So you literaly ask the LLM to return a number and you just parse that number from string to integer. That way, even if the user managed to "tricky the LLM" your system is not blindly execution what the user type on the prompt because you are just doing numbers parsing. This is a very simple but effective way to mitigate risks when using AI beyond engineering in production enviroments.</p>
@@ -2438,6 +2439,11 @@ Every page on this book has one or multiple links to blog posts I did on the pas
 <li><a href="https://docs.claude.com/en/docs/claude-code/headless">Claude Code Headless Mode</a></li>
 <li><a href="https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands">Custom Commands Tutorial - GitHub</a></li>
 <li><a href="https://github.com/anthropics/claude-code">Claude Code GitHub</a></li>
+<li><a href="https://www.claude.com/blog/skills-explained">Claude Skills Blog - What are skills?</a></li>
+<li><a href="https://claude.com/blog/skills">Claude Skills - Official Blog Post</a></li>
+<li><a href="https://github.com/anthropics/skills">Claude Skills Repository</a></li>
+<li><a href="https://simonwillison.net/2025/Oct/16/claude-skills/">Claude Skills Analysis - Simon Willison</a></li>
+<li><a href="https://github.com/diegopacheco/ai-playground/tree/main/agents/claude-code/claude-skill-fun">JSON Formatter Claude Skill - Diego Pacheco</a></li>
 </ul>
 <h3 id="development-tools"><a class="header" href="#development-tools">Development Tools</a></h3>
 <ul>
@@ -2773,6 +2779,10 @@ Protocol for enabling communication and interaction between different AI agents.
 In reinforcement learning, a decision or move made by an agent.</p>
 <p><strong>AGI (Artificial General Intelligence)</strong>
 A theoretical form of AI that would have human-like general intelligence, capable of understanding, learning, and applying knowledge across a wide range of tasks. Marketing hype often surrounds AGI claims, though true AGI capabilities remain unproven.</p>
+<p><strong>AGI-ish</strong>
+Marketing term used to describe current LLM capabilities as approaching AGI. Part of the down ceiling effect where definitions are lowered to claim progress.</p>
+<p><strong>AGI Vibes</strong>
+Marketing terminology suggesting LLMs have AGI-like characteristics without actually being AGI. Related to AGI-ish and part of misleading marketing practices.</p>
 <p><strong>Agent</strong>
 In reinforcement learning, the learner or decision-maker that interacts with the environment.</p>
 <p><strong>AI (Artificial Intelligence)</strong>
@@ -2784,9 +2794,9 @@ A methodology where developers use AI for input (research, learning, inspiration
 <p><strong>AI Scams</strong>
 Deceptive practices involving AI technology, including false AGI claims, wrapper solutions marketed as novel AI applications, and misleading marketing around AI capabilities.</p>
 <p><strong>Agents</strong>
-Autonomous or semi-autonomous systems that can perform tasks, make decisions, and interact with environments using AI capabilities.</p>
+Autonomous or semi-autonomous systems that can perform tasks, make decisions, and interact with environments using AI capabilities. True agents should react to events and be autonomous, but the industry often uses "agentic" to describe systems with agent-like characteristics but lacking full autonomy due to the down ceiling effect.</p>
 <p><strong>Agentic</strong>
-Having some characteristics of an agent, but not a true autonomous agent. Used to describe behavior that resembles agents but lacks full autonomy.</p>
+Having some characteristics of an agent, but not a true autonomous agent. Used to describe behavior that resembles agents but lacks full autonomy. Term emerged as the ceiling was lowered on what constitutes a true agent.</p>
 <p><strong>Agentic Behavior</strong>
 Behavior exhibited by agents that allows them to act autonomously in pursuit of defined goals, making decisions based on environment state.</p>
 <p><strong>Aggregating</strong>
@@ -2803,6 +2813,10 @@ Identifying unusual data points that deviate from normal patterns, commonly used
 Technology for converting speech to text.</p>
 <p><strong>API Key</strong>
 Authentication token required to access AI services programmatically for production deployment.</p>
+<p><strong>ARU (Audible Response Unit) Strategy</strong>
+Strategy for safely using AI in production where user prompts are translated into finite numeric options rather than executing arbitrary commands, similar to traditional IVR systems.</p>
+<p><strong>Artificial Savings</strong>
+Fabricated productivity gains or cost savings that are not sustainable or real, often claimed when using AI tools without proper measurement.</p>
 <p><strong>Attention Mechanisms</strong>
 Core component of transformer architecture enabling models to focus on relevant parts of input when processing sequences.</p>
 <p><strong>AudioLM</strong>
@@ -3435,11 +3449,15 @@ Systems programming language mentioned as a learning target.</p>
 <ul>
 <li><strong>A2A Protocol</strong> - <a href="epilogue/../chapter-4/OTHER_APPROACHES.html">Other Approaches</a></li>
 <li><strong>Adaptation</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
+<li><strong>Adults in the Room</strong> - <a href="epilogue/../chapter-8/AI_BEYOND_ENGINEERING.html">AI Beyond Engineering</a></li>
 <li><strong>Advanced Context Window Management</strong> - <a href="epilogue/../chapter-5/CC_ADVANCED_CTX_WINDOW_MGMT.html">CC Advanced Context Window Management</a></li>
 <li><strong>After Migrations</strong> - <a href="epilogue/../chapter-7/AFTER_MIGRATIONS.html">After Migrations</a></li>
-<li><strong>AGI (Artificial General Intelligence)</strong> - <a href="epilogue/../zero/README.html">Introduction</a>, <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
+<li><strong>AGI (Artificial General Intelligence)</strong> - <a href="epilogue/../zero/README.html">Introduction</a>, <a href="epilogue/../chapter-1/REALITY.html">Reality</a>, <a href="epilogue/../chapter-1/AGI.html">AGI</a></li>
+<li><strong>AGI-ish</strong> - <a href="epilogue/../chapter-1/AGI.html">AGI</a></li>
+<li><strong>AGI Vibes</strong> - <a href="epilogue/../chapter-1/AGI.html">AGI</a></li>
 <li><strong>Agent Patterns</strong> - <a href="epilogue/../chapter-4/AGENTS_PATTERNS.html">Agents Patterns</a></li>
-<li><strong>Agentic Behavior</strong> - <a href="epilogue/../chapter-4/CODING_AGENTS.html">Coding Agents</a></li>
+<li><strong>Agent Skills</strong> - <a href="epilogue/../chapter-5/CLAUDE_SKILLS.html">Claude Skills</a></li>
+<li><strong>Agentic Behavior</strong> - <a href="epilogue/../chapter-4/CODING_AGENTS.html">Coding Agents</a>, <a href="epilogue/../chapter-1/AGI.html">AGI</a></li>
 <li><strong>Agents</strong> - <a href="epilogue/../chapter-4/README.html">Chapter 4</a>, <a href="epilogue/../chapter-4/WHAT.html">What are Agents</a>, <a href="epilogue/../chapter-4/POPULAR_AGENTS.html">Popular Agents</a></li>
 <li><strong>Agents Command</strong> - <a href="epilogue/../chapter-5/CMDs.html">Commands</a></li>
 <li><strong>Aggregating</strong> - <a href="epilogue/../chapter-4/AGENTS_PATTERNS.html">Agent Patterns</a></li>
@@ -3453,6 +3471,7 @@ Systems programming language mentioned as a learning target.</p>
 <li><strong>Alerts</strong> - <a href="epilogue/../chapter-8/OWNERSHIP.html">Ownership</a></li>
 <li><strong>Alien Orphan Assets</strong> - <a href="epilogue/../chapter-8/OWNERSHIP.html">Ownership</a></li>
 <li><strong>AlphaGo</strong> - <a href="epilogue/../chapter-2/RL.html">Reinforcement Learning</a></li>
+<li><strong>Amazon AI Cashier-Free Shops</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>Amazon Q</strong> - <a href="epilogue/../chapter-4/CODING_AGENTS.html">Coding Agents</a></li>
 <li><strong>Amoeba Age of LLMs</strong> - <a href="epilogue/../chapter-1/REALITY.html">Reality</a></li>
 <li><strong>Analyzing Customer Feedback</strong> - <a href="epilogue/../chapter-9/SENTIMENT_ANALYSIS.html">Sentiment Analysis</a></li>
@@ -3460,8 +3479,14 @@ Systems programming language mentioned as a learning target.</p>
 <li><strong>Andrej Karpathy</strong> - <a href="epilogue/../chapter-1/VIBE_CODING.html">Vibe Coding</a></li>
 <li><strong>Andrew Zigler</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
 <li><strong>Anomaly Detection</strong> - <a href="epilogue/../chapter-2/CLUSTERING.html">Clustering</a></li>
+<li><strong>Anthropic</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a>, <a href="epilogue/../chapter-5/CLAUDE_SKILLS.html">Claude Skills</a></li>
 <li><strong>Anthropic API</strong> - <a href="epilogue/../chapter-1/FOOLED_BY_AI.html">Fooled By AI</a></li>
+<li><strong>API Calls</strong> - <a href="epilogue/../chapter-5/CLAUDE_SKILLS.html">Claude Skills</a></li>
 <li><strong>API Keys</strong> - <a href="epilogue/../chapter-4/MCP.html">MCP</a>, <a href="epilogue/../chapter-4/CODING_AGENTS.html">Coding Agents</a></li>
+<li><strong>Apple Research</strong> - <a href="epilogue/../chapter-1/MKT.html">Marketing</a></li>
+<li><strong>ARU Strategy</strong> - <a href="epilogue/../chapter-8/AI_BEYOND_ENGINEERING.html">AI Beyond Engineering</a></li>
+<li><strong>Artificial Savings</strong> - <a href="epilogue/../chapter-8/AI_BEYOND_ENGINEERING.html">AI Beyond Engineering</a></li>
+<li><strong>Astrix Security</strong> - <a href="epilogue/../chapter-5/CLAUDE_SKILLS.html">Claude Skills</a></li>
 <li><strong>Attack Vector</strong> - <a href="epilogue/../chapter-4/MCP_SEC.html">MCP Security</a></li>
 <li><strong>Architect Persona</strong> - <a href="epilogue/../chapter-9/ROLE_PLAYING.html">Role Playing</a></li>
 <li><strong>AssertJ</strong> - <a href="epilogue/../chapter-6/README.html">Chapter 6</a></li>
