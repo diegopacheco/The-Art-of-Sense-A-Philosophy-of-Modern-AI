@@ -2,6 +2,30 @@
 
 All notable changes to "The Art of Sense: A Philosophy of Modern AI" book project are documented in this file.
 
+## November 21, 2025
+
+### Book Version 1.0.4 Release
+- Published version 1.0.4 of the book
+
+### Chapter 1 - Making Sense of AI
+- Enhanced Marketing and AI section with additional critique
+- Updated AGI perspectives and industry analysis
+
+### Chapter 5 - Claude Code
+- Added comprehensive Claude Skills guide (CLAUDE_SKILLS.md)
+- Enhanced skills vs MCP comparison and use cases
+
+### Chapter 8 - Non-Obvious Use Cases
+- Added comprehensive AI Beyond Engineering guide (AI_BEYOND_ENGINEERING.md)
+- Explored AI applications outside software development
+- Discussed ARU Strategy and production safety patterns
+
+### Epilogue
+- Updated Glossary with 30+ new technical terms
+- Added new external references across all chapters
+- Enhanced Book Index with additional entries
+- Updated References with model cards and security resources
+
 ## November 20, 2025
 
 ### Book Version 1.0.3 Release

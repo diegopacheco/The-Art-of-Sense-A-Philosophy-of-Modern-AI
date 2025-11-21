@@ -44,7 +44,7 @@ I posted this tweet in March 2025. To some degree, I think vibe-code does someth
 
 Source: [https://x.com/diego_pacheco/status/1903625842456191254](https://x.com/diego_pacheco/status/1903625842456191254)
 
-Other times I think vibecoding it's a gateway drud to product development, because now someone who is a non-enginer cna see software, webisites, applications up and running in from of them and they can "see" if they like ir or not and that might help them to figure out requirements better. So vibecoding could have some good effects, but we need to be careful how we use it.
+Other times, I think vibe coding is a gateway drug to product development, because now someone who is a non-engineer can see software, websites, and applications up and running in front of them, and they can "see" if they like it or not, and that might help them figure out requirements better. So vibe coding could have some good effects, but we need to be careful how we use it.
 
 ## Vintage Coding
 

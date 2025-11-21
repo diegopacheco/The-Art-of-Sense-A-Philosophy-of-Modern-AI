@@ -109,6 +109,9 @@ Automated compilation and deployment process that can be monitored and optimized
 **Bash Mode / Interactive Mode**
 A Claude Code feature enabling direct bash command execution for system operations by typing "!" prefix.
 
+**Bat-and-Ball Problem**
+Cognitive bias problem from Daniel Kahneman's research requiring System 2 thinking to solve correctly, often used to demonstrate human cognitive limitations.
+
 **bump-version.sh**
 Script used to increment version numbers in the book publication process.
 
@@ -202,7 +205,7 @@ Responsibility for maintaining and managing configuration files and settings.
 Company providing LLM APIs.
 
 **Container Registry**
-Repository for storing and distributing container images, important for secure MCP usage.
+Repository for storing and distributing container images, important for secure MCP usage and deployment workflows.
 
 **Contract-Based Testing**
 Testing based on contracts or agreements between services.
@@ -220,7 +223,7 @@ The amount of text/tokens an LLM can process at once. Larger context windows all
 Service providing up-to-date library documentation to address LLMs' outdated training data, supporting over 49,317 libraries.
 
 **Cool Down Period**
-Limitation period in subscription-based plans when token budget is exhausted.
+Limitation period in subscription-based plans when token budget is exhausted, temporarily restricting API usage.
 
 **Core Business Logic**
 Critical business logic and intellectual property that should never be created through "vibe coding" due to quality and proprietary concerns.
@@ -251,6 +254,9 @@ OpenAI's model that generates images from textual descriptions using transformer
 **Daniel Kahneman**
 Psychologist and author of "Thinking, Fast and Slow", referenced in discussions about System 1 and System 2 thinking applied to AI usage.
 
+**Data Loss**
+Risk in migrations where data might be lost during transition phases without proper backup and validation procedures.
+
 **Data Structures and Algorithms**
 Fundamental computer science concepts for organizing and processing data efficiently.
 
@@ -262,6 +268,9 @@ Machine learning algorithm using tree-like model of decisions for both classific
 
 **Debugging with AI using Images**
 Technique for troubleshooting code issues by providing AI with visual representations (screenshots/images) of problems.
+
+**Demo to Production**
+Complex productionization phase remaining difficult despite AI assistance. References Waymo case showing 11+ years from 2014 demo to incomplete 2025 production deployment.
 
 **Docker**
 Containerization platform.
@@ -326,7 +335,7 @@ Similarity measure used to compare embeddings based on the straight-line distanc
 Commercial MCP scanning security solution for analyzing MCP servers.
 
 **Explore Agent**
-Claude Code specialized sub-agent for fast codebase exploration.
+Claude Code specialized sub-agent for fast codebase exploration, supporting quick, medium, and thorough search modes.
 
 ## F
 
@@ -357,6 +366,9 @@ Agent pattern for removing unwanted data or responses before or after LLM proces
 **Fine Tuning**
 Process of training a pre-trained model on specific domain data to adapt it to particular use cases without full retraining.
 
+**FTL (Faster Than Light)**
+Metaphor describing the illusion that increasing code generation speed alone leads to problems, similar to trying to travel faster than light without upgrading other systems.
+
 ## G
 
 **GANs (Generative Adversarial Networks)**
@@ -381,10 +393,13 @@ Google's LLM model with 1,000,000 token context window.
 Google's LLM model with 2,000,000 token context window.
 
 **General-Purpose Agent**
-Claude Code sub-agent for multi-step task handling.
+Claude Code sub-agent for multi-step task handling requiring autonomous complex operations.
 
 **Generative AI**
 AI systems that can generate new content, including text, code, images, and other media. The book focuses on using Generative AI for software engineering tasks. Works through predicting next tokens/sequences.
+
+**Great Software Quality Collapse**
+Current state of declining software quality despite more computational resources, attributed to various factors including over-reliance on AI without proper review.
 
 **Git Archaeology for Troubleshooting**
 Technique using git history to understand code evolution and diagnose issues.
@@ -475,10 +490,10 @@ Operations that produce the same result regardless of how many times they are ex
 Teaching technique where AI deliberately mixes wrong and correct answers to train critical thinking.
 
 **Injection Attacks**
-Class of security vulnerabilities where untrusted data is executed as code.
+Class of security vulnerabilities where untrusted data is executed as code, analogous to unsanitized AI prompt execution.
 
 **Input Sanitization**
-Security practice of cleaning and validating user inputs to prevent injection attacks.
+Security practice of cleaning and validating user inputs to prevent injection attacks and ensure safe execution.
 
 **Integration Tests**
 Tests that verify how different components work together, requiring test data and infrastructure setup.
@@ -541,7 +556,7 @@ AWS serverless compute service.
 Dimensionality reduction technique that finds linear combinations of features for classification.
 
 **Lead Time**
-Software development metric measuring the time from starting work on a feature to deployment, mentioned as not improving despite AI tools.
+Software development metric measuring time from starting work on feature to deployment, noted as not improving despite AI tools.
 
 **Learning from AI**
 Process of using AI as an educational tool while maintaining critical thinking and verification.
@@ -577,7 +592,7 @@ Classification algorithm using logistic function to model probability of categor
 Mathematical function optimized during model training to minimize prediction errors.
 
 **LSH (Locality-Sensitive Hashing)**
-Technique for approximate nearest neighbor search in high-dimensional spaces.
+Technique for approximate nearest neighbor search in high-dimensional spaces, used in vector database implementations.
 
 **LSP (Language Server Protocol)**
 Standard protocol that MCP is compared to for understanding its architecture and functionality.
@@ -608,6 +623,9 @@ Specialized agent for translating technical content to plain language.
 **MCP (Model Context Protocol)**
 A protocol for connecting AI models to external tools and data sources, enabling extended capabilities. Created by Anthropic in 2024.
 
+**MCP Authorization Patterns**
+Security patterns for proper authorization in MCP implementations, ensuring safe upstream API calls.
+
 **MCP Client**
 Component within AI host that connects to MCP servers.
 
@@ -626,6 +644,9 @@ External service providing tools and data to AI models via Model Context Protoco
 **Mean Shift Clustering**
 Clustering algorithm that finds dense regions by shifting data points toward mode of distribution.
 
+**Memory Leaks**
+Runtime issue when applications fail to release memory properly, often detected during stress testing.
+
 **MidJourney**
 Independent research lab's model for generating visually appealing and artistic images from text prompts.
 
@@ -643,6 +664,9 @@ Concept that AI amplifies existing abilities: good engineers become better with 
 
 **MDD (Model Driven Development)**
 Earlier development approach similar to Spec Driven Development where models define implementation, mentioned as predecessor to SDD.
+
+**Model Card**
+Documentation describing LLM capabilities, limitations, training data, and intended use cases for transparency.
 
 **MoCoGAN**
 Model that separates motion and content to generate videos with coherent motion.
@@ -666,6 +690,12 @@ AI designed for specific tasks, as opposed to general intelligence.
 
 **Naive Bayes**
 Classification algorithm based on Bayes' theorem with strong independence assumptions between features.
+
+**Nearest Neighbor Queries**
+Search operation in vector databases finding closest matching vectors based on similarity metrics.
+
+**Noise Reduction**
+Technique in dimensionality reduction removing irrelevant features while preserving meaningful information.
 
 **Non-idempotent**
 Operations that produce different results when executed multiple times, requiring special testing setup.
@@ -719,8 +749,11 @@ Sensitive personal data that should be excluded from AI processing for privacy a
 **Pinecone**
 Vector database for storing and querying embeddings.
 
+**Placeholder Personas**
+Using AI in different roles for feedback and analysis such as Architect, Security Expert, Marketing Specialist.
+
 **Plan Agent**
-Claude Code specialized agent for planning tasks.
+Claude Code specialized agent for planning tasks and breaking down complex problems into manageable steps.
 
 **Playwright**
 End-to-end testing framework for web applications.
@@ -787,6 +820,9 @@ Technique to prevent overfitting by adding penalty terms to the loss function.
 **Regression Tests**
 Tests ensuring existing functionality still works after changes.
 
+**Remote Code Execution**
+Security vulnerability pattern where attackers can execute arbitrary code, analogous to unsanitized AI prompt execution.
+
 **Randomness in AI**
 Inherent probabilistic nature of LLMs making outputs non-deterministic even with identical inputs.
 
@@ -831,6 +867,9 @@ AI coding agents that operate in isolated environments separate from user's mach
 **Sandboxing**
 Running code in isolated environments for security, though noted as poor developer experience.
 
+**Scaling Issues**
+Challenges when systems grow in size, complexity, or load during stress testing and production usage.
+
 **Security Audit**
 Systematic evaluation of system security.
 
@@ -865,19 +904,22 @@ Testing by comparing current output to saved snapshots.
 High-level test verifying critical system functionality without exhaustive coverage.
 
 **Socratic Interrogation**
-Teaching method where AI asks progressively deeper questions instead of providing answers.
+Teaching method where AI asks progressively deeper questions instead of providing answers, forcing critical thinking.
 
 **SQL Injection**
-Security attack where malicious SQL code is inserted through user inputs.
+Security attack where malicious SQL code is inserted through user inputs, prevented by input sanitization.
 
 **State Management**
-Practices for handling and coordinating application state across components.
+Practices for handling and coordinating application state across components in software systems.
 
 **Strategic Work**
 High-level planning, architecture, and decision-making work requiring deeper thinking.
 
 **Stubs**
 Test doubles that provide predefined responses to method calls during testing.
+
+**Sub-Agents (Claude Code)**
+Independent agents spawned by Claude Code, each with their own 200k token context window.
 
 **Sub-Agents Spawning**
 Claude Code feature where independent agents are created, each with their own 200k token context window.
@@ -914,9 +956,6 @@ In reinforcement learning, a snapshot of the environment at a given time.
 
 **Status Line**
 Customizable information display at bottom of Claude Code interface showing current state.
-
-**Sub-Agents (Claude Code)**
-Independent agents spawned by Claude Code, each with their own 200k token context window.
 
 **Summarization**
 LLM task of condensing long text into shorter summaries while retaining key information.
@@ -987,7 +1026,7 @@ Custom APIs created specifically to expose and manipulate application state for 
 Book by Daniel Kahneman referenced in discussions about System 1 and System 2 thinking applied to AI usage.
 
 **Thinking Mode**
-Feature in some LLMs showing internal reasoning process.
+Feature in some LLMs showing internal reasoning process before generating final response.
 
 **Text Generation**
 Generative AI capability for creating written content from prompts or other inputs. LLMs process system and user prompts to generate responses.
@@ -1015,6 +1054,9 @@ Neural network architecture underlying modern LLMs, enabling efficient processin
 
 **Translation**
 LLM task of converting text from one language to another.
+
+**Trial and Error**
+Vibe coding practice of generating code without review, relying on iterative execution attempts rather than careful planning.
 
 **Troubleshooting**
 Using AI to help diagnose and resolve problems in code, systems, and architectures including log analysis and debugging.
@@ -1057,13 +1099,13 @@ Security practice of thoroughly checking MCP servers before use, combining vetti
 File tracking the current version number of the book.
 
 **Vibe Coding**
-A practice coined by Andrej Karpathy in February 2025 tweet where developers generate prompts and do not look at the generated code, assuming AI will handle everything correctly. The book argues this is a bad practice for serious software engineering, especially for core business logic.
+Practice coined by Andrej Karpathy in February 2025 where developers generate prompts and do not look at generated code, assuming AI handles everything correctly. The book argues this is bad practice for serious software engineering, especially for core business logic.
+
+**Vibe Payments**
+Satirical concept introduced in the book suggesting that if developers use vibe coding without reviewing code, payments should also be random, reflecting lack of due diligence.
 
 **Vintage Coding**
 Practice of coding without AI assistance to maintain core skills and proficiency, often practiced in coding dojos.
-
-**Vibe Payments**
-A satirical concept introduced in the book suggesting that if developers use "vibe coding" without reviewing code, their payments should also be random and unpredictable, reflecting the lack of due diligence in their work.
 
 **Video Generation**
 Generative AI capability for creating video content from text descriptions or other inputs. Still experimental and not ready for production.
@@ -1099,10 +1141,7 @@ Company that provides Grok LLM models.
 ## Z
 
 **Zero to Demo**
-Rapid prototyping phase made faster with AI assistance. References the Waymo case study where demos are possible quickly but production takes significantly longer.
-
-**Demo to Production**
-Complex productionization phase that remains difficult despite AI assistance, requiring careful engineering. References the Waymo case study showing 11 years from 2014 demo to 2025 incomplete production deployment.
+Rapid prototyping phase made faster with AI assistance. References Waymo case study where demos are possible quickly but production takes significantly longer.
 
 **Zig**
 Systems programming language mentioned as a learning target.

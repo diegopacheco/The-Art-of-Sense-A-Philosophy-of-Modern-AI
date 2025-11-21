@@ -26,6 +26,7 @@
 #### Mirror on Steroids
 - [AI Coding Agents Economics - Diego Pacheco](https://diego-pacheco.blogspot.com/2025/11/ai-coding-agents-economics.html)
 - [Brain Study Shows ChatGPT Actually Makes You Dumber - 80.lv](https://80.lv/articles/brain-study-shows-chatgpt-actually-makes-you-dumber)
+- [The Great Software Quality Collapse - Tech Trenches](https://techtrenches.substack.com/p/the-great-software-quality-collapse)
 
 ### AI Scams and Failures
 - [The Rabbit Is A Scam - YouTube](https://www.youtube.com/watch?v=d7DtiMzMBdU)
@@ -56,7 +57,6 @@
 - [Yann LeCun on LLM Hype - YouTube](https://www.youtube.com/watch?v=hOiL80G9Mnk)
 - [Richard Sutton: LLMs are a Dead End - YouTube](https://www.youtube.com/watch?v=21EYKqUsPfg)
 - [AI First and Bus Factor of 0 - Mindflash](https://www.mindflash.org/coding/ai/ai-and-the-bus-factor-of-0-1608)
-- [The Great Software Quality Collapse - Tech Trenches](https://techtrenches.substack.com/p/the-great-software-quality-collapse)
 - [Thinking, Fast and Slow - Daniel Kahneman](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555)
 
 ### Research Papers
@@ -78,46 +78,46 @@
 - [Claude Skills](https://www.anthropic.com/news/skills)
 
 ### MCP and Agent Architecture
-- [MCP Documentation](https://modelcontextprotocol.io/docs/getting-started/intro)
-- [What is MCP](https://www.whatismcp.com/)
-- [MCP.so](https://mcp.so/)
-- [Language Server Protocol - Wikipedia](https://en.wikipedia.org/wiki/Language_Server_Protocol)
-- [Postgres MCP](https://github.com/crystaldba/postgres-mcp)
-- [Slack MCP Server](https://github.com/korotovsky/slack-mcp-server)
-- [Awesome MCPs](https://mcpservers.org/)
+- [Agent to Agent Protocol](https://a2a-protocol.com/)
 - [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code)
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers)
-- [MCP Servers Repository](https://github.com/modelcontextprotocol/servers)
+- [Awesome MCPs](https://mcpservers.org/)
 - [Context7 MCP](https://github.com/upstash/context7)
-- [Agent to Agent Protocol](https://a2a-protocol.com/)
+- [Language Server Protocol - Wikipedia](https://en.wikipedia.org/wiki/Language_Server_Protocol)
 - [MCP Could Have Been JSON File](https://materializedview.io/p/mcp-server-could-have-been-json-file)
-- [What are AI Agents - AWS](https://aws.amazon.com/what-is/ai-agents/)
+- [MCP Documentation](https://modelcontextprotocol.io/docs/getting-started/intro)
+- [MCP Servers Repository](https://github.com/modelcontextprotocol/servers)
+- [MCP.so](https://mcp.so/)
+- [Postgres MCP](https://github.com/crystaldba/postgres-mcp)
 - [Sibyls and Servants - Medium](https://medium.com/@tasospapalias/sibyls-and-servants-the-roots-of-artificial-intelligence-in-ancient-greek-lore-b28257e98a0a)
+- [Slack MCP Server](https://github.com/korotovsky/slack-mcp-server)
+- [What are AI Agents - AWS](https://aws.amazon.com/what-is/ai-agents/)
+- [What is MCP](https://www.whatismcp.com/)
 
 ### MCP Security
-- [Everything Wrong with MCP - sshh.io](https://blog.sshh.io/p/everything-wrong-with-mcp)
-- [Prevent Attacks on MCP - forgecode.dev](https://forgecode.dev/blog/prevent-attacks-on-mcp/)
-- [Treating MCP Servers Like Bombs - DevInterrupted](https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs)
-- [Evo by Snyk](https://evo.ai.snyk.io/)
 - [Cisco MCP Scanner](https://github.com/cisco-ai-defense/mcp-scanner)
-- [State of MCP Server Security 2025 - Astrix Security](https://astrix.security/learn/blog/state-of-mcp-server-security-2025/)
+- [Evo by Snyk](https://evo.ai.snyk.io/)
+- [Everything Wrong with MCP - sshh.io](https://blog.sshh.io/p/everything-wrong-with-mcp)
 - [MCP Authorization Patterns - Christian Posta](https://blog.christianposta.com/mcp-authorization-patterns-upstream-api-calls/)
+- [Prevent Attacks on MCP - forgecode.dev](https://forgecode.dev/blog/prevent-attacks-on-mcp/)
+- [State of MCP Server Security 2025 - Astrix Security](https://astrix.security/learn/blog/state-of-mcp-server-security-2025/)
+- [Treating MCP Servers Like Bombs - DevInterrupted](https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs)
 
 ### Context and Documentation
-- [llms.txt Specification](https://llmstxt.org/)
 - [Claude llms-full.txt](https://docs.claude.com/llms-full.txt)
-- [OpenAI llms.txt](https://cdn.openai.com/API/docs/txt/llms.txt)
-- [LangGraph llms.txt](https://langchain-ai.github.io/langgraph/llms-txt-overview/)
-- [Context7 Service](https://context7.com/)
 - [Context Windows - Claude Docs](https://docs.claude.com/en/docs/build-with-claude/context-windows)
+- [Context7 Service](https://context7.com/)
+- [LangGraph llms.txt](https://langchain-ai.github.io/langgraph/llms-txt-overview/)
+- [llms.txt Specification](https://llmstxt.org/)
+- [OpenAI llms.txt](https://cdn.openai.com/API/docs/txt/llms.txt)
 
 ### Agent Patterns
 - [AI Agent Patterns - Diego Pacheco](https://diego-pacheco.blogspot.com/2025/07/ai-agent-patterns.html)
 - [Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/)
 
 ### Benchmarks
-- [SWE-bench Repo State Loopholes](https://github.com/SWE-bench/SWE-bench/issues/465)
 - [Claude 4 SWE-bench Gaming - Bayes.net](https://bayes.net/swebench-hack/)
+- [SWE-bench Repo State Loopholes](https://github.com/SWE-bench/SWE-bench/issues/465)
 - [SWE-bench Verified Issues - Reddit](https://www.reddit.com/r/OpenAI/comments/1nce3ua/meta_called_out_swe_bench_verified_for_being/)
 
 ## Chapter 2 - Machine Learning Basics
@@ -132,12 +132,12 @@
 ## Chapter 3 - Generative AI
 
 ### LLM Models and Documentation
-- [Large Language Models - Wikipedia](https://en.wikipedia.org/wiki/Large_language_model)
-- [GPT-5 System Card - OpenAI](https://openai.com/index/gpt-5-system-card/)
 - [Claude Sonnet 4.5 System Card - Anthropic](https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf)
 - [Gemini 2.0 Flash Model Card - Google](https://modelcards.withgoogle.com/assets/documents/gemini-2-flash.pdf)
-- [LLaMA 4 Model Card - Meta](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4/)
+- [GPT-5 System Card - OpenAI](https://openai.com/index/gpt-5-system-card/)
 - [Grok 4 Model Card - XAI](https://data.x.ai/2025-08-20-grok-4-model-card.pdf)
+- [Large Language Models - Wikipedia](https://en.wikipedia.org/wiki/Large_language_model)
+- [LLaMA 4 Model Card - Meta](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4/)
 
 ### Transformers and Architecture
 - [Attention is All You Need - arXiv](https://arxiv.org/abs/1706.03762)
@@ -177,33 +177,34 @@
 ## Chapter 5 - Claude Code
 
 ### Claude Code Documentation
-- [Claude Prompt Library](https://docs.claude.com/en/resources/prompt-library/library)
-- [Claude 4 Best Practices](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices)
-- [Claude Code Slash Commands](https://docs.claude.com/en/docs/claude-code/slash-commands.md)
-- [Claude Code Interactive Mode](https://docs.claude.com/en/docs/claude-code/interactive-mode)
-- [Claude Code Hooks Guide](https://docs.claude.com/en/docs/claude-code/hooks-guide)
-- [Claude Code Statusline](https://docs.claude.com/en/docs/claude-code/statusline)
+- [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code)
 - [CCStatusline by sirmalloc](https://github.com/sirmalloc/ccstatusline)
-- [Claude Code MCP](https://docs.claude.com/en/docs/claude-code/mcp)
-- [Claude Code Headless Mode](https://docs.claude.com/en/docs/claude-code/headless)
-- [Claude Code Sub-Agents](https://code.claude.com/docs/en/sub-agents)
-- [Custom Commands Tutorial - GitHub](https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands)
+- [Claude 4 Best Practices](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices)
 - [Claude Code GitHub](https://github.com/anthropics/claude-code)
-- [Claude Skills Blog - What are skills?](https://www.claude.com/blog/skills-explained)
+- [Claude Code Headless Mode](https://docs.claude.com/en/docs/claude-code/headless)
+- [Claude Code Hooks Guide](https://docs.claude.com/en/docs/claude-code/hooks-guide)
+- [Claude Code Interactive Mode](https://docs.claude.com/en/docs/claude-code/interactive-mode)
+- [Claude Code MCP](https://docs.claude.com/en/docs/claude-code/mcp)
+- [Claude Code Slash Commands](https://docs.claude.com/en/docs/claude-code/slash-commands.md)
+- [Claude Code Statusline](https://docs.claude.com/en/docs/claude-code/statusline)
+- [Claude Code Sub-Agents](https://code.claude.com/docs/en/sub-agents)
+- [Claude Prompt Library](https://docs.claude.com/en/resources/prompt-library/library)
 - [Claude Skills - Official Blog Post](https://claude.com/blog/skills)
-- [Claude Skills Repository](https://github.com/anthropics/skills)
 - [Claude Skills Analysis - Simon Willison](https://simonwillison.net/2025/Oct/16/claude-skills/)
+- [Claude Skills Blog - What are skills?](https://www.claude.com/blog/skills-explained)
+- [Claude Skills Repository](https://github.com/anthropics/skills)
+- [Custom Commands Tutorial - GitHub](https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands)
 - [JSON Formatter Claude Skill - Diego Pacheco](https://github.com/diegopacheco/ai-playground/tree/main/agents/claude-code/claude-skill-fun)
 
 ### Development Tools
-- [VSCode](https://code.visualstudio.com/)
 - [Coding Dojo](https://codingdojo.org/)
-- [Test-driven Development - Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
+- [GitHub Pull Requests Documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+- [SDD Tweet - Diego Pacheco](https://x.com/diego_pacheco/status/1988897341584093220)
 - [Spec Driven Development - Martin Fowler](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html)
 - [Spec-Driven Development: The Waterfall Strikes Back - Marmelab](https://marmelab.com/blog/2025/11/12/spec-driven-development-waterfall-strikes-back.html)
+- [Test-driven Development - Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
 - [Testing Queues and Batch Jobs - Diego Pacheco](https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html)
-- [SDD Tweet - Diego Pacheco](https://x.com/diego_pacheco/status/1988897341584093220)
-- [GitHub Pull Requests Documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+- [VSCode](https://code.visualstudio.com/)
 
 ## Chapter 6 - Testing with AI
 
@@ -260,9 +261,9 @@ No additional external references.
 ## Chapter 9 - Learning from AI
 
 ### AI Hallucination Research
-- [ORION: Retrieval-Based Method for Hallucination Detection - arXiv](https://arxiv.org/pdf/2504.15771)
-- [Hallucination is Inevitable: An Innate Limitation of Large Language Models - arXiv](https://arxiv.org/pdf/2401.11817)
 - [Estimating the Hallucination Rate of Generative AI - arXiv](https://arxiv.org/pdf/2406.07457)
+- [Hallucination is Inevitable: An Innate Limitation of Large Language Models - arXiv](https://arxiv.org/pdf/2401.11817)
+- [ORION: Retrieval-Based Method for Hallucination Detection - arXiv](https://arxiv.org/pdf/2504.15771)
 
 ## Author's Published Works
 
