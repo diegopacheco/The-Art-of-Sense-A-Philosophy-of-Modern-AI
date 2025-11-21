@@ -2,6 +2,10 @@
 
 If you are great, AI will make you even greater. I believe Gen-AI tools like AI Coding Agents such as Claude Code are amazing. ChatGPT is great. Copilot is great. However, if you use these tools 24/7 and you shut down your brain, you will worsen your skills (Don't believe me? Read this: [Brain Study Shows ChatGPT Actually Makes You Dumber](https://80.lv/articles/brain-study-shows-chatgpt-actually-makes-you-dumber)).
 
+<img src="../images/01-mirror-on-esteroids.png" width="400"/>
+
+PS: Can you see the mistakes on the image generated GPT 5.1?
+
 You can't use AI for all things, all the time. Because your over-dependency on AI is like a virus or a disease. Everything we do in life without balance is bad.
 
 We should not be afraid of AI; we should not ignore AI. But if we don't have non-AI time, we are making ourselves dumber. In that sense, we need to create the right cycle. The right cycle will be to use AI but also make time without AI.
