@@ -2,7 +2,7 @@
 
 MCP has several issues, like context overhead, [lack of proper security](https://astrix.security/learn/blog/state-of-mcp-server-security-2025/) and guardrails. MCPs can be local or can be remote. MCPs was create by Anthropic, others follow and become a huge thing. Well huge in the sense of many many MCPs out there but adoption at enterprise or at scale companies, not so really.
 
-[Claude-skills](https://www.claude.com/blog/skills-explained) have the potenrial to reduce a great deal of the MCP issues and even market share, [Claude-Skills are a big deal](https://simonwillison.net/2025/Oct/16/claude-skills/). Anothropic already have a [repository for claude-skills](https://github.com/anthropics/skills).
+[Claude-skills](https://www.claude.com/blog/skills-explained) have the potenrial to reduce a great deal of the MCP issues and even market share, [Claude-Skills are a big deal](https://simonwillison.net/2025/Oct/16/claude-skills/). Anothropic already have a [repository for claude-skills](https://github.com/anthropics/skills) and [awesome-skills](https://github.com/ComposioHQ/awesome-claude-skills/) too.
 
 ## The Issue with MCPs
 

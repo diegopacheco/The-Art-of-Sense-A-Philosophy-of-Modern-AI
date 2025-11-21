@@ -73,8 +73,9 @@ IF you want to buid AI Features, you need a lot of things like:
 * Porper Guardrails: Limit how long a agent process a request, limit in cost, or you can limit in type or interations.
 * Sanitization: Ensure that any input from users is sanitized to prevent injection attacks or other security vulnerabilities.
 * Validation: Implement validation checks to ensure that AI-generated code meets quality and security standards before deployment.
+* Observability: You monitor AI cost, AI usage and AI performance to detect any anomalies or issues that may arise.
 
-## Human in the Loop
+## Human in the Loop (The Call Center strategy)
 
 So the users can typo prompts in applications in production, however nothing gets executed, the only thing is that the LLM output is a JSON document which structure and "intentions". Them a human in the loop, basically using a admin or backoffise web application goes there and review what the user typed or what AI actually generated and them approve or reject. This way a lot of problems and risks are mitigated because you have a human reviewing the output before going to production.
 
@@ -85,4 +86,3 @@ What IF? You use a prompt for the final user, that way, the user can get a bette
 <img src="../images/08-ARU_Strategy.png" width="600"/>
 
 If you think about it, ARU systems used that for ages, chatbots did the similar strategy where you can type whatever but there is a finite set of options that the bot can understand and process. So you are not blindly executing whatever the user type, you are just mapping the user input to a finite set of valid actions.
-

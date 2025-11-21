@@ -11,6 +11,12 @@ In reinforcement learning, a decision or move made by an agent.
 **AGI (Artificial General Intelligence)**
 A theoretical form of AI that would have human-like general intelligence, capable of understanding, learning, and applying knowledge across a wide range of tasks. Marketing hype often surrounds AGI claims, though true AGI capabilities remain unproven.
 
+**AGI-ish**
+Marketing term used to describe current LLM capabilities as approaching AGI. Part of the down ceiling effect where definitions are lowered to claim progress.
+
+**AGI Vibes**
+Marketing terminology suggesting LLMs have AGI-like characteristics without actually being AGI. Related to AGI-ish and part of misleading marketing practices.
+
 **Agent**
 In reinforcement learning, the learner or decision-maker that interacts with the environment.
 
@@ -27,10 +33,10 @@ A methodology where developers use AI for input (research, learning, inspiration
 Deceptive practices involving AI technology, including false AGI claims, wrapper solutions marketed as novel AI applications, and misleading marketing around AI capabilities.
 
 **Agents**
-Autonomous or semi-autonomous systems that can perform tasks, make decisions, and interact with environments using AI capabilities.
+Autonomous or semi-autonomous systems that can perform tasks, make decisions, and interact with environments using AI capabilities. True agents should react to events and be autonomous, but the industry often uses "agentic" to describe systems with agent-like characteristics but lacking full autonomy due to the down ceiling effect.
 
 **Agentic**
-Having some characteristics of an agent, but not a true autonomous agent. Used to describe behavior that resembles agents but lacks full autonomy.
+Having some characteristics of an agent, but not a true autonomous agent. Used to describe behavior that resembles agents but lacks full autonomy. Term emerged as the ceiling was lowered on what constitutes a true agent.
 
 **Agentic Behavior**
 Behavior exhibited by agents that allows them to act autonomously in pursuit of defined goals, making decisions based on environment state.

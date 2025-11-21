@@ -184,6 +184,11 @@
 - [Claude Code Headless Mode](https://docs.claude.com/en/docs/claude-code/headless)
 - [Custom Commands Tutorial - GitHub](https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands)
 - [Claude Code GitHub](https://github.com/anthropics/claude-code)
+- [Claude Skills Blog - What are skills?](https://www.claude.com/blog/skills-explained)
+- [Claude Skills - Official Blog Post](https://claude.com/blog/skills)
+- [Claude Skills Repository](https://github.com/anthropics/skills)
+- [Claude Skills Analysis - Simon Willison](https://simonwillison.net/2025/Oct/16/claude-skills/)
+- [JSON Formatter Claude Skill - Diego Pacheco](https://github.com/diegopacheco/ai-playground/tree/main/agents/claude-code/claude-skill-fun)
 
 ### Development Tools
 - [VSCode](https://code.visualstudio.com/)
