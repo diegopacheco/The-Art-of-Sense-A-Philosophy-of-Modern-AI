@@ -23,3 +23,9 @@ Here is a simple example of claude-skill a built to [format JSON](https://github
 ## When we would still use MCP?
 
 Well, with claude skills a great share of MCP can be gone and now we can have MCP for remote use cases, you wont be able to run AWS claude in your machine, or you will have external services like Figma, Jira, Salesforce, etc. So MCP will be more for [remote use cases](https://blog.christianposta.com/mcp-authorization-patterns-upstream-api-calls/) and claude-skills for local use cases.
+
+## Summary
+
+<img src="../images/05.MCP_claude-skills.png" width="600"/>
+
+source: [https://x.com/diego_pacheco/status/1989959020032266435](https://x.com/diego_pacheco/status/1989959020032266435)
