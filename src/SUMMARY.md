@@ -92,6 +92,7 @@
   - [Documentation](./chapter-8/DOCUMENTATION.md)
   - [Onboarding](./chapter-8/ONBOARDING.md)
   - [Ownership](./chapter-8/OWNERSHIP.md)
+  - [AI Beyond Engineering](./chapter-8/AI_BEYOND_ENGINEERING.md)
 
 - [Chapter 9 - Learning from AI](./chapter-9/README.md)
   - [Ideas](./chapter-9/IDEAS.md)
