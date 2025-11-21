@@ -67,6 +67,7 @@
   - [Custom Agents](./chapter-5/CUSTON_AGENTS.md)
   - [Hooks](./chapter-5/HOOKS.md)
   - [MCP and Claude Code](./chapter-5/CLAUDE_MCP.md)
+  - [Claude Skills](./chapter-5/CLAUDE_SKILLS.md)
   - [Decision Criteria](./chapter-5/DECISION_CRITERIA.md)
 - [Chapter 6 - Testing with AI](./chapter-6/README.md)
   - [Why use AI for Testing?](./chapter-6/WHY.md)
