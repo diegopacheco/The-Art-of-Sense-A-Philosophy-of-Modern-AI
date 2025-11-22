@@ -17,6 +17,10 @@ Take a look at the Clever Hans effect. <br/>
 
 ## The dark side of AI
 
+<img src="../images/01-gemini-banana-pro-dark-side-ai.png" width="600" >
+
+PS: Image generate by Gemini 3 - Banana Pro
+
 AI can be and is used for a lot of scams. AI and people using AI can fool you in many ways. [AI has a dark side](https://diego-pacheco.blogspot.com/2024/07/the-dark-side-of-llms.html). Perhaps [many dark sides](https://diego-pacheco.blogspot.com/2025/03/the-dark-side-of-llms-part-2.html).
 
 ## Outsourcing Gym Workout
