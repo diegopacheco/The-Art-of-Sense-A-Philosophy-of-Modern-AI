@@ -52,6 +52,10 @@ Seyed Mahdi Hosseini Maasoum and Guy Lichtinger from Harvard wrote the paper: "G
 
 ## Companies must hire juniors
 
+Smart companies are hiring juniors, because they understand the long term game. Juniors are the future seniors, and if you don't invest in juniors today, you will have a hard time finding seniors in the future.
+
+<img src="../images/epilogue-dhh-juniors.png" width="400" >
+
 37signals' David Heinemeier Hansson on LinkedIn - [Hiring Juniors](https://www.linkedin.com/posts/david-heinemeier-hansson-374b18221_junior-rails-programmer-37signals-activity-7321076844307304449-Kl3Z/
 ).
 
