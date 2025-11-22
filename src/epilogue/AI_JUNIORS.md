@@ -55,6 +55,16 @@ Seyed Mahdi Hosseini Maasoum and Guy Lichtinger from Harvard wrote the paper: "G
 37signals' David Heinemeier Hansson on LinkedIn - [Hiring Juniors](https://www.linkedin.com/posts/david-heinemeier-hansson-374b18221_junior-rails-programmer-37signals-activity-7321076844307304449-Kl3Z/
 ).
 
+AWS CEO Says [Replacing Junior Developers with AI Is the Dumbest Thing He's Ever Heard](https://www.finalroundai.com/blog/aws-ceo-matt-garman-says-replacing-junior-developers-with-ai-the-dumbest-thing).
+
+<div style="position: relative; width: 100%; padding-bottom: 56.25%">
+<iframe src="https://www.youtube.com/watch?v=nfocTxMzOP4&t=726s"
+    title="White Collar Jobs, Hyperscalers, AI Coding, Open vs Closed, Agents, and more! (Matt Garman)" frameborder="0" allowfullscreen
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    style="position: absolute; width: 100%; height: 100%;">
+</iframe>
+</div>
+
 ## Alone, Juniors might not be able to grow in the AI ERA, and with AI Expectations.
 
 TODO
