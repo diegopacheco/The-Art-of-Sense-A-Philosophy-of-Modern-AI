@@ -81,7 +81,34 @@ Lack I said, most managers suck when the matter is dealing with juniors in engin
 
 <img src="../images/epilogue-ai-juniors.png" width="400" >
 
+The common mistakes are:
+* Expecting Juniors to be Productive like Seniors with AI. Juniors are still learning
+* Not giving Juniors proper mentorship and guidance
+* Assigning Juniors complex tasks without proper support
+* Not providing Juniors with learning resources
+* Ignoring the importance of building a strong foundation for Juniors
+* Focusing only on short-term productivity rather than long-term growth
+* Just ask juniors to use AI tools without teaching them how to think critically and solve problems
+
+Basically, people give juniors maybe 30 days, after than they can easily decide they suck, what I think is broken is that such decision happens without any support what so ever to juniors. You throw a toddler on the snow and ask it to lift a truck(good example of a task that is too complex for a junior), and after 30 days you decide the toddler sucks at lifting trucks. Such approach is broken.
+
+Juniors got JIRA tickets without any explanation, no support from the team, just pressure and more pressure to deliver. How this suppose to work?
+
+The sad thing is that is super, super, super common in the industry.
 
 ## How to Properly Manage Juniors
 
-TODO
+First of all, managers must understand that Juniors are still learning the fundamentals, and they need proper mentorship and guidance. There are several things that must happen.
+
+Here is some guidance:
+* Make sure Juniors have a strong foundation in programming basics. Make than teck courses, read books, talk to senior people to learn.
+* Make sure sure the task you are giving to the junior is appropriate for their skill level.
+* Provide Juniors with proper mentorship and guidance. Assign a senior engineer to mentor the junior.
+* Avoid having juniors work alone, make sure they have support from the team(must be a senior supporting a junior).
+* Give AI to juniors, but make sure they also spend time without AI, learning the fundamentals.
+* Something needs to give: (A) You either write down perfect spect(which does not exist) and give a lot of clarity to them or (B) You give your time or a senior engineer time to mentor them properly.
+* IF Juniors are not ready, avoid adding them in some meetings (make the seniors do the comunications).
+* Avoid juniors have ownership of critical tasks like: production deployments, system architecture desings, spikes, migrations, data mgirations, complex and enntagled messed situations, critical bugs...
+* Make sure all means are "Master Class" where you always tech juniors something, make sure they are always learning, make them ask questions and take notes.
+
+Senior engineers and managers need to undersdtand that this is part of they job, they need to do the "baby sitting". AI alone will not fix this problem, will make it worse if anything. Juniors need proper mentorship and guidance to grow into senior engineers.
