@@ -6,7 +6,7 @@ AI is 2 steps forward and one step back. AI hallucinates, AI ignores your reques
 
 We also need to understand how AI is changing how we do engineering. What are the new ways of working? What are the non-obvious ways we can leverage AI to be more productive and effective engineers?
 
-<img src="../images/01-AI-all-true.png" width="400"/>
+<img src="../images/01-AI-all-true.png" width="600"/>
 
 Imagine that AI can be classified in 3 buckets:
 1. Revolution of the Machines(Robots are coming for us) -> Dystopian future where AI disrupts many industries.
