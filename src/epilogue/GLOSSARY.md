@@ -41,6 +41,9 @@ Having some characteristics of an agent, but not a true autonomous agent. Used t
 **Agentic Behavior**
 Behavior exhibited by agents that allows them to act autonomously in pursuit of defined goals, making decisions based on environment state.
 
+**Adults in the Room**
+Engineers or professionals who maintain vigilance and pay attention to details when using AI, ensuring quality and preventing fabricated productivity claims.
+
 **Aggregating**
 Agent pattern involving combining multiple data sources or results into a unified response or output.
 
@@ -123,6 +126,9 @@ Measure of risk if key personnel are unavailable. "Bus Factor of 0" refers to co
 
 ## C
 
+**Backoffice Applications**
+Administrative web applications used in Human in the Loop pattern where humans review AI-generated outputs before production execution.
+
 **Caching**
 Agent pattern for storing and reusing frequently accessed data or results to improve performance and reduce redundant processing.
 
@@ -189,6 +195,9 @@ Metric measuring what percentage of code is executed by automated tests.
 **Code Review**
 Critical process of examining AI-generated or any code for correctness, security, and alignment with requirements before deployment. Essential when using AI.
 
+**Code Reviewer Agent**
+Custom agent that reviews code for best practices, security vulnerabilities, and performance optimizations.
+
 **Codex**
 OpenAI's coding agent available in both web sandbox and CLI versions, using specialized models for code generation.
 
@@ -231,6 +240,15 @@ Limitation period in subscription-based plans when token budget is exhausted, te
 **Core Business Logic**
 Critical business logic and intellectual property that should never be created through "vibe coding" due to quality and proprietary concerns.
 
+**Context Window Tokens**
+Tokens that represent the limit of text an LLM can process in a single conversation, distinct from payable tokens in subscription plans.
+
+**Continuous Modernization**
+Book by Diego Pacheco focusing on software modernization practices.
+
+**Cory Doctorow**
+AI researcher and critic of LLM hype, creator of "LLMs as slot machines" concept referenced in discussions about AI randomness and limitations.
+
 **Cosine Similarity**
 Similarity measure used to compare embeddings based on the cosine of the angle between vectors.
 
@@ -257,8 +275,14 @@ OpenAI's model that generates images from textual descriptions using transformer
 **Daniel Kahneman**
 Psychologist and author of "Thinking, Fast and Slow", referenced in discussions about System 1 and System 2 thinking applied to AI usage.
 
+**Data Analysis Agent**
+Custom agent that performs data analysis tasks such as data cleaning, visualization, and statistical analysis.
+
 **Data Loss**
 Risk in migrations where data might be lost during transition phases without proper backup and validation procedures.
+
+**Deployment Agent**
+Custom agent that automates the deployment process of applications to various environments.
 
 **Data Structures and Algorithms**
 Fundamental computer science concepts for organizing and processing data efficiently.
@@ -290,8 +314,17 @@ Property of producing identical outputs for identical inputs, which AI lacks due
 **Diffusion Models**
 Advanced approach for video generation.
 
+**Denis Stetskov**
+Author of the article "The Great Software Quality Collapse: How We Normalized Catastrophe" referenced in discussions about current software quality crisis.
+
+**Diego Pacheco's Software Architecture Library (SAL)**
+Free book by Diego Pacheco covering software architecture topics, written with AI assistance for proofreading, glossary, and index generation.
+
 **Dimensionality Reduction**
 A Traditional AI/ML technique for reducing the number of variables/features in data while preserving meaningful information. Examples include PCA.
+
+**Documentation Generator Agent**
+Custom agent that generates documentation for codebases, APIs, or libraries.
 
 **Disruption**
 The transformative impact of AI on industries and engineering practices, similar to impacts of internet and mobile phones.
@@ -342,6 +375,9 @@ Claude Code specialized sub-agent for fast codebase exploration, supporting quic
 
 ## F
 
+**Execution**
+The ability of a company to organize and scale people to execute on a vision, one of two critical company capabilities alongside learning.
+
 **Fabricated Productivity**
 False or exaggerated productivity gains attributed to AI usage without accounting for increased review time, bug fixes, or quality issues.
 
@@ -369,6 +405,12 @@ Agent pattern for removing unwanted data or responses before or after LLM proces
 **Fine Tuning**
 Process of training a pre-trained model on specific domain data to adapt it to particular use cases without full retraining.
 
+**François Zaninotto**
+Author of critique "Spec-Driven Development: The Waterfall Strikes Back" challenging SDD methodology.
+
+**FTE (Full-Time Employee)**
+Full-time employees writing code, referenced in context of claude-skills being more secure when created by FTEs rather than using random MCPs from the internet.
+
 **FTL (Faster Than Light)**
 Metaphor describing the illusion that increasing code generation speed alone without improving other aspects of software development leads to problems, similar to trying to travel faster than light without upgrading other systems. Highlights need to improve driving skills, road conditions, traffic rules alongside speed improvements.
 
@@ -384,7 +426,10 @@ Safety mechanisms to prevent undesired AI behavior in production environments in
 Neural network architecture used in image generation models like DALL-E.
 
 **Gartner's Hype Cycle**
-Graphical representation of technology maturity and adoption phases.
+Graphical representation of technology maturity and adoption phases, showing progression from peak of inflated expectations through trough of disillusionment to plateau of productivity.
+
+**Gergely Orosz**
+Tech industry commentator who interviewed Netflix CTO about their hiring strategy shift from seniors-only to including juniors.
 
 **Gatling**
 Stress testing and load testing framework for performance evaluation.
@@ -454,6 +499,15 @@ XAI's LLM model with 2,000,000 token context window.
 
 **Guardrails**
 Safety mechanisms to prevent undesired AI behavior and ensure safe production usage.
+
+**GPT 5.1**
+OpenAI's LLM model referenced in the book for image generation examples.
+
+**Gregor Hohpe**
+Software architect known for Enterprise Integration Patterns that influenced modern AI agent patterns.
+
+**Guitar Hero**
+Music video game used as metaphor for vibe coding, where players have illusion of playing guitar without actually learning the instrument.
 
 **Gym Workout Analogy**
 Metaphor explaining AI dependency where outsourcing work to AI is like paying someone to go to the gym for you - the contractor gets strong but you do not.
@@ -542,6 +596,9 @@ JavaScript testing framework.
 **JetBrains**
 Company producing IDEs like IntelliJ IDEA that integrate with AI coding assistants.
 
+**Junior Developers**
+Early-career engineers still learning programming fundamentals, increasingly challenged by AI adoption trends showing 23% decline in junior roles while senior roles increased 14%.
+
 **JUnit**
 Java testing framework.
 
@@ -559,6 +616,9 @@ AWS coding agent, a fork of VSCode implementing Spec Driven Development approach
 **Knowledge Base Generation**
 Using AI to create and maintain comprehensive documentation systems.
 
+**Klarna**
+Financial services company that rolled back AI-driven job cuts in favor of real human customer service representatives.
+
 **Kubernetes (K8s)**
 Container orchestration platform.
 
@@ -572,6 +632,12 @@ Dimensionality reduction technique that finds linear combinations of features fo
 
 **Lead Time**
 Software development metric measuring time from starting work on feature to deployment, noted as not improving despite AI tools.
+
+**Learning (Company Capability)**
+The capacity of a company to learn new processes, technologies, markets, and ways of organizing, critical for long-term survival alongside execution capability.
+
+**Learning Agent**
+Custom agent that provides tutorials, coding exercises, and learning resources for developers.
 
 **Learning from AI**
 Process of using AI as an educational tool while maintaining critical thinking and verification.
@@ -635,6 +701,9 @@ Portmanteau of "marketing" and criticism of misleading AI marketing claims.
 **Marketing Agent (Claude Code)**
 Specialized agent for translating technical content to plain language.
 
+**Martin Fowler**
+Software development thought leader whose website published critique of Spec Driven Development.
+
 **MCP (Model Context Protocol)**
 A protocol for connecting AI models to external tools and data sources, enabling extended capabilities. Created by Anthropic in 2024.
 
@@ -697,8 +766,14 @@ Testing technique that modifies code to verify test effectiveness.
 
 ## N
 
+**NBA (National Basketball Association)**
+Professional basketball league referenced as model for talent development through annual draft system, suggested as analogy for how companies should hire junior developers.
+
 **Negative Cases**
 Test scenarios covering invalid inputs, error conditions, or failure modes.
+
+**Netflix**
+Streaming company known for "Talent Density" strategy of hiring only senior engineers, recently shifting to also hire junior developers.
 
 **Narrow AI**
 AI designed for specific tasks, as opposed to general intelligence.
@@ -745,7 +820,10 @@ Infrastructure or code assets without clear ownership or maintenance.
 Challenge in fine-tuning where a model learns training data too specifically and loses generalization ability.
 
 **Ownership**
-Responsibility for maintaining and managing code, infrastructure, and resources.
+Responsibility for maintaining and managing code, infrastructure, and resources. Critical principle that code output belongs to the developer regardless of AI usage.
+
+**Performance Optimizer Agent**
+Custom agent that analyzes code for performance bottlenecks and suggests optimizations.
 
 ## P
 
@@ -794,8 +872,14 @@ AI acting as personalized instructor providing tailored learning experiences.
 **Pre-trained Model**
 Model that has already acquired knowledge during initial training phase, used as starting point for fine-tuning.
 
+**Principles of Software Architecture Modernization**
+Book by Diego Pacheco discussing architectural patterns, modernization strategies, and the dangers of wrappers.
+
 **Proficiency**
 Level of skill and expertise required to perform tasks effectively without constant reference.
+
+**Project Manager Agent**
+Custom agent that helps manage project tasks, timelines, and resources.
 
 **Prompt Engineering**
 Craft of writing effective instructions for AI models to achieve desired outcomes, largely replaced by context engineering.
@@ -820,8 +904,17 @@ Testing based on properties that should always hold true rather than specific ou
 
 ## R
 
+**Rappers**
+Musicians and artists referenced in contrast to wrappers, emphasizing the difference between creative artists and superficial code layers.
+
+**Refactoring Agent**
+Custom agent that suggests and applies code refactoring techniques to improve code quality and maintainability.
+
 **Remote Code Execution**
 Security vulnerability pattern where attackers can execute arbitrary code, analogous to unsanitized AI prompt execution.
+
+**Richard Sutton**
+Father of Reinforcement Learning who considers LLMs a dead end for achieving true AI.
 
 **Retrospectives**
 Agile practice of reflecting on past work to drive lessons learned and improvements, mentioned as necessary when using AI.
@@ -880,8 +973,14 @@ Agent pattern for directing requests to appropriate services or models based on 
 **Runbook**
 Documentation of procedures and processes for system operations.
 
+**Rock Band**
+Music video game referenced alongside Guitar Hero as metaphor for vibe coding and illusion of skill without actual learning.
+
 **Rust**
 Systems programming language used for mdbook and mentioned in migration contexts.
+
+**Sam Altman**
+CEO of OpenAI who stated that AGI is "not a super useful term" despite earlier hype around the concept.
 
 ## S
 
@@ -896,6 +995,12 @@ Challenges when systems grow in size, complexity, or load during stress testing 
 
 **Security Audit**
 Systematic evaluation of system security.
+
+**Security Auditor Agent**
+Custom agent that conducts security audits on codebases to identify vulnerabilities and recommend improvements.
+
+**Senior Developers**
+Experienced engineers with deep knowledge of fundamentals, troubleshooting, architecture, and ownership, increasingly in demand showing 14% rise in senior roles.
 
 **SDD (Spec Driven Development)**
 Development approach implemented by AWS Kiro where specifications drive implementation.
@@ -969,8 +1074,20 @@ Generative AI capability for creating audio content.
 **Spectral Clustering**
 Clustering algorithm using eigenvalues of similarity matrix to reduce dimensionality before clustering.
 
+**Seyed Mahdi Hosseini Maasoum**
+Harvard researcher who co-authored paper "Generative AI as Seniority-Biased Technological Change" showing junior roles declined 23% while senior roles rose 14%.
+
+**SignalFire**
+Venture capital firm that found 50% decline in new role starts for people with less than one year of post-graduate work experience between 2019 and 2024.
+
+**Spark of AGI**
+Marketing terminology suggesting current LLMs have AGI-like characteristics, part of down ceiling effect lowering AGI definition.
+
 **Splitting**
 Agent pattern for dividing large tasks or data into smaller manageable pieces for processing.
+
+**SQL Agent**
+Custom agent that helps generate, optimize, and troubleshoot SQL queries.
 
 **SQS (Simple Queue Service)**
 AWS message queue service, mentioned as infrastructure requiring ownership.
@@ -1016,8 +1133,17 @@ Instructions defining how an AI model should behave and respond to user inputs. 
 **Tactical Work**
 Operational, day-to-day tasks as opposed to strategic, high-level planning work.
 
+**Taco Bell**
+Fast food chain referenced for AI chatbot failure that ordered 18,000 waters.
+
 **Tagging**
 Practice of labeling resources and assets for organization and ownership tracking.
+
+**Talent Density**
+Netflix's historical hiring strategy of employing only senior engineers, recently shifted to include junior developers.
+
+**Test Case Generator Agent**
+Custom agent that creates unit tests or integration tests for given code snippets or modules.
 
 **t-SNE (t-Distributed Stochastic Neighbor Embedding)**
 Dimensionality reduction technique particularly effective for visualizing high-dimensional data in 2D or 3D.
@@ -1178,6 +1304,9 @@ Company that provides Grok LLM models.
 
 **Yann LeCun**
 AI researcher and critic of LLM hype, referenced in marketing discussions about AI limitations.
+
+**Yuval Harari**
+Historian and author who described current LLMs as being in the "Amoeba age" with basic capabilities that will improve over time.
 
 ## Z
 

@@ -85,7 +85,6 @@
 - [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code)
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers)
 - [Awesome MCPs](https://mcpservers.org/)
-- [Context7 MCP](https://github.com/upstash/context7)
 - [Language Server Protocol - Wikipedia](https://en.wikipedia.org/wiki/Language_Server_Protocol)
 - [MCP Could Have Been JSON File](https://materializedview.io/p/mcp-server-could-have-been-json-file)
 - [MCP Documentation](https://modelcontextprotocol.io/docs/getting-started/intro)
@@ -105,11 +104,11 @@
 - [Prevent Attacks on MCP - forgecode.dev](https://forgecode.dev/blog/prevent-attacks-on-mcp/)
 - [State of MCP Server Security 2025 - Astrix Security](https://astrix.security/learn/blog/state-of-mcp-server-security-2025/)
 - [Treating MCP Servers Like Bombs - DevInterrupted](https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs)
-- [JSON Formatter Claude Skill - Diego Pacheco](https://github.com/diegopacheco/ai-playground/tree/main/agents/claude-code/claude-skill-fun)
 
 ### Context and Documentation
 - [Claude llms-full.txt](https://docs.claude.com/llms-full.txt)
 - [Context Windows - Claude Docs](https://docs.claude.com/en/docs/build-with-claude/context-windows)
+- [Context7 MCP](https://github.com/upstash/context7)
 - [Context7 Service](https://context7.com/)
 - [LangGraph llms.txt](https://langchain-ai.github.io/langgraph/llms-txt-overview/)
 - [llms.txt Specification](https://llmstxt.org/)
@@ -199,28 +198,30 @@
 - [Claude Skills Repository](https://github.com/anthropics/skills)
 - [Custom Commands Tutorial - GitHub](https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands)
 - [JSON Formatter Claude Skill - Diego Pacheco](https://github.com/diegopacheco/ai-playground/tree/main/agents/claude-code/claude-skill-fun)
+- [SDD Tweet - Diego Pacheco](https://x.com/diego_pacheco/status/1988897341584093220)
+- [Claude Skills Tweet - Diego Pacheco](https://x.com/diego_pacheco/status/1989959020032266435)
 
 ### Development Tools
 - [Coding Dojo](https://codingdojo.org/)
 - [GitHub Pull Requests Documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
-- [SDD Tweet - Diego Pacheco](https://x.com/diego_pacheco/status/1988897341584093220)
 - [Spec Driven Development - Martin Fowler](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html)
 - [Spec-Driven Development: The Waterfall Strikes Back - Marmelab](https://marmelab.com/blog/2025/11/12/spec-driven-development-waterfall-strikes-back.html)
 - [Test-driven Development - Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
 - [Testing Queues and Batch Jobs - Diego Pacheco](https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html)
 - [VSCode](https://code.visualstudio.com/)
+- [Vibe Coding Effects Tweet - Diego Pacheco](https://x.com/diego_pacheco/status/1903625842456191254)
 
 ## Chapter 6 - Testing with AI
 
 ### Testing Frameworks and Tools
-- [Faker.js library for test data generation](https://fakerjs.dev/)
-- [JUnit testing framework for Java](https://junit.org/)
-- [Jest JavaScript testing framework](https://jestjs.io/)
-- [Playwright end-to-end testing framework](https://playwright.dev/)
-- [K6 load testing framework](https://k6.io/)
 - [Cypress end-to-end testing framework](https://www.cypress.io/)
-- [Selenium browser automation framework](https://www.selenium.dev/)
+- [Faker.js library for test data generation](https://fakerjs.dev/)
 - [Gatling load testing framework](https://gatling.io/)
+- [Jest JavaScript testing framework](https://jestjs.io/)
+- [JUnit testing framework for Java](https://junit.org/)
+- [K6 load testing framework](https://k6.io/)
+- [Playwright end-to-end testing framework](https://playwright.dev/)
+- [Selenium browser automation framework](https://www.selenium.dev/)
 
 ### Testing Blog Posts
 - [Synthetic data generation](https://diego-pacheco.blogspot.com/2021/02/synthetic-data-generation-and-java-faker.html)

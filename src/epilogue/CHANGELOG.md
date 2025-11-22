@@ -4,9 +4,24 @@ All notable changes to "The Art of Sense: A Philosophy of Modern AI" book projec
 
 ## November 21, 2025
 
-### Content Updates in Progress
-- Expanding Fooled By AI section with Clever Hans Effect, outsourcing gym workout analogy, and solutions vs wrappers discussion
-- Started AI and Juniors chapter (work in progress)
+### Book Version 1.0.6 Release
+- Published version 1.0.6 of the book
+
+### Epilogue
+- Added comprehensive AI and Juniors guide (AI_JUNIORS.md)
+- Explored workforce disruption and junior developer trends
+- Discussed talent pool implications and hiring strategies
+- Added proper junior mentorship guidelines
+
+### Chapter 1 - Making Sense of AI
+- Enhanced Fooled By AI section with Clever Hans Effect
+- Added outsourcing gym workout analogy
+- Expanded solutions vs wrappers discussion
+- Updated Marketing and AI section
+- Enhanced Vibe Coding concepts
+
+### Book Version 1.0.5 Release
+- Published version 1.0.5 of the book
 
 ### Book Version 1.0.4 Release
 - Published version 1.0.4 of the book

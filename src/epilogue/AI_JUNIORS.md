@@ -1,17 +1,17 @@
 # AI and Juniors
 
-Seniors engineers know a lot of things, but to quote a fews things:
+Senior engineers know a lot of things, but to quote a few things:
 * The Fundamentals: They know how Data Structures and Algorithms work.
 * Troubleshooting: They know how to debug complex issues.
 * Some Architecture Skills: They know how to design systems that scale.
 * Ownership: They take responsibility for the code they write.
 
 More importantly, they know how to learn new things, and how to adapt to new technologies.
-Juniors in the other hand did not master any of these skills yet, and they are still learning the basics of programming.
+Juniors on the other hand have not mastered any of these skills yet, and they are still learning the basics of programming.
 
-It's silly to think that if Juniors just use AI they will get 2-10x better. Sure might might be able to get things done faster, but do not full your self. Juniors must learn the fundamentals. Now, today there are companies like Netflix, and several others in Silicon Valley that do not hire juniors at all. They think that juniors are not worth the investment. Because there is a huge pool of talent in SV and they pay more so they an be picky.
+It's silly to think that if Juniors just use AI they will get 2-10x better. Sure they might be able to get things done faster, but do not fool yourself. Juniors must learn the fundamentals. Now, today there are companies like Netflix, and several others in Silicon Valley that do not hire juniors at all. They think that juniors are not worth the investment. Because there is a huge pool of talent in SV and they pay more so they can be picky.
 
-Now Let's keep on thing in mind, IF AI creates disruption on the workforce, where no one wants juniors anymore since you can "do 2-10x more with AI"(BTW I don't belive in this - but let's stick to that for sake of argument). seniors will retireve and Juniors will have a hard time joining the workforce, now - would you have good seniors in the future if they are not really learnings skills they are just being "produtive with AI"? Well the time will say but we might have a distrous effect on the talent pool in the future for our industry.
+Now let's keep one thing in mind, IF AI creates disruption in the workforce, where no one wants juniors anymore since you can "do 2-10x more with AI" (BTW I don't believe in this - but let's stick to that for sake of argument). Seniors will retire and Juniors will have a hard time joining the workforce, now - would you have good seniors in the future if they are not really learning skills they are just being "productive with AI"? Well time will tell but we might have a disastrous effect on the talent pool in the future for our industry.
 
 ## What the HECK is a company? (Execution and Learning)
 
@@ -19,11 +19,11 @@ Have you ever thought about what a company really is?
 
 <img src="../images/epilogue-whats-is-a-company-gemini3-pro-banana.png" width="400" >
 
-You migth say the company is his products brand or services. But a company it's made of people, the hability to organize and scale people to execute on a vision is what makes a company great. Such hability is called Execution. Execution matters a lot. But there is another thing that matter a lot too, the capacity of `Actually Learning`, new process, new ways of working, new technologies, new markets, new ways of organization, the capacity to learn is what makes a company adapt and survive on the long run.So in other words, the most effective companies are the ones who can learn and re-invent themselves while executing on their vision. Companies now need to learn how to `Deal with AI`, but they also need to learn how to play the long term game, not the next 5 years but the nest 50 years.
+You might say the company is its products brand or services. But a company is made of people, the ability to organize and scale people to execute on a vision is what makes a company great. Such ability is called Execution. Execution matters a lot. But there is another thing that matters a lot too, the capacity of `Actually Learning`, new process, new ways of working, new technologies, new markets, new ways of organization, the capacity to learn is what makes a company adapt and survive in the long run. So in other words, the most effective companies are the ones who can learn and re-invent themselves while executing on their vision. Companies now need to learn how to `Deal with AI`, but they also need to learn how to play the long term game, not the next 5 years but the next 50 years.
 
-As the future of work changes, due AI and other forms of disruption, companies must adapt and change as well. But companies need to be careful, just because one strategy worked on the past, does not means it will worrk on the future.
+As the future of work changes, due to AI and other forms of disruption, companies must adapt and change as well. But companies need to be careful, just because one strategy worked in the past, does not mean it will work in the future.
 
-[Gergely Orosz, has this amazing interview with Netflix CTO](https://www.youtube.com/watch?v=sAp9RjO79cU&t=1s), where they explain that historically Netflix never hired juniors, just seniors, the famous "Talent Density" strategy. Now Netfflix is hiring grad studants (Juniors).
+[Gergely Orosz, has this amazing interview with Netflix CTO](https://www.youtube.com/watch?v=sAp9RjO79cU&t=1s), where they explain that historically Netflix never hired juniors, just seniors, the famous "Talent Density" strategy. Now Netflix is hiring grad students (Juniors).
 
 <div style="position: relative; width: 100%; padding-bottom: 56.25%">
 <iframe src="https://www.youtube.com/embed/sAp9RjO79cU?start=1"
@@ -35,9 +35,9 @@ As the future of work changes, due AI and other forms of disruption, companies m
 
 ## Experts Are Safe (as always)
 
-Experts, already learned they lessons, please dont take this wrong, off course they can learn more and they still need to learn, continnous learning cannot ever stop. But experts are Safe, experts are the ones (IF they expend the time to properly learn AI) that will actually take more advantage of AI, because they know the fundamentals, they know how to learn new things, they know how to adapt. Experts will be the ones that will be able to leverage AI the most, and they will be the most productive ones.
+Experts already learned their lessons, please don't take this wrong, of course they can learn more and they still need to learn, continuous learning cannot ever stop. But experts are safe, experts are the ones (IF they spend the time to properly learn AI) that will actually take more advantage of AI, because they know the fundamentals, they know how to learn new things, they know how to adapt. Experts will be the ones that will be able to leverage AI the most, and they will be the most productive ones.
 
-Expecrts know what to Ask for the AI. Criativity and Vision matter a lot in AI coding agent times :-)
+Experts know what to ask of the AI. Creativity and Vision matter a lot in AI coding agent times :-)
 
 ## AI Disruption the FORCE (junior -> Senior)
 
@@ -87,13 +87,13 @@ Pearhaps we can learn from the [NBA](https://www.nbadraft.net/) (High performant
 
 The problem is, managers do not know how to deal with Juniors. Actually let me be very clear and honest, most of managers suck when the matter is dealing with juniors in engineering.
 
-Because for managers is much much much easier just have seniors. If you are full of senior engineers around you, how much do you actually need to manage? Are you a good manager if you dont need to do anything? Maybe let's think differenlty how we grow better managers if they are dealing with "elite engineers" all the time?
+Because for managers it is much much much easier to just have seniors. If you are full of senior engineers around you, how much do you actually need to manage? Are you a good manager if you don't need to do anything? Maybe let's think differently about how we grow better managers if they are dealing with "elite engineers" all the time?
 
-In order to have a good doctor we need people that are sick, in order to have good fire figthers you need fire, in order to have good coookers, they need to cook and have peopel to feed, in order to have good managers you need juniors to manage.
+In order to have a good doctor we need people that are sick, in order to have good fire fighters you need fire, in order to have good cooks, they need to cook and have people to feed, in order to have good managers you need juniors to manage.
 
 ## How to not manage juniors
 
-Lack I said, most managers suck when the matter is dealing with juniors in engineering.
+Like I said, most managers suck when the matter is dealing with juniors in engineering.
 
 <img src="../images/epilogue-ai-juniors.png" width="400" >
 
@@ -117,16 +117,16 @@ The sad thing is that is super, super, super common in the industry.
 First of all, managers must understand that Juniors are still learning the fundamentals, and they need proper mentorship and guidance. There are several things that must happen.
 
 Here is some guidance:
-* Make sure Juniors have a strong foundation in programming basics. Make than teck courses, read books, talk to senior people to learn.
-* Make sure sure the task you are giving to the junior is appropriate for their skill level.
+* Make sure Juniors have a strong foundation in programming basics. Make them take courses, read books, talk to senior people to learn.
+* Make sure the task you are giving to the junior is appropriate for their skill level.
 * Provide Juniors with proper mentorship and guidance. Assign a senior engineer to mentor the junior.
-* Avoid having juniors work alone, make sure they have support from the team(must be a senior supporting a junior).
+* Avoid having juniors work alone, make sure they have support from the team (must be a senior supporting a junior).
 * Give AI to juniors, but make sure they also spend time without AI, learning the fundamentals.
-* Something needs to give: (A) You either write down perfect spect(which does not exist) and give a lot of clarity to them or (B) You give your time or a senior engineer time to mentor them properly.
-* IF Juniors are not ready, avoid adding them in some meetings (make the seniors do the comunications).
-* Avoid juniors have ownership of critical tasks like: production deployments, system architecture desings, spikes, migrations, data mgirations, complex and enntagled messed situations, critical bugs...
-* Make sure all means are "Master Class" where you always tech juniors something, make sure they are always learning, make them ask questions and take notes.
+* Something needs to give: (A) You either write down perfect spec (which does not exist) and give a lot of clarity to them or (B) You give your time or a senior engineer time to mentor them properly.
+* IF Juniors are not ready, avoid adding them in some meetings (make the seniors do the communications).
+* Avoid juniors having ownership of critical tasks like: production deployments, system architecture designs, spikes, migrations, data migrations, complex and entangled messed situations, critical bugs...
+* Make sure all meetings are "Master Class" where you always teach juniors something, make sure they are always learning, make them ask questions and take notes.
 
 Juniors don't know this but they need [clear expectations](https://diego-pacheco.blogspot.com/2024/11/expectations.html). Which is more than just "Do task XXX-1234" for me in JIRA. It's IF I would do this or a senior do this it would take `4 days`, now the junior has a point of reference and MUST add just data in a EXCEL FILE so it can track his progress and get better. That's is [attention](https://diego-pacheco.blogspot.com/2025/10/its-all-about-attention.html).
 
-Senior engineers and managers need to undersdtand that this is part of they job, they need to do the "baby sitting". AI alone will not fix this problem, will make it worse if anything. Juniors need proper mentorship and guidance to grow into senior engineers.
+Senior engineers and managers need to understand that this is part of their job, they need to do the "baby sitting". AI alone will not fix this problem, it will make it worse if anything. Juniors need proper mentorship and guidance to grow into senior engineers.
