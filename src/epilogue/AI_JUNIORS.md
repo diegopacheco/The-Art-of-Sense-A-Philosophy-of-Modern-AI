@@ -25,6 +25,14 @@ As the future of work changes, due AI and other forms of disruption, companies m
 
 [Gergely Orosz, has this amazing interview with Netflix CTO](https://www.youtube.com/watch?v=sAp9RjO79cU&t=1s), where they explain that historically Netflix never hired juniors, just seniors, the famous "Talent Density" strategy. Now Netfflix is hiring grad studants (Juniors).
 
+<div style="position: relative; width: 100%; padding-bottom: 56.25%">
+<iframe src="https://www.youtube.com/embed/sAp9RjO79cU?start=1"
+    title="Netflix’s Engineering Culture" frameborder="0" allowfullscreen
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    style="position: absolute; width: 100%; height: 100%;">
+</iframe>
+</div>
+
 ## Experts Are Safe (as always)
 
 Experts, already learned they lessons, please dont take this wrong, off course they can learn more and they still need to learn, continnous learning cannot ever stop. But experts are Safe, experts are the ones (IF they expend the time to properly learn AI) that will actually take more advantage of AI, because they know the fundamentals, they know how to learn new things, they know how to adapt. Experts will be the ones that will be able to leverage AI the most, and they will be the most productive ones.
