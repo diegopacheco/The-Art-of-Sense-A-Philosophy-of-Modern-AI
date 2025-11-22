@@ -35,7 +35,9 @@ Expecrts know what to Ask for the AI. Criativity and Vision matter a lot in AI c
 
 AI is disruptive, companies are making [mistakes](https://qz.com/entry-level-hiring-slowing-ai-report) in regards of juniors.
 
-    "Looking at data between 2019 and 2024 for the biggest public tech firms and maturing venture-capital funded startups, venture capital firm SignalFire found in a study there was a 50% decline in new role starts by people with less than one year of post-graduate work experience: “Hiring is intrinsically volatile year on year, but 50% is an accurate representation of the hiring delta for this experience category over the considered timespan,” said Asher Bantock, head of research at SignalFire." 
+```
+"Looking at data between 2019 and 2024 for the biggest public tech firms and maturing venture-capital funded startups, venture capital firm SignalFire found in a study there was a 50% decline in new role starts by people with less than one year of post-graduate work experience: “Hiring is intrinsically volatile year on year, but 50% is an accurate representation of the hiring delta for this experience category over the considered timespan,” said Asher Bantock, head of research at SignalFire."
+```
     
 Source [https://www.cnbc.com/2025/09/07/ai-entry-level-jobs-hiring-careers.html](https://www.cnbc.com/2025/09/07/ai-entry-level-jobs-hiring-careers.html)
 
@@ -48,7 +50,9 @@ Data show some shocking trends:
 
 <img src="../images/epilogue-seniors-vs-juniors.png" width="400" >
 
-Seyed Mahdi Hosseini Maasoum and Guy Lichtinger from Harvard wrote the paper: "Generative AI as Seniority-Biased Technological Change: Evidence from U.S. Résumé and Job Posting Data". The data is shocking, "sounds like no one wants juniors anymore". Junior roles are down 23%, Senior roles are up 14%. U.S. Firms (Production Use): The U.S. [Census](https://www.census.gov/library/working-papers/2024/adrm/CES-WP-24-16.html) Bureau reported that this figure rose steadily, reaching 6.6% by late 2024.
+Seyed Mahdi Hosseini Maasoum and Guy Lichtinger from Harvard wrote the paper: 
+
+Generative AI as Seniority-Biased Technological Change: Evidence from U.S. Resumé and Job Posting Data". The data is shocking, "sounds like no one wants juniors anymore". Junior roles are down 23%, Senior roles are up 14%. U.S. Firms (Production Use): The U.S. [Census](https://www.census.gov/library/working-papers/2024/adrm/CES-WP-24-16.html) Bureau reported that this figure rose steadily, reaching 6.6% by late 2024.
 
 ## Companies must hire juniors
 
