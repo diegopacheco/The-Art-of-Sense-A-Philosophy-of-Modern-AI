@@ -275,7 +275,6 @@
 <li><a href="https://github.com/hesreallyhim/awesome-claude-code">Awesome Claude Code</a></li>
 <li><a href="https://github.com/punkpeye/awesome-mcp-servers">Awesome MCP Servers</a></li>
 <li><a href="https://mcpservers.org/">Awesome MCPs</a></li>
-<li><a href="https://github.com/upstash/context7">Context7 MCP</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Language_Server_Protocol">Language Server Protocol - Wikipedia</a></li>
 <li><a href="https://materializedview.io/p/mcp-server-could-have-been-json-file">MCP Could Have Been JSON File</a></li>
 <li><a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP Documentation</a></li>
@@ -296,12 +295,12 @@
 <li><a href="https://forgecode.dev/blog/prevent-attacks-on-mcp/">Prevent Attacks on MCP - forgecode.dev</a></li>
 <li><a href="https://astrix.security/learn/blog/state-of-mcp-server-security-2025/">State of MCP Server Security 2025 - Astrix Security</a></li>
 <li><a href="https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs">Treating MCP Servers Like Bombs - DevInterrupted</a></li>
-<li><a href="https://github.com/diegopacheco/ai-playground/tree/main/agents/claude-code/claude-skill-fun">JSON Formatter Claude Skill - Diego Pacheco</a></li>
 </ul>
 <h3 id="context-and-documentation"><a class="header" href="#context-and-documentation">Context and Documentation</a></h3>
 <ul>
 <li><a href="https://docs.claude.com/llms-full.txt">Claude llms-full.txt</a></li>
 <li><a href="https://docs.claude.com/en/docs/build-with-claude/context-windows">Context Windows - Claude Docs</a></li>
+<li><a href="https://github.com/upstash/context7">Context7 MCP</a></li>
 <li><a href="https://context7.com/">Context7 Service</a></li>
 <li><a href="https://langchain-ai.github.io/langgraph/llms-txt-overview/">LangGraph llms.txt</a></li>
 <li><a href="https://llmstxt.org/">llms.txt Specification</a></li>
@@ -400,29 +399,31 @@
 <li><a href="https://github.com/anthropics/skills">Claude Skills Repository</a></li>
 <li><a href="https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands">Custom Commands Tutorial - GitHub</a></li>
 <li><a href="https://github.com/diegopacheco/ai-playground/tree/main/agents/claude-code/claude-skill-fun">JSON Formatter Claude Skill - Diego Pacheco</a></li>
+<li><a href="https://x.com/diego_pacheco/status/1988897341584093220">SDD Tweet - Diego Pacheco</a></li>
+<li><a href="https://x.com/diego_pacheco/status/1989959020032266435">Claude Skills Tweet - Diego Pacheco</a></li>
 </ul>
 <h3 id="development-tools"><a class="header" href="#development-tools">Development Tools</a></h3>
 <ul>
 <li><a href="https://codingdojo.org/">Coding Dojo</a></li>
 <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">GitHub Pull Requests Documentation</a></li>
-<li><a href="https://x.com/diego_pacheco/status/1988897341584093220">SDD Tweet - Diego Pacheco</a></li>
 <li><a href="https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html">Spec Driven Development - Martin Fowler</a></li>
 <li><a href="https://marmelab.com/blog/2025/11/12/spec-driven-development-waterfall-strikes-back.html">Spec-Driven Development: The Waterfall Strikes Back - Marmelab</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Test-driven_development">Test-driven Development - Wikipedia</a></li>
 <li><a href="https://diego-pacheco.blogspot.com/2024/07/testing-queues-and-batch-jobs.html">Testing Queues and Batch Jobs - Diego Pacheco</a></li>
 <li><a href="https://code.visualstudio.com/">VSCode</a></li>
+<li><a href="https://x.com/diego_pacheco/status/1903625842456191254">Vibe Coding Effects Tweet - Diego Pacheco</a></li>
 </ul>
 <h2 id="chapter-6---testing-with-ai"><a class="header" href="#chapter-6---testing-with-ai">Chapter 6 - Testing with AI</a></h2>
 <h3 id="testing-frameworks-and-tools"><a class="header" href="#testing-frameworks-and-tools">Testing Frameworks and Tools</a></h3>
 <ul>
-<li><a href="https://fakerjs.dev/">Faker.js library for test data generation</a></li>
-<li><a href="https://junit.org/">JUnit testing framework for Java</a></li>
-<li><a href="https://jestjs.io/">Jest JavaScript testing framework</a></li>
-<li><a href="https://playwright.dev/">Playwright end-to-end testing framework</a></li>
-<li><a href="https://k6.io/">K6 load testing framework</a></li>
 <li><a href="https://www.cypress.io/">Cypress end-to-end testing framework</a></li>
-<li><a href="https://www.selenium.dev/">Selenium browser automation framework</a></li>
+<li><a href="https://fakerjs.dev/">Faker.js library for test data generation</a></li>
 <li><a href="https://gatling.io/">Gatling load testing framework</a></li>
+<li><a href="https://jestjs.io/">Jest JavaScript testing framework</a></li>
+<li><a href="https://junit.org/">JUnit testing framework for Java</a></li>
+<li><a href="https://k6.io/">K6 load testing framework</a></li>
+<li><a href="https://playwright.dev/">Playwright end-to-end testing framework</a></li>
+<li><a href="https://www.selenium.dev/">Selenium browser automation framework</a></li>
 </ul>
 <h3 id="testing-blog-posts"><a class="header" href="#testing-blog-posts">Testing Blog Posts</a></h3>
 <ul>
@@ -558,22 +559,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
