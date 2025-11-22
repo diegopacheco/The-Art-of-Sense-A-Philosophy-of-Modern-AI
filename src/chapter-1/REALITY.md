@@ -14,7 +14,7 @@ AI has the potential to disrupt like the internet, the mobile phone, and electri
 
 ## Scams
 
-<img src="../images/01-prankster-car-1-usd.png" width="304"/>
+<img src="../images/01-prankster-car-1-usd.png" width="600"/>
 
 Source: [https://x.com/ChrisJBakke/status/1736533308849443121](https://x.com/ChrisJBakke/status/1736533308849443121)
 
