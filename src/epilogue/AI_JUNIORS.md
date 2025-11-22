@@ -119,4 +119,6 @@ Here is some guidance:
 * Avoid juniors have ownership of critical tasks like: production deployments, system architecture desings, spikes, migrations, data mgirations, complex and enntagled messed situations, critical bugs...
 * Make sure all means are "Master Class" where you always tech juniors something, make sure they are always learning, make them ask questions and take notes.
 
+Juniors don't know this but they need [clear expectations](https://diego-pacheco.blogspot.com/2024/11/expectations.html). Which is more than just "Do task XXX-1234" for me in JIRA. It's IF I would do this or a senior do this it would take `4 days`, now the junior has a point of reference and MUST add just data in a EXCEL FILE so it can track his progress and get better. That's is [attention](https://diego-pacheco.blogspot.com/2025/10/its-all-about-attention.html).
+
 Senior engineers and managers need to undersdtand that this is part of they job, they need to do the "baby sitting". AI alone will not fix this problem, will make it worse if anything. Juniors need proper mentorship and guidance to grow into senior engineers.
