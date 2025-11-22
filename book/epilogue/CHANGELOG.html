@@ -183,6 +183,11 @@
                         <h1 id="changelog"><a class="header" href="#changelog">Changelog</a></h1>
 <p>All notable changes to "The Art of Sense: A Philosophy of Modern AI" book project are documented in this file.</p>
 <h2 id="november-21-2025"><a class="header" href="#november-21-2025">November 21, 2025</a></h2>
+<h3 id="content-updates-in-progress"><a class="header" href="#content-updates-in-progress">Content Updates in Progress</a></h3>
+<ul>
+<li>Expanding Fooled By AI section with Clever Hans Effect, outsourcing gym workout analogy, and solutions vs wrappers discussion</li>
+<li>Started AI and Juniors chapter (work in progress)</li>
+</ul>
 <h3 id="book-version-104-release"><a class="header" href="#book-version-104-release">Book Version 1.0.4 Release</a></h3>
 <ul>
 <li>Published version 1.0.4 of the book</li>
@@ -195,7 +200,7 @@
 <h3 id="chapter-5---claude-code"><a class="header" href="#chapter-5---claude-code">Chapter 5 - Claude Code</a></h3>
 <ul>
 <li>Added comprehensive Claude Skills guide (CLAUDE_SKILLS.md)</li>
-<li>Enhanced skills vs MCP comparison and use cases</li>
+<li>Enhanced skills versus MCP comparison and use cases</li>
 </ul>
 <h3 id="chapter-8---non-obvious-use-cases"><a class="header" href="#chapter-8---non-obvious-use-cases">Chapter 8 - Non-Obvious Use Cases</a></h3>
 <ul>
@@ -453,22 +458,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
