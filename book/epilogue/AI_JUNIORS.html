@@ -203,8 +203,7 @@ Juniors in the other hand did not master any of these skills yet, and they are s
 <p>Expecrts know what to Ask for the AI. Criativity and Vision matter a lot in AI coding agent times :-)</p>
 <h2 id="ai-disruption-the-force-junior---senior"><a class="header" href="#ai-disruption-the-force-junior---senior">AI Disruption the FORCE (junior -&gt; Senior)</a></h2>
 <p>AI is disruptive, companies are making <a href="https://qz.com/entry-level-hiring-slowing-ai-report">mistakes</a> in regards of juniors.</p>
-<pre><code>"Looking at data between 2019 and 2024 for the biggest public tech firms and &lt;br/&gt;maturing venture-capital funded startups, venture capital firm SignalFire found in a study there was a 50% decline in new role starts by people with less than one year of post-graduate work experience: “Hiring is intrinsically volatile year on year, but 50% is an accurate representation of the hiring delta for this experience category over the considered timespan,” said Asher Bantock, head of research at SignalFire."
-</code></pre>
+<p>"Looking at data between 2019 and 2024 for the biggest public tech firms and maturing venture-capital funded startups, venture capital firm SignalFire found in a study there was a 50% decline in new role starts by people with less than one year of post-graduate work experience: "Hiring is intrinsically volatile year on year, but 50% is an accurate representation of the hiring delta for this experience category over the considered timespan," said Asher Bantock, head of research at SignalFire."</p>
 <p>Source <a href="https://www.cnbc.com/2025/09/07/ai-entry-level-jobs-hiring-careers.html">https://www.cnbc.com/2025/09/07/ai-entry-level-jobs-hiring-careers.html</a></p>
 <p>Here is some more Evidence, there is plenty:</p>
 <ul>
@@ -214,8 +213,9 @@ Juniors in the other hand did not master any of these skills yet, and they are s
 </ul>
 <p>Data show some shocking trends:</p>
 <img src="../images/epilogue-seniors-vs-juniors.png" width="400" >
-<p>Seyed Mahdi Hosseini Maasoum and Guy Lichtinger from Harvard wrote the paper:</p>
-<p>Generative AI as Seniority-Biased Technological Change: Evidence from U.S. Resumé and Job Posting Data". The data is shocking, "sounds like no one wants juniors anymore". Junior roles are down 23%, Senior roles are up 14%. U.S. Firms (Production Use): The U.S. <a href="https://www.census.gov/library/working-papers/2024/adrm/CES-WP-24-16.html">Census</a> Bureau reported that this figure rose steadily, reaching 6.6% by late 2024.</p>
+<p>Seyed Mahdi Hosseini Maasoum and Guy Lichtinger from Harvard wrote the paper: "Generative AI as Seniority-Biased Technological Change: Evidence from U.S. Resumé and Job Posting Data".</p>
+<p>The data is shocking, "sounds like no one wants juniors anymore". Junior roles are down 23%, Senior roles are up 14%.</p>
+<p>U.S. Firms (Production Use): The U.S. <a href="https://www.census.gov/library/working-papers/2024/adrm/CES-WP-24-16.html">Census</a> Bureau reported that this figure rose steadily, reaching 6.6% by late 2024.</p>
 <h2 id="companies-must-hire-juniors"><a class="header" href="#companies-must-hire-juniors">Companies must hire juniors</a></h2>
 <p>Smart companies are hiring juniors, because they understand the long term game. Juniors are the future seniors, and if you don't invest in juniors today, you will have a hard time finding seniors in the future.</p>
 <img src="../images/epilogue-dhh-juniors.png" width="400" >
@@ -294,6 +294,22 @@ Juniors in the other hand did not master any of these skills yet, and they are s
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
