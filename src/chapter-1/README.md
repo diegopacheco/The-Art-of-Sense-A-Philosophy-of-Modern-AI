@@ -9,8 +9,8 @@ We also need to understand how AI is changing how we do engineering. What are th
 <img src="../images/01-AI-all-true.png" width="400"/>
 
 Imagine that AI can be classified in 3 buckets:
-1. Revolution of the Machines(Robots are comming for us) -> Distopian future where AI distupt many industries.
+1. Revolution of the Machines(Robots are coming for us) -> Dystopian future where AI disrupts many industries.
 2. We got dumber -> AI makes us less capable as humans.
 3. AI builds a better future -> AI helps us be more productive and unlock new possibilities.
 
-What If all 3 are true! I think all three are true at the same time. AI has scams, lies, nasty things. AI make mistakes, but AI also make us less analytical, make us lazy. Also AI make us more productive an can unlock new levels of software and solutions we did not have before. I know this might sound dificult but yes, all 3 is true. BTW Recommend whatch all that movies.
+What If all 3 are true! I think all three are true at the same time. AI has scams, lies, nasty things. AI makes mistakes, but AI also makes us less analytical, makes us lazy. Also AI makes us more productive and can unlock new levels of software and solutions we did not have before. I know this might sound difficult but yes, all 3 are true. BTW, I recommend watching all those movies.

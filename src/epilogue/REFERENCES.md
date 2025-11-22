@@ -31,7 +31,7 @@
 ### AI Scams and Failures
 - [The Rabbit Is A Scam - YouTube](https://www.youtube.com/watch?v=d7DtiMzMBdU)
 - [Sora Demo Controversy - Futurism](https://futurism.com/the-byte/openai-sora-demo)
-- [GM Dealership Chatbot Fail - Upworthy](https://www.upworthy.com/prankster-tricks-a-gm-dealership-chatbot-to-sell-him-a-76000-chevy-tahoe-for-ex1)
+- [GM Dealership Chatbot Fail - Upworthy](https://www.upworthy.com/prankster-tricks-a-gm-dealership-chatbot-to-sell-him-a-76000-chevy-tahoe-for-1)
 - [Taco Bell AI Fail - YouTube Short](https://www.youtube.com/shorts/IXMRiU3ogrA)
 - [ChatGPT Lawyer Fine - CalMatters](https://calmatters.org/economy/technology/2025/09/chatgpt-lawyer-fine-ai-regulation/)
 - [Amazon AI Cashier-less Shops - The Guardian](https://www.theguardian.com/commentisfree/2024/apr/10/amazon-ai-cashier-less-shops-humans-technology)
@@ -58,6 +58,7 @@
 - [Richard Sutton: LLMs are a Dead End - YouTube](https://www.youtube.com/watch?v=21EYKqUsPfg)
 - [AI First and Bus Factor of 0 - Mindflash](https://www.mindflash.org/coding/ai/ai-and-the-bus-factor-of-0-1608)
 - [Thinking, Fast and Slow - Daniel Kahneman](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555)
+- [Gartner Hype Cycle - Wikipedia](https://en.wikipedia.org/wiki/Gartner_hype_cycle)
 
 ### Research Papers
 - [Facebook Paper on AI Test Generation - arXiv](https://arxiv.org/pdf/2402.09171)
@@ -76,6 +77,8 @@
 - [Codex CLI](https://github.com/openai/codex)
 - [OpenCode](https://github.com/sst/opencode)
 - [Claude Skills](https://www.anthropic.com/news/skills)
+- [Claude Skills Blog - What are skills?](https://www.claude.com/blog/skills-explained)
+- [Awesome Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills/)
 
 ### MCP and Agent Architecture
 - [Agent to Agent Protocol](https://a2a-protocol.com/)
@@ -102,6 +105,7 @@
 - [Prevent Attacks on MCP - forgecode.dev](https://forgecode.dev/blog/prevent-attacks-on-mcp/)
 - [State of MCP Server Security 2025 - Astrix Security](https://astrix.security/learn/blog/state-of-mcp-server-security-2025/)
 - [Treating MCP Servers Like Bombs - DevInterrupted](https://devinterrupted.substack.com/p/treating-mcp-servers-like-bombs)
+- [JSON Formatter Claude Skill - Diego Pacheco](https://github.com/diegopacheco/ai-playground/tree/main/agents/claude-code/claude-skill-fun)
 
 ### Context and Documentation
 - [Claude llms-full.txt](https://docs.claude.com/llms-full.txt)

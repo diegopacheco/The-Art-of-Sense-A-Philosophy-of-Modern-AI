@@ -83,6 +83,9 @@ Application area for reinforcement learning in self-driving vehicles.
 **Automated Testing**
 Practice of using software to test software automatically, replacing manual testing.
 
+**Awesome Claude Skills**
+Community repository for sharing and discovering Claude skills developed for various use cases.
+
 **AWS Bedrock**
 AWS service for accessing foundation models.
 
@@ -367,9 +370,15 @@ Agent pattern for removing unwanted data or responses before or after LLM proces
 Process of training a pre-trained model on specific domain data to adapt it to particular use cases without full retraining.
 
 **FTL (Faster Than Light)**
-Metaphor describing the illusion that increasing code generation speed alone leads to problems, similar to trying to travel faster than light without upgrading other systems.
+Metaphor describing the illusion that increasing code generation speed alone without improving other aspects of software development leads to problems, similar to trying to travel faster than light without upgrading other systems. Highlights need to improve driving skills, road conditions, traffic rules alongside speed improvements.
 
 ## G
+
+**Gemini 3 Banana Pro**
+Google's image generation model used for creating illustrations.
+
+**Guardrails (Production AI)**
+Safety mechanisms to prevent undesired AI behavior in production environments including time limits, cost limits, type restrictions, and iteration caps.
 
 **GANs (Generative Adversarial Networks)**
 Neural network architecture used in image generation models like DALL-E.
@@ -446,7 +455,13 @@ XAI's LLM model with 2,000,000 token context window.
 **Guardrails**
 Safety mechanisms to prevent undesired AI behavior and ensure safe production usage.
 
+**Gym Workout Analogy**
+Metaphor explaining AI dependency where outsourcing work to AI is like paying someone to go to the gym for you - the contractor gets strong but you do not.
+
 ## H
+
+**Hyper Drive**
+Star Wars reference used to explain FTL metaphor about needing all system components upgraded, not just speed.
 
 **Happy Path**
 Testing scenario covering the expected, successful flow through code without errors or edge cases.
@@ -791,6 +806,9 @@ Collection of pre-written prompts demonstrating AI capabilities and best practic
 **Prompts**
 Instructions or queries given to AI systems to generate desired outputs.
 
+**Production AI Safety**
+Practices for ensuring AI systems operate safely in production including guardrails, sanitization, validation, and observability.
+
 **Proof of Concepts (POCs)**
 Small-scale implementations to test feasibility and validate ideas before full-scale development.
 
@@ -832,11 +850,17 @@ Traditional ML task of predicting continuous numerical values based on input fea
 **Reinforcement Learning (RL)**
 Machine learning paradigm where agents learn by interacting with environments and receiving rewards or penalties.
 
+**Reasoning Models**
+Marketing term for LLMs suggesting they can reason, which is misleading as LLMs cannot truly reason or think.
+
 **Respect in Software Engineering**
 Professional principle that code should be reviewed and understood by creators before sharing/deploying.
 
 **Responsible AI Usage**
 Using AI as input/research tool while maintaining human judgment, code review, and verification responsibilities.
+
+**Retrospectives (AI Context)**
+Agile practice of reflecting on past work to drive lessons learned and improvements, essential when using AI to ensure sustainable productivity gains rather than fabricated savings.
 
 **Retrieval Phase**
 Second phase in RAG pattern where queries are converted to embeddings to search vector database for relevant documents.
@@ -845,7 +869,7 @@ Second phase in RAG pattern where queries are converted to embeddings to search 
 AI capability to assume different personas (architect, security expert, marketing specialist, etc.) to provide varied perspectives.
 
 **Reward**
-In reinforcement learning, a scalar feedback signal that indicates how we'll the agent is doing.
+In reinforcement learning, a scalar feedback signal that indicates how well the agent is doing.
 
 **Robotics**
 Application area for reinforcement learning.
@@ -891,6 +915,9 @@ The meaning captured by embeddings that allows for effective text comparisons.
 **Semi-Supervised Learning**
 Machine learning paradigm combining labeled and unlabeled data for training.
 
+**Skill (Claude Skills)**
+Code-based capability for Claude Code where a markdown file contains examples and a script contains implementation recipe, allowing Claude to learn tasks through programming rather than context window data dumping.
+
 **Sentiment Analysis**
 Analyzing emotional tone and intent in text, applicable to emails, customer feedback, and communication review.
 
@@ -912,8 +939,11 @@ Security attack where malicious SQL code is inserted through user inputs, preven
 **State Management**
 Practices for handling and coordinating application state across components in software systems.
 
+**Star Wars**
+Science fiction franchise referenced for hyper drive and FTL metaphors about system improvement.
+
 **Strategic Work**
-High-level planning, architecture, and decision-making work requiring deeper thinking.
+High-level planning, architecture, and decision-making work requiring deeper thinking, contrasted with tactical work that may result from over-reliance on System 1 thinking with AI.
 
 **Stubs**
 Test doubles that provide predefined responses to method calls during testing.
@@ -1086,8 +1116,11 @@ Data used to tune model parameters during training.
 
 ## V
 
+**Validation (Production AI)**
+Practice of implementing validation checks to ensure AI-generated code meets quality and security standards before deployment.
+
 **VALUE Function**
-In reinforcement learning, function estimating how beneficial it's for an agent to be in a given state.
+In reinforcement learning, function estimating how beneficial it is for an agent to be in a given state.
 
 **Vector Databases**
 Specialized databases storing and querying embeddings efficiently, essential infrastructure for RAG systems. Examples include Pinecone, Weaviate, Milvus, Chroma, and Postgres pgvector.
@@ -1133,10 +1166,18 @@ Vector database for storing and querying embeddings.
 **Whisper**
 OpenAI's automatic speech recognition system that transcribes spoken language into text.
 
+**Wrappers**
+Code around other code that adds little value, contrasted with genuine solutions, often seen with AI startups building superficial layers over OpenAI or Anthropic APIs.
+
 ## X
 
 **XAI**
 Company that provides Grok LLM models.
+
+## Y
+
+**Yann LeCun**
+AI researcher and critic of LLM hype, referenced in marketing discussions about AI limitations.
 
 ## Z
 

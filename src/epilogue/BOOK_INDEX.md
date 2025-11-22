@@ -44,6 +44,7 @@
 - **Audible Response Unit** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
 - **Attack Vector** - [MCP Security](../chapter-4/MCP_SEC.md)
 - **Architect Persona** - [Role Playing](../chapter-9/ROLE_PLAYING.md)
+- **Awesome Claude Skills** - [Claude Skills](../chapter-5/CLAUDE_SKILLS.md)
 - **AssertJ** - [Chapter 6](../chapter-6/README.md)
 - **Attention is All You Need** - [Transformers](../chapter-3/TRANSFORMERS.md)
 - **Attention Mechanisms** - [Glossary](GLOSSARY.md), [Transformers](../chapter-3/TRANSFORMERS.md)
@@ -185,8 +186,11 @@
 - **Extended Reasoning** - [Ultrathink](../chapter-5/ULTRATHINK.md)
 
 ## F
+- **Fabricated Productivity** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
+- **Fabricated Savings** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
 - **faker.js** - [Data Generation](../chapter-6/DATA_GEN.md)
 - **Feasibility Study** - [POCs](../chapter-9/POCS.md)
+- **FTL Debunking** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
 - **Feature Extraction** - [Dimensionality Reduction](../chapter-2/DIMENSIONALITY_REDUCTION.md)
 - **Few-Shot Examples** - [Fine Tuning](../chapter-3/FINE_TUNING.md), [Context Window](../chapter-4/CONTEXT_WINDOW.md)
 - **Filtering** - [Agent Patterns](../chapter-4/AGENTS_PATTERNS.md)
@@ -199,6 +203,9 @@
 ## G
 - **Game Playing** - [Reinforcement Learning](../chapter-2/RL.md)
 - **GANs (Generative Adversarial Networks)** - [Image Generation](../chapter-3/IMAGE_GENERATION.md)
+- **Gemini 3 Banana Pro** - [Fooled By AI](../chapter-1/FOOLED_BY_AI.md)
+- **Guardrails Production** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
+- **Gym Workout Analogy** - [Fooled By AI](../chapter-1/FOOLED_BY_AI.md)
 - **Gatling** - [Stress Testing](../chapter-6/STRESS_TESTING.md)
 - **Gateway Drug (Vibe Coding)** - [Vibe Coding](../chapter-1/VIBE_CODING.md)
 - **Gaussian Mixture Models** - [Clustering](../chapter-2/CLUSTERING.md)
@@ -225,6 +232,8 @@
 ## H
 - **Happy Path** - [AI Testing](../chapter-6/AI_TESTING.md)
 - **Headless Mode** - [Claude Bash Orchestration](../chapter-5/CLAUDE_BASH_ORCHESTRATION.md)
+- **Human in the Loop (Call Center Strategy)** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
+- **Hyper Drive** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
 - **Hierarchical Clustering** - [Clustering](../chapter-2/CLUSTERING.md)
 - **High-Dimensional Vectors** - [Vector Databases](../chapter-3/VECTOR_DBS.md)
 - **High School Story** - [AI Input](../chapter-1/AI_INPUT.md)
@@ -335,8 +344,10 @@
 - **Numerical Vectors** - [Embeddings](../chapter-3/EMBEDDINGS.md)
 
 ## O
+- **Observability (AI Context)** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
 - **Onboarding** - [Onboarding](../chapter-8/ONBOARDING.md)
 - **Open AI Codex** - [Coding Agents](../chapter-4/CODING_AGENTS.md)
+- **Outsourcing Gym Workout** - [Fooled By AI](../chapter-1/FOOLED_BY_AI.md)
 - **OpenAI** - [Fooled By AI](../chapter-1/FOOLED_BY_AI.md), [Vector Databases](../chapter-3/VECTOR_DBS.md), [LLM](../chapter-3/LLM.md)
 - **OpenAI API** - [Fooled By AI](../chapter-1/FOOLED_BY_AI.md)
 - **OpenCode** - [Popular Agents](../chapter-4/POPULAR_AGENTS.md)
@@ -392,7 +403,10 @@
 - **QA (Quality Assurance)** - [Manual Testing](../chapter-6/MANUAL_TESTING.md)
 
 ## R
+- **Rappers vs Wrappers** - [Fooled By AI](../chapter-1/FOOLED_BY_AI.md)
 - **RAG (Retrieval-Augmented Generation)** - [RAG](../chapter-3/RAG.md), [Agent Patterns](../chapter-4/AGENTS_PATTERNS.md), [Vector Databases](../chapter-3/VECTOR_DBS.md)
+- **Reasoning Models** - [Marketing](../chapter-1/MKT.md)
+- **Retrospectives** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
 - **RAG Feed Phase** - [RAG](../chapter-3/RAG.md)
 - **RAG Retrieval Phase** - [RAG](../chapter-3/RAG.md)
 - **Rabbit Scam** - [Reality](../chapter-1/REALITY.md)
@@ -421,7 +435,11 @@
 
 ## S
 - **Sales Forecasting** - [Regression](../chapter-2/REGRESSION.md)
+- **Sam Altman** - [Marketing](../chapter-1/MKT.md)
+- **Sanitization** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
 - **Sandbox-Based Agents** - [Coding Agents](../chapter-4/CODING_AGENTS.md)
+- **Skills (Claude)** - [Claude Skills](../chapter-5/CLAUDE_SKILLS.md)
+- **Star Wars** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
 - **Scams** - [Reality](../chapter-1/REALITY.md), [Fooled By AI](../chapter-1/FOOLED_BY_AI.md)
 - **Scaling Issues** - [Stress Testing](../chapter-6/STRESS_TESTING.md)
 - **SDD (Spec Driven Development)** - [Popular Agents](../chapter-4/POPULAR_AGENTS.md)
@@ -506,6 +524,7 @@
 
 ## V
 - **Validation** - [POCs](../chapter-9/POCS.md), [Migrations Phases](../chapter-7/MIGRATIONS_PHASES.md)
+- **Validation (Production AI)** - [AI Beyond Engineering](../chapter-8/AI_BEYOND_ENGINEERING.md)
 - **Value Function** - [Reinforcement Learning](../chapter-2/RL.md)
 - **Vaswani et al** - [Transformers](../chapter-3/TRANSFORMERS.md)
 - **Vector Databases** - [Vector DBs](../chapter-3/VECTOR_DBS.md), [Embeddings](../chapter-3/EMBEDDINGS.md), [RAG](../chapter-3/RAG.md)
@@ -534,6 +553,7 @@
 - **XAI** - [LLM](../chapter-3/LLM.md)
 
 ## Y
+- **Yann LeCun** - [Marketing](../chapter-1/MKT.md)
 - **Yuval Harari** - [Reality](../chapter-1/REALITY.md)
 
 ## Z

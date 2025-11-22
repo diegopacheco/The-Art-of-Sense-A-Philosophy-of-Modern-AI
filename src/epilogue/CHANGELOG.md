@@ -4,6 +4,10 @@ All notable changes to "The Art of Sense: A Philosophy of Modern AI" book projec
 
 ## November 21, 2025
 
+### Content Updates in Progress
+- Expanding Fooled By AI section with Clever Hans Effect, outsourcing gym workout analogy, and solutions vs wrappers discussion
+- Started AI and Juniors chapter (work in progress)
+
 ### Book Version 1.0.4 Release
 - Published version 1.0.4 of the book
 
@@ -13,7 +17,7 @@ All notable changes to "The Art of Sense: A Philosophy of Modern AI" book projec
 
 ### Chapter 5 - Claude Code
 - Added comprehensive Claude Skills guide (CLAUDE_SKILLS.md)
-- Enhanced skills vs MCP comparison and use cases
+- Enhanced skills versus MCP comparison and use cases
 
 ### Chapter 8 - Non-Obvious Use Cases
 - Added comprehensive AI Beyond Engineering guide (AI_BEYOND_ENGINEERING.md)

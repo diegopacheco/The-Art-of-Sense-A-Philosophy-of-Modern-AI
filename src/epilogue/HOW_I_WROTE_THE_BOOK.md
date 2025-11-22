@@ -1,17 +1,17 @@
 # How I wrote this book?
 
 I blog [since](https://diego-pacheco.blogspot.com/2007/03/boas-vindas-primeiro-post.html) `2007`, that is: <b><span id="years-blogging"></span></b>.
-Every page on this book has one or multiple links to blog posts I did on the past.
+Every page in this book has one or multiple links to blog posts I did in the past.
 
-I wrote this book in a very different way compared with my 3 previous books. My 3 previous books we're written in a formal way. This one was written in a very different way. Let's explain the "formal process" and how usually it worked for me:
-* You need to write a proposal, proposal get debated and approved, you write.
-* Formal books have length requirements usually 300 pages.
-* Formal books once approved are waterfall and have several phases.
-* Once you deliver a chapter, there is an english reviewer.
-* After the english reviewer there is the technical reviewer.
-* After that there is copy-writing, index, layouting and finally printing.
-* Traditional process take from 7 to 12 months.
-* I wrote books alone and with other people, more people you have, more coordination you need and longer it takes, more things can go wrong, it's literally no different than a project.
+I wrote this book in a very different way compared with my 3 previous books. My 3 previous books were written in a formal way. This one was written in a very different way. Let's explain the "formal process" and how it usually worked for me:
+* You need to write a proposal, the proposal gets debated and approved, then you write.
+* Formal books have length requirements, usually 300 pages.
+* Formal books, once approved, are waterfall and have several phases.
+* Once you deliver a chapter, there is an English reviewer.
+* After the English reviewer, there is the technical reviewer.
+* After that, there is copy-writing, indexing, layouting, and finally printing.
+* The traditional process takes from 7 to 12 months.
+* I wrote books alone and with other people; the more people you have, the more coordination you need and the longer it takes; more things can go wrong. It's literally no different than a project.
 
 I want a different experience; I did several things differently here. I'm not saying I would never do traditional books again, but for sure it's different; there are some things here I like a lot, for instance:
  * Because I used `mdbook`, the book is written with a tool in Rust which is markdown based.
@@ -27,13 +27,13 @@ I want a different experience; I did several things differently here. I'm not sa
 
 I basically use [VSCode](https://code.visualstudio.com/) to write the book. I used [Github Copilot](https://github.com/features/copilot) and [Claude Code](https://github.com/anthropics/claude-code).
 
-I did not use AI to generate the entire book. The book is mine, all content I wrote but I use AI to generate the following content:
+I did not use AI to generate the entire book. The book is mine; all content I wrote, but I used AI to generate the following content:
 * Index
 * Glossary
 * References
-* Spell check and proofreading my english (fix typos and fix grammar issues never to wrote whole paragraphs).
+* Spell check and proofreading my English (fix typos and fix grammar issues, never to write whole paragraphs).
 
-I used claude code [custom commands](https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands) to do all this tasks, I create a `book-all` custom command that automated all those workflows:
+I used Claude Code [custom commands](https://github.com/diegopacheco/decks/blob/main/tech-notes/claude-code.md#3-create-custom-commands) to do all these tasks. I created a `book-all` custom command that automated all those workflows:
 
 book-all.md
 ```markdown
@@ -72,11 +72,11 @@ book-all.md
 - Make sure you did not delete anything wrongly
 ```
 
-Running this custom command uses on avg ~70k tokens. So I use AI for the boring and repetitive tasks, not to write the book itself. When I run out of tokens on Claude Code, I would fall back to GitHub Copilot. For this book I tried [copilot cli](https://github.com/features/copilot/cli) as a fallback to claude code when I run out of tokens. It mostely worked but created some bugs like made the pages flat, losing the folder structure. So I had to fix that manually.
+Running this custom command uses on avg ~70k tokens. So I use AI for the boring and repetitive tasks, not to write the book itself. When I run out of tokens on Claude Code, I would fall back to GitHub Copilot. For this book, I tried [copilot cli](https://github.com/features/copilot/cli) as a fallback to Claude Code when I ran out of tokens. It mostly worked but created some bugs, like making the pages flat and losing the folder structure. So I had to fix that manually.
 
 ## CI/CD
 
-This book was written with CI/CD in mind from day one. I have a script called `bump-version.sh` that bumps the version of the book in a file at the root called "VERSION". When I released the book, it had `~160 pages` on version `1.0.0`, took me `13 days` to them written. More to come.
+This book was written with CI/CD in mind from day one. I have a script called `bump-version.sh` that bumps the version of the book in a file at the root called "VERSION". When I released the book, it had `~160 pages` on version `1.0.0`; it took me `13 days` to write them. More to come.
 
 This is a killer feature because I can keep releasing new content in a very lean/agile way, directly to you the reader.
 

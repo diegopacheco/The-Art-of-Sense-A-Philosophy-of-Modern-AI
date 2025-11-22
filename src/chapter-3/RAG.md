@@ -2,7 +2,7 @@
 
 Retrieval Augmented Generation (RAG) is a technique that combines the power of large language models (LLMs) with external knowledge sources to improve the quality and relevance of generated content. There are a couple of reasons why RAG is interesting:
 
-1. LLMs are not good at knowing the latest versions: For instance, for an LLM to keep up with the version of software libraries is very hard because they are updated frequently. Using the RAG pattern we can consult a external system our vector database to get the latest information.
+1. LLMs are not good at knowing the latest versions: For instance, for an LLM to keep up with the version of software libraries is very hard because they are updated frequently. Using the RAG pattern we can consult an external system our vector database to get the latest information.
 
 2. Reducing Cost: Every single input and output token from an LLM costs money. By using RAG we can reduce the amount of tokens we send to the LLM by only sending the relevant parts of a document instead of the entire document, or sending the right information right away so the LLM does not need to generate multiple responses to get to the right answer.
 
