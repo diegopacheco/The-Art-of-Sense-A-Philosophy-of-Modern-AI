@@ -384,13 +384,16 @@ Hire, develop, retain, and truly grow talent at scale</p>
 </ul>
 <h3 id="epilogue"><a class="header" href="#epilogue">Epilogue</a></h3>
 <ul>
-<li><a href="./epilogue/README.html">Epilogue</a></li>
+<li><a href="./epilogue/README.html">Epilogue</a>
+<ul>
 <li><a href="./epilogue/AI_JUNIORS.html">AI &amp; Juniors</a></li>
 <li><a href="./epilogue/HOW_I_WROTE_THE_BOOK.html">How I wrote the book</a></li>
 <li><a href="./epilogue/REFERENCES.html">References</a></li>
 <li><a href="./epilogue/CHANGELOG.html">Changelog</a></li>
 <li><a href="./epilogue/GLOSSARY.html">Glossary</a></li>
 <li><a href="./epilogue/BOOK_INDEX.html">Book Index</a></li>
+</ul>
+</li>
 </ul>
 
                     </main>
@@ -416,22 +419,6 @@ Hire, develop, retain, and truly grow talent at scale</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
