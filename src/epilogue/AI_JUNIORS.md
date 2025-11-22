@@ -58,7 +58,7 @@ Seyed Mahdi Hosseini Maasoum and Guy Lichtinger from Harvard wrote the paper: "G
 AWS CEO Says [Replacing Junior Developers with AI Is the Dumbest Thing He's Ever Heard](https://www.finalroundai.com/blog/aws-ceo-matt-garman-says-replacing-junior-developers-with-ai-the-dumbest-thing).
 
 <div style="position: relative; width: 100%; padding-bottom: 56.25%">
-<iframe src="https://www.youtube.com/watch?v=nfocTxMzOP4&t=726s"
+<iframe src="https://www.youtube.com/embeded/nfocTxMzOP4&t=726s"
     title="White Collar Jobs, Hyperscalers, AI Coding, Open vs Closed, Agents, and more! (Matt Garman)" frameborder="0" allowfullscreen
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     style="position: absolute; width: 100%; height: 100%;">
