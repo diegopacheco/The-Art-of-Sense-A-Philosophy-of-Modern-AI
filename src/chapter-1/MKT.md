@@ -14,6 +14,12 @@ AI has a lot of hype; the problem with hype is that you have:
 
 Now, #1 and #2 are happening; we are not in #3 yet as of 2025, but it will eventually happen. Why am I talking about this? Because marketing is fueling the hype, and marketing is not interested in the long-term success of a technology—only in short-term gains.
 
+<img src="../images/01-mkt-gemini-3x-banana-pro.png" width="600" >
+
+PS: Image generate by Gemini 3 - Banana Pro
+
+Marketing is using terms that are misleading, if not outright lies, to promote AI products and services.
+
 Also, there are terms used that are 100% misleading, not to say lies. For instance, AI or LLM models cannot think; they cannot reason. But all tools and agents today use terms like "thinking", "reasoning", "understanding", etc., which are completely misleading. Some models are also called "Reasoning Models," which is misleading as well.
 
 Here is some evidence:
