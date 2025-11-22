@@ -36,7 +36,7 @@ Expecrts know what to Ask for the AI. Criativity and Vision matter a lot in AI c
 AI is disruptive, companies are making [mistakes](https://qz.com/entry-level-hiring-slowing-ai-report) in regards of juniors.
 
 ```
-"Looking at data between 2019 and 2024 for the biggest public tech firms and maturing venture-capital funded startups, venture capital firm SignalFire found in a study there was a 50% decline in new role starts by people with less than one year of post-graduate work experience: “Hiring is intrinsically volatile year on year, but 50% is an accurate representation of the hiring delta for this experience category over the considered timespan,” said Asher Bantock, head of research at SignalFire."
+"Looking at data between 2019 and 2024 for the biggest public tech firms and <br/>maturing venture-capital funded startups, venture capital firm SignalFire found in a study there was a 50% decline in new role starts by people with less than one year of post-graduate work experience: “Hiring is intrinsically volatile year on year, but 50% is an accurate representation of the hiring delta for this experience category over the considered timespan,” said Asher Bantock, head of research at SignalFire."
 ```
     
 Source [https://www.cnbc.com/2025/09/07/ai-entry-level-jobs-hiring-careers.html](https://www.cnbc.com/2025/09/07/ai-entry-level-jobs-hiring-careers.html)

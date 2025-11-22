@@ -2190,7 +2190,7 @@ Juniors in the other hand did not master any of these skills yet, and they are s
 <p>Expecrts know what to Ask for the AI. Criativity and Vision matter a lot in AI coding agent times :-)</p>
 <h2 id="ai-disruption-the-force-junior---senior"><a class="header" href="#ai-disruption-the-force-junior---senior">AI Disruption the FORCE (junior -&gt; Senior)</a></h2>
 <p>AI is disruptive, companies are making <a href="https://qz.com/entry-level-hiring-slowing-ai-report">mistakes</a> in regards of juniors.</p>
-<pre><code>"Looking at data between 2019 and 2024 for the biggest public tech firms and maturing venture-capital funded startups, venture capital firm SignalFire found in a study there was a 50% decline in new role starts by people with less than one year of post-graduate work experience: “Hiring is intrinsically volatile year on year, but 50% is an accurate representation of the hiring delta for this experience category over the considered timespan,” said Asher Bantock, head of research at SignalFire."
+<pre><code>"Looking at data between 2019 and 2024 for the biggest public tech firms and &lt;br/&gt;maturing venture-capital funded startups, venture capital firm SignalFire found in a study there was a 50% decline in new role starts by people with less than one year of post-graduate work experience: “Hiring is intrinsically volatile year on year, but 50% is an accurate representation of the hiring delta for this experience category over the considered timespan,” said Asher Bantock, head of research at SignalFire."
 </code></pre>
 <p>Source <a href="https://www.cnbc.com/2025/09/07/ai-entry-level-jobs-hiring-careers.html">https://www.cnbc.com/2025/09/07/ai-entry-level-jobs-hiring-careers.html</a></p>
 <p>Here is some more Evidence, there is plenty:</p>
@@ -4343,6 +4343,22 @@ Systems programming language mentioned as a learning target.</p>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
