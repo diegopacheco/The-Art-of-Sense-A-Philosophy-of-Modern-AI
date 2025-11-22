@@ -44,7 +44,7 @@ You would not like it. But that did not stop you from throwing bad code at other
 
 I posted this tweet in March 2025. To some degree, I think vibe-code does something interesting, which is "democratizing" software development. IMHO, it's like back in 2010 with Guitar Hero and Rock Band and other games where you have the "illusion" of playing a guitar (plastic guitar). But the good effect of that is that vibe coding might be a gateway drug to coding and engineering, and if that happens, it's great.
 
-<img src="../images/01-vibecoding-effects.png" width="300"/>
+<img src="../images/01-vibecoding-effects.png" width="600"/>
 
 Source: [https://x.com/diego_pacheco/status/1903625842456191254](https://x.com/diego_pacheco/status/1903625842456191254)
 
