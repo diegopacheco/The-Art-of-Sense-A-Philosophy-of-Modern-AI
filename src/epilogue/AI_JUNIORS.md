@@ -17,7 +17,7 @@ Now let's keep one thing in mind, IF AI creates disruption in the workforce, whe
 
 Have you ever thought about what a company really is?
 
-<img src="../images/epilogue-whats-is-a-company-gemini3-pro-banana.png" width="400" >
+<img src="../images/epilogue-whats-is-a-company-gemini3-pro-banana.png" width="600" >
 
 You might say the company is its products brand or services. But a company is made of people, the ability to organize and scale people to execute on a vision is what makes a company great. Such ability is called Execution. Execution matters a lot. But there is another thing that matters a lot too, the capacity of `Actually Learning`, new process, new ways of working, new technologies, new markets, new ways of organization, the capacity to learn is what makes a company adapt and survive in the long run. So in other words, the most effective companies are the ones who can learn and re-invent themselves while executing on their vision. Companies now need to learn how to `Deal with AI`, but they also need to learn how to play the long term game, not the next 5 years but the next 50 years.
 
@@ -66,7 +66,7 @@ U.S. Firms (Production Use): The U.S. [Census](https://www.census.gov/library/wo
 
 Smart companies are hiring juniors, because they understand the long term game. Juniors are the future seniors, and if you don't invest in juniors today, you will have a hard time finding seniors in the future.
 
-<img src="../images/epilogue-dhh-juniors.png" width="400" >
+<img src="../images/epilogue-dhh-juniors.png" width="600" >
 
 37signals' David Heinemeier Hansson on LinkedIn - [Hiring Juniors](https://www.linkedin.com/posts/david-heinemeier-hansson-374b18221_junior-rails-programmer-37signals-activity-7321076844307304449-Kl3Z/
 ).
@@ -95,7 +95,7 @@ In order to have a good doctor we need people that are sick, in order to have go
 
 Like I said, most managers suck when the matter is dealing with juniors in engineering.
 
-<img src="../images/epilogue-ai-juniors.png" width="400" >
+<img src="../images/epilogue-ai-juniors.png" width="600" >
 
 The common mistakes are:
 * Expecting Juniors to be Productive like Seniors with AI. Juniors are still learning
