@@ -10,7 +10,7 @@ YES. I think it is possible; I think it can happen. Now, no one knows if it will
 
 Take a look at this image. Perhaps it's another marketing trick.
 
-<img src="../images/01-AGI-houses.png" width="300"/>
+<img src="../images/01-AGI-houses.png" width="600"/>
 
 This is a funny effect that is happening; the industry is adapting its terms, and it's like the houses picture—sounds like the ceiling is going down. First, AGI was something that would happen in 100 years, then 50 years, then 20 years, then 10 years; now it's something that is already here.
 
