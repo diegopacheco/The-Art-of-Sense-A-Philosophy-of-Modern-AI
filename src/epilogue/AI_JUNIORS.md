@@ -65,16 +65,23 @@ AWS CEO Says [Replacing Junior Developers with AI Is the Dumbest Thing He's Ever
 </iframe>
 </div>
 
-## Alone, Juniors might not be able to grow in the AI ERA, and with AI Expectations.
+Pearhaps we can learn from the [NBA](https://www.nbadraft.net/) (High performant sport teams) where every year have the draft, and new players come to the league. Companies must have a similar approach, they must have a "junior draft" every year, hiring juniors and training them to become seniors in the future. Companies must invest in the future of their talent pool.
 
-TODO
+## Alone, Juniors might not be able to grow in the AI ERA, and with AI Expectations...
+
+The problem is, managers do not know how to deal with Juniors. Actually let me be very clear and honest, most of managers suck when the matter is dealing with juniors in engineering.
+
+Because for managers is much much much easier just have seniors. If you are full of senior engineers around you, how much do you actually need to manage? Are you a good manager if you dont need to do anything? Maybe let's think differenlty how we grow better managers if they are dealing with "elite engineers" all the time?
+
+In order to have a good doctor we need people that are sick, in order to have good fire figthers you need fire, in order to have good coookers, they need to cook and have peopel to feed, in order to have good managers you need juniors to manage.
 
 ## How to not manage juniors
 
-TODO
+Lack I said, most managers suck when the matter is dealing with juniors in engineering.
+
+<img src="../images/epilogue-ai-juniors.png" width="400" >
+
 
 ## How to Properly Manage Juniors
 
 TODO
-
-<img src="../images/epilogue-ai-juniors.png" width="400" >
