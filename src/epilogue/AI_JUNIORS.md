@@ -15,7 +15,11 @@ Now Let's keep on thing in mind, IF AI creates disruption on the workforce, wher
 
 ## What the HECK is a company? (Execution and Learning)
 
-Have you ever thought about what a company really is?You migth say the company is his products brand or services. But a company it's made of people, the hability to organize and scale people to execute on a vision is what makes a company great. Such hability is called Execution. Execution matters a lot. But there is another thing that matter a lot too, the capacity of `Actually Learning`, new process, new ways of working, new technologies, new markets, new ways of organization, the capacity to learn is what makes a company adapt and survive on the long run.So in other words, the most effective companies are the ones who can learn and re-invent themselves while executing on their vision. Companies now need to learn how to `Deal with AI`, but they also need to learn how to play the long term game, not the next 5 years but the nest 50 years.
+Have you ever thought about what a company really is?
+
+<img src="../images/epilogue-whats-is-a-company-gemini3-pro-banana.png" width="400" >
+
+You migth say the company is his products brand or services. But a company it's made of people, the hability to organize and scale people to execute on a vision is what makes a company great. Such hability is called Execution. Execution matters a lot. But there is another thing that matter a lot too, the capacity of `Actually Learning`, new process, new ways of working, new technologies, new markets, new ways of organization, the capacity to learn is what makes a company adapt and survive on the long run.So in other words, the most effective companies are the ones who can learn and re-invent themselves while executing on their vision. Companies now need to learn how to `Deal with AI`, but they also need to learn how to play the long term game, not the next 5 years but the nest 50 years.
 
 As the future of work changes, due AI and other forms of disruption, companies must adapt and change as well. But companies need to be careful, just because one strategy worked on the past, does not means it will worrk on the future.
 
@@ -23,16 +27,33 @@ As the future of work changes, due AI and other forms of disruption, companies m
 
 ## Experts Are Safe (as always)
 
-TODO
+Experts, already learned they lessons, please dont take this wrong, off course they can learn more and they still need to learn, continnous learning cannot ever stop. But experts are Safe, experts are the ones (IF they expend the time to properly learn AI) that will actually take more advantage of AI, because they know the fundamentals, they know how to learn new things, they know how to adapt. Experts will be the ones that will be able to leverage AI the most, and they will be the most productive ones.
+
+Expecrts know what to Ask for the AI. Criativity and Vision matter a lot in AI coding agent times :-)
 
 ## AI Disruption the FORCE (junior -> Senior)
 
-TODO
+AI is disruptive, companies are making [mistakes](https://qz.com/entry-level-hiring-slowing-ai-report) in regards of juniors.
+
+    "Looking at data between 2019 and 2024 for the biggest public tech firms and maturing venture-capital funded startups, venture capital firm SignalFire found in a study there was a 50% decline in new role starts by people with less than one year of post-graduate work experience: “Hiring is intrinsically volatile year on year, but 50% is an accurate representation of the hiring delta for this experience category over the considered timespan,” said Asher Bantock, head of research at SignalFire." 
+    
+Source [https://www.cnbc.com/2025/09/07/ai-entry-level-jobs-hiring-careers.html](https://www.cnbc.com/2025/09/07/ai-entry-level-jobs-hiring-careers.html)
+
+Here is some more Evidence, there is plenty:
+* [As AI eats entry-level jobs, uncertainty fills the gap](https://fortune.com/2025/09/04/ai-entry-level-jobs-uncertainty-college-grads/)
+* [Gen Z faces ‘job-pocalypse’ as global firms prioritise AI over new hires, report says](https://www.theguardian.com/money/2025/oct/09/gen-z-face-job-pocalypse-as-global-firms-prioritise-ai-over-new-hires-report-says) 
+* [New evidence strongly suggests AI is killing jobs for young programmers](https://www.understandingai.org/p/new-evidence-strongly-suggest-ai)
+
+Data show some shocking trends:
+
+<img src="../images/epilogue-seniors-vs-juniors.png" width="400" >
+
+Seyed Mahdi Hosseini Maasoum and Guy Lichtinger from Harvard wrote the paper: "Generative AI as Seniority-Biased Technological Change: Evidence from U.S. Résumé and Job Posting Data". The data is shocking, "sounds like no one wants juniors anymore". Junior roles are down 23%, Senior roles are up 14%. U.S. Firms (Production Use): The U.S. [Census](https://www.census.gov/library/working-papers/2024/adrm/CES-WP-24-16.html) Bureau reported that this figure rose steadily, reaching 6.6% by late 2024.
 
 ## Companies must hire juniors
 
-37signals' David Heinemeier Hansson on LinkedIn - Hiring Juniors:
-https://www.linkedin.com/posts/david-heinemeier-hansson-374b18221_junior-rails-programmer-37signals-activity-7321076844307304449-Kl3Z/
+37signals' David Heinemeier Hansson on LinkedIn - [Hiring Juniors](https://www.linkedin.com/posts/david-heinemeier-hansson-374b18221_junior-rails-programmer-37signals-activity-7321076844307304449-Kl3Z/
+).
 
 ## Alone, Juniors might not be able to grow in the AI ERA, and with AI Expectations.
 
