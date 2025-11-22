@@ -58,7 +58,7 @@
   - [What is Claude Code?](./chapter-5/WHAT.md)
   - [Prompt Library](./chapter-5/PROMPT-LIBRARY.md)
   - [Prompt Advices](./chapter-5/PROMPT_ADVICES.md)
-  - [Commands](./chapter-5/CMDS.md)
+  - [Commands](./chapter-5/CMDs.md)
   - [Bash Mode](./chapter-5/BASH_MODE.md)
   - [Exclusions ](./chapter-5/EXCLUSIONS.md)
   - [Advanced Context Window Management](./chapter-5/CC_ADVANCED_CTX_WINDOW_MGMT.md)
