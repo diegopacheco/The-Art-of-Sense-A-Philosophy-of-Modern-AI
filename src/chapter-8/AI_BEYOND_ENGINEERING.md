@@ -65,7 +65,7 @@ For such reasons and many more AI it's safer into engineering teams where you ha
 
 When some input or prompt from the user gets executed directly in production without any guardrails or validation. It's also like the user prompt needs to be sanitized or protected against SQL injection or JS injection attacks. IF you blindly get the prompt from the user and run in production (like a good remote code execution security antipattern) you are in big trouble. You need to have a layer of validation, verification, testing, monitoring and alerting to ensure that the AI-generated code is safe and secure before it gets deployed to production.
 
-<img src="../images/08-no-guardrails.png" width="600"/>
+<img src="../images/08-no-guardrails.png" width="700"/>
 
 ## How to USE Gen AI Safely Beyond Engineering in Production
 
@@ -83,6 +83,6 @@ So the users can type prompts in applications in production, however nothing get
 
 What IF? You use a prompt for the final user, that way, the user can get a better experience by "reducing the complexity of the user experience" but you craft a system prompt that translates whatever the user typed into finite options let's say 0 to 5. Where 0 is invalid action and 1, 2, 3, 4 and 5 are valid actions. So you literally ask the LLM to return a number and you just parse that number from string to integer. That way, even if the user managed to "trick the LLM" your system is not blindly executing what the user types on the prompt because you are just doing numbers parsing. This is a very simple but effective way to mitigate risks when using AI beyond engineering in production environments.
 
-<img src="../images/08-ARU_Strategy.png" width="600"/>
+<img src="../images/08-ARU_Strategy.png" width="700"/>
 
 If you think about it, ARU systems used that for ages, chatbots did a similar strategy where you can type whatever but there is a finite set of options that the bot can understand and process. So you are not blindly executing whatever the user types, you are just mapping the user input to a finite set of valid actions.
