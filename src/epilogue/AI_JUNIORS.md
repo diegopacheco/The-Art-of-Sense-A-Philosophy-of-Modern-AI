@@ -108,7 +108,7 @@ The common mistakes are:
 
 Basically, people give juniors maybe 30 days, after than they can easily decide they suck, what I think is broken is that such decision happens without any support what so ever to juniors. You throw a toddler on the snow and ask it to lift a truck(good example of a task that is too complex for a junior), and after 30 days you decide the toddler sucks at lifting trucks. Such approach is broken.
 
-Juniors got JIRA tickets without any explanation, no support from the team, just pressure and more pressure to deliver. How this suppose to work?
+Juniors got JIRA tickets without any explanation, no support from the team, just pressure and more pressure to deliver. How is this supposed to work?
 
 The sad thing is that is super, super, super common in the industry.
 

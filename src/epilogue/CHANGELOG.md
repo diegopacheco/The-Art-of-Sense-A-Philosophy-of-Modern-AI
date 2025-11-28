@@ -2,6 +2,29 @@
 
 All notable changes to "The Art of Sense: A Philosophy of Modern AI" book project are documented in this file.
 
+## November 28, 2025
+
+### Book Version 1.0.7 Release
+- Published version 1.0.7 of the book
+
+### Chapter 1 - Making Sense of AI
+- Added comprehensive Jailbreaking guide (JAILBREAKING.md)
+- Expanded Fooled by AI section with additional critiques
+- Enhanced AGI discussion with SEAL framework and continuous learning concepts
+- Fixed English grammar and typos across all chapter files
+
+### Epilogue
+- Updated Glossary with 50+ new terms including people, organizations, and technical concepts
+- Updated References with new jailbreaking research papers and additional links
+- Enhanced Book Index with 100+ new entries and improved organization
+- Fixed English grammar and typos across documentation
+
+### Quality Improvements
+- Fixed spelling errors throughout the book
+- Corrected grammar issues and improved sentence structure
+- Enhanced readability while preserving original writing style
+- Improved image references and formatting
+
 ## November 21, 2025
 
 ### Book Version 1.0.6 Release

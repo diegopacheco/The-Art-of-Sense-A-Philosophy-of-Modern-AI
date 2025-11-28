@@ -1,8 +1,8 @@
 # Jailbreaking
 
-[Jailbreaking](https://unit42.paloaltonetworks.com/jailbreak-llms-through-camouflage-distraction/) is the attempt to bypass AI safety measures. Breaking LLM models ethics guidelines to make them produce content that is restricted or disallowed by their creators.
+[Jailbreaking](https://unit42.paloaltonetworks.com/jailbreak-llms-through-camouflage-distraction/) is the attempt to bypass AI safety measures. Breaking LLM models' ethics guidelines to make them produce content that is restricted or disallowed by their creators.
 
-Here are 3 papers, if you want go Deep and understand more about Jailbreaking:
+Here are 3 papers, if you want to go deep and understand more about Jailbreaking:
 * [Adversarial Poetry as a Universal Single-Turn
 Jailbreak Mechanism in Large Language Models](https://arxiv.org/pdf/2511.15304)
 * [SequentialBreak: Large Language Models Can be Fooled by Embedding Jailbreak Prompts into Sequential Prompt Chains](https://arxiv.org/abs/2411.06426)
@@ -25,6 +25,6 @@ From the Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Agains
  odels) with success rates often exceeding 90%.
 ```
 
-What can we learn from this? Well, clealy LLM models are not safe to exposed to consumers directly or have prompts comming directly from users. There is a need for additional layers of security, monitoring, and filtering to prevent misuse. Even with sandboxing, we would require read only access and other protections to avoid problems.
-s
-Why this matters? In order to AI to grow it must become customer facinng, right now the safe place where AI can thrive is on engineering, because engineers are there reviewing the output and can catch problems before they reach end users. However engineers become the AI customers, since AI is a tool for better engineering, now AI clearly want's to get rid of his customers(engineers) this is a funny business paradox.
+What can we learn from this? Well, clearly LLM models are not safe to be exposed to consumers directly or have prompts coming directly from users. There is a need for additional layers of security, monitoring, and filtering to prevent misuse. Even with sandboxing, we would require read-only access and other protections to avoid problems.
+
+Why this matters? In order for AI to grow it must become customer facing, right now the safe place where AI can thrive is in engineering, because engineers are there reviewing the output and can catch problems before they reach end users. However engineers become the AI customers, since AI is a tool for better engineering, now AI clearly wants to get rid of its customers (engineers) this is a funny business paradox.

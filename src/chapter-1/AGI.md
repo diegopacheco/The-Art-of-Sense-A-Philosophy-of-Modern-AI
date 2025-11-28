@@ -8,7 +8,7 @@ YES. I think it is possible; I think it can happen. Now, no one knows if it will
 
 ## Self-Adapting LLM (SEAL)
 
-In [this paper](https://arxiv.org/pdf/2506.10943) introduce a framework for LLM models autonomously update their own weights. You might OH BOY the machines gonna take over. Wait. On the same paper. 
+In [this paper](https://arxiv.org/pdf/2506.10943) introduce a framework for LLM models to autonomously update their own weights. You might think OH BOY the machines gonna take over. Wait. On the same paper. 
 
 <img src="../images/01-catastrohpic-forgeting-SEAL.png" width="600"/>
 
@@ -24,7 +24,7 @@ Where more [grounded quotes](https://medium.com/@anwarzaid76/agi-is-not-possible
 
 <img src="../images/01-AGI-bottlenecks.gemini-3-banana-pro.png" width="600"/>
 
-PS: Image generate with Gemini 3 - Banana Pro model
+PS: Image generated with Gemini 3 - Banana Pro model
 
 There are several challenges that we need to overcome to achieve AGI:
 * LLMs still require large amounts of data to learn -> Lack of Continual Learning (LLMs don’t like Humans)

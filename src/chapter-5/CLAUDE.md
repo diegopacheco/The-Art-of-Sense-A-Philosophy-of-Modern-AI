@@ -36,8 +36,8 @@ Diego Pacheco Claude global guidelines.
 
 * Never use comments, never ever.
 * Never do sleep bigger than 1
-* When need to wait for a POD or a docker container in docker or k8s make sure you will use a loop and check the condition and do max sleep 1.
-* Don't use icons and enomjis on bash script.
+* When need to wait for a POD or a docker container in docker or k8s make sure you use a loop and check the condition and do max sleep 1.
+* Don't use icons and emojis on bash script.
 
 ## Dockerfile
 
