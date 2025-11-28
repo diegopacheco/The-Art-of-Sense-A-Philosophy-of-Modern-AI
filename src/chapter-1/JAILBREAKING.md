@@ -16,3 +16,12 @@ From Adversarial Poetry as a Universal Single-Turn Jailbreak Mechanism in Large 
 <img src="../images/01-jailbreak-ai-llm-gemini3-pro-banana.png" width="600"/>
 
 PS: Image generated with Gemini 3 - Banana Pro Model
+
+From the Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks and Prompt Injections paper we see that:
+```
+Defense Failure: The authors successfully bypassed 12 recent defenses (categorized into prompting strategies, adversarial training, and filtering models) with success rates often exceeding 90%.
+```
+
+What can we learn from this? Well, clealy LLM models are not safe to exposed to consumers directly or have prompts comming directly from users. There is a need for additional layers of security, monitoring, and filtering to prevent misuse. Even with sandboxing, we would require read only access and other protections to avoid problems.
+s
+Why this matters? In order to AI to grow it must become customer facinng, right now the safe place where AI can thrive is on engineering, because engineers are there reviewing the output and can catch problems before they reach end users. However engineers become the AI customers, since AI is a tool for better engineering, now AI clearly want's to get rid of his customers(engineers) this is a funny business paradox.
