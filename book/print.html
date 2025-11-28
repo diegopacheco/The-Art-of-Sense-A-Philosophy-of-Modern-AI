@@ -707,7 +707,7 @@ Jailbreak Mechanism in Large Language Models</a></li>
 <img src="chapter-1/../images/01-jailbreak-ai-llm-gemini3-pro-banana.png" width="600"/>
 <p>PS: Image generated with Gemini 3 - Banana Pro Model</p>
 <p>From the Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks and Prompt Injections paper we see that:</p>
-<pre><code>Defense Failure: The authors successfully bypassed 12 recent defenses (categorized into prompting strategies, adversarial training, and filtering models) with success rates often exceeding 90%.
+<pre><code>"Defense Failure: The authors successfully bypassed 12 recent defenses (categorized into prompting strategies, adversarial training, and filtering models) with success rates often exceeding 90%."
 </code></pre>
 <p>What can we learn from this? Well, clealy LLM models are not safe to exposed to consumers directly or have prompts comming directly from users. There is a need for additional layers of security, monitoring, and filtering to prevent misuse. Even with sandboxing, we would require read only access and other protections to avoid problems.
 s
@@ -4552,22 +4552,6 @@ Systems programming language mentioned as a learning target.</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
