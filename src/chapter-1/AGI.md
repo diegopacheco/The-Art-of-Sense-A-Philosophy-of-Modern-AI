@@ -6,6 +6,20 @@ AGI means Artificial General Intelligence, which refers to a type of AI that has
 
 YES. I think it is possible; I think it can happen. Now, no one knows if it will take 10 years or 100 years or never. But I think it is possible. Now, part of the problem is that there are several different definitions of AGI. Plus, we are not there yet; LLMs are not AGI.
 
+## Self-Adapting LLM (SEAL)
+
+In [this paper](https://arxiv.org/pdf/2506.10943) introduce a framework for LLM models autonomously update their own weights. You might OH BOY the machines gonna take over. Wait. On the same paper. 
+
+<img src="../images/01-catastrohpic-forgeting-SEAL.png" width="600"/>
+
+Catastrophic Forgetting: In continual learning settings where the model must adapt to a sequence of tasks, SEAL struggles to retain previous knowledge, with performance on earlier tasks degrading as new updates are applied.
+
+## The AGI Hype
+
+I totally understand why people will think that. You see AI coding, you see AI winning competitive programming contests, you see AI doing very well in benchmarks, things "seems" to be moving fast. Elon Musk said we would have [Elon Musk: AGI by 2025](https://www.reddit.com/r/singularity/comments/1p81boq/elon_musk_predicted_that_agi_would_arrive_in_2025/). Elon Musk predicted that AGI would arrive in 2025(did not happened). Sam Altman said we would have [Sam Altamn: Implied AGI by 2025](https://firstmovers.ai/agi-2025/#:~:text=Altman%20reaffirmed%20that%20OpenAI's%20focus,AGI%20a%20reality%20by%202025.)(We don't have it). So, there is a lot of hype around AGI. Anthropic CEO said that we can have [Dario: AGI by 2026/2027](https://www.reddit.com/r/singularity/comments/1gp2o2m/anthropics_dario_amodei_says_unless_something/). Very likely we won't have it by then.
+
+Where more [grounded quotes](https://medium.com/@anwarzaid76/agi-is-not-possible-even-in-10-years-013a1aec0d9c) aim 20 years or more: ["chance that AI will be doing most cognitive tasks by 2045"](https://helentoner.substack.com/p/long-timelines-to-advanced-ai-have). IMHO can be even more than that, could be 50 or even more than 100+ years.
+
 ## Down ceiling effect (The Hobbit House Effect)
 
 Take a look at this image. Perhaps it's another marketing trick.
