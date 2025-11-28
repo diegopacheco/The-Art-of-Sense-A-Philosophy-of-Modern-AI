@@ -181,8 +181,8 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="jailbreaking"><a class="header" href="#jailbreaking">Jailbreaking</a></h1>
-<p><a href="https://unit42.paloaltonetworks.com/jailbreak-llms-through-camouflage-distraction/">Jailbreaking</a> is the attempt to bypass AI safety measures. Breaking LLM models ethics guidelines to make them produce content that is restricted or disallowed by their creators.</p>
-<p>Here are 3 papers, if you want go Deep and understand more about Jailbreaking:</p>
+<p><a href="https://unit42.paloaltonetworks.com/jailbreak-llms-through-camouflage-distraction/">Jailbreaking</a> is the attempt to bypass AI safety measures. Breaking LLM models' ethics guidelines to make them produce content that is restricted or disallowed by their creators.</p>
+<p>Here are 3 papers, if you want to go deep and understand more about Jailbreaking:</p>
 <ul>
 <li><a href="https://arxiv.org/pdf/2511.15304">Adversarial Poetry as a Universal Single-Turn
 Jailbreak Mechanism in Large Language Models</a></li>
@@ -202,9 +202,8 @@ Jailbreak Mechanism in Large Language Models</a></li>
  (categorized into prompting strategies, adversarial training, and filtering 
  odels) with success rates often exceeding 90%.
 </code></pre>
-<p>What can we learn from this? Well, clealy LLM models are not safe to exposed to consumers directly or have prompts comming directly from users. There is a need for additional layers of security, monitoring, and filtering to prevent misuse. Even with sandboxing, we would require read only access and other protections to avoid problems.
-s
-Why this matters? In order to AI to grow it must become customer facinng, right now the safe place where AI can thrive is on engineering, because engineers are there reviewing the output and can catch problems before they reach end users. However engineers become the AI customers, since AI is a tool for better engineering, now AI clearly want's to get rid of his customers(engineers) this is a funny business paradox.</p>
+<p>What can we learn from this? Well, clearly LLM models are not safe to be exposed to consumers directly or have prompts coming directly from users. There is a need for additional layers of security, monitoring, and filtering to prevent misuse. Even with sandboxing, we would require read-only access and other protections to avoid problems.</p>
+<p>Why this matters? In order for AI to grow it must become customer facing, right now the safe place where AI can thrive is in engineering, because engineers are there reviewing the output and can catch problems before they reach end users. However engineers become the AI customers, since AI is a tool for better engineering, now AI clearly wants to get rid of its customers (engineers) this is a funny business paradox.</p>
 
                     </main>
 
@@ -235,22 +234,6 @@ Why this matters? In order to AI to grow it must become customer facinng, right 
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
