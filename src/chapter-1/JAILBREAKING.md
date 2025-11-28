@@ -21,7 +21,8 @@ From the Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Agains
 
 ```
  Defense Failure: The authors successfully bypassed 12 recent defenses    
- (categorized into prompting strategies, adversarial training, and filtering odels) with success rates often exceeding 90%.
+ (categorized into prompting strategies, adversarial training, and filtering 
+ odels) with success rates often exceeding 90%.
 ```
 
 What can we learn from this? Well, clealy LLM models are not safe to exposed to consumers directly or have prompts comming directly from users. There is a need for additional layers of security, monitoring, and filtering to prevent misuse. Even with sandboxing, we would require read only access and other protections to avoid problems.
