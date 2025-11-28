@@ -18,6 +18,7 @@
   - [Vibe Coding](./chapter-1/VIBE_CODING.md)
   - [AI Input](./chapter-1/AI_INPUT.md)
   - [Mirror on Asteroids](./chapter-1/MIRROR_ASTEROIDS.md)
+  - [Jailbreaking](./chapter-1/JAILBREAKING.md)  
 
 - [Chapter 2 - Traditional AI](./chapter-2/README.md)
   - [What is Traditional AI?](./chapter-2/WHAT.MD)
