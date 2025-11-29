@@ -185,12 +185,12 @@
 <h2 id="is-agi-possible-could-it-happen"><a class="header" href="#is-agi-possible-could-it-happen">Is AGI possible? Could it happen?</a></h2>
 <p>YES. I think it is possible; I think it can happen. Now, no one knows if it will take 10 years or 100 years or never. But I think it is possible. Now, part of the problem is that there are several different definitions of AGI. Plus, we are not there yet; LLMs are not AGI.</p>
 <h2 id="self-adapting-llm-seal"><a class="header" href="#self-adapting-llm-seal">Self-Adapting LLM (SEAL)</a></h2>
-<p>In <a href="https://arxiv.org/pdf/2506.10943">this paper</a> introduce a framework for LLM models to autonomously update their own weights. You might think OH BOY the machines gonna take over. Wait. On the same paper.</p>
+<p>This <a href="https://arxiv.org/pdf/2506.10943">paper</a> introduces a framework for LLM models to autonomously update their own weights. You might think OH BOY the machines are going to take over. Wait. In the same paper:</p>
 <img src="../images/01-catastrohpic-forgeting-SEAL.png" width="600"/>
 <p><strong>Catastrophic Forgetting</strong>: In continual learning settings where the model must adapt to a sequence of tasks, SEAL struggles to retain previous knowledge, with performance on earlier tasks degrading as new updates are applied.</p>
 <h2 id="the-agi-hype"><a class="header" href="#the-agi-hype">The AGI Hype</a></h2>
-<p>I totally understand why people will think that. You see AI coding, you see AI winning competitive programming contests, you see AI doing very well in benchmarks, things "seems" to be moving fast. Elon Musk said we would have <a href="https://www.reddit.com/r/singularity/comments/1p81boq/elon_musk_predicted_that_agi_would_arrive_in_2025/">Elon Musk: AGI by 2025</a>. Elon Musk predicted that AGI would arrive in 2025(did not happened). Sam Altman said we would have <a href="https://firstmovers.ai/agi-2025/#:~:text=Altman%20reaffirmed%20that%20OpenAI&#x27;s%20focus,AGI%20a%20reality%20by%202025.">Sam Altamn: Implied AGI by 2025</a>(We don't have it). So, there is a lot of hype around AGI. Anthropic CEO said that we can have <a href="https://www.reddit.com/r/singularity/comments/1gp2o2m/anthropics_dario_amodei_says_unless_something/">Dario: AGI by 2026/2027</a>. Very likely we won't have it by then.</p>
-<p>Where more <a href="https://medium.com/@anwarzaid76/agi-is-not-possible-even-in-10-years-013a1aec0d9c">grounded quotes</a> aim 20 years or more: <a href="https://helentoner.substack.com/p/long-timelines-to-advanced-ai-have">"chance that AI will be doing most cognitive tasks by 2045"</a>. IMHO can be even more than that, could be 50 or even more than 100+ years.</p>
+<p>I totally understand why people would think that. You see AI coding, you see AI winning competitive programming contests, you see AI doing very well in benchmarks, and things seem to be moving fast. Elon Musk said we would have <a href="https://www.reddit.com/r/singularity/comments/1p81boq/elon_musk_predicted_that_agi_would_arrive_in_2025/">Elon Musk: AGI by 2025</a>. Elon Musk predicted that AGI would arrive in 2025 (did not happen). Sam Altman said we would have <a href="https://firstmovers.ai/agi-2025/#:~:text=Altman%20reaffirmed%20that%20OpenAI&#x27;s%20focus,AGI%20a%20reality%20by%202025.">Sam Altamn: Implied AGI by 2025</a> (we don't have it). So, there is a lot of hype around AGI. Anthropic CEO said that we can have <a href="https://www.reddit.com/r/singularity/comments/1gp2o2m/anthropics_dario_amodei_says_unless_something/">Dario: AGI by 2026/2027</a>. Very likely we won't have it by then.</p>
+<p>More <a href="https://medium.com/@anwarzaid76/agi-is-not-possible-even-in-10-years-013a1aec0d9c">grounded quotes</a> aim 20 years or more: <a href="https://helentoner.substack.com/p/long-timelines-to-advanced-ai-have">"chance that AI will be doing most cognitive tasks by 2045"</a>. IMHO it can be even more than that—could be 50 or even more than 100+ years.</p>
 <h2 id="agi-challenges"><a class="header" href="#agi-challenges">AGI Challenges</a></h2>
 <img src="../images/01-AGI-bottlenecks.gemini-3-banana-pro.png" width="600"/>
 <p>PS: Image generated with Gemini 3 - Banana Pro model</p>
@@ -246,22 +246,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

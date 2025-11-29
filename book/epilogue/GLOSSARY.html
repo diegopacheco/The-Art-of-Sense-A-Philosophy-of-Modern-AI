@@ -569,6 +569,8 @@ Process of cataloging and assessing existing systems, code, and infrastructure b
 <p><strong>IntelliJ IDEA</strong>
 JetBrains IDE that integrates with AI coding assistants.</p>
 <h2 id="j"><a class="header" href="#j">J</a></h2>
+<p><strong>Jailbreaking</strong>
+Attempts to bypass LLM safety guardrails to force models to produce restricted or disallowed outputs.</p>
 <p><strong>Jenkins</strong>
 Automation server for CI/CD pipelines, mentioned as tech asset requiring ownership.</p>
 <p><strong>Jest</strong>
@@ -849,6 +851,8 @@ Development approach implemented by AWS Kiro where specifications drive implemen
 Considerations for safely integrating external tools and protocols with AI systems to prevent unauthorized access or malicious operations.</p>
 <p><strong>Selenium</strong>
 Browser automation framework used for testing web applications.</p>
+<p><strong>Self-Adapting LLM (SEAL)</strong>
+Framework for LLM models to autonomously update their own weights while struggling with catastrophic forgetting across tasks.</p>
 <p><strong>Self-Attention Mechanism</strong>
 Key innovation of Transformers that allows models to weigh the importance of different words in a sentence relative to each other.</p>
 <p><strong>Semantic Meaning</strong>
@@ -1080,22 +1084,6 @@ Systems programming language mentioned as a learning target.</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
