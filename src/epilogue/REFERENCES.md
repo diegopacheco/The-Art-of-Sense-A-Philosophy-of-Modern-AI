@@ -28,6 +28,12 @@
 - [Brain Study Shows ChatGPT Actually Makes You Dumber - 80.lv](https://80.lv/articles/brain-study-shows-chatgpt-actually-makes-you-dumber)
 - [The Great Software Quality Collapse - Tech Trenches](https://techtrenches.substack.com/p/the-great-software-quality-collapse)
 
+#### Jailbreaking
+- [Jailbreak LLMs Through Camouflage and Distraction - Palo Alto Networks](https://unit42.paloaltonetworks.com/jailbreak-llms-through-camouflage-distraction/)
+- [Adversarial Poetry as a Universal Single-Turn Jailbreak Mechanism](https://arxiv.org/pdf/2511.15304)
+- [SequentialBreak: Embedding Jailbreak Prompts into Sequential Prompt Chains](https://arxiv.org/abs/2411.06426)
+- [The Attacker Moves Second: Adaptive Attacks Bypass Jailbreak Defenses](https://arxiv.org/pdf/2510.09023)
+
 ### AI Scams and Failures
 - [The Rabbit Is A Scam - YouTube](https://www.youtube.com/watch?v=d7DtiMzMBdU)
 - [Sora Demo Controversy - Futurism](https://futurism.com/the-byte/openai-sora-demo)

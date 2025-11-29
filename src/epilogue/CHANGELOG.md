@@ -2,6 +2,14 @@
 
 All notable changes to "The Art of Sense: A Philosophy of Modern AI" book project are documented in this file.
 
+## Unreleased
+
+### Maintenance
+- Added glossary coverage for Jailbreaking and Self-Adapting LLM (SEAL)
+- Added jailbreaking research papers and safety links to References
+- Expanded Book Index with navigation to new jailbreaking and SEAL sections
+- Corrected grammar and typos in AGI and Jailbreaking chapters
+
 ## November 28, 2025
 
 ### Book Version 1.0.7 Release

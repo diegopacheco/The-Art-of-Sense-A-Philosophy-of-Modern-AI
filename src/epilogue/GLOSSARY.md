@@ -587,6 +587,9 @@ JetBrains IDE that integrates with AI coding assistants.
 
 ## J
 
+**Jailbreaking**
+Attempts to bypass LLM safety guardrails to force models to produce restricted or disallowed outputs.
+
 **Jenkins**
 Automation server for CI/CD pipelines, mentioned as tech asset requiring ownership.
 
@@ -1010,6 +1013,9 @@ Considerations for safely integrating external tools and protocols with AI syste
 
 **Selenium**
 Browser automation framework used for testing web applications.
+
+**Self-Adapting LLM (SEAL)**
+Framework for LLM models to autonomously update their own weights while struggling with catastrophic forgetting across tasks.
 
 **Self-Attention Mechanism**
 Key innovation of Transformers that allows models to weigh the importance of different words in a sentence relative to each other.

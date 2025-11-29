@@ -288,6 +288,7 @@
 - **Inventory (Migrations)** - [Inventory](../chapter-7/INVENTORY.md)
 
 ## J
+- **Jailbreaking** - [Jailbreaking](../chapter-1/JAILBREAKING.md)
 - **Jest** - [Data Generation](../chapter-6/DATA_GEN.md)
 - **jsverify** - [Chapter 6](../chapter-6/README.md)
 - **JUnit** - [Data Generation](../chapter-6/DATA_GEN.md)
@@ -481,6 +482,7 @@
 - **Security and MCPs** - [MCP Security](../chapter-4/MCP_SEC.md)
 - **Security Expert Persona** - [Role Playing](../chapter-9/ROLE_PLAYING.md)
 - **Selenium** - [Manual Testing](../chapter-6/MANUAL_TESTING.md)
+- **Self-Adapting LLM (SEAL)** - [AGI](../chapter-1/AGI.md)
 - **Self-Attention Mechanism** - [Transformers](../chapter-3/TRANSFORMERS.md)
 - **Semantic Meaning** - [Embeddings](../chapter-3/EMBEDDINGS.md), [Vector Databases](../chapter-3/VECTOR_DBS.md)
 - **Senior Engineers** - [AI and Juniors](../epilogue/AI_JUNIORS.md)
